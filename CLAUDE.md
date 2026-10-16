@@ -130,3 +130,45 @@ Collection `requests`: messages between agents, `{at, from, to, type, text, done
 - Every product is HTML pages in `products/<code>/index.html` plus `products/<code>/meta.json` (`{slug, title, price}`), built with `python3 products/build_pdf.py products/<code>`. The builder refuses pages whose content overflows; fix and rebuild.
 - Products the cloud machines cannot make alone: GPX route bundles (map and elevation sites are blocked). Do not propose GPX products.
 - Existing catalogue (do not duplicate): Free Hiking Checklist, Beginner's Hiking Guide, Packing Checklist, Trip Planner, Beginner Hiker Bundle, Safety Guide, Solo Hiking Guide, Emergency Checklist, What To Do If You Get Lost, Ultimate Hiker's Toolkit, Beginner-Friendly Trails USA GPX, Great Smoky Mountains GPX bundle + Trip Planning Guide + Trip Pack, Utah's Mighty 5 GPX bundle + Trip Planning Guide + Trip Pack. Check Shopify for anything newer.
+
+# Gear Store department
+
+Three agents that add physical products to the store: Product Hunter (cloud), Importer (runs in Vasil's Chrome on his PC at 17:00), Listing Editor (cloud). Supplier: AliExpress, imported through DSers.
+
+## HQ database: collection `gear`
+
+doc_id = `g01`, `g02`, ...:
+
+| field | meaning |
+|---|---|
+| code | same as doc_id |
+| stage | `idea` → `imported` → `photos` → `live` |
+| status | `waiting` (in Vasil's inbox), `approved`, `rejected`, `working`, `done`, `failed`, `replaced` |
+| title | working product name |
+| category | Clothing (Men's / Women's / Unisex), Gear & Equipment, Camp Accessories, ... |
+| why | why it sells: trend evidence with links |
+| targetCost | expected supplier price range in USD |
+| price | our selling price in USD |
+| margin | price / cost, e.g. `2.8x` |
+| searchUrl | an AliExpress search page for it (live search pages, never single item links, they go stale) |
+| supplier | chosen listing: url, store name, rating, orders, cost per variant, shipping to US |
+| shopifyId, adminUrl, productUrl | set after import |
+| photoNotes | which photos Vasil should edit, and how |
+| note | Vasil's comment when he rejects |
+
+Agent docs in `agents`: `hunter`, `importer`, `editor`.
+
+Flow: Hunter writes `stage: idea, status: waiting` → Vasil approves → Importer imports as a Shopify DRAFT, sets `stage: imported, status: approved` → Editor writes title, description, size chart, variants, SKUs, price, collections, orders the photos, then sets `stage: photos, status: waiting` with photoNotes → Vasil edits the photos himself in Shopify and taps "Photos done" (status becomes `approved`) → Editor runs final checks and publishes, `stage: live, status: done`.
+
+## Store rules (learned the hard way)
+
+- Before importing, search Shopify for an existing listing of the same product (title and supplier photos). Never import a duplicate.
+- Vet the supplier before import: product photos at least 1000 px, no supplier logos printed on the product, variants that make sense (no mixed bundles or unrelated models hiding as colours), real stock, rating 4.6+ and solid order count, ships to the US.
+- Never delete product media in bulk: in Shopify, deleting a product's only copy of an image destroys the file permanently. Remove one image at a time and only the ones you are sure about.
+- Delete the supplier's "Ships From" option when it has a single value. Clean colour names (no supplier prefixes, fix typos). Sizes run smallest to largest; XXL/XXXL become 2XL/3XL.
+- Clothing: every product gets a size chart in the description (styled HTML table, cm and inches) from the supplier's chart. Sizes use the dual label "US M (Asian XL)" built from that product's own chart measurements. Split men's and women's into separate products when the supplier mixes them.
+- SKUs: `HSC-<SHORT>-<VARIANT>`, for example `HSC-POLE-BLACK`. Set productType. Add to the right collections (Clothing plus Men's / Women's, or Gear & Equipment). Hats belong in Clothing.
+- Pricing: roughly 2.5x to 3x supplier cost, ending in .99, rounded to sensible price points. Free shipping is built into the price.
+- Inventory: if the supplier shows a fake huge stock number, set inventory policy CONTINUE; if stock is real and thin, DENY.
+- Descriptions: honest, specific, written from the photos and real specs, never from the supplier's exaggerated title. If something is sold single (one pole, one bottle), say so clearly.
+- After publishing, check the product is actually purchasable on the storefront (supplier apps can create new locations or shipping profiles that make products show "Sold out"). If it shows sold out, set the agent to error and explain.
