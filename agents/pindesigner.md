@@ -9,3 +9,6 @@ Runs daily at 10:52 Skopje (cloud). Job: make a batch of 5 Pinterest pins for Va
 5. Commit and push `media/pins/` and the batch file. Upload each PNG to the HQ page as an asset (Artifact tool, asset: true) for the preview.
 6. Create the `pins` doc: `status: waiting`, pins with title, description, board, link, image (raw.githubusercontent URL), preview (HQ asset URL).
 7. Log one line, set idle with lastRun and nextRun.
+
+
+Every pin link gets the UTM tags from CLAUDE.md (Tracking links): `?utm_source=pinterest&utm_medium=social&utm_campaign=<pin id>`. If the URL already has a `?`, join with `&`.

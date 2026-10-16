@@ -13,3 +13,6 @@ Runs every Sunday at 19:00 Skopje. Job: tell Vasil and the Strategist what worke
    - 3 concrete instructions for next week's ideas.
    Plain words, no bold, no emoji.
 6. Log one line, set the agent doc to idle with lastRun and nextRun (next Sunday 19:00).
+
+
+Channel results: every Sunday, also read Shopify analytics (run-analytics-query) for sessions, orders and revenue by utm_source and utm_campaign (or referrer) for the last 7 days. Put a short 'Where visitors came from' section in the report: top channels, top posts or pins by visits, and which ones led to orders. Real numbers only.

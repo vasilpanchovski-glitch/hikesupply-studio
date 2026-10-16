@@ -72,3 +72,7 @@ Read the Analyst's latest report, last week's orders, what is live in the store,
 - Never approve videos, products, gear or store fixes. Never publish, post, like, follow, comment or DM.
 - Never change prices, products, settings or money things. Never spend money.
 - Never delete anything except log docs over the 200 limit.
+
+
+## Tracking
+In the morning run, read yesterday's sessions and orders by utm_source / utm_campaign with run-analytics-query (see Tracking links in CLAUDE.md). Mention the best channel in the briefing, and use it when directing the teams.

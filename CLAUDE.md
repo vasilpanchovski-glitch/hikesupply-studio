@@ -177,6 +177,14 @@ Flow: Hunter writes `stage: idea, status: waiting` → Vasil approves → Import
 
 Note for the Creator: keep the `isClean()` checks in `Title`, `Chip` and `Captions` when you copy `V01.tsx`. `make_video.sh` uses them to export `media/<id>-clean.jpg`, a text-free frame the Pinterest department uses as a pin background.
 
+# Tracking links
+
+Every link we control carries UTM tags so the Analyst and the Manager can see which channel brings visitors and buyers:
+- Pins: `?utm_source=pinterest&utm_medium=social&utm_campaign=<pin id>`
+- Bio links (set once by Vasil): `https://hikesupplyco.com/pages/links?utm_source=<tiktok|instagram|facebook|youtube>&utm_medium=social&utm_campaign=bio`
+- Facebook post text (links are clickable there): end with the product link plus `?utm_source=facebook&utm_medium=social&utm_campaign=<card code>` only if Metricool allows different text per network; never put links in TikTok or Instagram captions (write "link in bio").
+Read results with the Shopify analytics tool (run-analytics-query, ShopifyQL): sessions and orders grouped by utm source and campaign (or referrer source), last 7 days. Never guess numbers.
+
 # Pinterest department
 
 Agents: Pin Designer, Pin Publisher. Pinterest account: pinterest.com/hikesupplyco, connected to Metricool (network `pinterest`). Boards: Hiking Tips & Checklists; Best Day Hikes in US National Parks; Great Smoky Mountains Hiking; Utah National Parks Road Trip; Hiking Gear Essentials; Hiking Outfits for Men & Women.
