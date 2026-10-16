@@ -18,6 +18,7 @@ export type Outfit = {
   packShade: string;
   pole: string;
   grip: string;
+  ponytail?: string | null;
 };
 
 export const JAKE: Outfit = {
@@ -162,6 +163,9 @@ export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; fl
       <ellipse cx={hx - 3} cy={hy + 3} rx={5.5} ry={7.5} fill={o.skinShade} />
       {/* hair back */}
       <path d={`M${hx - 25},${hy - 2} Q${hx - 26},${hy + 14} ${hx - 14},${hy + 16} L${hx - 9},${hy - 4} Z`} fill={o.hair} />
+      {o.ponytail && (
+        <path d={`M${hx - 20},${hy - 16} Q${hx - 52},${hy - 8} ${hx - 46},${hy + 34} Q${hx - 40},${hy + 44} ${hx - 34},${hy + 30} Q${hx - 34},${hy + 6} ${hx - 16},${hy - 2} Z`} fill={o.ponytail} />
+      )}
       {/* eye + brow */}
       <ellipse cx={hx + 14} cy={hy - 2} rx={2.6} ry={expr === "tired" ? 1.6 : 3} fill="#2a1f1a" />
       <path d={`M${hx + 9},${hy - 9} q6,${expr === "tired" ? 1 : -3} 11,${expr === "tired" ? 2 : 0}`} stroke={o.hair} strokeWidth={2.6} fill="none" strokeLinecap="round" />
@@ -205,7 +209,7 @@ export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; fl
       {p.poles !== false && pole(arms[1], true)}
       <Limb a={arms[1].s} b={arms[1].elbow} c={arms[1].hand} r={[13, 11, 9.5]} fill={o.jacket} />
       {hand(arms[1].hand, o.skin)}
-      <rect x={arms[1].hand[0] - 4} y={arms[1].hand[1] - 28} width={8} height={10} rx={3} fill={o.grip} />
+      {p.poles !== false && <rect x={arms[1].hand[0] - 4} y={arms[1].hand[1] - 28} width={8} height={10} rx={3} fill={o.grip} />}
     </g>
   );
 
