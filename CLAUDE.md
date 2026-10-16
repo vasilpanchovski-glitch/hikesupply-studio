@@ -12,7 +12,7 @@ Operating manual for the four HikeSupply content agents (Strategist, Creator, Pu
 
 - HQ page (approval inbox and agent status): https://claude.ai/artifact/YBL73Gxdrcu89zsFKNn5GQ
   Read and write its database with the ArtifactData tool (`url` = the HQ link). Load it with ToolSearch first.
-- Metricool: blogId / brandId `7464569`, timezone `Europe/Skopje`, networks tiktok, instagram, facebook.
+- Metricool: blogId / brandId `7464569`, timezone `Europe/Skopje`, networks tiktok, instagram, facebook, pinterest, youtube (Shorts).
 - Shopify: the connected Shopify tools. Product names and prices always come from the live store, never from memory.
 - This repo (public): https://github.com/vasilpanchovski-glitch/hikesupply-studio
   Finished videos go in `media/` and are public at
