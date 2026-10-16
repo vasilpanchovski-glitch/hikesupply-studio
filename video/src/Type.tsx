@@ -1,5 +1,8 @@
 import React from "react";
-import { useCurrentFrame } from "remotion";
+import { getInputProps, useCurrentFrame } from "remotion";
+
+// clean=true hides all text, for Pinterest background frames
+export const isClean = () => Boolean((getInputProps() as { clean?: boolean }).clean);
 import { at, C, FPS, outExpo } from "./lib";
 
 export type Word = { w: string; s: number; e: number };
@@ -30,6 +33,7 @@ export const Captions: React.FC<{ words: Word[]; windows: [number, number, numbe
   dark,
 }) => {
   const t = useCurrentFrame() / FPS;
+  if (isClean()) return null;
   const win = windows.find(([a, b]) => t >= a && t < b);
   if (!win) return null;
   const y = win[2];

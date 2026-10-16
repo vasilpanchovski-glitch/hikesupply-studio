@@ -1,0 +1,4 @@
+{"pins": [
+ {"id": "example-1", "layout": "photo", "image": "media/v16.jpg", "kicker": "Fall hiking", "title": "Start cold, stay dry on top", "sub": "The layering rule that keeps you warm at the summit.", "cta": "Read the tip"},
+ {"id": "example-2", "layout": "stone", "kicker": "Checklist", "title": "7 things to pack for a cold day hike", "items": ["Merino base layer", "Fleece mid layer", "Wind shell", "Hat and gloves", "Spare socks in a dry bag"], "cta": "Get the guide"}
+]}

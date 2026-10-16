@@ -173,3 +173,31 @@ Flow: Hunter writes `stage: idea, status: waiting` → Vasil approves → Import
 - Inventory: if the supplier shows a fake huge stock number, set inventory policy CONTINUE; if stock is real and thin, DENY.
 - Descriptions: honest, specific, written from the photos and real specs, never from the supplier's exaggerated title. If something is sold single (one pole, one bottle), say so clearly.
 - After publishing, check the product is actually purchasable on the storefront (supplier apps can create new locations or shipping profiles that make products show "Sold out"). If it shows sold out, set the agent to error and explain.
+
+Note for the Creator: keep the `isClean()` checks in `Title`, `Chip` and `Captions` when you copy `V01.tsx`. `make_video.sh` uses them to export `media/<id>-clean.jpg`, a text-free frame the Pinterest department uses as a pin background.
+
+# Pinterest department
+
+Agents: Pin Designer, Pin Publisher. Pinterest account: pinterest.com/hikesupplyco, connected to Metricool (network `pinterest`). Boards: Hiking Tips & Checklists; Best Day Hikes in US National Parks; Great Smoky Mountains Hiking; Utah National Parks Road Trip; Hiking Gear Essentials; Hiking Outfits for Men & Women.
+
+HQ collection `pins`, one doc per daily batch, doc_id `pb<YYYYMMDD>`:
+`{code, status: waiting|approved|rejected|scheduled|failed, pins: [{id, title, description, board, link, image (raw.githubusercontent URL), preview (HQ asset URL)}], note, createdAt}`
+
+Pin rules:
+- 1000x1500 PNG made with `python3 pins/render_pin.py pins/batches/<code>.json` (layouts: photo, forest, stone, list). Our own images only: `media/*-clean.jpg` frames from our videos. Never use other people's photos.
+- Each pin links to a real page on hikesupplyco.com: a product, a guide, a collection or a Trail Journal article. Check the URL exists.
+- Pin title up to 100 characters, keyword-first ("Cold weather hiking layers: what to wear at 40°F"). Description 1-3 sentences with natural keywords, no hashtag spam.
+- Mix per batch: tips and checklists that lead to guides, gear that leads to products, destination pins that lead to Smokies/Utah packs.
+
+# Blog department
+
+Agent: Blog Writer. Shopify blog "Trail Journal".
+HQ collection `articles`, doc_id `a01`, `a02`, ...:
+`{code, status: waiting|approved|rejected|published|failed, title, keyword, metaDescription, excerpt, body (HTML), links (products and guides linked), shopifyId, url, note, createdAt}`
+Rules: one search intent per article, aimed at questions US hikers actually search; 900-1400 words; useful first, products only where they truly help (2-4 internal links); facts accurate and conservative; no invented statistics; original writing; headings H2/H3; one-colour styling, no emoji.
+
+# Store Doctor
+
+Agent: Store Doctor. HQ collection `fixes`, doc_id `f01`, ...:
+`{code, status: waiting|approved|rejected|applied|failed, area (product, collection, page, pricing, trust, shipping, bundle), title, problem, change (exactly what will be changed), target (product id or URL), note, createdAt}`
+Rules: small, safe, reversible changes only (copy, tags, SEO fields, collection membership, prices within the 2.5x rule, adding size charts, fixing broken links). Never delete products or images, never change payment, shipping profiles or theme code without a fix card Vasil approved that says exactly that. The weekly checklist of bigger ideas goes into `reports` as `doctor-<date>`.

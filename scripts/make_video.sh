@@ -12,6 +12,7 @@ python3 audio/mix.py "specs/$ID.mix.json" "build/${ID}_mix.wav" "build/${ID}_vo.
 cd video
 CORES=$(nproc); [ "$CORES" -gt 4 ] && CORES=4
 npx remotion render src/index.ts "$UP" "../build/${ID}_silent.mp4" --concurrency=$CORES --crf=18 --log=error
+npx remotion still src/index.ts "$UP" "../media/${ID}-clean.jpg" --frame=$((30*22+20)) --props='{"clean":true}' --jpeg-quality=88 --log=error || true
 cd ..
 ffmpeg -loglevel error -y -i "build/${ID}_silent.mp4" -i "build/${ID}_mix.wav" -map 0:v -map 1:a -c:v libx264 -preset slow -b:v 4000k -maxrate 5500k -bufsize 8000k -pix_fmt yuv420p -c:a aac -b:a 192k -ar 48000 -af loudnorm=I=-14:TP=-1.5:LRA=11 -movflags +faststart -shortest "media/$ID.mp4"
 ffmpeg -loglevel error -y -ss 1.2 -i "media/$ID.mp4" -frames:v 1 -q:v 3 "media/$ID.jpg"

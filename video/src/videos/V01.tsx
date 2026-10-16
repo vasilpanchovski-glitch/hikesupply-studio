@@ -4,7 +4,7 @@ import { hikerGeometry, hikerTransform, HikerProps } from "../Hiker";
 import { Person, GUIDE, Outfit } from "../Person";
 import { Grain, Landscape, Palette, Vignette } from "../Landscape";
 import { at, C, FPS, inOut, mix, outExpo } from "../lib";
-import { Captions, SANS, Word } from "../Type";
+import { Captions, SANS, Word, isClean } from "../Type";
 import vo from "../vo/v01.json";
 
 const words = vo.words as unknown as Word[];
@@ -70,6 +70,7 @@ const Title: React.FC<{ text: string; t: number; t0: number; t1?: number; top?: 
   color = "#fff",
 }) => {
   const lines = text.split("\n");
+  if (isClean()) return null;
   return (
     <div style={{ position: "absolute", top, left: 80, right: 80, opacity: at(t, [t1 - 0.3, t1], [1, 0]) }}>
       {lines.map((l, i) => {
@@ -106,7 +107,7 @@ const Chip: React.FC<{ text: string; t: number; t0: number; t1?: number; x: numb
   y,
   icon = "none",
   big,
-}) => (
+}) => isClean() ? null : (
   <div
     style={{
       position: "absolute",
