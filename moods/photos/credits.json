@@ -1,4 +1,44 @@
 {
-  "28750773": {"photographer": "Biren Negi", "url": "https://www.pexels.com/photo/28750773/", "alt": "Mist-covered mountain peak", "used": false},
-  "17719275": {"photographer": "Alis Martini", "url": "https://www.pexels.com/photo/17719275/", "alt": "Dolomite peaks under cloudy skies, Trentino", "used": false}
+ "28750773": {
+  "photographer": "Biren Negi",
+  "url": "https://www.pexels.com/photo/28750773/",
+  "alt": "Mist-covered mountain peak",
+  "used": true
+ },
+ "17719275": {
+  "photographer": "Alis Martini",
+  "url": "https://www.pexels.com/photo/17719275/",
+  "alt": "Dolomite peaks under clouds, Trentino",
+  "used": true
+ },
+ "27667695": {
+  "photographer": "Nanda Gopal Lakshman",
+  "url": "https://www.pexels.com/photo/27667695/",
+  "alt": "Oeschinensee alpine lake, Switzerland",
+  "used": true
+ },
+ "28848588": {
+  "photographer": "Ali Kazal",
+  "url": "https://www.pexels.com/photo/28848588/",
+  "alt": "Mountain peak above an autumn forest",
+  "used": true
+ },
+ "28998072": {
+  "photographer": "Kris Møklebust",
+  "url": "https://www.pexels.com/photo/28998072/",
+  "alt": "Misty forest path in autumn",
+  "used": true
+ },
+ "32056479": {
+  "photographer": "Dusan Stupar",
+  "url": "https://www.pexels.com/photo/32056479/",
+  "alt": "Hiker on a rocky ridge, Montenegro",
+  "used": true
+ },
+ "38891561": {
+  "photographer": "Giuseppe Paoletti",
+  "url": "https://www.pexels.com/photo/38891561/",
+  "alt": "Lone hiker on a snowy ridge",
+  "used": true
+ }
 }

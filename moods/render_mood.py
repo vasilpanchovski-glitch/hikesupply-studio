@@ -21,7 +21,13 @@ def calm_band(path, w, h):
         if best is None or v < best: best, pos = v, p
     return pos
 
-def page(p, w, h, top):
+def band_light(path, w, h, top):
+    im = Image.open(path).convert("L"); sw, sh = im.size; s = max(w / sw, h / sh)
+    im = im.resize((int(sw * s), int(sh * s))); l = (im.width - w) // 2; t = (im.height - h) // 2
+    im = im.crop((l, t, l + w, t + h)); y0 = int(h * top)
+    return ImageStat.Stat(im.crop((int(w * .15), y0, int(w * .85), y0 + int(h * .2)))).mean[0]
+
+def page(p, w, h, top, light=100):
     q = "<br>".join(html.escape(x) for x in p["quote"].split("\n"))
     a = f'<div class="by">{html.escape(p["author"])}</div>' if p.get("author") else ""
     fs = round(w * 0.05)
@@ -30,9 +36,9 @@ def page(p, w, h, top):
 @font-face {{ font-family: I; src: url(file://{ROOT}/pins/Inter.ttf); font-weight: 100 900; }}
 * {{ margin: 0; box-sizing: border-box; }}
 body {{ width: {w}px; height: {h}px; overflow: hidden; background: #111 url(file://{os.path.join(ROOT, p['photo'])}) center/cover no-repeat; position: relative; }}
-.veil {{ position: absolute; left: 0; right: 0; top: {top*100 - 8}%; height: 36%; background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,.28), rgba(0,0,0,0) 70%); }}
+.veil {{ position: absolute; left: 0; right: 0; top: {top*100 - 8}%; height: 36%; background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,{0.22 + max(0, (light - 110) / 145) * 0.38:.2f}), rgba(0,0,0,0) 72%); }}
 .q {{ position: absolute; left: 0; right: 0; top: {top*100}%; display: flex; justify-content: center; }}
-.q div {{ font: 500 {fs}px/1.12 C, serif; color: #fff; letter-spacing: .2px; text-shadow: 0 1px 14px rgba(0,0,0,.35); max-width: {int(w*.78)}px; }}
+.q div {{ font: 500 {fs}px/1.12 C, serif; color: #fff; letter-spacing: .2px; text-shadow: 0 1px 14px rgba(0,0,0,{0.35 + max(0, (light - 110) / 145) * 0.3:.2f}); max-width: {int(w*.78)}px; }}
 .by {{ font: 500 {round(fs*.42)}px/1 I, sans-serif; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,.85); margin-top: {round(fs*.5)}px; text-shadow: 0 1px 8px rgba(0,0,0,.4); }}
 .h {{ position: absolute; left: 0; right: 0; bottom: {round(h*.035)}px; text-align: center; font: 500 {round(w*.019)}px/1 I, sans-serif; letter-spacing: 4px; color: rgba(255,255,255,.78); text-shadow: 0 1px 8px rgba(0,0,0,.5); }}
 </style></head><body><div class="veil"></div><div class="q"><div>{q}{a}</div></div><div class="h">@HIKESUPPLYCO</div></body></html>"""
@@ -48,7 +54,7 @@ with sync_playwright() as pw:
             place = p.get("place", "auto")
             top = {"top": 0.16, "middle": 0.4, "bottom": 0.6}.get(place) or calm_band(os.path.join(ROOT, p["photo"]), w, h)
             pg = b.new_page(viewport={"width": w, "height": h})
-            tmp = os.path.join(ROOT, "moods", "_tmp.html"); open(tmp, "w").write(page(p, w, h, top))
+            tmp = os.path.join(ROOT, "moods", "_tmp.html"); open(tmp, "w").write(page(p, w, h, top, band_light(os.path.join(ROOT, p["photo"]), w, h, top)))
             pg.goto("file://" + tmp); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(300)
             if pg.evaluate("document.querySelector('.q div').getBoundingClientRect().bottom") > h * 0.9:
                 print("TOO LONG", p["id"], key); pg.close(); continue
