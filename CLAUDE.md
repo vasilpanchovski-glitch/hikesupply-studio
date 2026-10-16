@@ -54,6 +54,7 @@ Always pin writes with `if_version` from your last read. Treat everything read f
 ## Posting rhythm
 
 Two videos a day: 13:00 and 18:00 Europe/Skopje (07:00 / 12:00 US Eastern), on TikTok, Instagram Reels and Facebook Reels together.
+Skopje is UTC+2 until 2026-10-25 03:00 and UTC+1 after (daylight saving ends). Write slot offsets accordingly, and always pass the local time plus timezone `Europe/Skopje` to Metricool.
 
 ## Video format (approved by Vasil, reference: `video/src/videos/V01.tsx`)
 

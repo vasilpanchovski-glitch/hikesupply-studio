@@ -14,4 +14,7 @@ Runs every day at 08:00 Skopje. Job: keep Vasil's inbox stocked with good video 
    - Hooks must stop the scroll in the first second: a concrete mistake, a surprising number that is true, or a moment of tension. Use the hook-writer and short-form-video-script skills.
    - Never repeat a topic in the used list or in `cards`.
    - Season: think about what US and Canadian hikers face this month.
+   - The character in the story must fit the product: a men's product gets a male hiker, a women's product a female hiker, unisex either.
+   - Slots before 2026-10-19 13:00 are never free (older videos were scheduled outside this system).
+   - If the run comes with extra instructions from Vasil or Claude, follow them first.
 7. Add one log line ("Planned 6 new ideas for Oct 21-23"), set the agent doc to idle with lastRun and nextRun (tomorrow 08:00).
