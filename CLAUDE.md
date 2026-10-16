@@ -91,3 +91,42 @@ Topics already used (do not repeat): trekking pole height, neck gaiter, heel-loc
 - Never spend money or start paid plans. Never use Higgsfield credits.
 - Plain, short, friendly wording in anything Vasil reads. No bold markdown.
 - If something is broken (render fails, Metricool rejects, a tool is missing), set your agent doc to `error` with one plain sentence, add a log line, and stop. Do not loop.
+
+# Digital Products department
+
+Three more agents: Product Scout, Product Maker, Launch Manager. They make and sell digital downloads (PDF guides, checklists, planners, journals, printables) in the HikeSupply look.
+
+## HQ database: collection `products`
+
+doc_id = product code (`p01`, `p02`, ...):
+
+| field | meaning |
+|---|---|
+| code | same as doc_id |
+| stage | `idea` → `draft` → `live` |
+| status | `waiting` (in Vasil's inbox), `approved`, `rejected`, `building`, `listing`, `done`, `failed`, `replaced` |
+| title | product name as it will appear in the store |
+| format | guide, checklist, planner, journal, printable, bundle |
+| price | USD, e.g. `7.99` |
+| pages | page count |
+| pitch | one or two sentences: who buys it and why |
+| evidence | what the market research found: best-selling similar products, their prices, review complaints we can fix, with source links |
+| outline | page-by-page plan |
+| preview | list of HQ asset URLs of page images (draft stage) |
+| pdf | HQ asset URL of the finished PDF |
+| cover | HQ asset URL of the square store image |
+| shopifyId, productUrl | set by the Launch Manager |
+| note | Vasil's comment when he rejects |
+
+Agent docs in `agents`: `scout`, `maker`, `launcher`.
+Collection `requests`: messages between agents, `{at, from, to, type, text, done}`. The Launch Manager writes `{to: "strategist", type: "launch"}` when a product goes live; the Strategist plans two launch videos for it and sets `done: true`.
+
+## Product rules
+
+- Research the niche market, not our own sales (the store has no sales history yet). Model the product TYPES, page structures and price points that sell well in the hiking niche (Etsy, Gumroad, Amazon KDP journals, Pinterest), then write fully original content in our own words and design. Never copy text, images, layouts or names from another seller.
+- Audience: US and Canadian hikers, beginners to intermediate. Units in both imperial and metric.
+- Every safety or medical statement must be accurate and conservative. When in doubt, tell the reader to check official sources (NPS, park rangers, local regulations).
+- Design kit: `products/_kit/brand.css` (US Letter pages, Fraunces headings, Inter body, forest/clay/stone palette). Look at `products/_example` for the building blocks. Headlines are one colour: no coloured italic accent words.
+- Every product is HTML pages in `products/<code>/index.html` plus `products/<code>/meta.json` (`{slug, title, price}`), built with `python3 products/build_pdf.py products/<code>`. The builder refuses pages whose content overflows; fix and rebuild.
+- Products the cloud machines cannot make alone: GPX route bundles (map and elevation sites are blocked). Do not propose GPX products.
+- Existing catalogue (do not duplicate): Free Hiking Checklist, Beginner's Hiking Guide, Packing Checklist, Trip Planner, Beginner Hiker Bundle, Safety Guide, Solo Hiking Guide, Emergency Checklist, What To Do If You Get Lost, Ultimate Hiker's Toolkit, Beginner-Friendly Trails USA GPX, Great Smoky Mountains GPX bundle + Trip Planning Guide + Trip Pack, Utah's Mighty 5 GPX bundle + Trip Planning Guide + Trip Pack. Check Shopify for anything newer.
