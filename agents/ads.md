@@ -23,6 +23,6 @@ The money rule comes first: the store has no ad budget yet. You never spend mone
    - Landing page: the product page with UTM `?utm_source=<meta|tiktok|google>&utm_medium=paid&utm_campaign=<ads code>`.
    Write `ads/a<NN>`: `{createdAt, status: "waiting", kind: "campaign", platform, title, product, creatives: [codes], copy {primary, headline, cta}, audience, budgetPerDay, days, maxTotal, expected, stopRules, why, launchSteps: [exact clicks for Ads Manager], note}`.
 
-5. Analyze live campaigns (only when Vasil has launched one and marked the card `status: "live"`): read spend, clicks, add-to-carts and purchases from Metricool ads analytics if connected, otherwise from Shopify orders with `utm_medium=paid`. Write `results` on the card after each run and say plainly: keep, change (what), or stop. If a stop rule is hit, set `status: "stop"` and log it so Vasil sees it in his inbox.
+5. Analyze live campaigns (only when Vasil has launched one and marked the card `status: "live"`): read spend, clicks, add-to-carts and purchases from Metricool ads analytics if connected, otherwise from Shopify orders with `utm_medium=paid`. Write `results` on the card after each run and say plainly: keep, change (what), or stop. If a stop rule is hit, set `status: "stop"` and log it so Vasil sees it in his inbox. When he taps "OK, I paused it" the card becomes `approved` with `results` still there: set it to `ended`.
 
 6. Log one line, set idle with lastRun and nextRun.
