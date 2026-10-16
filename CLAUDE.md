@@ -219,4 +219,20 @@ Agent: Store Manager (`agents/manager.md`), the summit of the HQ. Runs 08:22 dai
 HQ collection `briefings`, doc_id `b<YYYYMMDD>`: `{createdAt, date, text, sales {orders, revenue}, needsYou}`.
 HQ collection `plans`, doc_id `w<YYYY-MM-DD of the Monday>`: `{createdAt, week, status: waiting|approved|rejected, focus: [3 lines], text, note}`. Vasil approves the plan.
 
-When the Manager sends something back, the `note` starts with "Manager:". Fix it the same way as one of Vasil's notes. Pins and articles the Manager rejects go back to him, not to Vasil.
+When the Manager sends something back, the `note` starts with "Manager:". Fix it the same way as one of Vasil's notes. Pins and articles the Manager rejects go back to him, not to Vasil. The Manager also approves `seo` batches.
+
+# Search & Google department
+
+Agent: Search Specialist (`agents/seo.md`), daily 14:22. HQ collection `seo`, doc_id `s<YYYYMMDD>`: `{createdAt, status: waiting|approved|rejected|applied, title, changes: [{target, name, field, old, new}], failed, note}`. The Store Manager approves `seo` batches (copy-only, reversible), like pins and articles. Google Search Console is verified for hikesupplyco.com and the sitemap is submitted.
+
+# Sales & Promotions department
+
+Agent: Sales Planner (`agents/merch.md`), Mondays and Thursdays 15:52. HQ collection `offers`, doc_id `o01`...: `{createdAt, status: waiting|approved|rejected|live|scheduled|ended|failed, kind: pairing|bundle|code|sale|threshold, title, why, change, startsAt, endsAt, note}`. Vasil approves every offer.
+
+# Order Desk
+
+Agent: Order Desk (`agents/orderdesk.md`), daily 09:07 and 21:07. HQ collection `orderdesk`, doc_id `od<order number>`: `{createdAt, status: waiting|approved|rejected|manual|done, order, customer, issue, action, draftReply, note}`. Vasil approves actions. The agent never touches money.
+
+# Finance
+
+Agent: Finance (`agents/finance.md`), daily 07:37. HQ collection `money`: `latest` (dashboard numbers), `fixed` (monthly fixed costs), `w<date>` (weekly summaries). Real numbers only.

@@ -19,7 +19,7 @@ Start every run by setting `agents/manager` to working with a one-line task. End
 
 Trigger ids: strategist trig_01Kagp2Qr6VcGpuKmx3ggY6k, creator trig_01H7gkxAtg35hjABTyj5w4eh, publisher trig_01FxeGJtDkndUyboTEKVTP3h, analyst trig_01A6Jd8CYa3Rk5VLGEAXM5uY, scout trig_012KMfP6x8TLvZTDSYtZzbuW, maker trig_01RimFEAYMKg7QnH4PzhThAX, launcher trig_019zRH7abq8qvwrB3bEzGHU8, hunter trig_01DHzLttTVNQA5D3h7t7LCn8, editor trig_01L7zy97kZ7x5Y1QxAPFHvwn, pindesigner trig_014KX9S7aPk71quVojwofJPb, pinner trig_01EAJBGNv2qhVyGEbi1c2zyA, blogwriter trig_01JdwDBfcvQEwphg3MsEr6sv, doctor trig_013R7cXetBQUUjTccFG5QTV6.
 
-## 2. Approve pins and articles (gate run, and morning run if anything is waiting)
+## 2. Approve pins, articles and Google fixes (gate run, and morning run if anything is waiting)
 
 Vasil handed these two approvals to the Manager. Review each `waiting` doc in `pins` and `articles` carefully and decide.
 
@@ -39,11 +39,13 @@ Decision:
 - Something fixable: `status: rejected`, `approvedBy: "manager"`, `note` with exactly what to change. The designer or writer fixes it on their next run and it comes back to you, not to Vasil.
 - Log every decision in one line, e.g. "Manager approved pin batch pb20261017 (5 pins)".
 
-Only pins and articles. Videos, digital products, gear and store fixes stay with Vasil. Never set those to approved.
+SEO batches (`seo` collection): check each change is accurate for the product, within the character limits, not keyword-stuffed, and never changes titles, handles or URLs. Approve or send back the same way.
+
+Only pins, articles and SEO batches. Offers, order actions, videos, digital products, gear and store fixes stay with Vasil. Never set those to approved.
 
 ## 3. Quality gate for Vasil's inbox (gate run)
 
-Look at every `waiting` doc in `cards`, `products`, `gear` and `fixes` that you have not checked yet (no `managerChecked` field). Send it back to its agent (`status: rejected`, note starting "Manager:") only for clear, objective faults:
+Look at every `waiting` doc in `cards`, `products`, `gear`, `fixes` and `offers` that you have not checked yet (no `managerChecked` field). Send it back to its agent (`status: rejected`, note starting "Manager:") only for clear, objective faults:
 - product name or price does not match live Shopify
 - the story's character does not fit the product (e.g. a woman's story ending on a men's item)
 - a topic already used (see CLAUDE.md list and the `cards` collection)
@@ -57,6 +59,8 @@ Otherwise set `managerChecked: true` and leave it for Vasil. When unsure, leave 
 - If something is selling or a post is doing clearly better than the rest, write a `requests` doc to the agent that should act on it: `{at, from: "manager", to: "<agent>", type: "focus", text, done: false}`. Examples: to strategist "Make one video for the Ice Cleats this week, they sold twice", to pindesigner "Two pins for the Winter Hiking Guide". At most 3 requests a day. Agents mark them done.
 
 ## 5. Briefing (morning run)
+
+Read `money/latest` (Finance runs at 07:37) and use its numbers for sales; open `orderdesk` issues count as things for Vasil.
 
 Write `briefings/b<YYYYMMDD>` (Skopje date): `{createdAt, date, text, sales, needsYou}`
 - text: plain and short, max about 8 lines, no bold, no emoji. Yesterday in one line (orders and revenue from Shopify, best post if known), what the teams did, what you approved or sent back, top 3 priorities today, and anything only Vasil can do.
