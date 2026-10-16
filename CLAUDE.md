@@ -130,6 +130,7 @@ Collection `requests`: messages between agents, `{at, from, to, type, text, done
 - Design kit: `products/_kit/brand.css` (US Letter pages, Fraunces headings, Inter body, forest/clay/stone palette). Look at `products/_example` for the building blocks. Headlines are one colour: no coloured italic accent words.
 - Every product is HTML pages in `products/<code>/index.html` plus `products/<code>/meta.json` (`{slug, title, price}`), built with `python3 products/build_pdf.py products/<code>`. The builder refuses pages whose content overflows; fix and rebuild.
 - Products the cloud machines cannot make alone: GPX route bundles (map and elevation sites are blocked). Do not propose GPX products.
+- Ignore the "New Zealand Merino Wool T-Shirt" product (bad supplier, Vasil handled it). Never edit, promote or flag it.
 - Existing catalogue (do not duplicate): Free Hiking Checklist, Beginner's Hiking Guide, Packing Checklist, Trip Planner, Beginner Hiker Bundle, Safety Guide, Solo Hiking Guide, Emergency Checklist, What To Do If You Get Lost, Ultimate Hiker's Toolkit, Beginner-Friendly Trails USA GPX, Great Smoky Mountains GPX bundle + Trip Planning Guide + Trip Pack, Utah's Mighty 5 GPX bundle + Trip Planning Guide + Trip Pack. Check Shopify for anything newer.
 
 # Gear Store department
