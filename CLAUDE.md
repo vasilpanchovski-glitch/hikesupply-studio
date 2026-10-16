@@ -236,3 +236,8 @@ Agent: Order Desk (`agents/orderdesk.md`), daily 09:07 and 21:07. HQ collection 
 # Finance
 
 Agent: Finance (`agents/finance.md`), daily 07:37. HQ collection `money`: `latest` (dashboard numbers), `fixed` (monthly fixed costs), `w<date>` (weekly summaries). Real numbers only.
+
+# Ads department
+
+Agent: Ads Manager (`agents/ads.md`), Wednesdays and Saturdays 16:22. HQ collection `ads`: `tracking` (pixel and tag health) and `a<NN>` cards `{status: waiting|approved|rejected|live|stop|ended, kind: campaign|setup, platform, title, product, creatives, copy, audience, budgetPerDay, days, maxTotal, expected, stopRules, why, launchSteps, results, note}`.
+The store has no ad budget yet. The Ads Manager never spends money and never launches or unpauses a campaign. Vasil approves a card with an exact daily budget and total cap, then launches it himself.
