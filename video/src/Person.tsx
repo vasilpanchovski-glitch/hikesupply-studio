@@ -169,6 +169,7 @@ export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; fl
       {/* eye + brow */}
       <ellipse cx={hx + 14} cy={hy - 2} rx={2.6} ry={expr === "tired" ? 1.6 : 3} fill="#2a1f1a" />
       <path d={`M${hx + 9},${hy - 9} q6,${expr === "tired" ? 1 : -3} 11,${expr === "tired" ? 2 : 0}`} stroke={o.hair} strokeWidth={2.6} fill="none" strokeLinecap="round" />
+      {o.ponytail && <path d={`M${hx + 15.5},${hy - 4.5} l5,-3.5 M${hx + 13},${hy - 5} l2,-4`} stroke="#2a1f1a" strokeWidth={1.8} strokeLinecap="round" />}
       {expr === "tired" && <path d={`M${hx + 9},${hy + 3} q5,2 9,0`} stroke={o.skinShade} strokeWidth={1.8} fill="none" />}
       {/* cheek */}
       <ellipse cx={hx + 8} cy={hy + 8} rx={6} ry={4} fill="#d9826a" opacity={expr === "tired" ? 0.5 : 0.25} />

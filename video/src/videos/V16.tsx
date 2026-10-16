@@ -29,7 +29,7 @@ const SUMMIT: Palette = {
   mist: "#ffe6c2",
 };
 
-const FLEECE = { jacket: "#2F5D8C", jacketShade: "#234868" };
+const FLEECE = { jacket: "#B83A55", jacketShade: "#8E2B42" };
 const MAYA: Outfit = {
   ...GUIDE,
   ...FLEECE,
@@ -45,7 +45,7 @@ const MAYA: Outfit = {
   pack: "#3E5F4B",
   packShade: "#2E4A39",
 };
-const BASE = { jacket: "#4E9A8E", jacketShade: "#3A7A70" };
+const BASE = { jacket: "#5E8FA8", jacketShade: "#4A7389" };
 const OLD: Outfit = { ...GUIDE, jacket: "#7A5A3A", jacketShade: "#5E452C", cap: "#3E4F5C", capShade: "#2C3943" };
 
 const Drops: React.FC<{ p: HikerProps; t: number; on: number }> = ({ p, t, on }) => {
@@ -154,7 +154,7 @@ const S2: React.FC<{ off: number }> = ({ off }) => {
       <Scrim />
       <Chip text="Wet shirt" t={t} t0={7.0} t1={8.8} x={80} y={560} icon="x" />
       <Chip text="Cold wind" t={t} t0={7.5} t1={8.8} x={80} y={660} icon="x" />
-      <Readout label="FEELS" value="ICE COLD" ok={false} t={t} t0={8.0} t1={8.8} x={80} y={760} />
+      <Readout label="FEELS" value="ICE COLD" ok={false} t={t} t0={7.9} t1={8.85} x={80} y={760} />
     </AbsoluteFill>
   );
 };
@@ -242,15 +242,15 @@ const S4: React.FC<{ off: number }> = ({ off }) => {
 const FleeceArt: React.FC<{ lt: number }> = ({ lt }) => {
   const s = at(lt, [0.2, 1.1], [0.85, 1], outExpo);
   const o = at(lt, [0.1, 0.5], [0, 1]);
-  const J = "#2F5D8C";
-  const JS = "#234868";
+  const J = "#B83A55";
+  const JS = "#8E2B42";
   return (
     <g transform={`translate(540,540) scale(${s})`} opacity={o}>
       {/* sleeves */}
       <path d="M-150,-235 Q-215,-215 -245,-120 L-300,190 Q-300,215 -270,218 L-215,222 Q-195,220 -192,195 L-160,-40 Z" fill={JS} />
       <path d="M150,-235 Q215,-215 245,-120 L300,190 Q300,215 270,218 L215,222 Q195,220 192,195 L160,-40 Z" fill={J} />
-      <rect x={-300} y={190} width={88} height={34} rx={10} fill="#1d2f42" transform="rotate(4,-256,207)" />
-      <rect x={212} y={190} width={88} height={34} rx={10} fill="#1d2f42" transform="rotate(-4,256,207)" />
+      <rect x={-300} y={190} width={88} height={34} rx={10} fill="#5a1d2c" transform="rotate(4,-256,207)" />
+      <rect x={212} y={190} width={88} height={34} rx={10} fill="#5a1d2c" transform="rotate(-4,256,207)" />
       {/* body */}
       <path d="M-160,-240 Q-80,-275 0,-270 Q80,-275 160,-240 L178,300 Q0,322 -178,300 Z" fill={J} />
       <path d="M-160,-240 Q-80,-275 0,-270 L0,312 Q-90,312 -178,300 Z" fill={JS} opacity={0.45} />
@@ -261,17 +261,17 @@ const FleeceArt: React.FC<{ lt: number }> = ({ lt }) => {
         return <circle key={i} cx={x} cy={y} r={3} fill="rgba(255,255,255,0.07)" />;
       })}
       {/* hem band */}
-      <path d="M-178,272 Q0,294 178,272 L178,302 Q0,324 -178,302 Z" fill="#1d2f42" />
+      <path d="M-178,272 Q0,294 178,272 L178,302 Q0,324 -178,302 Z" fill="#5a1d2c" />
       {/* collar */}
       <path d="M-78,-268 L-70,-338 Q0,-354 70,-338 L78,-268 Q0,-248 -78,-268 Z" fill={JS} />
       {/* zip */}
-      <line x1={0} y1={-346} x2={0} y2={316} stroke="#13202c" strokeWidth={7} />
+      <line x1={0} y1={-346} x2={0} y2={316} stroke="#3d121d" strokeWidth={7} />
       <rect x={-9} y={-300} width={18} height={40} rx={5} fill="#c9ced2" />
       {/* chest pocket */}
-      <line x1={50} y1={-150} x2={130} y2={-120} stroke="#13202c" strokeWidth={6} strokeLinecap="round" />
+      <line x1={50} y1={-150} x2={130} y2={-120} stroke="#3d121d" strokeWidth={6} strokeLinecap="round" />
       {/* hand pockets */}
-      <line x1={-150} y1={60} x2={-110} y2={190} stroke="#13202c" strokeWidth={6} strokeLinecap="round" />
-      <line x1={150} y1={60} x2={110} y2={190} stroke="#13202c" strokeWidth={6} strokeLinecap="round" />
+      <line x1={-150} y1={60} x2={-110} y2={190} stroke="#3d121d" strokeWidth={6} strokeLinecap="round" />
+      <line x1={150} y1={60} x2={110} y2={190} stroke="#3d121d" strokeWidth={6} strokeLinecap="round" />
     </g>
   );
 };
@@ -283,7 +283,7 @@ const S5: React.FC<{ off: number }> = ({ off }) => {
     <EndCard
       lt={lt}
       art={<FleeceArt lt={lt} />}
-      spec="MEN'S · 320G POLAR FLEECE · WIND-BLOCKING"
+      spec="WOMEN'S · 320G POLAR FLEECE MID-LAYER"
       name={
         <>
           Polar Fleece
