@@ -1,0 +1,7 @@
+node_modules/
+video/out/
+build/
+voice/models/
+video/public/vo/
+__pycache__/
+*.pyc
