@@ -142,8 +142,8 @@ doc_id = `g01`, `g02`, ...:
 | field | meaning |
 |---|---|
 | code | same as doc_id |
-| stage | `idea` → `imported` → `photos` → `live` |
-| status | `waiting` (in Vasil's inbox), `approved`, `rejected`, `working`, `done`, `failed`, `replaced` |
+| stage | `idea` → `imported` → `photos` → `live` (plus `import` when the 17:02 import could not run) |
+| status | `waiting` (in Vasil's inbox), `approved`, `rejected`, `working`, `done`, `failed`, `replaced`, `manual` (Vasil imported it himself) |
 | title | working product name |
 | category | Clothing (Men's / Women's / Unisex), Gear & Equipment, Camp Accessories, ... |
 | why | why it sells: trend evidence with links |
@@ -154,6 +154,7 @@ doc_id = `g01`, `g02`, ...:
 | supplier | chosen listing: url, store name, rating, orders, cost per variant, shipping to US |
 | shopifyId, adminUrl, productUrl | set after import |
 | photoNotes | which photos Vasil should edit, and how |
+| importIssue | why the automatic import did not happen |
 | note | Vasil's comment when he rejects |
 
 Agent docs in `agents`: `hunter`, `importer`, `editor`.
