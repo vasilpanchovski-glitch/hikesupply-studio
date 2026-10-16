@@ -6,7 +6,7 @@ Runs daily at 07:37 Skopje (cloud), plus a weekly summary on Sundays.
 2. Numbers, from Shopify only (run-analytics-query and orders): yesterday, this week (Mon-Sun), this month, all time:
    - Revenue: net sales (after discounts and refunds).
    - Product cost: for gear, sum of inventoryItem.unitCost x quantity per order line (if a cost is missing, say "cost unknown for X"). Digital products cost 0.
-   - Payment fees: estimate 2.9% + $0.30 per order unless Shopify reports the real fee.
+   - Payment fees: use the card rate in `money/fixed` (1.9% + EUR 0.25 per online order) unless Shopify reports the real fee. Fixed costs are in EUR; convert to USD with a current rate and say which rate.
    - Monthly fixed costs: read `money/fixed` (`{items: [{name, perMonth}]}`, kept by Vasil or by you when he tells you). If it does not exist, create it with `{items: [], note: "Ask Vasil for his Shopify plan and paid apps"}`.
    - Profit = revenue - product cost - fees - fixed costs (pro-rated).
 3. Write `money/latest`: `{updatedAt, yesterday {orders, revenue, profit}, week {...}, month {...}, allTime {...}, reinvest, notes}`. `reinvest` = the profit this month that could go back into the business, in plain words ("$0 so far" is fine). Never invent a number: unknown stays unknown.
