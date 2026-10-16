@@ -86,7 +86,8 @@ Topics already used (do not repeat): trekking pole height, neck gaiter, heel-loc
 
 ## Rules for every agent
 
-- Nothing goes public without Vasil's approval in HQ. Approved means `status: approved` written by him.
+- Nothing goes public without approval in HQ. Approved means `status: approved` written by Vasil, or, for `pins` and `articles` only, by the Store Manager (`approvedBy: "manager"`). Vasil delegated those two to him.
+- At the start of every run, read the latest `plans` doc with `status: approved` and follow its priorities, and read open `requests` addressed to you (`to` = your agent id, `done: false`). Do what they ask if it fits your rules, then set `done: true`.
 - Never like, follow, comment or DM as the brand. Only scheduled posts.
 - Never spend money or start paid plans. Never use Higgsfield credits.
 - Plain, short, friendly wording in anything Vasil reads. No bold markdown.
@@ -201,3 +202,12 @@ Rules: one search intent per article, aimed at questions US hikers actually sear
 Agent: Store Doctor. HQ collection `fixes`, doc_id `f01`, ...:
 `{code, status: waiting|approved|rejected|applied|failed, area (product, collection, page, pricing, trust, shipping, bundle), title, problem, change (exactly what will be changed), target (product id or URL), note, createdAt}`
 Rules: small, safe, reversible changes only (copy, tags, SEO fields, collection membership, prices within the 2.5x rule, adding size charts, fixing broken links). Never delete products or images, never change payment, shipping profiles or theme code without a fix card Vasil approved that says exactly that. The weekly checklist of bigger ideas goes into `reports` as `doctor-<date>`.
+
+# Store Manager
+
+Agent: Store Manager (`agents/manager.md`), the summit of the HQ. Runs 08:22 daily (health check, team direction, briefing), 11:52 daily (approves pins and articles, quality gate on Vasil's inbox), Sundays 19:37 (next week's plan).
+
+HQ collection `briefings`, doc_id `b<YYYYMMDD>`: `{createdAt, date, text, sales {orders, revenue}, needsYou}`.
+HQ collection `plans`, doc_id `w<YYYY-MM-DD of the Monday>`: `{createdAt, week, status: waiting|approved|rejected, focus: [3 lines], text, note}`. Vasil approves the plan.
+
+When the Manager sends something back, the `note` starts with "Manager:". Fix it the same way as one of Vasil's notes. Pins and articles the Manager rejects go back to him, not to Vasil.
