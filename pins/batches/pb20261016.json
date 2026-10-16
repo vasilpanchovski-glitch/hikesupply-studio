@@ -1,0 +1,7 @@
+{"pins": [
+ {"id": "pb20261016-1", "layout": "photo", "image": "media/v01-clean.jpg", "kicker": "Trekking poles", "title": "Set your pole height right", "sub": "Elbows at about 90 degrees on flat ground. A bit shorter going up, a bit longer coming down.", "cta": "Shop the pole"},
+ {"id": "pb20261016-2", "layout": "stone", "kicker": "Day hike checklist", "title": "What to pack for a day hike", "items": ["Water and snacks, plus extra", "Map, phone and a power bank", "Rain shell and a warm layer", "Headlamp and first-aid kit", "Whistle and sun protection"], "cta": "Read the list"},
+ {"id": "pb20261016-3", "layout": "forest", "image": "media/v16-clean.jpg", "kicker": "Fall layering", "title": "Start cold on the climb", "sub": "Begin a little chilly so you don't sweat. Put the fleece on at breaks and at the top.", "cta": "Shop the fleece"},
+ {"id": "pb20261016-4", "layout": "forest", "image": "media/v18-clean.jpg", "kicker": "Great Smoky Mountains", "title": "Fall color without the crowds", "sub": "Buy your parking tag before you arrive and start at sunrise on a weekday.", "cta": "Plan your trip"},
+ {"id": "pb20261016-5", "layout": "forest", "image": "media/v17-clean.jpg", "kicker": "Fall hiking safety", "title": "Hiking in hunting season", "sub": "Check local season dates, wear blaze orange on your body and pack, and stay on the trail.", "cta": "Get the guide"}
+]}
