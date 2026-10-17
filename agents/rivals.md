@@ -20,7 +20,7 @@ Keep the list in `market/rivals.json` in the repo (and a copy in HQ `rivals/list
    - product gaps or better versions of what sells → `requests` to `scout` (type "idea"), with evidence and links;
    - pricing and offer ideas (their price bands, bundle structures, seasonal sales) → `requests` to `merch`;
    - content angles and hooks that work in the niche → `requests` to `strategist` and `pindesigner`;
-   - keywords and questions buyers use → `requests` to `seo` and `blogwriter`;
+   - keywords and questions buyers use → `requests` to `seo` and `blogwriter`, and add real buyer questions to `market/ai-questions.json` (keep it under 30);
    - complaints we can solve (missing metric units, no Canadian info, hard to print, too generic) → `requests` to `maker`.
    At most 6 requests a run. Each `{at, from: "rivals", to, type, text (plain, specific, with links), done: false}`.
 4. Write `rivals/r<YYYY-MM-DD>`: `{createdAt, title: "Market watch <date>", headline (one sentence: the most important thing), changes: [short lines], opportunities: [short lines, what we will do], sent: [agent ids], text}`. Plain words, short, for Vasil to read in one minute. Update `rivals/list` with the current list.

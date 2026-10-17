@@ -234,6 +234,10 @@ When the Manager sends something back, the `note` starts with "Manager:". Fix it
 
 Agent: Search Specialist (`agents/seo.md`), daily 14:22. HQ collection `seo`, doc_id `s<YYYYMMDD>`: `{createdAt, status: waiting|approved|rejected|applied, title, changes: [{target, name, field, old, new}], failed, note}`. The Store Manager approves `seo` batches (copy-only, reversible), like pins and articles. Google Search Console is verified for hikesupplyco.com and the sitemap is submitted.
 
+## AI answers (ChatGPT, Perplexity, Google AI)
+
+Goal: AI assistants recommend hikesupplyco.com when hikers ask questions we answer well. The Search Specialist audits `market/ai-questions.json` every Monday (WebSearch, what ranks and who gets cited), counts visits from AI tools in Shopify analytics, adds plain answer summaries and FAQs to product pages (`field: "answer"`), and sends answer-page requests to the Blog Writer. HQ collection `aiwatch`, doc `w<YYYY-MM-DD>`. Never fake reviews, never post on Reddit or forums as the brand, never invent numbers.
+
 # Sales & Promotions department
 
 Agent: Sales Planner (`agents/merch.md`), Mondays and Thursdays 15:52. HQ collection `offers`, doc_id `o01`...: `{createdAt, status: waiting|approved|rejected|live|scheduled|ended|failed, kind: pairing|bundle|code|sale|threshold, title, why, change, startsAt, endsAt, note}`. Vasil approves every offer.
