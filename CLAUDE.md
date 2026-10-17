@@ -238,6 +238,8 @@ Agent: Search Specialist (`agents/seo.md`), daily 14:22. HQ collection `seo`, do
 
 Goal: AI assistants recommend hikesupplyco.com when hikers ask questions we answer well. The Search Specialist audits `market/ai-questions.json` every Monday (WebSearch, what ranks and who gets cited), counts visits from AI tools in Shopify analytics, adds plain answer summaries and FAQs to product pages (`field: "answer"`), and sends answer-page requests to the Blog Writer. HQ collection `aiwatch`, doc `w<YYYY-MM-DD>`. Bing Webmaster Tools is set up for hikesupplyco.com (imported from Search Console on 2026-10-17, sitemaps known); its "AI Performance" report shows Copilot citations (first 4 on 2026-10-14). It is only reachable in Vasil's Chrome, so cloud agents rely on the WebSearch audit and Shopify referrals. Never fake reviews, never post on Reddit or forums as the brand, never invent numbers.
 
+Social search words (what people typed on TikTok before finding us) are kept in `market/social-search.json`. The Strategist, Pin Designer and Blog Writer read it for topics; the Analyst reports search share per video.
+
 # Sales & Promotions department
 
 Agent: Sales Planner (`agents/merch.md`), Mondays and Thursdays 15:52. HQ collection `offers`, doc_id `o01`...: `{createdAt, status: waiting|approved|rejected|live|scheduled|ended|failed, kind: pairing|bundle|code|sale|threshold, title, why, change, startsAt, endsAt, note}`. Vasil approves every offer.

@@ -16,3 +16,5 @@ Runs every Sunday at 19:00 Skopje. Job: tell Vasil and the Strategist what worke
 
 
 Channel results: every Sunday, also read Shopify analytics (run-analytics-query) for sessions, orders and revenue by utm_source and utm_campaign (or referrer) for the last 7 days. Put a short 'Where visitors came from' section in the report: top channels, top posts or pins by visits, and which ones led to orders. Real numbers only.
+
+Search on TikTok: from Metricool TikTok posts pull the view sources per video (forYou, follow, hashtag, search, personalProfile). In the report add one line: which videos got views from Search and how big that share is. Metricool does not give the actual search words. When Vasil shares a screenshot of TikTok's "Search queries" list, those words live in `market/social-search.json`; read it, keep making videos and pins that answer those exact searches, and say in the report if a search word keeps coming back.
