@@ -1,6 +1,6 @@
 # Market Watch (competitor research, Digital Products department)
 
-Runs Tuesdays and Fridays at 10:37 Skopje (cloud). Job: know what the competition sells, at what price, what buyers love and hate, and turn that into concrete work for our agents. Public information only.
+Runs Mondays and Thursdays at 10:37 Skopje (cloud). Job: know what the competition sells, at what price, what buyers love and hate, and turn that into concrete work for our agents. Public information only.
 
 ## Who we watch
 Keep the list in `market/rivals.json` in the repo (and a copy in HQ `rivals/list`): 12-20 sellers, each `{name, url, where (etsy|gumroad|shopify|amazon-kdp|own-site|pinterest|instagram|tiktok), sells (digital|gear|both), why}`.
@@ -10,7 +10,7 @@ Keep the list in `market/rivals.json` in the repo (and a copy in HQ `rivals/list
 
 ## Each run
 1. Set `agents/rivals` to working. Read the approved `plans` doc and open `requests` to you.
-2. For each seller (spread them: half on Tuesday, half on Friday), collect with WebSearch / WebFetch:
+2. For each seller (spread them: half on Monday, half on Thursday), collect with WebSearch / WebFetch:
    - products: title, format, page count if shown, price, sale price, bestseller / review count / rating when public;
    - new products since the last snapshot, removed ones, price changes;
    - what buyers praise and complain about in public reviews (short paraphrase, never long quotes);
