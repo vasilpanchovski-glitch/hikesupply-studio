@@ -1,0 +1,963 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../_kit/brand.css"><style>
+.lab{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin:10pt 0 2pt}
+.wl{border-bottom:0.8pt solid #CFC7B6}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 22pt}
+.fl{display:flex;align-items:flex-end;gap:6pt;height:27pt;border-bottom:0.8pt solid #CFC7B6;font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest);padding-bottom:3pt}
+.fl .u{margin-left:auto;font-weight:500;color:#8B8577;letter-spacing:.04em;text-transform:none;font-size:8.5pt}
+.fl .u b{display:inline-block;width:0.55in}
+.opts{display:flex;flex-wrap:wrap;gap:4pt 11pt;font-size:9pt;margin-top:4pt}
+.opts span::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:5pt;vertical-align:-1pt;background:#fff}
+.sq{display:inline-flex;gap:5pt;vertical-align:middle}
+.sq i{display:inline-block;width:13pt;height:13pt;border:1.1pt solid var(--forest);border-radius:3pt;background:#fff;font:600 7pt/13pt var(--sans);font-style:normal;text-align:center;color:#8B8577}
+.sketch{border:1pt solid #CFC7B6;border-radius:8pt;background:#fff;position:relative}
+.sketch span{position:absolute;left:10pt;top:8pt;font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#A39C8D}
+.hikehead{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt;margin-bottom:2pt}
+.hikehead .no{font:600 26pt/1 var(--serif);color:var(--forest)}
+.hikehead .no small{font:700 8pt/1 var(--sans);letter-spacing:.16em;color:var(--clay);display:block;margin-bottom:6pt;text-transform:uppercase}
+.hikehead .date{font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest);width:2.6in;border-bottom:0.8pt solid #CFC7B6;padding-bottom:3pt}
+.weeks{display:grid;grid-template-columns:repeat(4,1fr);gap:6pt}
+.wk{border:0.8pt solid #CFC7B6;border-radius:5pt;background:#fff;height:0.58in;padding:4pt 6pt;font:700 7pt/1 var(--sans);letter-spacing:.08em;color:var(--sage);text-transform:uppercase;position:relative}
+.wk:not(.nobox)::after{content:"";position:absolute;right:6pt;top:5pt;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt}
+.tbl td{height:26pt;background:#fff}
+.tbl{background:#fff}
+.fame{border:0.8pt solid #CFC7B6;border-radius:8pt;background:#fff;padding:8pt 12pt 6pt;margin-bottom:9pt}
+.fame .fl{height:26pt}
+.back{background:var(--forest);color:var(--stone);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.back h2{color:var(--stone)}
+.conv{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin-top:8pt}
+.conv div{background:var(--soft);border-radius:6pt;padding:8pt;font-size:9pt;text-align:center}
+.conv b{display:block;font:600 12pt/1.2 var(--serif);color:var(--forest)}
+html.bw .page{background:#fff}
+html.bw .cover,html.bw .back{background:#fff;color:#222;border:2pt solid #222;}
+html.bw .cover h1,html.bw .back h2{color:#222}
+html.bw .cover .sub,html.bw .cover .meta,html.bw .back p{color:#333}
+html.bw .cover svg *{stroke:#222}
+html.bw .cover svg .fillsun{fill:none}
+html.bw .box.forest,html.bw .box.forest h3{color:#222}
+html.bw .back p,html.bw .back .brand{color:#333 !important}
+html.bw .box,html.bw .conv div{background:#fff;border:0.8pt solid #999}
+html.bw .warn{background:#fff}
+html.bw{--forest:#222;--clay:#555;--sage:#666;--rust:#333;--soft:#fff}
+html.bw .cover svg .fillsun{stroke:#222}
+html.bw .wl,html.bw .fl,html.bw .wk,html.bw .sketch,html.bw .fame,html.bw .hikehead .date,html.bw td{border-color:#bbb !important}
+</style></head><body>
+<section class="page cover"><div class="brand">HikeSupply Co.</div>
+<div class="art"><svg width="460" height="330" viewBox="0 0 460 330" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<circle class="fillsun" cx="350" cy="70" r="26" fill="#B85C38" stroke="#B85C38" stroke-width="3"/>
+<path d="M10 300 L140 110 L200 185 L265 95 L450 300" stroke="#F5F1EA" stroke-width="4"/>
+<path d="M118 142 L140 110 L160 135" stroke="#F5F1EA" stroke-width="3"/>
+<path d="M245 124 L265 95 L290 128" stroke="#F5F1EA" stroke-width="3"/>
+<path d="M150 300 C 190 270, 250 285, 230 250 S 280 215, 262 190" stroke="#8A9A7E" stroke-width="3" stroke-dasharray="2 9"/>
+<path d="M40 300 L60 262 L80 300 M62 300 L62 310" stroke="#8A9A7E" stroke-width="3"/>
+<path d="M380 300 L398 268 L416 300 M398 300 L398 310" stroke="#8A9A7E" stroke-width="3"/>
+<path d="M0 312 L460 312" stroke="#F5F1EA" stroke-width="2"/>
+</svg></div>
+<div><h1>Hiking Journal &amp; Trail Log</h1><p class="sub">A year of trails, one page at a time. Log every hike, keep your favorites, and see how far you went.</p>
+<div class="meta" style="margin-top:22pt"><span>52 hike pages</span><span>Miles + km</span><span>Printable</span></div></div></section>
+<section class="page "><div class="kicker">Start here</div><h2>How to use this journal</h2>
+<p class="lead">This journal is made to be printed and filled in by hand. Fill in a log page after each hike, while the details are still fresh. A few lines are enough.</p>
+<h3>What is inside</h3>
+<ul class="check">
+<li>About me and my goals for the year</li>
+<li>A 52-week tracker and a monthly distance tracker</li>
+<li>A trail bucket list and a hall of fame for your best hikes</li>
+<li>52 hike log pages, one hike per page</li>
+<li>Gear notes, favorite trail snacks, notes and a year-end look back</li>
+</ul>
+<h3>Printing tips</h3>
+<div class="cols">
+<div><p><b>Paper.</b> Heavier paper takes ink better. Try 28 to 32 lb (105 to 120 gsm) paper, or light card stock around 65 lb (176 gsm) if your printer accepts it.</p>
+<p><b>Size.</b> Print at "Actual size" on US Letter. An A4 version is included; if you print the Letter file on A4, choose "Fit to page".</p></div>
+<div><p><b>Binding.</b> Three-hole punch the pages into a binder, or ask a print shop to spiral-bind them. The margins leave room for both.</p>
+<p><b>Only what you need.</b> Print a handful of log pages at a time and reprint more whenever you like. A printer-friendly version with less ink is included too.</p></div>
+</div>
+<div class="box"><h3 style="margin-top:0">Units</h3><p style="margin:0">Every log page has room for miles and kilometers, feet and meters. Use the one you know, or both. The quick conversions are on the distance tracker page.</p></div>
+<div class="box forest"><h3>Filling in a log page</h3><ol class="steps" style="margin:0">
+<li>Jot the basics at the trailhead or in the car: date, trail, start time.</li>
+<li>Copy distance and elevation gain from the trail sign, park map or your app. Rough numbers are fine.</li>
+<li>Write the best moment the same evening, while you still remember the small things.</li>
+<li>Use the sketch box for a quick map, a leaf rubbing, a ticket stub or a printed photo.</li>
+</ol></div>
+<div class="warn"><b>Before every hike</b>, check the weather and trail conditions with the park or land manager, and tell someone where you are going and when you plan to be back.</div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>2</span></div></section>
+<section class="page "><div class="kicker">This journal belongs to</div><h2>About me</h2>
+<div class="fl">Name</div><div class="fl">Home trails</div><div class="fl">Hiking since</div><div class="fl">Favorite kind of hike</div>
+<div class="lab">If found, please contact</div><div class="wl" style="height:24pt"></div>
+<h3 style="margin-top:18pt">My hiking goals for the year</h3>
+<div class="f2"><div class="fl">Number of hikes<span class="u"><b></b></span></div><div class="fl">Total distance<span class="u"><b></b> mi / <b></b> km</span></div></div>
+<div class="lab">Three trails I want to hike</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">One skill I want to learn (map and compass, first aid, winter hiking...)</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">A hike I want to do with someone special</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Why I hike</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Where I want to be by the end of the year</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>3</span></div></section>
+<section class="page "><div class="kicker">Year tracker</div><h2>52 weeks of hiking</h2>
+<p>Write the trail name in the box and tick the corner when you get out that week. Short walks count.</p>
+<div class="weeks"><div class="wk">Week 1</div><div class="wk">Week 2</div><div class="wk">Week 3</div><div class="wk">Week 4</div><div class="wk">Week 5</div><div class="wk">Week 6</div><div class="wk">Week 7</div><div class="wk">Week 8</div><div class="wk">Week 9</div><div class="wk">Week 10</div><div class="wk">Week 11</div><div class="wk">Week 12</div><div class="wk">Week 13</div><div class="wk">Week 14</div><div class="wk">Week 15</div><div class="wk">Week 16</div><div class="wk">Week 17</div><div class="wk">Week 18</div><div class="wk">Week 19</div><div class="wk">Week 20</div><div class="wk">Week 21</div><div class="wk">Week 22</div><div class="wk">Week 23</div><div class="wk">Week 24</div><div class="wk">Week 25</div><div class="wk">Week 26</div><div class="wk">Week 27</div><div class="wk">Week 28</div><div class="wk">Week 29</div><div class="wk">Week 30</div><div class="wk">Week 31</div><div class="wk">Week 32</div><div class="wk">Week 33</div><div class="wk">Week 34</div><div class="wk">Week 35</div><div class="wk">Week 36</div><div class="wk">Week 37</div><div class="wk">Week 38</div><div class="wk">Week 39</div><div class="wk">Week 40</div><div class="wk">Week 41</div><div class="wk">Week 42</div><div class="wk">Week 43</div><div class="wk">Week 44</div><div class="wk">Week 45</div><div class="wk">Week 46</div><div class="wk">Week 47</div><div class="wk">Week 48</div><div class="wk">Week 49</div><div class="wk">Week 50</div><div class="wk">Week 51</div><div class="wk">Week 52</div></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>4</span></div></section>
+<section class="page "><div class="kicker">Distance tracker</div><h2>Miles and kilometers this year</h2>
+<table class="tbl"><tr><th>Month</th><th>Hikes</th><th>Miles</th><th>Km</th><th>Gain (ft)</th><th>Gain (m)</th></tr><tr><td>January</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>February</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>March</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>April</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>May</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>June</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>July</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>August</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>September</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>October</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>November</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>December</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Year total</b></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+<h3>Quick conversions</h3>
+<div class="conv"><div><b>1 mi = 1.61 km</b>1 km = 0.62 mi</div><div><b>5 mi = 8 km</b>10 km = 6.2 mi</div><div><b>1 ft = 0.30 m</b>1 m = 3.28 ft</div><div><b>1,000 ft = 305 m</b>500 m = 1,640 ft</div></div>
+<h3>Goal progress</h3><p class="small" style="margin-bottom:4pt">Write your distance goal under the bar, split it into ten equal steps, and shade one box each time you pass a step.</p>
+<div style="display:grid;grid-template-columns:repeat(10,1fr);gap:4pt"><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div><div class="wk nobox" style="height:0.45in"></div></div>
+<div style="display:flex;justify-content:space-between;font-size:8.5pt;color:#8B8577;margin-top:6pt"><span>Start</span><span>Goal: ________ mi / ________ km</span></div>
+<h3>Personal bests</h3><div class="f2"><div class="fl">Longest hike<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Biggest climb<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Highest point<span class="u"><b></b> ft / <b></b> m</span></div><div class="fl">Most hikes in a month</div></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>5</span></div></section>
+<section class="page "><div class="kicker">Someday soon</div><h2>Trail bucket list</h2>
+<p>Trails, parks and summits you want to reach. Tick them off as you go.</p>
+<table class="tbl"><tr><th style="width:32%">Trail or summit</th><th style="width:24%">Park / area</th><th>State / Prov.</th><th>Distance</th><th style="width:12%">Done</th></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></table><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>6</span></div></section>
+<section class="page "><div class="kicker">The best ones</div><h2>Favorite hikes hall of fame</h2><div class="fame"><div class="f2"><div class="fl">Trail</div><div class="fl">Date</div></div><div class="fl">Why it made the list</div><div class="fl"></div><div class="fl"></div></div><div class="fame"><div class="f2"><div class="fl">Trail</div><div class="fl">Date</div></div><div class="fl">Why it made the list</div><div class="fl"></div><div class="fl"></div></div><div class="fame"><div class="f2"><div class="fl">Trail</div><div class="fl">Date</div></div><div class="fl">Why it made the list</div><div class="fl"></div><div class="fl"></div></div><div class="fame"><div class="f2"><div class="fl">Trail</div><div class="fl">Date</div></div><div class="fl">Why it made the list</div><div class="fl"></div><div class="fl"></div></div><div class="fame"><div class="f2"><div class="fl">Trail</div><div class="fl">Date</div></div><div class="fl">Why it made the list</div><div class="fl"></div><div class="fl"></div></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>7</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 01</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>8</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 02</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>9</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 03</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>10</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 04</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>11</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 05</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>12</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 06</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>13</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 07</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>14</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 08</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>15</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 09</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>16</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 10</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>17</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 11</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>18</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 12</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>19</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 13</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>20</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 14</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>21</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 15</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>22</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 16</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>23</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 17</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>24</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 18</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>25</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 19</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>26</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 20</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>27</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 21</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>28</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 22</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>29</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 23</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>30</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 24</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>31</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 25</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>32</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 26</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>33</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 27</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>34</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 28</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>35</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 29</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>36</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 30</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>37</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 31</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>38</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 32</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>39</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 33</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>40</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 34</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>41</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 35</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>42</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 36</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>43</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 37</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>44</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 38</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>45</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 39</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>46</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 40</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>47</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 41</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>48</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 42</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>49</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 43</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>50</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 44</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>51</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 45</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>52</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 46</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>53</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 47</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>54</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 48</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>55</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 49</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>56</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 50</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>57</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 51</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>58</span></div></section>
+<section class="page "><div class="hikehead"><div class="no"><small>Trail log</small>Hike 52</div><div class="date">Date</div></div>
+<div class="f2">
+<div class="fl">Trail</div><div class="fl">Park / area</div>
+<div class="fl">Start time</div><div class="fl">Finish time</div>
+<div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div>
+<div class="fl">Total time</div><div class="fl">Hiked with</div>
+</div>
+<div class="f2" style="margin-top:9pt">
+<div><div class="lab">How hard was it?</div><div class="sq" style="margin-top:3pt"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></div><span class="small" style="margin-left:6pt">easy to very hard</span></div>
+<div><div class="lab">Weather</div><div class="opts" style="gap:4pt 8pt;font-size:8.5pt"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Snow</span><span>Wind</span></div><div class="small" style="margin-top:4pt">Temp: ______ °F / ______ °C</div></div>
+</div>
+<div class="lab">Trail conditions</div><div class="opts"><span>Dry</span><span>Muddy</span><span>Rocky</span><span>Roots</span><span>Snow / ice</span><span>Overgrown</span><span>Busy</span><span>Quiet</span></div><div style="height:4pt"></div>
+<div class="lab">Wildlife and plants I saw</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">What I would do differently</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="sketch" style="height:2.5in;margin-top:12pt"><span>Sketch, map or photo</span></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>59</span></div></section>
+<section class="page "><div class="kicker">Gear notes</div><h2>Gear that worked, gear to change</h2>
+<div class="cols"><div><div class="lab">Worked great</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div></div><div><div class="lab">Change, fix or replace</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div></div></div>
+<div class="lab">Wish list</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>60</span></div></section>
+<section class="page "><div class="kicker">Fuel</div><h2>Trail snacks I loved</h2>
+<p>What tasted good at the top, what traveled well, and what to skip next time.</p>
+<table class="tbl"><tr><th style="width:34%">Snack</th><th style="width:26%">Where to get it</th><th style="width:14%">Rating</th><th>Notes</th></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></table><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>61</span></div></section>
+<section class="page "><div class="kicker">Notes</div><h2>Notes</h2><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>62</span></div></section>
+<section class="page "><div class="kicker">Looking back</div><h2>My hiking year</h2>
+<div class="f2"><div class="fl">Hikes this year</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">New trails</div><div class="fl">Elevation gain<span class="u"><b></b> ft / <b></b> m</span></div></div>
+<div class="lab">My favorite hike and why</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">The hardest hike, and how I got through it</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Something I learned on the trail</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">People I want to thank</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">A view I never want to forget</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Next year I want to</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">One word for my hiking year</div><div class="wl" style="height:24pt"></div><div class="folio"><span>Hiking Journal &amp; Trail Log</span><span>63</span></div></section>
+<section class="page back"><div class="brand" style="font:700 9pt/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:22pt">HikeSupply Co.</div>
+<h2 style="font-size:30pt">See you on the trail</h2>
+<p style="max-width:4.6in;color:#D9DED6;font-size:12pt">More printable guides, checklists and trail gear at</p>
+<p style="font:600 16pt/1 var(--serif);color:var(--stone);margin-top:6pt">hikesupplyco.com</p>
+<p style="max-width:4.8in;color:#AEB8AB;font-size:8.5pt;margin-top:60pt">For personal use. You may print as many copies as you need for yourself and your family. Please do not resell or share the file. Always check current conditions and rules with the park or land manager before you hike.</p></section>
+</body></html>

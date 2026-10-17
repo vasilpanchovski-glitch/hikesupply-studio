@@ -24,6 +24,13 @@ with sync_playwright() as p:
         print("OVERFLOW on pages", bad, "- shorten or split those pages, then build again"); sys.exit(2)
     pdf = os.path.join(out, slug + ".pdf")
     pg.pdf(path=pdf, width="8.5in", height="11in", print_background=True, prefer_css_page_size=True)
+    if meta.get("variants"):
+        # optional extras: A4 (Letter pages scaled to fit, centred) and a printer-friendly low-ink version (html.bw rules in the product's CSS)
+        a4 = dict(width="210mm", height="297mm", print_background=True, prefer_css_page_size=False, scale=0.973, margin={"top": "0.45in"})
+        pg.pdf(path=os.path.join(out, slug + "-a4.pdf"), **a4)
+        pg.evaluate("document.documentElement.classList.add('bw')"); pg.wait_for_timeout(300)
+        pg.pdf(path=os.path.join(out, slug + "-print-friendly.pdf"), width="8.5in", height="11in", print_background=True, prefer_css_page_size=True)
+        pg.pdf(path=os.path.join(out, slug + "-a4-print-friendly.pdf"), **a4)
     b.close()
 for f in glob.glob(os.path.join(out, "page-*.png")): os.remove(f)
 subprocess.run(["pdftoppm", "-png", "-r", "60", pdf, os.path.join(out, "page")], check=True)
