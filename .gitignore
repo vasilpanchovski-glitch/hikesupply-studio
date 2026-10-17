@@ -5,3 +5,4 @@ voice/models/
 video/public/vo/
 __pycache__/
 *.pyc
+products/*/out/
