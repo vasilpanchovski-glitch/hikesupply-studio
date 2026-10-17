@@ -1,0 +1,61 @@
+{
+ "pins": [
+  {
+   "id": "pb20261017-1",
+   "layout": "stone",
+   "kicker": "Utah's Mighty 5",
+   "title": "7 days, 5 parks",
+   "items": [
+    "Days 1-2: Zion, Emerald Pools and The Narrows",
+    "Days 3-4: Bryce Canyon hoodoos",
+    "Day 5: Capitol Reef, Hickman Bridge",
+    "Day 6: Cassidy Arch, then Moab",
+    "Day 7: Mesa Arch and Delicate Arch"
+   ],
+   "cta": "See the route",
+   "sub": "One road trip loop of about 500 miles, west to east, with the best hike in every park."
+  },
+  {
+   "id": "pb20261017-2",
+   "layout": "forest",
+   "image": "media/pins/v19-crop.jpg",
+   "kicker": "Cold, wet trails",
+   "title": "Leave the cotton socks home",
+   "sub": "Cotton holds water and chills your feet. Wool socks stay warmer even when they get damp.",
+   "cta": "Shop the socks"
+  },
+  {
+   "id": "pb20261017-3",
+   "layout": "forest",
+   "image": "media/pins/v20-crop.jpg",
+   "kicker": "Water on the trail",
+   "title": "Clear stream? Still filter it",
+   "sub": "Clean-looking water can carry bacteria and parasites like Giardia. Filter or treat every refill.",
+   "cta": "Shop the filter"
+  },
+  {
+   "id": "pb20261017-4",
+   "layout": "forest",
+   "image": "media/pins/v21-crop.jpg",
+   "kicker": "Lost on a hike?",
+   "title": "Remember S.T.O.P.",
+   "sub": "Stop. Think. Observe. Plan. Stay calm, stay put if unsure, and don't wander off the trail.",
+   "cta": "Get the guide"
+  },
+  {
+   "id": "pb20261017-5",
+   "layout": "stone",
+   "kicker": "Great Smoky Mountains",
+   "title": "5 best day hikes",
+   "items": [
+    "Alum Cave Trail, 4.6 mi",
+    "Andrews Bald, 3.0 mi",
+    "Grotto Falls, 2.6 mi (easy)",
+    "Rainbow Falls, 5.4 mi",
+    "Charlies Bunion, 8.6 mi"
+   ],
+   "cta": "See all 10",
+   "sub": "No entrance fee, but parking over 15 minutes needs a $5 daily tag. Start early: lots fill fast."
+  }
+ ]
+}
