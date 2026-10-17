@@ -1,4 +1,476 @@
 {
-  "complaints": [],
-  "themes": []
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals.",
+ "updated": "2026-10-17",
+ "complaints": [
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "poles collapse under weight and won't hold the set length",
+   "source": "https://www.walmart.com/reviews/product/620252137?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-08-29",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "lock doesn't hold, strap buckles failed, a mud basket fell off",
+   "source": "https://www.walmart.com/reviews/product/620252137?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-06-14",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "parts unclear, no instructions on setting length for your height",
+   "source": "https://www.walmart.com/reviews/product/620252137?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-07-07",
+   "theme": "no clear assembly or height instructions",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "broke on first use",
+   "source": "https://www.walmart.com/reviews/product/620252137?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-07-13",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "wouldn't stay extended, one section slightly bent",
+   "source": "https://www.walmart.com/reviews/product/620252137?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2025-09-13",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "felt cheaply made",
+   "source": "https://www.walmart.com/reviews/product/620252137?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-03-24",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "arrived with sections that would not tighten",
+   "source": "https://www.walmart.com/reviews/product/620252137?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-01-27",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "not strong enough",
+   "source": "https://www.walmart.com/reviews/product/620252137?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2025-06-17",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "hard to adjust, no mark showing the maximum safe length",
+   "source": "https://www.walmart.com/ip/Trekking-Poles-Lightweight-Aluminum-Hiking-Walking-Sticks-Ayamaya-Adjustable-Collapsible-Outdoor-Trekking-Pole-with-Cork-Grip-for-Men-Women/620252137",
+   "where": "walmart",
+   "date": "2025-12-07",
+   "theme": "no clear assembly or height instructions",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ayamaya aluminium collapsible trekking poles (Walmart)",
+   "what": "slid shorter while walking, felt unsafe on steep hills",
+   "source": "https://www.walmart.com/ip/Trekking-Poles-Lightweight-Aluminum-Hiking-Walking-Sticks-Ayamaya-Adjustable-Collapsible-Outdoor-Trekking-Pole-with-Cork-Grip-for-Men-Women/620252137",
+   "where": "walmart",
+   "date": "2025-07-29",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "sections slide down under pressure; parts missing",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-03-07",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "could not assemble them",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-06-28",
+   "theme": "no clear assembly or height instructions",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "two joints collapsed before use, returned",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2025-08-02",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "no adjustment instructions, couldn't set the height",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2026-01-07",
+   "theme": "no clear assembly or height instructions",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "joints can give way under body weight when the tip catches",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2025-08-14",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "won't stay extended, inner tension cord too weak",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2025-07-24",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "needed locking instructions; came apart when lifted",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2025-03-15",
+   "theme": "no clear assembly or height instructions",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "fell apart after assembly, no directions included",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2024-09-24",
+   "theme": "no clear assembly or height instructions",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "poles don't lock, cord left dangling",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2024-12-23",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Kroyicegears collapsible aluminium trekking poles 2-pack (Walmart)",
+   "what": "parts missing, returned twice",
+   "source": "https://www.walmart.com/reviews/product/5383440515?ratings=1%2C2%2C3",
+   "where": "walmart",
+   "date": "2025-01-21",
+   "theme": "missing parts on arrival",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ozark Trail aluminium quick-lock trekking poles 2-pack (Walmart)",
+   "what": "two sets arrived missing the bottom section of a pole",
+   "source": "https://www.walmart.com/reviews/product/700250552",
+   "where": "walmart",
+   "date": "2025-08-08",
+   "theme": "missing parts on arrival",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ozark Trail aluminium quick-lock trekking poles 2-pack (Walmart)",
+   "what": "lock loosened mid-hike and pole collapsed; fine only for light use",
+   "source": "https://www.walmart.com/reviews/product/700250552",
+   "where": "walmart",
+   "date": "2025-05-17",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ozark Trail aluminium quick-lock trekking poles 2-pack (Walmart)",
+   "what": "extended section retracted under light pressure",
+   "source": "https://www.walmart.com/reviews/product/700250552",
+   "where": "walmart",
+   "date": "2026-05-10",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ozark Trail aluminium quick-lock trekking poles 2-pack (Walmart)",
+   "what": "two orders arrived with only the handle section",
+   "source": "https://www.walmart.com/reviews/product/700250552",
+   "where": "walmart",
+   "date": "2025-04-12",
+   "theme": "missing parts on arrival",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Ozark Trail carbon quick-lock trekking poles (Walmart)",
+   "what": "plastic latches wouldn't stay locked, collapsed a mile in",
+   "source": "https://www.walmart.com/reviews/product/861660104",
+   "where": "walmart",
+   "date": "2026-07-22",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "TheFitLife walking poles 2-pack (Walmart)",
+   "what": "items shown in the listing were missing",
+   "source": "https://www.walmart.com/reviews/product/1967402588",
+   "where": "walmart",
+   "date": "2026-07-10",
+   "theme": "missing parts on arrival",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "TheFitLife walking poles 2-pack (Walmart)",
+   "what": "middle sections not included, seller didn't reply",
+   "source": "https://www.walmart.com/reviews/product/1967402588",
+   "where": "walmart",
+   "date": "2026-09-04",
+   "theme": "missing parts on arrival",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "trekking pole",
+   "product": "TheFitLife walking poles 2-pack (Walmart)",
+   "what": "good build but not suited to a hiker with a disability",
+   "source": "https://www.walmart.com/reviews/product/1967402588",
+   "where": "walmart",
+   "date": "2024-08-20",
+   "theme": "not suited to hikers with disabilities",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "hydration bladder",
+   "product": "2L hydration bladder (Walmart)",
+   "what": "leaks badly",
+   "source": "https://www.walmart.com/reviews/product/14582052371",
+   "where": "walmart",
+   "date": "2026-07-07",
+   "theme": "hydration bladder leaks",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "hydration bladder",
+   "product": "Outdoor Products 2L hydration reservoir (Walmart)",
+   "what": "leaked and soaked the hiker's back",
+   "source": "https://www.walmart.com/reviews/product/51036881",
+   "where": "walmart",
+   "date": "2026-02-01",
+   "theme": "hydration bladder leaks",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "hydration bladder",
+   "product": "Outdoor Products 2L hydration reservoir (Walmart)",
+   "what": "leaked at the bottom after first cleaning",
+   "source": "https://www.walmart.com/reviews/product/51036881",
+   "where": "walmart",
+   "date": "2016-10-20",
+   "theme": "hydration bladder leaks",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "hydration bladder",
+   "product": "Outdoor Products 2L hydration reservoir (Walmart)",
+   "what": "hard to suck through the bite valve, hard to clean",
+   "source": "https://www.walmart.com/reviews/product/51036881",
+   "where": "walmart",
+   "date": "2024-09-10",
+   "theme": "bladder hard to clean / drink from",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "water bottle",
+   "product": "Kemier 750ml collapsible silicone bottle (Walmart)",
+   "what": "drips while drinking",
+   "source": "https://www.walmart.com/reviews/product/2387686338",
+   "where": "walmart",
+   "date": "2025-12-06",
+   "theme": "collapsible bottle leaks or flimsy",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "water bottle",
+   "product": "Kemier 750ml collapsible silicone bottle (Walmart)",
+   "what": "thinner than expected, went flimsy",
+   "source": "https://www.walmart.com/reviews/product/2387686338",
+   "where": "walmart",
+   "date": "2025-06-02",
+   "theme": "collapsible bottle leaks or flimsy",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "water bottle",
+   "product": "Kemier 750ml collapsible silicone bottle (Walmart)",
+   "what": "water tasted of plastic, saved little space",
+   "source": "https://www.walmart.com/reviews/product/2387686338",
+   "where": "walmart",
+   "date": "2025-12-29",
+   "theme": "plastic taste",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "water bottle",
+   "product": "Kemier 750ml collapsible silicone bottle (Walmart)",
+   "what": "spout had to be cut open, can't be held upside down",
+   "source": "https://www.walmart.com/reviews/product/2387686338",
+   "where": "walmart",
+   "date": "2024-03-01",
+   "theme": "collapsible bottle leaks or flimsy",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "printable checklist",
+   "product": "National Parks Checklist Printable (Etsy, FamilyTravelGoals)",
+   "what": "several parks missing from the list, asked for refund",
+   "source": "https://www.etsy.com/listing/1233097146/national-parks-checklist-printable",
+   "where": "etsy",
+   "date": "2023-12-11",
+   "theme": "list incomplete or out of date",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "park guidebook",
+   "product": "Your Guide to the National Parks (Goodreads)",
+   "what": "older edition outdated and wrong in places",
+   "source": "https://www.goodreads.com/book/show/13631127-your-guide-to-the-national-parks",
+   "where": "goodreads",
+   "date": "2017-11-20",
+   "theme": "list incomplete or out of date",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "park guidebook",
+   "product": "Your Guide to the National Parks (Goodreads)",
+   "what": "leaves Puerto Rico out, including the map",
+   "source": "https://www.goodreads.com/book/show/13631127-your-guide-to-the-national-parks",
+   "where": "goodreads",
+   "date": "2017-08-01",
+   "theme": "list incomplete or out of date",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "park guidebook",
+   "product": "Your Guide to the National Parks (Goodreads)",
+   "what": "organised by region, reader wanted A-Z",
+   "source": "https://www.goodreads.com/book/show/13631127-your-guide-to-the-national-parks",
+   "where": "goodreads",
+   "date": "2018-04-13",
+   "theme": "hard to find things",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "park guidebook",
+   "product": "National Geographic Ultimate Guide to the National Parks (Goodreads)",
+   "what": "little for visitors with disabilities",
+   "source": "https://www.goodreads.com/en/book/show/232794164-national-geographic-ultimate-guide-to-the-national-parks",
+   "where": "goodreads",
+   "date": "2026-04-02",
+   "theme": "not suited to hikers with disabilities",
+   "found": "2026-10-17"
+  },
+  {
+   "type": "digital printable",
+   "product": "Etsy digital downloads (seller forum)",
+   "what": "buyers expect a physical item to ship after buying a download",
+   "source": "https://community.etsy.com/t5/Digital-Goods/Customers-not-realizing-they-are-buying-a-digital-item/td-p/123029932",
+   "where": "etsy-forum",
+   "date": "",
+   "theme": "buyers don't realise it's a download",
+   "found": "2026-10-17"
+  }
+ ],
+ "themes": [
+  {
+   "theme": "pole locks slip / poles collapse",
+   "count": 13
+  },
+  {
+   "theme": "no clear assembly or height instructions",
+   "count": 6
+  },
+  {
+   "theme": "missing parts on arrival",
+   "count": 5
+  },
+  {
+   "theme": "breaks quickly / cheaply made",
+   "count": 3
+  },
+  {
+   "theme": "hydration bladder leaks",
+   "count": 3
+  },
+  {
+   "theme": "collapsible bottle leaks or flimsy",
+   "count": 3
+  },
+  {
+   "theme": "list incomplete or out of date",
+   "count": 3
+  },
+  {
+   "theme": "not suited to hikers with disabilities",
+   "count": 2
+  },
+  {
+   "theme": "bladder hard to clean / drink from",
+   "count": 1
+  },
+  {
+   "theme": "plastic taste",
+   "count": 1
+  },
+  {
+   "theme": "hard to find things",
+   "count": 1
+  },
+  {
+   "theme": "buyers don't realise it's a download",
+   "count": 1
+  }
+ ]
 }
