@@ -2,7 +2,7 @@
 import React from "react";
 import { AbsoluteFill, Sequence, useCurrentFrame } from "remotion";
 import { at, C, FPS, outExpo } from "./lib";
-import { SANS } from "./Type";
+import { isClean, SANS } from "./Type";
 
 export const HEAD = "Barlow Condensed";
 export const useT = () => useCurrentFrame() / FPS;
@@ -40,6 +40,7 @@ const Fade: React.FC<{ dur: number; fadeIn: number; fadeOut: number; children: R
 
 // Hook / section headline. With t0 <= 0 it is fully on screen at frame 0.
 export const Title: React.FC<{ text: string; t: number; t0: number; t1?: number; top?: number; size?: number }> = ({ text, t, t0, t1 = 999, top = 200, size = 132 }) => {
+  if (isClean()) return null;
   const lines = text.split("\n");
   return (
     <div style={{ position: "absolute", top, left: 80, right: 80, opacity: at(t, [t1 - 0.3, t1], [1, 0]) }}>
@@ -77,7 +78,7 @@ export const Chip: React.FC<{ text: string; t: number; t0: number; t1?: number; 
   y,
   icon = "none",
   big,
-}) => (
+}) => isClean() ? null : (
   <div
     style={{
       position: "absolute",
@@ -140,7 +141,7 @@ export const Readout: React.FC<{ label: string; value: string; ok: boolean | nul
   x,
   y,
   pulseAt,
-}) => (
+}) => isClean() ? null : (
   <div
     style={{
       position: "absolute",
