@@ -27,6 +27,17 @@
 .conv{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin-top:8pt}
 .conv div{background:var(--soft);border-radius:6pt;padding:8pt;font-size:9pt;text-align:center}
 .conv b{display:block;font:600 12pt/1.2 var(--serif);color:var(--forest)}
+@media print{html,body{background:#fff}}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{color:#222;text-shadow:none}
+html.bw .cover.photo .sub{color:#333}
 html.bw .page{background:#fff}
 html.bw .cover,html.bw .back{background:#fff;color:#222;border:2pt solid #222;}
 html.bw .cover h1,html.bw .back h2{color:#222}
@@ -41,8 +52,9 @@ html.bw{--forest:#222;--clay:#555;--sage:#666;--rust:#333;--soft:#fff}
 html.bw .cover svg .fillsun{stroke:#222}
 html.bw .wl,html.bw .fl,html.bw .wk,html.bw .sketch,html.bw .fame,html.bw .hikehead .date,html.bw td{border-color:#bbb !important}
 </style></head><body>
-<section class="page cover"><div class="brand">HikeSupply Co.</div>
-<div class="art"><svg width="460" height="330" viewBox="0 0 460 330" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<section class="page cover photo"><div class="cphoto"></div><div class="cshade"></div>
+<div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="460" height="330" viewBox="0 0 460 330" fill="none" stroke-linejoin="round" stroke-linecap="round">
 <circle class="fillsun" cx="350" cy="70" r="26" fill="#B85C38" stroke="#B85C38" stroke-width="3"/>
 <path d="M10 300 L140 110 L200 185 L265 95 L450 300" stroke="#F5F1EA" stroke-width="4"/>
 <path d="M118 142 L140 110 L160 135" stroke="#F5F1EA" stroke-width="3"/>
@@ -52,8 +64,8 @@ html.bw .wl,html.bw .fl,html.bw .wk,html.bw .sketch,html.bw .fame,html.bw .hikeh
 <path d="M380 300 L398 268 L416 300 M398 300 L398 310" stroke="#8A9A7E" stroke-width="3"/>
 <path d="M0 312 L460 312" stroke="#F5F1EA" stroke-width="2"/>
 </svg></div>
-<div><h1>Hiking Journal &amp; Trail Log</h1><p class="sub">A year of trails, one page at a time. Log every hike, keep your favorites, and see how far you went.</p>
-<div class="meta" style="margin-top:22pt"><span>52 hike pages</span><span>Miles + km</span><span>Printable</span></div></div></section>
+<div style="position:relative"><h1>Hiking Journal &amp; Trail Log</h1><p class="sub">A year of trails, one page at a time. Log every hike, keep your favorites, and see how far you went.</p>
+<div class="meta" style="margin-top:22pt"><span>52 hike pages</span><span>Miles + km</span><span>Instant PDF download</span></div></div></section>
 <section class="page "><div class="kicker">Start here</div><h2>How to use this journal</h2>
 <p class="lead">This journal is made to be printed and filled in by hand. Fill in a log page after each hike, while the details are still fresh. A few lines are enough.</p>
 <h3>What is inside</h3>
@@ -959,5 +971,5 @@ html.bw .wl,html.bw .fl,html.bw .wk,html.bw .sketch,html.bw .fame,html.bw .hikeh
 <h2 style="font-size:30pt">See you on the trail</h2>
 <p style="max-width:4.6in;color:#D9DED6;font-size:12pt">More printable guides, checklists and trail gear at</p>
 <p style="font:600 16pt/1 var(--serif);color:var(--stone);margin-top:6pt">hikesupplyco.com</p>
-<p style="max-width:4.8in;color:#AEB8AB;font-size:8.5pt;margin-top:60pt">For personal use. You may print as many copies as you need for yourself and your family. Please do not resell or share the file. Always check current conditions and rules with the park or land manager before you hike.</p></section>
+<p style="max-width:4.8in;color:#AEB8AB;font-size:8.5pt;margin-top:60pt">For personal use. You may print as many copies as you need for yourself and your family. Please do not resell or share the file. Cover photo: Ali Kazal / Pexels. Always check current conditions and rules with the park or land manager before you hike.</p></section>
 </body></html>
