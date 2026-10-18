@@ -66,7 +66,7 @@ Skopje is UTC+2 until 2026-10-25 03:00 and UTC+1 after (daylight saving ends). W
 - Characters are illustrated people (`Person` component with outfits), never black silhouettes. Daylight scenes built from `Landscape`, `Pine`, ground paths.
 - NEVER: orange or coloured italic accent words in headlines, cream paper backgrounds with dot grids, numbered circle step lists, emoji. These look AI-generated and Vasil rejected them.
 - On-screen info uses white chips (`Chip`) and the elbow-angle style readout card.
-- End card: forest background, product illustration drawn in SVG, product name, price chip, "Save this..." bar, hikesupplyco.com. The product and price must match Shopify.
+- End card: forest background, the REAL product photo from Shopify (Vasil asked for this on 2026-10-17; download the product's main image from cdn.shopify.com into `video/public/products/<handle>.jpg`, crop out supplier text if needed into `<handle>-card.jpg`, pass `photo="products/<handle>-card.jpg"` to `EndCard`, `photoH={760}` for square covers), "In our store now" chip, product name, price chip, "Save this..." bar, "Find it at hikesupplyco.com". The product and price must match Shopify.
 - Music: original score from `audio/music.py` (build to a drop at the payoff), ducked under the voice. Never trending or copyrighted music.
 - Every claim must be true and safe hiking advice. No invented statistics. No medical promises.
 

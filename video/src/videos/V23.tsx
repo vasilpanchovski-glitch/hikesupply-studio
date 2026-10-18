@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Person, JAKE, Outfit } from "../Person";
 import { Grain, Landscape, Palette, Vignette } from "../Landscape";
-import { at, C, mix, outExpo } from "../lib";
+import { at, mix, outExpo } from "../lib";
 import { Captions, Word } from "../Type";
 import { Chip, EndCard, freeHand, HEAD, Readout, Scene, Scrim, Title, useT } from "../kit";
 import vo from "../vo/v23.json";
@@ -273,44 +273,14 @@ const S5: React.FC<{ off: number }> = ({ off }) => {
 };
 
 // ============ S6 END CARD ============
-const PackArt: React.FC<{ lt: number }> = ({ lt }) => {
-  const s = at(lt, [0.2, 1.1], [0.85, 1], outExpo);
-  const o = at(lt, [0.1, 0.5], [0, 1]);
-  const draw = at(lt, [0.6, 2.2], [0, 1]);
-  return (
-    <g transform={`translate(540,500) scale(${s})`} opacity={o}>
-      {/* guide */}
-      <g transform="translate(-80,0) rotate(-5)">
-        <rect x={-220} y={-320} width={440} height={600} rx={14} fill={C.stone} />
-        <rect x={-180} y={-280} width={360} height={260} rx={10} fill="#6fa3c8" />
-        <path d="M-180,-20 L-180,-90 L-120,-90 L-110,-150 L-30,-150 L-20,-90 L40,-90 L40,-20 Z" fill="#b45f3c" />
-        <path d="M60,-20 L80,-200 L110,-230 L140,-180 L180,-20 Z" fill="#c9774c" />
-        <circle cx={120} cy={-235} r={24} fill="#fff4d6" opacity={0.9} />
-        <text x={-180} y={50} fontFamily={HEAD} fontWeight={800} fontSize={58} fill={C.forestDeep}>UTAH'S MIGHTY 5</text>
-        <text x={-180} y={108} fontFamily={HEAD} fontWeight={700} fontSize={40} fill="#8a5a3c">TRIP PLANNING GUIDE</text>
-        {[150, 180, 210].map((yy) => (
-          <rect key={yy} x={-180} y={yy} width={290 - (yy % 3) * 20} height={10} rx={5} fill="#d6cfc2" />
-        ))}
-      </g>
-      {/* phone with a GPX route */}
-      <g transform="translate(200,90) rotate(6)">
-        <rect x={-100} y={-200} width={200} height={380} rx={28} fill="#1f2421" />
-        <rect x={-86} y={-180} width={172} height={340} rx={16} fill="#efe6cf" />
-        <path d="M-60,120 C-40,60 20,80 10,20 S-50,-40 0,-90 S60,-120 50,-150" stroke="#B85C38" strokeWidth={9} fill="none" strokeLinecap="round" strokeDasharray={600} strokeDashoffset={600 * (1 - draw)} />
-        <circle cx={-60} cy={120} r={11} fill="#3E8E5A" />
-        <circle cx={50} cy={-150} r={11} fill="#C2452D" opacity={draw > 0.95 ? 1 : 0} />
-      </g>
-    </g>
-  );
-};
-
 const S6: React.FC<{ off: number }> = ({ off }) => {
   const lt = useT();
   void off;
   return (
     <EndCard
       lt={lt}
-      art={<PackArt lt={lt} />}
+      photo="products/utahs-mighty-5-trip-pack-card.jpg"
+      photoH={760}
       spec="PLANNING GUIDE + 10 GPX DAY HIKES"
       name={
         <>

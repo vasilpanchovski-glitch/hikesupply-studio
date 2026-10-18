@@ -1,6 +1,6 @@
 // Shared scene pieces for the series (taken from V01 so every video looks the same).
 import React from "react";
-import { AbsoluteFill, Sequence, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { at, C, FPS, outExpo } from "./lib";
 import { isClean, SANS } from "./Type";
 
@@ -214,10 +214,13 @@ export const Scrim: React.FC<{ h?: number }> = ({ h = 760 }) => (
 );
 
 // End card shell: forest background, brand line, product art slot, name, price chip, save bar, url.
-export const EndCard: React.FC<{ lt: number; art: React.ReactNode; spec: string; name: React.ReactNode; nameSize?: number; price: string; save: string; shadowY?: number }> = ({
+// photo: real store photo in video/public/products/ (from Shopify). When set it replaces the SVG art.
+export const EndCard: React.FC<{ lt: number; art?: React.ReactNode; photo?: string; photoH?: number; spec: string; name: React.ReactNode; nameSize?: number; price: string; save: string; shadowY?: number }> = ({
   lt,
   shadowY = 1000,
   art,
+  photo,
+  photoH = 800,
   spec,
   name,
   nameSize = 112,
@@ -228,10 +231,51 @@ export const EndCard: React.FC<{ lt: number; art: React.ReactNode; spec: string;
     <div style={{ position: "absolute", top: 130, left: 0, right: 0, textAlign: "center", fontFamily: HEAD, fontWeight: 700, fontSize: 44, letterSpacing: 10, color: C.stone, opacity: at(lt, [0, 0.4], [0, 1]) }}>
       HIKESUPPLY CO.
     </div>
-    <svg width={1080} height={1100} style={{ position: "absolute", top: 220 }}>
-      <ellipse cx={540} cy={shadowY} rx={360} ry={26} fill="rgba(0,0,0,0.25)" />
-      {art}
-    </svg>
+    {photo ? (
+      <>
+        <div
+          style={{
+            position: "absolute",
+            top: 225 + (800 - photoH) / 2,
+            left: 540 - (photoH === 800 ? 340 : photoH / 2),
+            width: photoH === 800 ? 680 : photoH,
+            height: photoH,
+            borderRadius: 34,
+            overflow: "hidden",
+            background: "#fff",
+            border: `8px solid ${C.stone}`,
+            boxShadow: "0 30px 60px rgba(0,0,0,0.45)",
+            opacity: at(lt, [0.05, 0.45], [0, 1]),
+            scale: `${at(lt, [0.05, 0.9], [0.9, 1], outExpo)}`,
+          }}
+        >
+          <Img src={staticFile(photo)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: `${1 + lt * 0.012}` }} />
+        </div>
+        <div style={{ position: "absolute", top: 225 + (800 + photoH) / 2 - 28, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: at(lt, [0.8, 1.2], [0, 1]) }}>
+          <div
+            style={{
+              fontFamily: HEAD,
+              fontWeight: 700,
+              fontSize: 40,
+              letterSpacing: 2,
+              color: C.forestDeep,
+              background: C.stone,
+              padding: "8px 26px",
+              borderRadius: 12,
+              textTransform: "uppercase",
+              boxShadow: "0 8px 20px rgba(0,0,0,0.3)",
+            }}
+          >
+            In our store now
+          </div>
+        </div>
+      </>
+    ) : (
+      <svg width={1080} height={1100} style={{ position: "absolute", top: 220 }}>
+        <ellipse cx={540} cy={shadowY} rx={360} ry={26} fill="rgba(0,0,0,0.25)" />
+        {art}
+      </svg>
+    )}
     <div style={{ position: "absolute", top: 1170, left: 80, right: 80, opacity: at(lt, [0.6, 1.0], [0, 1]), translate: `0px ${at(lt, [0.6, 1.1], [30, 0])}px` }}>
       <div style={{ fontFamily: HEAD, fontWeight: 600, fontSize: 34, letterSpacing: 4, color: C.sage }}>{spec}</div>
       <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginTop: 8, gap: 20 }}>
@@ -259,8 +303,8 @@ export const EndCard: React.FC<{ lt: number; art: React.ReactNode; spec: string;
       </svg>
       <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 52, color: C.forestDeep, textTransform: "uppercase", lineHeight: 1 }}>{save}</div>
     </div>
-    <div style={{ position: "absolute", top: 1730, left: 0, right: 0, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 34, letterSpacing: 1, color: "rgba(245,241,234,0.75)", opacity: at(lt, [1.2, 1.6], [0, 1]) }}>
-      hikesupplyco.com
+    <div style={{ position: "absolute", top: photo ? 1712 : 1730, left: 0, right: 0, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: photo ? 44 : 34, letterSpacing: 1, color: photo ? C.stone : "rgba(245,241,234,0.75)", opacity: at(lt, [1.2, 1.6], [0, 1]) }}>
+      {photo ? "Find it at hikesupplyco.com" : "hikesupplyco.com"}
     </div>
   </AbsoluteFill>
 );

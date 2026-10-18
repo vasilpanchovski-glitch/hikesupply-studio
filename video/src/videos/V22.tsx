@@ -264,46 +264,14 @@ const S4: React.FC<{ off: number }> = ({ off }) => {
 };
 
 // ============ S5 END CARD ============
-const BivyArt: React.FC<{ lt: number }> = ({ lt }) => {
-  const s = at(lt, [0.2, 1.1], [0.85, 1], outExpo);
-  const o = at(lt, [0.1, 0.5], [0, 1]);
-  const shimmer = (Math.sin(lt * 2) + 1) / 2;
-  return (
-    <g transform={`translate(540,520) scale(${s})`} opacity={o}>
-      <defs>
-        <linearGradient id="mylarEnd" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#f6f8fa" />
-          <stop offset={0.3 + shimmer * 0.25} stopColor="#b3bdc5" />
-          <stop offset="0.75" stopColor="#eef1f3" />
-          <stop offset="1" stopColor="#8b97a1" />
-        </linearGradient>
-      </defs>
-      {/* unrolled bivy */}
-      <g transform="rotate(-8)">
-        <path d="M-300,-150 Q-320,-40 -290,140 Q-280,220 -200,230 L240,250 Q300,250 305,190 L320,-140 Q318,-210 250,-212 L-230,-220 Q-296,-218 -300,-150 Z" fill="url(#mylarEnd)" stroke="#6f7a83" strokeWidth={4} />
-        <path d="M-300,-150 Q-200,-110 -230,-220" fill="#d7dde1" stroke="#6f7a83" strokeWidth={3} />
-        <path d="M-200,-150 L-120,40 M-80,-180 L-10,-10 M40,-190 L110,30 M150,-170 L230,60 M-240,60 L-160,200 M20,60 L80,220" stroke="rgba(255,255,255,0.85)" strokeWidth={6} strokeLinecap="round" />
-        <path d="M-150,-60 L-90,120 M90,-120 L150,60 M180,100 L230,220" stroke="rgba(80,92,104,0.4)" strokeWidth={4} strokeLinecap="round" />
-      </g>
-      {/* stuff sack in front */}
-      <g transform="translate(190,170) rotate(6)">
-        <rect x={-70} y={-90} width={140} height={180} rx={36} fill="#C2662E" />
-        <rect x={-70} y={-90} width={140} height={40} rx={20} fill="#9B4E20" />
-        <path d="M-16,-90 Q0,-130 16,-90" stroke="#2a2a2a" strokeWidth={8} fill="none" />
-        <rect x={-40} y={0} width={80} height={14} rx={7} fill="rgba(255,255,255,0.45)" />
-      </g>
-    </g>
-  );
-};
-
 const S5: React.FC<{ off: number }> = ({ off }) => {
   const lt = useT();
   void off;
   return (
     <EndCard
       lt={lt}
-      art={<BivyArt lt={lt} />}
-      spec="REFLECTIVE MYLAR · PACKS SMALL"
+      photo="products/emergency-bivy-sack-card.jpg"
+      spec="LIGHTWEIGHT · PACKS SMALL"
       name={
         <>
           Emergency

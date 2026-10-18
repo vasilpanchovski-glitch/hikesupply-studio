@@ -219,41 +219,13 @@ const S4: React.FC<{ off: number }> = ({ off }) => {
 };
 
 // ============ S5 END CARD ============
-const PackArt: React.FC<{ lt: number }> = ({ lt }) => {
-  const s = at(lt, [0.2, 1.1], [0.85, 1], outExpo);
-  const o = at(lt, [0.1, 0.5], [0, 1]);
-  return (
-    <g transform={`translate(540,520) scale(${s})`} opacity={o}>
-      {/* shoulder straps behind */}
-      <path d="M-120,-250 Q-200,-60 -150,200" stroke="#2E4A39" strokeWidth={46} fill="none" strokeLinecap="round" />
-      <path d="M120,-250 Q200,-60 150,200" stroke="#2E4A39" strokeWidth={46} fill="none" strokeLinecap="round" />
-      {/* body */}
-      <path d="M-170,-220 Q-180,-300 -90,-310 L90,-310 Q180,-300 170,-220 L190,230 Q190,290 130,290 L-130,290 Q-190,290 -190,230 Z" fill="#3E5F4B" />
-      <path d="M90,-310 Q180,-300 170,-220 L190,230 Q190,290 130,290 L60,290 L80,-300 Z" fill="#35533F" />
-      {/* front pocket */}
-      <path d="M-130,40 L130,40 L140,240 Q140,262 118,262 L-118,262 Q-140,262 -140,240 Z" fill="#2E4A39" />
-      <path d="M-120,70 L120,70" stroke="#C9B48E" strokeWidth={6} strokeDasharray="14 10" />
-      {/* zip arc */}
-      <path d="M-150,-200 Q0,-250 150,-200" stroke="#1f2a24" strokeWidth={6} fill="none" />
-      <rect x={140} y={-214} width={16} height={34} rx={5} fill="#C9B48E" />
-      {/* hose port */}
-      <rect x={-30} y={-330} width={60} height={26} rx={10} fill="#1f2a24" />
-      {/* reflective strip */}
-      <rect x={-60} y={-130} width={120} height={14} rx={7} fill="rgba(245,241,234,0.75)" />
-      {/* side compression straps */}
-      <path d="M-182,-20 L-120,-30 M-186,120 L-124,110" stroke="#1f2a24" strokeWidth={10} strokeLinecap="round" />
-      <path d="M182,-20 L120,-30 M186,120 L124,110" stroke="#1f2a24" strokeWidth={10} strokeLinecap="round" />
-    </g>
-  );
-};
-
 const S5: React.FC<{ off: number }> = ({ off }) => {
   const lt = useT();
   void off;
   return (
     <EndCard
       lt={lt}
-      art={<PackArt lt={lt} />}
+      photo="products/hydration-backpack-18l-card.jpg"
       spec="18L · HYDRATION SLEEVE · UNISEX"
       name={
         <>
