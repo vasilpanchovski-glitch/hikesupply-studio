@@ -1,0 +1,61 @@
+{
+ "pins": [
+  {
+   "id": "pb20261018-1",
+   "layout": "forest",
+   "image": "media/pins/v22-crop.jpg",
+   "kicker": "Fall day hikes",
+   "title": "The shelter that fits in your palm",
+   "sub": "An emergency bivy traps body heat if an injury or bad weather keeps you out after dark.",
+   "cta": "Shop the bivy"
+  },
+  {
+   "id": "pb20261018-2",
+   "layout": "forest",
+   "image": "media/pins/v23-crop.jpg",
+   "kicker": "Utah's Mighty 5 in fall",
+   "title": "Get the permit first",
+   "sub": "Enter the Angels Landing permit lottery, start early on short days, and check flash flood forecasts.",
+   "cta": "Get the trip pack"
+  },
+  {
+   "id": "pb20261018-3",
+   "layout": "forest",
+   "image": "media/pins/v24-crop.jpg",
+   "kicker": "Cold weather hiking",
+   "title": "Not thirsty? Drink anyway",
+   "sub": "Cold air dulls your thirst, but you still lose water. Sip every 15 to 20 minutes.",
+   "cta": "Shop the pack"
+  },
+  {
+   "id": "pb20261018-4",
+   "layout": "stone",
+   "kicker": "Fall hiking at 35-45°F",
+   "title": "What to wear",
+   "items": [
+    "Long-sleeve base layer, no cotton",
+    "Fleece mid layer",
+    "Wind or rain shell",
+    "Hat, light gloves, neck gaiter",
+    "Merino wool socks"
+   ],
+   "sub": "Start a little cool, and add a layer as soon as you stop.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261018-5",
+   "layout": "stone",
+   "kicker": "Your first hike",
+   "title": "Pick the right trail",
+   "items": [
+    "2 to 5 miles round trip",
+    "Under 1,000 ft of climbing",
+    "A clear payoff: falls, lake, view",
+    "Popular and well marked",
+    "Set a turnaround time"
+   ],
+   "cta": "Read the guide",
+   "sub": "Allow about 30 minutes per mile, plus an hour for every 1,000 ft of climbing."
+  }
+ ]
+}
