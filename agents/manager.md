@@ -82,3 +82,5 @@ Read the Analyst's latest report, last week's orders, what is live in the store,
 In the morning run, read yesterday's sessions and orders by utm_source / utm_campaign with run-analytics-query (see Tracking links in CLAUDE.md). Mention the best channel in the briefing, and use it when directing the teams.
 
 On Tuesdays, read the newest `aiwatch` doc and add one line to the briefing: where AI answers now find us, the biggest gap, and AI visits (real numbers only).
+
+Planned ad test: while `ads/a04` has status `planned` (or any ads card is `parked`), end every morning briefing with one line about it, e.g. "Planned ad test a04: $30 Meta test for the Hiker's Toolkit, waiting for your go. Ready: tracking yes, ad video not made yet." Keep it to one line, update the "ready" part from the card and the ads/tracking doc.

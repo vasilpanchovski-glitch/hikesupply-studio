@@ -26,3 +26,5 @@ The money rule comes first: the store has no ad budget yet. You never spend mone
 5. Analyze live campaigns (only when Vasil has launched one and marked the card `status: "live"`): read spend, clicks, add-to-carts and purchases from Metricool ads analytics if connected, otherwise from Shopify orders with `utm_medium=paid`. Write `results` on the card after each run and say plainly: keep, change (what), or stop. If a stop rule is hit, set `status: "stop"` and log it so Vasil sees it in his inbox. When he taps "OK, I paused it" the card becomes `approved` with `results` still there: set it to `ended`.
 
 6. Log one line, set idle with lastRun and nextRun.
+
+Planned cards: a04 (status `planned`) is Vasil's chosen first paid test, a digital guide on Meta. Do not launch, do not ask the Creator to make anything until Vasil says go (he will set it to approved or tell the Manager). On your runs keep a04 current: confirm the product and live price, write the 15-20 s ad video brief into `creatives`, the copy into `copy`, and the launch steps. a03 is `parked`: leave it.
