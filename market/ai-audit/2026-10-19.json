@@ -1,0 +1,364 @@
+{
+ "date": "2026-10-19",
+ "method": "WebSearch (standard, US) for each question in market/ai-questions.json; top results as returned. Also site:hikesupplyco.com and a brand search.",
+ "indexing": {
+  "site_search": "no hikesupplyco.com pages returned",
+  "brand_search": "no hikesupplyco.com pages returned"
+ },
+ "previous": null,
+ "results": [
+  {
+   "question": "free printable hiking checklist pdf",
+   "top": [
+    "trailcations.gumroad.com",
+    "mywanderlustylife.gumroad.com",
+    "thedba.gumroad.com",
+    "payhip.com",
+    "conradmansion.com (spam copy of REI)"
+   ],
+   "hikesupply": false,
+   "winning_type": "free printables on Gumroad/Payhip"
+  },
+  {
+   "question": "best day hiking checklist for beginners",
+   "top": [
+    "rei.com",
+    "sectionhiker.com",
+    "coolofthewild.com",
+    "trailandkale.com",
+    "wildernesstimes.com",
+    "en.4actionsport.it"
+   ],
+   "hikesupply": false,
+   "winning_type": "long checklist articles (REI expert advice)"
+  },
+  {
+   "question": "what to pack for a day hike printable",
+   "top": [
+    "trailcations.gumroad.com",
+    "lotsafreshair.com",
+    "22places.com",
+    "cleverhiker.com",
+    "kathmandu.com.au",
+    "georgetownky.com (PDF)"
+   ],
+   "hikesupply": false,
+   "winning_type": "checklist article with printable"
+  },
+  {
+   "question": "hiking trip planner printable",
+   "top": [
+    "backpacker.com",
+    "trailcraftlogic.gumroad.com",
+    "payhip.com",
+    "hatchetsupply.com",
+    "spam planner pages"
+   ],
+   "hikesupply": false,
+   "winning_type": "free print-and-go planners, Gumroad"
+  },
+  {
+   "question": "Great Smoky Mountains trip planning guide pdf",
+   "top": [
+    "overdrive.com",
+    "lonelyplanet.com",
+    "fodors (ebook)",
+    "dirtinmyshoes.com",
+    "travelpander.com",
+    "parkscollecting.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "published guidebooks and blog guides"
+  },
+  {
+   "question": "Smoky Mountains hiking itinerary 3 days",
+   "top": [
+    "wildlandtrekking.com",
+    "fodors.com",
+    "explore-share.com",
+    "copied blog itineraries"
+   ],
+   "hikesupply": false,
+   "winning_type": "guided trip pages and itinerary blogs"
+  },
+  {
+   "question": "Utah Mighty 5 road trip itinerary guide",
+   "top": [
+    "thetravel.com",
+    "ordinarytraveler.com",
+    "shakaguide.com",
+    "bearfoottheory.com",
+    "thatch.co (paid itinerary)",
+    "lostwithlydia.com",
+    "earthtrekkers.com",
+    "turo.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "long itinerary blogs, one paid itinerary"
+  },
+  {
+   "question": "Utah national parks trip planner pdf",
+   "top": [
+    "spam printable pages",
+    "nationalgeographic.com map"
+   ],
+   "hikesupply": false,
+   "winning_type": "weak results, mostly spam"
+  },
+  {
+   "question": "beginner hiking guide pdf",
+   "top": [
+    "wanderbase.gumroad.com",
+    "webflow PDF",
+    "trailhiking.com.au",
+    "hurriajaved.gumroad.com",
+    "acrartex.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "Gumroad PDFs, free PDFs"
+  },
+  {
+   "question": "solo hiking safety tips guide",
+   "top": [
+    "marathonhandbook.com",
+    "travelnoire.com",
+    "worldnomads.com",
+    "outdoorgearzine.com",
+    "orangemud.com",
+    "beyondwildplaces.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "tips list articles"
+  },
+  {
+   "question": "what to do if you get lost hiking",
+   "top": [
+    "sectionhiker.com",
+    "simplyhike.co.uk",
+    "montemlife.com",
+    "bushbuck.co.nz",
+    "americanhiking.org",
+    "hillwalktours.com",
+    "backpackerspantry.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "step-by-step articles, store blogs"
+  },
+  {
+   "question": "hiking emergency checklist",
+   "top": [
+    "adk.org",
+    "active.com",
+    "outdoorlife.com",
+    "checklist.gg",
+    "mec.ca",
+    "pelican.com",
+    "trailhiking.com.au",
+    "ummhealth.org (PDF)"
+   ],
+   "hikesupply": false,
+   "winning_type": "10 essentials pages, checklists"
+  },
+  {
+   "question": "hiking safety checklist for beginners",
+   "top": [
+    "explorewithalec.com",
+    "thesilverlining.com",
+    "unofficialnetworks.com",
+    "kraftgeek.com",
+    "spam pages"
+   ],
+   "hikesupply": false,
+   "winning_type": "tips articles"
+  },
+  {
+   "question": "best cheap trekking poles for beginners",
+   "top": [
+    "reviewed.com",
+    "wapititravel.com",
+    "cleverhiker.com",
+    "rei.com",
+    "bushwalk.com forum",
+    "thegreatoutdoorsmag.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "tested review roundups, forums"
+  },
+  {
+   "question": "what to wear hiking in fall",
+   "top": [
+    "tractorsupply.com",
+    "themandagies.com",
+    "bearfoottheory.com",
+    "freshoffthegrid.com",
+    "rexby.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "store blog and travel blogs (our a01 not shown)"
+  },
+  {
+   "question": "hiking gear checklist for beginners on a budget",
+   "top": [
+    "outforia.com",
+    "frugalfrolicker.com",
+    "whereintheworldisnina.com",
+    "everywherewithclaire.com",
+    "tourradar.com",
+    "luminaid.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "budget blogs"
+  },
+  {
+   "question": "best hiking guides to buy for national parks",
+   "top": [
+    "nationalparked.com",
+    "rei.com",
+    "shop.glacier.org",
+    "terragalleria.com",
+    "thriftbooks.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "guidebook lists, REI category"
+  },
+  {
+   "question": "gift ideas for new hikers under $30",
+   "top": [
+    "australianhiker.com.au",
+    "hikethehighlands.com",
+    "explorewithalec.com",
+    "talkofthehouse.com",
+    "themandagies.com",
+    "moneysavingmom.com",
+    "gohikevirginia.com",
+    "adventuresofaplusk.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "gift list articles"
+  },
+  {
+   "question": "hiking journal printable",
+   "top": [
+    "payhip.com",
+    "etsy.com",
+    "simonandschuster (book)",
+    "gumroad (findingways, dbonz)",
+    "freehomeschooldeals.com",
+    "lulu.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "Etsy/Payhip/Gumroad printables, print books"
+  },
+  {
+   "question": "how to plan your first hike",
+   "top": [
+    "columbiasportswear.co.uk",
+    "parks.desi.qld.gov.au",
+    "koa.com",
+    "coolofthewild.com",
+    "compassohio.com",
+    "inyourpocket.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "brand blogs and park pages"
+  },
+  {
+   "question": "how to load a gpx file into alltrails",
+   "top": [
+    "ultra-x.co",
+    "forums.garmin.com",
+    "studycountry.com",
+    "support.hiiker.app",
+    "support.alltrails.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "how-to blogs, help centers (our a03 not live yet)"
+  },
+  {
+   "question": "how to use gpx files in gaia gps",
+   "top": [
+    "trailsoffroad.com",
+    "carolinamountainclub.org (PDF)",
+    "indiahikes.com",
+    "mobilemaplets.com",
+    "oregonhikers.org",
+    "mountaineers.org"
+   ],
+   "hikesupply": false,
+   "winning_type": "club PDFs and how-to guides"
+  },
+  {
+   "question": "how to put a gpx track on my phone",
+   "top": [
+    "kompass.de",
+    "forums.garmin.com",
+    "saint-malo-tourisme.co.uk",
+    "outdoorgearlab.com",
+    "ultra-x.co"
+   ],
+   "hikesupply": false,
+   "winning_type": "how-to guides"
+  },
+  {
+   "question": "day hike checklist printable",
+   "top": [
+    "trailcations.gumroad.com",
+    "cleverhiker.com",
+    "wildernesstimes.com",
+    "rei.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "free printables and checklist articles"
+  },
+  {
+   "question": "how to stop trekking poles from slipping",
+   "top": [
+    "outdoors.codidact.com",
+    "ryderwalker.com",
+    "backpacker.com",
+    "simond.com",
+    "gossamergear.com",
+    "touristsecrets.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "Q&A site, brand help pages"
+  },
+  {
+   "question": "why is my hydration bladder leaking",
+   "top": [
+    "outdoors.codidact.com",
+    "sectionhiker.com",
+    "caminodesantiago.me forum",
+    "backpackinglight.com forum"
+   ],
+   "hikesupply": false,
+   "winning_type": "forums and one blog fix guide"
+  },
+  {
+   "question": "why is my water filter straw hard to drink from",
+   "top": [
+    "help.lifestraw.com",
+    "help.clearlyfiltered.com",
+    "support.livelarq.com",
+    "bushwalk.com forum",
+    "rei.com",
+    "backcountry.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "brand help-center answers"
+  },
+  {
+   "question": "does an emergency bivy keep you warm",
+   "top": [
+    "shopsavvy.com answers",
+    "theoutfitters.nf.ca",
+    "sportsshoes.com",
+    "bartang.eu",
+    "mtwaddingtons.com",
+    "snowestonline.com"
+   ],
+   "hikesupply": false,
+   "winning_type": "short answer pages and retailer pages"
+  }
+ ]
+}
