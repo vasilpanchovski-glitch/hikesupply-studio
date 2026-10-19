@@ -1,0 +1,61 @@
+{
+ "pins": [
+  {
+   "id": "pb20261019-1",
+   "layout": "forest",
+   "image": "media/pins/v26-crop.jpg",
+   "kicker": "Muddy fall trails",
+   "title": "Keep your socks dry",
+   "sub": "Leg gaiters strap over your boots and keep mud, wet leaves, snow and pebbles out.",
+   "cta": "Shop the gaiters"
+  },
+  {
+   "id": "pb20261019-2",
+   "layout": "forest",
+   "image": "media/pins/v18-crop.jpg",
+   "kicker": "Before every hike",
+   "title": "Tell someone your plan",
+   "sub": "Text a friend your trail, trailhead, car and the time to call for help if you're not back.",
+   "cta": "Get the guide"
+  },
+  {
+   "id": "pb20261019-3",
+   "layout": "stone",
+   "kicker": "Day hike first-aid kit",
+   "title": "Pack these 5",
+   "items": [
+    "Adhesive bandages",
+    "Gauze pads and tape",
+    "Antiseptic wipes",
+    "Elastic wrap bandage",
+    "Tweezers and small scissors"
+   ],
+   "sub": "Add any personal medicines you need, and restock it after every trip.",
+   "cta": "Shop the kit"
+  },
+  {
+   "id": "pb20261019-4",
+   "layout": "forest",
+   "kicker": "Great Smoky Mountains",
+   "title": "Smokies in November",
+   "items": [
+    "Kuwohi Road open to Nov 29",
+    "Roaring Fork open to Nov 29",
+    "10-20°F colder up high",
+    "Parking tag: $5 a day",
+    "Short days: start early"
+   ],
+   "sub": "Check road status on nps.gov/grsm before you drive in.",
+   "cta": "Plan your trip"
+  },
+  {
+   "id": "pb20261019-5",
+   "layout": "forest",
+   "image": "media/pins/v17-crop.jpg",
+   "kicker": "Men's fall hiking outfit",
+   "title": "Warm, not sweaty",
+   "sub": "Windproof fleece over a wicking base layer, quick-dry pants, merino socks. Unzip on the climb.",
+   "cta": "Shop the fleece"
+  }
+ ]
+}
