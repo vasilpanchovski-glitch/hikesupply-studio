@@ -1,21 +1,126 @@
 {
-  "updated": "2026-10-17",
-  "note": "First list. Social accounts (2-3) still to add: TikTok/Instagram profile pages were not readable as public pages this run.",
-  "rivals": [
-    {"name": "We're in the Rockies", "url": "https://wereintherockies.com/store/", "where": "own-site", "sells": "digital", "day": "tue", "why": "Biggest direct rival for park trip guides: per-park itinerary PDFs + audio, regional bundles, Utah and Canadian Rockies. Strong email list."},
-    {"name": "Getaway Goose (Thatch)", "url": "https://thatch.co/guide/2v4mgxg4fb1w0/view", "where": "own-site", "sells": "digital", "day": "tue", "why": "Paid Utah Mighty 5 7-day itinerary, overlaps our Utah Trip Planning Guide."},
-    {"name": "Kingdom over culture life (Payhip)", "url": "https://payhip.com/b/B7YEG", "where": "own-site", "sells": "digital", "day": "tue", "why": "Utah Mighty 5 family road trip guide PDF at $14, overlaps our Utah guide."},
-    {"name": "Traverse with Tonia (Payhip)", "url": "https://payhip.com/b/tFbkH", "where": "own-site", "sells": "digital", "day": "tue", "why": "National parks + hiking checklist with 3 hikes per park, $4.99, and a parks + waterfalls bundle."},
-    {"name": "An Acre in the City (Payhip)", "url": "https://payhip.com/b/xIwnT", "where": "own-site", "sells": "digital", "day": "tue", "why": "Fillable national park itinerary $19, camping and road trip planners."},
-    {"name": "milesandhikes (Gumroad)", "url": "https://milesandhikes.gumroad.com/l/natureweekendreset", "where": "gumroad", "sells": "digital", "day": "tue", "why": "Hiking-themed printable planners on Gumroad."},
-    {"name": "Montem", "url": "https://montemlife.com/collections/accessories", "where": "shopify", "sells": "gear", "day": "tue", "why": "US trekking pole brand; accessory bundles and pole add-ons, free shipping over $100."},
-    {"name": "BigSkyChecklists", "url": "https://www.etsy.com/shop/BigSkyChecklists", "where": "etsy", "sells": "digital", "day": "fri", "why": "Montana shop, 36 camping/backpacking/national park checklists at $1.99-6.99, many bundles."},
-    {"name": "Travel50States", "url": "https://www.etsy.com/shop/Travel50States", "where": "etsy", "sells": "digital", "day": "fri", "why": "National parks tracker, hike-all-50-states tracker, hiking journal bundle. Star Seller."},
-    {"name": "theBrainbookShop", "url": "https://www.etsy.com/shop/theBrainbookShop", "where": "etsy", "sells": "digital", "day": "fri", "why": "National parks map checklist in six planner sizes, 3.5k shop sales."},
-    {"name": "PrintablePatti", "url": "https://www.etsy.com/shop/PrintablePatti", "where": "etsy", "sells": "digital", "day": "fri", "why": "18-page camping/hiking planner bundle, permanent 25% shop sale."},
-    {"name": "ThePrintedSmile", "url": "https://www.etsy.com/shop/ThePrintedSmile", "where": "etsy", "sells": "digital", "day": "fri", "why": "40k-sale printables shop with camping and road trip planners; shows what volume sellers charge."},
-    {"name": "MarcisShoppe", "url": "https://www.etsy.com/shop/MarcisShoppe", "where": "etsy", "sells": "digital", "day": "fri", "why": "Kids nature scavenger hunt with 146 reviews at $2, benchmark for our Kids Trail Explorer Pack."},
-    {"name": "AnkaKidsStudio", "url": "https://www.etsy.com/shop/AnkaKidsStudio", "where": "etsy", "sells": "digital", "day": "fri", "why": "Bestseller-badged nature scavenger hunt bundle, new shop growing fast."},
-    {"name": "Hiker Hunger Outfitters", "url": "https://www.hikerhunger.com/", "where": "shopify", "sells": "gear", "day": "fri", "why": "US trekking pole store with permanent sale pricing and kids' poles; compare with our pole."}
-  ]
+ "updated": "2026-10-19",
+ "note": "Day labels now match the Monday/Thursday runs (mon = first half, thu = second half). Social accounts (2-3) still to add: TikTok/Instagram profile pages are not readable as public pages from the cloud. Candidate seen: Print Blossom (Payhip), free Yellowstone journal kit.",
+ "rivals": [
+  {
+   "name": "We're in the Rockies",
+   "url": "https://wereintherockies.com/store/",
+   "where": "own-site",
+   "sells": "digital",
+   "day": "mon",
+   "why": "Biggest direct rival for park trip guides: per-park itinerary PDFs + audio, regional bundles, Utah and Canadian Rockies. Strong email list."
+  },
+  {
+   "name": "Getaway Goose (Thatch)",
+   "url": "https://thatch.co/guide/2v4mgxg4fb1w0/view",
+   "where": "own-site",
+   "sells": "digital",
+   "day": "mon",
+   "why": "Paid Utah Mighty 5 7-day itinerary, overlaps our Utah Trip Planning Guide."
+  },
+  {
+   "name": "Kingdom over culture life (Payhip)",
+   "url": "https://payhip.com/b/B7YEG",
+   "where": "own-site",
+   "sells": "digital",
+   "day": "mon",
+   "why": "Utah Mighty 5 family road trip guide PDF at $14, overlaps our Utah guide."
+  },
+  {
+   "name": "Traverse with Tonia (Payhip)",
+   "url": "https://payhip.com/b/tFbkH",
+   "where": "own-site",
+   "sells": "digital",
+   "day": "mon",
+   "why": "National parks + hiking checklist with 3 hikes per park, $4.99, and a parks + waterfalls bundle."
+  },
+  {
+   "name": "An Acre in the City (Payhip)",
+   "url": "https://payhip.com/b/xIwnT",
+   "where": "own-site",
+   "sells": "digital",
+   "day": "mon",
+   "why": "Fillable national park itinerary $19, camping and road trip planners."
+  },
+  {
+   "name": "milesandhikes (Gumroad)",
+   "url": "https://milesandhikes.gumroad.com/l/natureweekendreset",
+   "where": "gumroad",
+   "sells": "digital",
+   "day": "mon",
+   "why": "Hiking-themed printable planners on Gumroad."
+  },
+  {
+   "name": "Montem",
+   "url": "https://montemlife.com/collections/accessories",
+   "where": "shopify",
+   "sells": "gear",
+   "day": "mon",
+   "why": "US trekking pole brand; accessory bundles and pole add-ons, free shipping over $100."
+  },
+  {
+   "name": "BigSkyChecklists",
+   "url": "https://www.etsy.com/shop/BigSkyChecklists",
+   "where": "etsy",
+   "sells": "digital",
+   "day": "thu",
+   "why": "Montana shop, 36 camping/backpacking/national park checklists at $1.99-6.99, many bundles."
+  },
+  {
+   "name": "Travel50States",
+   "url": "https://www.etsy.com/shop/Travel50States",
+   "where": "etsy",
+   "sells": "digital",
+   "day": "thu",
+   "why": "National parks tracker, hike-all-50-states tracker, hiking journal bundle. Star Seller."
+  },
+  {
+   "name": "theBrainbookShop",
+   "url": "https://www.etsy.com/shop/theBrainbookShop",
+   "where": "etsy",
+   "sells": "digital",
+   "day": "thu",
+   "why": "National parks map checklist in six planner sizes, 3.5k shop sales."
+  },
+  {
+   "name": "PrintablePatti",
+   "url": "https://www.etsy.com/shop/PrintablePatti",
+   "where": "etsy",
+   "sells": "digital",
+   "day": "thu",
+   "why": "18-page camping/hiking planner bundle, permanent 25% shop sale."
+  },
+  {
+   "name": "ThePrintedSmile",
+   "url": "https://www.etsy.com/shop/ThePrintedSmile",
+   "where": "etsy",
+   "sells": "digital",
+   "day": "thu",
+   "why": "40k-sale printables shop with camping and road trip planners; shows what volume sellers charge."
+  },
+  {
+   "name": "MarcisShoppe",
+   "url": "https://www.etsy.com/shop/MarcisShoppe",
+   "where": "etsy",
+   "sells": "digital",
+   "day": "thu",
+   "why": "Kids nature scavenger hunt with 146 reviews at $2, benchmark for our Kids Trail Explorer Pack."
+  },
+  {
+   "name": "AnkaKidsStudio",
+   "url": "https://www.etsy.com/shop/AnkaKidsStudio",
+   "where": "etsy",
+   "sells": "digital",
+   "day": "thu",
+   "why": "Bestseller-badged nature scavenger hunt bundle, new shop growing fast."
+  },
+  {
+   "name": "Hiker Hunger Outfitters",
+   "url": "https://www.hikerhunger.com/",
+   "where": "shopify",
+   "sells": "gear",
+   "day": "thu",
+   "why": "US trekking pole store with permanent sale pricing and kids' poles; compare with our pole."
+  }
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller.",
- "updated": "2026-10-17",
+ "updated": "2026-10-19",
  "complaints": [
   {
    "type": "trekking pole",
@@ -575,6 +575,246 @@
    "theme": "needs offline access",
    "found": "2026-10-17",
    "rival": true
+  },
+  {
+   "type": "water filter bottle",
+   "product": "LifeStraw Go 1L filter bottle (REI)",
+   "what": "one bottle leaked all the time, the other gave very slow flow even when used as told",
+   "source": "https://www.rei.com/product/229733",
+   "where": "rei",
+   "date": "",
+   "theme": "filter straw clogs / flow drops / hard to suck",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "water filter bottle",
+   "product": "LifeStraw Go 1L filter bottle (REI)",
+   "what": "one bottle arrived without the lid gasket and leaked",
+   "source": "https://www.rei.com/product/229733",
+   "where": "rei",
+   "date": "",
+   "theme": "missing parts on arrival",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "water filter straw",
+   "product": "LifeStraw personal straw (Packstack review)",
+   "what": "sealed design, can't open it to clear a clog; backflushing stops helping near end of life",
+   "source": "https://www.packstack.io/reviews/water-system/lifestraw-personal-water-filter",
+   "where": "review-site",
+   "date": "2026-08-04",
+   "theme": "filter straw clogs / flow drops / hard to suck",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "water filter straw",
+   "product": "LifeStraw personal straw (Packstack review)",
+   "what": "silty or muddy water clogs the pre-filter fast and flow falls off",
+   "source": "https://www.packstack.io/reviews/water-system/lifestraw-personal-water-filter",
+   "where": "review-site",
+   "date": "2026-08-04",
+   "theme": "filter straw clogs / flow drops / hard to suck",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "water filter straw",
+   "product": "LifeStraw personal straw (Packstack review)",
+   "what": "sucking gets harder as the filter ages, well before rated lifespan",
+   "source": "https://www.packstack.io/reviews/water-system/lifestraw-personal-water-filter",
+   "where": "review-site",
+   "date": "2026-08-04",
+   "theme": "filter straw clogs / flow drops / hard to suck",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "water filter straw",
+   "product": "LifeStraw personal straw (Packstack review)",
+   "what": "in cold weather the tube stiffens and suction gets much harder",
+   "source": "https://www.packstack.io/reviews/water-system/lifestraw-personal-water-filter",
+   "where": "review-site",
+   "date": "2026-08-04",
+   "theme": "filter straw clogs / flow drops / hard to suck",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "water filter straw",
+   "product": "LifeStraw personal straw (Packstack review)",
+   "what": "does not remove viruses, which buyers don't always realise",
+   "source": "https://www.packstack.io/reviews/water-system/lifestraw-personal-water-filter",
+   "where": "review-site",
+   "date": "2026-08-04",
+   "theme": "filter limits not explained",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "water filter straw",
+   "product": "LifeStraw personal straw (Packstack review)",
+   "what": "you must drink at the source, awkward for filling bottles or cooking water",
+   "source": "https://www.packstack.io/reviews/water-system/lifestraw-personal-water-filter",
+   "where": "review-site",
+   "date": "2026-08-04",
+   "theme": "filter limits not explained",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "emergency bivy",
+   "product": "SOL Escape Bivvy (Packstack review)",
+   "what": "annoying condensation inside once nights dropped into the 30s F",
+   "source": "https://www.packstack.io/reviews/sleep-system/sol-survive-outdoors-longer-escape-bivvy",
+   "where": "review-site",
+   "date": "2026-07-23",
+   "theme": "emergency bivy: condensation, no insulation",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "emergency bivy",
+   "product": "SOL Escape Bivvy (Packstack review)",
+   "what": "reflective lining is not insulation; does not replace a pad or sleeping bag",
+   "source": "https://www.packstack.io/reviews/sleep-system/sol-survive-outdoors-longer-escape-bivvy",
+   "where": "review-site",
+   "date": "2026-07-23",
+   "theme": "emergency bivy: condensation, no insulation",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "emergency bivy",
+   "product": "SOL Escape Bivvy (Packstack review)",
+   "what": "regular size snug for tall or broad users",
+   "source": "https://www.packstack.io/reviews/sleep-system/sol-survive-outdoors-longer-escape-bivvy",
+   "where": "review-site",
+   "date": "2026-07-23",
+   "theme": "bivy too small",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "emergency bivy",
+   "product": "SOL emergency bivvy (ShopSavvy summary)",
+   "what": "no insulation beyond the coating, moisture builds up, needs extra layers in real cold",
+   "source": "https://shopsavvy.com/reviews-tldr/s.o.l.-emergency-bivvy",
+   "where": "review-site",
+   "date": "2024-09-26",
+   "theme": "emergency bivy: condensation, no insulation",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "emergency bivy",
+   "product": "SOL emergency bivvy (ShopSavvy summary)",
+   "what": "material feels stiff and is noisy",
+   "source": "https://shopsavvy.com/reviews-tldr/s.o.l.-emergency-bivvy",
+   "where": "review-site",
+   "date": "2024-09-26",
+   "theme": "stiff or noisy material",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park journal",
+   "product": "National Parks Bucket Journal (My Bucket Journals)",
+   "what": "expected park recommendations, got a plain notes diary",
+   "source": "https://loox.io/s/EkbcStBlxO?page=9",
+   "where": "own-site",
+   "date": "",
+   "theme": "guide too limited / generic",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park journal",
+   "product": "National Parks Bucket Journal (My Bucket Journals)",
+   "what": "expected details per park, got a generic checklist page",
+   "source": "https://loox.io/s/EkbcStBlxO?page=9",
+   "where": "own-site",
+   "date": "",
+   "theme": "guide too limited / generic",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park journal",
+   "product": "State Parks Bucket Journal, New Mexico (My Bucket Journals)",
+   "what": "no statewide map or park maps",
+   "source": "https://loox.io/s/EkbcStBlxO?page=9",
+   "where": "own-site",
+   "date": "",
+   "theme": "guide too limited / generic",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park journal",
+   "product": "State Parks Bucket Journal, Idaho (My Bucket Journals)",
+   "what": "expected park and campground maps, it is only a blank logbook",
+   "source": "https://loox.io/s/EkbcStBlxO?page=9",
+   "where": "own-site",
+   "date": "",
+   "theme": "guide too limited / generic",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park journal",
+   "product": "State Parks Bucket Journal, Iowa (My Bucket Journals)",
+   "what": "factual errors: a county in the wrong region, a county name that doesn't exist",
+   "source": "https://loox.io/s/EkbcStBlxO?page=9",
+   "where": "own-site",
+   "date": "",
+   "theme": "list incomplete or out of date",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park journal",
+   "product": "National Parks Bucket Journal (My Bucket Journals)",
+   "what": "only the national parks, nearby parks missing; wants pages they can customise",
+   "source": "https://loox.io/s/EkbcStBlxO?page=9",
+   "where": "own-site",
+   "date": "",
+   "theme": "list incomplete or out of date",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park journal",
+   "product": "State Parks Bucket Journal, Virginia (My Bucket Journals)",
+   "what": "not enough fill-in sheets for extra sites, no pockets",
+   "source": "https://loox.io/s/EkbcStBlxO?page=9",
+   "where": "own-site",
+   "date": "",
+   "theme": "not enough blank pages / too rigid",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park journal",
+   "product": "National Parks Bucket Journal (My Bucket Journals)",
+   "what": "plastic spiral instead of the expected metal one",
+   "source": "https://loox.io/s/EkbcStBlxO?page=9",
+   "where": "own-site",
+   "date": "",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "park passport",
+   "product": "National Park Passport Explorer Edition (Stamp Trails blog)",
+   "what": "printed lines and fixed sticker boxes limit where stickers go; headings collide; no blank pages sold",
+   "source": "https://stamptrails.substack.com/p/too-many-lines-and-boxes",
+   "where": "blog",
+   "date": "2024-06-15",
+   "theme": "not enough blank pages / too rigid",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "trail guidebook",
+   "product": "Kentucky's Land of the Arches (Goodreads)",
+   "what": "guide is decades old, landmarks changed or gone, newer trails missing",
+   "source": "https://www.goodreads.com/book/show/77526",
+   "where": "goodreads",
+   "date": "2021-09-18",
+   "theme": "list incomplete or out of date",
+   "found": "2026-10-19"
+  },
+  {
+   "type": "hiking journal",
+   "product": "Hiking journal (Kimola summary of Amazon reviews)",
+   "what": "pages are thin",
+   "source": "https://kimola.com/reports/unlock-hiking-adventures-with-our-insightful-journal-analysis-amazon-en-us-142309",
+   "where": "review-site",
+   "date": "2025-05-22",
+   "theme": "thin paper",
+   "found": "2026-10-19"
   }
  ],
  "themes": [
@@ -588,6 +828,14 @@
   },
   {
    "theme": "missing parts on arrival",
+   "count": 6
+  },
+  {
+   "theme": "list incomplete or out of date",
+   "count": 6
+  },
+  {
+   "theme": "breaks quickly / cheaply made",
    "count": 5
   },
   {
@@ -595,8 +843,12 @@
    "count": 5
   },
   {
-   "theme": "breaks quickly / cheaply made",
-   "count": 4
+   "theme": "guide too limited / generic",
+   "count": 5
+  },
+  {
+   "theme": "filter straw clogs / flow drops / hard to suck",
+   "count": 5
   },
   {
    "theme": "hydration bladder leaks",
@@ -607,11 +859,19 @@
    "count": 3
   },
   {
-   "theme": "list incomplete or out of date",
+   "theme": "emergency bivy: condensation, no insulation",
    "count": 3
   },
   {
    "theme": "not suited to hikers with disabilities",
+   "count": 2
+  },
+  {
+   "theme": "filter limits not explained",
+   "count": 2
+  },
+  {
+   "theme": "not enough blank pages / too rigid",
    "count": 2
   },
   {
@@ -647,11 +907,19 @@
    "count": 1
   },
   {
-   "theme": "guide too limited / generic",
+   "theme": "needs offline access",
    "count": 1
   },
   {
-   "theme": "needs offline access",
+   "theme": "bivy too small",
+   "count": 1
+  },
+  {
+   "theme": "stiff or noisy material",
+   "count": 1
+  },
+  {
+   "theme": "thin paper",
    "count": 1
   }
  ]

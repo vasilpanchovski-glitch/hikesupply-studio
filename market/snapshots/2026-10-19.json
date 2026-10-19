@@ -1,0 +1,238 @@
+{
+ "date": "2026-10-19",
+ "previous": "2026-10-17",
+ "note": "Monday half of the list (7 sellers marked 'tue') plus PrintablePatti seen in passing. Sellers not listed here were not re-checked this run; see 2026-10-17. Empty fields mean the public page did not show the number.",
+ "sellers": [
+  {
+   "name": "We're in the Rockies",
+   "products": [
+    {
+     "title": "Rocky Mountain Bundle (itinerary 2-4 days + audio guide)",
+     "format": "guide PDF + audio",
+     "pages": 36,
+     "price": 49.0,
+     "notes": "page says '$74 value'; audio guide valued at $25; free lifetime updates; money-back guarantee",
+     "url": "https://wereintherockies.com/rocky-mountain-national-park-packages/"
+    }
+   ],
+   "offers": [
+    "Build your own bundle: 10% off 2 guides, 20% off 3+ (unchanged)",
+    "Free National Park Cheat Sheet Pack with any guide (still running)",
+    "Printed road trip book with orders $150+, 70 copies (still running)",
+    "Countdown banner shows all zeros, no sale date visible"
+   ],
+   "reviews": {
+    "praise": [
+     "saves planning time"
+    ],
+    "complaints": [],
+    "notes": "page claims 24,000+ guides sold and 'hundreds of five-star reviews'; counts differ from the Capitol Reef page"
+   }
+  },
+  {
+   "name": "Getaway Goose (Thatch)",
+   "products": [
+    {
+     "title": "Utah Mighty 5 National Park Road Trip Premium Itinerary",
+     "price": null,
+     "notes": "32 places, 20 links, 7 days, Dead Horse Point included; price still not shown",
+     "url": "https://thatch.co/guide/2v4mgxg4fb1w0/view"
+    }
+   ],
+   "reviews": {
+    "count": null
+   }
+  },
+  {
+   "name": "Kingdom over culture life (Payhip)",
+   "products": [
+    {
+     "title": "Utah's Mighty Five: A Family Road Trip Guide",
+     "pages": 10,
+     "price": 14.0,
+     "url": "https://payhip.com/b/B7YEG"
+    }
+   ],
+   "reviews": {
+    "count": 0
+   }
+  },
+  {
+   "name": "Traverse with Tonia (Payhip)",
+   "products": [
+    {
+     "title": "Ultimate U.S. National Parks & Hiking Checklist",
+     "price": 4.99,
+     "notes": "8.5x11 portrait, printable + digital"
+    },
+    {
+     "title": "Ultimate U.S. Waterfalls Checklist",
+     "price": 4.99
+    },
+    {
+     "title": "Ultimate Outdoor Adventure Bundle",
+     "price": 7.99
+    }
+   ],
+   "reviews": {
+    "count": 0
+   }
+  },
+  {
+   "name": "An Acre in the City (Payhip)",
+   "products": [
+    {
+     "title": "National Park Adventure Itinerary (fillable)",
+     "price": 19.0
+    },
+    {
+     "title": "Ultimate Camping Trip Planner",
+     "price": 7.0
+    },
+    {
+     "title": "Ultimate US Travel Bucket List Printable",
+     "price": 3.0
+    },
+    {
+     "title": "Ultimate Road Trip Planner for Families",
+     "price": 9.0
+    },
+    {
+     "title": "Road Trip Planning Bingo Card",
+     "price": 2.0
+    },
+    {
+     "title": "USA Travel Journal Printable / States Tracker",
+     "price": 9.0,
+     "first_seen": true
+    },
+    {
+     "title": "Travel Planner Printable",
+     "price": 9.0,
+     "first_seen": true
+    },
+    {
+     "title": "Packing List Spreadsheet",
+     "price": 7.0,
+     "first_seen": true
+    },
+    {
+     "title": "Gratitude Journal - Travel Edition",
+     "price": 4.0,
+     "first_seen": true
+    },
+    {
+     "title": "47 Family Vacation Tips with Kids",
+     "price": 4.0,
+     "first_seen": true
+    }
+   ],
+   "reviews": {
+    "count": 0
+   }
+  },
+  {
+   "name": "milesandhikes (Gumroad)",
+   "products": [
+    {
+     "title": "Nature Weekend Reset Planner Guide",
+     "pages": 21,
+     "price": 4.99
+    }
+   ],
+   "reviews": {}
+  },
+  {
+   "name": "Montem",
+   "shop": {
+    "free_shipping_over": 100
+   },
+   "products": [
+    {
+     "title": "Flicklock 14-16mm Replacement",
+     "price": 5.5,
+     "first_seen": true
+    },
+    {
+     "title": "Trekking Pole Tip Protectors",
+     "price": 10.99
+    },
+    {
+     "title": "Trekking Pole Extra-Durable Tip Protectors",
+     "price": 10.99,
+     "first_seen": true
+    },
+    {
+     "title": "Trekking Pole Snow Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Trekking Pole Nordic Fitness Tips",
+     "price": 10.99,
+     "first_seen": true
+    },
+    {
+     "title": "Trekking Pole Mud Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "The Ultra On The Go (Advanced) Bundle",
+     "price": 36.99,
+     "was": 46.97,
+     "first_seen": true
+    },
+    {
+     "title": "The All Tips Bundle",
+     "price": 25.95,
+     "was": 32.97
+    },
+    {
+     "title": "All Baskets Bundle",
+     "price": 22.4,
+     "was": 35.98
+    }
+   ],
+   "offers": [
+    "Free standard shipping over $100",
+    "100% satisfaction guarantee",
+    "Lifetime warranty sign-up prompt"
+   ],
+   "source": "https://montemlife.com/collections/trekking-pole-accesories-and-spare-parts"
+  },
+  {
+   "name": "PrintablePatti",
+   "shop": {
+    "sales": "2.1k",
+    "rating": 4.9,
+    "reviews": 322
+   },
+   "products": [
+    {
+     "title": "Camping Checklist, Planner, Hiking Essentials ... Camping Log",
+     "pages": 18,
+     "price": 6.34,
+     "was": 8.45
+    }
+   ],
+   "offers": [
+    "25% off, now shows an end date: November 4"
+   ],
+   "source": "https://www.etsy.com/listing/898385376"
+  }
+ ],
+ "changes_vs_previous": [
+  "We're in the Rockies: Rocky Mountain bundle priced at $49 (36-page itinerary + audio), framed as '$74 value'. Bundle discounts and free bonus unchanged.",
+  "Montem: spare-part listings visible (Flicklock replacement $5.50, Nordic tips, extra-durable tip protectors); an 'Ultra On The Go (Advanced)' bundle at $36.99 (was $46.97). Not sure if it replaces the $19.75 bundle seen on 10-17, it was on a different collection page.",
+  "An Acre in the City: 5 more travel printables seen ($4-9); prices of known items unchanged.",
+  "PrintablePatti: the '25% off' sale now shows an end date, November 4.",
+  "Payhip sellers (Tonia, Kingdom over culture, Acre in the City) and milesandhikes: prices unchanged, still no public reviews.",
+  "Getaway Goose: price still hidden."
+ ],
+ "also_seen": [
+  {
+   "name": "Print Blossom (Payhip)",
+   "url": "https://payhip.com/b/Xeubm",
+   "note": "Free pay-what-you-can 4-page Yellowstone travel journal kit, Letter size; email-list style freebie. Not added to the list yet."
+  }
+ ]
+}
