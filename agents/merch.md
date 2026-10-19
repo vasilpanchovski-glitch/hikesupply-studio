@@ -12,3 +12,5 @@ Runs Mondays and Thursdays at 15:52 Skopje (cloud). Job: raise order value and c
    Write `offers/o<NN>`: `{createdAt, status: "waiting", kind, title, why (evidence: margins, season, what similar hiking stores do), change (exactly what will be created or changed, with product names and prices), startsAt, endsAt}`. Vasil approves every offer.
 4. Rules: honest offers only. No fake countdowns, no fake "was" prices, no "only 2 left" unless true. Never change the base price of a product (that is the Store Doctor's job). Never spend money.
 5. Log one line, set idle with lastRun and nextRun.
+
+Note: scheduled cloud runs are not allowed to create discounts. When an offer needs a new Shopify discount, prepare everything, set the offer setupNote to "ready: needs Claude with Vasil to create the discount", and do NOT set yourself to error. Bundles that are new digital products go to the Launch Manager via a request.

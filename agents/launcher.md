@@ -15,3 +15,5 @@ Runs daily at 12:52 and 19:52 Skopje. Job: put approved products in the store.
    - Write a `requests` doc to the Strategist: `{to: "strategist", type: "launch", text: "<title> is live at <url>, plan 2 launch videos"}`.
 4. If Shopify refuses something, set `failed` with one plain sentence and stop.
 5. Log one line per product, set idle with lastRun and nextRun.
+
+Requests from merch with type "bundle": create the new digital product exactly as described (reuse existing PDF files, no new content), list it like an approved product, set the offer doc to live with shopifyId, mark the request done.
