@@ -1,0 +1,60 @@
+{
+ "pins": [
+  {
+   "id": "pb20261020-1",
+   "layout": "forest",
+   "image": "media/v16-clean.jpg",
+   "kicker": "Fall hiking",
+   "title": "Be bold, start cold",
+   "sub": "Comfy at the trailhead? You'll be sweating 10 minutes into the climb. Start a little chilly, fleece in your pack.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261020-2",
+   "layout": "photo",
+   "image": "media/pins/v16-tall.jpg",
+   "kicker": "Fall hike at 35-45°F",
+   "title": "What to wear",
+   "items": [
+    "Wicking long-sleeve base",
+    "Fleece mid layer",
+    "Wind or rain shell",
+    "Hat, gloves, wool socks"
+   ],
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261020-3",
+   "layout": "forest",
+   "image": "media/pins/v33-crop.jpg",
+   "kicker": "What pants to wear hiking",
+   "title": "Skip the jeans",
+   "sub": "Cotton soaks up sweat and rain and stays cold. Pick quick-dry nylon or polyester with a little stretch.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261020-4",
+   "layout": "stone",
+   "kicker": "Gift for a new hiker",
+   "title": "7 guides, one gift",
+   "items": [
+    "Beginner's Hiking Guide",
+    "Solo Hiking Guide",
+    "Trip Planner + Packing Checklist",
+    "Safety Guide + Emergency Checklist",
+    "What To Do If You Get Lost"
+   ],
+   "sub": "The Ultimate Hiker's Toolkit. Instant download, print it or read it on a phone.",
+   "cta": "See the toolkit"
+  },
+  {
+   "id": "pb20261020-5",
+   "layout": "forest",
+   "image": "media/pins/v28-crop.jpg",
+   "kicker": "Shorter fall days",
+   "title": "Pick a turnaround time",
+   "sub": "Check today's sunset, decide when you turn back no matter what, and carry a headlamp.",
+   "cta": "Get the planner"
+  }
+ ]
+}
