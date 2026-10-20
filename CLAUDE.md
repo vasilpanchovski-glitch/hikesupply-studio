@@ -177,6 +177,7 @@ Flow: Hunter writes `stage: idea, status: waiting` → Vasil approves → Import
 
 - Before importing, search Shopify for an existing listing of the same product (title and supplier photos). Never import a duplicate.
 - Vet the supplier before import: product photos at least 1000 px, no supplier logos printed on the product, variants that make sense (no mixed bundles or unrelated models hiding as colours), real stock, rating 4.6+ and solid order count, ships to the US.
+- Delivery time: the listing's delivery estimate to the US must be 13 business days or less from the order date (our website promises 6-13 business days). Check the latest delivery date AliExpress shows for a US address. If it is longer, or no estimate is shown, the listing fails. Prefer AliExpress Choice or US/local-warehouse shipping.
 - Never delete product media in bulk: in Shopify, deleting a product's only copy of an image destroys the file permanently. Remove one image at a time and only the ones you are sure about.
 - Delete the supplier's "Ships From" option when it has a single value. Clean colour names (no supplier prefixes, fix typos). Sizes run smallest to largest; XXL/XXXL become 2XL/3XL.
 - Clothing: every product gets a size chart in the description (styled HTML table, cm and inches) from the supplier's chart. Sizes use the dual label "US M (Asian XL)" built from that product's own chart measurements. Split men's and women's into separate products when the supplier mixes them.
