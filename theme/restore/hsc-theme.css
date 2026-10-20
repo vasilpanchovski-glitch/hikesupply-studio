@@ -1,0 +1,483 @@
+/*
+  HikeSupply Co. — Editorial design system
+  Shared tokens + components for the custom "hsc-*" sections and the
+  physical/digital merchandising treatments layered on top of the base
+  Horizon theme. Loaded once globally from layout/theme.liquid.
+*/
+
+:root {
+  --hsc-ink: 36, 33, 28;
+  --hsc-stone: 250, 247, 241;
+  --hsc-sand: 239, 231, 216;
+  --hsc-moss: 63, 75, 55;
+  --hsc-moss-dark: 32, 42, 28;
+  --hsc-clay: 177, 90, 52;
+  --hsc-clay-light: 214, 140, 100;
+  --hsc-cream: 243, 239, 228;
+  --hsc-line: 224, 216, 199;
+  --hsc-sage: 138, 154, 126;
+  --hsc-eyebrow-size: 1.1rem;
+}
+
+/* Slightly tighter tracking reads better on a serif display face at large sizes. */
+h1,
+h2,
+.h1,
+.h2,
+.h3 {
+  letter-spacing: calc(var(--font-heading-scale) * 0.01rem);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Header — utility bar / centered wordmark / spaced-out nav              */
+/* ---------------------------------------------------------------------- */
+
+.utility-bar {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.utility-bar .announcement-bar__message {
+  font-family: var(--font-body-family);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.header-wrapper {
+  border-bottom: 1px solid rgb(var(--hsc-line));
+}
+
+/* Far-left logo. Sits in the header grid's "left-icons" cell, so the
+   wordmark stays centred in its own cell and the nav row below is untouched.
+   Hidden below 990px, where the menu toggle occupies this same cell. */
+.header__hsc-logo-link {
+  grid-area: left-icons;
+  justify-self: start;
+  align-self: center;
+  display: none;
+  line-height: 0;
+}
+
+@media screen and (min-width: 990px) {
+  .header__hsc-logo-link {
+    display: block;
+  }
+}
+
+.header__hsc-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  /* Safety cap: the width setting alone cannot stop a tall or square logo
+     from stretching the header row, so bound the height too. */
+  max-height: 6rem;
+}
+
+.header--top-center .header__heading-link .h2,
+.header--top-center .header__heading-link span.h2 {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  font-size: 2.6rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.header--top-center .header__inline-menu {
+  margin-top: 0.6rem;
+}
+
+.header__menu-item {
+  font-family: var(--font-body-family);
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.header__inline-menu .list-menu--inline {
+  gap: 0.4rem;
+}
+
+@media screen and (min-width: 990px) {
+  .header__inline-menu .list-menu--inline > li + li {
+    margin-inline-start: 1.2rem;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Marquee / ticker strip                                                 */
+/* ---------------------------------------------------------------------- */
+
+.hsc-marquee {
+  overflow: hidden;
+  background-color: rgb(var(--hsc-clay));
+  padding: 1.8rem 0;
+}
+
+.hsc-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: hsc-marquee-scroll 32s linear infinite;
+}
+
+.hsc-marquee__item {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  font-style: italic;
+  font-size: 2.4rem;
+  color: rgb(var(--hsc-stone));
+  white-space: nowrap;
+  padding: 0 2.4rem;
+}
+
+.hsc-marquee__item::after {
+  content: '';
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-inline-start: 2.4rem;
+  border-radius: 50%;
+  background-color: rgba(var(--hsc-stone), 0.5);
+}
+
+@keyframes hsc-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hsc-marquee__track {
+    animation: none;
+  }
+}
+
+.hsc-eyebrow {
+  font-family: var(--font-body-family);
+  font-size: var(--hsc-eyebrow-size);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(var(--hsc-clay));
+  margin: 0 0 1.2rem;
+}
+
+.hsc-eyebrow--on-dark {
+  color: rgb(var(--hsc-clay-light));
+}
+
+/* ---------------------------------------------------------------------- */
+/* Product page — bolder hierarchy, more air, editorial spread divider    */
+/* ---------------------------------------------------------------------- */
+
+[data-template="product"] .product__text.caption-with-letter-spacing {
+  font-family: var(--font-body-family);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: rgb(var(--hsc-clay));
+}
+
+[data-template="product"] .product__title h1 {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  font-size: clamp(3.4rem, 3vw, 4.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 1.2rem 0 2rem;
+}
+
+@media screen and (min-width: 990px) {
+  [data-template="product"] .product__info-wrapper {
+    position: relative;
+    padding-left: 6rem !important;
+  }
+
+  [data-template="product"] .product__info-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    left: 3rem;
+    width: 1px;
+    background: rgb(var(--hsc-line));
+  }
+}
+
+[data-template="product"] .price--large .price-item--regular,
+[data-template="product"] .price--large .price-item--sale {
+  font-family: var(--font-body-family);
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+[data-template="product"] .product__info-container > * + * {
+  margin-top: 2.2rem;
+}
+
+[data-template="product"] .product-form,
+[data-template="product"] product-form {
+  margin-top: 0.6rem;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Digital / physical merchandising                                       */
+/* ---------------------------------------------------------------------- */
+
+.hsc-badge-digital {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  background-color: rgb(var(--hsc-moss));
+  color: rgb(var(--hsc-cream));
+  border-color: transparent;
+}
+
+.hsc-badge-digital svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+.hsc-delivery {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.6rem 1.8rem;
+  margin: 1.6rem 0;
+  border: 1px solid rgb(var(--hsc-line));
+  background-color: rgba(var(--hsc-sand), 0.5);
+}
+
+.hsc-delivery__icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  color: rgb(var(--hsc-clay));
+  margin-top: 0.2rem;
+}
+
+.hsc-delivery__body {
+  flex: 1;
+}
+
+.hsc-delivery__label {
+  display: block;
+  font-family: var(--font-body-family);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgb(var(--hsc-ink));
+  margin: 0 0 0.5rem;
+}
+
+.hsc-delivery__message {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgba(var(--hsc-ink), 0.75);
+}
+
+.hsc-delivery__message p {
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Cart delivery note                                                     */
+/* ---------------------------------------------------------------------- */
+
+.hsc-cart-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 2rem;
+  background-color: rgba(var(--hsc-sand), 0.6);
+  border: 1px solid rgb(var(--hsc-line));
+  font-size: 1.3rem;
+  line-height: 1.55;
+  color: rgba(var(--hsc-ink), 0.85);
+}
+
+.hsc-cart-note svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  flex-shrink: 0;
+  color: rgb(var(--hsc-clay));
+  margin-top: 0.1rem;
+}
+
+.hsc-cart-note strong {
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Brand story / editorial block                                          */
+/* ---------------------------------------------------------------------- */
+
+.hsc-story {
+  padding: 8rem 0;
+  background-color: rgb(var(--hsc-stone));
+}
+
+.hsc-story__inner {
+  max-width: 132rem;
+  margin: 0 auto;
+  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+/* Reversed = text left, media right. Ordering the grid items explicitly rather
+   than flipping `direction`, so the text column keeps the wider 7fr track and
+   no RTL text behaviour leaks into the content. */
+.hsc-story--reverse .hsc-story__inner {
+  grid-template-columns: 7fr 5fr;
+}
+
+.hsc-story--reverse .hsc-story__text {
+  order: 1;
+}
+
+.hsc-story--reverse .hsc-story__media {
+  order: 2;
+}
+
+/* When no image is set the media element is not rendered at all, and the
+   section collapses to a single text column rather than showing an empty box. */
+.hsc-story--no-media .hsc-story__inner,
+.hsc-story--reverse.hsc-story--no-media .hsc-story__inner {
+  grid-template-columns: minmax(0, 76rem);
+  justify-content: center;
+}
+
+.hsc-story__media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: rgb(var(--hsc-sand));
+  align-self: start;
+  margin-top: 3.2rem;
+}
+
+.hsc-story--reverse .hsc-story__media {
+  align-self: end;
+  margin-top: 0;
+  margin-bottom: 3.2rem;
+}
+
+.hsc-story__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hsc-story__text {
+  position: relative;
+}
+
+.hsc-story__index {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  font-style: italic;
+  font-size: 13rem;
+  line-height: 1;
+  color: rgba(var(--hsc-ink), 0.06);
+  position: absolute;
+  top: -6rem;
+  inset-inline-start: -2rem;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hsc-story__text > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hsc-story__heading {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  font-size: clamp(3.2rem, 3.8vw, 5.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: rgb(var(--hsc-ink));
+  margin: 0 0 2.4rem;
+}
+
+.hsc-story__body {
+  font-family: var(--font-body-family);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: rgba(var(--hsc-ink), 0.78);
+  max-width: 46rem;
+}
+
+.hsc-story__body p {
+  margin: 0 0 1.6rem;
+}
+
+.hsc-story__body p:last-child {
+  margin-bottom: 0;
+}
+
+.hsc-story__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 2.8rem;
+  font-family: var(--font-body-family);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgb(var(--hsc-ink));
+  text-decoration: none;
+  border-bottom: 1px solid rgb(var(--hsc-ink));
+  padding-bottom: 0.3rem;
+  transition: color 0.2s ease, border-color 0.2s ease, gap 0.2s ease;
+}
+
+.hsc-story__cta:hover {
+  color: rgb(var(--hsc-clay));
+  border-color: rgb(var(--hsc-clay));
+  gap: 1.4rem;
+}
+
+@media (max-width: 989px) {
+  .hsc-story {
+    padding: 5.6rem 0;
+  }
+
+  .hsc-story__inner,
+  .hsc-story--reverse .hsc-story__inner {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    padding: 0 2.4rem;
+  }
+
+  /* Single column below desktop: image above text regardless of layout. */
+  .hsc-story--reverse .hsc-story__text,
+  .hsc-story--reverse .hsc-story__media {
+    order: 0;
+  }
+
+  .hsc-story__media,
+  .hsc-story--reverse .hsc-story__media {
+    aspect-ratio: 3 / 2;
+    align-self: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .hsc-story__index {
+    font-size: 8rem;
+    top: -3.6rem;
+  }
+}

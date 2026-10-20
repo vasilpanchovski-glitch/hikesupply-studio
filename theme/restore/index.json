@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hsc_hero": {
+      "type": "hsc-hero",
+      "settings": {
+        "bg_image": "shopify://shop_images/hero-ridge-viewpoint.png",
+        "eyebrow": "Est. for the trail",
+        "heading": "Gear Built for Every Trail",
+        "subheading": "Premium hiking gear and trail guides for hikers who take the outdoors seriously.",
+        "btn1_label": "Shop Gear",
+        "btn1_url": "/collections/all-gear",
+        "btn2_label": "Trail Guides",
+        "btn2_url": "/collections/trail-guides-downloads"
+      }
+    },
+    "hsc_categories": {
+      "type": "hsc-categories",
+      "settings": {
+        "title": "Shop by Category",
+        "description": "Three ways to gear up for the trail. Equipment, apparel and digital guides.",
+        "gear_title": "Hiking Gear & Equipment",
+        "gear_desc": "Packs, poles, hydration and rain protection for every trail condition.",
+        "gear_cta": "Shop Gear",
+        "gear_link": "/collections/gear-equipment",
+        "clothing_title": "Hiking Clothing",
+        "clothing_desc": "Jackets, base layers and trail-ready apparel for every season.",
+        "clothing_cta": "Shop Clothing",
+        "clothing_link": "/collections/clothing",
+        "digital_title": "Trail Guides & Planners",
+        "digital_desc": "Printable route guides, GPX bundles and packing checklists. Instant download.",
+        "digital_cta": "Get Downloads",
+        "digital_link": "/collections/trail-guides-downloads"
+      }
+    },
+    "hsc_marquee": {
+      "type": "hsc-marquee",
+      "blocks": {
+        "m1": { "type": "item", "settings": { "text": "Trail-tested gear" } },
+        "m2": { "type": "item", "settings": { "text": "Instant digital delivery" } },
+        "m3": { "type": "item", "settings": { "text": "Built for the long trail" } },
+        "m4": { "type": "item", "settings": { "text": "Free worldwide shipping" } }
+      },
+      "block_order": ["m1", "m2", "m3", "m4"],
+      "settings": {}
+    },
+    "hsc_featured": {
+      "type": "hsc-featured",
+      "settings": {
+        "title": "Featured Gear",
+        "product_limit": 4,
+        "view_all_label": "View All",
+        "view_all_url": "/collections/all"
+      }
+    },
+    "hsc_story": {
+      "type": "hsc-story",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "reverse",
+        "image_asset": "hsc-story-trail.jpg",
+        "index_number": "01",
+        "eyebrow": "Our story",
+        "heading": "Built by hikers, for hikers",
+        "body": "<p>HikeSupply Co. started with a simple idea: gear should earn its place in your pack. Every product we carry is tested on real trails, from weekend loops to multi-day traverses, before it ever reaches our shelves.</p><p>We work with a small group of makers who share our obsession with durability, weight and craft — and we pair every piece of gear with the trail knowledge to use it well.</p>",
+        "link_label": "Read our story",
+        "link_url": "/pages/about"
+      }
+    },
+    "hsc_trust": {
+      "type": "hsc-trust",
+      "blocks": {
+        "trust-1": {
+          "type": "item",
+          "settings": { "icon": "download", "label": "Instant Download", "description": "Digital files delivered immediately" }
+        },
+        "trust-2": {
+          "type": "item",
+          "settings": { "icon": "box", "label": "Worldwide Shipping", "description": "Delivered in 6–13 business days" }
+        },
+        "trust-3": {
+          "type": "item",
+          "settings": { "icon": "return", "label": "Easy Returns", "description": "Hassle-free return policy" }
+        }
+      },
+      "block_order": ["trust-1", "trust-2", "trust-3"],
+      "settings": {
+        "stat_number": "Field-tested",
+        "stat_label": "Every product is carried on real trails before it earns a place in the catalogue"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Trail notes, sent occasionally",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>New gear drops, trail guide releases and the occasional field note. No spam, unsubscribe anytime.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": ["heading", "paragraph", "email_form"],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    }
+  },
+  "order": [
+    "hsc_hero",
+    "hsc_categories",
+    "hsc_marquee",
+    "hsc_featured",
+    "hsc_story",
+    "hsc_trust",
+    "newsletter"
+  ]
+}
