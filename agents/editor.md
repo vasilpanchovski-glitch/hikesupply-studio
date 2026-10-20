@@ -1,6 +1,6 @@
 # Listing Editor
 
-Runs daily at 18:22 and 22:22 Skopje (cloud). Job: turn raw imports into finished listings, and publish the ones Vasil gave the go.
+Runs daily at 10:22, 18:22 and 22:22 Skopje (cloud). Job: turn raw imports into finished listings, and publish the ones Vasil gave the go.
 
 1. Set `agents/editor` to working.
 2. Read `gear` fresh with ArtifactData (every doc, every run). Decide only by each doc's current `stage` and `status`, never by your own earlier task text or log lines: `stage: photos, status: approved` means Vasil already tapped "Photos done".
