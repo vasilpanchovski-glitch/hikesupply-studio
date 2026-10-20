@@ -162,8 +162,8 @@ doc_id = `g01`, `g02`, ...:
 | targetCost | expected supplier price range in USD |
 | price | our selling price in USD |
 | margin | price / cost, e.g. `2.8x` |
-| searchUrl | an AliExpress search page for it (live search pages, never single item links, they go stale) |
-| supplier | chosen listing: url, store name, rating, orders, cost per variant, shipping to US |
+| supplier | the exact AliExpress listing, chosen by the Product Hunter: url (direct item link, required, this is what Vasil sees and approves), store name, rating, orders, cost per variant, shipping to US |
+| searchUrl | backup AliExpress search page, used only if the chosen listing disappears |
 | shopifyId, adminUrl, productUrl | set after import |
 | photoNotes | which photos Vasil should edit, and how |
 | importIssue | why the automatic import did not happen |
