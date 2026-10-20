@@ -70,6 +70,19 @@ ul.check li{padding:5pt 0 5pt 20pt}
 .back{background:var(--forest);color:var(--stone);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
 .back h2{color:var(--stone)}
 .back p{color:#D9DED6;max-width:4.6in}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+.cover.photo>div{position:relative}
+.cover.photo .cphoto,.cover.photo .cshade{position:absolute}
+.cover.photo h1{color:#F5F1EA}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{color:#222;text-shadow:none}
+html.bw .cover.photo .sub{color:#333}
 html.bw .page{background:#fff}
 html.bw{--forest:#222;--clay:#444;--sage:#666;--rust:#333;--soft:#fff}
 html.bw .cover,html.bw .back{background:#fff;color:#222;border:2pt solid #222}
@@ -81,8 +94,8 @@ html.bw .em h3,html.bw .box.forest,html.bw .box.forest h3{color:#222}
 html.bw .warn{background:#fff}
 html.bw .timeline div::before{background:#fff}
 html.bw .timeline div.hot::before{background:#444}
-</style></head><body><section class="page cover"><div class="brand">HikeSupply Co.</div>
-<div class="art"><svg width="480" height="350" viewBox="0 0 480 350" fill="none" stroke-linejoin="round" stroke-linecap="round">
+</style></head><body><section class="page cover photo"><div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="480" height="350" viewBox="0 0 480 350" fill="none" stroke-linejoin="round" stroke-linecap="round">
 <circle cx="372" cy="70" r="24" stroke="#F5F1EA" stroke-width="3"/>
 <path d="M0 290 L130 110 L195 190 L282 80 L480 290 Z" fill="#3C5040" stroke="#F5F1EA" stroke-width="3.5"/>
 <path d="M106 143 L130 110 L156 142 L144 136 L132 150 L120 137 Z" fill="#F5F1EA" stroke="#F5F1EA" stroke-width="2"/>

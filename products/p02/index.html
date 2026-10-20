@@ -76,6 +76,19 @@
 .mapbox{height:6.0in}
 .legend{display:grid;grid-template-columns:repeat(4,1fr);gap:6pt;margin-top:8pt}
 .legend div{display:flex;align-items:center;gap:6pt;font-size:9.5pt}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+.cover.photo>div{position:relative}
+.cover.photo .cphoto,.cover.photo .cshade{position:absolute}
+.cover.photo h1{color:#F5F1EA}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{color:#222;text-shadow:none}
+html.bw .cover.photo .sub{color:#333}
 html.bw .page{background:#fff}
 html.bw{--forest:#222;--clay:#444;--sage:#666;--rust:#333;--soft:#fff}
 html.bw .cover{background:#fff;color:#222;border:2pt solid #222}
@@ -89,8 +102,8 @@ html.bw .warn{background:#fff}
 html.bw .box.forest{color:#222}html.bw .box.forest h3{color:#222}
 html.bw .bingo .free{background:#fff;color:#222;border:1.4pt solid #222}
 html.bw .hh .lvl i.on{background:#444}
-</style></head><body><section class="page cover"><div class="brand">HikeSupply Co.</div>
-<div class="art"><svg width="500" height="380" viewBox="0 0 500 380" fill="none" stroke-linejoin="round" stroke-linecap="round">
+</style></head><body><section class="page cover photo"><div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="500" height="380" viewBox="0 0 500 380" fill="none" stroke-linejoin="round" stroke-linecap="round">
 <circle cx="390" cy="78" r="30" fill="#B85C38"/>
 <path d="M0 300 L120 150 L180 220 L270 110 L400 260 L440 230 L500 290 V380 H0 Z" fill="#3C5040"/>
 <path d="M245 140 L270 110 L298 145 L282 138 L270 150 L258 138 Z" fill="#F5F1EA"/>
