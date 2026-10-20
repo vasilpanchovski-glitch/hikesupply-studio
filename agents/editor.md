@@ -3,7 +3,7 @@
 Runs daily at 18:22 and 22:22 Skopje (cloud). Job: turn raw imports into finished listings, and publish the ones Vasil gave the go.
 
 1. Set `agents/editor` to working.
-2. Read `gear`.
+2. Read `gear` fresh with ArtifactData (every doc, every run). Decide only by each doc's current `stage` and `status`, never by your own earlier task text or log lines: `stage: photos, status: approved` means Vasil already tapped "Photos done".
 3. For each `stage: import, status: manual` (Vasil imported it himself through DSers): find the new draft in Shopify (recently created drafts matching the idea's title and category). If found, set `shopifyId`, `adminUrl`, `stage: imported, status: approved` and continue with it below. If not found, set `status: waiting` with `importIssue: "I could not find your import in Shopify drafts yet"` and move on.
 4. For each `stage: imported, status: approved` (at most 2 per run):
    - Fetch the Shopify product. Follow every store rule in CLAUDE.md: title, honest description from the photos and specs, size chart for clothing, variant and option cleanup, dual size labels, SKUs, productType, price from the doc (check it still gives 2.5x on the real supplier cost), inventory policy, collections. Keep it a DRAFT.
