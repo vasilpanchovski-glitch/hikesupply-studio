@@ -632,3 +632,10 @@ body .hsc-trust__desc { font-size: 1.5rem; color: rgba(255, 255, 255, 0.72); }
   body .hsc-cat { aspect-ratio: 3 / 2; }
   .header--top-center .header__heading-link .h2 { font-size: 2.4rem !important; }
 }
+
+/* Round 2 fixes */
+body .hsc-cat__img { object-position: 84% 50%; }
+body .hsc-feat__layout { display: block; }
+body .hsc-spotlight { display: none; }
+body .hsc-feat__grid { grid-template-columns: repeat(4, 1fr); gap: 2.4rem; }
+@media (max-width: 989px) { body .hsc-feat__grid { grid-template-columns: repeat(2, 1fr); gap: 1.6rem; } }
