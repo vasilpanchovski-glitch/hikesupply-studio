@@ -1,0 +1,104 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "logo_width": 230,
+    "favicon": "shopify://shop_images/favicon_512.png",
+    "type_header_font": "playfair_display_n4",
+    "heading_scale": 115,
+    "type_body_font": "inter_n4",
+    "body_scale": 100,
+    "spacing_sections": 0,
+    "buttons_border_opacity": 100,
+    "buttons_shadow_opacity": 0,
+    "card_color_scheme": "scheme_1",
+    "sale_badge_color_scheme": "scheme-4",
+    "sold_out_badge_color_scheme": "scheme-3",
+    "social_facebook_link": "https://www.facebook.com/hikesupplyco",
+    "social_instagram_link": "https://www.instagram.com/hikesupplyco",
+    "social_tiktok_link": "https://www.tiktok.com/@hikesupplyco",
+    "predictive_search_enabled": true,
+    "currency_code_enabled": true,
+    "cart_type": "drawer",
+    "colors_solid_button_labels": "#FFFFFF",
+    "colors_accent_1": "#D6682A",
+    "colors_accent_2": "#192A1E",
+    "colors_text": "#171C16",
+    "colors_outline_button_labels": "#24211C",
+    "colors_background_1": "#FFFFFF",
+    "colors_background_2": "#F2F3EF",
+    "colors_shadow": "#24211C",
+    "buttons_border_width": 1,
+    "buttons_border_radius": 0,
+    "cards_style": "standard",
+    "card_image_ratio": "square",
+    "enable_quick_add": true,
+    "content_for_index": [],
+    "blocks": {
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    },
+    "color_schemes": {
+      "scheme_1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#171c16",
+          "button": "#d6682a",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#24211c",
+          "shadow": "#24211c"
+        }
+      },
+      "scheme_2": {
+        "settings": {
+          "background": "#192a1e",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#d6682a",
+          "button_label": "#f3efe4",
+          "secondary_button_label": "#f3efe4",
+          "shadow": "#000000"
+        }
+      },
+      "scheme_3": {
+        "settings": {
+          "background": "#f2f3ef",
+          "background_gradient": "",
+          "text": "#24211c",
+          "button": "#24211c",
+          "button_label": "#efe7d8",
+          "secondary_button_label": "#24211c",
+          "shadow": "#24211c"
+        }
+      },
+      "scheme_4": {
+        "settings": {
+          "background": "#d6682a",
+          "background_gradient": "",
+          "text": "#faf7f1",
+          "button": "#24211c",
+          "button_label": "#faf7f1",
+          "secondary_button_label": "#faf7f1",
+          "shadow": "#24211c"
+        }
+      }
+    }
+  },
+  "presets": {}
+}

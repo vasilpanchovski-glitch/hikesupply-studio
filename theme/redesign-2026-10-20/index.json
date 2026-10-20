@@ -1,0 +1,187 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hsc_hero": {
+      "type": "hsc-hero",
+      "settings": {
+        "bg_image": "shopify://shop_images/hero-ridge-viewpoint.png",
+        "heading": "Gear up. Get out.",
+        "subheading": "Hiking gear, clothing and printable trail guides for day hikes and weekend trips in the US and Canada.",
+        "btn1_label": "Shop gear",
+        "btn1_url": "/collections/all-gear",
+        "btn2_label": "Trail guides",
+        "btn2_url": "/collections/trail-guides-downloads"
+      }
+    },
+    "hsc_marquee": {
+      "type": "hsc-marquee",
+      "blocks": {
+        "m1": {
+          "type": "item",
+          "settings": {
+            "text": "Free shipping on every order"
+          }
+        },
+        "m2": {
+          "type": "item",
+          "settings": {
+            "text": "Guides download right after checkout"
+          }
+        },
+        "m3": {
+          "type": "item",
+          "settings": {
+            "text": "Easy returns"
+          }
+        },
+        "m4": {
+          "type": "item",
+          "settings": {
+            "text": "Made for day hikes and weekend trips"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "settings": {}
+    },
+    "hsc_categories": {
+      "type": "hsc-categories",
+      "settings": {
+        "title": "Shop the trail",
+        "description": "Gear that does the job, clothes that move with you, and guides that help you plan.",
+        "gear_image": "shopify://shop_images/cat-gear-ridge.png",
+        "gear_title": "Gear & Equipment",
+        "gear_desc": "Packs, poles, water and safety kit.",
+        "gear_cta": "Shop gear",
+        "gear_link": "/collections/gear-equipment",
+        "clothing_image": "shopify://shop_images/cat-clothing-ridge.png",
+        "clothing_title": "Clothing",
+        "clothing_desc": "Fleece, trail pants, hats and socks for every season.",
+        "clothing_cta": "Shop clothing",
+        "clothing_link": "/collections/clothing",
+        "digital_image": "shopify://shop_images/cat-guides-cover.jpg",
+        "digital_title": "Trail Guides",
+        "digital_desc": "Printable guides, planners and checklists. Download right after checkout.",
+        "digital_cta": "Get guides",
+        "digital_link": "/collections/trail-guides-downloads"
+      }
+    },
+    "hsc_featured": {
+      "type": "hsc-featured",
+      "settings": {
+        "title": "Popular gear",
+        "collection": "gear-equipment",
+        "product_limit": 4,
+        "view_all_label": "See all gear",
+        "view_all_url": "/collections/all-gear"
+      }
+    },
+    "hsc_story": {
+      "type": "hsc-story",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "reverse",
+        "image_asset": "hsc-story-trail.jpg",
+        "index_number": "",
+        "eyebrow": "",
+        "heading": "A small shop for people who hike",
+        "body": "<p>HikeSupply Co. is a small online hiking shop. We pick gear that does the job on day hikes and weekend trips, keep the prices fair and ship it free.</p><p>We also write our own printable trail guides and checklists in plain words, so you can plan better and stay safe out there.</p>",
+        "link_label": "About us",
+        "link_url": "/pages/about"
+      }
+    },
+    "hsc_trust": {
+      "type": "hsc-trust",
+      "blocks": {
+        "trust-1": {
+          "type": "item",
+          "settings": {
+            "icon": "download",
+            "label": "Instant download",
+            "description": "Guides arrive in your inbox right after checkout"
+          }
+        },
+        "trust-2": {
+          "type": "item",
+          "settings": {
+            "icon": "box",
+            "label": "Free shipping",
+            "description": "Delivered in 6–13 business days"
+          }
+        },
+        "trust-3": {
+          "type": "item",
+          "settings": {
+            "icon": "return",
+            "label": "Easy returns",
+            "description": "Hassle-free return policy"
+          }
+        }
+      },
+      "block_order": [
+        "trust-1",
+        "trust-2",
+        "trust-3"
+      ],
+      "settings": {
+        "stat_number": "Hike more. Worry less.",
+        "stat_label": "Simple gear, honest guides and help when you need it."
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get trail notes",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>New gear, new guides and the odd trail tip. No spam, unsubscribe anytime.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    }
+  },
+  "order": [
+    "hsc_hero",
+    "hsc_marquee",
+    "hsc_categories",
+    "hsc_featured",
+    "hsc_story",
+    "hsc_trust",
+    "newsletter"
+  ]
+}
