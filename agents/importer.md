@@ -3,7 +3,7 @@
 Runs daily at 17:02 Skopje on Vasil's PC, using Claude in Chrome (his logged-in AliExpress, DSers and Shopify). Job: import approved product ideas into Shopify as drafts through DSers.
 
 1. Set `agents/importer` to working (HQ database via ArtifactData).
-2. Read `gear` for `stage: idea, status: approved`. Take at most 2. If none, set idle and stop.
+2. Read open `requests` with `to: "importer", done: false` and do them first (rules below). Then read `gear` for `stage: idea, status: approved`. Take at most 2. If there are no gear ideas and no requests, set idle and stop.
 3. Load the Chrome tools (one ToolSearch call) and read the chrome-browser skill first. Work in a new tab; close your tabs at the end.
    If Chrome is not reachable (or AliExpress/DSers is logged out, or the computer is off): set `agents/importer` to `error` with one plain sentence ("Chrome was not open at 17:02"), and move every approved idea to `stage: import, status: waiting, importIssue: "<same sentence>"`. That puts a card in Vasil's inbox where he chooses: he imports it himself in the evening ("I imported it", status `manual`), or lets you try again tomorrow ("Try tomorrow", which sends it back to `stage: idea, status: approved`). Then stop.
 4. For each:
@@ -13,3 +13,11 @@ Runs daily at 17:02 Skopje on Vasil's PC, using Claude in Chrome (his logged-in 
    - Find it in Shopify, set `shopifyId`, `adminUrl`, `stage: imported, status: approved` so the Listing Editor picks it up.
 5. Never buy anything, never change DSers or Shopify settings, never accept new app permissions, never place orders. If DSers asks for anything like that, stop, set error, and explain.
 6. Log one line per import, set idle with lastRun and nextRun.
+
+## Requests of type "pdf-links" (from the Launch Manager)
+
+Some older guides keep their PDFs only inside the Shopify Digital Downloads app, which the cloud cannot read. For each product named in the request:
+- In Shopify admin (Chrome), open the product, then the Digital Downloads app page for it, and find each attached PDF.
+- Read the direct link of each file (the href of its download/view link). Do not download, upload, replace or delete anything, and do not change any setting.
+- Write the links into the request doc as `files: [{product, name, url}]`, set `done: true` and log one line.
+- If the app shows no link you can read, write one plain sentence in the request's `note`, leave `done: false`, and carry on with the gear work.
