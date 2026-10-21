@@ -19,6 +19,7 @@ export type Outfit = {
   pole: string;
   grip: string;
   ponytail?: string | null;
+  glove?: string | null; // when set, hands are drawn as gloves in this colour
 };
 
 export const JAKE: Outfit = {
@@ -86,7 +87,7 @@ const Limb: React.FC<{
   </g>
 );
 
-export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; flip?: boolean; expression?: "tired" | "neutral" | "happy" }> = (p) => {
+export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; flip?: boolean; expression?: "tired" | "neutral" | "happy"; packSwing?: number; packOut?: number }> = (p) => {
   const o = p.outfit ?? JAKE;
   const g = hikerGeometry(p);
   const { hip, sh, head, legs, arms, lean } = g;
@@ -185,11 +186,11 @@ export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; fl
     <g>
       {p.poles !== false && pole(arms[0], false)}
       <Limb a={arms[0].s} b={arms[0].elbow} c={arms[0].hand} r={[12, 10.5, 9]} fill={o.jacketShade} />
-      {hand(arms[0].hand, o.skinShade)}
+      {hand(arms[0].hand, o.glove ? o.glove : o.skinShade)}
       <Limb a={legs[1].hip} b={legs[1].knee} c={[legs[1].foot[0] - 2, legs[1].foot[1] - 24]} r={[19, 15, 13]} fill={o.pantsShade} />
       {boot(legs[1].foot, o.boot, o.sole)}
       {/* backpack */}
-      <g transform={`translate(${bpC[0]},${bpC[1]}) rotate(${deg})`}>
+      <g transform={`translate(${bpC[0]},${bpC[1]}) rotate(${deg}) translate(${-(p.packOut ?? 0)},-58) rotate(${p.packSwing ?? 0}) translate(0,58)`}>
         <rect x={-29} y={-58} width={58} height={112} rx={20} fill={o.pack} stroke="rgba(0,0,0,0.25)" strokeWidth={1.5} />
         <rect x={-29} y={-58} width={20} height={112} rx={13} fill={o.packShade} />
         <rect x={-25} y={-72} width={46} height={28} rx={12} fill={o.packShade} />
@@ -209,7 +210,7 @@ export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; fl
       {boot(legs[0].foot, o.boot, o.sole)}
       {p.poles !== false && pole(arms[1], true)}
       <Limb a={arms[1].s} b={arms[1].elbow} c={arms[1].hand} r={[13, 11, 9.5]} fill={o.jacket} />
-      {hand(arms[1].hand, o.skin)}
+      {hand(arms[1].hand, o.glove ?? o.skin)}
       {p.poles !== false && <rect x={arms[1].hand[0] - 4} y={arms[1].hand[1] - 28} width={8} height={10} rx={3} fill={o.grip} />}
     </g>
   );
