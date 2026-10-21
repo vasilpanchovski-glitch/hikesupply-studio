@@ -195,14 +195,23 @@ html.bw .cover svg *{fill:none !important;stroke:#222 !important}
 html.bw .box,html.bw .tot>div,html.bw .pk.blank{background:#fff;border:0.8pt solid #999}
 html.bw .warn{background:#fff}
 html.bw .box.forest{color:#222}html.bw .box.forest h3{color:#222}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{text-shadow:none}
 </style>"""
 
 def lines(k, h=24): return "".join(f'<div class="wl" style="height:{h}pt"></div>' for _ in range(k))
 def opts(*o): return '<div class="opts">' + "".join(f"<span>{x}</span>" for x in o) + "</div>"
 
 # ---------- 1 cover
-page(f'''<div class="brand">HikeSupply Co.</div>
-<div class="art"><svg width="520" height="390" viewBox="0 0 520 390" fill="none" stroke-linejoin="round" stroke-linecap="round">
+page(f'''<div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="520" height="390" viewBox="0 0 520 390" fill="none" stroke-linejoin="round" stroke-linecap="round">
 <circle cx="408" cy="82" r="34" fill="#B85C38"/>
 <path d="M0 300 L110 160 L170 225 L262 96 L380 250 L430 205 L520 285 V390 H0 Z" fill="#3C5040"/>
 <path d="M236 133 L262 96 L290 136 L274 128 L262 142 L250 128 Z" fill="#F5F1EA"/>
@@ -218,8 +227,8 @@ page(f'''<div class="brand">HikeSupply Co.</div>
  <text x="70" y="104" text-anchor="middle" font-family="Inter" font-weight="700" font-size="7.5" letter-spacing="2" fill="#2C3B2E">+ CANADA</text>
 </g>
 </svg></div>
-<div><h1>National Parks Hiking Tracker</h1><p class="sub" style="max-width:6.2in">All 63 US national parks, A to Z, each with one easy-to-plan day hike in miles and kilometers, a stamp box and a visit log. Plus Canada's national parks and reserves.</p>
-<div class="meta" style="margin-top:22pt"><span>26 printable pages</span><span>mi + km, ft + m</span><span>Checked against nps.gov, {CHECKED}</span></div></div>''', 0, "cover")
+<div style="position:relative"><h1>National Parks Hiking Tracker</h1><p class="sub" style="max-width:6.2in">All 63 US national parks, A to Z, each with one easy-to-plan day hike in miles and kilometers, a stamp box and a visit log. Plus Canada's national parks and reserves.</p>
+<div class="meta" style="margin-top:22pt"><span>26 printable pages</span><span>mi + km, ft + m</span><span>Checked against nps.gov, {CHECKED}</span></div></div>''', 0, "cover photo")
 
 # ---------- 2 how to use
 page(f'''<div class="kicker">Start here</div><h2>How to use this tracker</h2>
@@ -444,7 +453,7 @@ page(f'''<div class="brand">HikeSupply Co.</div>
 <div class="bk" style="margin-top:22pt">
 <div><h3>Great Smoky Mountains Trip Pack</h3><p>Planning Guide plus 10 GPX day hikes for America's most visited national park.</p><div class="u">hikesupplyco.com/products/<br>great-smoky-mountains-trip-pack</div></div>
 <div><h3>Utah's Mighty 5 Trip Pack</h3><p>Planning Guide plus 10 GPX day hikes for Zion, Bryce Canyon, Capitol Reef, Canyonlands and Arches.</p><div class="u">hikesupplyco.com/products/<br>utahs-mighty-5-trip-pack</div></div></div></div>
-<div><p style="font-size:9pt;max-width:6.4in">Facts in this tracker were checked against nps.gov and parks.canada.ca in {CHECKED}. Trails, fees and reservation rules change. Check official park sources before every trip and hike within your experience. For personal use: print as many copies as you like for yourself and your family.</p>
+<div><p style="font-size:9pt;max-width:6.4in">Facts in this tracker were checked against nps.gov and parks.canada.ca in {CHECKED}. Trails, fees and reservation rules change. Check official park sources before every trip and hike within your experience. For personal use: print as many copies as you like for yourself and your family. Cover photo: Noel Aph / Pexels.</p>
 <p style="font-size:10pt;margin-top:10pt"><b style="color:#F5F1EA">hikesupplyco.com</b></p></div>''', 0, "back")
 
 html = f'<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../_kit/brand.css">{CSS}</head><body>{"".join(pages)}</body></html>'
