@@ -1,0 +1,59 @@
+{
+ "pins": [
+  {
+   "id": "pb20261021-1",
+   "layout": "forest",
+   "image": "media/v16-clean.jpg",
+   "kicker": "Fall and winter hiking",
+   "title": "Start cold, layer smart",
+   "sub": "Base, fleece, shell. Start a little chilly, take a layer off before you sweat, put one on the moment you stop.",
+   "cta": "Get the winter guide"
+  },
+  {
+   "id": "pb20261021-2",
+   "layout": "photo",
+   "image": "media/pins/v16-tall.jpg",
+   "kicker": "Women's fall hiking layer",
+   "title": "Fleece in the pack",
+   "items": [
+    "Start the climb a little chilly",
+    "Fleece on at every stop",
+    "Shell over it in wind or rain"
+   ],
+   "cta": "Shop the fleece"
+  },
+  {
+   "id": "pb20261021-3",
+   "layout": "forest",
+   "image": "media/pins/v31-crop.jpg",
+   "kicker": "Shorter fall days",
+   "title": "Pack a headlamp",
+   "sub": "Sunset comes early now. A headlamp keeps your hands free and saves your phone battery for the map.",
+   "cta": "See the headlamp"
+  },
+  {
+   "id": "pb20261021-4",
+   "layout": "stone",
+   "kicker": "Gift for a hiker",
+   "title": "52 hikes, one journal",
+   "items": [
+    "52 trail log pages",
+    "Miles and km year tracker",
+    "Trail bucket list",
+    "Favorite hikes hall of fame",
+    "Year-end reflection"
+   ],
+   "sub": "Printable PDF. Print it, bind it, wrap it.",
+   "cta": "See the journal"
+  },
+  {
+   "id": "pb20261021-5",
+   "layout": "forest",
+   "image": "media/pins/v39-crop.jpg",
+   "kicker": "Great Smoky Mountains",
+   "title": "Free park, paid parking",
+   "sub": "No entrance fee, but any car parked over 15 minutes needs a parking tag. Buy it before you go.",
+   "cta": "Plan your trip"
+  }
+ ]
+}
