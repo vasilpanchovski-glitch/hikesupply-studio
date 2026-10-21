@@ -1,0 +1,193 @@
+{% comment %}
+  HikeSupply Co. — Shop by Category.
+  Full-width editorial header over an equal three-up card grid. The three
+  cards share one set of classes so their size, ratio and spacing cannot
+  drift apart; only the placeholder gradient differs, by position.
+{% endcomment %}
+<style>
+  .hsc-cats { background: rgb(var(--hsc-stone)); padding: 9rem 6rem; }
+  .hsc-cats__intro {
+    max-width: 132rem;
+    margin: 0 auto 4.8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-bottom: 2.8rem;
+    border-bottom: 1px solid rgb(var(--hsc-line));
+  }
+  .hsc-cats__title {
+    font-family: var(--font-heading-family);
+    font-weight: var(--font-heading-weight);
+    font-size: clamp(3rem, 3.4vw, 4.2rem);
+    color: rgb(var(--hsc-ink));
+    margin: 0;
+    line-height: 1.08;
+  }
+  .hsc-cats__desc {
+    font-family: var(--font-body-family);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(var(--hsc-ink), 0.62);
+    line-height: 1.7;
+    margin: 0;
+    max-width: 32rem;
+    flex-shrink: 0;
+  }
+  .hsc-cats__cards {
+    max-width: 132rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+  .hsc-cat {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    background: rgb(var(--hsc-moss-dark));
+    aspect-ratio: 1 / 1;
+  }
+  .hsc-cat__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; transition: transform 0.7s ease; }
+  .hsc-cat:hover .hsc-cat__img { transform: scale(1.04); }
+  .hsc-cat__placeholder { position: absolute; inset: 0; background: linear-gradient(160deg, rgb(var(--hsc-moss)), rgb(var(--hsc-moss-dark))); }
+  .hsc-cat__placeholder--clothing { background: linear-gradient(160deg, #6b4230, #2e1c14); }
+  .hsc-cat__placeholder--digital { background: linear-gradient(160deg, #4a3a26, #241d13); }
+  .hsc-cat__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.2) 62%, rgba(0, 0, 0, 0) 100%); }
+  .hsc-cat__body { position: absolute; bottom: 0; left: 0; right: 0; padding: 2.8rem; z-index: 2; }
+  .hsc-cat__label {
+    font-family: var(--font-body-family);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(var(--hsc-clay-light));
+    margin-bottom: 1rem;
+  }
+  .hsc-cat__name {
+    font-family: var(--font-heading-family);
+    font-weight: var(--font-heading-weight);
+    font-size: clamp(2.2rem, 2.4vw, 3rem);
+    color: #ffffff;
+    margin: 0 0 0.8rem;
+    line-height: 1.15;
+  }
+  .hsc-cat__sub {
+    font-family: var(--font-body-family);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 1.8rem;
+    line-height: 1.55;
+  }
+  .hsc-cat__link {
+    font-family: var(--font-body-family);
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.2s;
+  }
+  .hsc-cat:hover .hsc-cat__link { border-color: #ffffff; gap: 1.4rem; }
+
+  @media (max-width: 989px) {
+    .hsc-cats { padding: 5.6rem 2.4rem; }
+    .hsc-cats__intro { flex-direction: column; align-items: flex-start; gap: 1.6rem; margin-bottom: 3.2rem; }
+    .hsc-cats__desc { max-width: none; }
+    .hsc-cats__cards { grid-template-columns: 1fr; gap: 2rem; }
+    .hsc-cat { aspect-ratio: 1 / 1; }
+  }
+</style>
+
+<section class="hsc-cats">
+  <div class="hsc-cats__intro">
+    <div>
+      <p class="hsc-eyebrow">What we offer</p>
+      <h2 class="hsc-cats__title">{{ section.settings.title }}</h2>
+    </div>
+    <p class="hsc-cats__desc">{{ section.settings.description }}</p>
+  </div>
+  <div class="hsc-cats__cards">
+    <a href="{{ section.settings.gear_link }}" class="hsc-cat">
+      {%- if section.settings.gear_image != blank -%}
+        <img class="hsc-cat__img" src="{{ section.settings.gear_image | image_url: width: 900 }}" alt="" loading="lazy">
+      {%- else -%}
+        <div class="hsc-cat__placeholder"></div>
+      {%- endif -%}
+      <div class="hsc-cat__overlay"></div>
+      <div class="hsc-cat__body">
+        <p class="hsc-cat__label">Physical Gear</p>
+        <h3 class="hsc-cat__name">{{ section.settings.gear_title }}</h3>
+        <p class="hsc-cat__sub">{{ section.settings.gear_desc }}</p>
+        <span class="hsc-cat__link">{{ section.settings.gear_cta }} &#8594;</span>
+      </div>
+    </a>
+    <a href="{{ section.settings.clothing_link }}" class="hsc-cat">
+      {%- if section.settings.clothing_image != blank -%}
+        <img class="hsc-cat__img" src="{{ section.settings.clothing_image | image_url: width: 900 }}" alt="" loading="lazy">
+      {%- else -%}
+        <div class="hsc-cat__placeholder hsc-cat__placeholder--clothing"></div>
+      {%- endif -%}
+      <div class="hsc-cat__overlay"></div>
+      <div class="hsc-cat__body">
+        <p class="hsc-cat__label">Apparel</p>
+        <h3 class="hsc-cat__name">{{ section.settings.clothing_title }}</h3>
+        <p class="hsc-cat__sub">{{ section.settings.clothing_desc }}</p>
+        <span class="hsc-cat__link">{{ section.settings.clothing_cta }} &#8594;</span>
+      </div>
+    </a>
+    <a href="{{ section.settings.digital_link }}" class="hsc-cat">
+      {%- if section.settings.digital_image != blank -%}
+        <img class="hsc-cat__img" src="{{ section.settings.digital_image | image_url: width: 900 }}" alt="" loading="lazy">
+      {%- else -%}
+        <div class="hsc-cat__placeholder hsc-cat__placeholder--digital"></div>
+      {%- endif -%}
+      <div class="hsc-cat__overlay"></div>
+      <div class="hsc-cat__body">
+        <p class="hsc-cat__label">Digital Downloads</p>
+        <h3 class="hsc-cat__name">{{ section.settings.digital_title }}</h3>
+        <p class="hsc-cat__sub">{{ section.settings.digital_desc }}</p>
+        <span class="hsc-cat__link">{{ section.settings.digital_cta }} &#8594;</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HSC Categories",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Shop by Category" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Three ways to gear up for the trail — equipment, apparel and digital guides." },
+    { "type": "header", "content": "Gear card" },
+    { "type": "image_picker", "id": "gear_image", "label": "Gear image" },
+    { "type": "text", "id": "gear_title", "label": "Title", "default": "Hiking Gear & Equipment" },
+    { "type": "textarea", "id": "gear_desc", "label": "Description", "default": "Packs, poles, hydration and rain protection for every trail condition." },
+    { "type": "text", "id": "gear_cta", "label": "CTA", "default": "Shop Gear" },
+    { "type": "url", "id": "gear_link", "label": "Link" },
+    { "type": "header", "content": "Clothing card" },
+    { "type": "image_picker", "id": "clothing_image", "label": "Clothing image" },
+    { "type": "text", "id": "clothing_title", "label": "Title", "default": "Hiking Clothing" },
+    { "type": "textarea", "id": "clothing_desc", "label": "Description", "default": "Jackets, base layers and trail-ready apparel for every season." },
+    { "type": "text", "id": "clothing_cta", "label": "CTA", "default": "Shop Clothing" },
+    { "type": "url", "id": "clothing_link", "label": "Link" },
+    { "type": "header", "content": "Digital card" },
+    { "type": "image_picker", "id": "digital_image", "label": "Digital image" },
+    { "type": "text", "id": "digital_title", "label": "Title", "default": "Trail Guides & Planners" },
+    { "type": "textarea", "id": "digital_desc", "label": "Description", "default": "Printable route guides, GPX bundles and packing checklists. Instant download." },
+    { "type": "text", "id": "digital_cta", "label": "CTA", "default": "Get Downloads" },
+    { "type": "url", "id": "digital_link", "label": "Link" }
+  ],
+  "presets": [
+    { "name": "HSC Categories" }
+  ]
+}
+{% endschema %}
