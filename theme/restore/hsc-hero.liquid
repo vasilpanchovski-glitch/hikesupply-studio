@@ -11,7 +11,8 @@
     overflow: hidden;
     min-height: 46rem;
   }
-  .hsc-hero__media img {
+  .hsc-hero__media img,
+  .hsc-hero__media video {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -79,6 +80,7 @@
     .hsc-hero { grid-template-columns: 1fr; min-height: 0; }
     .hsc-hero__media { aspect-ratio: 4 / 5; min-height: 0; }
     .hsc-hero__media img { object-position: 85% 50%; }
+    .hsc-hero__media video { object-position: 40% 50%; }
     .hsc-hero__heading { font-size: clamp(3.2rem, 9vw, 4.4rem); }
     .hsc-hero__panel { padding: 4.4rem 2.4rem 5.6rem; }
   }
@@ -86,7 +88,25 @@
 
 <section class="hsc-hero">
   <div class="hsc-hero__media">
-    {%- if section.settings.bg_image != blank -%}
+    {%- if section.settings.bg_video_url != blank -%}
+      <video
+        class="hsc-hero__video"
+        autoplay muted loop playsinline preload="auto"
+        poster="{{ section.settings.bg_video_poster }}"
+        data-src-desktop="{{ section.settings.bg_video_url }}"
+        data-src-mobile="{{ section.settings.bg_video_url_mobile | default: section.settings.bg_video_url }}"
+        aria-label="{{ section.settings.heading | escape }}"
+      ></video>
+      <script>
+        (function () {
+          var v = document.currentScript.previousElementSibling;
+          var mobile = window.matchMedia('(max-width: 989px)').matches;
+          v.src = mobile ? v.dataset.srcMobile : v.dataset.srcDesktop;
+          if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+          else { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        })();
+      </script>
+    {%- elsif section.settings.bg_image != blank -%}
       <img
         src="{{ section.settings.bg_image | image_url: width: 1600 }}"
         srcset="{{ section.settings.bg_image | image_url: width: 900 }} 900w, {{ section.settings.bg_image | image_url: width: 1600 }} 1600w, {{ section.settings.bg_image | image_url: width: 2400 }} 2400w"
@@ -125,6 +145,9 @@
   "name": "HSC Hero",
   "tag": "section",
   "settings": [
+    { "type": "text", "id": "bg_video_url", "label": "Background video URL (mp4, desktop)" },
+    { "type": "text", "id": "bg_video_url_mobile", "label": "Background video URL (mp4, mobile)" },
+    { "type": "text", "id": "bg_video_poster", "label": "Video poster image URL" },
     { "type": "image_picker", "id": "bg_image", "label": "Media image" },
     {
       "type": "text",
