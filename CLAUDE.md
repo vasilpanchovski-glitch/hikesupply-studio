@@ -246,6 +246,10 @@ Social search words (what people typed on TikTok before finding us) are kept in 
 
 Agent: Sales Planner (`agents/merch.md`), Mondays and Thursdays 15:52. HQ collection `offers`, doc_id `o01`...: `{createdAt, status: waiting|approved|rejected|live|scheduled|ended|failed, kind: pairing|bundle|code|sale|threshold, title, why, change, startsAt, endsAt, note}`. Vasil approves every offer.
 
+## Partner Scout
+
+Agent: Partner Scout (`agents/partners.md`), daily 12:52 (Mondays also finds new groups), cloud. Emails hiking clubs, Meetup groups, scout troops, trail events and small hiking blogs from hikesupplyco@gmail.com and offers a free checklist or guide for their members plus a 10% member code (pool HIKECLUB01-30, discount "Partner clubs 10%"). No affiliate commission. HQ collection `partners`, doc_id `c01`...: `{code, status: waiting|approved|rejected|sent|followed|yes|no|done, group, location, contact, source, why, guide, offer, discount, subject, body, sentAt, followUpAt, reply, note}`. Vasil approves every first email.
+
 # Order Desk
 
 Agent: Order Desk (`agents/orderdesk.md`), daily 09:07 and 21:07. HQ collection `orderdesk`, doc_id `od<order number>`: `{createdAt, status: waiting|approved|rejected|manual|done, order, customer, issue, action, draftReply, note}`. Vasil approves actions. The agent never touches money.
