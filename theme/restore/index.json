@@ -89,7 +89,8 @@
         "title": "Featured Gear",
         "product_limit": 4,
         "view_all_label": "View All",
-        "view_all_url": "/collections/all"
+        "view_all_url": "/collections/all",
+        "collection": "frontpage"
       }
     },
     "hsc_story": {
