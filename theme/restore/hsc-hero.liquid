@@ -1,15 +1,19 @@
 {% comment %} HikeSupply Co. — Hero: asymmetric split-screen, not a centered overlay {% endcomment %}
 <style>
   .hsc-hero {
-    display: grid;
-    grid-template-columns: 63fr 37fr;
-    min-height: 90vh;
-    background: rgb(var(--hsc-moss-dark));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 92vh;
+    overflow: hidden;
+    background: rgb(var(--hsc-stone));
+    isolation: isolate;
   }
   .hsc-hero__media {
-    position: relative;
-    overflow: hidden;
-    min-height: 46rem;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
   }
   .hsc-hero__media img,
   .hsc-hero__media video {
@@ -19,13 +23,24 @@
     height: 100%;
     object-fit: cover;
   }
+  /* readability: darken behind the text, fade top and bottom into the page */
+  .hsc-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      linear-gradient(to bottom, rgb(var(--hsc-stone)) 0%, rgba(var(--hsc-stone), 0) 14%),
+      linear-gradient(to top, rgb(var(--hsc-stone)) 0%, rgba(var(--hsc-stone), 0.85) 6%, rgba(var(--hsc-stone), 0) 20%),
+      linear-gradient(to left, rgba(20, 26, 18, 0.72) 0%, rgba(20, 26, 18, 0.45) 38%, rgba(20, 26, 18, 0) 65%);
+  }
   .hsc-hero__panel {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgb(var(--hsc-moss-dark));
-    padding: 5rem 4.4rem;
+    width: min(56rem, 44%);
+    margin-right: 6vw;
+    padding: 12rem 0;
+    text-shadow: 0 1px 18px rgba(0, 0, 0, 0.35);
   }
   .hsc-hero__eyebrow {
     font-family: var(--font-body-family);
@@ -39,7 +54,7 @@
   .hsc-hero__heading {
     font-family: var(--font-heading-family);
     font-weight: var(--font-heading-weight);
-    font-size: clamp(3.6rem, 4.6vw, 5.6rem);
+    font-size: clamp(4rem, 4.8vw, 6.4rem);
     color: #ffffff;
     line-height: 1.02;
     letter-spacing: -0.015em;
@@ -47,11 +62,12 @@
   }
   .hsc-hero__sub {
     font-family: var(--font-body-family);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.72);
+    color: rgba(255, 255, 255, 0.86);
     line-height: 1.65;
     margin: 0 0 3.6rem;
+    max-width: 44rem;
   }
   .hsc-hero__ctas { display: flex; flex-direction: column; gap: 1.2rem; align-items: flex-start; }
   .hsc-hero__btn {
@@ -67,22 +83,28 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     text-decoration: none;
+    text-shadow: none;
     padding: 1.6rem 2.4rem;
     border: 1px solid transparent;
     transition: all 0.2s ease;
   }
   .hsc-hero__btn--primary { background: #ffffff; color: rgb(var(--hsc-ink)); border-color: #ffffff; }
   .hsc-hero__btn--primary:hover { background: rgb(var(--hsc-clay)); border-color: rgb(var(--hsc-clay)); color: #fff; }
-  .hsc-hero__btn--secondary { background: transparent; color: #ffffff; border-color: rgba(255, 255, 255, 0.35); }
-  .hsc-hero__btn--secondary:hover { border-color: #ffffff; }
+  .hsc-hero__btn--secondary { background: rgba(20, 26, 18, 0.25); color: #ffffff; border-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(2px); }
+  .hsc-hero__btn--secondary:hover { border-color: #ffffff; background: rgba(20, 26, 18, 0.45); }
 
   @media (max-width: 989px) {
-    .hsc-hero { grid-template-columns: 1fr; min-height: 0; }
-    .hsc-hero__media { aspect-ratio: 4 / 5; min-height: 0; }
-    .hsc-hero__media img { object-position: 85% 50%; }
-    .hsc-hero__media video { object-position: 50% 50%; }
-    .hsc-hero__heading { font-size: clamp(3.2rem, 9vw, 4.4rem); }
-    .hsc-hero__panel { padding: 4.4rem 2.4rem 5.6rem; }
+    .hsc-hero { min-height: 88svh; align-items: flex-end; justify-content: flex-start; }
+    .hsc-hero__media video, .hsc-hero__media img { object-position: 50% 50%; }
+    .hsc-hero::before {
+      background:
+        linear-gradient(to bottom, rgb(var(--hsc-stone)) 0%, rgba(var(--hsc-stone), 0) 10%),
+        linear-gradient(to top, rgb(var(--hsc-stone)) 0%, rgba(var(--hsc-stone), 0) 7%),
+        linear-gradient(to top, rgba(20, 26, 18, 0.8) 8%, rgba(20, 26, 18, 0.5) 45%, rgba(20, 26, 18, 0) 70%);
+    }
+    .hsc-hero__panel { width: 100%; margin: 0; padding: 0 2.4rem 9rem; }
+    .hsc-hero__heading { font-size: clamp(3.4rem, 10vw, 4.6rem); }
+    .hsc-hero__sub { font-size: 1.5rem; margin-bottom: 2.8rem; }
   }
 </style>
 
