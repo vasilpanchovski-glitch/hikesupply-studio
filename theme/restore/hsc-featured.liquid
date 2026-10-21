@@ -1,0 +1,163 @@
+{% comment %} HikeSupply Co. — Featured: one large spotlight product + a smaller grid, not a uniform row {% endcomment %}
+<style>
+  .hsc-feat { background: rgb(var(--hsc-stone)); padding: 9rem 6rem; }
+  .hsc-feat__header {
+    max-width: 132rem;
+    margin: 0 auto 4.8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2.4rem;
+    padding-bottom: 2.8rem;
+    border-bottom: 1px solid rgb(var(--hsc-line));
+  }
+  .hsc-feat__title {
+    font-family: var(--font-heading-family);
+    font-weight: var(--font-heading-weight);
+    font-size: clamp(2.8rem, 3vw, 4.2rem);
+    color: rgb(var(--hsc-ink));
+    margin: 0;
+    line-height: 1.1;
+  }
+  .hsc-feat__all {
+    font-family: var(--font-body-family);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgb(var(--hsc-ink));
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid rgb(var(--hsc-ink));
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s;
+    flex-shrink: 0;
+  }
+  .hsc-feat__all:hover { color: rgb(var(--hsc-clay)); border-color: rgb(var(--hsc-clay)); }
+
+  .hsc-feat__layout {
+    max-width: 132rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 2.8rem;
+  }
+
+  .hsc-spotlight { text-decoration: none; display: flex; flex-direction: column; }
+  .hsc-spotlight__img { aspect-ratio: 4 / 5; overflow: hidden; background: rgb(var(--hsc-sand)); position: relative; margin-bottom: 2rem; }
+  .hsc-spotlight__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+  .hsc-spotlight:hover .hsc-spotlight__img img { transform: scale(1.04); }
+  .hsc-spotlight__name {
+    font-family: var(--font-heading-family);
+    font-weight: var(--font-heading-weight);
+    font-size: clamp(2.2rem, 2vw, 2.8rem);
+    color: rgb(var(--hsc-ink));
+    margin: 0 0 1rem;
+  }
+  .hsc-spotlight__price { font-family: var(--font-body-family); font-size: 1.6rem; font-weight: 500; color: rgb(var(--hsc-ink)); }
+
+  /* the 2x2 grid stretches to exactly the spotlight's height, so the bottom edges line up */
+  .hsc-feat__grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2.4rem 2.4rem; min-height: 0; }
+  .hsc-prod { text-decoration: none; display: flex; flex-direction: column; min-height: 0; }
+  .hsc-prod__img { flex: 1 1 auto; min-height: 0; overflow: hidden; background: rgb(var(--hsc-sand)); position: relative; margin-bottom: 1.2rem; }
+  .hsc-prod__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+  .hsc-prod:hover .hsc-prod__img img { transform: scale(1.04); }
+  .hsc-prod__badges { position: absolute; top: 1rem; left: 1rem; display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+  .hsc-prod__badge {
+    background: rgb(var(--hsc-clay));
+    color: #fff;
+    font-family: var(--font-body-family);
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.9rem;
+  }
+  .hsc-prod__badge--digital { background: rgb(var(--hsc-moss)); }
+  .hsc-prod__name { font-family: var(--font-body-family); font-size: 1.4rem; font-weight: 400; color: rgb(var(--hsc-ink)); margin: 0 0 0.5rem; line-height: 1.4; }
+  .hsc-prod__price-row { display: flex; align-items: center; gap: 0.9rem; }
+  .hsc-prod__price { font-family: var(--font-body-family); font-size: 1.3rem; font-weight: 500; color: rgb(var(--hsc-ink)); }
+  .hsc-prod__compare { font-family: var(--font-body-family); font-size: 1.2rem; font-weight: 300; color: rgba(var(--hsc-ink), 0.4); text-decoration: line-through; }
+
+  @media (max-width: 989px) {
+    .hsc-feat { padding: 5.6rem 2.4rem; }
+    .hsc-feat__layout { grid-template-columns: 1fr; gap: 3.2rem; }
+    .hsc-feat__grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
+    .hsc-prod__img { aspect-ratio: 1 / 1; flex: none; }
+  }
+  @media (max-width: 549px) {
+    .hsc-feat__header { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+<section class="hsc-feat">
+  <div class="hsc-feat__header">
+    <div>
+      <p class="hsc-eyebrow">Top picks</p>
+      <h2 class="hsc-feat__title">{{ section.settings.title }}</h2>
+    </div>
+    <a href="{{ section.settings.view_all_url }}" class="hsc-feat__all">{{ section.settings.view_all_label }} &#8594;</a>
+  </div>
+  <div class="hsc-feat__layout">
+    {%- assign col = collections[section.settings.collection] -%}
+    {%- if col != blank -%}
+      {%- assign hsc_spotlight = col.products.first -%}
+      {%- if hsc_spotlight -%}
+        <a href="{{ hsc_spotlight.url }}" class="hsc-spotlight">
+          <div class="hsc-spotlight__img">
+            {%- if hsc_spotlight.featured_image -%}
+              <img src="{{ hsc_spotlight.featured_image | image_url: width: 900 }}" alt="{{ hsc_spotlight.title | escape }}" loading="lazy">
+            {%- endif -%}
+            <div class="hsc-prod__badges">
+              {%- if hsc_spotlight.compare_at_price > hsc_spotlight.price -%}<span class="hsc-prod__badge">Sale</span>{%- endif -%}
+              {%- if hsc_spotlight.selected_or_first_available_variant.requires_shipping == false -%}<span class="hsc-prod__badge hsc-prod__badge--digital">Digital</span>{%- endif -%}
+            </div>
+          </div>
+          <h3 class="hsc-spotlight__name">{{ hsc_spotlight.title }}</h3>
+          <span class="hsc-spotlight__price">{{ hsc_spotlight.price | money }}</span>
+        </a>
+      {%- endif -%}
+      <div class="hsc-feat__grid">
+        {%- for product in col.products offset: 1 limit: section.settings.product_limit -%}
+          {%- assign hsc_is_digital = false -%}
+          {%- if product.selected_or_first_available_variant.requires_shipping == false -%}
+            {%- assign hsc_is_digital = true -%}
+          {%- endif -%}
+          <a href="{{ product.url }}" class="hsc-prod">
+            <div class="hsc-prod__img">
+              {%- if product.featured_image -%}
+                <img src="{{ product.featured_image | image_url: width: 500 }}" alt="{{ product.title | escape }}" loading="lazy">
+              {%- endif -%}
+              <div class="hsc-prod__badges">
+                {%- if product.compare_at_price > product.price -%}<span class="hsc-prod__badge">Sale</span>{%- endif -%}
+                {%- if hsc_is_digital -%}<span class="hsc-prod__badge hsc-prod__badge--digital">Digital</span>{%- endif -%}
+              </div>
+            </div>
+            <p class="hsc-prod__name">{{ product.title }}</p>
+            <div class="hsc-prod__price-row">
+              <span class="hsc-prod__price">{{ product.price | money }}</span>
+              {%- if product.compare_at_price > product.price -%}<span class="hsc-prod__compare">{{ product.compare_at_price | money }}</span>{%- endif -%}
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HSC Featured Products",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Featured Gear" },
+    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "range", "id": "product_limit", "label": "Products in grid (excludes spotlight)", "min": 2, "max": 6, "step": 2, "default": 4 },
+    { "type": "text", "id": "view_all_label", "label": "View all label", "default": "View All" },
+    { "type": "url", "id": "view_all_url", "label": "View all URL" }
+  ],
+  "presets": [
+    { "name": "HSC Featured Products" }
+  ]
+}
+{% endschema %}
