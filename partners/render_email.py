@@ -41,7 +41,7 @@ def offer_box(doc):
     rows = []
     if guide:
         rows.append(f'<div style="font-size:16px;font-weight:600;color:{FOREST};margin:0 0 4px">{html.escape(guide)}</div>')
-        rows.append(f'<div style="font-size:13px;color:{MUTED};margin:0 0 {10 if code else 0}px">Free for your members. Printable, US Letter and A4, °F and °C.</div>')
+        rows.append(f'<div style="font-size:13px;color:{MUTED};margin:0 0 {10 if code else 0}px">Free for your members. Printable PDF.</div>')
     if code:
         rows.append(f'<div style="font-size:13px;color:{MUTED}">Member code: <span style="font-family:Menlo,Consolas,monospace;font-size:14px;color:{INK};background:#F4EFE6;padding:2px 8px;border-radius:3px">{html.escape(code)}</span> · 10% off at hikesupplyco.com</div>')
     return f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:4px 0 22px">
