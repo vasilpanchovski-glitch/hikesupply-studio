@@ -41,7 +41,10 @@
         "digital_title": "Trail Guides & Planners",
         "digital_desc": "Printable route guides, GPX bundles and packing checklists. Instant download.",
         "digital_cta": "Get Downloads",
-        "digital_link": "/collections/trail-guides-downloads"
+        "digital_link": "/collections/trail-guides-downloads",
+        "gear_image": "shopify://shop_images/hsc-cat-gear.jpg",
+        "clothing_image": "shopify://shop_images/hsc-cat-clothing.jpg",
+        "digital_image": "shopify://shop_images/hsc-cat-guides.jpg"
       }
     },
     "hsc_marquee": {
