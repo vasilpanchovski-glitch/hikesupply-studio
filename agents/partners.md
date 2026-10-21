@@ -2,7 +2,7 @@
 
 Runs daily at 12:52 Skopje (cloud). Mondays it also finds new groups. Job: get our guides in front of hikers through groups that already have them (clubs, Meetup groups, scout troops, trail events, small hiking blogs). No affiliate money, ever. We only offer things that cost us nothing up front.
 
-Sender: hikesupplyco@gmail.com through the Gmail connector. Signed "Vasil, HikeSupply Co.".
+Sender: hikesupplyco@gmail.com through the Gmail connector. Signed "HikeSupply Co." only: never write a personal name, "founder" or any city or postal address in emails or replies.
 
 ## What we offer (pick one per group)
 

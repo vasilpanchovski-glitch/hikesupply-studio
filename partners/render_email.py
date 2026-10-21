@@ -17,7 +17,6 @@ INK = "#24211C"
 MUTED = "#6B6559"
 LINE = "#E4DDCF"
 
-ADDRESS = "HikeSupply Co. · Raya 7, 4001 Plovdiv, Bulgaria"
 
 
 def paragraphs(text):
@@ -55,8 +54,8 @@ def signature():
   <tr>
     <td style="padding-top:16px;width:70px;vertical-align:middle"><img src="cid:att0" width="56" height="27" alt="HikeSupply Co." style="display:block;border:0"></td>
     <td style="padding-top:16px;padding-left:14px;vertical-align:middle;border-left:2px solid {CLAY}">
-      <div style="font-size:15px;font-weight:600;color:{INK};line-height:1.3">Vasil</div>
-      <div style="font-size:13px;color:{MUTED};line-height:1.5">Founder, HikeSupply Co.</div>
+      <div style="font-size:15px;font-weight:600;color:{INK};line-height:1.3">HikeSupply Co.</div>
+      <div style="font-size:13px;color:{MUTED};line-height:1.5">Hiking gear and printable trail guides</div>
       <div style="font-size:13px;line-height:1.6"><a href="https://hikesupplyco.com/?utm_source=partners&amp;utm_medium=email&amp;utm_campaign=outreach" style="color:{FOREST};text-decoration:none;font-weight:600">hikesupplyco.com</a>
         <span style="color:{LINE}">&nbsp;|&nbsp;</span><a href="mailto:hikesupplyco@gmail.com" style="color:{MUTED};text-decoration:none">hikesupplyco@gmail.com</a></div>
       <div style="font-size:12px;line-height:1.6;color:{MUTED}">
@@ -82,18 +81,18 @@ def render(doc):
 {offer_box(doc)}
 <p style="margin:0 0 4px;font-size:15px;line-height:1.6;color:{INK}">All the best,</p>
 {signature()}
-<p style="margin:22px 0 0;font-size:11px;line-height:1.5;color:#9A9386">{ADDRESS}<br>You are getting this one-off note because this address is listed as your group's contact. Reply "no thanks" and we will not write again.</p>
+<p style="margin:22px 0 0;font-size:11px;line-height:1.5;color:#9A9386">You are getting this one-off note because this address is listed as your group's contact. Reply "no thanks" and we will not write again.</p>
 </td></tr></table>
 </td></tr></table>
 </body></html>'''
-    sig_txt = "All the best,\nVasil\nFounder, HikeSupply Co.\nhikesupplyco.com | hikesupplyco@gmail.com"
+    sig_txt = "All the best,\nHikeSupply Co.\nhikesupplyco.com | hikesupplyco@gmail.com"
     txt = re.sub(r"<[^>]+>", "", body_html.replace("<br>", "\n").replace("</p>", "\n\n"))
     txt = html.unescape(txt).strip()
     if doc.get("guide"):
         txt += f"\n\n{doc['guide']}: free for your members."
     if doc.get("discount"):
         txt += f"\nMember code: {doc['discount']} (10% off at hikesupplyco.com)"
-    txt += "\n\n" + sig_txt + f"\n\n{ADDRESS}\nReply \"no thanks\" and we will not write again."
+    txt += "\n\n" + sig_txt + "\n\nReply \"no thanks\" and we will not write again."
     logo = base64.b64encode(open(os.path.join(HERE, "logo-mark.png"), "rb").read()).decode()
     return html_out, txt, {"subject": doc.get("subject", ""), "htmlBody": html_out, "body": txt,
                            "attachments": [{"content": logo, "filename": "hikesupply.png", "mimeType": "image/png", "inline": True}]}
