@@ -23,7 +23,11 @@ for L in spec["lines"]:
         c=int(edges[i]*SR); r=int(0.09*SR); lo,hi=max(0,c-r),min(len(env)-1,c+r)
         edges[i]=(lo+np.argmin(env[lo:hi]))/SR
     lines.append({"text":L["text"],"start":round(t,3),"end":round(t+len(s)/SR,3)})
-    for i,w in enumerate(ws): words.append({"w":w,"s":round(t+edges[i],3),"e":round(t+edges[i+1],3)})
+    # optional "show": display words, same count as spoken words; "~" merges into the previous word
+    sh=L.get("show",L["text"]).split(); sh=sh if len(sh)==len(ws) else ws
+    for i,w in enumerate(sh):
+        if w=="~" and words: words[-1]["e"]=round(t+edges[i+1],3); continue
+        words.append({"w":w,"s":round(t+edges[i],3),"e":round(t+edges[i+1],3)})
     audio.append(s); t+=len(s)/SR
     gap=L.get("gap",0.28); audio.append(np.zeros(int(gap*SR))); t+=gap
 a=np.concatenate(audio); sf.write(out+".wav",a,SR)
