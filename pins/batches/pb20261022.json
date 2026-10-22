@@ -1,0 +1,54 @@
+{
+ "pins": [
+  {
+   "id": "pb20261022-1",
+   "layout": "forest",
+   "image": "media/pins/v45-crop.jpg",
+   "kicker": "US national parks tracker",
+   "title": "63 parks, one hike each",
+   "sub": "A beginner-friendly day hike for every park in miles and km, plus visit logs and stamp boxes.",
+   "cta": "See the tracker"
+  },
+  {
+   "id": "pb20261022-2",
+   "layout": "stone",
+   "kicker": "For the day that goes wrong",
+   "title": "Three safety guides in one",
+   "items": [
+    "Hiking Safety Guide: 10 chapters on what goes wrong",
+    "Emergency Checklist: your kit and pre-trip check",
+    "What To Do If You Get Lost, with a pocket card",
+    "Letter, A4 and mobile versions of each"
+   ],
+   "sub": "$16.99 instead of $20.97 bought separately. Instant PDF download.",
+   "cta": "See the bundle"
+  },
+  {
+   "id": "pb20261022-3",
+   "layout": "forest",
+   "image": "media/pins/v17-crop.jpg",
+   "kicker": "Hiking in hunting season",
+   "title": "Wear blaze orange",
+   "cta": "Read the guide",
+   "sub": "Orange hat and vest seen from every side, no white or brown layers, and this year's dates from your state wildlife agency."
+  },
+  {
+   "id": "pb20261022-4",
+   "layout": "forest",
+   "image": "media/pins/v43-crop.jpg",
+   "kicker": "Utah's Mighty 5 in late fall",
+   "title": "Pack for two seasons",
+   "sub": "Desert days can feel mild, but Bryce Canyon sits above 8,000 ft. Expect freezing mornings and check nps.gov for snow and road updates.",
+   "cta": "Plan your trip"
+  },
+  {
+   "id": "pb20261022-5",
+   "layout": "forest",
+   "image": "media/pins/v38-crop.jpg",
+   "kicker": "Cold hands on the trail",
+   "title": "Gloves on before you chill",
+   "sub": "Put them on at the trailhead, keep a dry spare pair in a bag, and keep eating and drinking so your body can make heat.",
+   "cta": "Get the winter guide"
+  }
+ ]
+}
