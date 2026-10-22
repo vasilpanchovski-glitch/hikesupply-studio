@@ -1,6 +1,6 @@
 {
- "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller.",
- "updated": "2026-10-19",
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews.",
+ "updated": "2026-10-22",
  "complaints": [
   {
    "type": "trekking pole",
@@ -815,6 +815,206 @@
    "date": "2025-05-22",
    "theme": "thin paper",
    "found": "2026-10-19"
+  },
+  {
+   "type": "headlamp",
+   "product": "Fenix HM50R V2 (REI)",
+   "what": "stopped working at altitude in near-freezing cold and did not recover for the rest of a week-long trek",
+   "source": "https://www.rei.com/product/204684",
+   "where": "rei",
+   "date": "about 2022",
+   "theme": "headlamp fails or drains fast in the cold",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "Fenix HM50R V2 (REI)",
+   "what": "around 30F the high mode stepped down to medium after an hour, far short of the listed run time",
+   "source": "https://www.rei.com/product/204684",
+   "where": "rei",
+   "date": "about 2022",
+   "theme": "headlamp fails or drains fast in the cold",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "BioLite 330 (Garage Grown Gear review)",
+   "what": "in the low 30s F the battery lost about half its charge in one night",
+   "source": "https://garagegrowngear.com/blogs/gear-gab/gear-review-biolite-330-lumen-rechargeable-led-headlamp",
+   "where": "review-site",
+   "date": "2019-08-13",
+   "theme": "headlamp fails or drains fast in the cold",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "Black Diamond Revolt (The Great Outdoors review)",
+   "what": "included rechargeable cells are weaker in the cold than lithium",
+   "source": "https://www.thegreatoutdoorsmag.com/review/long-term-review-black-diamond-revolt-headlamp",
+   "where": "review-site",
+   "date": "2017-12-19",
+   "theme": "headlamp fails or drains fast in the cold",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "BioLite 330 (Garage Grown Gear review)",
+   "what": "power button and tilt tab too small to use with gloves",
+   "source": "https://garagegrowngear.com/blogs/gear-gab/gear-review-biolite-330-lumen-rechargeable-led-headlamp",
+   "where": "review-site",
+   "date": "2019-08-13",
+   "theme": "controls hard to use with gloves",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "Black Diamond Revolt (The Great Outdoors review)",
+   "what": "touch panel does not work well with thick gloves",
+   "source": "https://www.thegreatoutdoorsmag.com/review/long-term-review-black-diamond-revolt-headlamp",
+   "where": "review-site",
+   "date": "2017-12-19",
+   "theme": "controls hard to use with gloves",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "Black Diamond Revolt (The Great Outdoors review)",
+   "what": "charging port cover fiddly to close with gloves on",
+   "source": "https://www.thegreatoutdoorsmag.com/review/long-term-review-black-diamond-revolt-headlamp",
+   "where": "review-site",
+   "date": "2017-12-19",
+   "theme": "controls hard to use with gloves",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "Black Diamond Revolt (The Great Outdoors review)",
+   "what": "quoted run time and brightness are for alkaline batteries, not the included rechargeables",
+   "source": "https://www.thegreatoutdoorsmag.com/review/long-term-review-black-diamond-revolt-headlamp",
+   "where": "review-site",
+   "date": "2017-12-19",
+   "theme": "product does not match the listing",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "Black Diamond Revolt (The Great Outdoors review)",
+   "what": "strap loosened after a few hours",
+   "source": "https://www.thegreatoutdoorsmag.com/review/long-term-review-black-diamond-revolt-headlamp",
+   "where": "review-site",
+   "date": "2017-12-19",
+   "theme": "strap loosens",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "Rechargeable headlamps (Kimola summary of Amazon reviews)",
+   "what": "charged once, then would not charge again",
+   "source": "https://kimola.com/reports/explore-real-user-insights-on-rechargeable-headlamp-amazon-en-us-157193",
+   "where": "review-site",
+   "date": "2025-12-08",
+   "theme": "fails within months / stops charging",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "headlamp",
+   "product": "Rechargeable headlamps (Kimola summary of Amazon reviews)",
+   "what": "bright at first, then much weaker or dead within a few months",
+   "source": "https://kimola.com/reports/explore-real-user-insights-on-rechargeable-headlamp-amazon-en-us-157193",
+   "where": "review-site",
+   "date": "2025-12-08",
+   "theme": "fails within months / stops charging",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "gloves",
+   "product": "Marmot Connect touchscreen glove (Trailspace)",
+   "what": "touchscreen tips faded within weeks and stopped working by two months",
+   "source": "https://www.trailspace.com/gear/marmot/connect-glove",
+   "where": "review-site",
+   "date": "2013-12-03",
+   "theme": "touchscreen tips stop working",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "gloves",
+   "product": "Marmot Connect touchscreen glove (Trailspace)",
+   "what": "stretched loose and gave very little warmth",
+   "source": "https://www.trailspace.com/gear/marmot/connect-glove",
+   "where": "review-site",
+   "date": "2013-12-03",
+   "theme": "too thin, not warm enough",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "gloves",
+   "product": "Marmot Connect touchscreen glove (Trailspace)",
+   "what": "thin, fine for cool days but not cold ones (said in a 5-star review)",
+   "source": "https://www.trailspace.com/gear/marmot/connect-glove",
+   "where": "review-site",
+   "date": "2013-03-27",
+   "theme": "too thin, not warm enough",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "gloves",
+   "product": "Marmot Connect touchscreen glove (Trailspace)",
+   "what": "tore between thumb and index finger within a month, snags on brush and velcro",
+   "source": "https://www.trailspace.com/gear/marmot/connect-glove",
+   "where": "review-site",
+   "date": "2013-12-03",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "neck gaiter",
+   "product": "Fleece neck gaiter (Walmart)",
+   "what": "thin: blocks wind but not warm, and tight to pull over the head",
+   "source": "https://www.walmart.com/ip/676770902",
+   "where": "walmart",
+   "date": "2024-04-09",
+   "theme": "too thin, not warm enough",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "gloves",
+   "product": "USB 'heated' touchscreen gloves (Walmart, 1.8 stars)",
+   "what": "not heated at all, no way to connect power, and runs small",
+   "source": "https://www.walmart.com/ip/17855770723",
+   "where": "walmart",
+   "date": "2025-12-20",
+   "theme": "product does not match the listing",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "gloves",
+   "product": "USB 'heated' touchscreen gloves (Walmart, 1.8 stars)",
+   "what": "seller listed a heated glove it did not have and sent plain gloves",
+   "source": "https://www.walmart.com/ip/17855770723",
+   "where": "walmart",
+   "date": "2026-05-07",
+   "theme": "product does not match the listing",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "gloves",
+   "product": "USB 'heated' touchscreen gloves (Walmart, 1.8 stars)",
+   "what": "came without batteries; once powered it burned the buyer's hand",
+   "source": "https://www.walmart.com/ip/17855770723",
+   "where": "walmart",
+   "date": "2026-05-07",
+   "theme": "overheating / burn risk",
+   "found": "2026-10-22"
+  },
+  {
+   "type": "hiking journal",
+   "product": "Hiking logbook (Kimola summary of Amazon reviews)",
+   "what": "binding may weaken over time, especially with thick photos glued in",
+   "source": "https://kimola.com/reports/uncover-insights-from-our-the-hiking-logbook-review-analysis-amazon-en-us-143435",
+   "where": "review-site",
+   "date": "2025-03-06",
+   "theme": "binding weak",
+   "found": "2026-10-22"
   }
  ],
  "themes": [
@@ -827,16 +1027,16 @@
    "count": 7
   },
   {
+   "theme": "breaks quickly / cheaply made",
+   "count": 6
+  },
+  {
    "theme": "missing parts on arrival",
    "count": 6
   },
   {
    "theme": "list incomplete or out of date",
    "count": 6
-  },
-  {
-   "theme": "breaks quickly / cheaply made",
-   "count": 5
   },
   {
    "theme": "baskets, tips or straps wear out or fall off",
@@ -851,6 +1051,10 @@
    "count": 5
   },
   {
+   "theme": "headlamp fails or drains fast in the cold",
+   "count": 4
+  },
+  {
    "theme": "hydration bladder leaks",
    "count": 3
   },
@@ -863,6 +1067,18 @@
    "count": 3
   },
   {
+   "theme": "controls hard to use with gloves",
+   "count": 3
+  },
+  {
+   "theme": "product does not match the listing",
+   "count": 3
+  },
+  {
+   "theme": "too thin, not warm enough",
+   "count": 3
+  },
+  {
    "theme": "not suited to hikers with disabilities",
    "count": 2
   },
@@ -872,6 +1088,10 @@
   },
   {
    "theme": "not enough blank pages / too rigid",
+   "count": 2
+  },
+  {
+   "theme": "fails within months / stops charging",
    "count": 2
   },
   {
@@ -920,6 +1140,22 @@
   },
   {
    "theme": "thin paper",
+   "count": 1
+  },
+  {
+   "theme": "strap loosens",
+   "count": 1
+  },
+  {
+   "theme": "touchscreen tips stop working",
+   "count": 1
+  },
+  {
+   "theme": "overheating / burn risk",
+   "count": 1
+  },
+  {
+   "theme": "binding weak",
    "count": 1
   }
  ]
