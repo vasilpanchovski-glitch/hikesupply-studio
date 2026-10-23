@@ -18,5 +18,5 @@ H3='<tr><td style="padding:18px 28px 0;font-size:18px;line-height:1.4;color:#2b2
 BTN='<tr><td align="center" style="padding:20px 28px;"><a href="{}" style="background:#000000;color:#ffffff;text-decoration:none;padding:14px 28px;font-size:16px;display:inline-block;">{}</a></td></tr>'
 def prod(img,name,price,url):
     return f'''<tr><td style="padding:12px 28px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-<td width="120" valign="top"><a href="{url}"><img src="{img}&width=240" width="120" alt="{name}" style="display:block;width:120px;border:0;"></a></td>
+<td width="120" valign="top"><a href="{url}"><img src="{img}&amp;width=240" width="120" alt="{name}" style="display:block;width:120px;border:0;"></a></td>
 <td valign="middle" style="padding-left:16px;font-size:16px;line-height:1.5;color:#2b2f2a;"><a href="{url}" style="color:#2b2f2a;text-decoration:none;">{name}</a><br><span style="color:#4a4f48;">${price}</span><br><a href="{url}" style="color:#2b2f2a;font-size:14px;">View</a></td></tr></table></td></tr>'''

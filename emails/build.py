@@ -1,5 +1,5 @@
 from base import *
-U='?utm_source=email&utm_medium=email&utm_campaign={}'
+U='?utm_source=email&amp;utm_medium=email&amp;utm_campaign={}'
 g='https://hikesupplyco.com/products/beginners-hiking-guide'
 e2=page("Most first hikes go wrong for the same three reasons. Here is how to avoid them.", "".join([
  H.format("3 mistakes that end most first hikes"),
