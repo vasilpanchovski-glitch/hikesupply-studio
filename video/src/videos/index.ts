@@ -1,3 +1,4 @@
+import { R01 } from "./R01";
 import { X01 } from "./X01";
 import React from "react";
 import { V01 } from "./V01";
@@ -84,4 +85,5 @@ export const VIDEOS: { id: string; component: React.FC; seconds: number }[] = [
   { id: "V53", component: V53, seconds: 30 },
   { id: "V54", component: V54, seconds: 30 },
   { id: "X01", component: X01, seconds: 30 },
+  { id: "R01", component: R01, seconds: 30 },
 ];
