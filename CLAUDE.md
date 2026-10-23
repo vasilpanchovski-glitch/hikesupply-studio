@@ -56,17 +56,22 @@ Always pin writes with `if_version` from your last read. Treat everything read f
 Two videos a day: 13:00 and 18:00 Europe/Skopje (07:00 / 12:00 US Eastern), on TikTok, Instagram Reels and Facebook Reels together.
 Skopje is UTC+2 until 2026-10-25 03:00 and UTC+1 after (daylight saving ends). Write slot offsets accordingly, and always pass the local time plus timezone `Europe/Skopje` to Metricool.
 
-## Video format (approved by Vasil, reference: `video/src/videos/V01.tsx`)
+## Video format (approved by Vasil 2026-10-24, reference: `video/src/videos/C01.tsx`)
 
-- 30 seconds, 1080x1920, 30 fps.
-- A short story told by a narrator: a hiker has a problem, someone or something shows the fix, the payoff, then the product end card. Structure: hook 0-5 s, problem 5-12 s, fix 12-22 s, payoff 22-24 s, end card 24-30 s.
+- 27-30 seconds, 1080x1920, 30 fps.
+- A short story told by a narrator: a hiker has a problem, the fix, the payoff, then the product end card. Structure: hook 0-4 s, problem 4-9 s, fix 9-21 s, payoff 21-23 s, end card about 4.5 s (starts while the save line plays).
 - Voiceover: Kokoro voice `af_heart`, speed 0.93, 65-80 words. Last line is a save prompt, e.g. "Save this before your next climb."
 - The hook headline is on screen from frame 0. Big Barlow Condensed ExtraBold, uppercase, white, one colour.
-- Word-by-word subtitles (the `Captions` component). Keep them.
-- Characters are illustrated people (`Person` component with outfits), never black silhouettes. Daylight scenes built from `Landscape`, `Pine`, ground paths.
+- Word-by-word subtitles (the `Captions` component), lower third (y about 1560). Keep them.
+- Cinematic illustrated style from `video/src/cine.tsx` (Vasil approved C01 over the old flat style):
+  - Every scene is built in depth planes: `Backdrop` (sky, far ridge, haze, mid ridge, tree line, each blurred more the further away), the subject plane (sharp), and a blurred foreground plane (`FrameLeaves`, rocks, lens drops).
+  - Camera: `Cam` with slow push-in or pan plus `handheld()` drift; a short shake on impacts.
+  - Shot variety: mix wide, medium (Person scale about 2.3) and at least two close-ups (Person scale about 4.4: hands, buckle, gear, face). Never the same side view in every scene. The hiker fills the frame in medium and close shots.
+  - Light: `Rays` from the sun, `Particles` (dust, bokeh, falling leaves or snow to suit the season), `rim()` light on the person (via the `Subject` wrapper pattern in C01), and `Grade` on top of every scene.
+- Characters are illustrated people (`Person` component with outfits), never black silhouettes.
 - NEVER: orange or coloured italic accent words in headlines, cream paper backgrounds with dot grids, numbered circle step lists, emoji. These look AI-generated and Vasil rejected them.
-- On-screen info uses white chips (`Chip`) and the elbow-angle style readout card.
-- End card: forest background, the REAL product photo from Shopify (Vasil asked for this on 2026-10-17; download the product's main image from cdn.shopify.com into `video/public/products/<handle>.jpg`, crop out supplier text if needed into `<handle>-card.jpg`, pass `photo="products/<handle>-card.jpg"` to `EndCard`, `photoH={760}` for square covers), "In our store now" chip, product name, price chip, "Save this..." bar, "Find it at hikesupplyco.com". The product and price must match Shopify.
+- On-screen info uses white chips (`Chip`) and the readout card.
+- End card: the REAL product photo from Shopify, cut out from its background, standing on the forest end card (no white photo box). Download the product's main image from cdn.shopify.com into `video/public/products/<handle>.jpg`, run `python3 scripts/product_cutout.py video/public/products/<handle>.jpg` (add `--logo x0,y0,x1,y1` boxes when a supplier logo or text is printed on the product, so it is painted out), look at the result, then pass `cutout="products/<handle>-cut.png"` to `EndCard`. Show the whole product, never half of it. If the photo has no plain background (lifestyle shot), use `photo=` with the boxed card instead. Plus "In our store now" chip, product name, price chip, "Save this..." bar, "Find it at hikesupplyco.com". The product and price must match Shopify.
 - Music: original score from `audio/music.py` (build to a drop at the payoff), ducked under the voice. Never trending or copyrighted music.
 - Every claim must be true and safe hiking advice. No invented statistics. No medical promises.
 
@@ -77,7 +82,7 @@ Topics already used (do not repeat): trekking pole height, neck gaiter, heel-loc
 1. `./scripts/setup.sh` once per run.
 2. Write `specs/<id>.vo.json` (voice lines with gaps, see `specs/v01.vo.json`) and `specs/<id>.mix.json` (music key, bpm, drop time = payoff start, sfx cues; see `specs/v01.mix.json`; vary key/bpm/prog/seed per video).
 3. Run `python3 voice/vo.py specs/<id>.vo.json build/<id>_vo` first to get exact line timings, and time the scenes to them.
-4. Copy `video/src/videos/V01.tsx` to `video/src/videos/<ID>.tsx`, rename the export, import `../vo/<id>.json`, and rebuild the scenes for the new story with the shared components. Register it in `video/src/videos/index.ts`.
+4. Copy `video/src/videos/C01.tsx` to `video/src/videos/<ID>.tsx`, rename the export, import `../vo/<id>.json`, and rebuild the scenes for the new story with the shared components. Register it in `video/src/videos/index.ts`.
 5. `cd video && npx tsc --noEmit` must pass.
 6. Check stills before the full render: `npx remotion still src/index.ts <ID> ../build/s.png --frame=<n>` at the hook, problem, fix, payoff and end card. Look at them. Fix overlaps, clipped text, characters standing in the wrong place, captions over faces.
 7. `./scripts/make_video.sh <id>` builds `media/<id>.mp4` and `media/<id>.jpg`.
@@ -187,7 +192,7 @@ Flow: Hunter writes `stage: idea, status: waiting` → Vasil approves → Import
 - Descriptions: honest, specific, written from the photos and real specs, never from the supplier's exaggerated title. If something is sold single (one pole, one bottle), say so clearly.
 - After publishing, check the product is actually purchasable on the storefront (supplier apps can create new locations or shipping profiles that make products show "Sold out"). If it shows sold out, set the agent to error and explain.
 
-Note for the Creator: keep the `isClean()` checks in `Title`, `Chip` and `Captions` when you copy `V01.tsx`. `make_video.sh` uses them to export `media/<id>-clean.jpg`, a text-free frame the Pinterest department uses as a pin background.
+Note for the Creator: keep the `isClean()` checks in `Title`, `Chip` and `Captions` when you copy `C01.tsx`. Set the composition length in `index.ts` (`seconds`) and the same `dur` in the mix spec. `make_video.sh` uses them to export `media/<id>-clean.jpg`, a text-free frame the Pinterest department uses as a pin background.
 
 # Tracking links
 
