@@ -236,9 +236,9 @@ export const EndCard: React.FC<{ lt: number; art?: React.ReactNode; photo?: stri
     {cutout ? (
       <>
         <div style={{ position: "absolute", left: 90, right: 90, top: 260, height: 900, background: "radial-gradient(ellipse 50% 45% at 50% 55%, rgba(255,236,196,0.30) 0%, rgba(255,236,196,0.08) 45%, rgba(0,0,0,0) 70%)", opacity: at(lt, [0, 0.5], [0, 1]) }} />
-        <div style={{ position: "absolute", left: 240, right: 240, top: 228 + cutoutH - 34, height: 60, borderRadius: "50%", background: "rgba(0,0,0,0.45)", filter: "blur(16px)", opacity: at(lt, [0.1, 0.6], [0, 1]) }} />
-        <div style={{ position: "absolute", left: 0, right: 0, top: 228, height: cutoutH, display: "flex", justifyContent: "center", opacity: at(lt, [0.05, 0.45], [0, 1]), translate: `0px ${at(lt, [0.05, 0.9], [40, 0], outExpo)}px`, scale: `${1 + lt * 0.01}` }}>
-          <Img src={staticFile(cutout)} style={{ height: "100%" }} />
+        <div style={{ position: "absolute", left: 140, right: 140, top: 228 + cutoutH - 34, height: 60, borderRadius: "50%", background: "rgba(0,0,0,0.45)", filter: "blur(16px)", opacity: at(lt, [0.1, 0.6], [0, 1]) }} />
+        <div style={{ position: "absolute", left: 60, right: 60, top: 228, height: cutoutH, display: "flex", justifyContent: "center", opacity: at(lt, [0.05, 0.45], [0, 1]), translate: `0px ${at(lt, [0.05, 0.9], [40, 0], outExpo)}px`, scale: `${1 + lt * 0.01}` }}>
+          <Img src={staticFile(cutout)} style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "50% 100%" }} />
         </div>
         <div style={{ position: "absolute", top: 228 + cutoutH + 22, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: at(lt, [0.8, 1.2], [0, 1]) }}>
           <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 40, letterSpacing: 2, color: C.forestDeep, background: C.stone, padding: "8px 26px", borderRadius: 12, textTransform: "uppercase", boxShadow: "0 8px 20px rgba(0,0,0,0.3)" }}>In our store now</div>
