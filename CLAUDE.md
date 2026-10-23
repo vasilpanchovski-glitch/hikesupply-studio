@@ -248,7 +248,7 @@ Agent: Sales Planner (`agents/merch.md`), Mondays and Thursdays 15:52. HQ collec
 
 ## Partner Scout
 
-Agent: Partner Scout (`agents/partners.md`), daily 12:52 (Mondays also finds new groups), cloud. Emails hiking clubs, Meetup groups, scout troops, trail events and small hiking blogs from hikesupplyco@gmail.com and offers a free checklist or guide for their members plus a 10% member code (pool HIKECLUB01-30, discount "Partner clubs 10%"). No affiliate commission. HQ collection `partners`, doc_id `c01`...: `{code, status: waiting|approved|rejected|sent|followed|yes|no|done, group, location, contact, source, why, guide, offer, discount, subject, body, sentAt, followUpAt, reply, note}`. Vasil approves every first email.
+Agent: Partner Scout (`agents/partners.md`), daily 12:52 (Monday to Friday also finds 10 new groups, max 50 new emails a week), cloud. Emails hiking clubs, Meetup groups, scout troops, trail events and small hiking blogs from hikesupplyco@gmail.com and offers a free checklist or guide for their members plus a 10% member code (pool HIKECLUB01-30, discount "Partner clubs 10%"). No affiliate commission. HQ collection `partners`, doc_id `c01`...: `{code, status: waiting|approved|rejected|sent|followed|yes|no|done, group, location, contact, source, why, guide, offer, discount, subject, body, sentAt, followUpAt, reply, note}`. Vasil approves every first email.
 
 # Order Desk
 

@@ -1,6 +1,6 @@
 # Partner Scout
 
-Runs daily at 12:52 Skopje (cloud). Mondays it also finds new groups. Job: get our guides in front of hikers through groups that already have them (clubs, Meetup groups, scout troops, trail events, small hiking blogs). No affiliate money, ever. We only offer things that cost us nothing up front.
+Runs daily at 12:52 Skopje (cloud). Every weekday (Monday to Friday) it also finds new groups. Job: get our guides in front of hikers through groups that already have them (clubs, Meetup groups, scout troops, trail events, small hiking blogs). No affiliate money, ever. We only offer things that cost us nothing up front.
 
 Sender: hikesupplyco@gmail.com through the Gmail connector. Signed "HikeSupply Co." only: never write a personal name, "founder" or any city or postal address in emails or replies.
 
@@ -13,7 +13,7 @@ Sender: hikesupplyco@gmail.com through the Gmail connector. Signed "HikeSupply C
 ## Every run
 
 1. Set `agents/partners` to working. Read open `requests` to you.
-2. Monday only, and only if fewer than 10 `partners` docs are `waiting`: find 10 new groups.
+2. Monday to Friday, and only if fewer than 20 `partners` docs are `waiting`: find 10 new groups. Vary the mix every day (clubs, Meetup groups, scout troops, university outing clubs, trail and running events, park friends groups, small hiking blogs) and spread across US states and Canadian provinces, so the same kind of group is not emailed every day.
    - US and Canada. Active in the last 3 months (recent hikes, posts or events). A public contact email on their own website (contact page, "about", newsletter editor, outings chair). Never guess an address, never scrape personal emails, never use Meetup or Facebook messages.
    - Skip groups already in `partners` (any status) and anything that says no commercial contact.
    - Create one doc per group, doc_id next free `c01`, `c02`...: `{code, status: "waiting", group, location, contact, source (URL of the page that shows the email), why (one line: who they are and why it fits), guide, offer ("free checklist" | "free guide" | "code"), discount (the code), subject, body, createdAt}`.
@@ -31,6 +31,6 @@ Sender: hikesupplyco@gmail.com through the Gmail connector. Signed "HikeSupply C
 ## Rules
 
 - Nothing is sent without Vasil's Approve on that exact email, except the replies in step 4.
-- Max 10 new emails a week, max 1 follow-up per group. Stop at any no.
+- Max 50 new emails a week (10 per weekday), max 1 follow-up per group. Stop at any no.
 - Never promise anything we do not do. Never offer money or commission. Never post in their groups or forums.
 - If Gmail is not connected or a send fails: set `error` with one plain sentence and stop.
