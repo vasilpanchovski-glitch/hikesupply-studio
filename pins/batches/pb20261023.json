@@ -1,0 +1,55 @@
+{
+ "pins": [
+  {
+   "id": "pb20261023-1",
+   "layout": "forest",
+   "image": "media/pins/v16-wide.jpg",
+   "kicker": "Cold morning, steep climb",
+   "title": "Start a little chilly",
+   "sub": "Take a layer off before you sweat, and put your warm layer back on the moment you stop. Damp clothes get cold fast at the top.",
+   "cta": "Get the winter guide"
+  },
+  {
+   "id": "pb20261023-2",
+   "layout": "stone",
+   "kicker": "Layering for a cold climb",
+   "title": "Layer off, layer on",
+   "items": [
+    "Trailhead: start a little chilly, not toasty",
+    "Climbing: take a layer off before you sweat",
+    "Stopping: warm layer back on right away",
+    "Pack a dry spare base layer for the top",
+    "Eat and drink at stops so your body can make heat"
+   ],
+   "sub": "Winter Hiking Guide & Cold-Weather Checklist. $7.99, instant PDF download.",
+   "cta": "Get the guide"
+  },
+  {
+   "id": "pb20261023-3",
+   "layout": "forest",
+   "image": "media/pins/v47-crop.jpg",
+   "kicker": "Hiking with kids",
+   "title": "Give them a mission",
+   "sub": "A scavenger hunt turns 'are we there yet?' into 'what can we find next?' Printable hunts and a junior hiker journal.",
+   "cta": "See the kids pack"
+  },
+  {
+   "id": "pb20261023-4",
+   "layout": "forest",
+   "image": "media/pins/v39-crop.jpg",
+   "kicker": "Smoky Mountains in winter",
+   "title": "Check the road first",
+   "sub": "Newfound Gap Road often closes for snow and ice during winter storms, and the road up to Kuwohi (Clingmans Dome) is closed to cars in winter.",
+   "cta": "Plan your trip"
+  },
+  {
+   "id": "pb20261023-5",
+   "layout": "forest",
+   "image": "media/pins/v48-crop.jpg",
+   "kicker": "Headlamp in the cold",
+   "title": "Keep the battery warm",
+   "sub": "Cold drains any battery faster. Charge it full, keep it in an inside pocket between uses and carry a backup light.",
+   "cta": "See the headlamp"
+  }
+ ]
+}
