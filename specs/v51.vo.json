@@ -1,0 +1,9 @@
+{"voice":"af_heart","speed":0.93,"lead":0.3,"lines":[
+{"text": "Mia loved national parks.", "gap": 0.2},
+{"text": "But every year the trip got pushed back, and in ten years she'd seen only four.", "gap": 0.25},
+{"text": "There are sixty-three.", "gap": 0.5, "show": "There are 63."},
+{"text": "Here's the fix. Put every park on one page.", "gap": 0.25},
+{"text": "Circle the next one now, in the off season.", "gap": 0.25},
+{"text": "Pick one easy day hike there, and check the park's page on N P S dot gov for timed entry or reservations.", "gap": 0.5, "show": "Pick one easy day hike there, and check the park's page on nps.gov ~ ~ ~ ~ for timed entry or reservations."},
+{"text": "By spring, Mia's summer trip was booked.", "gap": 0.5},
+{"text": "Save this while you plan next year.", "gap": 0.2}]}
