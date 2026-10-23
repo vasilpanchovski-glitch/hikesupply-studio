@@ -37,6 +37,9 @@ import { V48 } from "./V48";
 import { V49 } from "./V49";
 import { V50 } from "./V50";
 import { V51 } from "./V51";
+import { V52 } from "./V52";
+import { V53 } from "./V53";
+import { V54 } from "./V54";
 
 // Every video in the series. Add one line per new video: id must match the file name (V02 -> videos/V02.tsx).
 export const VIDEOS: { id: string; component: React.FC; seconds: number }[] = [
@@ -77,5 +80,8 @@ export const VIDEOS: { id: string; component: React.FC; seconds: number }[] = [
   { id: "V49", component: V49, seconds: 30 },
   { id: "V50", component: V50, seconds: 30 },
   { id: "V51", component: V51, seconds: 30 },
+  { id: "V52", component: V52, seconds: 30 },
+  { id: "V53", component: V53, seconds: 30 },
+  { id: "V54", component: V54, seconds: 30 },
   { id: "X01", component: X01, seconds: 30 },
 ];
