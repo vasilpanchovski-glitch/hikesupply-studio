@@ -423,7 +423,7 @@ const S5: React.FC = () => {
   return (
     <EndCard
       lt={lt}
-      photo="products/waterproof-dry-bag-card.jpg"
+      cutout="products/waterproof-dry-bag-cut.png"
       spec="ROLL-TOP · TAPED SEAMS · 3L TO 75L"
       name={
         <>

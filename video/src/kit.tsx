@@ -215,12 +215,14 @@ export const Scrim: React.FC<{ h?: number }> = ({ h = 760 }) => (
 
 // End card shell: forest background, brand line, product art slot, name, price chip, save bar, url.
 // photo: real store photo in video/public/products/ (from Shopify). When set it replaces the SVG art.
-export const EndCard: React.FC<{ lt: number; art?: React.ReactNode; photo?: string; photoH?: number; spec: string; name: React.ReactNode; nameSize?: number; price: string; save: string; shadowY?: number }> = ({
+export const EndCard: React.FC<{ lt: number; art?: React.ReactNode; photo?: string; photoH?: number; cutout?: string; cutoutH?: number; spec: string; name: React.ReactNode; nameSize?: number; price: string; save: string; shadowY?: number }> = ({
   lt,
   shadowY = 1000,
   art,
   photo,
   photoH = 800,
+  cutout,
+  cutoutH = 820,
   spec,
   name,
   nameSize = 112,
@@ -231,7 +233,18 @@ export const EndCard: React.FC<{ lt: number; art?: React.ReactNode; photo?: stri
     <div style={{ position: "absolute", top: 130, left: 0, right: 0, textAlign: "center", fontFamily: HEAD, fontWeight: 700, fontSize: 44, letterSpacing: 10, color: C.stone, opacity: at(lt, [0, 0.4], [0, 1]) }}>
       HIKESUPPLY CO.
     </div>
-    {photo ? (
+    {cutout ? (
+      <>
+        <div style={{ position: "absolute", left: 90, right: 90, top: 260, height: 900, background: "radial-gradient(ellipse 50% 45% at 50% 55%, rgba(255,236,196,0.30) 0%, rgba(255,236,196,0.08) 45%, rgba(0,0,0,0) 70%)", opacity: at(lt, [0, 0.5], [0, 1]) }} />
+        <div style={{ position: "absolute", left: 240, right: 240, top: 228 + cutoutH - 34, height: 60, borderRadius: "50%", background: "rgba(0,0,0,0.45)", filter: "blur(16px)", opacity: at(lt, [0.1, 0.6], [0, 1]) }} />
+        <div style={{ position: "absolute", left: 0, right: 0, top: 228, height: cutoutH, display: "flex", justifyContent: "center", opacity: at(lt, [0.05, 0.45], [0, 1]), translate: `0px ${at(lt, [0.05, 0.9], [40, 0], outExpo)}px`, scale: `${1 + lt * 0.01}` }}>
+          <Img src={staticFile(cutout)} style={{ height: "100%" }} />
+        </div>
+        <div style={{ position: "absolute", top: 228 + cutoutH + 22, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: at(lt, [0.8, 1.2], [0, 1]) }}>
+          <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 40, letterSpacing: 2, color: C.forestDeep, background: C.stone, padding: "8px 26px", borderRadius: 12, textTransform: "uppercase", boxShadow: "0 8px 20px rgba(0,0,0,0.3)" }}>In our store now</div>
+        </div>
+      </>
+    ) : photo ? (
       <>
         <div
           style={{
@@ -303,8 +316,8 @@ export const EndCard: React.FC<{ lt: number; art?: React.ReactNode; photo?: stri
       </svg>
       <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 52, color: C.forestDeep, textTransform: "uppercase", lineHeight: 1 }}>{save}</div>
     </div>
-    <div style={{ position: "absolute", top: photo ? 1712 : 1730, left: 0, right: 0, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: photo ? 44 : 34, letterSpacing: 1, color: photo ? C.stone : "rgba(245,241,234,0.75)", opacity: at(lt, [1.2, 1.6], [0, 1]) }}>
-      {photo ? "Find it at hikesupplyco.com" : "hikesupplyco.com"}
+    <div style={{ position: "absolute", top: photo || cutout ? 1712 : 1730, left: 0, right: 0, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: photo || cutout ? 44 : 34, letterSpacing: 1, color: photo || cutout ? C.stone : "rgba(245,241,234,0.75)", opacity: at(lt, [1.2, 1.6], [0, 1]) }}>
+      {photo || cutout ? "Find it at hikesupplyco.com" : "hikesupplyco.com"}
     </div>
   </AbsoluteFill>
 );
