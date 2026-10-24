@@ -199,7 +199,7 @@ Note for the Creator: keep the `isClean()` checks in `Title`, `Chip` and `Captio
 Every link we control carries UTM tags so the Analyst and the Manager can see which channel brings visitors and buyers:
 - Pins: `?utm_source=pinterest&utm_medium=social&utm_campaign=<pin id>`
 - Bio links (set once by Vasil): `https://hikesupplyco.com/pages/links?utm_source=<tiktok|instagram|facebook|youtube>&utm_medium=social&utm_campaign=bio`
-- Facebook post text (links are clickable there): end with the product link plus `?utm_source=facebook&utm_medium=social&utm_campaign=<card code>` only if Metricool allows different text per network; never put links in TikTok or Instagram captions (write "link in bio").
+- Facebook post text (links are clickable there): ALWAYS ends with the product link plus `?utm_source=facebook&utm_medium=social&utm_campaign=<card code>`. Metricool has one text per post, so the Publisher schedules Facebook as its own post (see `agents/publisher.md`). Never put links in TikTok or Instagram captions (write "link in bio"). Quote posts and any other Facebook post follow the same rule.
 Read results with the Shopify analytics tool (run-analytics-query, ShopifyQL): sessions and orders grouped by utm source and campaign (or referrer source), last 7 days. Never guess numbers.
 
 # Pinterest department

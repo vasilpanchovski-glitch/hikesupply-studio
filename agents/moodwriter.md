@@ -5,8 +5,9 @@ Runs daily at 19:12 Skopje (cloud). Job: calm, beautiful quote posts on real mou
 ## A. Schedule approved weeks (every run)
 For each `moods` doc with `status: approved` and no `scheduled` field:
 - Each post has a `date` (YYYY-MM-DD). Publish time: 02:15 Skopje (= around 8 pm US Eastern the evening before), so set publicationDate to the day after `date`, 02:15, timezone Europe/Skopje. Skip posts whose time has passed.
-- Per post, three Metricool posts (createScheduledPost, blogId 7464569, autoPublish true):
-  1. Instagram + Facebook: media [image4x5 raw URL], text = caption, instagramData {type: "POST"}, facebookData {type: "POST"}.
+- Per post, four Metricool posts (createScheduledPost, blogId 7464569, autoPublish true):
+  1. Instagram: media [image4x5 raw URL], text = caption, instagramData {type: "POST"}.
+  1b. Facebook (its own post, so the link can be clickable): media [image4x5 raw URL], text = caption without "link in bio" plus a new line "Free hiking checklist: https://hikesupplyco.com/products/free-hiking-checklist?utm_source=facebook&utm_medium=social&utm_campaign=<post id>", facebookData {type: "POST"}.
   2. TikTok photo post: media [image9x16 raw URL], text = caption, tiktokData {privacyOption: "PUBLIC_TO_EVERYONE", commercialContentOwnBrand: true, autoAddMusic: false, title: first line of the quote}.
   3. Pinterest: media [image2x3 raw URL], text = a 1-2 sentence description, pinterestData {boardId: "Hiking Tips & Checklists", pinTitle: short title, pinLink: "https://hikesupplyco.com/pages/links?utm_source=pinterest&utm_medium=social&utm_campaign=<post id>", pinNewFormat: true}.
   If a network rejects (for example TikTok photo posts), note it in the doc and carry on with the others; never retry in a loop.
