@@ -1787,7 +1787,7 @@ function gearEl(c, open) {
     ${ph && c.photoNotes ? `<div class="box-notes"><b>Fix these photos, then tap Photos done</b><p>${esc(c.photoNotes)}</p></div>` : ""}
     <div class="actions" style="gap:16px">${ph ? link(c.adminUrl, "Open in Shopify admin") : ""}${c.supplier && c.supplier.url ? link(c.supplier.url, ph ? "Supplier listing" : "See the exact product on AliExpress") : (ph ? "" : `<span class="note">No exact listing picked yet</span>`)}</div>
     ${c.why ? `<details><summary>Why it sells</summary><p>${esc(c.why)}</p></details>` : ""}
-    ${imp ? `<div class="actions"><button class="approve" data-act="manual">I imported it</button><button class="ghost" data-act="retry">Try tomorrow</button></div>` : `<div class="actions"><button class="approve" data-act="approve">${ph ? "Photos done, publish" : "Approve"}</button><button class="ghost" data-act="reject">Reject</button></div>`}
+    ${imp ? `<div class="actions"><button class="approve" data-act="manual">I imported it</button><button class="ghost" data-act="retry">Try tomorrow</button><button class="ghost" data-act="reject">Reject</button></div>` : `<div class="actions"><button class="approve" data-act="approve">${ph ? "Photos done, publish" : "Approve"}</button><button class="ghost" data-act="reject">Reject</button></div>`}
     <div data-rb ${open.has(c.id) ? "" : "hidden"} class="col" style="gap:8px">
       <label for="note-${esc(c.id)}" class="note">What should change? The agent reads this.</label>
       <textarea id="note-${esc(c.id)}" placeholder="e.g. Find a supplier with better photos"></textarea>
