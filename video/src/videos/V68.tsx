@@ -1,4 +1,4 @@
-// V63: "Be bold, start cold" in the cinematic style (C01 kit), winter setting, end card = Winter Hiking Guide (digital).
+// V68: "Be bold, start cold" in the cinematic style (C01 kit), winter setting, end card = Winter Hiking Guide (digital).
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { HikerProps, hikerGeometry, hikerTransform } from "../Hiker";
@@ -7,7 +7,7 @@ import { at, mix, outExpo } from "../lib";
 import { Captions, Word } from "../Type";
 import { Chip, EndCard, freeHand, Pine, Scene, Title, useT } from "../kit";
 import { Cam, Clouds, FrameLeaves, Grade, handheld, Haze, Particles, Plane, Rays, Ridge, rim, Sky, SkyPlane, Svg } from "../cine";
-import vo from "../vo/v63.json";
+import vo from "../vo/v68.json";
 
 const words = vo.words as unknown as Word[];
 
@@ -340,7 +340,7 @@ const S8: React.FC = () => {
   );
 };
 
-export const V63: React.FC = () => (
+export const V68: React.FC = () => (
   <AbsoluteFill style={{ background: "#000" }}>
     <Scene from={0} to={2.95} fadeIn={0} fadeOut={0.1}>
       <S1 />
