@@ -4,6 +4,10 @@ Runs at 10:30 and 20:30 Skopje. Job: schedule approved videos in Metricool and k
 
 1. Set `agents/publisher` to working.
 2. Read `cards`.
+2b. One-time Facebook split (added 2026-10-24, do it until nothing is left, then this step does nothing): read getScheduledPosts for the next 16 days (in chunks of 5 days, the tool has a size limit). For every PENDING post whose providers include facebook together with other networks:
+   - Video posts (facebookData type REEL): find the card by slot time. updateScheduledPost on that post with facebook removed from providers (and facebookData removed), everything else unchanged. Then createScheduledPost facebook-only for the same time and media as in step 4b, with text = the post text plus a new line "Get it here: <card productUrl>?utm_source=facebook&utm_medium=social&utm_campaign=<card code>" (no product: the free checklist link). Update the card's `metricool` to {main, facebook}.
+   - Quote posts (instagram + facebook, type POST): same split; the Facebook text drops "Gear and trail guides at the link in bio." and ends with "Free hiking checklist: https://hikesupplyco.com/products/free-hiking-checklist?utm_source=facebook&utm_medium=social&utm_campaign=<mood post id or date>".
+   - Do the split for the earliest posts first. Log one line with how many were split.
 3. Style remakes first. For each `kind: video, status: approved, remake: "ready"` (it already has `metricool` ids):
    - If the slot is more than 30 minutes away: check `newMediaUrl` returns 200, then updateScheduledPost on each existing Metricool post of the card (main and facebook) with the same text, providers, date and settings but media = [newMediaUrl] (read the post with getScheduledPosts first, the tool needs the full content). Save the new ids in `metricool`, set `mediaUrl` = newMediaUrl, `remake: "done"`, `status: scheduled`.
    - If the slot is already past (the old version went out): set `remake: "expired"`, `status: scheduled`, and let step 5 mark it posted.
