@@ -15,3 +15,9 @@ Runs daily at 09:52 Skopje (cloud).
    - Byline "HikeSupply Co. team" and the date; when you update an older article, change the date and say what changed.
    Same flow as step 3: unpublished Shopify draft plus an `articles` doc with `status: waiting` and `keyword` = the question. Mark the request done.
 5. Log one line, set idle with lastRun and nextRun.
+
+Featured photo (Vasil 2026-10-24: every article needs one; Google, Facebook and Pinterest use it as the preview):
+- Pick one real, landscape photo from Pexels only (free commercial license): WebSearch with allowed_domains ["pexels.com"], e.g. "winter hiking snowy forest trail". Take the photo id from a result URL `pexels.com/photo/<words>-<id>/`.
+- It must match the topic and season, show no logos, brands, text or close-up recognisable faces, and look like real US/Canada hiking. Not the same photo as another article.
+- Set it on the Shopify article (in articleCreate, or articleUpdate) with `image: {url: "https://images.pexels.com/photos/<id>/pexels-photo-<id>.jpeg?auto=compress&cs=tinysrgb&w=1600", altText: one plain sentence describing the photo}`. Shopify copies it to its own CDN.
+- Check the returned image url is set (not null). If the fetch fails, try a different photo. Save the Pexels page URL in the `articles` doc as `photo`.
