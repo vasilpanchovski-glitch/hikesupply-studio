@@ -1,0 +1,113 @@
+{
+ "pins": [
+  {
+   "id": "pb20261024-1",
+   "layout": "stone",
+   "kicker": "Great Smoky Mountains in November",
+   "title": "Know which roads close",
+   "items": [
+    "Rich Mountain Rd: closes Nov 9",
+    "Parson Branch Rd: closes Nov 9",
+    "Kuwohi Rd, Roaring Fork: to Nov 29",
+    "Heintooga Ridge Rd: closed Oct 31",
+    "Cades Cove Loop: sunrise to sunset",
+    "Snow or ice can close any road"
+   ],
+   "sub": "2026 dates from the park's seasonal road schedule. Check road status the morning you drive.",
+   "cta": "Plan your trip"
+  },
+  {
+   "id": "pb20261024-2",
+   "layout": "forest",
+   "image": "media/pins/v28b-crop.jpg",
+   "kicker": "Smokies in late fall",
+   "title": "Finish before dark",
+   "sub": "In November the sun sets before 6 pm in Gatlinburg, and it gets dark sooner under the trees. Start early and pick a turnaround time.",
+   "cta": "Get the trip pack"
+  },
+  {
+   "id": "pb20261024-3",
+   "layout": "forest",
+   "image": "media/pins/v53-crop.jpg",
+   "kicker": "Smokies after leaf season",
+   "title": "Quiet trails, open views",
+   "sub": "Once the leaves drop, ridge views open up and the October crowds thin out. A parking tag is still needed all year.",
+   "cta": "Plan your trip"
+  },
+  {
+   "id": "pb20261024-4",
+   "layout": "forest",
+   "image": "media/pins/v42-crop.jpg",
+   "kicker": "Clocks go back Nov 1",
+   "title": "Sunset comes an hour early",
+   "sub": "The hike that ended in daylight last week now ends in the dark. Start an hour earlier and pack a headlamp anyway.",
+   "cta": "Get the winter guide"
+  },
+  {
+   "id": "pb20261024-5",
+   "layout": "forest",
+   "image": "media/pins/v37-crop.jpg",
+   "kicker": "Cold, sunny morning",
+   "title": "Watch the shady spots",
+   "sub": "Bridges, boardwalks and shaded rock freeze first and thaw last. The trail can look dry while those stay icy. Slow down and test your footing.",
+   "cta": "Read the checklist"
+  },
+  {
+   "id": "pb20261024-6",
+   "layout": "forest",
+   "image": "media/pins/v49-crop.jpg",
+   "kicker": "Phone in the cold",
+   "title": "Keep it close to you",
+   "sub": "Cold drains phone batteries fast. Carry it in an inside pocket, download the map before you go and bring a paper backup.",
+   "cta": "Get the checklist"
+  },
+  {
+   "id": "pb20261024-7",
+   "layout": "forest",
+   "image": "media/pins/v54-crop.jpg",
+   "kicker": "Crossing a creek",
+   "title": "Unbuckle first",
+   "sub": "Open your hip belt and chest strap before you step in, so you can shed the pack if you slip. Fast water above your knees? Turn back.",
+   "cta": "Get the safety guide"
+  },
+  {
+   "id": "pb20261024-8",
+   "layout": "stone",
+   "kicker": "Bigger hike coming up?",
+   "title": "Get trail ready in 8 weeks",
+   "items": [
+    "Five short sessions a week",
+    "Walks, hikes and strength days",
+    "Step-ups, lunges, calf raises",
+    "Pack weight that builds slowly",
+    "A dress rehearsal hike in week 8"
+   ],
+   "sub": "Printable 8-week beginner training plan. No gym needed. $12.99, instant PDF.",
+   "cta": "See the plan"
+  },
+  {
+   "id": "pb20261024-9",
+   "layout": "forest",
+   "image": "media/pins/v36-crop.jpg",
+   "kicker": "Men's cold-weather layering",
+   "title": "Layers beat one big coat",
+   "sub": "A heavy coat soaks with sweat on the climb. A fleece over a base layer, with a shell in the pack, lets you adjust as you go.",
+   "cta": "See the fleece"
+  },
+  {
+   "id": "pb20261024-10",
+   "layout": "stone",
+   "kicker": "Yellowstone and Grand Teton",
+   "title": "Plan next summer now",
+   "items": [
+    "Grand Prismatic Overlook",
+    "Brink of the Lower Falls",
+    "Mount Washburn",
+    "Hidden Falls and Inspiration Point",
+    "Taggart Lake"
+   ],
+   "sub": "5 of 16 beginner day hikes in our trip planning guide. Lodging books up early. $9.99, instant PDF.",
+   "cta": "Get the guide"
+  }
+ ]
+}
