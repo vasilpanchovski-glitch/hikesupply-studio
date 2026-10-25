@@ -21,3 +21,9 @@ Some older guides keep their PDFs only inside the Shopify Digital Downloads app,
 - Read the direct link of each file (the href of its download/view link). Do not download, upload, replace or delete anything, and do not change any setting.
 - Write the links into the request doc as `files: [{product, name, url}]`, set `done: true` and log one line.
 - If the app shows no link you can read, write one plain sentence in the request's `note`, leave `done: false`, and carry on with the gear work.
+
+## Weekly: tell Bing about new pages (Mondays, after the import part, Vasil 2026-10-25)
+ChatGPT and Copilot take their answers from Bing, and Bing Webmaster Tools is only reachable in Vasil's Chrome, so this job lives here.
+1. With the Shopify tools, list articles, products and collections created or updated in the last 8 days (onlineStoreUrl / blog article URLs on hikesupplyco.com, published only).
+2. In Chrome open https://www.bing.com/webmasters/submiturl?siteUrl=https://hikesupplyco.com/ (Vasil is logged in; if not, skip this part and note it in your agent task). Click "Submit URLs", paste the URLs one per line (max 100 a day), click Submit, and check the "Success" message.
+3. Open https://www.bing.com/webmasters/aiperformance?siteUrl=https://hikesupplyco.com/ , read Total Citations (last 30 days) and the cited pages, and write them into the newest `aiwatch` doc as `bing: {citations, pages: [{url, citations}], checkedAt}`. Log one line.
