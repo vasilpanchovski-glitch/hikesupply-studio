@@ -1,0 +1,114 @@
+{
+ "pins": [
+  {
+   "id": "pb20261025-1",
+   "layout": "stone",
+   "kicker": "Gift ideas for hikers",
+   "title": "Useful gifts under $25",
+   "items": [
+    "Motion-sensor headlamp: $16.99",
+    "Merino wool hiking socks: $19.99",
+    "Mini camping lantern: $22.99",
+    "14-in-1 folding multi-tool: $17.99",
+    "Collapsible water bottle: $14.99"
+   ],
+   "sub": "Small gear they will actually carry on the trail.",
+   "cta": "Shop gear"
+  },
+  {
+   "id": "pb20261025-2",
+   "layout": "stone",
+   "kicker": "Ultimate Hiker's Toolkit",
+   "title": "A gift for new hikers",
+   "items": [
+    "Beginner's Hiking Guide",
+    "Hiking Trip Planner",
+    "Ultimate Packing Checklist",
+    "Hiking Safety Guide",
+    "Emergency Checklist",
+    "What To Do If You Get Lost",
+    "Solo Hiking Guide"
+   ],
+   "sub": "7 printable guides, $29.99. Instant PDF, nothing to ship.",
+   "cta": "See the toolkit"
+  },
+  {
+   "id": "pb20261025-3",
+   "layout": "forest",
+   "image": "media/pins/v52-crop.jpg",
+   "kicker": "National park visitor centers",
+   "title": "Bring a page to stamp",
+   "sub": "Most visitor centers keep a free ink stamp with the park's name and date. Stamp it and log the trail beside it.",
+   "cta": "Get the tracker"
+  },
+  {
+   "id": "pb20261025-4",
+   "layout": "forest",
+   "image": "media/pins/v33b-crop.jpg",
+   "kicker": "What pants to wear hiking",
+   "title": "Leave the jeans home",
+   "sub": "Wet cotton stays cold and heavy for hours. Quick-dry nylon with some stretch dries while you walk.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261025-5",
+   "layout": "forest",
+   "image": "media/pins/v34b-crop.jpg",
+   "kicker": "Rain jacket shopping",
+   "title": "Water-resistant is not waterproof",
+   "sub": "Water-resistant handles a light drizzle. Waterproof means taped seams and a membrane. Open the vents when you climb.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261025-6",
+   "layout": "forest",
+   "image": "media/pins/v32b-crop.jpg",
+   "kicker": "Before a steep descent",
+   "title": "The 5-second pole check",
+   "sub": "Set the length, close every lock all the way, then press your full weight into the pole on flat ground. If it moves, tighten it.",
+   "cta": "See the pole"
+  },
+  {
+   "id": "pb20261025-7",
+   "layout": "forest",
+   "image": "media/pins/v31b-crop.jpg",
+   "kicker": "Even on a short fall hike",
+   "title": "Pack the Ten Essentials",
+   "sub": "Navigation, a headlamp, sun protection, first aid, a knife, fire starter, shelter, plus extra food, water and clothes.",
+   "cta": "Free checklist"
+  },
+  {
+   "id": "pb20261025-8",
+   "layout": "forest",
+   "image": "media/pins/v35b-crop.jpg",
+   "kicker": "Zion National Park",
+   "title": "Get there early",
+   "sub": "While the shuttle runs, the canyon road is closed to cars and the visitor center lot fills early on busy days. Check nps.gov for this season's schedule.",
+   "cta": "Plan your trip"
+  },
+  {
+   "id": "pb20261025-9",
+   "layout": "stone",
+   "kicker": "Great Smoky Mountains",
+   "title": "5 classic hikes",
+   "items": [
+    "Alum Cave Trail: 4.6 mi",
+    "Chimney Tops: 3.5 mi",
+    "Andrews Bald: 3.6 mi",
+    "Rainbow Falls: 5.6 mi",
+    "Charlies Bunion: 8 mi"
+   ],
+   "sub": "Round-trip distances from the NPS. A parking tag is needed to park over 15 minutes.",
+   "cta": "See all 10"
+  },
+  {
+   "id": "pb20261025-10",
+   "layout": "forest",
+   "image": "media/pins/v51-crop.jpg",
+   "kicker": "Your first hike",
+   "title": "Pick the right trail",
+   "sub": "2 to 5 miles round trip, under 1,000 ft of climbing, and a clear payoff like a waterfall, lake or viewpoint.",
+   "cta": "Read the guide"
+  }
+ ]
+}
