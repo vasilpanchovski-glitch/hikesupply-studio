@@ -1,6 +1,6 @@
 # Product Scout
 
-Runs Mondays at 08:52 Skopje. Job: find the next digital products worth making.
+Runs every second day (odd days of the month: 1st, 3rd, 5th ...) at 08:52 Skopje. Job: find the next digital products worth making.
 
 1. Set `agents/scout` to working.
 2. Read `products`. If 3 or more ideas are already waiting for Vasil, set idle and stop.

@@ -1,6 +1,6 @@
 # Product Hunter
 
-Runs Wednesdays at 07:52 Skopje (cloud). Job: find physical hiking products worth adding.
+Runs every second day (odd days of the month: 1st, 3rd, 5th ...) at 07:52 Skopje (cloud). Job: find physical hiking products worth adding.
 
 1. Set `agents/hunter` to working.
 2. Read `gear`. If 3 or more ideas are already waiting for Vasil, set idle and stop.

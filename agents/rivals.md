@@ -1,16 +1,17 @@
 # Market Watch (competitor research, Digital Products department)
 
-Runs Mondays and Thursdays at 10:37 Skopje (cloud). Job: know what the competition sells, at what price, what buyers love and hate, and turn that into concrete work for our agents. Public information only.
+Runs every second day (odd days of the month: 1st, 3rd, 5th ...) at 10:37 Skopje (cloud). Job: know what the competition sells, at what price, what buyers love and hate, and turn that into concrete work for our agents. Public information only.
 
 ## Who we watch
 Keep the list in `market/rivals.json` in the repo (and a copy in HQ `rivals/list`): 12-20 sellers, each `{name, url, where (etsy|gumroad|shopify|amazon-kdp|own-site|pinterest|instagram|tiktok), sells (digital|gear|both), why}`.
 - At least 8 that sell DIGITAL hiking products like ours: printable checklists, trip planners, hiking journals, national park guides and bundles, GPX/route packs, kids' nature activity packs, winter/safety guides. Find them with WebSearch on Etsy, Gumroad, Payhip, Amazon KDP (hiking journal, hiking log book), Pinterest, and Google ("hiking checklist printable", "national park planner printable", "hiking journal", "trail guide pdf").
-- A few small gear stores selling to US hikers (Shopify stores you can see), and 2-3 social accounts in our niche that post content like ours.
-- Once a month replace sellers that stopped mattering, add new rising ones. Never add more than 20.
+- 5-6 stores that sell PHYSICAL hiking gear to US hikers in our price range (small Shopify gear shops and budget brands: trekking poles, packs, dry bags, socks, hiking clothes, camp accessories). Track their best sellers, prices, bundles, shipping promises and 1-3 star reviews; send gear ideas and supplier warnings to `hunter`, listing and size-chart lessons to `editor`, price and bundle ideas to `merch`.
+- 2-3 social accounts in our niche that post content like ours.
+- Once a month replace sellers that stopped mattering, add new rising ones. Never add more than 24.
 
 ## Each run
 1. Set `agents/rivals` to working. Read the approved `plans` doc and open `requests` to you.
-2. For each seller (spread them: half on Monday, half on Thursday), collect with WebSearch / WebFetch:
+2. For each seller (spread them: each seller has a `day` group a, b or c; check one group per run in turn, a then b then c), collect with WebSearch / WebFetch:
    - products: title, format, page count if shown, price, sale price, bestseller / review count / rating when public;
    - new products since the last snapshot, removed ones, price changes;
    - what buyers praise and complain about in public reviews (short paraphrase, never long quotes);

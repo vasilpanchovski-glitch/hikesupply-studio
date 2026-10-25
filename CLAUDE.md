@@ -91,6 +91,8 @@ Topics already used (do not repeat): trekking pole height, neck gaiter, heel-loc
 
 ## Rules for every agent
 
+- Since 2026-10-25 (Vasil's decision) the improvement agents work every second day (odd days of the month): Product Scout, Product Hunter, Market Watch, Sales Planner, Ads Manager, Store Doctor audits, Blog Writer articles, Search Specialist audits. Each still respects its own cap on waiting items, so Vasil's inbox never floods: if enough is waiting, improve what exists instead (fix rejected items, check live products) or stop.
+
 - Nothing goes public without approval in HQ. Approved means `status: approved` written by Vasil, or, for `pins` and `articles` only, by the Store Manager (`approvedBy: "manager"`). Vasil delegated those two to him.
 - At the start of every run, read the latest `plans` doc with `status: approved` and follow its priorities, and read open `requests` addressed to you (`to` = your agent id, `done: false`). Do what they ask if it fits your rules, then set `done: true`.
 - Never like, follow, comment or DM as the brand. Only scheduled posts.
@@ -146,7 +148,7 @@ Collection `requests`: messages between agents, `{at, from, to, type, text, done
 
 ## Market Watch
 
-Agent: Market Watch (`agents/rivals.md`), Mondays and Thursdays 10:37, cloud. Tracks 12-20 competitors (mostly sellers of digital hiking products on Etsy, Gumroad, Amazon KDP and own shops), keeps price and product history in `market/snapshots/`, and sends concrete ideas to the other agents through `requests`. Its main job is mining competitors' negative reviews and comments (`market/complaints.json`, themes and our honest answer in `market/fixes.md`) and turning those pains into our advantage. HQ collection `rivals`: `list` (who we watch) and `r<YYYY-MM-DD>` reports `{createdAt, title, headline, changes, opportunities, sent, text}`. Every agent that gets a request from `rivals` treats it as evidence, not an order: still original work, still the normal approvals.
+Agent: Market Watch (`agents/rivals.md`), every second day 10:37, cloud. Tracks up to 24 competitors (sellers of digital hiking products on Etsy, Gumroad, Amazon KDP and own shops, plus 5-6 physical gear stores), keeps price and product history in `market/snapshots/`, and sends concrete ideas to the other agents through `requests`. Its main job is mining competitors' negative reviews and comments (`market/complaints.json`, themes and our honest answer in `market/fixes.md`) and turning those pains into our advantage. HQ collection `rivals`: `list` (who we watch) and `r<YYYY-MM-DD>` reports `{createdAt, title, headline, changes, opportunities, sent, text}`. Every agent that gets a request from `rivals` treats it as evidence, not an order: still original work, still the normal approvals.
 
 # Gear Store department
 
@@ -243,13 +245,13 @@ Agent: Search Specialist (`agents/seo.md`), daily 14:22. HQ collection `seo`, do
 
 ## AI answers (ChatGPT, Perplexity, Google AI)
 
-Goal: AI assistants recommend hikesupplyco.com when hikers ask questions we answer well. The Search Specialist audits `market/ai-questions.json` every Monday (WebSearch, what ranks and who gets cited), counts visits from AI tools in Shopify analytics, adds plain answer summaries and FAQs to product pages (`field: "answer"`), and sends answer-page requests to the Blog Writer. HQ collection `aiwatch`, doc `w<YYYY-MM-DD>`. Bing Webmaster Tools is set up for hikesupplyco.com (imported from Search Console on 2026-10-17, sitemaps known); its "AI Performance" report shows Copilot citations (first 4 on 2026-10-14). It is only reachable in Vasil's Chrome, so cloud agents rely on the WebSearch audit and Shopify referrals. Never fake reviews, never post on Reddit or forums as the brand, never invent numbers.
+Goal: AI assistants recommend hikesupplyco.com when hikers ask questions we answer well. The Search Specialist audits `market/ai-questions.json` every second day (WebSearch, what ranks and who gets cited), counts visits from AI tools in Shopify analytics, adds plain answer summaries and FAQs to product pages (`field: "answer"`), and sends answer-page requests to the Blog Writer. HQ collection `aiwatch`, doc `w<YYYY-MM-DD>`. Bing Webmaster Tools is set up for hikesupplyco.com (imported from Search Console on 2026-10-17, sitemaps known); its "AI Performance" report shows Copilot citations (first 4 on 2026-10-14). It is only reachable in Vasil's Chrome, so cloud agents rely on the WebSearch audit and Shopify referrals. Never fake reviews, never post on Reddit or forums as the brand, never invent numbers.
 
 Social search words (what people typed on TikTok before finding us) are kept in `market/social-search.json`. The Strategist, Pin Designer and Blog Writer read it for topics; the Analyst reports search share per video.
 
 # Sales & Promotions department
 
-Agent: Sales Planner (`agents/merch.md`), Mondays and Thursdays 15:52. HQ collection `offers`, doc_id `o01`...: `{createdAt, status: waiting|approved|rejected|live|scheduled|ended|failed, kind: pairing|bundle|code|sale|threshold, title, why, change, startsAt, endsAt, note}`. Vasil approves every offer.
+Agent: Sales Planner (`agents/merch.md`), every second day 15:52. HQ collection `offers`, doc_id `o01`...: `{createdAt, status: waiting|approved|rejected|live|scheduled|ended|failed, kind: pairing|bundle|code|sale|threshold, title, why, change, startsAt, endsAt, note}`. Vasil approves every offer.
 
 ## Partner Scout
 
@@ -265,5 +267,5 @@ Agent: Finance (`agents/finance.md`), daily 07:37. HQ collection `money`: `lates
 
 # Ads department
 
-Agent: Ads Manager (`agents/ads.md`), Wednesdays and Saturdays 16:22. HQ collection `ads`: `tracking` (pixel and tag health) and `a<NN>` cards `{status: waiting|approved|rejected|live|stop|ended, kind: campaign|setup, platform, title, product, creatives, copy, audience, budgetPerDay, days, maxTotal, expected, stopRules, why, launchSteps, results, note}`.
+Agent: Ads Manager (`agents/ads.md`), every second day 16:22. HQ collection `ads`: `tracking` (pixel and tag health) and `a<NN>` cards `{status: waiting|approved|rejected|live|stop|ended, kind: campaign|setup, platform, title, product, creatives, copy, audience, budgetPerDay, days, maxTotal, expected, stopRules, why, launchSteps, results, note}`.
 The store has no ad budget yet. The Ads Manager never spends money and never launches or unpauses a campaign. Vasil approves a card with an exact daily budget and total cap, then launches it himself.

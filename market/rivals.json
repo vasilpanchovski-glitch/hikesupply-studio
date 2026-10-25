@@ -7,7 +7,7 @@
    "url": "https://wereintherockies.com/store/",
    "where": "own-site",
    "sells": "digital",
-   "day": "mon",
+   "day": "a",
    "why": "Biggest direct rival for park trip guides: per-park itinerary PDFs + audio, regional bundles, Utah and Canadian Rockies. Strong email list."
   },
   {
@@ -15,7 +15,7 @@
    "url": "https://thatch.co/guide/2v4mgxg4fb1w0/view",
    "where": "own-site",
    "sells": "digital",
-   "day": "mon",
+   "day": "b",
    "why": "Paid Utah Mighty 5 7-day itinerary, overlaps our Utah Trip Planning Guide."
   },
   {
@@ -23,7 +23,7 @@
    "url": "https://payhip.com/b/B7YEG",
    "where": "own-site",
    "sells": "digital",
-   "day": "mon",
+   "day": "c",
    "why": "Utah Mighty 5 family road trip guide PDF at $14, overlaps our Utah guide."
   },
   {
@@ -31,7 +31,7 @@
    "url": "https://payhip.com/b/tFbkH",
    "where": "own-site",
    "sells": "digital",
-   "day": "mon",
+   "day": "a",
    "why": "National parks + hiking checklist with 3 hikes per park, $4.99, and a parks + waterfalls bundle."
   },
   {
@@ -39,7 +39,7 @@
    "url": "https://payhip.com/b/xIwnT",
    "where": "own-site",
    "sells": "digital",
-   "day": "mon",
+   "day": "b",
    "why": "Fillable national park itinerary $19, camping and road trip planners."
   },
   {
@@ -47,7 +47,7 @@
    "url": "https://milesandhikes.gumroad.com/l/natureweekendreset",
    "where": "gumroad",
    "sells": "digital",
-   "day": "mon",
+   "day": "c",
    "why": "Hiking-themed printable planners on Gumroad."
   },
   {
@@ -55,7 +55,7 @@
    "url": "https://montemlife.com/collections/accessories",
    "where": "shopify",
    "sells": "gear",
-   "day": "mon",
+   "day": "a",
    "why": "US trekking pole brand; accessory bundles and pole add-ons, free shipping over $100."
   },
   {
@@ -63,7 +63,7 @@
    "url": "https://www.etsy.com/shop/BigSkyChecklists",
    "where": "etsy",
    "sells": "digital",
-   "day": "thu",
+   "day": "b",
    "why": "Montana shop, 36 camping/backpacking/national park checklists at $1.99-6.99, many bundles."
   },
   {
@@ -71,7 +71,7 @@
    "url": "https://www.etsy.com/shop/Travel50States",
    "where": "etsy",
    "sells": "digital",
-   "day": "thu",
+   "day": "c",
    "why": "National parks tracker, hike-all-50-states tracker, hiking journal bundle. Star Seller."
   },
   {
@@ -79,7 +79,7 @@
    "url": "https://www.etsy.com/shop/theBrainbookShop",
    "where": "etsy",
    "sells": "digital",
-   "day": "thu",
+   "day": "a",
    "why": "National parks map checklist in six planner sizes, 3.5k shop sales."
   },
   {
@@ -87,7 +87,7 @@
    "url": "https://www.etsy.com/shop/PrintablePatti",
    "where": "etsy",
    "sells": "digital",
-   "day": "thu",
+   "day": "b",
    "why": "18-page camping/hiking planner bundle, permanent 25% shop sale."
   },
   {
@@ -95,7 +95,7 @@
    "url": "https://www.etsy.com/shop/ThePrintedSmile",
    "where": "etsy",
    "sells": "digital",
-   "day": "thu",
+   "day": "c",
    "why": "40k-sale printables shop with camping and road trip planners; shows what volume sellers charge."
   },
   {
@@ -103,7 +103,7 @@
    "url": "https://www.etsy.com/shop/MarcisShoppe",
    "where": "etsy",
    "sells": "digital",
-   "day": "thu",
+   "day": "a",
    "why": "Kids nature scavenger hunt with 146 reviews at $2, benchmark for our Kids Trail Explorer Pack."
   },
   {
@@ -111,7 +111,7 @@
    "url": "https://www.etsy.com/shop/AnkaKidsStudio",
    "where": "etsy",
    "sells": "digital",
-   "day": "thu",
+   "day": "b",
    "why": "Bestseller-badged nature scavenger hunt bundle, new shop growing fast."
   },
   {
@@ -119,8 +119,40 @@
    "url": "https://www.hikerhunger.com/",
    "where": "shopify",
    "sells": "gear",
-   "day": "thu",
+   "day": "c",
    "why": "US trekking pole store with permanent sale pricing and kids' poles; compare with our pole."
+  },
+  {
+   "name": "Cascade Mountain Tech",
+   "url": "https://www.costco.com/cascade-mountain-tech-trekking-poles,-2-pack.product.100480782.html",
+   "where": "own-site",
+   "sells": "gear",
+   "why": "Best-known budget trekking poles in the US (Costco, Amazon, Walmart). Benchmark for our Folding Trekking Pole: price, lock complaints, what buyers expect.",
+   "day": "a"
+  },
+  {
+   "name": "Earth Pak",
+   "url": "https://thingtesting.com/brands/earth-pak/products/141461566",
+   "where": "amazon",
+   "sells": "gear",
+   "why": "Top-selling budget dry bag brand on Amazon. Benchmark for our Waterproof Dry Bag: sizes, price, leak and strap complaints.",
+   "day": "b"
+  },
+  {
+   "name": "Decathlon Canada (hiking)",
+   "url": "https://decathlon.ca/en/14006-hiking",
+   "where": "own-site",
+   "sells": "gear",
+   "why": "Big budget hiking range sold in Canada: price floor for poles, packs, fleeces, trail pants and accessories.",
+   "day": "c"
+  },
+  {
+   "name": "Darn Tough (hiking socks)",
+   "url": "https://www.google.com/search?q=darn+tough+hiking+socks",
+   "where": "own-site",
+   "sells": "gear",
+   "why": "The sock brand US hikers compare everything to. Benchmark for our Merino Wool Hiking Socks: what buyers praise (fit, warranty) and complain about (price, sizing).",
+   "day": "a"
   }
  ]
 }
