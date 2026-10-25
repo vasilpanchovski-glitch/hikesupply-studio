@@ -106,5 +106,65 @@
     "url": "https://www.pexels.com/photo/6072748/",
     "alt": "Pine trees below a snowy mountain in mist",
     "used": true
+  },
+  "19013064": {
+    "photographer": "Ali Kazal",
+    "url": "https://www.pexels.com/photo/19013064/",
+    "alt": "Snowy peaks above a dark evergreen forest, Kananaskis, Canadian Rockies",
+    "used": false
+  },
+  "28366357": {
+    "photographer": "Ali Kazal",
+    "url": "https://www.pexels.com/photo/28366357/",
+    "alt": "Mountain lake below forested peaks, Banff National Park, Alberta",
+    "used": false
+  },
+  "28367457": {
+    "photographer": "Ali Kazal",
+    "url": "https://www.pexels.com/photo/28367457/",
+    "alt": "Snowcapped peaks framed by pines on the road to Jasper, Alberta",
+    "used": false
+  },
+  "28848623": {
+    "photographer": "Ali Kazal",
+    "url": "https://www.pexels.com/photo/28848623/",
+    "alt": "Mountain peak over a Canadian forest in fall",
+    "used": false
+  },
+  "29188538": {
+    "photographer": "Mario Vogt",
+    "url": "https://www.pexels.com/photo/29188538/",
+    "alt": "Moraine Lake and its peaks, Banff National Park",
+    "used": false
+  },
+  "33492451": {
+    "photographer": "Katie Mukhina",
+    "url": "https://www.pexels.com/photo/33492451/",
+    "alt": "Golden evening clouds over Half Dome, Yosemite",
+    "used": false
+  },
+  "35016797": {
+    "photographer": "Mazin Omron",
+    "url": "https://www.pexels.com/photo/35016797/",
+    "alt": "Half Dome beyond pine trees under a blue sky, Yosemite",
+    "used": false
+  },
+  "39008618": {
+    "photographer": "Heather Mallon",
+    "url": "https://www.pexels.com/photo/39008618/",
+    "alt": "Emerald Lake and towering peaks, Yoho National Park, BC",
+    "used": false
+  },
+  "39295641": {
+    "photographer": "Sonia Mk",
+    "url": "https://www.pexels.com/photo/39295641/",
+    "alt": "Red rock canyon walls and clouds, Zion National Park",
+    "used": false
+  },
+  "5778822": {
+    "photographer": "Tobias Waibl",
+    "url": "https://www.pexels.com/photo/5778822/",
+    "alt": "Clear blue lake below forest and glaciers near Whistler, BC",
+    "used": false
   }
 }
