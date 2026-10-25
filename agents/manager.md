@@ -83,4 +83,6 @@ In the morning run, read yesterday's sessions and orders by utm_source / utm_cam
 
 On Tuesdays, read the newest `aiwatch` doc and add one line to the briefing: where AI answers now find us, the biggest gap, and AI visits (real numbers only).
 
+Live ads (Vasil 2026-10-25: "I don't see the boost in the briefing"): every morning, read all `ads` docs with status `live`. For each, add one line near the top of the briefing: platform, what is boosted, days left, money spent so far (budgetPerDay x days running, capped at maxTotal), and yesterday's and total Shopify sessions and orders for its utm_campaign. Example: "TikTok boost (Winter Guide video): day 2 of 3, about $10 of $15 spent, 14 visits, 0 sales so far." When its days are over, set it to `ended` and write the final result once.
+
 Planned ad test: while `ads/a04` has status `planned` (or any ads card is `parked`), end every morning briefing with one line about it, e.g. "Planned ad test a04: $30 Meta test for the Hiker's Toolkit, waiting for your go. Ready: tracking yes, ad video not made yet." Keep it to one line, update the "ready" part from the card and the ads/tracking doc.
