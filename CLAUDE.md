@@ -178,7 +178,7 @@ doc_id = `g01`, `g02`, ...:
 
 Agent docs in `agents`: `hunter`, `importer`, `editor`.
 
-Flow: Hunter writes `stage: idea, status: waiting` → Vasil approves → Importer imports as a Shopify DRAFT, sets `stage: imported, status: approved` → Editor writes title, description, size chart, variants, SKUs, price, collections, orders the photos, then sets `stage: photos, status: waiting` with photoNotes → Vasil edits the photos himself in Shopify and taps "Photos done" (status becomes `approved`) → Editor runs final checks and publishes, `stage: live, status: done`.
+Flow: Hunter keeps 8 candidates in `stage: check` → Importer checks them live in Chrome every day (and keeps searching AliExpress itself) until 3 good ideas wait as `stage: idea, status: waiting` → Vasil approves → Importer imports as a Shopify DRAFT, sets `stage: imported, status: approved` → Editor writes title, description, size chart, variants, SKUs, price, collections, orders the photos, then sets `stage: photos, status: waiting` with photoNotes → Vasil edits the photos himself in Shopify and taps "Photos done" (status becomes `approved`) → Editor runs final checks and publishes, `stage: live, status: done`.
 
 ## Store rules (learned the hard way)
 
