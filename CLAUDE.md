@@ -161,7 +161,7 @@ doc_id = `g01`, `g02`, ...:
 | field | meaning |
 |---|---|
 | code | same as doc_id |
-| stage | `idea` → `imported` → `photos` → `live` (plus `import` when the 17:02 import could not run) |
+| stage | `idea` → `imported` → `photos` → `live` (plus `check` = candidate waiting for the live Chrome check, not shown to Vasil, and `import` when the 17:02 import could not run) |
 | status | `waiting` (in Vasil's inbox), `approved`, `rejected`, `working`, `done`, `failed`, `replaced`, `manual` (Vasil imported it himself) |
 | title | working product name |
 | category | Clothing (Men's / Women's / Unisex), Gear & Equipment, Camp Accessories, ... |
