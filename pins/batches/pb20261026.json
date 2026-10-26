@@ -1,0 +1,123 @@
+{
+ "pins": [
+  {
+   "id": "pb20261026-1",
+   "layout": "forest",
+   "image": "media/pins/v42b-crop.jpg",
+   "kicker": "US clocks go back Nov 1",
+   "title": "Set a turnaround time",
+   "sub": "Check today's sunset, then pick the time you turn back so you reach the car with daylight to spare. Turn on time, even short of the top.",
+   "cta": "Get the planner"
+  },
+  {
+   "id": "pb20261026-2",
+   "layout": "stone",
+   "kicker": "After the clocks go back",
+   "title": "Short-day hiking checklist",
+   "items": [
+    "Look up the sunset time",
+    "Start an hour earlier",
+    "Set a turnaround time",
+    "Pack a headlamp, even at noon",
+    "Tell someone when you'll be back"
+   ],
+   "sub": "Simple habits for November day hikes.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261026-3",
+   "layout": "forest",
+   "image": "media/pins/v44-crop.jpg",
+   "kicker": "Caught out after sunset?",
+   "title": "Keep your phone for the map",
+   "sub": "The phone flashlight drains the battery you need for navigation. A headlamp keeps both hands free and the phone saved for the map.",
+   "cta": "See the headlamp"
+  },
+  {
+   "id": "pb20261026-4",
+   "layout": "stone",
+   "kicker": "Veterans Day, Nov 11",
+   "title": "Free entry to US national parks",
+   "items": [
+    "For US citizens and residents",
+    "Covers the entrance fee only",
+    "Camping and tours still cost extra",
+    "Check each park's page on nps.gov"
+   ],
+   "sub": "Utah's parks stay open all winter. Pack layers: desert mornings can be freezing.",
+   "cta": "Plan a Utah trip"
+  },
+  {
+   "id": "pb20261026-5",
+   "layout": "stone",
+   "kicker": "Bryce Canyon in winter",
+   "title": "Bring traction",
+   "items": [
+    "The rim sits at about 8,000 ft",
+    "Packed trails turn icy",
+    "Steep parts need traction devices",
+    "Snowshoes work after fresh snow",
+    "Main Road can close past mile 3"
+   ],
+   "sub": "From the NPS winter page. Check current conditions before you drive.",
+   "cta": "Plan your trip"
+  },
+  {
+   "id": "pb20261026-6",
+   "layout": "stone",
+   "kicker": "Gifts for national park lovers",
+   "title": "Printable and under $10",
+   "items": [
+    "National Parks Hiking Tracker: $4.99",
+    "Hiking Journal & Trail Log: $7.99",
+    "Utah's Mighty 5 Trip Guide: $9.99",
+    "Smokies Trip Planning Guide: $9.99",
+    "Yellowstone & Grand Teton Guide: $9.99"
+   ],
+   "sub": "Instant PDFs. Print, wrap, done.",
+   "cta": "See the tracker"
+  },
+  {
+   "id": "pb20261026-7",
+   "layout": "stone",
+   "kicker": "Stocking stuffers for hikers",
+   "title": "Small gifts under $13",
+   "items": [
+    "Heart carabiner clip: $6.99",
+    "D-shape carabiner, 80 mm: $7.99",
+    "Seamless neck gaiter: $9.99",
+    "Folding foam sit pad: $9.99",
+    "Paracord survival bracelet: $12.99"
+   ],
+   "sub": "Useful bits they will clip on and carry.",
+   "cta": "Shop gear"
+  },
+  {
+   "id": "pb20261026-8",
+   "layout": "forest",
+   "image": "media/pins/v40b-crop.jpg",
+   "kicker": "Cold toes on the trail?",
+   "title": "Check your socks first",
+   "sub": "Cotton holds sweat and chills your feet. Merino wool wicks it away and stays warm when damp. Pack a dry spare pair.",
+   "cta": "See the socks"
+  },
+  {
+   "id": "pb20261026-9",
+   "layout": "forest",
+   "image": "media/pins/v38-crop.jpg",
+   "kicker": "Hydration bladder in the cold",
+   "title": "Stop the tube freezing",
+   "sub": "After every sip, blow the water back into the bladder. Keep the bladder against your back and carry a bottle as backup.",
+   "cta": "See the bladder"
+  },
+  {
+   "id": "pb20261026-10",
+   "layout": "forest",
+   "image": "media/pins/v37b-crop.jpg",
+   "kicker": "New to hiking this fall?",
+   "title": "Start with a plan",
+   "sub": "Beginner's guide, packing checklist and trip planner in one download. $16.99, instant PDF.",
+   "cta": "See the bundle"
+  }
+ ]
+}
