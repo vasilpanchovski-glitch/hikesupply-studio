@@ -1,6 +1,6 @@
 {
- "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews.",
- "updated": "2026-10-22",
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews.",
+ "updated": "2026-10-27",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1015,32 +1015,202 @@
    "date": "2025-03-06",
    "theme": "binding weak",
    "found": "2026-10-22"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Cascade Mountain Tech Carbon Fiber Quick Lock (OutdoorGearLab test)",
+   "what": "lever locks slip under load and need re-tightening; pole can collapse even with a day pack",
+   "source": "https://www.outdoorgearlab.com/reviews/camping-and-hiking/trekking-poles/cascade-mountain-tech-carbon-fiber-quick-lock",
+   "where": "review-site",
+   "date": "2026-05-08",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Cascade Mountain Tech Carbon Fiber Quick Lock (OutdoorGearLab test)",
+   "what": "tips loosen during use",
+   "source": "https://www.outdoorgearlab.com/reviews/camping-and-hiking/trekking-poles/cascade-mountain-tech-carbon-fiber-quick-lock",
+   "where": "review-site",
+   "date": "2026-05-08",
+   "theme": "baskets, tips or straps wear out or fall off",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Cascade Mountain Tech Carbon Fiber Quick Lock (OutdoorGearLab test)",
+   "what": "plastic lock parts feel flimsy; users report lower shafts snapping from side loads",
+   "source": "https://www.outdoorgearlab.com/reviews/camping-and-hiking/trekking-poles/cascade-mountain-tech-carbon-fiber-quick-lock",
+   "where": "review-site",
+   "date": "2026-05-08",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Cascade Mountain Tech Quick Lock (reviewer update)",
+   "what": "tips wore down and rounded faster than expected; plastic washer nuts can crack",
+   "source": "https://andrewskurka.com/cascade-mountain-tech-quick-lock-trekking-poles-review/",
+   "where": "blog",
+   "date": "2015-11-01",
+   "theme": "baskets, tips or straps wear out or fall off",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Cascade Mountain Tech Quick Lock (reader comment)",
+   "what": "carbide tip broke off after about a year of use",
+   "source": "https://andrewskurka.com/cascade-mountain-tech-quick-lock-trekking-poles-review/",
+   "where": "blog-comment",
+   "date": "2015-07-22",
+   "theme": "baskets, tips or straps wear out or fall off",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Cascade Mountain Tech Quick Lock (reader comment)",
+   "what": "lower carbon section gets nicked by rocks, owner taped it",
+   "source": "https://andrewskurka.com/cascade-mountain-tech-quick-lock-trekking-poles-review/",
+   "where": "blog-comment",
+   "date": "2019-07-23",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Cascade Mountain Tech poles (forum post)",
+   "what": "tips worn to nubs in two years and owner thought they could not be replaced",
+   "source": "https://www.whiteblaze.net/forum/showthread.php?p=2190845",
+   "where": "forum",
+   "date": "",
+   "theme": "no spare parts",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Cascade Mountain Tech 3K Carbon Quick Lock (user review)",
+   "what": "rattle and vibration on hard ground; ridge between grip and cap rubs on long days",
+   "source": "https://trailspace.com/gear/cascade-mountain-tech/3k-carbon-fiber-quick-lock-trekking-poles-cork-grip",
+   "where": "review-site",
+   "date": "2023-05-10",
+   "theme": "grip uncomfortable or slippery",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "two pairs wore through within a year; warranty claim took about 10 days of emails and calls",
+   "source": "https://www.trustpilot.com/review/darntough.com?page=2",
+   "where": "trustpilot",
+   "date": "2026-10-21",
+   "theme": "warranty claim is a hassle",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "warranty needs photos of both socks cut up; only one damaged sock means half a refund",
+   "source": "https://www.trustpilot.com/review/darntough.com?page=2",
+   "where": "trustpilot",
+   "date": "2025-11-24",
+   "theme": "warranty claim is a hassle",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "buyer had to pay return shipping for a warranty claim, not worth it",
+   "source": "https://www.trustpilot.com/review/darntough.com?page=2",
+   "where": "trustpilot",
+   "date": "2025-09-19",
+   "theme": "warranty claim is a hassle",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "ordered a multi-pair pack, got one pair",
+   "source": "https://www.trustpilot.com/review/darntough.com?page=2",
+   "where": "trustpilot",
+   "date": "2025-02-25",
+   "theme": "missing parts on arrival",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "order still pending after five days",
+   "source": "https://www.trustpilot.com/review/darntough.com?page=2",
+   "where": "trustpilot",
+   "date": "2025-10-13",
+   "theme": "slow shipping / no reply",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough Hiker Micro Crew Women's (REI)",
+   "what": "size M ran too small for the buyer's shoe size, had to exchange",
+   "source": "https://www.rei.com/product/196789/darn-tough-hiker-micro-crew-cushion-socks-womens",
+   "where": "rei",
+   "date": "",
+   "theme": "sock sizing off (runs small or large)",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough Hiker Quarter Cushion (review roundup)",
+   "what": "size 12 foot fit more like an XL; sizing reports mixed",
+   "source": "https://www.packstack.io/reviews/clothing/darn-tough-hiker-quarter-cushion",
+   "where": "review-site",
+   "date": "",
+   "theme": "sock sizing off (runs small or large)",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough Hiker Quarter Cushion (review roundup)",
+   "what": "cuff stretched out within hours and let grit in; heel pilled after washing",
+   "source": "https://www.packstack.io/reviews/clothing/darn-tough-hiker-quarter-cushion",
+   "where": "review-site",
+   "date": "",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-27"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough Hiker Quarter Cushion (review roundup)",
+   "what": "some wanted more padding; midweight, not a winter sock",
+   "source": "https://www.packstack.io/reviews/clothing/darn-tough-hiker-quarter-cushion",
+   "where": "review-site",
+   "date": "",
+   "theme": "too thin, not warm enough",
+   "found": "2026-10-27"
   }
  ],
  "themes": [
   {
    "theme": "pole locks slip / poles collapse",
-   "count": 14
+   "count": 15
+  },
+  {
+   "theme": "breaks quickly / cheaply made",
+   "count": 9
+  },
+  {
+   "theme": "baskets, tips or straps wear out or fall off",
+   "count": 8
   },
   {
    "theme": "no clear assembly or height instructions",
    "count": 7
   },
   {
-   "theme": "breaks quickly / cheaply made",
-   "count": 6
-  },
-  {
    "theme": "missing parts on arrival",
-   "count": 6
+   "count": 7
   },
   {
    "theme": "list incomplete or out of date",
    "count": 6
-  },
-  {
-   "theme": "baskets, tips or straps wear out or fall off",
-   "count": 5
   },
   {
    "theme": "guide too limited / generic",
@@ -1052,6 +1222,10 @@
   },
   {
    "theme": "headlamp fails or drains fast in the cold",
+   "count": 4
+  },
+  {
+   "theme": "too thin, not warm enough",
    "count": 4
   },
   {
@@ -1075,11 +1249,23 @@
    "count": 3
   },
   {
-   "theme": "too thin, not warm enough",
+   "theme": "warranty claim is a hassle",
    "count": 3
   },
   {
    "theme": "not suited to hikers with disabilities",
+   "count": 2
+  },
+  {
+   "theme": "grip uncomfortable or slippery",
+   "count": 2
+  },
+  {
+   "theme": "slow shipping / no reply",
+   "count": 2
+  },
+  {
+   "theme": "no spare parts",
    "count": 2
   },
   {
@@ -1092,6 +1278,10 @@
   },
   {
    "theme": "fails within months / stops charging",
+   "count": 2
+  },
+  {
+   "theme": "sock sizing off (runs small or large)",
    "count": 2
   },
   {
@@ -1108,18 +1298,6 @@
   },
   {
    "theme": "buyers don't realise it's a download",
-   "count": 1
-  },
-  {
-   "theme": "grip uncomfortable or slippery",
-   "count": 1
-  },
-  {
-   "theme": "slow shipping / no reply",
-   "count": 1
-  },
-  {
-   "theme": "no spare parts",
    "count": 1
   },
   {

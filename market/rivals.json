@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-22",
- "note": "Day labels now match the Monday/Thursday runs (mon = first half, thu = second half). Social accounts (2-3) still to add: TikTok/Instagram profile pages are not readable as public pages from the cloud. Candidate seen: Print Blossom (Payhip), free Yellowstone journal kit. 2026-10-22: Etsy shop pages open from the cloud only when a search returns that exact link, so the Thursday half is often only partly readable. Candidates seen: TriptykaPassports (state parks passport gift PDF, $9.99).",
+ "updated": "2026-10-27",
+ "note": "Day labels now match the Monday/Thursday runs (mon = first half, thu = second half). Social accounts (2-3) still to add: TikTok/Instagram profile pages are not readable as public pages from the cloud. Candidate seen: Print Blossom (Payhip), free Yellowstone journal kit. 2026-10-22: Etsy shop pages open from the cloud only when a search returns that exact link, so the Thursday half is often only partly readable. Candidates seen: TriptykaPassports (state parks passport gift PDF, $9.99). 2026-10-27: groups a/b/c rotate a then b then c, one group per run; next run is group b. theBrainbookShop's Etsy links did not show in search this run.",
  "rivals": [
   {
    "name": "We're in the Rockies",
@@ -154,5 +154,6 @@
    "why": "The sock brand US hikers compare everything to. Benchmark for our Merino Wool Hiking Socks: what buyers praise (fit, warranty) and complain about (price, sizing).",
    "day": "a"
   }
- ]
+ ],
+ "lastGroup": "a"
 }

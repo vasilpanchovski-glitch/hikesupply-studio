@@ -1,0 +1,273 @@
+{
+ "date": "2026-10-27",
+ "previous": "2026-10-22",
+ "group": "a",
+ "note": "Group A of the list (first run with a/b/c groups). Empty fields mean the public page did not show the number. theBrainbookShop's Etsy pages did not come up in search this run, so no new data for it (last: 2026-10-17). Costco does not show price or reviews for Cascade Mountain Tech to a visitor; the price and reviews come from Walmart and review sites.",
+ "sellers": [
+  {
+   "name": "We're in the Rockies",
+   "products": [
+    {
+     "title": "Rocky Mountain Itinerary 2-4 days (Rocky Mountain Bundle)",
+     "format": "guide PDF + audio",
+     "pages": 36,
+     "price": 49.0,
+     "notes": "page now says '$69 value' with audio valued at $20 (was '$74 value', audio $25 on 10-19); audio length stated three different ways on the page",
+     "url": "https://wereintherockies.com/rocky-mountain-national-park-packages/"
+    }
+   ],
+   "offers": [
+    "Build your own bundle: 10% off 2 guides, 20% off 3+ (unchanged)",
+    "Free National Park Cheat Sheet Pack with any guide (Trip-Planning Weekend promo, still on the page)",
+    "Printed road trip book with orders $150+, 70 copies (still running)",
+    "Countdown banner still all zeros",
+    "Free lifetime guide updates",
+    "Best Friend money-back guarantee"
+   ],
+   "reviews": {
+    "praise": [
+     "saves planning time"
+    ],
+    "complaints": [],
+    "notes": "page now claims 34,000+ guides sold (24,000+ on 10-19) and 'hundreds of five-star reviews'; no exact count shown"
+   },
+   "marketing": {
+    "blog": "large park blog that funnels to guides (resources page, weekly Parks Updates page)",
+    "bait": "free cheat sheet pack with any guide, free audio chapter preview",
+    "tactics": [
+     "value anchor ($69 value, only $49)",
+     "free bonus with order",
+     "multi-buy discount",
+     "free lifetime updates",
+     "money-back guarantee",
+     "countdown banner (shows zeros, no real date)"
+    ],
+    "traffic": "Google search on park itinerary keywords (their blog pages rank for park planning searches)"
+   }
+  },
+  {
+   "name": "Traverse with Tonia (Payhip)",
+   "products": [
+    {
+     "title": "Ultimate U.S. National Parks & Hiking Checklist",
+     "price": 4.99,
+     "notes": "tagged 'On Sale' but no higher price shown"
+    },
+    {
+     "title": "Ultimate U.S. Waterfalls Checklist",
+     "price": 4.99
+    },
+    {
+     "title": "Ultimate Outdoor Adventure Bundle",
+     "price": 7.99
+    }
+   ],
+   "reviews": {
+    "count": 0
+   },
+   "marketing": {
+    "instagram": "@traverse.with.tonia, 2.3K followers, 549 posts: North Idaho fall photos plus many affiliate posts (AllTrails 30% off, snacks, supplements); checklist pushed with 'link in bio'",
+    "hashtags": [
+     "#HikingAdventures",
+     "#NationalParks",
+     "#TravelPlanner",
+     "#AllTrails"
+    ],
+    "tactics": [
+     "link in bio",
+     "fake-looking 'On Sale' label with no old price"
+    ]
+   },
+   "source": "https://imginn.com/traverse.with.tonia/"
+  },
+  {
+   "name": "Montem",
+   "shop": {
+    "free_shipping_over": 100
+   },
+   "products": [
+    {
+     "title": "Flicklock 14-16mm Replacement",
+     "price": 5.5
+    },
+    {
+     "title": "Trekking Pole Tip Protectors",
+     "price": 10.99
+    },
+    {
+     "title": "Trekking Pole Extra-Durable Tip Protectors",
+     "price": 10.99
+    },
+    {
+     "title": "Trekking Pole Snow Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Trekking Pole Nordic Fitness Tips",
+     "price": 10.99
+    },
+    {
+     "title": "Trekking Pole Mud Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Pro Walker Nordic Fitness Pole Replacement Gloves",
+     "price": null,
+     "notes": "sold out, new in this collection"
+    },
+    {
+     "title": "The Ultra On The Go (Advanced) Bundle",
+     "price": 36.99,
+     "was": 46.97
+    },
+    {
+     "title": "The All Tips Bundle",
+     "price": 25.95,
+     "was": 32.97
+    },
+    {
+     "title": "All Baskets Bundle",
+     "price": 22.4,
+     "was": 35.98
+    }
+   ],
+   "offers": [
+    "Free standard shipping over $100 (cart banner contradicts itself)",
+    "100% satisfaction guarantee",
+    "Lifetime warranty sign-up",
+    "VIP program: members get new products free",
+    "'No middlemen, no markups'"
+   ],
+   "marketing": {
+    "tactics": [
+     "discounted accessory bundles",
+     "free shipping threshold",
+     "lifetime warranty sign-up as email capture",
+     "VIP program"
+    ]
+   },
+   "source": "https://montemlife.com/collections/trekking-pole-accesories-and-spare-parts"
+  },
+  {
+   "name": "theBrainbookShop",
+   "note": "not readable this run (Etsy links did not come up in search)"
+  },
+  {
+   "name": "MarcisShoppe",
+   "shop": {
+    "sales": "4k",
+    "rating": 4.9,
+    "reviews": 591
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt for Kids, Printable",
+     "price": 2.0,
+     "item_reviews": 146,
+     "item_rating": 5.0,
+     "notes": "1 JPG + 1 PDF"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "fun for kids"
+    ],
+    "complaints": []
+   },
+   "source": "https://www.etsy.com/listing/1101626951"
+  },
+  {
+   "name": "Cascade Mountain Tech",
+   "products": [
+    {
+     "title": "Carbon Fiber Quick Lock Trekking Poles, 2-pack (Costco item 1323170)",
+     "price": null,
+     "notes": "Costco page shows no price to visitors. 2-pack of pairs (4 poles), 8 oz per pole, 26-53 in, cork + EVA grip, includes rubber tips, boot tips, mud and snow baskets, straps",
+     "url": "https://www.costco.com/cascade-mountain-tech-trekking-poles,-2-pack.product.100480782.html"
+    },
+    {
+     "title": "Carbon Fiber Quick Lock Cork Grip Trekking Poles (pair, Walmart)",
+     "price": 51.99,
+     "was": 64.99,
+     "rating": 4.6,
+     "ratings": 95,
+     "url": "https://www.walmart.com/ip/48468472"
+    },
+    {
+     "title": "Carbon Fiber Quick Lock (OutdoorGearLab review, May 2026)",
+     "price": 65.0,
+     "notes": "list price"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "cheap and light for carbon",
+     "hold weight when the lock screw is set right",
+     "snow baskets included"
+    ],
+    "complaints": [
+     "lever locks slip under load and pole can collapse (OutdoorGearLab 2026)",
+     "tips loosen or wear down, washer nuts crack",
+     "lower carbon shaft nicks on rocks",
+     "rattle and vibration",
+     "handle ridge uncomfortable"
+    ]
+   }
+  },
+  {
+   "name": "Darn Tough (hiking socks)",
+   "products": [
+    {
+     "title": "Hiker Micro Crew Cushion Socks - Women's (REI)",
+     "price": 26.0,
+     "rating": 4.8,
+     "reviews": 826,
+     "notes": "REI copy says they fit slightly large; one review says runs small",
+     "url": "https://www.rei.com/product/196789/darn-tough-hiker-micro-crew-cushion-socks-womens"
+    }
+   ],
+   "shop": {
+    "trustpilot": 3.7,
+    "trustpilot_reviews": 81
+   },
+   "reviews": {
+    "praise": [
+     "comfort, fewer blisters",
+     "lasts for years",
+     "lifetime warranty when it works"
+    ],
+    "complaints": [
+     "warranty: slow, needs photos of both cut-up socks, buyer pays return shipping",
+     "socks failed within a year",
+     "sizing runs small or large",
+     "cuff stretches out, pilling at the heel",
+     "slow delivery, phone not answered"
+    ]
+   },
+   "marketing": {
+    "tactics": [
+     "lifetime warranty as the main selling point"
+    ]
+   }
+  }
+ ],
+ "changes_vs_previous": [
+  "We're in the Rockies: Rocky Mountain bundle still $49, but the 'value' claim dropped from $74 to $69 and the sold count claim rose from 24,000+ to 34,000+ in 8 days; countdown banner still zeros, same Trip-Planning Weekend bonus.",
+  "Traverse with Tonia: same 3 products and prices, still no reviews; 'On Sale' label with no old price.",
+  "Montem: same prices; replacement gloves item now listed but sold out.",
+  "MarcisShoppe: no change ($2, 146 reviews, shop 591).",
+  "New to the snapshot: Cascade Mountain Tech (Walmart $51.99, was $64.99) and Darn Tough (REI $26 a pair; Trustpilot 3.7 from 81 reviews).",
+  "theBrainbookShop: not readable, no change recorded."
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "bundles or multi-buy discounts (WITR 10/20%, Montem bundles, Tonia bundle)",
+   "a guarantee or warranty up front (WITR money-back, Montem satisfaction + lifetime warranty, Darn Tough lifetime warranty)",
+   "a free extra with the order (WITR cheat sheet pack and printed book, free updates)"
+  ],
+  "we_do_not_use_yet": [
+   "a plain written promise on digital guides (free updates when park info changes)",
+   "a free bonus printable with any paid guide"
+  ]
+ }
+}
