@@ -93,7 +93,7 @@ def render(doc):
     if doc.get("discount"):
         txt += f"\nMember code: {doc['discount']} (10% off at hikesupplyco.com)"
     txt += "\n\n" + sig_txt + "\n\nReply \"no thanks\" and we will not write again."
-    logo = base64.b64encode(open(os.path.join(HERE, "logo-mark.png"), "rb").read()).decode()
+    logo = base64.b64encode(open(os.path.join(HERE, "logo-mark-small.png"), "rb").read()).decode()
     return html_out, txt, {"subject": doc.get("subject", ""), "htmlBody": html_out, "body": txt,
                            "attachments": [{"content": logo, "filename": "hikesupply.png", "mimeType": "image/png", "inline": True}]}
 
