@@ -87,7 +87,7 @@ Topics already used (do not repeat): trekking pole height, neck gaiter, heel-loc
 6. Check stills before the full render: `npx remotion still src/index.ts <ID> ../build/s.png --frame=<n>` at the hook, problem, fix, payoff and end card. Look at them. Fix overlaps, clipped text, characters standing in the wrong place, captions over faces.
 7. `./scripts/make_video.sh <id>` builds `media/<id>.mp4` and `media/<id>.jpg`.
 8. `git add -A && git commit -m "<id>: <title>" && git push` (pull --rebase first if the push is rejected).
-9. Upload the mp4 to the HQ page as an asset (Artifact tool, `url` = HQ link, `asset: true`, `file_path` = the mp4) and put the returned url in the card's `video` field, plus `mediaUrl`.
+9. HQ file storage is only 1 GB, so upload a small inbox preview, never the full mp4: `ffmpeg -y -i media/<id>.mp4 -vf scale=720:-2 -c:v libx264 -crf 30 -preset fast -c:a aac -b:a 96k build/<id>-preview.mp4` (about 3 MB). Upload that preview to the HQ page as an asset (Artifact tool, `url` = HQ link, `asset: true`, `file_path` = the preview) and put the returned url in the card's `video` field, plus `mediaUrl`.
 
 ## Rules for every agent
 
