@@ -1,6 +1,6 @@
 """Render quiet quote posts on real landscape photos.
 python3 moods/render_mood.py moods/batches/<batch>.json
-Batch: {"posts": [{"id", "photo": "moods/photos/pexels-<id>.jpg", "quote": "line\\nline\\n...", "author": "" (only for public-domain quotes), "place": "auto"|"top"|"middle"|"bottom"}]}
+Batch: {"posts": [{"id", "photo": "moods/photos/pexels-<id>.jpg", "quote": "line\\nline\\n...", "author": "" (only for public-domain quotes), "place": "auto"|"top"|"middle"|"bottom"|<0-1 fraction of height>}]}
 Writes for each post: media/moods/<id>-4x5.jpg (1080x1350, Instagram/Facebook), <id>-2x3.jpg (1000x1500, Pinterest), <id>-9x16.jpg (1080x1920, TikTok/Stories).
 Picks the calmest band of the photo for the text (sky, mist, snow) unless place is given."""
 import sys, os, json, html
@@ -31,20 +31,21 @@ def page(p, w, h, top, light=100):
     q = "<br>".join(html.escape(x) for x in p["quote"].split("\n"))
     a = f'<div class="by">{html.escape(p["author"])}</div>' if p.get("author") else ""
     fs = round(w * 0.05)
-    # No dark veil behind the text (Vasil 2026-10-26: it looked like grey clouds).
-    # On light skies the letters get a thin dark outline instead.
-    k = min(1, max(0, (light - 105) / 90))
-    import math
-    r = max(1.2, fs * 0.022); al = 0.25 + 0.25 * k
-    stroke = ", ".join(f"{r*math.cos(t*math.pi/8):.2f}px {r*math.sin(t*math.pi/8):.2f}px 0.6px rgba(0,0,0,{al:.2f})" for t in range(16)) + ", " if light > 105 else ""
+    # No dark veil (Vasil 2026-10-26: looked like grey clouds) and no outline
+    # (Vasil 2026-10-28: outlined letters on bright sky looked bad).
+    # Bright band: deep forest-green letters. Darker band: white letters with a soft shadow.
+    dark = light >= 140
+    col = "#18231d" if dark else "#fff"
+    sub = "rgba(24,35,29,.8)" if dark else "rgba(255,255,255,.85)"
+    sh = "0 0 18px rgba(255,255,255,.35)" if dark else f"0 1px 12px rgba(0,0,0,{0.35 + min(1, max(0, (light - 90) / 50)) * 0.2:.2f})"
     return f"""<html><head><meta charset=utf-8><style>
 @font-face {{ font-family: C; src: url(file://{ROOT}/moods/Cormorant-500.woff2); font-weight: 500; }}
 @font-face {{ font-family: I; src: url(file://{ROOT}/pins/Inter.ttf); font-weight: 100 900; }}
 * {{ margin: 0; box-sizing: border-box; }}
 body {{ width: {w}px; height: {h}px; overflow: hidden; background: #111 url(file://{os.path.join(ROOT, p['photo'])}) center/cover no-repeat; position: relative; }}
 .q {{ position: absolute; left: 0; right: 0; top: {top*100}%; display: flex; justify-content: center; }}
-.q div {{ font: 500 {fs}px/1.12 C, serif; color: #fff; letter-spacing: .2px; text-shadow: {stroke}0 1px 10px rgba(0,0,0,{0.3 + min(1, max(0, (light - 100) / 120)) * 0.25:.2f}); max-width: {int(w*.78)}px; }}
-.by {{ font: 500 {round(fs*.42)}px/1 I, sans-serif; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,.85); margin-top: {round(fs*.5)}px; text-shadow: 0 1px 8px rgba(0,0,0,.4); }}
+.q div {{ font: 500 {fs}px/1.12 C, serif; color: {col}; letter-spacing: .2px; text-shadow: {sh}; max-width: {int(w*.78)}px; }}
+.by {{ font: 500 {round(fs*.42)}px/1 I, sans-serif; letter-spacing: 3px; text-transform: uppercase; color: {sub}; margin-top: {round(fs*.5)}px; text-shadow: {sh}; }}
 .h {{ position: absolute; left: 0; right: 0; bottom: {round(h*.035)}px; text-align: center; font: 500 {round(w*.019)}px/1 I, sans-serif; letter-spacing: 4px; color: rgba(255,255,255,.78); text-shadow: 0 1px 8px rgba(0,0,0,.5); }}
 </style></head><body><div class="q"><div>{q}{a}</div></div><div class="h">@HIKESUPPLYCO</div></body></html>"""
 
@@ -57,7 +58,7 @@ with sync_playwright() as pw:
     for p in batch["posts"]:
         for key, (w, h) in SIZES.items():
             place = p.get("place", "auto")
-            top = {"top": 0.16, "middle": 0.4, "bottom": 0.6}.get(place) or calm_band(os.path.join(ROOT, p["photo"]), w, h)
+            top = place if isinstance(place, (int, float)) else {"top": 0.16, "middle": 0.4, "bottom": 0.6}.get(place) or calm_band(os.path.join(ROOT, p["photo"]), w, h)
             pg = b.new_page(viewport={"width": w, "height": h})
             tmp = os.path.join(ROOT, "moods", "_tmp.html"); open(tmp, "w").write(page(p, w, h, top, band_light(os.path.join(ROOT, p["photo"]), w, h, top)))
             pg.goto("file://" + tmp); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(300)

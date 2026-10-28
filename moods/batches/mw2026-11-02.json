@@ -1,9 +1,47 @@
-{"posts": [
- {"id": "m20261102", "photo": "moods/photos/pexels-19013064.jpg", "quote": "Snow on the high ridges,\nstill green below.\nThe mountain changes seasons\nfrom the top down.", "place": "top"},
- {"id": "m20261103", "photo": "moods/photos/pexels-28848623.jpg", "quote": "Grey sky, quiet woods.\nNot every good day\nneeds the sun.", "place": "top"},
- {"id": "m20261104", "photo": "moods/photos/pexels-39008618.jpg", "quote": "The lake doesn't hurry,\nand neither does the mist.\nMaybe I can learn\nto do the same.", "place": "bottom"},
- {"id": "m20261105", "photo": "moods/photos/pexels-33492451.jpg", "quote": "Late light on the stone.\nThe best part of the day\nis the slow walk down.", "place": "top"},
- {"id": "m20261106", "photo": "moods/photos/pexels-34031050.jpg", "quote": "In every walk with nature\none receives far more\nthan he seeks.", "author": "John Muir", "place": "top"},
- {"id": "m20261107", "photo": "moods/photos/pexels-28366357.jpg", "quote": "We came for the view.\nWe stayed for the quiet\nthat came with it.", "place": "middle"},
- {"id": "m20261108", "photo": "moods/photos/pexels-35016797.jpg", "quote": "Cold morning, clear sky,\nheavy pack, light heart.\nThat's the whole plan.", "place": "top"}
-]}
+{
+ "posts": [
+  {
+   "id": "m20261102",
+   "photo": "moods/photos/pexels-19013064.jpg",
+   "quote": "Snow on the high ridges,\nstill green below.\nThe mountain changes seasons\nfrom the top down.",
+   "place": "top"
+  },
+  {
+   "id": "m20261103",
+   "photo": "moods/photos/pexels-28848623.jpg",
+   "quote": "Grey sky, quiet woods.\nNot every good day\nneeds the sun.",
+   "place": 0.08
+  },
+  {
+   "id": "m20261104",
+   "photo": "moods/photos/pexels-39008618.jpg",
+   "quote": "The lake doesn't hurry,\nand neither does the mist.\nMaybe I can learn\nto do the same.",
+   "place": "bottom"
+  },
+  {
+   "id": "m20261105",
+   "photo": "moods/photos/pexels-33492451.jpg",
+   "quote": "Late light on the stone.\nThe best part of the day\nis the slow walk down.",
+   "place": "top"
+  },
+  {
+   "id": "m20261106",
+   "photo": "moods/photos/pexels-34031050.jpg",
+   "quote": "In every walk with nature\none receives far more\nthan he seeks.",
+   "author": "John Muir",
+   "place": 0.07
+  },
+  {
+   "id": "m20261107",
+   "photo": "moods/photos/pexels-28366357.jpg",
+   "quote": "We came for the view.\nWe stayed for the quiet\nthat came with it.",
+   "place": "middle"
+  },
+  {
+   "id": "m20261108",
+   "photo": "moods/photos/pexels-35016797.jpg",
+   "quote": "Cold morning, clear sky,\nheavy pack, light heart.\nThat's the whole plan.",
+   "place": "top"
+  }
+ ]
+}
