@@ -1,49 +1,119 @@
 {
  "pins": [
-  {"id": "pb20261028-1", "layout": "forest", "image": "media/pins/v41-crop.jpg",
-   "kicker": "Cold, windy summit", "title": "Jacket on, then sit",
+  {
+   "id": "pb20261028-1",
+   "layout": "forest",
+   "image": "media/pins/v41-crop.jpg",
+   "kicker": "Cold, windy summit",
+   "title": "Jacket on, then sit",
    "sub": "You cool down fast the moment you stop. Pull on your warm layer first, then sit down for the view and the snack.",
-   "cta": "Get the winter guide"},
-  {"id": "pb20261028-2", "layout": "forest", "image": "media/pins/v48b-crop.jpg",
-   "kicker": "Clocks go back Nov 1", "title": "Check the sunset time",
+   "cta": "Get the winter guide"
+  },
+  {
+   "id": "pb20261028-2",
+   "layout": "forest",
+   "image": "media/pins/v48b-crop.jpg",
+   "kicker": "Clocks go back Nov 1",
+   "title": "Check the sunset time",
    "sub": "Look up tonight's sunset for the trail, not your town. Plan to be back before it, and carry a headlamp anyway.",
-   "cta": "See the headlamp"},
-  {"id": "pb20261028-3", "layout": "forest", "image": "media/pins/v49b-crop.jpg",
-   "kicker": "Phone as a flashlight?", "title": "Save it for the map",
+   "cta": "See the headlamp"
+  },
+  {
+   "id": "pb20261028-3",
+   "layout": "forest",
+   "image": "media/pins/v49b-crop.jpg",
+   "kicker": "Phone as a flashlight?",
+   "title": "Save it for the map",
    "sub": "The light drains the battery you need for maps and calls. Carry a headlamp and a small power bank instead.",
-   "cta": "Get the checklist"},
-  {"id": "pb20261028-4", "layout": "forest", "image": "media/pins/v51b-crop.jpg",
-   "kicker": "Gift for a park lover", "title": "All 63 parks, one page",
+   "cta": "Get the checklist"
+  },
+  {
+   "id": "pb20261028-4",
+   "layout": "forest",
+   "image": "media/pins/v51b-crop.jpg",
+   "kicker": "Gift for a park lover",
+   "title": "All 63 parks, one page",
    "sub": "A printable tracker with a beginner-friendly day hike for every US national park, stamp boxes and a visit log.",
-   "cta": "See the tracker"},
-  {"id": "pb20261028-5", "layout": "stone",
-   "kicker": "Hiking in the 30s °F", "title": "Three layers that work",
-   "items": ["Base: wool or synthetic, no cotton", "Middle: a fleece for warmth", "Shell: blocks wind and rain", "Plus a warm hat and gloves", "Extra jacket for every stop"],
+   "cta": "See the tracker"
+  },
+  {
+   "id": "pb20261028-5",
+   "layout": "stone",
+   "kicker": "Hiking in the 30s °F",
+   "title": "Three layers that work",
+   "items": [
+    "Base: wool or synthetic, no cotton",
+    "Middle: a fleece for warmth",
+    "Shell: blocks wind and rain",
+    "Plus a warm hat and gloves",
+    "Extra jacket for every stop"
+   ],
    "sub": "Add and remove layers so you stay warm but never sweaty.",
-   "cta": "Get the winter guide"},
-  {"id": "pb20261028-6", "layout": "forest", "image": "media/pins/v46-crop.jpg",
-   "kicker": "Gift for a hiker", "title": "Give a hike together",
+   "cta": "Get the winter guide"
+  },
+  {
+   "id": "pb20261028-6",
+   "layout": "forest",
+   "image": "media/pins/v46-crop.jpg",
+   "kicker": "Gift for a hiker",
+   "title": "Give a hike together",
    "sub": "Printable coupons for hikes you'll take together: sunrise hike, picnic at the top, hot chocolate after. Instant PDF.",
-   "cta": "See the coupons"},
-  {"id": "pb20261028-7", "layout": "stone",
-   "kicker": "Trail Memories Gift Set", "title": "Three printables, one gift",
-   "items": ["Hiking Journal & Trail Log", "National Parks Hiking Tracker", "Hiking Trip Planner"],
+   "cta": "See the coupons"
+  },
+  {
+   "id": "pb20261028-7",
+   "layout": "stone",
+   "kicker": "Trail Memories Gift Set",
+   "title": "Three printables, one gift",
+   "items": [
+    "Hiking Journal & Trail Log",
+    "National Parks Hiking Tracker",
+    "Hiking Trip Planner"
+   ],
    "sub": "$15.99 instead of $18.97 bought separately. Instant PDF, so you can give it the same day.",
-   "cta": "See the gift set"},
-  {"id": "pb20261028-8", "layout": "stone",
-   "kicker": "Gifts for hikers", "title": "Small gear under $10",
-   "items": ["Neck gaiter: $9.99", "Folding foam sit pad: $9.99", "D-shape carabiner: $7.99", "Heart carabiner clip: $6.99"],
+   "cta": "See the gift set"
+  },
+  {
+   "id": "pb20261028-8",
+   "layout": "stone",
+   "kicker": "Gifts for hikers",
+   "title": "Small gear under $10",
+   "items": [
+    "Neck gaiter: $9.99",
+    "Folding foam sit pad: $9.99",
+    "D-shape carabiner: $7.99",
+    "Heart carabiner clip: $6.99"
+   ],
    "sub": "Useful on every hike, easy to wrap.",
-   "cta": "See the gear"},
-  {"id": "pb20261028-9", "layout": "stone",
-   "kicker": "Wet socks by mile two?", "title": "When gaiters help",
-   "items": ["Snow on the trail", "Muddy late-fall paths", "Wet grass in the morning", "Loose scree and gravel"],
+   "cta": "See the gear"
+  },
+  {
+   "id": "pb20261028-9",
+   "layout": "stone",
+   "kicker": "Wet socks by mile two?",
+   "title": "When gaiters help",
+   "items": [
+    "Snow on the trail",
+    "Muddy late-fall paths",
+    "Wet grass in the morning",
+    "Loose scree and gravel"
+   ],
    "sub": "Pull them on over your laces before the trail turns messy.",
-   "cta": "See the gaiters"},
-  {"id": "pb20261028-10", "layout": "stone",
-   "kicker": "Veterans Day, Nov 11", "title": "Free day in Utah's parks",
-   "items": ["Entry fees are waived that day", "Start early: free days get busy", "Check road and trail status", "Bring layers: cold mornings"],
+   "cta": "See the gaiters"
+  },
+  {
+   "id": "pb20261028-10",
+   "layout": "stone",
+   "kicker": "Veterans Day, Nov 11",
+   "title": "Free day in Utah's parks",
+   "items": [
+    "Entry fees waived for US residents",
+    "Start early: free days get busy",
+    "Check road and trail status",
+    "Bring layers: cold mornings"
+   ],
    "sub": "Confirm the fee-free day and park alerts on nps.gov before you go.",
-   "cta": "Plan the trip"}
+   "cta": "Plan the trip"
+  }
  ]
 }
