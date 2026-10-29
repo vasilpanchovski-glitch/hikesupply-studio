@@ -1,0 +1,43 @@
+{
+"voice": "af_heart",
+"speed": 0.93,
+"lead": 0.3,
+"lines": [
+{
+"text": "Ben walked hills for a month before his big park hike,",
+"gap": 0.1
+},
+{
+"text": "always with an empty daypack.",
+"gap": 0.25
+},
+{
+"text": "On trip day it held water, food and warm layers,",
+"gap": 0.1
+},
+{
+"text": "and after two miles it felt like a brick.",
+"gap": 0.45
+},
+{
+"text": "Here's the fix. Train with the pack you will carry.",
+"gap": 0.25
+},
+{
+"text": "Add a little weight each week, like one more water bottle.",
+"gap": 0.25
+},
+{
+"text": "Then do one long dress rehearsal hike before the trip.",
+"gap": 0.4
+},
+{
+"text": "This time the climb felt normal.",
+"gap": 0.4
+},
+{
+"text": "Save this before your next training walk.",
+"gap": 0.2
+}
+]
+}

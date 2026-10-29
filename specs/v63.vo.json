@@ -1,0 +1,39 @@
+{
+"voice": "af_heart",
+"speed": 0.93,
+"lead": 0.3,
+"lines": [
+{
+"text": "Maya said yes to a ten-mile hike with friends.",
+"gap": 0.2
+},
+{
+"text": "Her longest hike so far was three miles.",
+"gap": 0.3
+},
+{
+"text": "On the first climb her legs burned and she kept stopping.",
+"gap": 0.45
+},
+{
+"text": "Here's the fix. Start training weeks before.",
+"gap": 0.25
+},
+{
+"text": "Five short sessions a week: walks, hills and simple strength moves like step-ups.",
+"gap": 0.25
+},
+{
+"text": "Add a little distance each week, never all at once.",
+"gap": 0.4
+},
+{
+"text": "On the next big day, she reached the top with her friends.",
+"gap": 0.4
+},
+{
+"text": "Save this before you book your next big hike.",
+"gap": 0.2
+}
+]
+}

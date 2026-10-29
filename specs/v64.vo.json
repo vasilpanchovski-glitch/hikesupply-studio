@@ -1,0 +1,43 @@
+{
+"voice": "af_heart",
+"speed": 0.93,
+"lead": 0.3,
+"lines": [
+{
+"text": "Jake walked toward a Yellowstone bison for a photo.",
+"gap": 0.2
+},
+{
+"text": "It looked calm and slow.",
+"gap": 0.2
+},
+{
+"text": "Then it lifted its head and stared at him.",
+"gap": 0.3
+},
+{
+"text": "Bison are fast, and they hurt visitors who get too close.",
+"gap": 0.45
+},
+{
+"text": "Here's the fix. The park asks you to stay at least twenty-five yards from bison and elk,",
+"gap": 0.15
+},
+{
+"text": "and one hundred yards from bears and wolves.",
+"gap": 0.25
+},
+{
+"text": "Use your zoom.",
+"gap": 0.4
+},
+{
+"text": "He got the shot from a safe distance.",
+"gap": 0.4
+},
+{
+"text": "Save this before your Yellowstone trip.",
+"gap": 0.2
+}
+]
+}
