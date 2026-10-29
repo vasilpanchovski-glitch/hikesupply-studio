@@ -21,7 +21,7 @@ const Shot: React.FC<{ n: number; start: number; dur: number; zoom?: [number, nu
       />
       <AbsoluteFill
         style={{
-          background: `linear-gradient(180deg, rgba(10,16,14,${topDark}) 0%, rgba(10,16,14,0) 30%, rgba(10,16,14,0) 62%, rgba(10,16,14,0.5) 100%)`,
+          background: `linear-gradient(180deg, rgba(10,16,14,${topDark * 0.3}) 0%, rgba(10,16,14,0) 20%, rgba(10,16,14,0) 52%, rgba(10,16,14,0.62) 100%)`,
         }}
       />
     </AbsoluteFill>
@@ -33,7 +33,7 @@ const S1: React.FC = () => {
   return (
     <>
       <Shot n={1} start={0} dur={3.7} topDark={0.6} />
-      <Title text={"Your first hikes,\nplanned"} t={t} t0={0} top={200} size={132} />
+      <Title text={"Your first hikes,\nplanned"} t={t} t0={0} top={1120} size={132} />
     </>
   );
 };
@@ -43,7 +43,7 @@ const S2: React.FC = () => {
   return (
     <>
       <Shot n={2} start={0.4} dur={2.7} />
-      <Chip text="Packing Checklist" icon="check" t={t} t0={0.3} x={80} y={250} />
+      <Chip text="Packing Checklist" icon="check" t={t} t0={0.3} x={80} y={1330} />
     </>
   );
 };
@@ -53,7 +53,7 @@ const S3: React.FC = () => {
   return (
     <>
       <Shot n={3} start={2.6} dur={2.1} />
-      <Chip text="One page per hike" icon="check" t={t} t0={0.2} x={80} y={250} />
+      <Chip text="One page per hike" icon="check" t={t} t0={0.2} x={80} y={1330} />
     </>
   );
 };
@@ -63,8 +63,7 @@ const S4: React.FC = () => {
   return (
     <>
       <Shot n={4} start={0.3} dur={3.7} />
-      <Chip text="7 guides" t={t} t0={0.2} x={80} y={250} big />
-      <Chip text="For beginners · US & Canada" t={t} t0={1.2} x={80} y={360} />
+      <Chip text="7 guides for beginners" icon="check" t={t} t0={0.3} x={80} y={1410} />
     </>
   );
 };
@@ -145,7 +144,7 @@ export const A04: React.FC = () => (
     <Scene from={11.9} to={14.7} fadeIn={0.1} fadeOut={0.15}>
       <S5 />
     </Scene>
-    <Scene from={14.65} to={22} fadeOut={0}>
+    <Scene from={14.65} to={22.5} fadeOut={0}>
       <End />
     </Scene>
     <Captions

@@ -165,5 +165,5 @@ export const VIDEOS: { id: string; component: React.FC; seconds: number }[] = [
   { id: "V59", component: V59, seconds: 27 },
   { id: "V60", component: V60, seconds: 28.5 },
   { id: "V62", component: V62, seconds: 27.5 },
-  { id: "A04", component: A04, seconds: 22 },
+  { id: "A04", component: A04, seconds: 22.5 },
 ];

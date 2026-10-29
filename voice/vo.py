@@ -11,7 +11,7 @@ def syl(w):
     n=len(re.findall(r'[aeiouy]+',w)); n-= w.endswith('e') and n>1
     return max(1,n)+0.15*len(w)
 for L in spec["lines"]:
-    s,sr=k.create(L["text"],voice=voice,speed=speed,lang="en-us"); s=np.asarray(s)
+    s,sr=k.create(L["text"],voice=voice,speed=L.get("speed",speed),lang="en-us"); s=np.asarray(s)
     env=np.convolve(np.abs(s),np.ones(240)/240,'same'); thr=env.max()*0.06
     nz=np.where(env>thr)[0]; a,b=nz[0],nz[-1]; s=s[max(0,a-240):b+600]
     env=np.convolve(np.abs(s),np.ones(240)/240,'same')

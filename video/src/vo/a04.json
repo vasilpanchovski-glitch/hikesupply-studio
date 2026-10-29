@@ -1,5 +1,5 @@
 {
- "duration": 21.319,
+ "duration": 22.175,
  "lines": [
   {
    "text": "New to hiking? Here's the whole plan in one download.",
@@ -32,9 +32,9 @@
    "end": 18.884
   },
   {
-   "text": "Get it at hikesupplyco.com.",
+   "text": "Get it at, hike supply co, dot com.",
    "start": 19.134,
-   "end": 21.019
+   "end": 21.875
   }
  ],
  "words": [
@@ -311,22 +311,42 @@
   {
    "w": "Get",
    "s": 19.144,
-   "e": 19.388
+   "e": 19.352
   },
   {
    "w": "it",
-   "s": 19.388,
-   "e": 19.537
+   "s": 19.352,
+   "e": 19.744
   },
   {
-   "w": "at",
-   "s": 19.537,
-   "e": 19.654
+   "w": "at,",
+   "s": 19.744,
+   "e": 19.919
   },
   {
-   "w": "hikesupplyco.com.",
-   "s": 19.654,
-   "e": 20.994
+   "w": "hike",
+   "s": 19.919,
+   "e": 20.368
+  },
+  {
+   "w": "supply",
+   "s": 20.368,
+   "e": 20.755
+  },
+  {
+   "w": "co,",
+   "s": 20.755,
+   "e": 21.289
+  },
+  {
+   "w": "dot",
+   "s": 21.289,
+   "e": 21.385
+  },
+  {
+   "w": "com.",
+   "s": 21.385,
+   "e": 21.85
   }
  ]
 }
