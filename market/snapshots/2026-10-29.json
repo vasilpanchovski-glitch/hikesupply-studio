@@ -1,0 +1,255 @@
+{
+ "date": "2026-10-29",
+ "previous": "2026-10-27",
+ "group": "b",
+ "note": "Group B. Empty fields mean the page did not show the number. Getaway Goose's Thatch link now redirects to mindtrip.ai, which could not be opened from the cloud, so no new data. Amazon pages block the cloud reader, so Amazon-side complaints come from review summary sites.",
+ "sellers": [
+  {
+   "name": "Getaway Goose (Thatch)",
+   "products": [
+    {
+     "title": "Utah Mighty 5 National Park Road Trip Premium Itinerary",
+     "price": null,
+     "notes": "thatch.co guide link now redirects (302) to mindtrip.ai; Thatch guides seem to have moved there. Not readable this run."
+    }
+   ],
+   "reviews": {}
+  },
+  {
+   "name": "An Acre in the City (Payhip)",
+   "products": [
+    {
+     "title": "National Park Adventure Itinerary (fillable PDF)",
+     "price": 19.0,
+     "notes": "tagged 'On Sale' but no old price shown; about 1 MB; page count not stated",
+     "url": "https://payhip.com/b/xIwnT"
+    },
+    {
+     "title": "USA Travel Journal Printable / States Tracker",
+     "price": 9.0
+    },
+    {
+     "title": "Road Trip Planning Bingo Card",
+     "price": 2.0
+    },
+    {
+     "title": "Ultimate Road Trip Planner for Families",
+     "price": 9.0
+    },
+    {
+     "title": "Gratitude Journal - Travel Edition",
+     "price": 4.0
+    },
+    {
+     "title": "47 Family Vacation Tips with Kids",
+     "price": 4.0
+    },
+    {
+     "title": "Ultimate US Travel Bucket List Printable",
+     "price": 3.0
+    },
+    {
+     "title": "Travel Planner Printable",
+     "price": 9.0
+    },
+    {
+     "title": "Packing List Spreadsheet",
+     "price": 7.0
+    },
+    {
+     "title": "Ultimate Camping Trip Planner",
+     "price": 7.0
+    }
+   ],
+   "offers": [
+    "Refer a friend: you and the friend both get 10% off (Payhip referral feature)"
+   ],
+   "reviews": {
+    "count": 0
+   },
+   "marketing": {
+    "bait": "none found, no email sign-up on the page",
+    "tactics": [
+     "referral discount (both sides 10%)",
+     "'On Sale' label with no old price"
+    ],
+    "traffic": "not shown"
+   }
+  },
+  {
+   "name": "BigSkyChecklists",
+   "shop": {
+    "sales": 7,
+    "rating": 5.0,
+    "reviews": 3,
+    "listings": 36
+   },
+   "products": [
+    {
+     "title": "Ultimate Camping Planner Bundle",
+     "price": 3.99
+    },
+    {
+     "title": "Road Trip Camping Planner Bundle",
+     "price": 6.49
+    },
+    {
+     "title": "Ultimate Camping Checklist Bundle",
+     "price": 6.99
+    },
+    {
+     "title": "Camping Checklist Bundle - Backpacking, Campfire Cooking, Family Trip Planner",
+     "price": 5.99
+    },
+    {
+     "title": "National Park Camping Checklist (Bear Aware)",
+     "price": 2.99
+    },
+    {
+     "title": "Backpacking Gear Checklist Printable",
+     "price": 2.99
+    },
+    {
+     "title": "Last-Minute Camping Checklist | Quick Packing List",
+     "price": 1.99
+    },
+    {
+     "title": "Emergency Preparedness Checklist",
+     "price": 3.99
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "praise": [
+     "got the family ready for camping season",
+     "notes section handy for a last-minute grocery list"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "many near-duplicate listings of the same checklist under different titles (about 8 pairs)",
+     "bundles at $3.49-6.99"
+    ],
+    "traffic": "Etsy search only, as far as public pages show"
+   },
+   "source": "https://www.etsy.com/shop/BigSkyChecklists"
+  },
+  {
+   "name": "PrintablePatti",
+   "shop": {
+    "sales": "2.1k",
+    "rating": 4.9,
+    "reviews": 322
+   },
+   "products": [
+    {
+     "title": "Camping Checklist, Planner, Hiking Essentials ... Camping Log",
+     "pages": null,
+     "price": 6.34,
+     "was": 8.45,
+     "item_reviews": 2,
+     "item_rating": 5.0,
+     "notes": "page count stated three ways: 18 in the image text, 17 named pages, 19 if you count the list; 8.5x11 only"
+    }
+   ],
+   "offers": [
+    "25% off, 'ends in 5 days' (matches the Nov 4 end date seen on 10-19)",
+    "No refunds on digital downloads"
+   ],
+   "marketing": {
+    "tactics": [
+     "shop-wide % sale with a real end date",
+     "long keyword-stuffed titles for Etsy search"
+    ],
+    "traffic": "Etsy search; no Pinterest pins found for the shop name"
+   },
+   "source": "https://www.etsy.com/listing/898385376"
+  },
+  {
+   "name": "AnkaKidsStudio",
+   "shop": {
+    "sales": 449,
+    "rating": 5.0,
+    "reviews": 19,
+    "age": "9 months"
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt Bundle for Kids",
+     "format": "printable bundle, 4 designs in 3 PDFs",
+     "price": 3.48,
+     "bestseller": true,
+     "item_reviews": 8,
+     "item_rating": 5.0,
+     "notes": "US Letter and A4"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "kids enjoy it",
+     "design",
+     "seller replies quickly"
+    ],
+    "complaints": []
+   },
+   "source": "https://www.etsy.com/listing/4506126306"
+  },
+  {
+   "name": "Earth Pak",
+   "products": [
+    {
+     "title": "Original Waterproof Dry Bag",
+     "notes": "5L-55L, 8 colours, IPX8 phone pouch included, 5-year warranty; price not shown on review pages",
+     "sizes": [
+      "5L",
+      "10L",
+      "20L",
+      "30L",
+      "40L",
+      "55L"
+     ]
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "keeps gear dry",
+     "floats",
+     "phone pouch works",
+     "easy to use"
+    ],
+    "complaints": [
+     "real size differs from the stated size",
+     "some leaks and damp contents",
+     "single sling strap uncomfortable on long walks",
+     "phone case missing for some buyers",
+     "bottom seams fray when overstuffed",
+     "plastic clips and buckle feel cheap",
+     "PVC stiffens in the cold"
+    ]
+   },
+   "source": "https://www.shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag"
+  }
+ ],
+ "changes_vs_previous": [
+  "AnkaKidsStudio: shop sales 435 -> 449 since Oct 17; price $3.51 -> $3.48 (EUR 2.99 shown in dollars, exchange rate)",
+  "PrintablePatti: same $6.34 sale price, sale still ends about Nov 3-4",
+  "BigSkyChecklists: no change (7 sales, 36 listings)",
+  "An Acre in the City: same 10 products and prices; referral discount noticed (10% for both)",
+  "Getaway Goose: Thatch link now redirects to mindtrip.ai"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "% off or 'On Sale' labels (3 of 4 digital sellers this run, 2 with no old price shown)",
+   "many cheap single checklists plus $4-7 bundles",
+   "Etsy search titles stuffed with keywords"
+  ],
+  "new_this_run": [
+   "referral discount, both buyer and friend get 10% (An Acre in the City)"
+  ],
+  "we_do_not_use": [
+   "referral discount",
+   "US Letter + A4 named in the listing title/description (AnkaKidsStudio)"
+  ]
+ }
+}

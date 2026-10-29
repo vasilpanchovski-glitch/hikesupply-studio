@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews.",
- "updated": "2026-10-27",
+ "updated": "2026-10-29",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1185,6 +1185,106 @@
    "date": "",
    "theme": "too thin, not warm enough",
    "found": "2026-10-27"
+  },
+  {
+   "type": "dry bag",
+   "product": "Earth Pak Original Waterproof Dry Bag (review summary)",
+   "what": "some buyers found contents damp, not fully waterproof",
+   "source": "https://www.shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag",
+   "where": "review-site",
+   "date": "",
+   "theme": "dry bag leaks",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry bag",
+   "product": "Earth Pak Original Waterproof Dry Bag (review summary)",
+   "what": "bag size did not match the stated dimensions (bigger for some, smaller for others)",
+   "source": "https://www.shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag",
+   "where": "review-site",
+   "date": "",
+   "theme": "product does not match the listing",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry bag",
+   "product": "Earth Pak Original Waterproof Dry Bag (review summary)",
+   "what": "advertised waterproof phone case not in the box for some buyers",
+   "source": "https://www.shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag",
+   "where": "review-site",
+   "date": "",
+   "theme": "missing parts on arrival",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry bag",
+   "product": "Earth Pak Original Waterproof Dry Bag (review summary)",
+   "what": "single sling strap uncomfortable for long walks or hiking",
+   "source": "https://www.shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag",
+   "where": "review-site",
+   "date": "",
+   "theme": "strap uncomfortable on long walks",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry bag",
+   "product": "Earth Pak Original Waterproof Dry Bag (review)",
+   "what": "bottom seams fray when the bag is overstuffed; clips and buckle feel low quality",
+   "source": "https://www.divein.com/review/earth-pak-original-waterproof/",
+   "where": "review-site",
+   "date": "",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry bag",
+   "product": "Earth Pak Original Waterproof Dry Bag (review)",
+   "what": "leaks if the roll-top is folded fewer than three times, even with the buckle clicked",
+   "source": "https://www.divein.com/review/earth-pak-original-waterproof/",
+   "where": "review-site",
+   "date": "",
+   "theme": "dry bag leaks",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry bag",
+   "product": "generic budget Amazon dry bag (submersion test)",
+   "what": "damp after 30 minutes and wet after 60 minutes under water, failed at the closure",
+   "source": "https://thrillstays.pages.dev/blog/best-dry-bags-adventure-travel",
+   "where": "review-site",
+   "date": "2026-02-18",
+   "theme": "dry bag leaks",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry bag",
+   "product": "budget PVC dry bags (test article)",
+   "what": "cheap PVC gets micro-cracks at the fold lines and stiffens in cold weather",
+   "source": "https://thrillstays.pages.dev/blog/best-dry-bags-adventure-travel",
+   "where": "review-site",
+   "date": "2026-02-18",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry bag",
+   "product": "Floating Waterproof Dry Bag 5-70L (Walmart)",
+   "what": "arrived as a thin cloth bag, not the waterproof bag the listing showed",
+   "source": "https://www.walmart.com/ip/324042915",
+   "where": "walmart",
+   "date": "2021-01-16",
+   "theme": "product does not match the listing",
+   "found": "2026-10-29"
+  },
+  {
+   "type": "dry pack liner",
+   "product": "roll-top dry pack liner (forum)",
+   "what": "clip on the roll-down top broke, so it no longer seals for submersion",
+   "source": "https://whiteblaze.net/forum/showthread.php/139457-Experiences-of-Wet-Gear-having-NOT-used-a-Pack-Liner-or-Dry-Sack?p=2284895",
+   "where": "forum",
+   "date": "",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-29"
   }
  ],
  "themes": [
@@ -1194,7 +1294,11 @@
   },
   {
    "theme": "breaks quickly / cheaply made",
-   "count": 9
+   "count": 12
+  },
+  {
+   "theme": "missing parts on arrival",
+   "count": 8
   },
   {
    "theme": "baskets, tips or straps wear out or fall off",
@@ -1202,10 +1306,6 @@
   },
   {
    "theme": "no clear assembly or height instructions",
-   "count": 7
-  },
-  {
-   "theme": "missing parts on arrival",
    "count": 7
   },
   {
@@ -1218,6 +1318,10 @@
   },
   {
    "theme": "filter straw clogs / flow drops / hard to suck",
+   "count": 5
+  },
+  {
+   "theme": "product does not match the listing",
    "count": 5
   },
   {
@@ -1245,11 +1349,11 @@
    "count": 3
   },
   {
-   "theme": "product does not match the listing",
+   "theme": "warranty claim is a hassle",
    "count": 3
   },
   {
-   "theme": "warranty claim is a hassle",
+   "theme": "dry bag leaks",
    "count": 3
   },
   {
@@ -1334,6 +1438,10 @@
   },
   {
    "theme": "binding weak",
+   "count": 1
+  },
+  {
+   "theme": "strap uncomfortable on long walks",
    "count": 1
   }
  ]
