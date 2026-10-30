@@ -1,0 +1,513 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../_kit/brand.css"><style>
+@media print{html,body{background:#fff}}
+body{font-size:11.3pt;line-height:1.55}
+.lead{font-size:13pt}
+h3{font-size:14pt}
+ul.check li{padding:5pt 0 5pt 20pt}
+.box,.warn{padding:12pt 15pt}
+.box p,.warn,.box li{font-size:11pt}
+.lab{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin:11pt 0 3pt}
+.wl{border-bottom:0.8pt solid #CFC7B6}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 22pt}
+.fl{display:flex;align-items:flex-end;gap:6pt;height:26pt;border-bottom:0.8pt solid #CFC7B6;font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest);padding-bottom:3pt}
+.fl .u{margin-left:auto;font-weight:500;color:#8B8577;letter-spacing:.04em;text-transform:none;font-size:8.5pt}
+.fl .u b{display:inline-block;width:0.5in}
+.opts{display:flex;flex-wrap:wrap;gap:4pt 12pt;font-size:9pt;margin-top:5pt}
+.opts span::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:5pt;vertical-align:-1pt;background:#fff}
+.sketch{border:1pt solid #CFC7B6;border-radius:8pt;background:#fff;position:relative}
+.sketch span{position:absolute;left:10pt;top:8pt;font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#A39C8D}
+.big{font-size:11.5pt;line-height:1.55}
+.diff{display:grid;grid-template-columns:1fr 1fr;gap:12pt}
+.diff>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:13pt 14pt}
+.diff h3{margin:0 0 5pt}
+.diff p{margin:0;font-size:11pt;line-height:1.5}
+.tag{display:inline-block;font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:10pt 0 4pt;border-top:3pt solid var(--forest);}
+.timeline div{padding:9pt 8pt 0 0;font-size:10pt;line-height:1.35;position:relative}
+.timeline div::before{content:"";position:absolute;top:-8pt;left:0;width:11pt;height:11pt;border-radius:50%;background:var(--paper);border:2.5pt solid var(--forest)}
+.timeline div.hot::before{border-color:var(--clay);background:var(--clay)}
+.timeline b{display:block;font:600 12pt/1.2 var(--serif);color:var(--forest);margin-bottom:2pt}
+.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin:10pt 0}
+.layers>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:12pt;position:relative}
+.layers .num{font:600 26pt/1 var(--serif);color:var(--clay)}
+.layers h3{margin:6pt 0 4pt}
+.layers p{font-size:10.5pt;margin:0 0 6pt}
+.layers .eg{font-size:9.5pt;color:#6B6B66;border-top:0.6pt solid var(--line);padding-top:5pt}
+.sym{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.sym>div{border-radius:9pt;padding:11pt 13pt;background:#fff;border:1pt solid var(--line)}
+.sym h3{margin:0 0 5pt;font-size:12.5pt}
+.sym .lbl{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin:7pt 0 3pt}
+.sym p,.sym li{font-size:10.3pt;line-height:1.45}
+.sym ul{margin:0;padding-left:13pt}
+.em{background:var(--forest);color:var(--stone);border-radius:9pt;padding:12pt 15pt;margin-top:10pt}
+.em h3{color:var(--stone);margin:0 0 4pt}
+.em p{margin:0;font-size:11pt}
+.ess{display:grid;grid-template-columns:1fr 1fr;gap:8pt 14pt}
+.ess>div{display:grid;grid-template-columns:26pt 1fr;gap:8pt;padding:11pt 0;border-bottom:0.6pt solid var(--line)}
+.ess .n{font:600 16pt/1 var(--serif);color:var(--clay)}
+.ess h3{margin:0 0 3pt;font-size:13pt}
+.ess p{margin:0;font-size:10.2pt;line-height:1.42}
+.cl{display:grid;grid-template-columns:1fr 1fr;gap:4pt 22pt}
+.cl h3{margin:10pt 0 2pt;font-size:12pt}
+.cl ul.check li{font-size:10.5pt;padding:5.5pt 0 5.5pt 19pt}
+.ltab td{font-size:10pt;line-height:1.4;padding:8pt 6pt}
+.ltab td:first-child{font-weight:600;color:var(--forest);white-space:nowrap}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.qc{border:1.2pt dashed #A39C8D;padding:18pt 18pt;height:4.6in;background:#fff;margin:-0.6pt}
+.qc h3{margin:0 0 8pt;font-size:15pt}
+.qc .kicker{margin-bottom:5pt}
+.qc ul.check li{font-size:10pt;padding:4pt 0 4pt 18pt}
+.qc ul.check li::before{width:9pt;height:9pt;top:4pt}
+.qc p{font-size:10pt;margin:0 0 7pt}
+.hikehead{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt;margin-bottom:4pt}
+.hikehead .no{font:600 24pt/1 var(--serif);color:var(--forest)}
+.hikehead .no small{font:700 8pt/1 var(--sans);letter-spacing:.16em;color:var(--clay);display:block;margin-bottom:6pt;text-transform:uppercase}
+.src{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.src>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:15pt 15pt;min-height:1.45in}
+.src h3{margin:0 0 3pt;font-size:12pt}
+.src .url{font:600 9pt/1.3 var(--sans);color:var(--clay);margin-bottom:4pt}
+.src p{margin:0;font-size:10.5pt;line-height:1.42}
+.back{background:var(--forest);color:var(--stone);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.back h2{color:var(--stone)}
+.back p{color:#D9DED6;max-width:4.6in}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+.cover.photo>div{position:relative}
+.cover.photo .cphoto,.cover.photo .cshade{position:absolute}
+.cover.photo h1{color:#F5F1EA}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{color:#222;text-shadow:none}
+html.bw .cover.photo .sub{color:#333}
+html.bw .page{background:#fff}
+html.bw{--forest:#222;--clay:#444;--sage:#666;--rust:#333;--soft:#fff}
+html.bw .cover,html.bw .back{background:#fff;color:#222;border:2pt solid #222}
+html.bw .cover h1,html.bw .back h2{color:#222}
+html.bw .cover .sub,html.bw .cover .meta,html.bw .cover .brand,html.bw .back p,html.bw .back .brand{color:#333 !important}
+html.bw .cover svg *{fill:none !important;stroke:#222 !important}
+html.bw .box,html.bw .em{background:#fff;border:0.8pt solid #999;color:#222}
+html.bw .em h3,html.bw .box.forest,html.bw .box.forest h3{color:#222}
+html.bw .warn{background:#fff}
+html.bw .timeline div::before{background:#fff}
+html.bw .timeline div.hot::before{background:#444}
+
+.glance{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin-top:6pt}
+.glance>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:12pt 14pt}
+.glance h3{margin:0 0 6pt;font-size:15pt}
+.glance table{margin:0}
+.glance td{font-size:10pt;padding:5pt 4pt;line-height:1.35}
+.glance td:first-child{font:700 7pt/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--sage);width:0.85in;padding-top:7pt}
+.seas{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin-top:4pt}
+.seas>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 13pt}
+.seas>div.best{border:1.6pt solid var(--forest)}
+.seas h3{margin:0 0 2pt;font-size:13.5pt}
+.seas .m{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.seas p{margin:0;font-size:10.2pt;line-height:1.45}
+.bk{border-top:1.5pt solid var(--forest);margin-top:6pt}
+.bk>div{display:grid;grid-template-columns:1.25in 1fr;gap:14pt;padding:10pt 0;border-bottom:0.6pt solid var(--line)}
+.bk b{font:600 13pt/1.2 var(--serif);color:var(--forest)}
+.bk p{margin:0;font-size:10.3pt;line-height:1.45}
+.fee td{font-size:10pt;padding:6pt 6pt}
+.plan{border:1pt solid var(--line);border-radius:9pt;background:#fff;padding:11pt 14pt;margin-bottom:10pt}
+.plan .ph{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2pt solid var(--forest);padding-bottom:5pt;margin-bottom:3pt}
+.plan .ph b{font:600 17pt/1 var(--serif);color:var(--forest)}
+.plan .ph span{font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#8B8577}
+.plan .d{display:grid;grid-template-columns:0.62in 1fr;gap:10pt;padding:6pt 0;border-bottom:0.6pt solid var(--line);font-size:10pt;line-height:1.42}
+.plan .d:last-child{border-bottom:0}
+.plan .d i{font:normal 700 7.5pt/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--clay)}
+.reg{display:grid;grid-template-columns:1fr;gap:10pt}
+.reg>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:13pt 17pt}
+.reg h3{margin:0 0 5pt;font-size:16pt}
+.reg .w{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.reg p{margin:0 0 6pt;font-size:11.2pt;line-height:1.55}
+.reg p:last-child{margin:0}
+.hk{background:#fff;border:1pt solid var(--line);border-radius:10pt;padding:15pt 18pt;margin-bottom:13pt}
+.hk .top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt}
+.hk .top h3{margin:0;font-size:20pt}
+.hk .top small{display:block;font:700 7.5pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.hk .top .lv{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);border:1.2pt solid var(--forest);border-radius:20pt;padding:4pt 8pt;white-space:nowrap}
+.hk .st{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:11pt 0 9pt;border-bottom:0.6pt solid var(--line);padding-bottom:10pt}
+.hk .st div{font-size:10pt;line-height:1.3;padding-right:6pt}
+.hk .st b{display:block;font:700 6.8pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:4pt}
+.hk .st span{font:600 15pt/1.2 var(--serif);color:var(--forest);display:block}
+.hk .st em{font-style:normal;font-size:9.3pt;color:#6B6B66}
+.hk p{margin:0 0 6pt;font-size:10.9pt;line-height:1.52}
+.hk p:last-child{margin:0}
+.hk .lb{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin-right:4pt}
+.hk .nt{margin-top:9pt;font-size:10.4pt;line-height:1.45;background:var(--soft);border-radius:6pt;padding:9pt 12pt}
+.dist{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:8pt 0 4pt}
+.dist>div{border-radius:10pt;padding:14pt 16pt;text-align:center}
+.dist .a{background:var(--forest);color:var(--stone)}
+.dist .b{background:#fff;border:1.6pt solid var(--forest)}
+.dist .n{font:600 34pt/1 var(--serif)}
+.dist .a .n{color:var(--stone)} .dist .b .n{color:var(--forest)}
+.dist .u{font:700 8pt/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-top:4pt}
+.dist p{margin:6pt 0 0;font-size:10.3pt}
+.dist .a p{color:#D9DED6}
+.wild{display:grid;grid-template-columns:repeat(3,1fr);gap:0 16pt}
+.wild ul.check li{font-size:10.2pt;padding:5pt 0 5pt 19pt}
+.wild ul.check li{display:flex;align-items:flex-end}.wild ul.check li span{flex:1;margin-left:8pt;border-bottom:0.8pt solid #CFC7B6;height:10pt;min-width:0.3in}
+.dp .fl{height:28pt}
+.bud td{height:30pt;font-size:10.5pt}
+.src>div{min-height:1.62in}.bud td.a{width:1.05in;border-left:0.6pt solid var(--line)}
+.bud td.c{font-weight:600;color:var(--forest)}
+.bud tr.tot td{border-top:1.5pt solid var(--forest);font-weight:700;color:var(--forest)}
+.qq{border-top:1.5pt solid var(--forest);margin-top:4pt}
+.qq>div{padding:8pt 0 4pt;border-bottom:0.6pt solid var(--line)}
+.qq b{display:block;font-size:10.8pt;color:var(--forest);font-weight:600;margin-bottom:2pt}
+.qq .wl{height:36pt;border-bottom:0.8pt dashed #CFC7B6}
+.bkcards{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:18pt 0 6pt;width:5.6in}
+.bkcards div{border:1pt solid #6E8170;border-radius:9pt;padding:12pt;text-align:left}
+.bkcards b{display:block;font:600 13pt/1.2 var(--serif);color:var(--stone);margin-bottom:4pt}
+.bkcards span{font-size:9.5pt;color:#CFD6CC;line-height:1.4}
+html.bw .dist .a{background:#fff;color:#222;border:1.6pt solid #222}
+html.bw .dist .a .n,html.bw .dist .a p{color:#222}
+html.bw .bkcards b,html.bw .bkcards span{color:#222}
+html.bw .hk .nt{background:#fff;border:0.6pt solid #999}
+
+.qs{margin:6pt 0 10pt;border-top:1.5pt solid var(--forest)}
+.qr{display:grid;grid-template-columns:1fr auto;gap:14pt;align-items:center;padding:8.5pt 0;border-bottom:0.6pt solid var(--line);font-size:10.8pt}
+.yn{display:inline-flex;gap:12pt;font:600 8pt/1 var(--sans);color:var(--forest)}
+.yn i{display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:3pt;vertical-align:-1pt;background:#fff}
+.wk{display:grid;grid-template-columns:repeat(3,1fr);gap:8pt;margin:4pt 0 10pt}
+.wk>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:9pt 12pt}
+.wk .l{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:5pt}
+.wk .v{font:600 15pt/1.15 var(--serif);color:var(--forest)}
+.wk .v small{display:block;font:500 9pt/1.3 var(--sans);color:#6B6B66;margin-top:2pt}
+.gl td{font-size:9.8pt;padding:5pt 6pt;line-height:1.35}
+.gl td:first-child{font-weight:600;color:var(--forest);width:1.35in}
+.gear td{font-size:9.8pt;padding:4.2pt 6pt}
+.gear td.b{width:0.3in}
+.gear td.b::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;background:#fff;vertical-align:-1pt}
+.gear td.w{width:0.95in;border-left:0.6pt solid var(--line)}
+.gear tr.sec td{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);padding-top:9pt;border-bottom:1pt solid var(--forest)}
+.gear .n{color:#8B8577;font-size:8.6pt}
+.ws td{height:27pt;font-size:10pt;vertical-align:middle}
+.ws td.a{width:1.1in;border-left:0.6pt solid var(--line);text-align:right;color:#8B8577;font-size:8.5pt}
+.ws tr.tot td{border-top:1.5pt solid var(--forest);font-weight:700;color:var(--forest)}
+.menu td{height:34pt;font-size:9.6pt;border-right:0.6pt solid var(--line);vertical-align:top}
+.menu td:last-child{border-right:0}
+.menu td.d{font:700 7.5pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest);width:0.85in;vertical-align:middle}
+.shop{display:grid;grid-template-columns:1fr 1fr;gap:0 22pt}
+.shop .s{display:grid;grid-template-columns:12pt 1fr 0.7in;gap:6pt;align-items:end;height:23pt;border-bottom:0.8pt solid #CFC7B6}
+.shop .s i{display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;background:#fff;margin-bottom:3pt}
+.shop .s span{border-left:0.6pt solid var(--line);height:15pt}
+.sk{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:8pt;margin:8pt 0}
+.sk text{font-family:var(--sans)}
+.gloss{columns:2;column-gap:22pt;margin-top:6pt}
+.gloss p{break-inside:avoid;margin:0 0 7.5pt;font-size:10pt;line-height:1.42}
+.gloss b{color:var(--forest)}
+.rt{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin:6pt 0}
+.rt>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:10pt 13pt}
+.rt h3{margin:0 0 4pt;font-size:12.5pt}
+.rt p{margin:0;font-size:10.2pt;line-height:1.45}
+.rt .n{font:600 20pt/1 var(--serif);color:var(--clay);margin-bottom:4pt}
+.brr td{font-size:10pt;padding:6pt 6pt;line-height:1.38}
+.qq .wl{height:28pt}
+.gear td{padding:6pt 6pt}
+.ws td{height:31pt}
+.menu td{height:50pt}
+.cl ul.check li{padding:7pt 0 7pt 19pt}
+.src>div{min-height:1.9in}
+.gloss p{font-size:10.8pt;margin-bottom:9pt}
+.sk{margin:10pt 0}
+.brr td:first-child{font-weight:600;color:var(--forest);width:1.15in}
+</style></head><body><section class="page cover photo"><div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="470" height="330" viewBox="0 0 470 330" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<circle cx="372" cy="62" r="22" stroke="#F5F1EA" stroke-width="3"/>
+<path d="M0 250 L110 110 L180 180 L270 60 L470 250" stroke="#F5F1EA" stroke-width="3.5"/>
+<path d="M150 300 L215 205 L280 300 Z" stroke="#F5F1EA" stroke-width="3.5"/><path d="M215 205 L215 300" stroke="#F5F1EA" stroke-width="2.5"/>
+<path d="M330 300 l-8 -18 l16 0 z M300 300 l0 -10 M352 300 l0 -10" stroke="#B85C38" stroke-width="3"/>
+<path d="M20 300 H450" stroke="#F5F1EA" stroke-width="3"/>
+</svg></div>
+<div><h1>Your First Backpacking Trip</h1><p class="sub">A plain-words beginner's guide and planner for your first night on the trail: an easy route, the gear that matters, water, food, camp and Leave No Trace, plus fill-in planners for the trip, the meals and the pack.</p>
+<div class="meta" style="margin-top:22pt"><span>32 pages</span><span>1 to 2 nights</span><span>mi + km, lb + kg</span></div></div></section><section class="page "><div class="kicker">Start here</div><h2>From day hiker to first night out</h2>
+<p class="lead">You already enjoy day hikes. Now you want to watch the sun go down from camp, sleep under the trees and wake up on the trail. This guide gets you there with one easy, well-planned night, and a second one if you love it.</p>
+<div class="cols" style="margin-top:4pt">
+<div><h3>This guide is for you if you</h3><ul class="check"><li>Are comfortable on day hikes of 5 to 8 mi (8 to 13 km)</li><li>Have never backpacked, or only went once with someone else leading</li><li>Want a first trip of 1 or 2 nights, not a long expedition</li><li>Would rather borrow or rent than buy a full kit on day one</li></ul></div>
+<div><h3>What is inside</h3><ul class="check"><li><b>Pages 3 to 17:</b> the guide, one topic per page</li><li><b>Pages 18 to 21:</b> gear checklist, pack weight and packing</li><li><b>Pages 22 to 26:</b> meals, trip plan and night-before checks</li><li><b>Pages 27 to 31:</b> trip logs, sources and a glossary</li></ul></div></div>
+<div class="box forest"><h3>The one rule of a first trip</h3><p style="margin:0">Make it easy. Short distance, simple food, a campsite you know exists, and a way out if the weather turns. A great first night is the one that makes you want a second.</p></div>
+<h3>How to use it</h3>
+<p>Read the guide pages once, about six weeks before you go. Then print the planners (pages 18 to 26) and fill them in as you get ready. Every distance and weight is given in both US and metric units.</p>
+<p class="small">No maps or GPS tracks are included on purpose: you will pick your route from official park and forest pages, where conditions are kept up to date. Page 4 shows you how.</p><div class="folio"><span>First Backpacking Trip</span><span>2</span></div></section><section class="page "><div class="kicker">Before you plan</div><h2>Am I ready for a first overnight?</h2>
+<p class="lead">Tick each line honestly. Most yes answers mean you are ready to plan. A no is not a stop sign, just something to work on first.</p>
+<div class="qs">
+<div class="qr"><span>I have hiked at least 5 mi (8 km) in a day and felt fine the next morning</span><span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div>
+<div class="qr"><span>I have carried a daypack of 10 to 15 lb (4.5 to 7 kg) for a few hours</span><span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div>
+<div class="qr"><span>I can read a trail map and follow trail signs and blazes</span><span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div>
+<div class="qr"><span>I know the Ten Essentials and carry them on day hikes</span><span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div>
+<div class="qr"><span>I have hiking shoes and socks that are broken in and do not give me blisters</span><span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div>
+<div class="qr"><span>I have set up a tent at least once (a campground or backyard counts)</span><span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div>
+<div class="qr"><span>I have a hiking partner for the first trip, or a very good reason to go alone</span><span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div>
+<div class="qr"><span>Someone at home will hold my trip plan and know when to expect me back</span><span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div>
+</div>
+<div class="cols">
+<div class="box" style="margin:0"><h3 style="margin-top:0">Quick fixes for a no</h3><p style="margin:0">Do two or three day hikes with a loaded pack. Pitch the tent in the yard or a park. Car camp for one night with your sleeping bag and pad: it is the best test of a sleep system.</p></div>
+<div class="box" style="margin:0"><h3 style="margin-top:0">Going with a friend</h3><p style="margin:0">A partner who has backpacked before is the easiest first trip of all. You learn by watching, share the gear weight and have help if something goes wrong.</p></div></div><div class="folio"><span>First Backpacking Trip</span><span>3</span></div></section><section class="page "><div class="kicker">Planning</div><h2>Pick an easy first route</h2>
+<p class="lead">The route decides most of how your trip will feel. For a first night, choose the boring-sounding option. You can be ambitious on trip three.</p>
+<div class="rt">
+<div><div class="n">1</div><h3>Short</h3><p>About 2 to 5 mi (3 to 8 km) to camp. A full pack makes every mile feel longer, and you want daylight left to set up camp and eat.</p></div>
+<div><div class="n">2</div><h3>Water nearby</h3><p>A lake, a stream that flows all year, or a tap at a campground. Check recent trip reports or ask rangers: small streams can dry up in late summer.</p></div>
+<div><div class="n">3</div><h3>Established campsites</h3><p>Designated or well-used sites, ideally with a fire ring, food lockers or a privy. You will not have to judge a site from scratch.</p></div>
+<div><div class="n">4</div><h3>A bail-out option</h3><p>An out-and-back or a loop with a short way back to the car. If the weather turns or a knee hurts, you can be home tonight.</p></div></div>
+<h3>Where to find first-trip routes</h3>
+<table class="gl"><tr><td>State parks</td><td>Many have hike-in or backpack campsites a short walk from the parking lot. Often bookable online. A great first step.</td></tr>
+<tr><td>National forests</td><td>Lots of trails and dispersed camping, often with fewer rules. Call the ranger district for advice and current conditions.</td></tr>
+<tr><td>National parks</td><td>Beautiful and well signed, but most require a backcountry permit and some fill months ahead. Check the park's own website.</td></tr>
+<tr><td>Canada</td><td>Provincial parks and Parks Canada sites have backcountry campsites, usually reserved ahead online.</td></tr></table>
+<div class="warn"><b>Permits and rules:</b> look up whether you need a permit, a campsite reservation or a bear canister before you commit to a route. Search the park or forest name plus "backcountry permit", use the official site (.gov, recreation.gov or the provincial or Parks Canada site), and follow what it says.</div><div class="folio"><span>First Backpacking Trip</span><span>4</span></div></section><section class="page "><div class="kicker">Planning</div><h2>Your first-trip timeline</h2>
+<p class="lead">Spread the work out and the week before feels calm. Tick each line as you go.</p>
+<div class="bk">
+<div><b>6 weeks before</b><div><ul class="check"><li>Pick 2 or 3 possible routes and a date, with a backup date</li><li>Check permits and campsite reservations; book if needed</li><li>Ask friends and family what gear you can borrow</li><li>Look up gear rental at outdoor stores or college outdoor programs</li><li>Start carrying a heavier pack on day hikes</li></ul></div></div>
+<div><b>2 weeks before</b><div><ul class="check"><li>Gather all the gear and fill in the checklist (pages 18 and 19)</li><li>Pitch the tent and test the stove at home</li><li>Sleep one night on your pad and in your bag, at home or car camping</li><li>Plan meals and shop (pages 22 and 23)</li><li>Weigh the pack (page 20)</li></ul></div></div>
+<div><b>3 days before</b><div><ul class="check"><li>Check the forecast and current trail conditions, closures and fire restrictions</li><li>Fill in the trip planner (page 24)</li><li>Give the trip plan to someone at home (page 25)</li></ul></div></div>
+<div><b>Night before</b><div><ul class="check"><li>Run the night-before checklist (page 26)</li><li>Charge your phone, headlamp and power bank</li><li>Check the forecast one last time and decide: go, change or wait</li></ul></div></div></div><div class="folio"><span>First Backpacking Trip</span><span>5</span></div></section><section class="page "><div class="kicker">Gear</div><h2>The big three, part 1: pack and shelter</h2>
+<p class="lead">Your pack, your shelter and your sleep system are the heaviest and most expensive things you will carry. For a first trip, they only need to work, fit and keep you dry.</p>
+<h3>The pack</h3>
+<p>For 1 or 2 nights, most people use a pack of about 40 to 65 liters. More important than the size is the fit: the hip belt should sit on the top of your hip bones and carry most of the weight, with the shoulder straps snug but not taking the load.</p>
+<ul class="check"><li>Fit it with weight inside: an outdoor store can help you adjust it</li><li>Walk around with 20 lb (9 kg) in it before you rent or buy</li><li>A pack liner or a strong trash bag inside keeps your sleeping bag and clothes dry</li></ul>
+<h3>The shelter</h3>
+<p>A freestanding two-person tent is the easiest choice for a first trip: it stands up on its own, and two people can share the weight (one carries the body, the other the fly and poles).</p>
+<ul class="check"><li>Practice pitching it at home, and once more in the dark with a headlamp</li><li>Count the stakes and poles before you leave</li><li>Bring the rain fly even if the forecast is clear</li><li>A footprint or groundsheet is optional; a clean, smooth site matters more</li><li>On the test pitch, check zippers, seams and that the fly does not touch the inner tent</li></ul>
+<div class="box"><h3 style="margin-top:0">Shared gear saves weight</h3><p style="margin:0">With a partner, share one tent, one stove, one pot and one water filter. Split them so you both carry about the same.</p></div><div class="folio"><span>First Backpacking Trip</span><span>6</span></div></section><section class="page "><div class="kicker">Gear</div><h2>The big three, part 2: sleep system</h2>
+<p class="lead">Your sleep system is a sleeping bag (or quilt) plus a sleeping pad. They work as a team: the bag keeps warm air around you, and the pad stops the cold ground from pulling heat out from below.</p>
+<p>Page 8 explains the ratings. For a first summer trip at low elevation, a bag with a comfort rating around 35 to 40°F (2 to 4°C) and a pad that is at least a three-season pad is a common starting point. Always check the expected low for your campsite and choose for that.</p>
+<h3 style="margin-top:12pt">Borrow, rent or buy?</h3>
+<table class="brr"><tr><th>Item</th><th>For a first trip</th><th>Why</th></tr>
+<tr><td>Pack</td><td>Borrow or rent; buy later after a fitting</td><td>Fit is personal and the wrong pack hurts. Try several first.</td></tr>
+<tr><td>Tent</td><td>Borrow or rent</td><td>Expensive, and you will learn what features you want by using one.</td></tr>
+<tr><td>Sleeping bag</td><td>Borrow or rent</td><td>Check the rating label fits your trip's low temperature.</td></tr>
+<tr><td>Sleeping pad</td><td>Borrow, rent or buy</td><td>A closed-cell foam pad is cheap, light and cannot pop.</td></tr>
+<tr><td>Stove and pot</td><td>Borrow or rent</td><td>A small canister stove is the simplest for beginners.</td></tr>
+<tr><td>Water treatment</td><td>Buy</td><td>Small, useful on day hikes too, and you want to trust it.</td></tr>
+<tr><td>Headlamp</td><td>Buy</td><td>You will use it on every trip and many day hikes.</td></tr>
+<tr><td>Shoes and socks</td><td>Use what you already hike in</td><td>Broken-in shoes beat new ones every time.</td></tr></table>
+<p class="small">Rental options: outdoor stores, university outdoor programs and some local gear libraries. Book a week or two ahead in summer.</p><div class="folio"><span>First Backpacking Trip</span><span>7</span></div></section><section class="page "><div class="kicker">Gear</div><h2>Sleeping warm</h2>
+<p class="lead">Most first-night problems are about being cold. Nights in the mountains can drop far below daytime temperatures, even in summer. Here is how to read the labels and stay warm.</p>
+<div class="rt">
+<div><h3>Sleeping bag ratings</h3><p>Many bags are tested to a standard (EN or ISO) and show two numbers. <b>Comfort</b> is the temperature at which a typical cold sleeper stays comfortable. <b>Limit</b> is where a typical warm sleeper can sleep curled up. Plan with the comfort number, not the limit.</p></div>
+<div><h3>Sleeping pad R-value</h3><p>R-value measures how well a pad blocks cold from the ground. Higher is warmer, and values from pads tested to the same standard can be added up when you stack two pads. Summer pads are often around 2; three-season pads are higher. Pick for the coldest night you expect.</p></div></div>
+<h3>Layers for the night</h3>
+<ul class="check"><li>Change into dry clothes for sleeping: damp hiking clothes chill you</li><li>Wear a warm hat and dry socks; your camp jacket can go over you or under your feet</li><li>Eat a snack before bed and keep one handy: your body makes heat from food</li><li>Pee before you sleep: holding it keeps you colder and awake</li><li>Pitch away from the very bottom of a valley or a lake shore, where cold air settles</li><li>Take the bag out of its stuff sack as soon as the tent is up, so it can fluff up</li></ul>
+<div class="box forest"><h3>Too cold at 2 a.m.?</h3><p style="margin:0">Put on every layer you have, add the camp jacket over the bag, eat something, and do a few sit-ups inside the bag. Next time, choose a warmer bag or add a foam pad under the one you have.</p></div><div class="folio"><span>First Backpacking Trip</span><span>8</span></div></section><section class="page "><div class="kicker">Gear</div><h2>Clothing for the trail and for camp</h2>
+<p class="lead">You need two small sets: what you hike in, and a dry, warm set you only wear in camp. Avoid cotton: it stays wet and cold once it gets sweaty or rained on.</p>
+<div class="cols">
+<div><h3>On the trail</h3><ul class="check"><li>Moisture-wicking shirt (synthetic or wool)</li><li>Hiking pants or shorts</li><li>Hiking socks, plus one spare pair</li><li>Broken-in shoes or boots</li><li>Light fleece or warm layer for breaks</li><li>Rain jacket (and rain pants if the forecast is wet)</li><li>Sun hat and sunglasses</li></ul></div>
+<div><h3>In camp</h3><ul class="check"><li>Dry base layer top and bottom for sleeping</li><li>Insulated jacket (down or synthetic)</li><li>Warm hat</li><li>Dry socks for sleeping</li><li>Light gloves for cold evenings</li><li>Optional: camp shoes or sandals</li></ul></div></div>
+<div class="box"><h3 style="margin-top:0">Keep the camp set dry</h3><p style="margin:0">Pack sleeping clothes in a waterproof bag or the pack liner and never hike in them. Even after a wet day, you will have something dry to change into.</p></div>
+<h3>Rain on the way in?</h3>
+<p>Hike in your rain jacket and quick-drying layers, and keep the camp set sealed until the tent is up. Wet socks can be dried a little inside your sleeping bag overnight, in a zip bag if they are very wet.</p>
+<h3>Check before you pack</h3>
+<p>Look at the forecast low for the campsite, not the nearest town. As a rough guide, the air often gets cooler as you climb, about 3 to 5°F for every 1,000 ft (about 5 to 9°C per 1,000 m), and it can be colder still on a clear night.</p><div class="folio"><span>First Backpacking Trip</span><span>9</span></div></section><section class="page "><div class="kicker">Water</div><h2>Water: carry, find, treat</h2>
+<p class="lead">On a day hike you carry all your water. On a backpacking trip you usually carry enough to reach the next source, then refill. That makes knowing your water sources part of the plan.</p>
+<h3>How much to carry</h3>
+<p>A common starting point is about half a liter (about 16 oz) per hour of hiking in mild weather, and more in heat, at altitude or on steep climbs. In camp you also need water for cooking, drinking and breakfast. Many people carry 2 to 3 liters between sources; carry more if sources are far apart or uncertain.</p>
+<h3>Treat every source</h3>
+<p>Clear, cold water can still carry germs that make you sick. Treat all water from lakes, streams and springs, and follow the instructions that come with your filter or tablets.</p>
+<div class="layers">
+<div><div class="num">1</div><h3>Filter</h3><p>Squeeze, pump or gravity filters. Fast, no wait time. Keep it from freezing.</p><div class="eg">Check the filter's ratings and replace or clean it as the maker says.</div></div>
+<div><div class="num">2</div><h3>Chemical</h3><p>Tablets or drops, often chlorine dioxide. Light and simple, but you must wait.</p><div class="eg">Wait the full time on the label; cold or cloudy water can need longer.</div></div>
+<div><div class="num">3</div><h3>Boil</h3><p>Bring water to a rolling boil for 1 minute, or 3 minutes above 6,500 ft (2,000 m).</p><div class="eg">Uses more fuel. A good backup if your filter breaks.</div></div></div>
+<ul class="check"><li>Collect from flowing or clear water; let silty water settle first</li><li>Keep treated and untreated water apart: mark your dirty bottle</li><li>Carry a backup: a few tablets weigh almost nothing</li></ul><div class="folio"><span>First Backpacking Trip</span><span>10</span></div></section><section class="page "><div class="kicker">Food</div><h2>Food: simple is best</h2>
+<p class="lead">You will burn a lot of energy carrying a pack. First-trip food should be easy, light, filling and something you already like to eat.</p>
+<div class="rt">
+<div><h3>No-cook</h3><p>Tortillas with nut butter, hard cheese and salami, tuna or chicken packets, crackers, cold-soaked oats or couscous (soaked in a jar for an hour or two).</p></div>
+<div><h3>Boil-only</h3><p>Instant oatmeal, ramen, instant mashed potatoes, couscous, freeze-dried meals. Just add boiling water and wait.</p></div></div>
+<h3>How much to pack</h3>
+<p>Many backpackers plan about 1.5 to 2 lb (0.7 to 0.9 kg) of food per person per day, choosing calorie-dense foods. Bring one extra snack meal in case you are out longer than planned.</p>
+<h3>Snack rhythm</h3>
+<p>Eat a little every hour or so instead of a few big meals: a handful of trail mix, a bar, dried fruit. Steady snacks keep your energy even and help you stay warm.</p>
+<div class="box"><h3 style="margin-top:0">Test it at home</h3><p style="margin:0">Cook your trail dinner at home once with your stove and pot. You will learn how much water and time it takes, and whether you like it.</p></div>
+<ul class="check"><li>Repack food into zip bags; take out extra boxes and wrappers</li><li>Pack each day's food together, labeled by meal</li><li>Bring a small trash bag: everything you carry in, you carry out</li><li>Pack a hot drink for the morning: it makes a cold camp feel easy</li></ul><div class="folio"><span>First Backpacking Trip</span><span>11</span></div></section><section class="page "><div class="kicker">Food</div><h2>Storing food and smelly things</h2>
+<p class="lead">Bears, raccoons, mice and other animals can smell your food from far away. Protecting it keeps you safe, keeps your breakfast, and keeps wildlife wild. Animals that get human food often become a danger and may have to be removed.</p>
+<div class="layers">
+<div><div class="num">1</div><h3>Bear canister</h3><p>A hard, locking container. Required in some parks and forests. Rent one at many parks or ranger stations.</p><div class="eg">Place it on flat ground away from cliffs and water, well away from your tent.</div></div>
+<div><div class="num">2</div><h3>Food locker</h3><p>Metal boxes at some campsites. The easiest option when they exist.</p><div class="eg">Close and latch it every time, even for a minute.</div></div>
+<div><div class="num">3</div><h3>Hanging</h3><p>A bag hung from a tree branch, away from the trunk. Allowed only in some areas and hard to do well.</p><div class="eg">Practice at home. Follow the height and distances your area gives.</div></div></div>
+<h3>What goes in</h3>
+<p>All food, trash and anything with a scent: toothpaste, sunscreen, lip balm, wipes, insect repellent, cooking pot and the dishes you used.</p>
+<div class="warn"><b>Follow the local rule.</b> Each park or forest says which method is required. Look it up on the official website before you go and do exactly what it says. Some areas require a canister and do not allow hanging.</div>
+<ul class="check"><li>Never keep food or smelly items in your tent</li><li>Cook and eat away from where you sleep; in bear country follow the distance the area advises</li><li>Store food at night and whenever you leave camp</li><li>Count every food item back into storage before bed: one forgotten snack bar is enough</li></ul><div class="folio"><span>First Backpacking Trip</span><span>12</span></div></section><section class="page "><div class="kicker">Camp</div><h2>Setting up camp</h2>
+<p class="lead">Aim to reach camp with at least two hours of daylight left. Pick the site, then pitch the tent before you cook.</p>
+<div class="sk"><svg viewBox="0 0 560 200" width="100%" height="190" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 40 C40 22 90 26 104 60 C116 92 104 140 80 162 C56 182 22 170 16 140 C10 110 8 64 14 40 Z" fill="#C9D6DB" stroke="#7F9BA6" stroke-width="2"/>
+<text x="58" y="104" font-size="12" text-anchor="middle" fill="#4D6670" font-weight="700">LAKE</text>
+<path d="M118 100 H228" stroke="#B85C38" stroke-width="2.2" stroke-dasharray="5 5"/><path d="M220 94 L230 100 L220 106" stroke="#B85C38" stroke-width="2.2"/>
+<text x="173" y="88" font-size="11.5" text-anchor="middle" fill="#B85C38" font-weight="700">200 ft / 60 m</text><text x="173" y="122" font-size="10" text-anchor="middle" fill="#B85C38">or more</text>
+<path d="M248 128 L282 72 L316 128 Z" stroke="#2C3B2E" stroke-width="2.6" fill="#fff"/><path d="M282 72 V128" stroke="#2C3B2E" stroke-width="1.6"/>
+<text x="282" y="150" font-size="12" text-anchor="middle" fill="#2C3B2E" font-weight="700">TENT</text>
+<path d="M334 100 H414" stroke="#8A9A7E" stroke-width="2.2" stroke-dasharray="5 5"/><path d="M406 94 L416 100 L406 106" stroke="#8A9A7E" stroke-width="2.2"/>
+<text x="374" y="88" font-size="10.5" text-anchor="middle" fill="#6B6B66">well away</text>
+<circle cx="454" cy="62" r="13" stroke="#2C3B2E" stroke-width="2.4" fill="#fff"/><text x="454" y="96" font-size="12" text-anchor="middle" fill="#2C3B2E" font-weight="700">KITCHEN</text>
+<rect x="442" y="118" width="24" height="30" rx="6" stroke="#2C3B2E" stroke-width="2.4" fill="#fff"/><text x="454" y="168" font-size="12" text-anchor="middle" fill="#2C3B2E" font-weight="700">FOOD STORAGE</text>
+</svg></div>
+<p class="small" style="margin-top:-2pt">Not to scale. Keep the kitchen and food storage away from the tent; in bear country use the distance your area advises.</p>
+<div class="cols">
+<div><h3>Choosing the spot</h3><ul class="check"><li>Use an existing site or a durable surface: bare ground, gravel, rock</li><li>Camp at least 200 ft (about 60 m) from lakes and streams</li><li>Look up: no dead branches or leaning trees above</li><li>Avoid dips where rain will pool</li><li>Follow any posted rules for designated sites</li></ul></div>
+<div><h3>Pitching the tent</h3><ul class="check"><li>Clear away pinecones and sharp sticks; do not dig or trench</li><li>Door facing away from the wind</li><li>Stake the corners, then attach the fly and pull it tight</li><li>Guy out the lines if wind or rain is expected</li><li>Put sleeping bag, pad and night clothes inside</li></ul></div></div>
+<div class="box forest"><h3>Your first hour in camp</h3><p style="margin:0">Pitch the tent, lay out the sleep system, change into dry camp clothes, fetch and treat water, then cook. Store the food before it gets dark, and put the headlamp where you can find it.</p></div><div class="folio"><span>First Backpacking Trip</span><span>13</span></div></section><section class="page "><div class="kicker">Leave No Trace</div><h2>Leave No Trace for overnights</h2>
+<p class="lead">An overnight leaves more marks than a day hike: a tent site, a kitchen, a toilet. These habits, based on the Leave No Trace Seven Principles, keep the place as good as you found it.</p>
+<div class="sym">
+<div><h3>Human waste</h3><p>Use a privy where there is one. Otherwise dig a cathole 6 to 8 in (15 to 20 cm) deep, at least 200 ft (about 60 m) from water, camp and trails, then cover it. Pack out toilet paper in a zip bag, or follow the local rule.</p></div>
+<div><h3>Dishes</h3><p>Scrape the pot clean and eat or pack out the leftovers. Wash with a little hot water, at least 200 ft (60 m) from water, without soap or with a tiny bit of biodegradable soap. Strain bits out and pack them out, then scatter the water.</p></div>
+<div><h3>Trash</h3><p>Pack it in, pack it out. All of it: food scraps, wrappers, fruit peels and tiny bits of plastic. Check the site before you leave.</p></div>
+<div><h3>Campfires</h3><p>Many areas ban fires, especially in dry seasons. Check fire restrictions before every trip. A stove is better for cooking. If fires are allowed, use an existing fire ring, keep it small, and drown and stir it until it is cold to the touch.</p></div></div>
+<h3>Also</h3>
+<ul class="check"><li>Stay on the trail, even when it is muddy</li><li>Watch wildlife from a distance and never feed it</li><li>Keep noise down: sound carries far at night</li><li>Leave rocks, plants and other natural objects as you found them</li></ul>
+<p class="small">Learn more at lnt.org.</p><div class="folio"><span>First Backpacking Trip</span><span>14</span></div></section><section class="page "><div class="kicker">Camp</div><h2>Camp kitchen and stove safety</h2>
+<p class="lead">A small canister stove is the simplest stove for a first trip: screw it onto a gas canister, turn the valve, light it. Here is how to use it safely.</p>
+<div class="em" style="margin-top:4pt"><h3>Never cook inside your tent</h3><p>Not inside, and not in the vestibule. A stove can set the tent on fire in seconds, and it makes carbon monoxide, a gas you cannot see or smell that can kill in a closed space.</p></div>
+<div class="cols" style="margin-top:6pt">
+<div><h3>Set up</h3><ul class="check"><li>Practice at home first, outdoors</li><li>Flat, stable ground, clear of grass and leaves</li><li>Out of the wind, but in the open air</li><li>Check the canister threads and seal before screwing it on</li><li>Bring a lighter and a backup (matches in a zip bag)</li></ul></div>
+<div><h3>While cooking</h3><ul class="check"><li>Stay with the stove the whole time it is lit</li><li>Keep the pot low and centered; hold the handle when stirring</li><li>Keep sleeves, hair and fuel away from the flame</li><li>Turn it off at the valve, let it cool before packing</li><li>Follow the stove maker's instructions</li></ul></div></div>
+<h3>Fuel</h3>
+<p>For one or two nights, one small canister is usually plenty for one or two people boiling water for meals and drinks. Shake it to judge how full it is, and bring a new one if you are unsure. Cold weather lowers canister stove output, so keep the canister warm in your bag at night when it is cold.</p>
+<div class="box"><h3 style="margin-top:0">Hot-water burns</h3><p style="margin:0">Most camp kitchen injuries are spills. Sit beside the stove, not over it, and pour away from your body.</p></div><div class="folio"><span>First Backpacking Trip</span><span>15</span></div></section><section class="page "><div class="kicker">Safety</div><h2>Weather, dark and when to go home</h2>
+<p class="lead">Experienced backpackers turn back all the time. Deciding early and calmly is a skill, not a failure.</p>
+<div class="wk">
+<div><div class="l">Start early</div><div class="v">Morning<small>Leave time for slow miles, breaks and a calm camp setup.</small></div></div>
+<div><div class="l">Arrive with light</div><div class="v">2 hours<small>Aim for at least two hours of daylight when you reach camp.</small></div></div>
+<div><div class="l">Turnaround time</div><div class="v">Set it<small>If you are not at camp by then, go back or use the backup site.</small></div></div></div>
+<h3>Thunderstorms</h3>
+<p>Afternoon storms are common in many mountains in summer. Plan to be off peaks, ridges and open areas by early afternoon. When you hear thunder, lightning is close enough to strike: move down from high ground, away from lone tall trees, and avoid open water. Wait at least 30 minutes after the last thunder before moving back up.</p>
+<h3>Darkness</h3>
+<p>Carry a headlamp and spare batteries, even if you plan to be in camp by dinner. Keep it in the top of the pack or a hip-belt pocket so you can find it in the dark.</p>
+<div class="box forest"><h3>Go home early if</h3><p style="margin:0">The forecast turns to storms, high wind or snow; someone is hurt, sick, very cold or very tired; you cannot find safe water; or the trail is much harder than expected. Your bail-out route exists for exactly this.</p></div>
+<p class="small">Forecasts: weather.gov (US) and weather.gc.ca (Canada). Check the forecast for the trail area, not just the nearest town.</p><div class="folio"><span>First Backpacking Trip</span><span>16</span></div></section><section class="page "><div class="kicker">Safety</div><h2>Leave a trip plan, and what to do if things go wrong</h2>
+<p class="lead">Before every trip, give someone at home your plan: where you are going, who is with you, and when you will be back. If you do not return, they know when to call for help and where to send it.</p>
+<div class="cols">
+<div><h3>A good trip plan has</h3><ul class="check"><li>Trailhead, route and campsite</li><li>Names and phone numbers of everyone in the group</li><li>Car make, color and license plate</li><li>When you will be back, and when to call for help</li><li>The phone number of the park, forest or local sheriff</li><li>Colors of your tent, pack and jacket</li></ul></div>
+<div><h3>Tell them</h3><p>Phone signal is patchy or missing on many trails. A missed text does not mean trouble, so agree on a clear "call for help by" time, a few hours after you plan to be back.</p><p>Message them as soon as you are back at the car. Do not change your route without telling them.</p></div></div>
+<h3>If you get lost</h3>
+<p><b>Stop.</b> Stay calm, drink and eat something. <b>Think</b> about where you last knew your position. <b>Observe</b>: look at your map, the trail and landmarks. <b>Plan</b>: if you cannot work out the way back with confidence, stay where you are. People who stay put are found faster.</p>
+<div class="warn"><b>In an emergency</b> call 911 (US and Canada) if you have signal. A text can sometimes get through when a call will not. If you carry a satellite messenger or your phone has satellite SOS, learn how to use it before the trip.</div>
+<div class="box"><h3 style="margin-top:0">Know your map before you go</h3><p style="margin:0">Study the route at home: where the water is, where the campsite is, and where the bail-out trail leaves. Download the map for offline use and carry a paper copy too. Page 25 is a fill-in trip plan you can tear out and leave at home.</p></div><div class="folio"><span>First Backpacking Trip</span><span>17</span></div></section><section class="page "><div class="kicker">Checklist</div><h2 style="margin-bottom:4pt">First backpacking gear checklist</h2>
+<p style="margin-bottom:2pt">Tick it when it is packed, and write the weight if you want to work out your base weight on page 20. Shared items: write who carries them.</p>
+<table class="gear"><tr><th></th><th>Item</th><th style="text-align:right">Weight<br><span style="font-weight:500;letter-spacing:0">oz / g</span></th></tr><tr class="sec"><td colspan="3">The big three</td></tr><tr><td class="b"></td><td>Backpack, 40 to 65 L</td><td class="w"></td></tr><tr><td class="b"></td><td>Pack liner or waterproof bag</td><td class="w"></td></tr><tr><td class="b"></td><td>Tent: body, fly, poles, stakes</td><td class="w"></td></tr><tr><td class="b"></td><td>Sleeping bag (comfort rating fits the forecast low)</td><td class="w"></td></tr><tr><td class="b"></td><td>Sleeping pad</td><td class="w"></td></tr><tr><td class="b"></td><td>Optional: pillow or a stuff sack for clothes</td><td class="w"></td></tr><tr class="sec"><td colspan="3">Kitchen</td></tr><tr><td class="b"></td><td>Stove and fuel canister</td><td class="w"></td></tr><tr><td class="b"></td><td>Lighter plus a backup</td><td class="w"></td></tr><tr><td class="b"></td><td>Pot</td><td class="w"></td></tr><tr><td class="b"></td><td>Spoon (a long one reaches into food pouches)</td><td class="w"></td></tr><tr><td class="b"></td><td>Mug or cup</td><td class="w"></td></tr><tr><td class="b"></td><td>Bear canister or food bag, as the area requires</td><td class="w"></td></tr><tr><td class="b"></td><td>Small trash bag</td><td class="w"></td></tr><tr class="sec"><td colspan="3">Water</td></tr><tr><td class="b"></td><td>Bottles or reservoir, 2 to 3 L total</td><td class="w"></td></tr><tr><td class="b"></td><td>Filter, tablets or other treatment</td><td class="w"></td></tr><tr><td class="b"></td><td>Backup treatment tablets</td><td class="w"></td></tr></table><div class="folio"><span>First Backpacking Trip</span><span>18</span></div></section><section class="page "><div class="kicker">Checklist</div><h2 style="margin-bottom:4pt">Gear checklist, continued</h2>
+<table class="gear"><tr><th></th><th>Item</th><th style="text-align:right">Weight<br><span style="font-weight:500;letter-spacing:0">oz / g</span></th></tr><tr class="sec"><td colspan="3">Ten Essentials and safety</td></tr><tr><td class="b"></td><td>Map of the area and compass (phone apps are a backup)</td><td class="w"></td></tr><tr><td class="b"></td><td>Headlamp and spare batteries</td><td class="w"></td></tr><tr><td class="b"></td><td>Sun protection: sunscreen, sunglasses, hat</td><td class="w"></td></tr><tr><td class="b"></td><td>First aid kit, including blister care</td><td class="w"></td></tr><tr><td class="b"></td><td>Knife or multi-tool, small repair kit and tape</td><td class="w"></td></tr><tr><td class="b"></td><td>Fire starter</td><td class="w"></td></tr><tr><td class="b"></td><td>Emergency shelter (space blanket or bivy)</td><td class="w"></td></tr><tr><td class="b"></td><td>Extra food for one more day</td><td class="w"></td></tr><tr><td class="b"></td><td>Extra water or a way to treat it</td><td class="w"></td></tr><tr><td class="b"></td><td>Extra clothes (see page 9)</td><td class="w"></td></tr><tr class="sec"><td colspan="3">Hygiene</td></tr><tr><td class="b"></td><td>Trowel and toilet paper in a zip bag (or wag bag where required)</td><td class="w"></td></tr><tr><td class="b"></td><td>Hand sanitizer</td><td class="w"></td></tr><tr><td class="b"></td><td>Toothbrush and small toothpaste</td><td class="w"></td></tr><tr><td class="b"></td><td>Any personal medicine</td><td class="w"></td></tr><tr class="sec"><td colspan="3">Extras</td></tr><tr><td class="b"></td><td>Phone and power bank</td><td class="w"></td></tr><tr><td class="b"></td><td>Whistle</td><td class="w"></td></tr><tr><td class="b"></td><td>Trekking poles</td><td class="w"></td></tr><tr><td class="b"></td><td>Insect repellent</td><td class="w"></td></tr><tr><td class="b"></td><td>Permit, ID and car key</td><td class="w"></td></tr></table>
+<p class="small" style="margin-top:4pt">The Ten Essentials list follows the National Park Service. Clothing is on page 9.</p><div class="folio"><span>First Backpacking Trip</span><span>19</span></div></section><section class="page "><div class="kicker">Worksheet</div><h2>Pack weight worksheet</h2>
+<p class="lead">A lighter pack makes everything easier: your knees, your pace, your mood. Weigh your pack before the trip, using a bathroom or luggage scale.</p>
+<div class="cols" style="gap:10pt 16pt">
+<div class="box" style="margin:0"><h3 style="margin-top:0">Base weight</h3><p style="margin:0">Everything in your pack except food, water and fuel. It stays about the same however long the trip is.</p></div>
+<div class="box" style="margin:0"><h3 style="margin-top:0">Total pack weight</h3><p style="margin:0">Base weight plus food, water and fuel: what you actually carry at the trailhead.</p></div></div>
+<table class="ws" style="margin-top:10pt"><tr><th>What</th><th style="text-align:right">lb / kg</th></tr>
+<tr><td>Base weight (from your checklist, or weigh the pack before adding food and water)</td><td class="a">______</td></tr>
+<tr><td>Food: days x about 1.5 to 2 lb (0.7 to 0.9 kg)</td><td class="a">______</td></tr>
+<tr><td>Water: liters you carry x 2.2 lb (1 kg)</td><td class="a">______</td></tr>
+<tr><td>Fuel canister</td><td class="a">______</td></tr>
+<tr class="tot"><td>Total pack weight</td><td class="a">______</td></tr></table>
+<h3>My target</h3>
+<p>A common beginner guideline is to keep the total pack weight under about 20% of your body weight. It is a guide, not a rule, but it helps on a first trip.</p>
+<div class="f2">
+<div><div class="fl">My body weight<span class="u"><b></b>lb / <b></b>kg</span></div></div>
+<div><div class="fl">x 0.2 = my target<span class="u"><b></b>lb / <b></b>kg</span></div></div></div>
+<h3>Too heavy? Try this first</h3>
+<ul class="check"><li>Share the tent, stove and filter with a partner</li><li>Leave the extras: a second book, a full-size towel, extra cookware</li><li>Repack food into bags and drop the boxes</li><li>Carry only the water you need to reach the next source</li></ul><div class="lab" style="margin-top:10pt">Notes: what I will leave behind next time</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>First Backpacking Trip</span><span>20</span></div></section><section class="page "><div class="kicker">Packing</div><h2>How to pack your pack</h2>
+<p class="lead">A well-packed bag rides close and steady. The secret: heavy things close to your back, and what you need during the day on top or in pockets.</p>
+<div style="display:grid;grid-template-columns:2.3in 1fr;gap:18pt;align-items:center;margin-top:6pt">
+<svg viewBox="0 0 200 300" width="100%" height="3.9in" fill="none" stroke-linejoin="round">
+<rect x="40" y="20" width="120" height="260" rx="28" stroke="#2C3B2E" stroke-width="3" fill="#fff"/>
+<path d="M40 70 H160" stroke="#2C3B2E" stroke-width="1.5"/><path d="M40 200 H160" stroke="#2C3B2E" stroke-width="1.5"/>
+<rect x="44" y="72" width="54" height="126" fill="#B85C38" opacity=".75"/>
+<rect x="98" y="72" width="58" height="126" fill="#8A9A7E" opacity=".45"/>
+<rect x="44" y="202" width="112" height="70" rx="20" fill="#8A9A7E" opacity=".25"/>
+<rect x="44" y="24" width="112" height="44" rx="22" fill="#DCD5C7" opacity=".7"/>
+<text x="100" y="50" font-size="11" text-anchor="middle" fill="#2C3B2E" font-weight="700">TOP</text>
+<text x="71" y="140" font-size="10" text-anchor="middle" fill="#fff" font-weight="700">HEAVY</text>
+<text x="127" y="140" font-size="10" text-anchor="middle" fill="#2C3B2E" font-weight="700">MEDIUM</text>
+<text x="100" y="242" font-size="11" text-anchor="middle" fill="#2C3B2E" font-weight="700">BOTTOM</text>
+<text x="20" y="140" font-size="9" fill="#6B6B66" transform="rotate(-90 20 140)" text-anchor="middle">YOUR BACK</text>
+</svg>
+<div class="bk" style="margin:0">
+<div><b>Bottom</b><p>Bulky, light things you need only in camp: sleeping bag, sleeping clothes.</p></div>
+<div><b>Middle, close to your back</b><p>The heaviest items: food bag or bear canister, cook kit, water reservoir. This keeps the weight centered over your hips.</p></div>
+<div><b>Middle, away from your back</b><p>Medium items: tent body, camp jacket, fill around the heavy things.</p></div>
+<div><b>Top and pockets</b><p>What you need on the trail: rain jacket, warm layer, first aid, water treatment, toilet kit, snacks, map, headlamp, sun gear.</p></div></div></div>
+<h3>Then adjust it</h3>
+<ul class="check"><li>Fill gaps so nothing shifts; nothing heavy dangling outside</li><li>Hip belt on the hip bones first, then shoulder straps, then load lifters and sternum strap</li><li>Walk around the house: it should feel steady, not pulling you backward</li></ul><div class="box"><h3 style="margin-top:0">On the trail</h3><p style="margin:0">Loosen the shoulder straps a little on long climbs and tighten them on descents. If your shoulders ache, the hip belt is probably too loose: tighten it first.</p></div><div class="folio"><span>First Backpacking Trip</span><span>21</span></div></section><section class="page "><div class="kicker">Planner</div><h2>Meal planner</h2>
+<p style="margin-bottom:4pt">Two example menus to copy or change, then plan your own below. Remember a little extra food for an unexpected delay.</p>
+<div class="rt">
+<div><h3>1 night, example</h3><p><b>Day 1 lunch:</b> wraps with cheese and salami<br><b>Dinner:</b> ramen with a tuna packet and dried veggies<br><b>Breakfast:</b> instant oatmeal with nuts, hot drink<br><b>Day 2 lunch:</b> tortilla with nut butter<br><b>Snacks:</b> trail mix, bars, dried fruit</p></div>
+<div><h3>2 nights, example</h3><p>Repeat the 1-night menu, and add one more of each meal: <b>dinner 2</b> mashed potatoes with chicken packet; <b>breakfast 2</b> granola with powdered milk; <b>lunch 3</b> crackers, cheese and jerky. Plus one spare dinner or snack meal.</p></div></div>
+<h3>My menu</h3><table class="menu"><tr><th></th><th>Breakfast</th><th>Lunch</th><th>Dinner</th><th>Snacks</th></tr><tr><td class="d">Day 1</td><td></td><td></td><td></td><td></td></tr><tr><td class="d">Day 2</td><td></td><td></td><td></td><td></td></tr><tr><td class="d">Day 3</td><td></td><td></td><td></td><td></td></tr><tr><td class="d">Extra</td><td></td><td></td><td></td><td></td></tr></table>
+<div class="f2" style="margin-top:6pt"><div><div class="fl">People</div><div class="fl">Nights</div></div><div><div class="fl">Food weight per day<span class="u"><b></b>lb / <b></b>kg</span></div><div class="fl">Water to boil per day<span class="u"><b></b>cups / <b></b>L</span></div></div></div>
+<div class="lab" style="margin-top:10pt">Allergies and food notes for the group</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>First Backpacking Trip</span><span>22</span></div></section><section class="page "><div class="kicker">Planner</div><h2>Trail food shopping list</h2>
+<p style="margin-bottom:6pt">Write what to buy, then tick it off. Use the last column for amounts.</p>
+<div class="shop"><div><div class="lab">Breakfasts</div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="lab">Lunches</div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="lab">Dinners</div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div></div>
+<div><div class="lab">Snacks</div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="lab">Drinks</div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="lab">Kitchen extras</div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div><div class="s"><i></i><div></div><span></span></div></div></div>
+<div class="box" style="margin-top:12pt"><h3 style="margin-top:0">Ideas that pack well</h3><p style="margin:0">Instant oatmeal, granola, powdered milk, tortillas, hard cheese, salami, nut butter packets, tuna or chicken pouches, ramen, couscous, instant mashed potatoes, freeze-dried meals, trail mix, bars, dried fruit, jerky, hot drink packets, salt, pepper and hot sauce packets, a fuel canister.</p></div><div class="folio"><span>First Backpacking Trip</span><span>23</span></div></section><section class="page "><div class="kicker">Planner</div><h2>Trip planner</h2>
+<div class="f2">
+<div><div class="fl">Trip dates</div><div class="fl">Park or forest</div><div class="fl">Trailhead</div><div class="fl">Route</div><div class="fl"></div><div class="fl">Distance to camp<span class="u"><b></b>mi / <b></b>km</span></div><div class="fl">Elevation gain<span class="u"><b></b>ft / <b></b>m</span></div></div>
+<div><div class="fl">Campsite</div><div class="fl">Permit needed?</div><div class="fl">Permit or booking number</div><div class="fl">Food storage rule</div><div class="fl">Fire rules</div><div class="fl">Ranger phone</div><div class="fl">Backup date</div></div></div>
+<div class="lab" style="margin-top:12pt">Water sources on the route (and how reliable)</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="wk" style="margin-top:10pt"><div><div class="l">Forecast high / low</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div>
+<div><div class="l">Sunset</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div>
+<div><div class="l">Storm risk</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div></div>
+<div class="wk"><div><div class="l">Leave the car</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div>
+<div><div class="l">Turnaround time</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div>
+<div><div class="l">Back at the car</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div></div>
+<div class="lab">Bail-out plan: where we go if we turn back early</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="lab">Who carries the shared gear</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="folio"><span>First Backpacking Trip</span><span>24</span></div></section><section class="page "><div class="kicker">Leave this at home</div><h2>Our backpacking trip plan</h2>
+<p class="lead" style="margin-bottom:6pt">Give this page to someone who is not coming with you. If we are not back by the time below, they know where to send help.</p>
+<div class="f2">
+<div><div class="fl">Names</div><div class="fl"></div><div class="fl">Phone numbers</div><div class="fl"></div><div class="fl">Car: make, color</div><div class="fl">License plate</div><div class="fl">Trailhead and parking</div></div>
+<div><div class="fl">Leave on (date, time)</div><div class="fl">Park or forest</div><div class="fl">Route</div><div class="fl"></div><div class="fl">Campsite, night 1</div><div class="fl">Campsite, night 2</div><div class="fl">Tent, pack, jacket colors</div></div></div>
+<div class="wk" style="margin-top:12pt"><div><div class="l">Back at the car by</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div>
+<div><div class="l">We will message you</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div>
+<div><div class="l">Call for help by</div><div class="v" style="height:22pt;border-bottom:0.8pt solid #CFC7B6"></div></div></div>
+<div class="box forest"><h3>If we are not back</h3><p style="margin:0">If you have not heard from us by the "call for help by" time, call 911 or the park, ranger station or sheriff at ______________________ and read them this page.</p></div>
+<div class="lab">Bail-out route or backup campsite</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Medical notes rescuers should know</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<p class="small" style="margin-top:8pt">Phone signal is patchy on many trails, so a missed message alone is not a reason to worry before the call-for-help time.</p><div class="folio"><span>First Backpacking Trip</span><span>25</span></div></section><section class="page "><div class="kicker">Checklist</div><h2>The night before</h2>
+<p class="lead">Ten quiet minutes tonight saves a long drive back for a forgotten tent pole.</p>
+<div class="cl">
+<div><h3>Plan</h3><ul class="check"><li>Forecast checked for the trail area</li><li>Trail conditions, closures and fire rules checked</li><li>Permit printed or saved offline</li><li>Trip plan left with someone at home</li><li>Map downloaded offline and paper map packed</li><li>Directions to the trailhead saved offline</li></ul>
+<h3>Charge</h3><ul class="check"><li>Phone</li><li>Headlamp and spare batteries</li><li>Power bank</li><li>Satellite messenger, if you carry one</li></ul></div>
+<div><h3>Pack</h3><ul class="check"><li>Tent poles and stakes counted</li><li>Stove lights; fuel canister packed</li><li>Lighter plus backup</li><li>Water treatment and backup tablets</li><li>Bear canister or food bag</li><li>Food packed by day, plus extra</li><li>Sleep clothes in a dry bag</li><li>Rain jacket on top</li><li>First aid kit and medicine</li></ul>
+<h3>Car</h3><ul class="check"><li>Fuel in the tank</li><li>Car key plan (who carries it, where)</li><li>Dry clothes, water and a snack for the drive home</li></ul></div></div><div class="folio"><span>First Backpacking Trip</span><span>26</span></div></section><section class="page "><div class="kicker">After the trip</div><h2>What worked, what to change</h2>
+<p class="lead">Fill this in within a day or two, while you still remember. Your second trip will be easier and more fun because of it.</p>
+<div class="qq" style="--x:0">
+<div><b>Best moment of the trip</b><div class="wl"></div></div>
+<div><b>Was I warm enough at night? What would I change?</b><div class="wl"></div></div>
+<div><b>Gear I did not use (leave it next time)</b><div class="wl"></div></div>
+<div><b>Gear I missed (bring it next time)</b><div class="wl"></div></div>
+<div><b>Food: too much, too little, what I liked</b><div class="wl"></div></div>
+<div><b>Water: did I carry enough? Were the sources reliable?</b><div class="wl"></div></div>
+<div><b>Pack weight, comfort, feet and shoes</b><div class="wl"></div></div>
+<div><b>Ideas for the next trip</b><div class="wl"></div></div></div>
+<div class="box" style="margin-top:10pt"><h3 style="margin-top:0">After-trip care</h3><p style="margin:0">Dry the tent and sleeping bag fully before storing them, clean the pot and water filter as the maker says, and store the sleeping bag loose, not compressed.</p></div><div class="folio"><span>First Backpacking Trip</span><span>27</span></div></section><section class="page "><div class="kicker">Trip log</div><div class="hikehead"><div class="no">Trip No. 1</div><div class="small">Date ________________</div></div>
+<div class="f2">
+<div><div class="fl">Place</div><div class="fl">Route</div><div class="fl">Distance<span class="u"><b></b>mi / <b></b>km</span></div><div class="fl">Elevation gain<span class="u"><b></b>ft / <b></b>m</span></div><div class="fl">Nights</div></div>
+<div><div class="fl">Campsite</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Low temperature<span class="u"><b></b>°F / <b></b>°C</span></div><div class="fl">Pack weight<span class="u"><b></b>lb / <b></b>kg</span></div></div></div>
+<div class="lab" style="margin-top:12pt">Day by day</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Wildlife, flowers and views</div><div class="wl" style="height:22pt"></div><div class="wl" style="height:22pt"></div>
+<div class="sketch" style="height:2.7in;margin-top:10pt"><span>Sketch or photo of camp</span></div>
+<div class="lab">Would I go back? What would I do differently?</div><div class="wl" style="height:22pt"></div><div class="wl" style="height:22pt"></div><div class="folio"><span>First Backpacking Trip</span><span>28</span></div></section><section class="page "><div class="kicker">Trip log</div><div class="hikehead"><div class="no">Trip No. 2</div><div class="small">Date ________________</div></div>
+<div class="f2">
+<div><div class="fl">Place</div><div class="fl">Route</div><div class="fl">Distance<span class="u"><b></b>mi / <b></b>km</span></div><div class="fl">Elevation gain<span class="u"><b></b>ft / <b></b>m</span></div><div class="fl">Nights</div></div>
+<div><div class="fl">Campsite</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Low temperature<span class="u"><b></b>°F / <b></b>°C</span></div><div class="fl">Pack weight<span class="u"><b></b>lb / <b></b>kg</span></div></div></div>
+<div class="lab" style="margin-top:12pt">Day by day</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Wildlife, flowers and views</div><div class="wl" style="height:22pt"></div><div class="wl" style="height:22pt"></div>
+<div class="sketch" style="height:2.7in;margin-top:10pt"><span>Sketch or photo of camp</span></div>
+<div class="lab">Would I go back? What would I do differently?</div><div class="wl" style="height:22pt"></div><div class="wl" style="height:22pt"></div><div class="folio"><span>First Backpacking Trip</span><span>29</span></div></section><section class="page "><div class="kicker">Learn more</div><h2>Official sources</h2>
+<p class="lead">This guide gives you the basics. These sources have the rules, permits and conditions for the place you are going. Rules change, so check them before every trip.</p>
+<div class="src">
+<div><h3>National Park Service</h3><div class="url">nps.gov</div><p>Each park's "Plan Your Visit" pages list backcountry permits, food storage rules and current conditions.</p></div>
+<div><h3>USDA Forest Service</h3><div class="url">fs.usda.gov</div><p>National forests and grasslands: trails, dispersed camping rules, fire restrictions. Call the local ranger district.</p></div>
+<div><h3>Permits and reservations</h3><div class="url">recreation.gov</div><p>Backcountry permits and campsites for many US parks, forests and other public lands.</p></div>
+<div><h3>Leave No Trace</h3><div class="url">lnt.org</div><p>The Seven Principles and practical how-tos for camping, waste and campfires.</p></div>
+<div><h3>State and provincial parks</h3><div class="url">Your state or province's park site</div><p>Many have hike-in campsites that are perfect for a first trip, often bookable online.</p></div>
+<div><h3>Parks Canada</h3><div class="url">parks.canada.ca</div><p>Backcountry camping, reservations, trail reports and safety for Canada's national parks.</p></div>
+<div><h3>Weather</h3><div class="url">weather.gov and weather.gc.ca</div><p>Forecasts and warnings. Use the point forecast for the trail, not the town.</p></div>
+<div><h3>Safe drinking water</h3><div class="url">cdc.gov</div><p>CDC guidance on treating water from lakes and streams.</p></div></div><div class="folio"><span>First Backpacking Trip</span><span>30</span></div></section><section class="page "><div class="kicker">Words</div><h2>Backpacking glossary</h2><div class="gloss"><p><b>Base weight.</b> Everything in your pack except food, water and fuel.</p><p><b>Bail-out route.</b> A shorter way back to the road if you need to end the trip early.</p><p><b>Bear canister.</b> A hard, locking food container animals cannot open.</p><p><b>Blaze.</b> A paint mark or sign on trees or rocks that shows the trail.</p><p><b>Cathole.</b> A small hole 6 to 8 in (15 to 20 cm) deep for human waste.</p><p><b>Cold soak.</b> Soaking food in cold water instead of cooking it.</p><p><b>Comfort rating.</b> The temperature at which a typical cold sleeper stays comfortable in a bag.</p><p><b>Dispersed camping.</b> Camping outside designated campgrounds, where allowed.</p><p><b>Durable surface.</b> Ground that is not harmed by walking or camping: rock, gravel, dry grass, bare soil.</p><p><b>Fly.</b> The waterproof outer layer of a tent.</p><p><b>Footprint.</b> A groundsheet under the tent that protects the floor.</p><p><b>Freestanding tent.</b> A tent that stands up on its poles alone, before staking.</p><p><b>Guy line.</b> A cord from the tent to a stake that keeps it steady in wind.</p><p><b>Hip belt.</b> The padded belt that moves the pack's weight onto your hips.</p><p><b>Load lifters.</b> Small straps from the top of the shoulder straps to the pack that pull it close.</p><p><b>Out-and-back.</b> A route that returns the same way it went.</p><p><b>Privy.</b> A simple backcountry toilet.</p><p><b>R-value.</b> How well a sleeping pad blocks cold from the ground. Higher is warmer.</p><p><b>Ten Essentials.</b> The safety items every hiker should carry, as listed by the National Park Service.</p><p><b>Trailhead.</b> Where the trail starts, usually with parking.</p><p><b>Turnaround time.</b> The time you decide in advance to turn back, wherever you are.</p><p><b>Vestibule.</b> The covered space between the tent door and the fly.</p><p><b>Wag bag.</b> A sealed bag for packing out human waste, required in some areas.</p><p><b>Zero day.</b> A day of rest with no hiking on a longer trip.</p></div><div class="folio"><span>First Backpacking Trip</span><span>31</span></div></section><section class="page back"><div class="brand" style="font:700 9pt/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:28pt">HikeSupply Co.</div>
+<svg width="200" height="120" viewBox="0 0 200 120" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M10 110 L70 40 L100 75 L130 30 L190 110" stroke="#F5F1EA" stroke-width="4"/><path d="M70 112 L100 72 L130 112 Z" stroke="#B85C38" stroke-width="3"/><circle cx="160" cy="25" r="10" fill="#B85C38" stroke="#B85C38"/></svg>
+<h2 style="margin-top:26pt">Sleep well out there</h2>
+<p>Thank you for choosing a HikeSupply guide. Enjoy the quiet, the stars and that first cup of something hot in the morning. We hope it is the first of many nights on the trail.</p>
+<p style="margin-top:14pt;font:600 9pt/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage)">Also from HikeSupply Co.</p>
+<div class="bkcards" style="grid-template-columns:1fr 1fr 1fr;width:6.4in;margin-top:8pt"><div><b>Beginner's Hiking Guide</b><span>Day-hike basics, from choosing a trail to reading the weather</span></div><div><b>Ultimate Hiking Packing Checklist</b><span>Six packing lists for different trips</span></div><div><b>Hiking Safety Guide</b><span>What goes wrong on trails, and what to do</span></div></div>
+<p style="margin-top:18pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">hikesupplyco.com</p>
+<p class="small" style="color:#AEB8AA;margin-top:24pt">This guide is general information for beginner backpackers and does not replace official rules, training or local advice. Regulations, permits and conditions change: check official sources before every trip. Follow the instructions that come with your gear. For personal use only. Cover photo: Vasilis Karkalas / Pexels.</p></section></body></html>
