@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Sam's dad always said hiking wasn't for him.",
+   "gap": 0.2
+  },
+  {
+   "text": "Too long, too steep, too cold.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the trick. Sam stopped asking and gave him a coupon instead:",
+   "gap": 0.15
+  },
+  {
+   "text": "one short hike, hot chocolate after, Sam drives.",
+   "gap": 0.3
+  },
+  {
+   "text": "He picked an easy two-mile loop, checked the weather, and set a turnaround time.",
+   "gap": 0.4
+  },
+  {
+   "text": "Halfway round, his dad stopped to look at the lake and said,",
+   "gap": 0.15
+  },
+  {
+   "text": "same time next month?",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this gift idea for your family.",
+   "gap": 0.2
+  }
+ ]
+}

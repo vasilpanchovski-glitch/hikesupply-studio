@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "On the way down, Maya's boot skids on a shaded rock.",
+   "gap": 0.15
+  },
+  {
+   "text": "Frost.",
+   "gap": 0.25
+  },
+  {
+   "text": "In November, shady parts of a trail can stay icy long after the sun is up.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix. Watch for shine on rock, roots and boardwalk.",
+   "gap": 0.2
+  },
+  {
+   "text": "Step on gravel, leaves or the rough edge instead.",
+   "gap": 0.2
+  },
+  {
+   "text": "Take short steps with your weight over your feet,",
+   "gap": 0.1
+  },
+  {
+   "text": "and plant your pole first for balance.",
+   "gap": 0.25
+  },
+  {
+   "text": "If the whole trail is glazed, turn back.",
+   "gap": 0.35
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}

@@ -87,7 +87,7 @@ const Limb: React.FC<{
   </g>
 );
 
-export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; flip?: boolean; expression?: "tired" | "neutral" | "happy"; packSwing?: number; packOut?: number }> = (p) => {
+export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; flip?: boolean; expression?: "tired" | "neutral" | "happy"; packSwing?: number; packOut?: number; noPack?: boolean }> = (p) => {
   const o = p.outfit ?? JAKE;
   const g = hikerGeometry(p);
   const { hip, sh, head, legs, arms, lean } = g;
@@ -190,20 +190,20 @@ export const Person: React.FC<HikerProps & { outfit?: Outfit; light?: number; fl
       <Limb a={legs[1].hip} b={legs[1].knee} c={[legs[1].foot[0] - 2, legs[1].foot[1] - 24]} r={[19, 15, 13]} fill={o.pantsShade} />
       {boot(legs[1].foot, o.boot, o.sole)}
       {/* backpack */}
-      <g transform={`translate(${bpC[0]},${bpC[1]}) rotate(${deg}) translate(${-(p.packOut ?? 0)},-58) rotate(${p.packSwing ?? 0}) translate(0,58)`}>
+      {!p.noPack && <g transform={`translate(${bpC[0]},${bpC[1]}) rotate(${deg}) translate(${-(p.packOut ?? 0)},-58) rotate(${p.packSwing ?? 0}) translate(0,58)`}>
         <rect x={-29} y={-58} width={58} height={112} rx={20} fill={o.pack} stroke="rgba(0,0,0,0.25)" strokeWidth={1.5} />
         <rect x={-29} y={-58} width={20} height={112} rx={13} fill={o.packShade} />
         <rect x={-25} y={-72} width={46} height={28} rx={12} fill={o.packShade} />
         <rect x={-40} y={-2} width={18} height={40} rx={8} fill={o.packShade} />
         <rect x={-24} y={10} width={48} height={5} rx={2} fill="rgba(0,0,0,0.25)" />
-      </g>
+      </g>}
       {/* torso */}
       <path d={torso} fill={o.jacket} stroke="rgba(0,0,0,0.22)" strokeWidth={1.5} strokeLinejoin="round" />
       <path d={torsoShade} fill={o.jacketShade} opacity={0.75} />
       <path d={hem} fill={o.jacketShade} />
       <path d={zip} stroke="rgba(0,0,0,0.3)" strokeWidth={2} fill="none" />
       {/* shoulder strap */}
-      <path d={`M${pt(P(sh, 2, -8))} Q${pt(P(sh, -40, 14))} ${pt(P(hip, 30, 18))}`} stroke={o.packShade} strokeWidth={8} fill="none" strokeLinecap="round" />
+      {!p.noPack && <path d={`M${pt(P(sh, 2, -8))} Q${pt(P(sh, -40, 14))} ${pt(P(hip, 30, 18))}`} stroke={o.packShade} strokeWidth={8} fill="none" strokeLinecap="round" />}
       {face}
       <Limb a={legs[0].hip} b={legs[0].knee} c={[legs[0].foot[0] - 2, legs[0].foot[1] - 24]} r={[20, 16, 13.5]} fill={o.pants} />
       <path d={capsule(legs[0].knee, legs[0].knee, 6, 6)} fill={o.pantsShade} opacity={0.5} />

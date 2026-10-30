@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Every December, Leo bought his sister another hiking gadget.",
+   "gap": 0.2
+  },
+  {
+   "text": "Every January, it sat in a drawer, still in the box.",
+   "gap": 0.3
+  },
+  {
+   "text": "What she wanted was time on the trail together.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix. Give a hike, not a thing.",
+   "gap": 0.25
+  },
+  {
+   "text": "Write a coupon: sunrise hike, I drive, I carry the snacks.",
+   "gap": 0.25
+  },
+  {
+   "text": "Then plan it together: the trail, a turnaround time, a weather check.",
+   "gap": 0.4
+  },
+  {
+   "text": "In January they finally hiked together.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this for your gift list.",
+   "gap": 0.2
+  }
+ ]
+}
