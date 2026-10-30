@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "At a Yellowstone geyser basin, Lena wanted a closer photo",
+   "gap": 0.1
+  },
+  {
+   "text": "of a bright blue pool.",
+   "gap": 0.25
+  },
+  {
+   "text": "She put one foot over the edge of the boardwalk.",
+   "gap": 0.25
+  },
+  {
+   "text": "The ground there can be a thin crust over scalding water.",
+   "gap": 0.45
+  },
+  {
+   "text": "Here's the fix. In thermal areas, always stay on the boardwalks and marked trails.",
+   "gap": 0.25
+  },
+  {
+   "text": "Keep kids close.",
+   "gap": 0.25
+  },
+  {
+   "text": "Lean on your zoom, not your feet.",
+   "gap": 0.4
+  },
+  {
+   "text": "Her best photo came from the boardwalk.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this before your Yellowstone trip.",
+   "gap": 0.2
+  }
+ ]
+}
