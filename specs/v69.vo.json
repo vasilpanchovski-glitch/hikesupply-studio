@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Dana planned Utah in November and packed for the desert.",
+   "gap": 0.2
+  },
+  {
+   "text": "Then she reached Bryce Canyon.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rim sits at eight thousand feet,",
+   "gap": 0.1
+  },
+  {
+   "text": "and after snow the trails can pack down into ice.",
+   "gap": 0.2
+  },
+  {
+   "text": "Her sneakers slid on the first switchback.",
+   "gap": 0.45
+  },
+  {
+   "text": "Here's the fix. Pack warm layers and traction that straps over your boots.",
+   "gap": 0.25
+  },
+  {
+   "text": "Check the park alerts for closed trails that morning.",
+   "gap": 0.4
+  },
+  {
+   "text": "Now she walks the hoodoos under snow, steady.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this before your Utah trip.",
+   "gap": 0.2
+  }
+ ]
+}
