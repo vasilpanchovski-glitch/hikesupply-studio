@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Nate's daypack was stuffed with warm layers for a cold November hike,",
+   "gap": 0.1
+  },
+  {
+   "text": "so he left his spare bottle in the car.",
+   "gap": 0.25
+  },
+  {
+   "text": "By the last climb his only bottle was empty.",
+   "gap": 0.45
+  },
+  {
+   "text": "Here's the fix. Carry a collapsible bottle.",
+   "gap": 0.25
+  },
+  {
+   "text": "It holds 600 milliliters,",
+   "gap": 0.15
+  },
+  {
+   "text": "and once it's empty you squash it flat into a hip-belt pocket.",
+   "gap": 0.4
+  },
+  {
+   "text": "Now he carries both the layers and the extra water.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}
