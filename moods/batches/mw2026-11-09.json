@@ -1,0 +1,46 @@
+{
+ "posts": [
+  {
+   "id": "m20261109",
+   "photo": "moods/photos/pexels-23413595.jpg",
+   "quote": "Snow up high,\npine smell down low.\nA cold, clean\nkind of happy.",
+   "place": 0.66
+  },
+  {
+   "id": "m20261110",
+   "photo": "moods/photos/pexels-28367457.jpg",
+   "quote": "Between the trees,\na small window\nonto something big.",
+   "place": 0.66
+  },
+  {
+   "id": "m20261111",
+   "photo": "moods/photos/pexels-29188538.jpg",
+   "quote": "Find a flat rock.\nSit down.\nLet the lake\ndo the talking.",
+   "place": 0.5
+  },
+  {
+   "id": "m20261112",
+   "photo": "moods/photos/pexels-33024485.jpg",
+   "quote": "Some colours\nyou only see\nat the end\nof a long walk.",
+   "place": "auto"
+  },
+  {
+   "id": "m20261113",
+   "photo": "moods/photos/pexels-33310500.jpg",
+   "quote": "Low clouds on the ridge.\nNo rush to the top.\nThe mountain will wait.",
+   "place": 0.68
+  },
+  {
+   "id": "m20261114",
+   "photo": "moods/photos/pexels-39295641.jpg",
+   "quote": "Stone that took\nforever to build.\nI can take my time too.",
+   "place": "auto"
+  },
+  {
+   "id": "m20261115",
+   "photo": "moods/photos/pexels-5778822.jpg",
+   "quote": "Clear water,\nall the way down.\nI wish my head\nworked like that.",
+   "place": "auto"
+  }
+ ]
+}
