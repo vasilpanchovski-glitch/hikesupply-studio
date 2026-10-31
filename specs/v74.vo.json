@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Maya starts down the Bright Angel Trail.",
+   "gap": 0.15
+  },
+  {
+   "text": "Downhill feels easy, so she keeps going past the point she planned.",
+   "gap": 0.25
+  },
+  {
+   "text": "Then she turns around, and the whole canyon is above her.",
+   "gap": 0.25
+  },
+  {
+   "text": "At the Grand Canyon, the climb back out is the hard part.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix. Pick your turnaround point at the rim, like the 1.5 Mile Resthouse,",
+   "gap": 0.15
+  },
+  {
+   "text": "and turn there while you still feel fresh.",
+   "gap": 0.35
+  },
+  {
+   "text": "Maya climbs out before dark, smiling.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your canyon trip.",
+   "gap": 0.2
+  }
+ ]
+}

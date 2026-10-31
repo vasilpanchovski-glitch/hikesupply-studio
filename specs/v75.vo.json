@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Leo hikes down to the 3 Mile Resthouse, planning to refill his bottle.",
+   "gap": 0.2
+  },
+  {
+   "text": "The tap is dry.",
+   "gap": 0.3
+  },
+  {
+   "text": "On the Bright Angel Trail, water runs from May through October,",
+   "gap": 0.1
+  },
+  {
+   "text": "and it can shut off any time a pipe breaks.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix. Carry all the water you need from the rim, plus salty snacks,",
+   "gap": 0.15
+  },
+  {
+   "text": "and ask at the visitor center about water that morning.",
+   "gap": 0.35
+  },
+  {
+   "text": "Now Leo carries his own water and climbs out strong.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your canyon trip.",
+   "gap": 0.2
+  }
+ ]
+}

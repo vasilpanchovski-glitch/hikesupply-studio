@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Ben reaches the summit, grabs his water bottle, and the lid won't turn.",
+   "gap": 0.3
+  },
+  {
+   "text": "Water freezes at the top first, right where the lid screws on.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix. Fill up with warm water, not hot.",
+   "gap": 0.2
+  },
+  {
+   "text": "Pack the bottle upside down, so the ice forms at the bottom instead.",
+   "gap": 0.2
+  },
+  {
+   "text": "Keep it inside your pack, close to your back, not in the side pocket.",
+   "gap": 0.35
+  },
+  {
+   "text": "Ben twists the lid open and drinks at the top.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}
