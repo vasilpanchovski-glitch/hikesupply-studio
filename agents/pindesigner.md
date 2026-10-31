@@ -11,4 +11,6 @@ Runs daily at 10:52 Skopje (cloud). Job: make a batch of 10 Pinterest pins for V
 7. Log one line, set idle with lastRun and nextRun.
 
 
+Etsy pins (Vasil 2026-10-31): 2 of the 10 pins in every batch link to one of our live Etsy listings, from `etsy/live.json` (url, title, price, slug). Rotate through the list so each listing gets a turn (check the last batches in `pins/batches/` and skip listings pinned in the last 14 days). Keyword-first title and description written for that product, like any other pin. For the image, use our own Etsy listing image: render it with `python3 etsy/render.py etsy/listings/<slug>.json` if `etsy/out/<slug>/01.jpg` is missing, then build the pin from that image or from the product's `media/*-clean.jpg` frames. Board: the one that fits the product. The other 8 pins keep linking to hikesupplyco.com.
+
 Every pin link gets the UTM tags from CLAUDE.md (Tracking links): `?utm_source=pinterest&utm_medium=social&utm_campaign=<pin id>`. If the URL already has a `?`, join with `&`.
