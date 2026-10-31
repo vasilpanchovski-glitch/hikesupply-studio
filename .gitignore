@@ -9,3 +9,5 @@ products/*/out/
 video/public/footage/
 etsy/assets/
 etsy/out/
+etsy/src/
+etsy/downloads/

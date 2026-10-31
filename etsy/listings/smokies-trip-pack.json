@@ -1,0 +1,79 @@
+{
+ "slug": "smokies-trip-pack",
+ "shopify": "great-smoky-mountains-trip-pack",
+ "price": "19.99",
+ "title": "Great Smoky Mountains Trip Pack, Itinerary Planner + 10 Best Hikes GPX Routes, Smokies Travel Guide PDF, Gatlinburg Vacation Planner",
+ "tags": [
+  "smoky mountains",
+  "smokies hikes",
+  "gatlinburg",
+  "trip planner",
+  "gpx routes",
+  "smokies itinerary",
+  "national park",
+  "travel guide",
+  "road trip",
+  "tennessee travel",
+  "hiking guide",
+  "trail passport",
+  "pigeon forge"
+ ],
+ "description": "Everything for a Smokies trip in one download: the Trip Planning Guide to plan it, and the 10 Best Day Hikes GPX Route Collection to walk it. $19.99 instead of $24.98 bought separately.\n\nWHAT'S INCLUDED\n- Trip Planning Guide: seasons and seasonal roads, getting there, where to stay, 3, 5 and 7-day itineraries, beyond hiking, safety, packing list and trip planner\n- 10 GPX route files: Alum Cave, Chimney Tops, Andrews Bald, Rainbow Falls, Grotto Falls, Abrams Falls, Charlies Bunion, Ramsey Cascades, Kuwohi Observation Tower and Mouse Creek Falls\n- Route guide with photos, maps, elevation profiles and a fillable trail passport\n- 10 trail badges plus a shareable story image for every hike\n\nWHAT YOU GET\n- Guides in US Letter and A4\n- GPX files for AllTrails, Gaia GPS, Komoot or a GPS watch\n- Instant download. These are digital files; nothing is shipped.\n- Bonus: our free one-page Ultimate Hiking Checklist\n\nGOOD TO KNOW\nThe itineraries are numbered to match the GPX files. Trail data from the National Park Service and OpenStreetMap contributors; photos via Wikimedia Commons with credits. Check nps.gov/grsm before you go. For personal use.\n\nMade by HikeSupply Co., a small shop for weekend hikers. More printable guides at hikesupplyco.com",
+ "hero": [
+  "Smokies",
+  "Trip Pack"
+ ],
+ "sub": "The trip planning guide plus 10 day-hike GPS routes, a passport and badges.",
+ "chips": [
+  "Guide + GPX",
+  "Save $4.99",
+  "10 trails"
+ ],
+ "inside": [
+  "3, 5 and 7-day itineraries",
+  "Where to stay and when to go",
+  "10 GPX day-hike routes",
+  "Photo, map and elevation per trail",
+  "Trail passport and badges",
+  "Packing list and trip planner"
+ ],
+ "formats": [
+  [
+   "Trip guide + route guide",
+   "US Letter and A4"
+  ],
+  [
+   "GPX route files",
+   "AllTrails, Gaia GPS, Komoot, watch"
+  ],
+  [
+   "Instant download",
+   "Digital files, nothing is shipped"
+  ]
+ ],
+ "covers": [
+  "etsy/assets/great-smoky-mountains-trip-planning-guide/p-01.png",
+  "etsy/assets/great-smoky-mountains-10-best-day-hikes-gpx/p-01.png"
+ ],
+ "pages": [
+  "etsy/assets/great-smoky-mountains-trip-planning-guide/p-01.png",
+  "etsy/assets/great-smoky-mountains-10-best-day-hikes-gpx/p-01.png",
+  "etsy/assets/great-smoky-mountains-trip-planning-guide/p-05.png",
+  "etsy/assets/great-smoky-mountains-10-best-day-hikes-gpx/p-03.png",
+  "etsy/assets/great-smoky-mountains-10-best-day-hikes-gpx/p-13.png"
+ ],
+ "back": 1,
+ "back2": 2,
+ "feature": 2,
+ "spreadA": [
+  0,
+  1
+ ],
+ "spreadATitle": "What's included",
+ "spreadB": [
+  2,
+  3,
+  4
+ ],
+ "spreadBTitle": "A look inside"
+}

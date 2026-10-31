@@ -77,13 +77,28 @@ def hero(L, out):
     im = bg()
     d = ImageDraw.Draw(im)
     pages = L["pages"]
-    # two inside pages fanned behind the cover, cover large and slightly tilted
-    b2 = page(pages[L.get("back2", 2)], 1000, -9)
-    im.paste(b2, (1620, 300), b2)
-    b1 = page(pages[L.get("back", 1)], 1060, -3)
-    im.paste(b1, (1500, 180), b1)
-    cov = page(pages[0], 1280, 4)
-    im.paste(cov, (1110, 60), cov)
+    if L.get("covers"):
+        # bundle: every cover fanned left to right, the first one on top
+        cs = L["covers"]
+        n = len(cs)
+        w = {2: 860, 3: 780, 4: 680}.get(n, 580)
+        rots = [-6 + 12 * k / max(n - 1, 1) for k in range(n)]
+        cv = [page(cs[k], w, -rots[k]) for k in range(n)]
+        x0 = 1000
+        x1 = W - 30 - cv[-1].width
+        step = (x1 - x0) / max(n - 1, 1)
+        for k in reversed(range(n)):
+            c = cv[k]
+            y = (H - c.height) // 2 - 60 + int(abs(k - (n - 1) / 2) * 40)
+            im.paste(c, (int(x0 + k * step), y), c)
+    else:
+        # two inside pages fanned behind the cover, cover large and slightly tilted
+        b2 = page(pages[L.get("back2", 2)], 1000, -9)
+        im.paste(b2, (1620, 300), b2)
+        b1 = page(pages[L.get("back", 1)], 1060, -3)
+        im.paste(b1, (1500, 180), b1)
+        cov = page(pages[0], 1280, 4)
+        im.paste(cov, (1110, 60), cov)
     text(d, (130, 140), "HIKESUPPLY CO.", font(SEMI, 56), SAGE)
     y = 270
     hs = 178
@@ -108,7 +123,7 @@ def spread(L, out, idx, title):
     d = ImageDraw.Draw(im)
     text(d, (W // 2, 140), title.upper(), font(HEAD, 140), anchor="ma")
     n = len(idx)
-    pw = 790 if n == 3 else 640
+    pw = {2: 900, 3: 790}.get(n, 580)
     gap = 60
     total = n * pw + (n - 1) * gap
     x0 = (W - total) // 2 - 60

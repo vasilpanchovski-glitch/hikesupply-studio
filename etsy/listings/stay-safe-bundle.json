@@ -1,0 +1,82 @@
+{
+ "slug": "stay-safe-bundle",
+ "shopify": "stay-safe-bundle",
+ "price": "16.99",
+ "title": "Hiking Safety Bundle Printable, Safety Guide + Emergency Checklist + If You Get Lost Pocket Card PDF, Trail Safety Gift for Hikers",
+ "tags": [
+  "hiking safety",
+  "safety bundle",
+  "emergency checklist",
+  "trail safety",
+  "first aid list",
+  "pocket card",
+  "hiking printable",
+  "outdoor safety",
+  "solo hiker gift",
+  "hiking guide",
+  "hiking pdf",
+  "survival guide",
+  "hiker gift"
+ ],
+ "description": "The three HikeSupply safety guides together, for hikers who want to be ready for the day that does not go to plan. $16.99 instead of $20.97 bought separately.\n\nWHAT'S INCLUDED\n- Hiking Safety Guide: ten chapters on what actually goes wrong (late starts, weather turning, cold and heat, injuries, running out of daylight, wildlife, calling for help) plus a one-page emergency reference\n- Hiking Emergency Checklist: the kit to build once, the two-minute pre-trip check, step-by-step pages for getting lost, injuries and bad weather, and an information card\n- What To Do If You Get Lost: the first ten minutes, retrace or stay, being findable, an unplanned night out, and a fold-up pocket card\n\nWHAT YOU GET\n- Each guide in US Letter and A4, in one ZIP per paper size\n- Instant download. These are digital files; nothing is shipped.\n- Bonus: our free one-page Ultimate Hiking Checklist\n\nGOOD TO KNOW\nGeneral information for recreational hikers. Not a substitute for first-aid or navigation training, local knowledge, or emergency services. For personal use.\n\nMade by HikeSupply Co., a small shop for weekend hikers. More printable guides at hikesupplyco.com",
+ "hero": [
+  "Stay Safe",
+  "Bundle"
+ ],
+ "sub": "Safety guide, emergency checklist and the lost-hiker method with a pocket card.",
+ "chips": [
+  "3 guides",
+  "Save $3.98",
+  "Letter + A4"
+ ],
+ "inside": [
+  "What really goes wrong on trails",
+  "One-page emergency reference",
+  "Emergency kit and pre-trip check",
+  "Step-by-step emergency pages",
+  "Retrace or stay, being findable",
+  "Fold-up pocket card"
+ ],
+ "formats": [
+  [
+   "US Letter + A4",
+   "Every guide in both sizes"
+  ],
+  [
+   "One ZIP per size",
+   "Easy to download and unpack"
+  ],
+  [
+   "Instant download",
+   "Digital files, nothing is shipped"
+  ]
+ ],
+ "covers": [
+  "etsy/assets/hiking-safety-guide/p-01.png",
+  "etsy/assets/hiking-emergency-checklist/p-01.png",
+  "etsy/assets/what-to-do-if-you-get-lost/p-01.png"
+ ],
+ "pages": [
+  "etsy/assets/hiking-safety-guide/p-01.png",
+  "etsy/assets/hiking-emergency-checklist/p-01.png",
+  "etsy/assets/what-to-do-if-you-get-lost/p-01.png",
+  "etsy/assets/hiking-safety-guide/p-12.png",
+  "etsy/assets/hiking-emergency-checklist/p-03.png",
+  "etsy/assets/what-to-do-if-you-get-lost/p-08.png"
+ ],
+ "back": 1,
+ "back2": 2,
+ "feature": 3,
+ "spreadA": [
+  0,
+  1,
+  2
+ ],
+ "spreadATitle": "What's included",
+ "spreadB": [
+  3,
+  4,
+  5
+ ],
+ "spreadBTitle": "A look inside"
+}
