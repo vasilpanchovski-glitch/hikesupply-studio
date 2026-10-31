@@ -7,3 +7,5 @@ __pycache__/
 *.pyc
 products/*/out/
 video/public/footage/
+etsy/assets/
+etsy/out/
