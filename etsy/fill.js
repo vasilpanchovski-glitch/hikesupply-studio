@@ -15,7 +15,7 @@ window.fillListing = async (slug) => {
     return lab && (document.getElementById(lab.htmlFor) || lab.parentElement.querySelector('input,textarea,select'));
   };
   const out = [];
-  const title = document.getElementById('listing-title-input') || byLabel('Title'); if (title) { setVal(title, L.title); out.push('title'); }
+  const title = document.getElementById('listing-title-input'); if (title) { setVal(title, L.title); out.push('title'); }
   const desc = document.getElementById('listing-description-textarea') || byLabel('Description'); if (desc) { setVal(desc, L.description); out.push('desc'); }
   // tags
   const inp = document.getElementById('listing-tags-input') || document.querySelector('input[placeholder^="Shape, colour"]');
@@ -32,3 +32,15 @@ window.fillListing = async (slug) => {
   return out.join(' ');
 };
 'ok';
+window.labelInputs = () => {
+  const p = document.querySelector('#field-listingImages input[type=file]'); if (p) p.setAttribute('aria-label', 'photoinput');
+  const d = document.querySelector('#field-digitalFiles input[type=file]'); if (d) d.setAttribute('aria-label', 'digitalinput');
+  return !!p + ',' + !!d;
+};
+window.checkSave = async (nFiles) => {
+  await new Promise((r) => setTimeout(r, 6000));
+  const s = { title: document.getElementById('listing-title-input').value.length, desc: document.getElementById('listing-description-textarea').value.length, price: document.getElementById('listing-price-input').value,
+    files: (document.querySelector('#field-digitalFiles').innerText.match(/\.(pdf|zip)/g) || []).length, photos: document.querySelectorAll('#field-listingImages img').length, tags: document.querySelectorAll('button[aria-label^="Delete tag"]').length };
+  if (s.files === nFiles && s.photos === 5 && s.tags === 13 && s.title > 50 && s.desc > 300) { [...document.querySelectorAll('button')].find((b) => b.textContent.trim() === 'Save as draft').click(); s.saved = 1; }
+  return JSON.stringify(s);
+};
