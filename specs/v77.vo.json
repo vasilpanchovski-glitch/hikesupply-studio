@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Ava hikes in her favorite cotton hoodie.",
+   "gap": 0.25
+  },
+  {
+   "text": "On the climb she sweats, and the hoodie soaks it up and stays wet.",
+   "gap": 0.25
+  },
+  {
+   "text": "At the windy top, she's shivering.",
+   "gap": 0.3
+  },
+  {
+   "text": "Cotton holds water and loses its warmth when wet.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix. Wear a synthetic or wool base layer,",
+   "gap": 0.15
+  },
+  {
+   "text": "and a fleece as your warm layer.",
+   "gap": 0.25
+  },
+  {
+   "text": "Fleece keeps much of its warmth when damp and dries fast.",
+   "gap": 0.35
+  },
+  {
+   "text": "Ava zips up at the top, warm.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}

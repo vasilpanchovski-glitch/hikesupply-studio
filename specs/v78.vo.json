@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Jess starts up in sunshine, in trail runners.",
+   "gap": 0.25
+  },
+  {
+   "text": "Two thousand feet higher, the path is buried in snow and her shoes are soaked.",
+   "gap": 0.25
+  },
+  {
+   "text": "In November, conditions can change as you climb.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix. Call the ranger station or check the trail report",
+   "gap": 0.1
+  },
+  {
+   "text": "for the upper miles, not just the trailhead.",
+   "gap": 0.3
+  },
+  {
+   "text": "Pack warm layers, and agree on a turnaround if you hit snow.",
+   "gap": 0.35
+  },
+  {
+   "text": "Next time, Jess turns at the snow line, dry.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your next climb.",
+   "gap": 0.2
+  }
+ ]
+}

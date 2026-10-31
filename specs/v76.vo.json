@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Sam laces his boots extra tight for the cold.",
+   "gap": 0.3
+  },
+  {
+   "text": "One hour in, his toes are numb.",
+   "gap": 0.3
+  },
+  {
+   "text": "Tight boots squeeze the blood flow that keeps feet warm,",
+   "gap": 0.1
+  },
+  {
+   "text": "and his socks are damp with sweat.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix. Leave room to wiggle your toes.",
+   "gap": 0.2
+  },
+  {
+   "text": "Wear merino socks that stay warm when they get damp,",
+   "gap": 0.1
+  },
+  {
+   "text": "and pack a dry spare pair for lunch.",
+   "gap": 0.35
+  },
+  {
+   "text": "Sam swaps socks on a rock, and his feet start to warm.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}
