@@ -1,0 +1,431 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../_kit/brand.css"><style>
+@media print{html,body{background:#fff}}
+body{font-size:11.3pt;line-height:1.55}
+.lead{font-size:13pt}
+h3{font-size:14pt}
+ul.check li{padding:5pt 0 5pt 20pt}
+.box,.warn{padding:12pt 15pt}
+.box p,.warn,.box li{font-size:11pt}
+.lab{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin:11pt 0 3pt}
+.wl{border-bottom:0.8pt solid #CFC7B6}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 22pt}
+.fl{display:flex;align-items:flex-end;gap:6pt;height:26pt;border-bottom:0.8pt solid #CFC7B6;font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest);padding-bottom:3pt}
+.fl .u{margin-left:auto;font-weight:500;color:#8B8577;letter-spacing:.04em;text-transform:none;font-size:8.5pt}
+.fl .u b{display:inline-block;width:0.5in}
+.opts{display:flex;flex-wrap:wrap;gap:4pt 12pt;font-size:9pt;margin-top:5pt}
+.opts span::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:5pt;vertical-align:-1pt;background:#fff}
+.sketch{border:1pt solid #CFC7B6;border-radius:8pt;background:#fff;position:relative}
+.sketch span{position:absolute;left:10pt;top:8pt;font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#A39C8D}
+.big{font-size:11.5pt;line-height:1.55}
+.diff{display:grid;grid-template-columns:1fr 1fr;gap:12pt}
+.diff>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:13pt 14pt}
+.diff h3{margin:0 0 5pt}
+.diff p{margin:0;font-size:11pt;line-height:1.5}
+.tag{display:inline-block;font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:10pt 0 4pt;border-top:3pt solid var(--forest);}
+.timeline div{padding:9pt 8pt 0 0;font-size:10pt;line-height:1.35;position:relative}
+.timeline div::before{content:"";position:absolute;top:-8pt;left:0;width:11pt;height:11pt;border-radius:50%;background:var(--paper);border:2.5pt solid var(--forest)}
+.timeline div.hot::before{border-color:var(--clay);background:var(--clay)}
+.timeline b{display:block;font:600 12pt/1.2 var(--serif);color:var(--forest);margin-bottom:2pt}
+.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin:10pt 0}
+.layers>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:12pt;position:relative}
+.layers .num{font:600 26pt/1 var(--serif);color:var(--clay)}
+.layers h3{margin:6pt 0 4pt}
+.layers p{font-size:10.5pt;margin:0 0 6pt}
+.layers .eg{font-size:9.5pt;color:#6B6B66;border-top:0.6pt solid var(--line);padding-top:5pt}
+.sym{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.sym>div{border-radius:9pt;padding:11pt 13pt;background:#fff;border:1pt solid var(--line)}
+.sym h3{margin:0 0 5pt;font-size:12.5pt}
+.sym .lbl{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin:7pt 0 3pt}
+.sym p,.sym li{font-size:10.3pt;line-height:1.45}
+.sym ul{margin:0;padding-left:13pt}
+.em{background:var(--forest);color:var(--stone);border-radius:9pt;padding:12pt 15pt;margin-top:10pt}
+.em h3{color:var(--stone);margin:0 0 4pt}
+.em p{margin:0;font-size:11pt}
+.ess{display:grid;grid-template-columns:1fr 1fr;gap:8pt 14pt}
+.ess>div{display:grid;grid-template-columns:26pt 1fr;gap:8pt;padding:11pt 0;border-bottom:0.6pt solid var(--line)}
+.ess .n{font:600 16pt/1 var(--serif);color:var(--clay)}
+.ess h3{margin:0 0 3pt;font-size:13pt}
+.ess p{margin:0;font-size:10.2pt;line-height:1.42}
+.cl{display:grid;grid-template-columns:1fr 1fr;gap:4pt 22pt}
+.cl h3{margin:10pt 0 2pt;font-size:12pt}
+.cl ul.check li{font-size:10.5pt;padding:5.5pt 0 5.5pt 19pt}
+.ltab td{font-size:10pt;line-height:1.4;padding:8pt 6pt}
+.ltab td:first-child{font-weight:600;color:var(--forest);white-space:nowrap}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.qc{border:1.2pt dashed #A39C8D;padding:18pt 18pt;height:4.6in;background:#fff;margin:-0.6pt}
+.qc h3{margin:0 0 8pt;font-size:15pt}
+.qc .kicker{margin-bottom:5pt}
+.qc ul.check li{font-size:10pt;padding:4pt 0 4pt 18pt}
+.qc ul.check li::before{width:9pt;height:9pt;top:4pt}
+.qc p{font-size:10pt;margin:0 0 7pt}
+.hikehead{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt;margin-bottom:4pt}
+.hikehead .no{font:600 24pt/1 var(--serif);color:var(--forest)}
+.hikehead .no small{font:700 8pt/1 var(--sans);letter-spacing:.16em;color:var(--clay);display:block;margin-bottom:6pt;text-transform:uppercase}
+.src{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.src>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:15pt 15pt;min-height:1.45in}
+.src h3{margin:0 0 3pt;font-size:12pt}
+.src .url{font:600 9pt/1.3 var(--sans);color:var(--clay);margin-bottom:4pt}
+.src p{margin:0;font-size:10.5pt;line-height:1.42}
+.back{background:var(--forest);color:var(--stone);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.back h2{color:var(--stone)}
+.back p{color:#D9DED6;max-width:4.6in}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+.cover.photo>div{position:relative}
+.cover.photo .cphoto,.cover.photo .cshade{position:absolute}
+.cover.photo h1{color:#F5F1EA}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{color:#222;text-shadow:none}
+html.bw .cover.photo .sub{color:#333}
+html.bw .page{background:#fff}
+html.bw{--forest:#222;--clay:#444;--sage:#666;--rust:#333;--soft:#fff}
+html.bw .cover,html.bw .back{background:#fff;color:#222;border:2pt solid #222}
+html.bw .cover h1,html.bw .back h2{color:#222}
+html.bw .cover .sub,html.bw .cover .meta,html.bw .cover .brand,html.bw .back p,html.bw .back .brand{color:#333 !important}
+html.bw .cover svg *{fill:none !important;stroke:#222 !important}
+html.bw .box,html.bw .em{background:#fff;border:0.8pt solid #999;color:#222}
+html.bw .em h3,html.bw .box.forest,html.bw .box.forest h3{color:#222}
+html.bw .warn{background:#fff}
+html.bw .timeline div::before{background:#fff}
+html.bw .timeline div.hot::before{background:#444}
+
+.glance{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin-top:6pt}
+.glance>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:12pt 14pt}
+.glance h3{margin:0 0 6pt;font-size:15pt}
+.glance table{margin:0}
+.glance td{font-size:10pt;padding:5pt 4pt;line-height:1.35}
+.glance td:first-child{font:700 7pt/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--sage);width:0.85in;padding-top:7pt}
+.seas{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin-top:4pt}
+.seas>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 13pt}
+.seas>div.best{border:1.6pt solid var(--forest)}
+.seas h3{margin:0 0 2pt;font-size:13.5pt}
+.seas .m{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.seas p{margin:0;font-size:10.2pt;line-height:1.45}
+.bk{border-top:1.5pt solid var(--forest);margin-top:6pt}
+.bk>div{display:grid;grid-template-columns:1.25in 1fr;gap:14pt;padding:10pt 0;border-bottom:0.6pt solid var(--line)}
+.bk b{font:600 13pt/1.2 var(--serif);color:var(--forest)}
+.bk p{margin:0;font-size:10.3pt;line-height:1.45}
+.fee td{font-size:10pt;padding:6pt 6pt}
+.plan{border:1pt solid var(--line);border-radius:9pt;background:#fff;padding:11pt 14pt;margin-bottom:10pt}
+.plan .ph{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2pt solid var(--forest);padding-bottom:5pt;margin-bottom:3pt}
+.plan .ph b{font:600 17pt/1 var(--serif);color:var(--forest)}
+.plan .ph span{font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#8B8577}
+.plan .d{display:grid;grid-template-columns:0.62in 1fr;gap:10pt;padding:6pt 0;border-bottom:0.6pt solid var(--line);font-size:10pt;line-height:1.42}
+.plan .d:last-child{border-bottom:0}
+.plan .d i{font:normal 700 7.5pt/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--clay)}
+.reg{display:grid;grid-template-columns:1fr;gap:10pt}
+.reg>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:13pt 17pt}
+.reg h3{margin:0 0 5pt;font-size:16pt}
+.reg .w{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.reg p{margin:0 0 6pt;font-size:11.2pt;line-height:1.55}
+.reg p:last-child{margin:0}
+.hk{background:#fff;border:1pt solid var(--line);border-radius:10pt;padding:15pt 18pt;margin-bottom:13pt}
+.hk .top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt}
+.hk .top h3{margin:0;font-size:20pt}
+.hk .top small{display:block;font:700 7.5pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.hk .top .lv{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);border:1.2pt solid var(--forest);border-radius:20pt;padding:4pt 8pt;white-space:nowrap}
+.hk .st{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:11pt 0 9pt;border-bottom:0.6pt solid var(--line);padding-bottom:10pt}
+.hk .st div{font-size:10pt;line-height:1.3;padding-right:6pt}
+.hk .st b{display:block;font:700 6.8pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:4pt}
+.hk .st span{font:600 15pt/1.2 var(--serif);color:var(--forest);display:block}
+.hk .st em{font-style:normal;font-size:9.3pt;color:#6B6B66}
+.hk p{margin:0 0 6pt;font-size:10.9pt;line-height:1.52}
+.hk p:last-child{margin:0}
+.hk .lb{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin-right:4pt}
+.hk .nt{margin-top:9pt;font-size:10.4pt;line-height:1.45;background:var(--soft);border-radius:6pt;padding:9pt 12pt}
+.dist{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:8pt 0 4pt}
+.dist>div{border-radius:10pt;padding:14pt 16pt;text-align:center}
+.dist .a{background:var(--forest);color:var(--stone)}
+.dist .b{background:#fff;border:1.6pt solid var(--forest)}
+.dist .n{font:600 34pt/1 var(--serif)}
+.dist .a .n{color:var(--stone)} .dist .b .n{color:var(--forest)}
+.dist .u{font:700 8pt/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-top:4pt}
+.dist p{margin:6pt 0 0;font-size:10.3pt}
+.dist .a p{color:#D9DED6}
+.wild{display:grid;grid-template-columns:repeat(3,1fr);gap:0 16pt}
+.wild ul.check li{font-size:10.2pt;padding:5pt 0 5pt 19pt}
+.wild ul.check li{display:flex;align-items:flex-end}.wild ul.check li span{flex:1;margin-left:8pt;border-bottom:0.8pt solid #CFC7B6;height:10pt;min-width:0.3in}
+.dp .fl{height:28pt}
+.bud td{height:30pt;font-size:10.5pt}
+.src>div{min-height:1.62in}.bud td.a{width:1.05in;border-left:0.6pt solid var(--line)}
+.bud td.c{font-weight:600;color:var(--forest)}
+.bud tr.tot td{border-top:1.5pt solid var(--forest);font-weight:700;color:var(--forest)}
+.qq{border-top:1.5pt solid var(--forest);margin-top:4pt}
+.qq>div{padding:8pt 0 4pt;border-bottom:0.6pt solid var(--line)}
+.qq b{display:block;font-size:10.8pt;color:var(--forest);font-weight:600;margin-bottom:2pt}
+.qq .wl{height:36pt;border-bottom:0.8pt dashed #CFC7B6}
+.bkcards{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:18pt 0 6pt;width:5.6in}
+.bkcards div{border:1pt solid #6E8170;border-radius:9pt;padding:12pt;text-align:left}
+.bkcards b{display:block;font:600 13pt/1.2 var(--serif);color:var(--stone);margin-bottom:4pt}
+.bkcards span{font-size:9.5pt;color:#CFD6CC;line-height:1.4}
+html.bw .dist .a{background:#fff;color:#222;border:1.6pt solid #222}
+html.bw .dist .a .n,html.bw .dist .a p{color:#222}
+html.bw .bkcards b,html.bw .bkcards span{color:#222}
+html.bw .hk .nt{background:#fff;border:0.6pt solid #999}
+
+.qs{margin:6pt 0 10pt;border-top:1.5pt solid var(--forest)}
+.qr{display:grid;grid-template-columns:1fr auto;gap:14pt;align-items:center;padding:7.5pt 0;border-bottom:0.6pt solid var(--line);font-size:10.8pt}
+.yn{display:inline-flex;gap:12pt;font:600 8pt/1 var(--sans);color:var(--forest);white-space:nowrap}
+.yn i{display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:3pt;vertical-align:-1pt;background:#fff}
+.gl td{font-size:10.2pt;padding:6.5pt 6pt;line-height:1.4}
+.gl td:first-child{font-weight:600;color:var(--forest);width:1.45in}
+.rt{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin:6pt 0}
+.rt>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:10pt 13pt}
+.rt h3{margin:0 0 4pt;font-size:12.5pt}
+.rt p{margin:0;font-size:10.3pt;line-height:1.45}
+.rt .n{font:600 20pt/1 var(--serif);color:var(--clay);margin-bottom:4pt}
+.wkp td{font-size:10.2pt;padding:7pt 6pt;line-height:1.38;vertical-align:top}
+.wkp td:first-child{font:600 13pt/1.2 var(--serif);color:var(--forest);width:0.85in}
+.wkp td.d{white-space:nowrap;font-weight:600;color:var(--forest);width:1.25in}
+.wkp td.t{width:0.6in;text-align:center}
+.wkp td.t::before{content:"";display:inline-block;width:10pt;height:10pt;border:1.1pt solid var(--forest);border-radius:2pt;background:#fff}
+.gear td{font-size:10.2pt;padding:6pt 6pt}
+.gear td.b{width:0.3in}
+.gear td.b::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;background:#fff;vertical-align:-1pt}
+.gear tr.sec td{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);padding-top:11pt;border-bottom:1pt solid var(--forest)}
+.gear .n{color:#8B8577;font-size:8.8pt}
+.idc{border:1.4pt dashed #A39C8D;border-radius:4pt;background:#fff;padding:14pt 16pt;margin-bottom:12pt}
+.idc .top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2pt solid var(--forest);padding-bottom:5pt;margin-bottom:2pt}
+.idc .top b{font:600 15pt/1 var(--serif);color:var(--forest)}
+.idc .top span{font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+.idc .fl{height:23pt}
+.log{width:100%;border-collapse:collapse;margin:4pt 0}
+.log th{font-size:7pt;padding:5pt 4pt;letter-spacing:.08em}
+.log td{height:47pt;border-bottom:0.6pt solid #CFC7B6;border-right:0.6pt solid var(--line);font-size:9pt;color:#8B8577;vertical-align:top;padding:4pt}
+.log td:last-child{border-right:0}
+.log td.no{font:600 13pt/1 var(--serif);color:var(--forest);width:0.3in;vertical-align:middle;text-align:center}
+.log .r{white-space:nowrap;font-size:8pt}
+.log .r i{display:inline-block;width:8pt;height:8pt;border:1pt solid var(--forest);border-radius:50%;margin-right:2pt;background:#fff}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin:8pt 0}
+.tri>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 12pt}
+.tri h3{margin:0 0 4pt;font-size:12.5pt}
+.tri p{margin:0;font-size:10.1pt;line-height:1.45}
+.tri .tag{margin-bottom:5pt}
+.bark{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin:6pt 0 4pt}
+.bark>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:10pt 11pt}
+.bark .L{font:600 26pt/1 var(--serif);color:var(--clay)}
+.bark p{margin:4pt 0 0;font-size:9.8pt;line-height:1.38}
+.sig{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin:8pt 0}
+.sig>div{border-radius:9pt;padding:11pt 13pt;background:#fff;border:1pt solid var(--line)}
+.sig h3{margin:0 0 5pt;font-size:12.5pt}
+.sig ul{margin:0;padding-left:14pt}
+.sig li{font-size:10.3pt;line-height:1.45;margin-bottom:2pt}
+.sig .stop{border:1.6pt solid var(--rust)}
+.dog{float:right;margin:0 0 6pt 14pt}
+.pl .fl{height:25pt}
+.pl .wl{height:24pt}
+.big p{font-size:11.3pt}
+html.bw .sig .stop{border-color:#333}
+.page:not(.cover):not(.back) p{font-size:11.6pt;line-height:1.55}
+.page:not(.cover):not(.back) p.lead{font-size:13pt;line-height:1.45}
+.page:not(.cover):not(.back) p.small{font-size:9pt;line-height:1.45}
+ul.check li{font-size:11.4pt;padding:6.5pt 0 6.5pt 21pt}
+ul.check li::before{top:8pt}
+.cl ul.check li{font-size:11pt;padding:6.5pt 0 6.5pt 20pt}
+.gl td{font-size:11pt;padding:7pt 7pt;line-height:1.45}
+.rt p,.tri p{font-size:11pt;line-height:1.5}
+.rt>div,.tri>div{padding:13pt 14pt}
+.sig li{font-size:11pt;line-height:1.5;margin-bottom:3pt}
+.sig>div{padding:13pt 15pt}
+.bark p{font-size:10.6pt}
+.bark>div{padding:12pt 12pt}
+.qr{padding:14.5pt 0;font-size:11.4pt}
+.wkp td{font-size:11pt;padding:11pt 7pt;line-height:1.45}
+.box p,.warn{font-size:11.2pt}
+.idc .fl{height:28pt}
+.idc{padding:13pt 18pt;margin-bottom:12pt}
+.pl .fl{height:33pt}
+.pl .wl{height:31pt}
+.pl .lab{margin-top:16pt}
+.pl .opts{font-size:10pt}
+.log td{height:73pt}
+.gear td{font-size:11pt;padding:6.4pt 6pt}
+.gear .n{font-size:9.4pt}
+</style></head><body><section class="page cover photo"><div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="470" height="330" viewBox="0 0 470 330" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<circle cx="380" cy="60" r="22" stroke="#F5F1EA" stroke-width="3"/>
+<path d="M0 230 L110 100 L180 170 L270 60 L470 230" stroke="#F5F1EA" stroke-width="3.5"/>
+<g transform="translate(150 170) scale(0.9)"><path d="M38 70 C50 58 110 58 150 64 L160 50 L168 38 L176 44 L180 34 L188 46 C196 50 204 56 206 62 L192 70 L172 72 C168 84 164 92 160 96 L164 128 L154 128 L148 100 C130 104 100 104 80 100 L70 128 L60 128 L62 98 C54 94 48 88 46 80 Z" stroke="#B85C38" stroke-width="3.5"/><path d="M44 72 C30 66 22 56 18 44" stroke="#B85C38" stroke-width="3.5"/></g>
+<path d="M20 290 H450" stroke="#F5F1EA" stroke-width="3"/>
+</svg></div>
+<div><h1>Hiking With Your Dog</h1><p class="sub">A friendly trail guide for dog owners: getting your dog trail-ready, where dogs are allowed, water, heat, paws, ticks and wildlife, plus pack lists, an ID card and a hike log for the two of you.</p>
+<div class="meta" style="margin-top:22pt"><span>20 pages</span><span>Guide + checklists</span><span>mi + km, °F + °C</span></div></div></section><section class="page "><div class="kicker">Start here</div><h2>Two of you on the trail</h2>
+<p class="lead">A dog makes a hike better: more excited at the trailhead, more curious on the way, happier at the top. This guide helps you plan hikes that are safe and fun for both of you, and polite to everyone else.</p>
+<div class="cols" style="margin-top:4pt">
+<div><h3>This guide is for you if</h3><ul class="check"><li>Your dog walks well around the neighborhood and you want to go further</li><li>You are new to hiking, new to dogs, or both</li><li>You hike day trips in the US or Canada</li><li>You want simple pack lists and a hike log</li></ul></div>
+<div><h3>What is inside</h3><ul class="check"><li><b>Pages 3 to 12:</b> the guide, one topic per page</li><li><b>Pages 13 to 15:</b> first aid kit and pack lists</li><li><b>Pages 16 and 17:</b> dog ID card and trail plan</li><li><b>Pages 18 and 19:</b> a log for 16 hikes</li></ul></div></div>
+<div class="box forest"><h3>Talk to your vet first</h3><p style="margin:0">Before your dog's first longer hikes, ask your vet whether your dog is ready and how far to go. This matters most for puppies (their joints are still growing), older dogs, dogs with health problems or extra weight, and flat-faced breeds such as pugs and bulldogs, which overheat easily. Ask about tick and flea prevention and vaccines for where you hike, too.</p></div>
+<h3>The three habits that matter most</h3>
+<div class="tri" style="margin:4pt 0 2pt"><div><div class="tag">Leash</div><p>On the leash, close to you, every time the rules ask for it.</p></div><div><div class="tag">Water</div><p>Clean water for your dog at every stop, carried from home.</p></div><div><div class="tag">Bags</div><p>Every poop bagged and carried out, all the way to the bin.</p></div></div>
+<h3>How to use it</h3>
+<p>Read the guide once. Print the checklists, ID card and log, and keep a filled-in card in your pack. Units are in miles and km, °F and °C.</p>
+<p class="small">General information, not veterinary advice. Dog rules change: always check the official page for the place you hike.</p><div class="folio"><span>Hiking With Your Dog</span><span>2</span></div></section><section class="page "><div class="kicker">Before you go</div><h2>Is my dog trail-ready?</h2>
+<p class="lead">Tick each line honestly. A "not yet" is not a stop sign, it is your training list for the next few weeks.</p>
+<div class="qs"><div class="qr"><span>My vet has said my dog is healthy enough for longer walks and hikes</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div><div class="qr"><span>My dog is fully grown, or my vet has told me how far a young dog can go</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div><div class="qr"><span>My dog walks on a loose leash without pulling me off balance</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div><div class="qr"><span>My dog comes back when called, even when distracted</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div><div class="qr"><span>My dog can calmly pass other dogs, people and bikes on a narrow path</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div><div class="qr"><span>My dog has walked 1 to 2 hours on easy ground and was fine the next day</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div><div class="qr"><span>My dog is used to a harness and maybe a small dog pack</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div><div class="qr"><span>My dog's vaccines, tick prevention and ID tag are up to date</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div><div class="qr"><span>My dog is microchipped, and the chip is registered with my current phone number</span><span class="yn"><span><i></i>Yes</span><span><i></i>Not yet</span></span></div></div>
+<div class="cols">
+<div class="box" style="margin:0"><h3 style="margin-top:0">Work on manners</h3><p style="margin:0">Practice "sit", "wait" and "leave it" on busy paths in town. A short training class is worth it if your dog pulls hard or reacts to other dogs. Reward calm behavior with a treat.</p></div>
+<div class="box" style="margin:0"><h3 style="margin-top:0">Work on fitness</h3><p style="margin:0">Add a little distance to your regular walks each week, with some hills. Fitness builds over weeks, not in one big weekend. Page 4 has a simple plan.</p></div></div><div class="folio"><span>Hiking With Your Dog</span><span>3</span></div></section><section class="page "><div class="kicker">Getting fit together</div><h2>Build up slowly: a 4-week start</h2>
+<p class="lead">This is a gentle example for a healthy adult dog that already walks every day. Your vet may suggest something different, and that advice comes first.</p>
+<table class="wkp"><tr><th>Week</th><th>Longest hike</th><th>What to practice</th><th>Done</th></tr>
+<tr><td>1</td><td class="d">2 mi / 3 km<br><span class="small">mostly flat</span></td><td>Harness and leash on the trail, water breaks, a short sit at a viewpoint. Watch how your dog handles new smells and sounds.</td><td class="t"></td></tr>
+<tr><td>2</td><td class="d">3 mi / 5 km<br><span class="small">a few small hills</span></td><td>Stepping aside for other hikers. Offering water every stop. Checking paws at the halfway point.</td><td class="t"></td></tr>
+<tr><td>3</td><td class="d">4 mi / 6.5 km<br><span class="small">some climbing</span></td><td>A snack break and a longer rest. If you plan to use a dog pack, try it empty first.</td><td class="t"></td></tr>
+<tr><td>4</td><td class="d">5 mi / 8 km<br><span class="small">your usual kind of trail</span></td><td>A full "real" hike with your pack list (pages 14 and 15). Check your dog that evening and the next morning.</td><td class="t"></td></tr></table>
+<p>Keep the other walks in the week short and easy. If your dog is stiff, limping or very tired the next day, go back a step and talk to your vet if it does not clear up.</p>
+<div class="sig">
+<div><h3>Signs your dog needs a rest</h3><ul><li>Lagging behind you or lying down on the trail</li><li>Heavy panting that does not settle after a few minutes in the shade</li><li>Looking for every bit of shade or water</li><li>Licking or favoring a paw</li></ul></div>
+<div class="stop"><h3>Signs to stop and turn back</h3><ul><li>Limping, or refusing to keep going</li><li>Stumbling, confusion or vomiting</li><li>Signs of overheating (page 8)</li><li>A cut pad or a paw that bleeds</li></ul></div></div>
+<h3>On every hike day</h3>
+<p>Short warm-up walk at the trailhead, water at every stop, a paw check halfway, and a slow last mile to cool down before the car.</p>
+<p class="small">The dog sets the pace and the distance, not the plan. Turning back early is always a good hike.</p><div class="folio"><span>Hiking With Your Dog</span><span>4</span></div></section><section class="page "><div class="kicker">Rules</div><h2>Where dogs can hike</h2>
+<p class="lead">This is the most common surprise for new dog hikers: the place matters. Many beautiful parks keep dogs off their trails. Always check before you drive there.</p>
+<table class="gl">
+<tr><td>US national parks</td><td>The strictest. In most parks, pets are allowed in campgrounds, parking areas and along roads, but not on most trails. A few parks welcome leashed dogs on many trails. Rules differ park by park, so read the "Pets" page on the park's own nps.gov site.</td></tr>
+<tr><td>US national forests and BLM land</td><td>Usually the most dog-friendly. Dogs are often allowed on trails, with a leash required in campgrounds and other developed areas. Some areas have extra rules. Ask the local ranger district.</td></tr>
+<tr><td>State parks</td><td>Many allow leashed dogs on trails. Leash length limits are common (often 6 ft / 1.8 m). Some parks or trails do not allow dogs. Check the park's page.</td></tr>
+<tr><td>Canada</td><td>In Parks Canada national parks, dogs must be on a leash at all times, and some trails and areas close to dogs, often because of wildlife. Provincial parks set their own rules. Check the park's official page.</td></tr>
+<tr><td>Local and city trails</td><td>Rules vary. Look for signs at the trailhead and respect off-leash areas only where they are clearly marked.</td></tr></table>
+<h3>The BARK Ranger rules</h3>
+<p>Pet manners in four letters, from the National Park Service:</p>
+<div class="bark"><div><div class="L">B</div><p><b>Bag</b> your pet's waste and carry it out.</p></div><div><div class="L">A</div><p><b>Always</b> leash your pet.</p></div><div><div class="L">R</div><p><b>Respect</b> wildlife.</p></div><div><div class="L">K</div><p><b>Know</b> where you can go.</p></div></div>
+<div class="box"><h3 style="margin-top:0">Check the rules in two minutes</h3><p style="margin:0">Search the park name plus "pets", open the official page (.gov, .gc.ca or the state or provincial park site) and find the trails open to dogs. Not clear? Call the visitor center.</p></div>
+<div class="folio"><span>Hiking With Your Dog</span><span>5</span></div></section><section class="page "><div class="kicker">On the trail</div><h2>Trail manners</h2>
+<p class="lead">Not everyone loves dogs, and some people are afraid of them. A calm, close, leashed dog keeps trails open to dogs for everyone.</p>
+<div class="rt">
+<div><div class="n">1</div><h3>Keep the leash on</h3><p>Even a friendly dog with great recall can chase a deer or run up to a scared child. Follow the leash rules, and use a fixed leash, not a long retractable one, on narrow trails.</p></div>
+<div><div class="n">2</div><h3>Step aside and wait</h3><p>When you meet other hikers, move to the side of the trail, ask your dog to sit, and let them pass. Hold the leash short until they are by.</p></div>
+<div><div class="n">3</div><h3>Ask before saying hello</h3><p>Do not let your dog greet other dogs or people unless the other person says yes. "Is it OK if they say hi?" is all it takes.</p></div>
+<div><div class="n">4</div><h3>Keep the noise down</h3><p>Barking carries far in quiet places. If your dog barks at everything, practice on shorter, quieter trails first.</p></div></div>
+<h3>Meeting horses</h3>
+<p>Horses can be startled by dogs. Step off the trail, ideally on the downhill side, keep your dog close and sitting, and say hello to the rider so the horse knows you are a person. Ask the rider what they would like you to do.</p>
+<p><b>Meeting bikes:</b> move aside with your dog on the far side from the bike, on a short leash.</p>
+<h3>Off-leash areas</h3>
+<p>Let your dog off leash only where the rules clearly allow it, and only if it comes back the first time you call, even near wildlife and other dogs.</p>
+<div class="warn"><b>People who are scared of dogs.</b> If someone looks nervous, steps back or picks up a child, give them extra room, keep your dog close and do not say "he is friendly". Just let them pass.</div><div class="folio"><span>Hiking With Your Dog</span><span>6</span></div></section><section class="page "><div class="kicker">Fuel</div><h2>Water and food on the trail</h2>
+<p class="lead">Your dog cannot tell you it is thirsty, and it cannot carry a drink bottle in its paw. Plan water and snacks for two.</p>
+<h3>Water</h3>
+<ul class="check"><li>Carry water for your dog as well as for yourself. Dogs often need more on a hike than at home, especially when it is warm</li><li>Offer water at every stop, about every 15 to 30 minutes in warm weather, even if your dog did not ask</li><li>Use a collapsible bowl or a dog bottle with a built-in trough</li><li>Plan to finish the hike with some water left over</li><li>Ask your vet how much water your dog needs for the hikes you plan</li></ul>
+<h3>Food</h3>
+<ul class="check"><li>Bring dog snacks or a small portion of their usual food</li><li>Offer a small snack at longer breaks, rather than one big meal</li><li>Many vets advise against a big meal just before or right after hard exercise, especially for large, deep-chested breeds. Ask yours about timing</li><li>Pack out every wrapper and dropped crumb</li></ul>
+<h3>After the hike</h3>
+<p>Offer water first. Give the main meal later, once your dog has cooled down and settled. A tired dog that will not eat or drink after a hike should see a vet.</p>
+<div class="box"><h3 style="margin-top:0">Never share these on the trail</h3><p style="margin:0">Some human hiking snacks are poisonous to dogs, including chocolate, grapes and raisins (often in trail mix), and anything with xylitol (some gums, candies and peanut butters). Keep your snacks zipped and out of reach.</p></div>
+<p class="small">Collapsible bowl, dog water bottle and snacks are on the dog pack list on page 14.</p><div class="folio"><span>Hiking With Your Dog</span><span>7</span></div></section><section class="page "><div class="kicker">Weather</div><h2>Heat and cold</h2>
+<p class="lead">Dogs cool down mainly by panting, which works much less well than sweating. Heat is one of the biggest risks for hiking dogs.</p>
+<div class="cols">
+<div><h3>On warm days</h3><ul class="check"><li>Hike early in the morning or in the evening</li><li>Pick shady trails, ideally with safe water nearby</li><li>Check the ground: if you cannot keep the back of your hand on pavement or rock for 7 seconds, it is too hot for paws</li><li>Rest in the shade often and offer water</li><li>Shorten the hike, or leave your dog home on hot days</li></ul></div>
+<div><h3>On cold days</h3><ul class="check"><li>Short-coated, small and older dogs may need a dog jacket</li><li>Snow can pack into balls between the toes: check paws often</li><li>Booties protect paws from ice and road salt; practice with them at home first</li><li>Dry your dog off before a long car ride home</li><li>Watch for shivering, lifting paws or slowing down</li></ul></div></div>
+<div class="sig">
+<div class="stop"><h3>Signs of overheating</h3><ul><li>Very heavy, fast panting</li><li>Lots of drool, or very red gums and tongue</li><li>Weakness, stumbling or confusion</li><li>Vomiting or diarrhea</li><li>Collapse</li></ul></div>
+<div class="stop"><h3>What to do right away</h3><ul><li>Stop and move into the shade</li><li>Offer small amounts of water</li><li>Wet your dog with cool (not ice-cold) water, especially the belly and paws, and fan it</li><li>Call a vet and head for help: overheating can be an emergency even if your dog seems to recover</li></ul></div></div>
+<div class="warn"><b>Never leave your dog in a parked car on a warm day,</b> not even for a few minutes with the windows cracked. Cars heat up fast, even in the shade.</div>
+<p class="small">Flat-faced breeds, thick-coated breeds, overweight, older and very young dogs overheat more easily. Ask your vet what temperatures are safe for yours.</p><div class="folio"><span>Hiking With Your Dog</span><span>8</span></div></section><section class="page "><div class="kicker">After every hike</div><h2>Paws and ticks</h2>
+<p class="lead">Two quick checks turn small problems into nothing. Do them at the car, before your dog jumps in.</p>
+<h3>Paw check</h3>
+<ul class="check"><li>Look at each pad for cuts, cracks, blisters or worn, shiny patches</li><li>Spread the toes and remove burrs, grass seeds, small stones and snow</li><li>Feel for heat or swelling, and watch for limping or licking later that day</li><li>Keep nails trimmed: long nails catch and split on rocks</li><li>Brush the coat: it finds burrs, seeds and ticks hiding in the fur</li><li>A small cut: rinse with clean water and keep it clean. A deep or bleeding cut: cover it, keep your dog off it and see a vet</li></ul>
+<h3>Tick check, for the dog</h3>
+<p>Run your hands slowly over your dog and feel for small bumps. Look closely at the places ticks like most:</p>
+<div class="bark"><div><p><b>Head and ears</b><br>inside and around the ears</p></div><div><p><b>Neck</b><br>under the collar or harness</p></div><div><p><b>Legs</b><br>armpits, between the toes</p></div><div><p><b>Belly and tail</b><br>groin, under the tail</p></div></div>
+<p>If you find one, remove it with fine-tipped tweezers or a tick tool: grip it close to the skin and pull straight out with steady pressure. Clean the spot. Ask your vet about tick prevention for where you hike.</p>
+<p>Then watch the spot over the next few weeks. If your dog seems unwell, tired or stiff, or stops eating, call your vet and mention the tick bite.</p>
+<div class="box"><h3 style="margin-top:0">And for you</h3><p style="margin:0">Check yourself too: behind the knees, the waist, the hairline and behind the ears. A shower soon after the hike helps. A dog can also carry ticks into the car and home.</p></div><div class="folio"><span>Hiking With Your Dog</span><span>9</span></div></section><section class="page "><div class="kicker">Wild neighbors</div><h2>Wildlife</h2>
+<p class="lead">A leash is the best wildlife protection there is. A dog that chases an animal can get hurt, lost, or bring trouble back to you.</p>
+<div class="tri">
+<div><div class="tag">Bears</div><h3>Keep your dog close</h3><p>An off-leash dog can surprise a bear and run back to you with the bear behind it. Keep your dog leashed, make noise on blind corners, and store dog food like your own.</p></div>
+<div><div class="tag">Snakes</div><h3>Stay on the trail</h3><p>Keep your dog on the path, away from tall grass, rock piles and logs. If you think it was bitten, keep it calm, carry it if you can and get to a vet right away.</p></div>
+<div><div class="tag">Porcupines</div><h3>Leave quills to a vet</h3><p>Curious dogs often get a face full of quills. Do not pull them yourself: they break, and a dog in pain may bite. Go to a vet.</p></div></div>
+<h3>Others to know about</h3>
+<table class="gl">
+<tr><td>Deer, elk, moose</td><td>Big animals can kick hard, especially mothers with young. Give them lots of room and turn around if one is on the trail.</td></tr>
+<tr><td>Coyotes</td><td>Usually shy, but they may follow or test a dog. Keep your dog leashed and close, and leave calmly.</td></tr>
+<tr><td>Skunks</td><td>Mostly out at dawn and dusk. A sprayed dog is unpleasant but usually fine; rinse its eyes with clean water.</td></tr>
+<tr><td>Small animals</td><td>Squirrels and marmots are wildlife too. Do not let your dog chase or dig after them.</td></tr></table>
+<div class="box"><h3 style="margin-top:0">Hunting season</h3><p style="margin:0">In many forests, hunting is allowed in fall. Put a bright orange vest or bandana on your dog and wear something bright yourself. Check the hunting dates on your state or provincial wildlife agency's site.</p></div>
+<p class="small">Learn which animals live where you hike from the park or forest's official page, and follow its advice.</p><div class="folio"><span>Hiking With Your Dog</span><span>10</span></div></section><section class="page "><div class="kicker">Water</div><h2>Streams, lakes and crossings</h2>
+<p class="lead">Water is the best part of the hike for many dogs. A few simple habits keep it that way.</p>
+<h3>Carry clean water instead</h3>
+<p>Streams and lakes can carry germs and parasites that make dogs sick, the same ones that make people sick. The easy answer: bring clean water from home and offer it often, so your dog is less tempted to drink from puddles and ponds.</p>
+<div class="warn"><b>Stay away from scummy water.</b> Toxic algae (blue-green algae) can make water look green, blue-green or like spilled paint, and it can be deadly for dogs. If water looks or smells odd, or there is a warning sign, keep your dog out of it and do not let it drink or lick its fur. If your dog has been in it, rinse it with clean water and call a vet.</div>
+<h3>Crossing streams</h3>
+<ul class="check"><li>Cross only where the water is slow and shallow, well below your dog's chest</li><li>If the water is fast or deep, do not cross. Turn back or find another way</li><li>Keep your dog on leash, or carry a small dog across</li><li>A dog life jacket with a handle helps for swimming in calm lakes</li><li>Never throw sticks or balls into moving water</li></ul>
+<h3>Swimming</h3>
+<ul class="check"><li>Let your dog go in at its own pace; not every dog is a swimmer</li><li>Stay out of cold water, strong currents and big waves; rinse off lake water after</li><li>Watch for fishing hooks and line near the shore</li></ul>
+<div class="box"><h3 style="margin-top:0">Ask your vet</h3><p style="margin:0">Ask about vaccines and prevention for diseases your dog can catch from water and wildlife in your area. The answer depends on where you live and hike.</p></div><div class="folio"><span>Hiking With Your Dog</span><span>11</span></div></section><section class="page "><div class="kicker">Leave No Trace</div><h2>Poop and Leave No Trace</h2>
+<p class="lead">Dog waste is not "natural" on a trail. It can pollute water, spread disease to wildlife and other dogs, and it is one of the most common complaints about dogs on trails.</p>
+<div class="rt">
+<div><div class="n">1</div><h3>Bag it</h3><p>Pick it up every time, right away, with a bag. Bring more bags than you think you need.</p></div>
+<div><div class="n">2</div><h3>Carry it out</h3><p>Never leave a bag beside the trail "for the way back". Many are forgotten. A small odor-proof bag or a clip-on pouch makes carrying easy.</p></div>
+<div><div class="n">3</div><h3>Follow local rules</h3><p>Some places allow burying dog waste in a cathole away from water and trails; many ask you to pack it out. When in doubt, pack it out.</p></div>
+<div><div class="n">4</div><h3>Stay on the trail</h3><p>Keep your dog on the path, out of fragile plants, meadows and lake shores, and away from other people's campsites.</p></div></div>
+<h3>The seven Leave No Trace principles, with a dog</h3>
+<ul class="check"><li>Plan ahead: check the dog rules and the weather for that day</li><li>Travel on durable surfaces: trails and rock, not meadows</li><li>Dispose of waste properly: bag it, carry it out</li><li>Leave what you find: no digging, no chewing up plants</li><li>Respect wildlife: leash on, no chasing, no feeding</li><li>Minimize campfire impacts: keep your dog away from fire rings and hot coals</li><li>Be considerate of other visitors: quiet, close and polite</li></ul>
+<p class="small">Learn more about Leave No Trace at lnt.org.</p><div class="folio"><span>Hiking With Your Dog</span><span>12</span></div></section><section class="page "><div class="kicker">Checklist</div><h2>Dog first aid kit</h2>
+<p class="lead">A small kit for the scrapes and cuts that happen on a trail, and the phone numbers you need when it is more than that. It does not replace a vet.</p>
+<div class="cl">
+<div><h3>Wound care</h3><ul class="check"><li>Gauze pads and a gauze roll</li><li>Non-stick wound pads</li><li>Self-stick bandage wrap (vet wrap)</li><li>Medical tape</li><li>Saline or clean water to rinse wounds</li><li>Blunt-tip scissors</li></ul>
+<h3>Tools</h3><ul class="check"><li>Tick remover or fine-tipped tweezers</li><li>Disposable gloves</li><li>A spare dog bootie or sock to cover a hurt paw</li><li>A small towel</li></ul></div>
+<div><h3>Just in case</h3><ul class="check"><li>Emergency blanket</li><li>A soft muzzle or a strip of cloth (a dog in pain may bite, even its owner)</li><li>A spare leash</li><li>Any medicine your vet prescribed for your dog</li></ul>
+<h3>Paperwork</h3><ul class="check"><li>Your vet's phone number</li><li>Nearest 24-hour emergency vet clinic near the trail</li><li>Pet poison helpline number</li><li>Photo of your dog and vaccine records on your phone</li></ul></div></div>
+<div class="warn"><b>No human painkillers.</b> Many common human medicines, including ibuprofen and naproxen, are dangerous for dogs. Never give your dog any medicine unless a vet tells you to.</div>
+<div class="box"><h3 style="margin-top:0">Check it twice a year</h3><p style="margin:0">Replace anything used or out of date, and update the phone numbers when you travel somewhere new.</p></div>
+<p class="small">Consider a pet first aid class: many animal welfare groups and some vets offer one. Write the phone numbers on the ID card on page 16.</p><div class="folio"><span>Hiking With Your Dog</span><span>13</span></div></section><section class="page "><div class="kicker">Checklist</div><h2>Dog hiking pack list</h2>
+<p class="lead">Tick it off the night before. Items marked with a dot can go in your dog's own pack once your dog is used to carrying one.</p>
+<table class="gear">
+<tr class="sec"><td colspan="3">Wear</td></tr>
+<tr><td class="b"></td><td>Well-fitted harness</td><td class="n">two fingers fit under the straps</td></tr>
+<tr><td class="b"></td><td>Collar with ID tag and rabies tag</td><td class="n">phone number up to date</td></tr>
+<tr><td class="b"></td><td>Fixed leash</td><td class="n">check the local length rule</td></tr>
+<tr class="sec"><td colspan="3">Water and food</td></tr>
+<tr><td class="b"></td><td>Water for your dog</td><td class="n">plus a little extra</td></tr>
+<tr><td class="b"></td><td>Collapsible bowl or dog bottle</td><td class="n">&bull;</td></tr>
+<tr><td class="b"></td><td>Snacks or a small portion of food</td><td class="n">&bull; in a sealed bag</td></tr>
+<tr class="sec"><td colspan="3">Care</td></tr>
+<tr><td class="b"></td><td>Poop bags, plenty</td><td class="n">&bull;</td></tr>
+<tr><td class="b"></td><td>Odor-proof bag or pouch for used bags</td><td class="n">&bull;</td></tr>
+<tr><td class="b"></td><td>Dog first aid kit</td><td class="n">page 13</td></tr>
+<tr><td class="b"></td><td>Tick remover</td><td class="n">&nbsp;</td></tr>
+<tr><td class="b"></td><td>Towel for the car</td><td class="n">&nbsp;</td></tr>
+<tr class="sec"><td colspan="3">By weather</td></tr>
+<tr><td class="b"></td><td>Dog jacket</td><td class="n">cold, wet days or short coats</td></tr>
+<tr><td class="b"></td><td>Booties</td><td class="n">ice, salt, sharp rock</td></tr>
+<tr><td class="b"></td><td>Cooling vest or bandana</td><td class="n">warm days</td></tr>
+<tr><td class="b"></td><td>Light or reflective collar</td><td class="n">dawn, dusk, hunting season</td></tr>
+</table>
+<p class="small">Dog packs: ask your vet how much weight your dog can carry, start empty, add weight slowly and balance both sides. Puppies and older dogs should not carry packs.</p><div class="folio"><span>Hiking With Your Dog</span><span>14</span></div></section><section class="page "><div class="kicker">Checklist</div><h2>Your pack for a hike with your dog</h2>
+<p class="lead">Your usual day-hike kit, plus a few things that make hiking with a dog easier.</p>
+<div class="cl">
+<div><h3>The Ten Essentials</h3><ul class="check"><li>Navigation: map, compass or GPS, and you know how to use them</li><li>Headlamp with spare batteries</li><li>Sun protection: sunglasses, sunscreen, hat</li><li>First aid kit (yours, plus the dog kit)</li><li>Knife or multi-tool</li><li>Fire starter</li><li>Emergency shelter, such as a space blanket</li><li>Extra food</li><li>Extra water</li><li>Extra clothes</li></ul></div>
+<div><h3>Dog extras for you</h3><ul class="check"><li>Hands-free waist leash, for easier climbing</li><li>A second water bottle, just for the dog</li><li>Gloves for a strong puller</li><li>Bear spray in bear country, if the land manager recommends it</li><li>Plastic bag to keep the car seat clean</li></ul>
+<h3>Before you leave home</h3><ul class="check"><li>Check the dog rules for this exact trail</li><li>Check the weather and temperature</li><li>Share your trail plan (page 17)</li><li>Charge your phone</li></ul></div></div>
+<h3>For the drive home</h3>
+<div class="cl" style="margin-top:-4pt"><div><ul class="check"><li>Water and a bowl in the car</li><li>Old towel or sheet for the seat</li></ul></div><div><ul class="check"><li>A safe spot: crate, dog seat belt or barrier</li><li>Snack for after the cool-down</li></ul></div></div>
+<div class="box"><h3 style="margin-top:0">Tip: one shared bag</h3><p style="margin:0">Keep a "dog hike bag" packed by the door with the bowl, bags, first aid kit, towel and spare leash. Add fresh water and snacks and you are out the door in two minutes.</p></div><div class="folio"><span>Hiking With Your Dog</span><span>15</span></div></section><section class="page "><div class="kicker">Print, fill, carry</div><h2>Dog ID and emergency card</h2>
+<p>Fill in both cards. Keep one in your pack and one in the car. If you and your dog get separated, or if you are hurt and someone else has to care for your dog, this card tells them who to call.</p>
+<div class="idc"><div class="top"><b>If you find this dog</b><span>Dog ID and emergency card</span></div><div class="f2"><div class="fl">Dog's name</div><div class="fl">Breed / color</div><div class="fl">Owner</div><div class="fl">Owner phone</div><div class="fl">Second contact</div><div class="fl">Phone</div><div class="fl">Microchip no.</div><div class="fl">Rabies tag no.</div><div class="fl">Our vet</div><div class="fl">Vet phone</div><div class="fl">Medical notes</div><div class="fl">Medicines</div></div></div><div class="idc"><div class="top"><b>If you find this dog</b><span>Dog ID and emergency card</span></div><div class="f2"><div class="fl">Dog's name</div><div class="fl">Breed / color</div><div class="fl">Owner</div><div class="fl">Owner phone</div><div class="fl">Second contact</div><div class="fl">Phone</div><div class="fl">Microchip no.</div><div class="fl">Rabies tag no.</div><div class="fl">Our vet</div><div class="fl">Vet phone</div><div class="fl">Medical notes</div><div class="fl">Medicines</div></div></div>
+<div class="idc" style="padding:11pt 16pt"><div class="top"><b>Emergency vets near this trail</b><span>Fill in before each trip</span></div>
+<div class="f2"><div class="fl">Clinic name</div><div class="fl">Phone</div><div class="fl">Address</div><div class="fl">Open hours</div></div></div><div class="folio"><span>Hiking With Your Dog</span><span>16</span></div></section><section class="page "><div class="kicker">Plan</div><h2>Trail plan for the two of you</h2>
+<p>Fill it in before the hike, then share a copy or a photo with someone at home who will know when to expect you back.</p>
+<div class="pl"><div class="f2"><div class="fl">Date</div><div class="fl">Trail name</div><div class="fl">Park / forest</div><div class="fl">Trailhead</div><div class="fl">Distance<span class="u"><b></b>mi / <b></b>km</span></div><div class="fl">Elevation gain<span class="u"><b></b>ft / <b></b>m</span></div><div class="fl">Start time</div><div class="fl">Expected back by</div></div>
+<div class="lab">Dog rules for this trail</div>
+<div class="opts"><span>Dogs allowed</span><span>Leash required</span><span>Leash length limit: ______</span><span>Checked on the official page</span></div>
+<div class="lab">Weather and temperature</div><div class="opts"><span>Forecast checked</span><span>Max temp ______ °F / °C</span><span>Shade on the route</span><span>Hot ground: test with your hand</span></div>
+<div class="lab">Water on the route (check it looks clean before your dog goes in)</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="lab">Turnaround time</div><p class="small" style="margin:2pt 0 0">The time you turn back wherever you are, so you finish in daylight and before your dog is too tired.</p><div class="wl" style="height:24pt"></div>
+<div class="lab">Nearest emergency vet</div><div class="wl" style="height:24pt"></div>
+<div class="lab">Who knows our plan</div><div class="wl" style="height:24pt"></div>
+<div class="lab">Notes</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div></div><div class="folio"><span>Hiking With Your Dog</span><span>17</span></div></section><section class="page "><div class="kicker">Our trail log</div><h2>Dog hike log</h2>
+<p style="margin-bottom:4pt">One line per hike. Fill in the tail wags: how much your dog loved it, from one to five.</p><table class="log"><tr><th></th><th style="width:0.95in">Date</th><th style="width:1.75in">Trail and place</th><th style="width:0.9in">mi / km</th><th>Weather, water, wildlife, how the dog did</th><th style="width:0.75in">Tail wags</th></tr><tr><td class="no">1</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">2</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">3</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">4</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">5</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">6</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">7</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">8</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr></table><div class="folio"><span>Hiking With Your Dog</span><span>18</span></div></section><section class="page "><div class="kicker">Our trail log</div><h2>Dog hike log, continued</h2>
+<p style="margin-bottom:4pt">Before your next hike, look back: what did your dog love most?</p><table class="log"><tr><th></th><th style="width:0.95in">Date</th><th style="width:1.75in">Trail and place</th><th style="width:0.9in">mi / km</th><th>Weather, water, wildlife, how the dog did</th><th style="width:0.75in">Tail wags</th></tr><tr><td class="no">9</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">10</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">11</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">12</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">13</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">14</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">15</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr><tr><td class="no">16</td><td></td><td></td><td></td><td></td><td><span class="r"><i></i><i></i><i></i><i></i><i></i></span></td></tr></table><div class="folio"><span>Hiking With Your Dog</span><span>19</span></div></section><section class="page back"><div class="brand" style="font:700 9pt/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:28pt">HikeSupply Co.</div>
+<svg width="200" height="120" viewBox="0 0 200 120" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M10 110 L70 40 L100 75 L130 30 L190 110" stroke="#F5F1EA" stroke-width="4"/><circle cx="160" cy="25" r="10" fill="#B85C38" stroke="#B85C38"/></svg>
+<h2 style="margin-top:26pt">Happy trails, both of you</h2>
+<p>Thank you for choosing a HikeSupply guide. We hope it leads to many muddy paws, long naps after the hike and quiet moments at the top, side by side.</p>
+<p style="margin-top:14pt;font:600 9pt/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage)">Also from HikeSupply Co.</p>
+<div class="bkcards" style="grid-template-columns:1fr 1fr;width:5.2in;margin-top:8pt"><div><b>Beginner's Hiking Guide</b><span>Day-hike basics, from choosing a trail to reading the weather</span></div><div><b>Ultimate Hiking Packing Checklist</b><span>Packing lists for different kinds of trips</span></div></div>
+<p style="margin-top:18pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">hikesupplyco.com</p>
+<p class="small" style="color:#AEB8AA;margin-top:24pt">This guide is general information for dog owners who hike and does not replace advice from your veterinarian or official park rules. Rules, closures and conditions change: check official sources before every hike. In an emergency, contact a vet right away. For personal use only. Cover photo: Emilio Aguilar / Pexels.</p></section></body></html>
