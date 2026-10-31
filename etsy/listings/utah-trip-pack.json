@@ -18,7 +18,7 @@
   "moab",
   "canyonlands"
  ],
- "description": "Everything for a Utah national parks road trip in one download: the Trip Planning Guide to plan it, and the 10 Best Day Hikes GPX Route Collection to walk it. $19.99 instead of $24.98 bought separately.\n\nWHAT'S INCLUDED\n- Trip Planning Guide: seasons and road access, getting there, park fees, where to stay, 3, 5 and 7-day itineraries, beyond hiking, safety, packing list and trip planner\n- 11 GPX route files: Canyon Overlook, Emerald Pools, The Narrows (plus a Big Spring extension), Navajo Loop and Queen's Garden, Fairyland Loop, Delicate Arch, The Windows and Double Arch, Mesa Arch, Hickman Bridge and Cassidy Arch\n- Route guide with photos, maps, elevation profiles and a fillable trail passport\n- 10 trail badges plus a shareable story image for every hike\n\nWHAT YOU GET\n- Guides in US Letter, A4 and a mobile edition\n- GPX files for AllTrails, Gaia GPS, Komoot or a GPS watch\n- Instant download. These are digital files; nothing is shipped.\n- Bonus: our free one-page Ultimate Hiking Checklist\n\nGOOD TO KNOW\nThe itineraries are numbered to match the GPX files. Trail data from the National Park Service and OpenStreetMap contributors; photos via Wikimedia Commons with credits. Desert heat and flash floods are real: check the forecast and park pages. For personal use.\n\nMade by HikeSupply Co., a small shop for weekend hikers. More printable guides at hikesupplyco.com",
+ "description": "Everything for a Utah national parks road trip in one download: the Trip Planning Guide to plan it, and the 10 Best Day Hikes GPX Route Collection to walk it. $19.99 instead of $24.98 bought separately.\n\nWHAT'S INCLUDED\n- Trip Planning Guide: seasons and road access, getting there, park fees, where to stay, 3, 5 and 7-day itineraries, beyond hiking, safety, packing list and trip planner\n- 11 GPX route files: Canyon Overlook, Emerald Pools, The Narrows (plus a Big Spring extension), Navajo Loop and Queen's Garden, Fairyland Loop, Delicate Arch, The Windows and Double Arch, Mesa Arch, Hickman Bridge and Cassidy Arch\n- Route guide with photos, maps, elevation profiles and a fillable trail passport\n- 10 trail badges plus a shareable story image for every hike\n\nWHAT YOU GET\n- Guides in US Letter, A4 and a mobile edition\n- GPX files for AllTrails, Gaia GPS, Komoot or a GPS watch\n- Instant download. These are digital files; nothing is shipped.\n- Bonus: our free one-page Ultimate Hiking Checklist\n\nGOOD TO KNOW\nThe itineraries are numbered to match the GPX files. Trail data from the National Park Service and OpenStreetMap contributors; photos via Wikimedia Commons with credits. Desert heat and flash floods are real: check the forecast and park pages. For personal use.\n\nMade by HikeSupply Co., a small shop for weekend hikers. More printable hiking guides in our Etsy shop.",
  "hero": [
   "Utah's Mighty 5",
   "Trip Pack"
@@ -75,5 +75,6 @@
   3,
   4
  ],
- "spreadBTitle": "A look inside"
+ "spreadBTitle": "A look inside",
+ "pageCount": null
 }
