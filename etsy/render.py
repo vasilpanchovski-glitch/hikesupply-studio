@@ -86,9 +86,12 @@ def hero(L, out):
     im.paste(cov, (1110, 60), cov)
     text(d, (130, 140), "HIKESUPPLY CO.", font(SEMI, 56), SAGE)
     y = 270
+    hs = 178
+    while hs > 120 and max(d.textlength(s.upper(), font=font(HEAD, hs)) for s in L["hero"]) > 940:
+        hs -= 4
     for line in L["hero"]:
-        text(d, (130, y), line.upper(), font(HEAD, 178))
-        y += 168
+        text(d, (130, y), line.upper(), font(HEAD, hs))
+        y += int(hs * 0.945)
     y += 50
     for line in wrap(d, L["sub"], font(SANS, 60), 880):
         text(d, (130, y), line, font(SANS, 60))
