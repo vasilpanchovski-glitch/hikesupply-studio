@@ -77,23 +77,26 @@ def hero(L, out):
     im = bg()
     d = ImageDraw.Draw(im)
     pages = L["pages"]
-    back = page(pages[L.get("back", 1)], 820, -5)
-    im.paste(back, (1590, 230), back)
-    cov = page(pages[0], 900, 4)
-    im.paste(cov, (1180, 170), cov)
-    text(d, (150, 150), "HIKESUPPLY CO.", font(SEMI, 54), SAGE)
-    y = 290
+    # two inside pages fanned behind the cover, cover large and slightly tilted
+    b2 = page(pages[L.get("back2", 2)], 1000, -9)
+    im.paste(b2, (1620, 300), b2)
+    b1 = page(pages[L.get("back", 1)], 1060, -3)
+    im.paste(b1, (1500, 180), b1)
+    cov = page(pages[0], 1280, 4)
+    im.paste(cov, (1110, 60), cov)
+    text(d, (130, 140), "HIKESUPPLY CO.", font(SEMI, 56), SAGE)
+    y = 270
     for line in L["hero"]:
-        text(d, (150, y), line.upper(), font(HEAD, 190))
-        y += 182
-    y += 40
-    for line in wrap(d, L["sub"], font(SANS, 62), 1000):
-        text(d, (150, y), line, font(SANS, 62))
-        y += 86
-    x, y = 150, H - 330
+        text(d, (130, y), line.upper(), font(HEAD, 178))
+        y += 168
+    y += 50
+    for line in wrap(d, L["sub"], font(SANS, 60), 880):
+        text(d, (130, y), line, font(SANS, 60))
+        y += 84
+    x, y = 130, H - 330
     for c in L["chips"][:3]:
         x = chip(d, x, y, c.upper(), font(SEMI, 52))
-    text(d, (150, H - 150), "Instant download · nothing is shipped", font(SANS, 52), SAGE)
+    text(d, (130, H - 150), "Instant download · nothing is shipped", font(SANS, 50), SAGE)
     im.save(out, quality=90)
 
 
