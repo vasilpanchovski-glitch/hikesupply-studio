@@ -1,0 +1,207 @@
+{
+ "date": "2026-10-31",
+ "previous": "2026-10-29",
+ "group": "c",
+ "note": "Group C. Empty fields mean the page did not show the number. Etsy shop pages for Travel50States and ThePrintedSmile did not open from the cloud (only listing links found by search open); Travel50States had no listing link in search this run, so no new data for it (last: 2026-10-17). Hiker Hunger's own site did not come up in search; data from a reseller page and an old review.",
+ "sellers": [
+  {
+   "name": "Kingdom over culture life (Payhip)",
+   "products": [
+    {
+     "title": "Utah's Mighty Five: A Family Road Trip Guide (9 days, 5 parks)",
+     "format": "guide PDF",
+     "pages": 10,
+     "price": 14.0,
+     "notes": "tagged 'On Sale' with no old price; about 10 MB; affiliate gear links",
+     "url": "https://payhip.com/b/B7YEG"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "count": null
+   },
+   "marketing": {
+    "tactics": [
+     "first-person story title ('every detail we wish someone had told us')",
+     "'On Sale' label with no old price",
+     "affiliate links inside the guide"
+    ],
+    "traffic": "not shown"
+   }
+  },
+  {
+   "name": "milesandhikes (Gumroad)",
+   "products": [
+    {
+     "title": "Nature Weekend Reset Planner Guide",
+     "format": "planner",
+     "pages": 21,
+     "price": 5.99,
+     "notes": "price up from $4.99 (Oct 17-22)",
+     "url": "https://milesandhikes.gumroad.com/l/natureweekendreset"
+    },
+    {
+     "title": "Best of Miles & Hikes: 4 Essential Guides",
+     "format": "bundle",
+     "pages": "145+",
+     "price": 19.99,
+     "notes": "first seen this run; solo road trips, car camping, camp cooking, meal planning",
+     "url": "https://milesandhikes.gumroad.com/l/bestofmhfourguides"
+    },
+    {
+     "title": "Weekend Car Camping Guide For First-Time Solo Women Campers",
+     "price": null,
+     "url": "https://milesandhikes.gumroad.com/l/weekend-car-camping-guide"
+    },
+    {
+     "title": "Solo Roadtrip Guide For Midlife Women",
+     "price": null,
+     "url": "https://milesandhikes.gumroad.com/l/womenroadtripguide"
+    },
+    {
+     "title": "Vanlife Without The Van",
+     "price": null,
+     "url": "https://milesandhikes.gumroad.com/l/vanlifewithouthevan"
+    }
+   ],
+   "reviews": {},
+   "marketing": {
+    "tactics": [
+     "guides aimed at one clear audience (first-time solo women, midlife women)",
+     "all-guides bundle at $19.99",
+     "single planner price raised $1"
+    ],
+    "traffic": "not shown; Gumroad pages rank in Google for their product names"
+   }
+  },
+  {
+   "name": "Travel50States",
+   "note": "not readable this run (no listing link in search, shop page blocked)"
+  },
+  {
+   "name": "ThePrintedSmile",
+   "shop": {
+    "sales": "40.4k",
+    "rating": 4.8,
+    "reviews": "3.5k"
+   },
+   "products": [
+    {
+     "title": "Camping Planner Printable (itinerary, packing, meals)",
+     "pages": 5,
+     "price": 2.99,
+     "was": 3.99,
+     "item_reviews": 1,
+     "item_rating": 4.0,
+     "notes": "8.5x11 only",
+     "url": "https://www.etsy.com/listing/1000102482"
+    }
+   ],
+   "offers": [
+    "25% off (same as Oct 17, looks permanent)"
+   ],
+   "reviews": {
+    "praise": [
+     "useful document"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "permanent 25% off sale",
+     "very large catalogue (646 listings on Oct 17)"
+    ],
+    "traffic": "Etsy search"
+   }
+  },
+  {
+   "name": "Hiker Hunger Outfitters",
+   "products": [
+    {
+     "title": "100% Carbon Fiber Trekking Poles",
+     "price": 99.99,
+     "notes": "reseller page shows price history: up from $79.99 (on Oct 17 their own site showed $99.99, was $125)",
+     "url": "https://reach.dog/shop/hiker-hunger-outfitters/products/100-carbon-fiber-trekking-poles"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "cheap for carbon",
+     "comfortable cork grips",
+     "light, packs small",
+     "many accessories in the box"
+    ],
+    "complaints": [
+     "plastic lever locks feel weak",
+     "thin carbon shafts, durability doubts (OutdoorGearLab, 2017 review, old)"
+    ]
+   },
+   "source": "https://outdoorgearlab.com/reviews/camping-and-hiking/trekking-poles/hiker-hunger-carbon-fiber"
+  },
+  {
+   "name": "Decathlon Canada (hiking)",
+   "products": [
+    {
+     "title": "MH500 Mountain Walking Pole, quick adjustment",
+     "price": 24.0,
+     "currency": "CAD",
+     "rating": 4.6,
+     "ratings": 55,
+     "notes": "sold individually, says so on the page; rating worked out from the star breakdown",
+     "url": "https://www.decathlon.ca/en/hiking-snowshoeing/173277-11863-hike-500-walking-pole-green.html"
+    },
+    {
+     "title": "Forclaz MT500 Air 50+10 backpack (OutdoorGearLab, Oct 2022)",
+     "price": 139.0,
+     "notes": "list price in USD from the review"
+    }
+   ],
+   "reviews": {
+    "complaints": [
+     "pole grip slides down the shaft",
+     "lower section wears out",
+     "grip could be better",
+     "MT500 pack: odd side pockets, not for loads over 35 lb"
+    ]
+   }
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "TriptykaPassports (Etsy)",
+   "title": "State Parks Passport Bucket List printable",
+   "price": 9.99,
+   "shop_sales": 14,
+   "notes": "US Letter only, 0 reviews",
+   "url": "https://www.etsy.com/listing/4533466782"
+  },
+  {
+   "name": "Yaktrax Quick Chains (REI)",
+   "price": 22.5,
+   "rating": 2.5,
+   "ratings": 25,
+   "url": "https://www.rei.com/product/237652/yaktrax-quick-chains-traction-devices"
+  }
+ ],
+ "changes_vs_previous": [
+  "milesandhikes: Nature Weekend Reset planner $4.99 -> $5.99; new 4-guide bundle $19.99 (145+ pages) seen for the first time",
+  "Kingdom over culture life: no change ($14, 10 pages, 'On Sale' with no old price)",
+  "ThePrintedSmile: same 25% off as Oct 17, shop sales still 40.4k",
+  "Hiker Hunger carbon poles: $99.99 (reseller shows it went up from $79.99)",
+  "Decathlon Canada: MH500 pole $24 CAD each, sold single"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "% off or 'On Sale' labels that never end or show no old price (Kingdom, ThePrintedSmile; 3 of 4 digital sellers on Oct 29 too)",
+   "bundles of several guides at a round price (milesandhikes $19.99, BigSky, Montem)",
+   "guides written for one named audience (milesandhikes: first-time solo women, midlife women; Kingdom: families with teens)"
+  ],
+  "we_do_not_use": [
+   "audience named in the product title (we have a Solo Hiking Guide but the title names no audience)",
+   "an all-guides bundle at one round price"
+  ],
+  "new_this_run": [
+   "first-person 'what we wish someone told us' titles (Kingdom)"
+  ]
+ }
+}

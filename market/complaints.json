@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews.",
- "updated": "2026-10-29",
+ "updated": "2026-10-31",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1285,23 +1285,123 @@
    "date": "",
    "theme": "breaks quickly / cheaply made",
    "found": "2026-10-29"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Yaktrax Quick Chains (REI)",
+   "what": "straps or nylon parts tore within days to weeks",
+   "source": "https://www.rei.com/product/237652/yaktrax-quick-chains-traction-devices",
+   "where": "review",
+   "date": "about 2025",
+   "theme": "traction slips off boot / straps tear",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Yaktrax Quick Chains (REI)",
+   "what": "slid off the heel of the boot, hard to position",
+   "source": "https://www.rei.com/product/237652/yaktrax-quick-chains-traction-devices",
+   "where": "review",
+   "date": "about 2025",
+   "theme": "traction slips off boot / straps tear",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Yaktrax Quick Chains (REI)",
+   "what": "chains broke where they join the fabric",
+   "source": "https://www.rei.com/product/237652/yaktrax-quick-chains-traction-devices",
+   "where": "review",
+   "date": "about 2026",
+   "theme": "traction slips off boot / straps tear",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Yaktrax Quick Chains (REI)",
+   "what": "little grip on smooth or sloped ice",
+   "source": "https://www.rei.com/product/237652/yaktrax-quick-chains-traction-devices",
+   "where": "review",
+   "date": "about 2025",
+   "theme": "traction weak on smooth ice",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Kahtoola MICROspikes (Zappos)",
+   "what": "a chain link bent and fell off on bare rock",
+   "source": "https://www.zappos.com/product/review/7385657/page/2",
+   "where": "review",
+   "date": "2010-02",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Decathlon MH500 pole",
+   "what": "grip slides down the shaft",
+   "source": "https://www.decathlon.ca/en/hiking-snowshoeing/173277-11863-hike-500-walking-pole-green.html",
+   "where": "review",
+   "date": "",
+   "theme": "grip uncomfortable or slippery",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Decathlon MH500 pole",
+   "what": "lower section wears out over time",
+   "source": "https://www.decathlon.ca/en/hiking-snowshoeing/173277-11863-hike-500-walking-pole-green.html",
+   "where": "review",
+   "date": "",
+   "theme": "baskets, tips or straps wear out or fall off",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "trekking pole",
+   "product": "Hiker Hunger carbon poles",
+   "what": "plastic lever locks feel weak, thin shafts may break",
+   "source": "https://outdoorgearlab.com/reviews/camping-and-hiking/trekking-poles/hiker-hunger-carbon-fiber",
+   "where": "test review",
+   "date": "2017-10",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "hiking journal",
+   "product": "Amazon hiking journal (review summary)",
+   "what": "pages are thin",
+   "source": "https://kimola.com/reports/unlock-hiking-adventures-with-our-insightful-journal-analysis-amazon-en-us-142309",
+   "where": "review summary",
+   "date": "2025-05",
+   "theme": "thin paper",
+   "found": "2026-10-31"
+  },
+  {
+   "type": "backpack",
+   "product": "Decathlon MT500 Air 50+10",
+   "what": "not comfortable with loads over 35 lb",
+   "source": "https://outdoorgearlab.com/reviews/camping-and-hiking/budget-backpacking-pack/decathlon-forclaz-mt500-air-50-plus10",
+   "where": "test review",
+   "date": "2022-10",
+   "theme": "not suited to heavy loads",
+   "found": "2026-10-31"
   }
  ],
  "themes": [
   {
    "theme": "pole locks slip / poles collapse",
-   "count": 15
+   "count": 16
   },
   {
    "theme": "breaks quickly / cheaply made",
-   "count": 12
-  },
-  {
-   "theme": "missing parts on arrival",
-   "count": 8
+   "count": 13
   },
   {
    "theme": "baskets, tips or straps wear out or fall off",
+   "count": 9
+  },
+  {
+   "theme": "missing parts on arrival",
    "count": 8
   },
   {
@@ -1341,6 +1441,10 @@
    "count": 3
   },
   {
+   "theme": "grip uncomfortable or slippery",
+   "count": 3
+  },
+  {
    "theme": "emergency bivy: condensation, no insulation",
    "count": 3
   },
@@ -1357,11 +1461,11 @@
    "count": 3
   },
   {
-   "theme": "not suited to hikers with disabilities",
-   "count": 2
+   "theme": "traction slips off boot / straps tear",
+   "count": 3
   },
   {
-   "theme": "grip uncomfortable or slippery",
+   "theme": "not suited to hikers with disabilities",
    "count": 2
   },
   {
@@ -1378,6 +1482,10 @@
   },
   {
    "theme": "not enough blank pages / too rigid",
+   "count": 2
+  },
+  {
+   "theme": "thin paper",
    "count": 2
   },
   {
@@ -1421,10 +1529,6 @@
    "count": 1
   },
   {
-   "theme": "thin paper",
-   "count": 1
-  },
-  {
    "theme": "strap loosens",
    "count": 1
   },
@@ -1442,6 +1546,14 @@
   },
   {
    "theme": "strap uncomfortable on long walks",
+   "count": 1
+  },
+  {
+   "theme": "traction weak on smooth ice",
+   "count": 1
+  },
+  {
+   "theme": "not suited to heavy loads",
    "count": 1
   }
  ]

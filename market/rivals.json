@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-29",
- "note": "Day labels now match the Monday/Thursday runs (mon = first half, thu = second half). Social accounts (2-3) still to add: TikTok/Instagram profile pages are not readable as public pages from the cloud. Candidate seen: Print Blossom (Payhip), free Yellowstone journal kit. 2026-10-22: Etsy shop pages open from the cloud only when a search returns that exact link, so the Thursday half is often only partly readable. Candidates seen: TriptykaPassports (state parks passport gift PDF, $9.99). 2026-10-27: groups a/b/c rotate a then b then c, one group per run; next run is group b. theBrainbookShop's Etsy links did not show in search this run. 2026-10-29: group b done; Getaway Goose's Thatch link now redirects to mindtrip.ai (not readable from the cloud), replace it at the monthly review if it stays unreadable. Next run is group c.",
+ "updated": "2026-10-31",
+ "note": "Day labels now match the Monday/Thursday runs (mon = first half, thu = second half). Social accounts (2-3) still to add: TikTok/Instagram profile pages are not readable as public pages from the cloud. Candidate seen: Print Blossom (Payhip), free Yellowstone journal kit. 2026-10-22: Etsy shop pages open from the cloud only when a search returns that exact link, so the Thursday half is often only partly readable. Candidates seen: TriptykaPassports (state parks passport gift PDF, $9.99). 2026-10-27: groups a/b/c rotate a then b then c, one group per run; next run is group b. theBrainbookShop's Etsy links did not show in search this run. 2026-10-29: group b done; Getaway Goose's Thatch link now redirects to mindtrip.ai (not readable from the cloud), replace it at the monthly review if it stays unreadable. Next run is group c. 2026-10-31: group c done; Travel50States not readable (no listing link in search), Hiker Hunger's own site did not come up. Next run is group a. Monthly review due Nov 1-3: replace Getaway Goose if Thatch stays unreadable.",
  "rivals": [
   {
    "name": "We're in the Rockies",
@@ -155,5 +155,5 @@
    "day": "a"
   }
  ],
- "lastGroup": "b"
+ "lastGroup": "c"
 }
