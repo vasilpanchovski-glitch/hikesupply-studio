@@ -4,6 +4,7 @@ Runs daily at 17:02 Skopje on Vasil's PC, using Claude in Chrome (his logged-in 
 
 1. Set `agents/importer` to working (HQ database via ArtifactData).
 2. Read open `requests` with `to: "importer", done: false` and do them first (rules below). Then read `gear` for `stage: idea, status: approved`. Take at most 2. Then do the Gear check below. If there is nothing to import, check or request, set idle and stop.
+   Also check `products` for `etsy: "ready"` and do the Etsy part below, even when there is nothing to import and even when DSers is logged out.
 3. Load the Chrome tools (one ToolSearch call) and read the chrome-browser skill first. Work in a new tab; close your tabs at the end.
    If Chrome is not reachable (or AliExpress/DSers is logged out, or the computer is off): set `agents/importer` to `error` with one plain sentence ("Chrome was not open at 17:02"), and move every approved idea to `stage: import, status: waiting, importIssue: "<same sentence>"`. That puts a card in Vasil's inbox where he chooses: he imports it himself in the evening ("I imported it", status `manual`), or lets you try again tomorrow ("Try tomorrow", which sends it back to `stage: idea, status: approved`). Then stop.
 4. For each:
@@ -36,3 +37,16 @@ ChatGPT and Copilot take their answers from Bing, and Bing Webmaster Tools is on
 1. With the Shopify tools, list articles, products and collections created or updated in the last 8 days (onlineStoreUrl / blog article URLs on hikesupplyco.com, published only).
 2. In Chrome open https://www.bing.com/webmasters/submiturl?siteUrl=https://hikesupplyco.com/ (Vasil is logged in; if not, skip this part and note it in your agent task). Click "Submit URLs", paste the URLs one per line (max 100 a day), click Submit, and check the "Success" message.
 3. Open https://www.bing.com/webmasters/aiperformance?siteUrl=https://hikesupplyco.com/ , read Total Citations (last 30 days) and the cited pages, and write them into the newest `aiwatch` doc as `bing: {citations, pages: [{url, citations}], checkedAt}`. Log one line.
+
+## Etsy listings (Vasil 2026-11-01)
+
+The Launch Manager prepares every new digital product for Etsy and sets `etsy: "ready"` on its `products` doc. You publish it in our Etsy shop HikeSupplyCoStore (Vasil is logged in to Etsy in Chrome). At most 2 per day.
+Fee: Etsy charges $0.20 per new listing. Vasil approved that fee on 2026-11-01 for these listings only. Never buy anything else on Etsy (no ads, no Etsy Plus, no offsite ads, no shipping labels), never change shop settings, never reply to buyers.
+For each:
+1. Pull the repo and run `python3 etsy/prep_new.py products/<code> etsy/listings/<slug>.json` (builds the images and buyer files again on this machine).
+2. Copy `etsy/out/<slug>/0*.jpg` to `/mnt/user-data/uploads/etsy/<slug>/img/` and `etsy/downloads/<slug>/*` to `/mnt/user-data/uploads/etsy/<slug>/files/` (Chrome file upload only takes files from there).
+3. In Chrome open https://www.etsy.com/your/shops/me/listing-editor/create . Upload the 5 images (`#field-listingImages`). Category: type "Digital Prints" or the closest digital category and pick it. Type: Digital. Who made it: I did. What is it: A finished product. How was it made: With an AI generator (the AI disclosure we use on all listings).
+4. Load our filler in the page and fill the text: run `eval(await (await fetch('https://cdn.jsdelivr.net/gh/vasilpanchovski-glitch/hikesupply-studio@main/etsy/fill.js?x='+Date.now())).text())`, then `await fillListing('<slug>')` (title, description, 13 tags, price, pages, quantity). Then `labelInputs()` and upload the buyer files into the input labelled `digitalinput`. Upload large files in separate calls (each call about 10 MB at most).
+5. `await checkSave(<number of files>)` saves it as a draft when everything is complete. Then open the draft, check title, price, 5 photos, files and tags, and click Publish. Confirm the $0.20 fee only on that Publish screen.
+6. Add `{slug, etsyId, url: "https://www.etsy.com/listing/<id>", shopify, title, price}` to `etsy/live.json`, commit and push. Set the product doc `etsy: "live"` and `etsyUrl`. Log one line.
+If Etsy is logged out, asks for a password or 2FA, shows a fee other than $0.20 per listing, or refuses the listing: stop the Etsy part, set the product doc `etsy: "ready"` (unchanged) with `etsyIssue` in one plain sentence, and add a log line. Never enter a password.
