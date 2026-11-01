@@ -3,7 +3,7 @@
 // frame 5 the real Alum Cave page from the route guide. Clips in video/public/footage/v83m_s*.mp4 (not in git).
 // Same music, sfx and timing as V83; voice re-recorded with "Maddie". End card = Great Smoky Mountains Trip Pack, $19.99.
 import React from "react";
-import { AbsoluteFill, Img, OffthreadVideo, staticFile } from "remotion";
+import { AbsoluteFill, OffthreadVideo, staticFile } from "remotion";
 import { at, FPS } from "../lib";
 import { Captions, Word } from "../Type";
 import { Chip, EndCard, Scene, Title, useT } from "../kit";
@@ -22,7 +22,7 @@ const Shot: React.FC<{ n: number; start?: number; rate?: number; dur: number; zo
   );
 };
 
-const S1: React.FC = () => { const t = useT(); return (<><Shot n={1} rate={0.93} dur={5.45} topDark={0.8} /><Title text={"Planning a\nSmokies hike?\nDon't do this"} t={t} t0={0} t1={2.9} top={140} size={130} /><Img src={staticFile("smokies-sign.jpg")} style={{ position: "absolute", left: 56, top: 590, width: 380, border: "8px solid #fff", borderRadius: 6, boxShadow: "0 14px 30px rgba(0,0,0,0.55)", transform: `rotate(-3deg) scale(${Math.min(1, 0.85 + t * 1.5)})`, opacity: Math.min(1, t * 6) }} /></>); };
+const S1: React.FC = () => { const t = useT(); return (<><Shot n={1} rate={0.93} dur={5.45} topDark={0.8} /><Title text={"Planning a\nSmokies hike?\nDon't do this"} t={t} t0={0} t1={2.9} top={140} size={130} /><Chip text="Great Smoky Mountains, USA" t={t} t0={0} t1={2.9} x={60} y={560} icon="none" /></>); };
 const S2: React.FC = () => { const t = useT(); return (<><Shot n={2} dur={5.05} /><Chip text="Three nights in" t={t} t0={0.2} x={80} y={200} icon="x" big /><Chip text="Still no plan" t={t} t0={1.2} x={80} y={330} icon="x" big /></>); };
 const S3: React.FC = () => { const t = useT(); return (<><Shot n={3} dur={4.3} /><Chip text="Smokies Trip Pack" t={t} t0={0.1} x={80} y={200} icon="check" big /></>); };
 const S4: React.FC = () => { const t = useT(); return (<><Shot n={4} start={0} dur={2.7} zoom={[1.0, 1.03]} /><Chip text="Seasons and road openings" t={t} t0={0.15} x={60} y={200} icon="check" /><Chip text="Where to stay" t={t} t0={1.75} x={60} y={320} icon="check" /></>); };
