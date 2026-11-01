@@ -22,7 +22,7 @@ const Shot: React.FC<{ n: number; start?: number; rate?: number; dur: number; zo
   );
 };
 
-const S1: React.FC = () => { const t = useT(); return (<><Shot n={1} rate={0.93} dur={5.45} topDark={0.8} /><Title text={"Twenty tabs\nand still\nno plan"} t={t} t0={0} t1={2.9} top={140} size={136} /></>); };
+const S1: React.FC = () => { const t = useT(); return (<><Shot n={1} rate={0.93} dur={5.45} topDark={0.8} /><Title text={"Planning a\nSmokies hike?\nDon't do this"} t={t} t0={0} t1={2.9} top={140} size={130} /></>); };
 const S2: React.FC = () => { const t = useT(); return (<><Shot n={2} dur={5.05} /><Chip text="Three nights in" t={t} t0={0.2} x={80} y={200} icon="x" big /><Chip text="Still no plan" t={t} t0={1.2} x={80} y={330} icon="x" big /></>); };
 const S3: React.FC = () => { const t = useT(); return (<><Shot n={3} dur={4.3} /><Chip text="Smokies Trip Pack" t={t} t0={0.1} x={80} y={200} icon="check" big /></>); };
 const S4: React.FC = () => { const t = useT(); return (<><Shot n={4} start={0} dur={2.7} zoom={[1.0, 1.03]} /><Chip text="Seasons and road openings" t={t} t0={0.15} x={60} y={200} icon="check" /><Chip text="Where to stay" t={t} t0={1.75} x={60} y={320} icon="check" /></>); };
