@@ -1,0 +1,443 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../_kit/brand.css"><style>
+@media print{html,body{background:#fff}}
+body{font-size:11.3pt;line-height:1.55}
+.lead{font-size:13pt}
+h3{font-size:14pt}
+ul.check li{padding:5pt 0 5pt 20pt}
+.box,.warn{padding:12pt 15pt}
+.box p,.warn,.box li{font-size:11pt}
+.lab{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin:11pt 0 3pt}
+.wl{border-bottom:0.8pt solid #CFC7B6}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 22pt}
+.fl{display:flex;align-items:flex-end;gap:6pt;height:26pt;border-bottom:0.8pt solid #CFC7B6;font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest);padding-bottom:3pt}
+.fl .u{margin-left:auto;font-weight:500;color:#8B8577;letter-spacing:.04em;text-transform:none;font-size:8.5pt}
+.fl .u b{display:inline-block;width:0.5in}
+.opts{display:flex;flex-wrap:wrap;gap:4pt 12pt;font-size:9pt;margin-top:5pt}
+.opts span::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:5pt;vertical-align:-1pt;background:#fff}
+.sketch{border:1pt solid #CFC7B6;border-radius:8pt;background:#fff;position:relative}
+.sketch span{position:absolute;left:10pt;top:8pt;font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#A39C8D}
+.big{font-size:11.5pt;line-height:1.55}
+.diff{display:grid;grid-template-columns:1fr 1fr;gap:12pt}
+.diff>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:13pt 14pt}
+.diff h3{margin:0 0 5pt}
+.diff p{margin:0;font-size:11pt;line-height:1.5}
+.tag{display:inline-block;font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:10pt 0 4pt;border-top:3pt solid var(--forest);}
+.timeline div{padding:9pt 8pt 0 0;font-size:10pt;line-height:1.35;position:relative}
+.timeline div::before{content:"";position:absolute;top:-8pt;left:0;width:11pt;height:11pt;border-radius:50%;background:var(--paper);border:2.5pt solid var(--forest)}
+.timeline div.hot::before{border-color:var(--clay);background:var(--clay)}
+.timeline b{display:block;font:600 12pt/1.2 var(--serif);color:var(--forest);margin-bottom:2pt}
+.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin:10pt 0}
+.layers>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:12pt;position:relative}
+.layers .num{font:600 26pt/1 var(--serif);color:var(--clay)}
+.layers h3{margin:6pt 0 4pt}
+.layers p{font-size:10.5pt;margin:0 0 6pt}
+.layers .eg{font-size:9.5pt;color:#6B6B66;border-top:0.6pt solid var(--line);padding-top:5pt}
+.sym{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.sym>div{border-radius:9pt;padding:11pt 13pt;background:#fff;border:1pt solid var(--line)}
+.sym h3{margin:0 0 5pt;font-size:12.5pt}
+.sym .lbl{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin:7pt 0 3pt}
+.sym p,.sym li{font-size:10.3pt;line-height:1.45}
+.sym ul{margin:0;padding-left:13pt}
+.em{background:var(--forest);color:var(--stone);border-radius:9pt;padding:12pt 15pt;margin-top:10pt}
+.em h3{color:var(--stone);margin:0 0 4pt}
+.em p{margin:0;font-size:11pt}
+.ess{display:grid;grid-template-columns:1fr 1fr;gap:8pt 14pt}
+.ess>div{display:grid;grid-template-columns:26pt 1fr;gap:8pt;padding:11pt 0;border-bottom:0.6pt solid var(--line)}
+.ess .n{font:600 16pt/1 var(--serif);color:var(--clay)}
+.ess h3{margin:0 0 3pt;font-size:13pt}
+.ess p{margin:0;font-size:10.2pt;line-height:1.42}
+.cl{display:grid;grid-template-columns:1fr 1fr;gap:4pt 22pt}
+.cl h3{margin:10pt 0 2pt;font-size:12pt}
+.cl ul.check li{font-size:10.5pt;padding:5.5pt 0 5.5pt 19pt}
+.ltab td{font-size:10pt;line-height:1.4;padding:8pt 6pt}
+.ltab td:first-child{font-weight:600;color:var(--forest);white-space:nowrap}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.qc{border:1.2pt dashed #A39C8D;padding:18pt 18pt;height:4.6in;background:#fff;margin:-0.6pt}
+.qc h3{margin:0 0 8pt;font-size:15pt}
+.qc .kicker{margin-bottom:5pt}
+.qc ul.check li{font-size:10pt;padding:4pt 0 4pt 18pt}
+.qc ul.check li::before{width:9pt;height:9pt;top:4pt}
+.qc p{font-size:10pt;margin:0 0 7pt}
+.hikehead{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt;margin-bottom:4pt}
+.hikehead .no{font:600 24pt/1 var(--serif);color:var(--forest)}
+.hikehead .no small{font:700 8pt/1 var(--sans);letter-spacing:.16em;color:var(--clay);display:block;margin-bottom:6pt;text-transform:uppercase}
+.src{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.src>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:15pt 15pt;min-height:1.45in}
+.src h3{margin:0 0 3pt;font-size:12pt}
+.src .url{font:600 9pt/1.3 var(--sans);color:var(--clay);margin-bottom:4pt}
+.src p{margin:0;font-size:10.5pt;line-height:1.42}
+.back{background:var(--forest);color:var(--stone);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.back h2{color:var(--stone)}
+.back p{color:#D9DED6;max-width:4.6in}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+.cover.photo>div{position:relative}
+.cover.photo .cphoto,.cover.photo .cshade{position:absolute}
+.cover.photo h1{color:#F5F1EA}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{color:#222;text-shadow:none}
+html.bw .cover.photo .sub{color:#333}
+html.bw .page{background:#fff}
+html.bw{--forest:#222;--clay:#444;--sage:#666;--rust:#333;--soft:#fff}
+html.bw .cover,html.bw .back{background:#fff;color:#222;border:2pt solid #222}
+html.bw .cover h1,html.bw .back h2{color:#222}
+html.bw .cover .sub,html.bw .cover .meta,html.bw .cover .brand,html.bw .back p,html.bw .back .brand{color:#333 !important}
+html.bw .cover svg *{fill:none !important;stroke:#222 !important}
+html.bw .box,html.bw .em{background:#fff;border:0.8pt solid #999;color:#222}
+html.bw .em h3,html.bw .box.forest,html.bw .box.forest h3{color:#222}
+html.bw .warn{background:#fff}
+html.bw .timeline div::before{background:#fff}
+html.bw .timeline div.hot::before{background:#444}
+
+.glance{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin-top:6pt}
+.glance>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:12pt 14pt}
+.glance h3{margin:0 0 6pt;font-size:15pt}
+.glance table{margin:0}
+.glance td{font-size:10pt;padding:5pt 4pt;line-height:1.35}
+.glance td:first-child{font:700 7pt/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--sage);width:0.85in;padding-top:7pt}
+.seas{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin-top:4pt}
+.seas>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 13pt}
+.seas>div.best{border:1.6pt solid var(--forest)}
+.seas h3{margin:0 0 2pt;font-size:13.5pt}
+.seas .m{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.seas p{margin:0;font-size:10.2pt;line-height:1.45}
+.bk{border-top:1.5pt solid var(--forest);margin-top:6pt}
+.bk>div{display:grid;grid-template-columns:1.25in 1fr;gap:14pt;padding:10pt 0;border-bottom:0.6pt solid var(--line)}
+.bk b{font:600 13pt/1.2 var(--serif);color:var(--forest)}
+.bk p{margin:0;font-size:10.3pt;line-height:1.45}
+.fee td{font-size:10pt;padding:6pt 6pt}
+.plan{border:1pt solid var(--line);border-radius:9pt;background:#fff;padding:11pt 14pt;margin-bottom:10pt}
+.plan .ph{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2pt solid var(--forest);padding-bottom:5pt;margin-bottom:3pt}
+.plan .ph b{font:600 17pt/1 var(--serif);color:var(--forest)}
+.plan .ph span{font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#8B8577}
+.plan .d{display:grid;grid-template-columns:0.62in 1fr;gap:10pt;padding:6pt 0;border-bottom:0.6pt solid var(--line);font-size:10pt;line-height:1.42}
+.plan .d:last-child{border-bottom:0}
+.plan .d i{font:normal 700 7.5pt/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--clay)}
+.reg{display:grid;grid-template-columns:1fr;gap:10pt}
+.reg>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:13pt 17pt}
+.reg h3{margin:0 0 5pt;font-size:16pt}
+.reg .w{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.reg p{margin:0 0 6pt;font-size:11.2pt;line-height:1.55}
+.reg p:last-child{margin:0}
+.hk{background:#fff;border:1pt solid var(--line);border-radius:10pt;padding:15pt 18pt;margin-bottom:13pt}
+.hk .top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt}
+.hk .top h3{margin:0;font-size:20pt}
+.hk .top small{display:block;font:700 7.5pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.hk .top .lv{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);border:1.2pt solid var(--forest);border-radius:20pt;padding:4pt 8pt;white-space:nowrap}
+.hk .st{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:11pt 0 9pt;border-bottom:0.6pt solid var(--line);padding-bottom:10pt}
+.hk .st div{font-size:10pt;line-height:1.3;padding-right:6pt}
+.hk .st b{display:block;font:700 6.8pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:4pt}
+.hk .st span{font:600 15pt/1.2 var(--serif);color:var(--forest);display:block}
+.hk .st em{font-style:normal;font-size:9.3pt;color:#6B6B66}
+.hk p{margin:0 0 6pt;font-size:10.9pt;line-height:1.52}
+.hk p:last-child{margin:0}
+.hk .lb{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin-right:4pt}
+.hk .nt{margin-top:9pt;font-size:10.4pt;line-height:1.45;background:var(--soft);border-radius:6pt;padding:9pt 12pt}
+.dist{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:8pt 0 4pt}
+.dist>div{border-radius:10pt;padding:14pt 16pt;text-align:center}
+.dist .a{background:var(--forest);color:var(--stone)}
+.dist .b{background:#fff;border:1.6pt solid var(--forest)}
+.dist .n{font:600 34pt/1 var(--serif)}
+.dist .a .n{color:var(--stone)} .dist .b .n{color:var(--forest)}
+.dist .u{font:700 8pt/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-top:4pt}
+.dist p{margin:6pt 0 0;font-size:10.3pt}
+.dist .a p{color:#D9DED6}
+.wild{display:grid;grid-template-columns:repeat(3,1fr);gap:0 16pt}
+.wild ul.check li{font-size:10.2pt;padding:5pt 0 5pt 19pt}
+.wild ul.check li{display:flex;align-items:flex-end}.wild ul.check li span{flex:1;margin-left:8pt;border-bottom:0.8pt solid #CFC7B6;height:10pt;min-width:0.3in}
+.dp .fl{height:28pt}
+.bud td{height:30pt;font-size:10.5pt}
+.src>div{min-height:1.62in}.bud td.a{width:1.05in;border-left:0.6pt solid var(--line)}
+.bud td.c{font-weight:600;color:var(--forest)}
+.bud tr.tot td{border-top:1.5pt solid var(--forest);font-weight:700;color:var(--forest)}
+.qq{border-top:1.5pt solid var(--forest);margin-top:4pt}
+.qq>div{padding:8pt 0 4pt;border-bottom:0.6pt solid var(--line)}
+.qq b{display:block;font-size:10.8pt;color:var(--forest);font-weight:600;margin-bottom:2pt}
+.qq .wl{height:36pt;border-bottom:0.8pt dashed #CFC7B6}
+.bkcards{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:18pt 0 6pt;width:5.6in}
+.bkcards div{border:1pt solid #6E8170;border-radius:9pt;padding:12pt;text-align:left}
+.bkcards b{display:block;font:600 13pt/1.2 var(--serif);color:var(--stone);margin-bottom:4pt}
+.bkcards span{font-size:9.5pt;color:#CFD6CC;line-height:1.4}
+html.bw .dist .a{background:#fff;color:#222;border:1.6pt solid #222}
+html.bw .dist .a .n,html.bw .dist .a p{color:#222}
+html.bw .bkcards b,html.bw .bkcards span{color:#222}
+html.bw .hk .nt{background:#fff;border:0.6pt solid #999}
+
+.tt td{font-size:9.6pt;padding:5pt 5pt}
+.tt th{font-size:7.3pt;padding:5pt 5pt}
+.tt td:first-child{font-weight:600;color:var(--forest)}
+.tt tr.grp td{background:var(--soft);font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);padding:6pt 5pt}
+.sig{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10pt;margin:8pt 0}
+.sig>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 12pt}
+.sig h3{margin:0 0 5pt;font-size:13pt}
+.sig .lbl{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin:7pt 0 3pt}
+.sig p{margin:0;font-size:10pt;line-height:1.42}
+.sig .act{border-top:0.6pt solid var(--line);margin-top:7pt;padding-top:6pt}
+.now{border:1.6pt solid var(--clay);border-radius:9pt;padding:11pt 14pt;margin:10pt 0;background:#fff}
+.now h3{margin:0 0 4pt;font-size:13pt;color:var(--rust)}
+.now p{margin:0;font-size:10.3pt;line-height:1.45}
+.permit{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:8pt 0}
+.permit>div{background:#fff;border:1pt solid var(--line);border-radius:10pt;padding:13pt 15pt}
+.permit>div.plus{border:1.6pt solid var(--forest)}
+.permit small{display:block;font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.permit h3{margin:0 0 6pt;font-size:16pt}
+.permit .hrs{font:600 22pt/1.1 var(--serif);color:var(--forest);margin:4pt 0 2pt}
+.permit .hl{font:600 8pt/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:#8B8577;margin-bottom:8pt}
+.permit p{margin:0;font-size:10.3pt;line-height:1.45}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin:6pt 0}
+.mini>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:10pt 13pt}
+.mini h3{margin:0 0 3pt;font-size:12.5pt}
+.mini .s{font:600 8pt/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--clay);margin-bottom:4pt}
+.mini p{margin:0;font-size:10pt;line-height:1.42}
+.stops{border-top:1.5pt solid var(--forest);margin-top:4pt}
+.stops>div{display:grid;grid-template-columns:1.55in 1fr;gap:12pt;padding:7pt 0;border-bottom:0.6pt solid var(--line)}
+.stops b{font:600 12pt/1.25 var(--serif);color:var(--forest)}
+.stops p{margin:0;font-size:10pt;line-height:1.42}
+.months td{font-size:9.6pt;padding:5pt 6pt;line-height:1.38}
+.months td:first-child{font:600 11pt/1.2 var(--serif);color:var(--forest);width:0.95in;white-space:nowrap}
+.log{background:#fff;border:1pt solid var(--line);border-radius:10pt;padding:12pt 16pt;margin-bottom:12pt}
+.log .opts{margin-top:7pt}
+.spots td{font-size:10pt;padding:6pt 6pt}
+.spots td.b{width:0.8in;text-align:center}
+.spots td.b::before{content:"";display:inline-block;width:10pt;height:10pt;border:1.2pt solid var(--forest);border-radius:2pt;background:#fff}
+.plan .d{grid-template-columns:0.85in 1fr}
+.log .f2 .fl{height:28pt}
+html.bw .now{border-color:#444}
+html.bw .tt tr.grp td{background:#fff}
+</style></head><body><section class="page cover photo"><div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="470" height="330" viewBox="0 0 470 330" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<path d="M0 230 L70 170 L110 195 L190 80 L230 120 L265 95 L340 175 L380 150 L470 225" stroke="#F5F1EA" stroke-width="3.5"/>
+<path d="M190 80 L172 106 L186 102 L198 114 L210 98 L230 120" stroke="#F5F1EA" stroke-width="2.5"/>
+<path d="M40 300 L40 262 M28 270 L40 250 L52 270 M28 284 L40 262 L52 284 M430 300 L430 258 M416 268 L430 246 L444 268 M416 284 L430 260 L444 284" stroke="#F5F1EA" stroke-width="2.5"/>
+<path d="M90 300 C150 280 170 255 230 255 C290 255 300 230 360 222" stroke="#F5F1EA" stroke-width="3" stroke-dasharray="2 10"/>
+<circle cx="390" cy="60" r="20" stroke="#F5F1EA" stroke-width="3"/>
+</svg></div>
+<div><h1>Rocky Mountain National Park</h1><p class="sub">A trip planning guide for first-time visitors. Timed entry made simple, when to go, 1, 2 and 3-day plans, 18 day hikes and walks from easy lakeside loops to waterfalls, and the altitude, storm and wildlife rules that keep you safe.</p>
+<div class="meta" style="margin-top:22pt"><span>30 pages</span><span>18 hikes and walks</span><span>mi + km, ft + m</span></div></div></section><section class="page "><div class="kicker">Start here</div><h2>How to use this guide</h2>
+<p class="lead">Rocky Mountain National Park is high country: most trailheads sit between 8,000 and 9,500 ft (2,400 to 2,900 m), and the main road crosses the Continental Divide above 12,000 ft. This guide helps you plan a first visit without the stress.</p>
+<div class="cols" style="margin-top:4pt">
+<div><h3>What is inside</h3><ul class="check"><li>The park at a glance, and when to go</li><li>Timed entry reservations, explained step by step</li><li>Gateway towns, campgrounds and shuttles</li><li>Altitude, afternoon storms and wildlife</li><li>18 day hikes and walks on both sides of the park</li><li>Trail Ridge Road and Old Fall River Road</li><li>Sample 1, 2 and 3-day plans</li><li>Packing list, booking checklist, planner and hike log</li></ul></div>
+<div><h3>Who it is for</h3><p>First-time visitors and beginner to intermediate hikers. Every hike here is a day hike on a marked trail, from a flat lakeside loop to a half-day walk to a waterfall.</p>
+<h3>How to read the hikes</h3><p>Distances are round trip, in miles and kilometers. Climbs are total elevation gain from the trailhead, in feet and meters. All trail figures come from the National Park Service.</p></div></div>
+<div class="box forest"><h3>Checked against nps.gov in November 2026</h3><p style="margin:0">Timed entry dates, road openings, shuttles and fees change every year. Snow, storms and wildlife can close trails and roads at short notice. Before you go, check the official pages on page 26, and ask a ranger when you arrive.</p></div>
+<h3>Print it or keep it offline</h3>
+<p>Cell service in the park is patchy. Print the pages you need, or save this PDF to your phone before you leave home. The fill-in pages (26 to 29) are made for printing.</p><div class="folio"><span>Rocky Mountain National Park</span><span>2</span></div></section><section class="page "><div class="kicker">The park</div><h2>At a glance</h2>
+<p class="lead">The Continental Divide splits the park in two. The east side, near Estes Park, has most of the famous lakes and the busiest trails. The west side, near Grand Lake, is quieter, with wide river meadows and moose.</p>
+<div class="glance">
+<div><h3>East side</h3><table>
+<tr><td>Town</td><td>Estes Park, visitor center at 7,522 ft (2,293 m)</td></tr>
+<tr><td>Entrances</td><td>Beaver Meadows, Fall River, Wild Basin (south)</td></tr>
+<tr><td>Highlights</td><td>Bear Lake Road and its lakes, Moraine Park, Sprague Lake, Wild Basin waterfalls, Longs Peak</td></tr>
+<tr><td>Visitor centers</td><td>Beaver Meadows and Fall River (all year), Moraine Park Discovery Center (summer)</td></tr></table></div>
+<div><h3>West side</h3><table>
+<tr><td>Town</td><td>Grand Lake, 8,367 ft (2,550 m)</td></tr>
+<tr><td>Entrance</td><td>Grand Lake Entrance</td></tr>
+<tr><td>Highlights</td><td>Kawuneeche Valley, the young Colorado River, Holzwarth Historic Site, Adams Falls</td></tr>
+<tr><td>Visitor center</td><td>Kawuneeche Visitor Center, 8,720 ft (2,658 m)</td></tr></table></div></div>
+<h3>Trail Ridge Road joins the two sides</h3>
+<p>The highest continuous paved road in the US runs 48 mi (77 km) from Estes Park to Grand Lake and tops out at 12,183 ft (3,713 m). It is usually open from late May to mid or late fall, and closed in winter (page 15).</p>
+<table><tr><th>Place</th><th>Elevation</th><th>What it means for you</th></tr>
+<tr><td><b>Estes Park</b></td><td>7,522 ft / 2,293 m</td><td>Higher than Denver: sleep here the first night if you can</td></tr>
+<tr><td><b>Bear Lake</b></td><td>9,475 ft / 2,888 m</td><td>Most popular trailhead. Breathing feels harder</td></tr>
+<tr><td><b>Alpine Visitor Center</b></td><td>11,796 ft / 3,595 m</td><td>Above the trees. Cold, windy, thin air</td></tr>
+<tr><td><b>Longs Peak</b></td><td>14,259 ft / 4,346 m</td><td>The park's highest summit. Not a beginner hike</td></tr></table>
+<div class="box forest"><h3>Three things that surprise first-timers</h3><p style="margin:0">You need a timed entry reservation in summer and early fall (page 5). Even easy trails feel hard at this altitude on the first day (page 8). And there are no hotels inside the park: you sleep in a gateway town or a campground (page 7).</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>3</span></div></section><section class="page "><div class="kicker">Timing</div><h2>When to go: month by month</h2><p class="lead">For a first hiking trip, late June to September gives you open roads and snow-free trails. September is the favorite: golden aspens, bugling elk and fewer storms, but busy weekends.</p><table class="months"><tr><td>Jan to Mar</td><td>Deep winter. Trail Ridge Road closed. Snowshoeing above about 9,000 ft. Few people, short days, strong winds up high.</td></tr><tr><td>April</td><td>Still winter on the trails. Lower trails have patchy snow and ice. Good for wildlife watching in the meadows.</td></tr><tr><td>May</td><td>Snow melts low down; high trails stay snowy. Trail Ridge Road usually opens the last week of May. Timed entry starts late May.</td></tr><tr><td>June</td><td>Lakes thaw, waterfalls are full. Snow can linger on trails above 10,000 ft. Busy from mid-June.</td></tr><tr><td>July</td><td>Wildflowers on the tundra. The busiest month. Old Fall River Road usually opens early July. Afternoon storms most days.</td></tr><tr><td>August</td><td>Warm days, busy trails, frequent afternoon thunderstorms. Start every hike early.</td></tr><tr><td>September</td><td>Elk rut begins, aspens turn gold mid to late month. Cooler, clear mornings. Weekends very busy.</td></tr><tr><td>October</td><td>Elk rut continues, first snows up high. Timed entry ends mid-October. Old Fall River Road closes early October.</td></tr><tr><td>Nov to Dec</td><td>Trail Ridge Road closes for the winter (mid-November in 2025). Quiet, cold, icy trails: bring traction.</td></tr></table><div class="box"><h3 style="margin-top:0">Snow lasts longer than you think</h3><p style="margin:0">A warm sunny day in Estes Park in June can still mean snow and ice on the trail to Emerald Lake. Ask at a visitor center about trail conditions, and pack traction devices from October to June.</p></div><table style="margin-top:4pt"><tr><th>If you want</th><th>Go in</th></tr><tr><td>Snow-free trails and every road open</td><td>Mid-July to mid-September</td></tr><tr><td>Wildflowers on the tundra</td><td>July</td></tr><tr><td>Golden aspens and bugling elk</td><td>Mid-September to early October</td></tr><tr><td>No reservations and few people</td><td>Mid-October to mid-May (bring traction)</td></tr></table><div class="folio"><span>Rocky Mountain National Park</span><span>4</span></div></section><section class="page "><div class="kicker">Timed entry</div><h2>Timed entry, explained</h2>
+<p class="lead">From late May to mid-October you need a timed entry reservation to drive into the park during the busiest hours. It is the part of the trip people most often get wrong, so plan it first.</p>
+<div class="permit">
+<div><small>Option 1</small><h3>Timed Entry</h3><div class="hrs">9 am to 2 pm</div><div class="hl">Whole park except Bear Lake Road</div><p>For Trail Ridge Road, the west side, Wild Basin, Lumpy Ridge, Longs Peak and Lily Lake. In 2026: May 22 to October 12.</p></div>
+<div class="plus"><small>Option 2</small><h3>Timed Entry+ Bear Lake Road</h3><div class="hrs">5 am to 6 pm</div><div class="hl">Bear Lake Road and the rest of the park</div><p>Needed for Bear Lake, Glacier Gorge, Sprague Lake and the other trailheads on Bear Lake Road. In 2026: May 22 to October 18.</p></div></div>
+<h3>How it works</h3>
+<div class="bk">
+<div><b>Pick a 2-hour window</b><p>Each reservation lets you enter during a two-hour window. Once you are in, stay as long as you like: there is no set time to leave.</p></div>
+<div><b>Book on recreation.gov</b><p>Online, in the Recreation.gov app or by phone. Not at the park gates or visitor centers. The only cost is a $2 processing fee, which is not refunded.</p></div>
+<div><b>Monthly release</b><p>In 2026 each month opened at 8 am Mountain Time on the 1st of the month before: May 1 for late May and June, June 1 for July, July 1 for August, August 1 for September, September 1 for October.</p></div>
+<div><b>Night-before release</b><p>More reservations are released at 7 pm Mountain Time the evening before each date. They go fast, so be logged in and ready.</p></div>
+<div><b>Plus your pass</b><p>The reservation is not a ticket. You still need a park entrance pass or an annual pass (page 7).</p></div></div>
+<div class="now"><h3>Planning a 2027 trip?</h3><p>This page describes the 2026 system. The park announces each year's dates and rules ahead of the season. Check nps.gov/romo and search "timed entry" before you book anything else.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>5</span></div></section><section class="page "><div class="kicker">Timed entry</div><h2>If you miss out, and what to do on the day</h2>
+<p class="lead">Sold out for your date? You can still see the park. These are the legal, simple ways around a missing reservation.</p>
+<div class="layers">
+<div><div class="num">1</div><h3>Go early</h3><p>No reservation is needed to enter the rest of the park before 9 am. Bear Lake Road needs Timed Entry+ from 5 am.</p><div class="eg">Early starts also beat the afternoon storms (page 9).</div></div>
+<div><div class="num">2</div><h3>Go late</h3><p>After 2 pm you can enter the rest of the park without a reservation. In 2026, a missed Bear Lake Road window meant coming back after 2 pm.</p><div class="eg">Evening is the best time to see elk in the meadows.</div></div>
+<div><div class="num">3</div><h3>Try again</h3><p>Check Recreation.gov at 7 pm the night before. Plans change and spots can open up.</p><div class="eg">Set a phone alarm for 6:55 pm Mountain Time.</div></div></div>
+<h3>The free park shuttles (summer)</h3>
+<table><tr><th>Shuttle</th><th>Route</th><th>2026 season</th></tr>
+<tr><td><b>Bear Lake</b></td><td>Park &amp; Ride, Bierstadt Lake, Glacier Gorge, Bear Lake. Every 10 to 15 min</td><td>May 22 to Oct 18</td></tr>
+<tr><td><b>Moraine Park</b></td><td>Park &amp; Ride, Sprague Lake, Moraine Park, Cub Lake and Fern Lake trailheads. About hourly</td><td>May 22 to Oct 18</td></tr>
+<tr><td><b>Hiker Shuttle</b></td><td>Estes Park Visitor Center to the Park &amp; Ride. Needs a $2 ticket per rider on Recreation.gov</td><td>Daily to early Sept, then weekends to Oct 18</td></tr></table>
+<p class="small">The Park &amp; Ride is on Bear Lake Road and has no food or stores. Check the last bus time: in 2026 it left Bear Lake at 7:30 pm. Pets are not allowed on the shuttles (service animals only). There is no shuttle on the west side or over Trail Ridge Road.</p>
+<div class="box"><h3 style="margin-top:0">Camping or backpacking?</h3><p style="margin:0">Campground and wilderness permit holders have their own entry rules. Check the timed entry FAQ on nps.gov/romo, or call the park at (970) 586-1206.</p></div>
+<div class="warn"><b>Bear Lake and Glacier Gorge parking fills early</b> on summer and fall days, even for people with a reservation. Arrive early or park at the Park &amp; Ride and take the shuttle.</div><div class="folio"><span>Rocky Mountain National Park</span><span>6</span></div></section><section class="page "><div class="kicker">Getting there</div><h2>Getting there, staying, and paying</h2>
+<p class="lead">Most visitors fly into Denver and drive. Denver International Airport is about 76 mi (122 km) from the Beaver Meadows Visitor Center on the east side.</p>
+<div class="mini">
+<div><h3>Estes Park</h3><div class="s">East side · most rooms</div><p>Hotels, cabins, restaurants and gear stores right outside the Beaver Meadows and Fall River entrances. Best base for Bear Lake Road.</p></div>
+<div><h3>Grand Lake</h3><div class="s">West side · quieter</div><p>A small lakeside town by the Grand Lake Entrance. When Trail Ridge Road is closed, the drive from Estes Park is about 145 mi (233 km) around the park.</p></div></div>
+<h3>Campgrounds in the park</h3>
+<p>There are no hotels or lodges inside the park. Moraine Park, Glacier Basin, Aspenglen and Timber Creek (west side) take reservations on Recreation.gov up to 6 months ahead. Longs Peak (tents only, about July to early September) is the only first-come, first-served campground. Moraine Park is the only one open in winter, first-come, first-served. Timber Creek closed in August 2026 for repairs: check its status.</p>
+<h3>Entrance fees (2026)</h3>
+<table class="fee"><tr><th>Pass</th><th>Price</th><th>Covers</th></tr>
+<tr><td>Private vehicle</td><td>$30 / $35</td><td>1 day / 7 days. One car and everyone in it</td></tr>
+<tr><td>Per person (walk-in or bike)</td><td>$15 / $20</td><td>1 day / 7 days</td></tr>
+<tr><td>Rocky Mountain annual pass</td><td>$70</td><td>One year, this park only. US citizens and residents</td></tr>
+<tr><td>America the Beautiful</td><td>$80 / $250</td><td>One year, all national parks. US residents / non-residents</td></tr>
+<tr><td>Non-resident fee</td><td>$100 each</td><td>Visitors 16+ from outside the US, on top of the entrance fee, unless you hold an annual pass</td></tr></table>
+<p class="small">The park is cashless: cards only. Visiting from Canada or elsewhere? You count as a non-resident. Check nps.gov/romo/planyourvisit/fees.htm for current prices before you go.</p><div class="folio"><span>Rocky Mountain National Park</span><span>7</span></div></section><section class="page "><div class="kicker">Safety</div><h2>Altitude: why the first day feels hard</h2>
+<p class="lead">At Bear Lake there is noticeably less oxygen in each breath than at sea level. Even fit hikers puff on easy climbs here. That is normal. Plan around it.</p>
+<div class="layers">
+<div><div class="num">1</div><h3>Go slow</h3><p>Choose an easy, short hike on day one (Bear Lake, Sprague Lake, Alberta Falls) and save the longer climbs for later in the trip.</p><div class="eg">Walk at a pace where you can still talk.</div></div>
+<div><div class="num">2</div><h3>Drink and eat</h3><p>The air is dry and you lose water fast. The park suggests several quarts (liters) of water a day. Eat regular snacks.</p><div class="eg">Go easy on alcohol the first night.</div></div>
+<div><div class="num">3</div><h3>Sun is stronger</h3><p>There is less atmosphere to block the sun up here, and severe sunburn is a real risk, even on cool days.</p><div class="eg">Reapply sunscreen often.</div></div></div>
+<div class="sig">
+<div><h3>Mild altitude sickness</h3><div class="lbl">Signs</div><p>Headache, nausea, dizziness, tiredness, poor sleep.</p><div class="act"><p>Rest, drink water and do not go higher. If it does not get better, go down to a lower elevation.</p></div></div>
+<div><h3>Getting worse</h3><div class="lbl">Signs</div><p>Headache that does not ease, vomiting, getting more tired and clumsy.</p><div class="act"><p>Go down now, with someone. Even 1,000 to 2,000 ft (300 to 600 m) lower can help a lot.</p></div></div>
+<div><h3>Emergency</h3><div class="lbl">Signs</div><p>Confusion, stumbling, short of breath while resting, a wet cough.</p><div class="act"><p>Call 911 or get a ranger. Go down at once and get medical care.</p></div></div></div>
+<div class="warn">Altitude can make existing health problems worse. If you have a heart or lung condition, or are pregnant, ask your doctor before a trip to high elevation. This page is general information, not medical advice.</div>
+<div class="box"><h3 style="margin-top:0">An easy trick</h3><p style="margin:0">Spend your first night in Estes Park or Grand Lake, not straight off a flight into a high trailhead. Your body adjusts a little each day you spend up high.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>8</span></div></section><section class="page "><div class="kicker">Safety</div><h2>Afternoon thunderstorms</h2>
+<p class="lead">In summer, clear mornings often turn into thunderstorms by early afternoon. Above treeline there is nowhere to hide from lightning, so the whole plan comes down to timing.</p>
+<div class="dist"><div class="a"><div class="n">Start early</div><div class="u">on the trail at first light</div><p>Most storms build after midday in July and August.</p></div><div class="b"><div class="n">Be down early</div><div class="u">below treeline by early afternoon</div><p>Aim to be off open ridges and summits by noon.</p></div></div>
+<div class="cols">
+<div><h3>Watch the sky</h3><ul class="check"><li>Puffy clouds growing tall by late morning</li><li>Dark bases and a cold gust of wind</li><li>Distant thunder: you are already in range</li><li>Hair standing up or a buzzing sound: move now</li></ul></div>
+<div><h3>If a storm catches you</h3><ul class="check"><li>Get off summits and ridges, go down</li><li>Move away from lone trees and big rocks</li><li>Avoid small caves and rock overhangs</li><li>If you cannot get lower, crouch low on your heels</li><li>Spread a group out, at least 50 ft (15 m) apart</li></ul></div></div>
+<h3>Weather changes fast</h3>
+<p>The park warns that a sunny day can quickly turn windy and wet, with driving rain or even snow, in any month. Carry a rain jacket and a warm layer on every hike, even a short one. Hypothermia can happen in summer when you are wet and tired in the wind.</p>
+<div class="em"><h3>The safe car</h3><p>A hard-top car is a good shelter from lightning. On Trail Ridge Road, if a storm rolls in, stay in your car and enjoy the view through the windshield.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>9</span></div></section><section class="page "><div class="kicker">Safety</div><h2>Wildlife: elk, moose and bears</h2>
+<p class="lead">Elk graze in the meadows by the road, moose feed in the west-side willows, and black bears live in the forests. Watching them is a highlight. Getting close is how people get hurt.</p>
+<div class="diff">
+<div><div class="tag">Keep your distance</div><h3>The park's rules</h3><ul class="check"><li>Elk and bighorn sheep: at least 75 ft (23 m)</li><li>Moose, bears and mountain lions: at least 120 ft (37 m)</li><li>If an animal reacts to you, you are too close</li><li>Never feed any animal, even a chipmunk</li><li>Calling elk and spotlighting wildlife are banned</li></ul></div>
+<div><div class="tag">Where and when</div><h3>Seeing them safely</h3><ul class="check"><li>Elk: meadows at dawn and dusk, all year</li><li>Bighorn sheep: Sheep Lakes and Horseshoe Park, May to mid-August</li><li>Moose: Kawuneeche Valley on the west side</li><li>Use binoculars or a zoom lens</li><li>Pull fully off the road to watch</li></ul></div></div>
+<div class="cols" style="margin-top:6pt">
+<div><h3>Moose</h3><p>Moose look calm but can charge, especially cows with calves. If one walks toward you, back away and put a tree or car between you.</p>
+<h3>Elk rut (September and October)</h3><p>Bulls are aggressive. Some meadows close to people on foot from evening to mid-morning: Horseshoe Park, Upper Beaver Meadows, Moraine Park, Harbison Meadow and Holzwarth Meadow.</p></div>
+<div><h3>Black bears and mountain lions</h3><p>Rarely seen. If you meet one, do not run. Stand tall, make noise, and back away slowly. Fight back if attacked.</p>
+<h3>Food storage</h3><p>Never leave food, coolers or trash out at picnic areas or campsites. Use the food lockers in campgrounds, and keep food out of sight in a closed car.</p></div></div>
+<div class="folio"><span>Rocky Mountain National Park</span><span>10</span></div></section><section class="page "><div class="kicker">Hikes · Bear Lake Road</div><div class="hk"><div class="top"><div><small>Hike 1</small><h3>Bear Lake Loop</h3></div><span class="lv">Easy</span></div>
+<div class="st"><div><b>Loop</b><span>0.5 mi</span><em>0.8 km</em></div><div><b>Climb</b><span>20 ft</span><em>6 m</em></div><div><b>Start</b><span>9,475 ft</span><em>2,888 m</em></div><div><b>Best</b><span>Early morning</span><em>Calm water</em></div></div>
+<p><span class="lb">Where</span>Bear Lake Trailhead, at the end of Bear Lake Road, 9,475 ft (2,888 m). Timed Entry+ or the Bear Lake shuttle.</p><p><span class="lb">What you see</span>A flat walk all the way around a mountain lake, with Hallett Peak and the Continental Divide reflected in the water on a still morning. Signs along the way explain the forest and the peaks.</p><p><span class="lb">Good to know</span>The perfect first walk on arrival day while your body gets used to the altitude. Busy from mid-morning, so come early or late.</p></div><div class="hk"><div class="top"><div><small>Hike 2</small><h3>Nymph, Dream and Emerald Lakes</h3></div><span class="lv">Easy to moderate</span></div>
+<div class="st"><div><b>Round trip</b><span>1 to 3.6 mi</span><em>1 · 2.2 · 3.6 mi</em></div><div><b>Climb</b><span>Up to 605 ft</span><em>225 · 425 · 605 ft</em></div><div><b>Water</b><span>None</span><em>Carry your own</em></div><div><b>Best</b><span>July to Sept</span><em>Snow into June</em></div></div>
+<p><span class="lb">Where</span>Same trailhead. The trail climbs past each lake in turn: turn around at whichever one suits you.</p><p><span class="lb">What you see</span>Three lakes in a row: lily pads on Nymph Lake, a long view to the peaks at Dream Lake, and Emerald Lake tucked under the cliffs of Hallett Peak. The most popular hike in the park for good reason.</p><p><span class="lb">Good to know</span>Snow and ice linger on the upper section into early summer and come back in October. Carry traction devices outside midsummer.</p><div class="nt">Turnaround guide: Nymph Lake (1 mi / 1.6 km round trip, 225 ft / 69 m) for a first-day stroll, Dream Lake (2.2 mi / 3.5 km, 425 ft / 130 m) for most families, Emerald Lake (3.6 mi / 5.8 km, 605 ft / 184 m) for a fuller morning.</div></div><div class="folio"><span>Rocky Mountain National Park</span><span>11</span></div></section><section class="page "><div class="kicker">Hikes · Bear Lake Road</div><div class="hk"><div class="top"><div><small>Hike 3</small><h3>Alberta Falls</h3></div><span class="lv">Easy</span></div>
+<div class="st"><div><b>Round trip</b><span>1.6 mi</span><em>2.6 km</em></div><div><b>Climb</b><span>160 ft</span><em>49 m</em></div><div><b>Start</b><span>9,240 ft</span><em>2,816 m</em></div><div><b>Best</b><span>June to Oct</span><em>Full in June</em></div></div>
+<p><span class="lb">Where</span>Glacier Gorge Trailhead on Bear Lake Road, 9,240 ft (2,816 m). Small lot: take the Bear Lake shuttle.</p><p><span class="lb">What you see</span>A short walk through aspen and pine along Glacier Creek to a waterfall crashing through a rocky gorge. Gold aspens make it a favorite in late September.</p><p><span class="lb">Good to know</span>Stay back from the wet rocks at the falls: the water is cold and fast, and the rocks are slippery.</p></div><div class="hk"><div class="top"><div><small>Hike 4</small><h3>Mills Lake</h3></div><span class="lv">Moderate</span></div>
+<div class="st"><div><b>Round trip</b><span>5.6 mi</span><em>9 km</em></div><div><b>Climb</b><span>750 ft</span><em>229 m</em></div><div><b>Start</b><span>9,240 ft</span><em>2,816 m</em></div><div><b>Best</b><span>July to Sept</span><em>Start early</em></div></div>
+<p><span class="lb">Where</span>Same trailhead. Continue past Alberta Falls and follow the signs into Glacier Gorge.</p><p><span class="lb">What you see</span>A big step up from the lakes on page 11: open granite slabs, views of Longs Peak, and a long lake in a valley carved by glaciers. One of the most scenic half-days in the park.</p><p><span class="lb">Good to know</span>Turn around at Alberta Falls if anyone feels the altitude. Watch for storms building over the peaks after midday.</p><div class="nt">Also on Bear Lake Road: Sprague Lake, a flat 0.8 mi (1.3 km) loop with mountain views, and Bierstadt Lake, 2.8 mi (4.5 km) round trip with 566 ft (173 m) of climb from the Bierstadt Lake Trailhead.</div></div><div class="folio"><span>Rocky Mountain National Park</span><span>12</span></div></section><section class="page "><div class="kicker">Hikes · Wild Basin and Longs Peak</div><div class="hk"><div class="top"><div><small>Hike 5</small><h3>Copeland Falls to Ouzel Falls</h3></div><span class="lv">Easy to moderate</span></div>
+<div class="st"><div><b>Round trip</b><span>0.6 to 5.4 mi</span><em>0.6 · 3.6 · 5.4 mi</em></div><div><b>Climb</b><span>Up to 950 ft</span><em>15 · 700 · 950 ft</em></div><div><b>Water</b><span>Streams</span><em>Treat or filter</em></div><div><b>Best</b><span>June to Oct</span><em>Waterfalls in June</em></div></div>
+<p><span class="lb">Where</span>Wild Basin Trailhead, 8,500 ft (2,591 m), off Highway 7 south of Estes Park. Small lot that fills early.</p><p><span class="lb">What you see</span>A waterfall walk with three good turnaround points: Copeland Falls (0.6 mi / 1 km round trip, almost flat), Calypso Cascades tumbling over fallen logs (3.6 mi / 5.8 km, 700 ft / 213 m), and Ouzel Falls dropping through the forest (5.4 mi / 8.7 km, 950 ft / 290 m).</p><p><span class="lb">Good to know</span>Wild Basin is covered by the standard Timed Entry (9 am to 2 pm) in season. Drink only treated or filtered stream water.</p></div><div class="hk"><div class="top"><div><small>Hike 6</small><h3>Eugenia Mine</h3></div><span class="lv">Moderate</span></div>
+<div class="st"><div><b>Round trip</b><span>2.8 mi</span><em>4.5 km</em></div><div><b>Climb</b><span>508 ft</span><em>155 m</em></div><div><b>Start</b><span>9,300 ft</span><em>2,835 m</em></div><div><b>Best</b><span>July to Sept</span><em>Early start</em></div></div>
+<p><span class="lb">Where</span>Longs Peak Trailhead, 9,300 ft (2,835 m), off Highway 7.</p><p><span class="lb">What you see</span>A forest walk to the remains of an early 1900s mining claim, with old machinery and a cabin site in a quiet clearing. A short taste of the famous trailhead without its long climb.</p><p><span class="lb">Good to know</span>Take the Storm Pass Trail fork toward Estes Cone and follow the signs. Ask a ranger for the current route.</p><div class="nt">Longs Peak (14,259 ft) is not a hike for this guide. The NPS lists 16 mi (25.7 km) round trip and almost 4,900 ft (1,490 m) of climb, and the usual Keyhole Route is a steep scramble with long drops, best done only by experienced, fit and well-acclimatized climbers. People have died on it.</div></div><div class="folio"><span>Rocky Mountain National Park</span><span>13</span></div></section><section class="page "><div class="kicker">Hikes · West side</div><div class="hk"><div class="top"><div><small>Hike 7</small><h3>Adams Falls</h3></div><span class="lv">Easy</span></div>
+<div class="st"><div><b>Round trip</b><span>0.6 mi</span><em>1 km</em></div><div><b>Climb</b><span>79 ft</span><em>24 m</em></div><div><b>Start</b><span>8,400 ft</span><em>2,560 m</em></div><div><b>Best</b><span>June to Oct</span><em>Moose nearby</em></div></div>
+<p><span class="lb">Where</span>East Inlet Trailhead, just outside the town of Grand Lake, 8,400 ft (2,560 m).</p><p><span class="lb">What you see</span>A short walk to a waterfall rushing through a narrow rock channel. Keep going a little past it into a wide, flowery valley where moose are sometimes seen.</p><p><span class="lb">Good to know</span>Great for a first evening on the west side. Covered by the standard Timed Entry in season.</p></div><div class="hk"><div class="top"><div><small>Hike 8</small><h3>Lulu City on the Colorado River Trail</h3></div><span class="lv">Easy to moderate</span></div>
+<div class="st"><div><b>Round trip</b><span>7.4 mi</span><em>11.9 km</em></div><div><b>Climb</b><span>350 ft</span><em>107 m</em></div><div><b>Start</b><span>9,010 ft</span><em>2,746 m</em></div><div><b>Best</b><span>July to Sept</span><em>Long but gentle</em></div></div>
+<p><span class="lb">Where</span>Colorado River Trailhead, Trail Ridge Road, 9,010 ft (2,746 m), north of the Kawuneeche Visitor Center.</p><p><span class="lb">What you see</span>A gentle trail beside the young Colorado River, close to its source, past meadows and old mining tailings to the site of Lulu City, a short-lived mining town from around 1880.</p><p><span class="lb">Good to know</span>Long but easy-going. Turn around at the mine tailings (about 2 mi / 3.2 km in) for a shorter outing.</p><div class="nt">Two flat walks nearby: the Coyote Valley Trail (1 mi / 1.6 km round trip, wheelchair and stroller friendly, elk often graze here) and the walk to the Holzwarth Historic Site, a 1920s guest ranch (about 1 mi / 1.6 km round trip).</div></div><div class="folio"><span>Rocky Mountain National Park</span><span>14</span></div></section><section class="page "><div class="kicker">Scenic drives</div><h2>Trail Ridge Road and Old Fall River Road</h2><p class="lead">Trail Ridge Road crosses the park in 48 mi (77 km), with 11 mi (18 km) above 11,500 ft (3,500 m). Allow at least half a day with stops. In season, the standard Timed Entry covers it.</p><div class="stops"><div><b>Many Parks Curve</b><p>Big view over the valleys of the east side. Winter road closure point.</p></div><div><b>Rainbow Curve</b><p>Wide overlook as you climb toward treeline.</p></div><div><b>Forest Canyon Overlook</b><p>Short paved path to a view down a deep glacial canyon.</p></div><div><b>Rock Cut</b><p>The Tundra Communities Trail (hike 9): 1 mi (1.6 km) round trip, 200 ft (61 m), above 12,000 ft (3,660 m).</p></div><div><b>Alpine Visitor Center</b><p>11,796 ft (3,595 m). Exhibits, restrooms, food. Summer only.</p></div><div><b>Milner Pass</b><p>The Continental Divide, with Poudre Lake beside the road.</p></div><div><b>Farview Curve</b><p>Looks down on the Kawuneeche Valley and the Never Summer Mountains.</p></div></div><div class="cols" style="margin-top:8pt">
+<div><h3>Season</h3><p>Usually opens to through travel in the last week of May and closes for winter in mid or late fall (November 14 in 2025). In winter, you can drive the east side up to Many Parks Curve and the west side up to the Colorado River Trailhead. Road status line: (970) 586-1222, 24 hours.</p></div>
+<div><h3>Old Fall River Road</h3><p>An 11 mi (18 km), mostly gravel road with no guardrails, from Horseshoe Park up to the Alpine Visitor Center. One way, uphill only: you cannot drive it down. Speed limit 15 mph. Usually open to cars from early July to early October. No vehicles over 25 ft (7.6 m) and no trailers.</p></div></div>
+<div class="warn">On the tundra, stay on the paths. Alpine plants grow very slowly, and one footstep can kill a plant that took years to grow. Up here it is often 20 °F (11 °C) or more colder than in Estes Park, and windy: bring a jacket.</div><div class="folio"><span>Rocky Mountain National Park</span><span>15</span></div></section><section class="page "><div class="kicker">Choose your hike</div><h2>All the hikes on one page</h2><p style="margin-bottom:4pt">Round trip distance and total climb, NPS figures. Crowd levels are for summer and fall weekends: early mornings are always quieter. Numbers match the hike pages.</p><table class="tt"><tr><th>Hike</th><th>mi / km</th><th>Climb ft / m</th><th>Level</th><th>Crowds</th></tr><tr class="grp"><td colspan="5">East · Bear Lake Road</td></tr><tr><td>1 Bear Lake Loop</td><td>0.5 / 0.8</td><td>20 / 6</td><td>Easy</td><td>Very busy</td></tr><tr><td>2 Nymph Lake</td><td>1 / 1.6</td><td>225 / 69</td><td>Easy</td><td>Very busy</td></tr><tr><td>2 Dream Lake</td><td>2.2 / 3.5</td><td>425 / 130</td><td>Easy-mod.</td><td>Very busy</td></tr><tr><td>2 Emerald Lake</td><td>3.6 / 5.8</td><td>605 / 184</td><td>Moderate</td><td>Very busy</td></tr><tr><td>3 Alberta Falls</td><td>1.6 / 2.6</td><td>160 / 49</td><td>Easy</td><td>Very busy</td></tr><tr><td>Sprague Lake</td><td>0.8 / 1.3 loop</td><td>Flat</td><td>Easy</td><td>Busy</td></tr><tr><td>Bierstadt Lake</td><td>2.8 / 4.5</td><td>566 / 173</td><td>Moderate</td><td>Moderate</td></tr><tr><td>4 Mills Lake</td><td>5.6 / 9</td><td>750 / 229</td><td>Moderate</td><td>Busy</td></tr><tr class="grp"><td colspan="5">East · other areas</td></tr><tr><td>Gem Lake (Lumpy Ridge)</td><td>3.2 / 5.1</td><td>1,000 / 305</td><td>Mod.-hard</td><td>Moderate</td></tr><tr><td>5 Copeland Falls</td><td>0.6 / 1</td><td>15 / 5</td><td>Easy</td><td>Moderate</td></tr><tr><td>5 Calypso Cascades</td><td>3.6 / 5.8</td><td>700 / 213</td><td>Moderate</td><td>Moderate</td></tr><tr><td>5 Ouzel Falls</td><td>5.4 / 8.7</td><td>950 / 290</td><td>Moderate</td><td>Moderate</td></tr><tr><td>6 Eugenia Mine</td><td>2.8 / 4.5</td><td>508 / 155</td><td>Moderate</td><td>Quiet</td></tr><tr class="grp"><td colspan="5">West side and Trail Ridge</td></tr><tr><td>7 Adams Falls</td><td>0.6 / 1</td><td>79 / 24</td><td>Easy</td><td>Busy</td></tr><tr><td>Coyote Valley Trail</td><td>1 / 1.6</td><td>Flat</td><td>Easy</td><td>Moderate</td></tr><tr><td>8 Lulu City</td><td>7.4 / 11.9</td><td>350 / 107</td><td>Easy-mod.</td><td>Quiet</td></tr><tr><td>9 Tundra Communities</td><td>1 / 1.6</td><td>200 / 61</td><td>Easy (high)</td><td>Busy</td></tr></table><p class="small">Gem Lake: from the Lumpy Ridge Trailhead, 1.6 mi (2.6 km) each way, a steady rocky climb to a small lake among granite domes. Good in spring and fall when higher trails are snowy.</p><div class="folio"><span>Rocky Mountain National Park</span><span>16</span></div></section><section class="page "><div class="kicker">Sample plans</div><h2>1 day in the park</h2><div class="plan"><div class="ph"><b>1 day: the best of the east side</b><span>Timed Entry+ Bear Lake Road</span></div><div class="d"><i>Before 8</i><div>Enter early. Park at Bear Lake if there is space, or at the Park &amp; Ride and ride the shuttle.</div></div><div class="d"><i>Morning</i><div>Walk the Bear Lake Loop (hike 1), then Nymph and Dream Lakes, and on to Emerald Lake if you feel good (hike 2).</div></div><div class="d"><i>Midday</i><div>Shuttle to Glacier Gorge and the short walk to Alberta Falls (hike 3). Picnic lunch.</div></div><div class="d"><i>Afternoon</i><div>Drive to Sprague Lake for the flat loop, or rest at the Moraine Park Discovery Center if storms build.</div></div><div class="d"><i>Evening</i><div>Watch elk in Moraine Park or Horseshoe Park from the roadside pullouts as the light fades.</div></div></div><div class="box"><h3 style="margin-top:0">Only have a day and no Bear Lake Road permit?</h3><p style="margin:0">Enter before 9 am and drive Trail Ridge Road to the Alpine Visitor Center, with the Tundra Communities Trail at Rock Cut (page 15). Head back down by early afternoon, then walk to Adams Falls if you continue to Grand Lake, or watch elk in Horseshoe Park on the way back to Estes Park.</p></div>
+<h3>Rules of thumb</h3><ul class="check"><li>One main hike a day, started early</li><li>Easy hikes first, while your body adjusts to the altitude</li><li>Be below treeline by early afternoon in summer</li><li>Book timed entry before anything else in season</li><li>Keep a rainy-day backup (page 20)</li></ul><div class="folio"><span>Rocky Mountain National Park</span><span>17</span></div></section><section class="page "><div class="kicker">Sample plans</div><h2>2 days in the park</h2><div class="plan"><div class="ph"><b>Day 1: lakes and meadows</b><span>Timed Entry+ Bear Lake Road</span></div><div class="d"><i>Morning</i><div>Early start at Bear Lake. Bear Lake Loop, then Nymph, Dream and Emerald Lakes (hikes 1 and 2).</div></div><div class="d"><i>Afternoon</i><div>Alberta Falls (hike 3) or Sprague Lake. Visit the Beaver Meadows Visitor Center for maps and ranger tips.</div></div><div class="d"><i>Evening</i><div>Elk in Moraine Park. Early night in Estes Park.</div></div></div><div class="plan"><div class="ph"><b>Day 2: over the top</b><span>Timed Entry, or enter before 9 am</span></div><div class="d"><i>Morning</i><div>Drive Trail Ridge Road west: Many Parks Curve, Rainbow Curve, Forest Canyon Overlook, the Tundra Communities Trail at Rock Cut (hike 9), the Alpine Visitor Center.</div></div><div class="d"><i>Midday</i><div>Down to the west side. Lunch in Grand Lake, then the flat Coyote Valley Trail and the Holzwarth Historic Site. Watch for moose.</div></div><div class="d"><i>Late day</i><div>Adams Falls (hike 7). Sleep in Grand Lake, or drive back over the top before dark if the weather is clear.</div></div></div><div class="box forest"><h3>Season swap</h3><p style="margin:0">Trail Ridge Road closed (late fall to late May)? Swap day 2 for Wild Basin (hike 5) and Lily Lake on Highway 7, or for Gem Lake at Lumpy Ridge. In winter, try snowshoeing near Bear Lake (page 21).</p></div><h3>Book for this plan</h3><ul class="check"><li>Timed Entry+ Bear Lake Road for day 1</li><li>Timed Entry for day 2, or plan to enter before 9 am</li><li>A room in Estes Park for night 1, and Grand Lake for night 2 if you stay west</li><li>Entrance pass: a 7-day car pass covers both days</li></ul><div class="folio"><span>Rocky Mountain National Park</span><span>18</span></div></section><section class="page "><div class="kicker">Sample plans</div><h2>3 days in the park</h2><div class="plan"><div class="ph"><b>3 days: east, south and west</b><span>Sleep 2 nights in Estes Park, 1 in Grand Lake</span></div><div class="d"><i>Day 1</i><div>Arrive and adjust. Bear Lake Loop and Sprague Lake in the afternoon, elk at dusk in Moraine Park. Pick up a park map and the Junior Ranger booklet at Beaver Meadows.</div></div><div class="d"><i>Day 2</i><div>Early start in Glacier Gorge: Alberta Falls and on to Mills Lake (hikes 3 and 4). Rest in the afternoon. Evening drive through Horseshoe Park, and Sheep Lakes for bighorns in early summer.</div></div><div class="d"><i>Day 3</i><div>Wild Basin waterfalls at first light (hike 5), or Emerald Lake if you skipped it. Then cross Trail Ridge Road with the stops on page 15 and finish at Grand Lake with Adams Falls (hike 7).</div></div></div><div class="box forest"><h3>Make it your own</h3><p style="margin:0">Love quiet trails? Swap day 3 morning for Lulu City on the west side (hike 8). July or August? Drive up Old Fall River Road (one way, uphill) to the Alpine Visitor Center, and come back down on Trail Ridge Road.</p></div>
+<h3>Booking order for this plan</h3><ul class="check"><li>Timed Entry+ Bear Lake Road for days 1 and 2</li><li>Timed Entry for day 3 (or plan to enter before 9 am)</li><li>Rooms in Estes Park and Grand Lake, or campsites</li><li>Entrance pass (a 7-day car pass covers all 3 days)</li><li>Write the plan on page 27 and leave a copy at home</li></ul><div class="box"><h3 style="margin-top:0">Pace yourself</h3><p style="margin:0">Three days at altitude add up. Keep one afternoon free for rest, and if anyone in the group has a headache or poor sleep, swap the next hike for an easy lake walk.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>19</span></div></section><section class="page "><div class="kicker">Plan B</div><h2>Rainy-day and rest-day ideas</h2>
+<p class="lead">Storms, smoke or tired legs are part of every mountain trip. Keep one of these in your pocket.</p>
+<div class="mini">
+<div><h3>Visitor centers</h3><div class="s">East and west</div><p>Beaver Meadows has a park film and a big relief map. The Moraine Park Discovery Center (summer) has nature exhibits and a meadow view from upstairs. Kawuneeche on the west side.</p></div>
+<div><h3>Wildlife from the car</h3><div class="s">Dawn and dusk</div><p>Drive slowly through Moraine Park, Horseshoe Park and the Kawuneeche Valley. Pull fully off the road and watch with binoculars.</p></div>
+<div><h3>Holzwarth Historic Site</h3><div class="s">West side</div><p>A flat walk to a 1920s dude ranch with original cabins. A gentle outing between showers.</p></div>
+<div><h3>Short, low walks</h3><div class="s">Under 1 mi</div><p>Sprague Lake, Coyote Valley or Copeland Falls. Low, close to the car, and easy to cut short if thunder starts.</p></div>
+<div><h3>Ranger programs</h3><div class="s">Free</div><p>Talks and walks run all summer, and some in winter. Check the schedule at any visitor center or on nps.gov/romo.</p></div>
+<div><h3>Estes Park or Grand Lake</h3><div class="s">Town day</div><p>Gear shops, cafes and a lakeside walk in Grand Lake. Good for buying the rain jacket or traction devices you forgot.</p></div></div>
+<div class="warn">Lightning nearby? Do not shelter under trees or in the open at a viewpoint. Get into a hard-top car or a building and wait 30 minutes after the last thunder.</div>
+<div class="box"><h3 style="margin-top:0">Wildfire smoke</h3><p style="margin:0">On smoky days, check air quality on airnow.gov and choose short, easy walks or a drive instead of a hard climb.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>20</span></div></section><section class="page "><div class="kicker">Off season</div><h2>Fall and winter visits</h2>
+<p class="lead">From late fall to spring the park is quiet, snowy and beautiful. No timed entry is needed, but roads close, days are short and trails are icy.</p>
+<div class="cols">
+<div><h3>What stays open</h3><p>Bear Lake Road, open all year (traction rules may apply), the east side of Trail Ridge Road to Many Parks Curve and Hidden Valley, the west side to the Colorado River Trailhead, and the Beaver Meadows and Fall River visitor centers. Moraine Park Campground stays open, first-come, first-served.</p>
+<h3>Driving</h3><p>When Colorado's traction law is on, cars need snow-rated tires with enough tread, or chains or other approved devices. Check the forecast and road status before you set out.</p></div>
+<div><h3>Snowshoe basics</h3><ul class="check"><li>Most trails above about 9,000 ft can be snowshoed when there is snow</li><li>Rent snowshoes in Estes Park or Grand Lake (not in the park)</li><li>Waterproof boots, gaiters and poles</li><li>Stay off steep snow slopes and away from cornices</li><li>Check the avalanche forecast and ask a ranger</li><li>Ice is thin near lake inlets and outlets: stay off</li></ul></div></div>
+<div class="mini">
+<div><h3>Hidden Valley</h3><div class="s">Sledding</div><p>The only place in the park where sledding is allowed, on Trail Ridge Road. Plastic sleds only, no metal runners, feet first. Snow can be thin, so check conditions first.</p></div>
+<div><h3>Ranger snowshoe walks</h3><div class="s">Mid-January to mid-March</div><p>Ranger-led walks and talks when snow allows. Some need a reservation. Check the park's winter programs page.</p></div></div>
+<div class="em"><h3>Short days, cold nights</h3><p>Start by mid-morning, turn around early, and carry a headlamp, a warm hat, gloves and a puffy jacket. Traction devices are worth it on the packed, icy trails near Bear Lake.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>21</span></div></section><section class="page "><div class="kicker">With children</div><h2>Kids and families</h2>
+<p class="lead">Mountain lakes, waterfalls, elk by the road and a badge to earn. Keep hikes short, start early and let the kids set the pace at altitude.</p>
+<div class="cols">
+<div><h3>Junior Ranger program</h3><p>Free booklets at the visitor centers for different ages. Finish the activities, then go back to a ranger to be sworn in and get a badge. In summer, the Junior Ranger Headquarters at Hidden Valley has extra programs.</p>
+<h3>Best hikes with kids</h3><ul class="check"><li>Bear Lake Loop: flat, 0.5 mi (hike 1)</li><li>Sprague Lake: flat loop with a fishing pier</li><li>Nymph or Dream Lake (hike 2)</li><li>Alberta Falls (hike 3)</li><li>Copeland Falls in Wild Basin (hike 5)</li><li>Coyote Valley and Adams Falls on the west side</li></ul></div>
+<div><h3>Altitude and kids</h3><p>Children can feel the altitude too, and may not say so. Watch for crankiness, headache, tummy ache or unusual tiredness, and stop, rest and go lower if it does not pass.</p>
+<h3>Pack for kids</h3><ul class="check"><li>Their own water bottle and plenty of snacks</li><li>Sunscreen, sunglasses and a hat</li><li>A warm layer and a rain jacket, even in July</li><li>Binoculars for elk and marmots</li><li>A small treat for the walk back</li></ul></div></div>
+<div class="warn">Hold hands near fast streams and waterfalls. The water is ice-cold and rocks by the edge are slippery. Never let children climb on wet rocks for a photo.</div>
+<div class="box"><h3 style="margin-top:0">Babies and toddlers</h3><p style="margin:0">Carriers work better than strollers on most trails. The Coyote Valley Trail and the walk to Holzwarth are stroller friendly.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>22</span></div></section><section class="page "><div class="kicker">For everyone</div><h2>Accessibility</h2>
+<p class="lead">You do not need to hike far to see the best of the park. These places have accessible paths, parking or facilities, according to the NPS.</p>
+<table><tr><th>Place</th><th>What to expect</th></tr>
+<tr><td><b>Sprague Lake Trail</b></td><td>0.8 mi (1.3 km) loop of packed gravel, dirt and boardwalk, mostly gentle grades. Some rough spots, puddles after rain, snow into June</td></tr>
+<tr><td><b>Coyote Valley Trail</b></td><td>About 1 mi (1.6 km) round trip, level, along the Colorado River. Benches and picnic tables</td></tr>
+<tr><td><b>Lily Lake and Holzwarth</b></td><td>Lily Lake Trail and the Holzwarth access road: electric mobility devices permitted</td></tr>
+<tr><td><b>Moraine Park Discovery Center</b></td><td>Elevator to the upper floor with a meadow view. Accessible restrooms. Summer only</td></tr>
+<tr><td><b>Visitor centers</b></td><td>Accessible parking at Beaver Meadows, Fall River, Kawuneeche and the Alpine Visitor Center (summer)</td></tr>
+<tr><td><b>Trail Ridge Road</b></td><td>Many overlooks and the views from the car, all the way to 12,183 ft (3,713 m)</td></tr>
+<tr><td><b>Campgrounds</b></td><td>Accessible sites at Moraine Park, Glacier Basin, Aspenglen and Timber Creek, plus an accessible backcountry site at Sprague Lake</td></tr></table>
+<div class="cols" style="margin-top:4pt">
+<div><h3>Shuttles</h3><p>Most park shuttles are wheelchair accessible, with ramps, room for two wheelchairs, and drivers who can help. Tell the driver where you need to get off.</p></div>
+<div><h3>Passes and loans</h3><p>US citizens and residents with a permanent disability can get the free Access Pass. Free all-terrain wheelchairs can be reserved in Estes Park: ask a visitor center for details.</p></div></div>
+<div class="box"><h3 style="margin-top:0">Plan for the altitude too</h3><p style="margin:0">Thin air affects everyone, on foot or on wheels. Take breaks, drink often and keep a warm layer handy. At the Alpine Visitor Center (11,796 ft / 3,595 m) the toilets are vault toilets across the parking lot, and accessible parking is limited, so arrive early.</p></div>
+<p class="small">Details change. For the latest Access Guide, go to nps.gov/romo and search "accessibility", or call (970) 586-1206.</p><div class="folio"><span>Rocky Mountain National Park</span><span>23</span></div></section><section class="page "><div class="kicker">Park rules</div><h2>Leave No Trace and park rules</h2>
+<p class="lead">More than four million people visit the park in a busy year. Small habits keep the lakes clean and the wildlife wild.</p>
+<div class="diff">
+<div><div class="tag">Always</div><h3>Do</h3><ul class="check"><li>Stay on the trail, and walk through mud, not around it</li><li>Pack out all trash, including food scraps and peels</li><li>Use restrooms at trailheads before you start</li><li>Give wildlife space (page 10)</li><li>Let uphill hikers keep their pace</li></ul></div>
+<div><div class="tag">Never</div><h3>Don't</h3><ul class="check"><li>Pick flowers, take rocks or antlers</li><li>Walk on the tundra off the paths</li><li>Feed any animal, even a chipmunk</li><li>Build rock stacks or carve into trees</li><li>Play music out loud on the trail</li></ul></div></div>
+<div class="cols" style="margin-top:6pt">
+<div><h3>Pets</h3><p>Pets are not allowed on any park trail, tundra or meadow, or in visitor centers. Leashed pets (6 ft / 1.8 m leash at most) may go on roads, in parking lots, campgrounds and picnic areas. Do not leave a pet in a hot car. Service animals are allowed; emotional support animals are not service animals.</p></div>
+<div><h3>Drones</h3><p>Launching or flying drones is not allowed in US national parks, including Rocky Mountain.</p>
+<h3>Water</h3><p>Do not drink from lakes or streams without treating it: boil it, or use a filter that removes Giardia.</p></div></div>
+<div class="box forest"><h3>Fires</h3><p style="margin:0">Fires only in the grates at campgrounds and picnic areas, and only when there is no fire ban. Check the current fire rules at a visitor center.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>24</span></div></section><section class="page "><div class="kicker">Checklist</div><h2>Packing list for the park</h2>
+<div class="cl">
+<div><h3>For every hike (the Ten Essentials)</h3><ul class="check"><li>Map, plus the NPS App with offline maps</li><li>Headlamp with fresh batteries</li><li>Sun protection: hat, sunglasses, sunscreen</li><li>First aid kit, with blister care</li><li>Knife or multi-tool</li><li>Fire starter (for emergencies only)</li><li>Emergency shelter: a space blanket</li><li>Extra food</li><li>Extra water, plus a filter or tablets</li><li>Extra layer: warm top and rain jacket</li></ul>
+<h3>For this park</h3><ul class="check"><li>Timed entry reservation (screenshot it)</li><li>Park pass and a card (no cash)</li><li>Traction devices (October to June)</li><li>Binoculars for elk, moose and bighorns</li></ul></div>
+<div><h3>Layers for altitude</h3><ul class="check"><li>Moisture-wicking base layer (no cotton)</li><li>Fleece or light puffy jacket</li><li>Waterproof rain jacket with a hood</li><li>Hiking pants or zip-offs</li><li>Warm hat and light gloves, even in summer</li><li>Broken-in hiking shoes with good grip</li><li>Hiking socks, plus a dry spare pair</li></ul>
+<h3>For the car</h3><ul class="check"><li>More water and snacks for the drive</li><li>Warm jacket for Trail Ridge Road</li><li>Phone charger and power bank</li><li>Printed maps and this guide</li><li>Small trash bag: pack out everything</li><li>Dry clothes and shoes for after</li></ul></div></div>
+<div class="box" style="margin-top:12pt"><h3 style="margin-top:0">Dress like an onion</h3><p style="margin:0">A cold start at 7 am, a warm climb at 10 am and a windy, wet lake at noon are all normal on the same hike. Start a little cold, take a layer off before you sweat, and put one back on when you stop.</p></div><div class="folio"><span>Rocky Mountain National Park</span><span>25</span></div></section><section class="page "><div class="kicker">Before you go</div><h2>Booking checklist and dates to remember</h2>
+<table class="spots"><tr><th>Task</th><th>When</th><th style="text-align:center">Done</th></tr>
+<tr><td><b>Pick your dates</b></td><td class="small">Check the timed entry season and road openings for your year</td><td class="b"></td></tr>
+<tr><td><b>Campsite</b></td><td class="small">Recreation.gov, up to 6 months before your stay</td><td class="b"></td></tr>
+<tr><td><b>Rooms in Estes Park or Grand Lake</b></td><td class="small">As early as you can for summer and September</td><td class="b"></td></tr>
+<tr><td><b>Flights and rental car</b></td><td class="small">Denver International (DEN)</td><td class="b"></td></tr>
+<tr><td><b>Timed entry, first try</b></td><td class="small">8 am Mountain Time on the 1st of the month before your visit</td><td class="b"></td></tr>
+<tr><td><b>Timed entry, second try</b></td><td class="small">7 pm Mountain Time the night before each day</td><td class="b"></td></tr>
+<tr><td><b>Hiker Shuttle tickets</b></td><td class="small">Recreation.gov, if you will ride from Estes Park</td><td class="b"></td></tr>
+<tr><td><b>Entrance pass</b></td><td class="small">Buy online or at the gate. Annual passes by mail take weeks</td><td class="b"></td></tr>
+<tr><td><b>Download offline maps and this guide</b></td><td class="small">At home on Wi-Fi</td><td class="b"></td></tr>
+<tr><td><b>Check alerts, roads and the forecast</b></td><td class="small">The week before, and each morning</td><td class="b"></td></tr></table>
+<h3>Official sources</h3>
+<div class="mini">
+<div><h3>Rocky Mountain National Park</h3><div class="s">nps.gov/romo</div><p>Alerts, timed entry, trail conditions, maps. Information Office (970) 586-1206.</p></div>
+<div><h3>Reservations</h3><div class="s">recreation.gov</div><p>Timed entry, campgrounds, Hiker Shuttle tickets and wilderness permits.</p></div>
+<div><h3>Roads</h3><div class="s">(970) 586-1222 · cotrip.org</div><p>Trail Ridge Road status line (24 hours) and Colorado highways.</p></div>
+<div><h3>Weather and air</h3><div class="s">weather.gov · airnow.gov</div><p>Forecasts, storm warnings and wildfire smoke.</p></div></div>
+<p class="small">Facts in this guide were checked against nps.gov in November 2026. The official sources always win.</p><div class="folio"><span>Rocky Mountain National Park</span><span>26</span></div></section><section class="page "><div class="kicker">Planner</div><h2>Trip planner</h2>
+<div class="dp"><div class="f2"><div class="fl">Dates</div><div class="fl">Number of people</div><div class="fl">Sleeping in</div><div class="fl">Entrance pass</div></div></div>
+<div class="lab">Timed entry reservations</div>
+<table class="spots"><tr><th>Date</th><th>Type (Timed Entry or Timed Entry+)</th><th>Entry window</th><th style="text-align:center">Booked</th></tr>
+<tr><td style="height:30pt"></td><td></td><td></td><td class="b"></td></tr><tr><td style="height:30pt"></td><td></td><td></td><td class="b"></td></tr><tr><td style="height:30pt"></td><td></td><td></td><td class="b"></td></tr></table>
+<div class="lab">Day by day</div>
+<table><tr><th style="width:0.9in">Day</th><th>Main hike or drive</th><th style="width:1.2in">Start by</th><th style="width:1.4in">Backup plan</th></tr>
+<tr><td style="height:44pt"><b>Day 1</b></td><td></td><td></td><td></td></tr><tr><td style="height:44pt"><b>Day 2</b></td><td></td><td></td><td></td></tr><tr><td style="height:44pt"><b>Day 3</b></td><td></td><td></td><td></td></tr><tr><td style="height:44pt"><b>Day 4</b></td><td></td><td></td><td></td></tr></table>
+<div class="lab">Left with someone at home</div>
+<div class="f2"><div class="fl">Name and phone</div><div class="fl">Car and plate</div><div class="fl">Trailheads we plan to use</div><div class="fl">Call for help if no word by</div></div>
+<div class="lab">Notes</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div>
+<div class="opts" style="margin-top:10pt"><span>Timed entry booked</span><span>Pass bought</span><span>Offline maps</span><span>Layers packed</span><span>Traction devices</span><span>Plan left at home</span></div><div class="folio"><span>Rocky Mountain National Park</span><span>27</span></div></section><section class="page "><div class="kicker">Hike log</div><h2>Our hikes, part 1</h2><div class="log"><div class="f2"><div class="fl">Date</div><div class="fl">Trail</div><div class="fl">Distance <span class="u"><b></b>mi / km</span></div><div class="fl">Climb <span class="u"><b></b>ft / m</span></div><div class="fl">Start and finish time</div><div class="fl">Weather</div></div>
+<div class="lab">Wildlife and flowers we saw</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="opts"><span>Easy</span><span>Just right</span><span>Hard</span><span>Felt the altitude</span><span>Would do it again</span></div></div><div class="log"><div class="f2"><div class="fl">Date</div><div class="fl">Trail</div><div class="fl">Distance <span class="u"><b></b>mi / km</span></div><div class="fl">Climb <span class="u"><b></b>ft / m</span></div><div class="fl">Start and finish time</div><div class="fl">Weather</div></div>
+<div class="lab">Wildlife and flowers we saw</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="opts"><span>Easy</span><span>Just right</span><span>Hard</span><span>Felt the altitude</span><span>Would do it again</span></div></div><div class="folio"><span>Rocky Mountain National Park</span><span>28</span></div></section><section class="page "><div class="kicker">Hike log</div><h2>Our hikes, part 2</h2><div class="log"><div class="f2"><div class="fl">Date</div><div class="fl">Trail</div><div class="fl">Distance <span class="u"><b></b>mi / km</span></div><div class="fl">Climb <span class="u"><b></b>ft / m</span></div><div class="fl">Start and finish time</div><div class="fl">Weather</div></div>
+<div class="lab">Wildlife and flowers we saw</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="opts"><span>Easy</span><span>Just right</span><span>Hard</span><span>Felt the altitude</span><span>Would do it again</span></div></div><div class="log"><div class="f2"><div class="fl">Date</div><div class="fl">Trail</div><div class="fl">Distance <span class="u"><b></b>mi / km</span></div><div class="fl">Climb <span class="u"><b></b>ft / m</span></div><div class="fl">Start and finish time</div><div class="fl">Weather</div></div>
+<div class="lab">Wildlife and flowers we saw</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="lab">Best moment</div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div><div class="wl" style="height:26pt"></div>
+<div class="opts"><span>Easy</span><span>Just right</span><span>Hard</span><span>Felt the altitude</span><span>Would do it again</span></div></div><div class="folio"><span>Rocky Mountain National Park</span><span>29</span></div></section><section class="page back"><div class="brand" style="font:700 9pt/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:24pt">HikeSupply Co.</div>
+<svg width="200" height="110" viewBox="0 0 200 110" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M0 95 L40 60 L60 75 L100 18 L120 40 L140 28 L200 90" stroke="#F5F1EA" stroke-width="4"/><path d="M100 18 L90 34 L100 30 L108 38 L114 33" stroke="#F5F1EA" stroke-width="3"/></svg>
+<h2 style="margin-top:22pt">Enjoy the Rockies</h2>
+<p>Thank you for choosing a HikeSupply guide. Book your timed entry first, start every hike early, take the first day slow, and give the elk plenty of room.</p>
+<p style="margin-top:10pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">Plan your next adventure</p>
+<div class="bkcards" style="grid-template-columns:1fr 1fr 1fr;width:6.4in"><div><b>US National Parks Hiking Tracker</b><span>Log every park you visit, all 63 plus Canada</span></div><div><b>Trail Ready</b><span>8-week beginner hiking training plan</span></div><div><b>Park trip guides</b><span>Smokies, Utah's Mighty 5, Yellowstone, Grand Canyon</span></div></div>
+<p style="margin-top:14pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">hikesupplyco.com</p>
+<p class="small" style="color:#AEB8AA;margin-top:24pt">General trip planning information only. Timed entry, roads, closures, fees and rules change: always check nps.gov/romo and ask a ranger before you hike. Hike within your ability and turn back when in doubt. Not affiliated with the National Park Service. For personal use only. Cover photo: Ali Kazal / Pexels (https://www.pexels.com/photo/28848588/).</p></section></body></html>
