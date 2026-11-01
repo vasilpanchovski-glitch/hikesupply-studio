@@ -123,7 +123,7 @@ const S1: React.FC = () => {
   const hh = handheld(t, 0.5);
   const cam: Cam = { x: t * 10 + hh.x, y: hh.y, zoom: mix(1.04, 1.1, t / 3.66), rot: hh.rot };
   const floorY = 1560;
-  const n: HikerProps = { x: 330, y: floorY + 10, scale: 2.3, walk: 0, lean: -0.02, poles: false, handOverride: [64, -96], breathe: Math.sin(t * 2.2) * 1.5 };
+  const n: HikerProps = { x: 330, y: floorY + 10, scale: 2.3, walk: 0, lean: -0.02, poles: false, handOverride: [96, -112], breathe: Math.sin(t * 2.2) * 1.5 };
   const b: HikerProps = { x: 760, y: floorY - 30, scale: 2.2, walk: 0, lean: -0.06, poles: false, handOverride: [20, 30], breathe: Math.sin(t * 2) * 1.5 };
   const nh = hikerGeometry(n).arms[1].hand;
   return (
@@ -137,7 +137,7 @@ const S1: React.FC = () => {
           <Person {...b} outfit={BRO} expression="tired" noPack flip />
           <Person {...n} outfit={NORA} expression="happy" noPack />
           <g transform={hikerTransform(n)}>
-            <TinyJacket x={nh[0] + 4} y={nh[1] - 6} s={0.95} swing={Math.sin(t * 3) * 4} />
+            <TinyJacket x={nh[0] + 6} y={nh[1] - 4} s={1.2} swing={Math.sin(t * 3) * 4} />
           </g>
         </Subject>
         <Table y={floorY + 40} />
@@ -228,7 +228,7 @@ const S4: React.FC<{ off: number }> = ({ off }) => {
   const t = lt + off;
   const hh = handheld(t, 0.4);
   const cam: Cam = { x: hh.x, y: hh.y, zoom: mix(1.0, 1.06, lt / 4), rot: hh.rot };
-  const p: HikerProps = { x: 520, y: 1250 + 182 * 4.4, scale: 4.4, walk: 0, lean: 0.02, poles: false, handOverride: [30, 34], breathe: Math.sin(t * 2.2) * 1.5 };
+  const p: HikerProps = { x: 600, y: 1480 + 182 * 4.4, scale: 4.4, walk: 0, lean: 0.02, poles: false, handOverride: [30, 34], breathe: Math.sin(t * 2.2) * 1.5 };
   return (
     <AbsoluteFill>
       <Plane cam={cam} depth={0.6} blur={8}>
