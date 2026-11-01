@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Every December, Nora bought her brother hiking gear.",
+   "gap": 0.5
+  },
+  {
+   "text": "Every year, it was the wrong size, or something he already owned.",
+   "gap": 0.6
+  },
+  {
+   "text": "Here's the fix. Give him a way to plan and remember his hikes.",
+   "gap": 0.45
+  },
+  {
+   "text": "A trail journal for every hike,",
+   "gap": 0.25
+  },
+  {
+   "text": "a tracker for the national parks,",
+   "gap": 0.25
+  },
+  {
+   "text": "and a planner for the next trip.",
+   "gap": 0.5
+  },
+  {
+   "text": "Print it, wrap it, done.",
+   "gap": 0.7
+  },
+  {
+   "text": "By February, his journal had six hikes in it.",
+   "gap": 0.6
+  },
+  {
+   "text": "Save this for your gift list.",
+   "gap": 0.2
+  }
+ ]
+}

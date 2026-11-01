@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Nate leaves his water filter in the side pocket on a frosty night.",
+   "gap": 0.25
+  },
+  {
+   "text": "By morning, it's frozen solid.",
+   "gap": 0.3
+  },
+  {
+   "text": "A filter that freezes while wet can crack inside, and you can't see the damage.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix. Shake it out after use,",
+   "gap": 0.15
+  },
+  {
+   "text": "keep it in an inside pocket by day,",
+   "gap": 0.1
+  },
+  {
+   "text": "and in your sleeping bag at night.",
+   "gap": 0.3
+  },
+  {
+   "text": "If it ever freezes wet, replace it.",
+   "gap": 0.35
+  },
+  {
+   "text": "Nate sips filtered stream water by the fire.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your next cold trip.",
+   "gap": 0.2
+  }
+ ]
+}

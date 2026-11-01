@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Eli drives to Yellowstone's West Entrance in mid-November, ready for Old Faithful.",
+   "gap": 0.2
+  },
+  {
+   "text": "The gate is closed.",
+   "gap": 0.25
+  },
+  {
+   "text": "Since November first, most park roads are closed to cars until spring.",
+   "gap": 0.3
+  },
+  {
+   "text": "Here's the fix. Enter at the North Entrance in Gardiner.",
+   "gap": 0.2
+  },
+  {
+   "text": "The road through Mammoth Hot Springs and Lamar Valley stays open all winter, weather permitting.",
+   "gap": 0.25
+  },
+  {
+   "text": "Check road status the morning you go.",
+   "gap": 0.3
+  },
+  {
+   "text": "Eli watches bison in Lamar Valley from a safe distance.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your winter trip.",
+   "gap": 0.2
+  }
+ ]
+}
