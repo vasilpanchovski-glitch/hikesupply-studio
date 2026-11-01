@@ -1,6 +1,6 @@
 {
- "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews.",
- "updated": "2026-10-31",
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none.",
+ "updated": "2026-11-01",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1385,16 +1385,86 @@
    "date": "2022-10",
    "theme": "not suited to heavy loads",
    "found": "2026-10-31"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Montem Ultra Light carbon poles (rival)",
+   "what": "flip locks often arrive too loose and must be tightened before the first hike",
+   "source": "https://www.packstack.io/reviews/tools/montem-ultra-light-100-carbon-fiber-trekking-poles",
+   "where": "review roundup",
+   "date": "2026-08",
+   "theme": "pole locks slip / poles collapse",
+   "found": "2026-11-01"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Montem Ultra Light carbon poles (rival)",
+   "what": "some buyers report tip or shaft failures, quality uneven",
+   "source": "https://www.packstack.io/reviews/tools/montem-ultra-light-100-carbon-fiber-trekking-poles",
+   "where": "review roundup",
+   "date": "2026-08",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-01"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Montem Ultra Light carbon poles (rival)",
+   "what": "foam grips feel hot and sweaty in warm weather",
+   "source": "https://www.packstack.io/reviews/tools/montem-ultra-light-100-carbon-fiber-trekking-poles",
+   "where": "review roundup",
+   "date": "2026-08",
+   "theme": "grip uncomfortable or slippery",
+   "found": "2026-11-01"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "new socks arrived with bubbled fabric, no reply to emails before the buyer's trip",
+   "source": "https://ca.trustpilot.com/review/darntough.com",
+   "where": "Trustpilot 1 star",
+   "date": "2026-10-19",
+   "theme": "arrives damaged or used",
+   "found": "2026-11-01"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "new socks had unraveled embroidery inside",
+   "source": "https://ca.trustpilot.com/review/darntough.com",
+   "where": "Trustpilot 1 star",
+   "date": "2026-06-03",
+   "theme": "arrives damaged or used",
+   "found": "2026-11-01"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "new socks looked worn, with loose threads and holes",
+   "source": "https://ca.trustpilot.com/review/darntough.com",
+   "where": "Trustpilot 1 star",
+   "date": "2026-04-30",
+   "theme": "arrives damaged or used",
+   "found": "2026-11-01"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Darn Tough (Trustpilot)",
+   "what": "slow delivery, tracking updates contradicted each other, slow replies",
+   "source": "https://ca.trustpilot.com/review/darntough.com",
+   "where": "Trustpilot 1 star",
+   "date": "2026-04-03",
+   "theme": "slow shipping / no reply",
+   "found": "2026-11-01"
   }
  ],
  "themes": [
   {
    "theme": "pole locks slip / poles collapse",
-   "count": 16
+   "count": 17
   },
   {
    "theme": "breaks quickly / cheaply made",
-   "count": 13
+   "count": 14
   },
   {
    "theme": "baskets, tips or straps wear out or fall off",
@@ -1433,15 +1503,15 @@
    "count": 4
   },
   {
+   "theme": "grip uncomfortable or slippery",
+   "count": 4
+  },
+  {
    "theme": "hydration bladder leaks",
    "count": 3
   },
   {
    "theme": "collapsible bottle leaks or flimsy",
-   "count": 3
-  },
-  {
-   "theme": "grip uncomfortable or slippery",
    "count": 3
   },
   {
@@ -1465,11 +1535,15 @@
    "count": 3
   },
   {
-   "theme": "not suited to hikers with disabilities",
-   "count": 2
+   "theme": "slow shipping / no reply",
+   "count": 3
   },
   {
-   "theme": "slow shipping / no reply",
+   "theme": "arrives damaged or used",
+   "count": 3
+  },
+  {
+   "theme": "not suited to hikers with disabilities",
    "count": 2
   },
   {

@@ -1,0 +1,287 @@
+{
+ "date": "2026-11-01",
+ "previous": "2026-10-31",
+ "group": "a",
+ "note": "Group A. Empty fields mean the public page did not show the number. theBrainbookShop did not come up in search for the second group-A run in a row, so it is replaced on the list by DearSummit (Etsy, pocket trail journal). REI did not open from the cloud this run, so Darn Tough data is from Trustpilot.",
+ "sellers": [
+  {
+   "name": "We're in the Rockies",
+   "products": [
+    {
+     "title": "Rocky Mountain Itinerary 2-4 days",
+     "format": "guide PDF + audio",
+     "pages": 36,
+     "price": 49.0,
+     "notes": "still 'valued at $69', audio '$20 value'; audio length still stated two ways (90 min / 8 chapters and 2.5 h / 12 chapters); 10 reviews on the product page, 5.0",
+     "url": "https://wereintherockies.com/rocky-mountain-national-park-packages/"
+    },
+    {
+     "title": "Store: 8 bundles + 18 single-park guides, 'Vegas to Zion' coming soon",
+     "price": null,
+     "notes": "store page shows no prices; 631 reviews at 5.0 claimed on the store page",
+     "url": "https://wereintherockies.com/store/"
+    }
+   ],
+   "offers": [
+    "Build your own bundle: 10% off 2, 20% off 3+ (unchanged)",
+    "Trip-Planning Weekend: free Cheat Sheet Pack with any guide (still on)",
+    "Printed road trip book with orders $150+, '70 copies only' (still on)",
+    "Countdown banner still all zeros",
+    "Free lifetime updates, money-back guarantee",
+    "No Black Friday or holiday offer yet"
+   ],
+   "reviews": {
+    "praise": [
+     "saves planning time",
+     "better than other resources"
+    ],
+    "complaints": [],
+    "notes": "store page says 24,000+ guides sold, product page says 34,000+ (both on the same day)"
+   },
+   "marketing": {
+    "bait": "free cheat sheet pack with any guide",
+    "tactics": [
+     "value anchor",
+     "free bonus with order",
+     "multi-buy discount",
+     "free lifetime updates",
+     "money-back guarantee",
+     "countdown banner with no real date"
+    ],
+    "traffic": "Google search on park itinerary keywords"
+   }
+  },
+  {
+   "name": "Traverse with Tonia (Payhip)",
+   "products": [
+    {
+     "title": "Ultimate U.S. National Parks & Hiking Checklist",
+     "price": 4.99,
+     "notes": "still 'On Sale' with no old price; all 63 parks, 3 hikes per park, Letter portrait only"
+    },
+    {
+     "title": "Ultimate U.S. Waterfalls Checklist",
+     "price": 4.99
+    },
+    {
+     "title": "Ultimate Outdoor Adventure Bundle",
+     "price": 7.99
+    }
+   ],
+   "reviews": {
+    "count": 0
+   },
+   "marketing": {
+    "tactics": [
+     "link in bio",
+     "'On Sale' label with no old price"
+    ]
+   },
+   "source": "https://payhip.com/b/tFbkH"
+  },
+  {
+   "name": "Montem",
+   "shop": {
+    "free_shipping_over": 100
+   },
+   "products": [
+    {
+     "title": "Flicklock 14-16mm Replacement",
+     "price": 5.5
+    },
+    {
+     "title": "Trekking Pole Tip Protectors",
+     "price": 10.99
+    },
+    {
+     "title": "Extra-Durable Tip Protectors",
+     "price": 10.99
+    },
+    {
+     "title": "Snow Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Nordic Fitness Tips",
+     "price": 10.99
+    },
+    {
+     "title": "Mud Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Pro Walker Replacement Gloves",
+     "price": null,
+     "notes": "still sold out"
+    },
+    {
+     "title": "The Ultra On The Go (Advanced) Bundle",
+     "price": 36.99,
+     "was": 46.97
+    },
+    {
+     "title": "The All Tips Bundle",
+     "price": 25.95,
+     "was": 32.97
+    },
+    {
+     "title": "All Baskets Bundle",
+     "price": 22.4,
+     "was": 35.98
+    }
+   ],
+   "offers": [
+    "Free shipping over $100 (banner still contradicts itself)",
+    "100% satisfaction guarantee",
+    "Lifetime warranty sign-up",
+    "VIP program",
+    "No Black Friday sale shown yet"
+   ],
+   "reviews": {
+    "complaints": [
+     "flip locks often arrive too loose and must be tightened before first use",
+     "some tip or shaft failures, uneven quality control",
+     "EVA grips sweaty in heat"
+    ],
+    "source": "https://www.packstack.io/reviews/tools/montem-ultra-light-100-carbon-fiber-trekking-poles"
+   },
+   "marketing": {
+    "tactics": [
+     "discounted accessory bundles",
+     "free shipping threshold",
+     "lifetime warranty sign-up as email capture",
+     "VIP program"
+    ]
+   },
+   "source": "https://montemlife.com/collections/trekking-pole-accesories-and-spare-parts"
+  },
+  {
+   "name": "theBrainbookShop",
+   "note": "not readable again (no Etsy links in search); removed from the list today"
+  },
+  {
+   "name": "DearSummit (new on the list)",
+   "shop": {
+    "sales": "6.2k",
+    "rating": 4.9,
+    "ratings": "about 1.3k"
+   },
+   "products": [
+    {
+     "title": "The Trail Journal, prompted pocket hiking log",
+     "format": "physical pocket journal, 5 x 3.5 in, 32 pages, recycled paper",
+     "pages": 32,
+     "price": 11.5,
+     "notes": "US$ from page metadata; set of 3 also sold (EUR 33.30 shown to an EU visitor); 368 item reviews, 4.9; 'Etsy's Pick'; 97% recommend",
+     "url": "https://www.etsy.com/ie/listing/710475099/the-trail-journal-prompted-hiking-log"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "small enough for any pack",
+     "prompts make it easy to write"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "multi-pack set as a gift",
+     "prompts on every page as the selling point"
+    ]
+   }
+  },
+  {
+   "name": "MarcisShoppe",
+   "shop": {
+    "sales": "4k",
+    "rating": 4.9,
+    "reviews": 592
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt for Kids, Printable",
+     "price": 2.0,
+     "item_reviews": 146,
+     "item_rating": 5.0,
+     "notes": "1 JPG + 1 PDF, Letter"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "quick download",
+     "easy to print",
+     "fun for kids"
+    ],
+    "complaints": []
+   },
+   "source": "https://www.etsy.com/listing/1101626951"
+  },
+  {
+   "name": "Cascade Mountain Tech",
+   "products": [
+    {
+     "title": "Carbon Fiber Quick Lock Cork Grip Trekking Poles (pair, Walmart)",
+     "price": 51.99,
+     "was": 64.99,
+     "rating": 4.6,
+     "ratings": 95,
+     "notes": "was-price shown next to the EVA variant; 9 of the reviews are 1-3 stars but their text is not shown",
+     "url": "https://www.walmart.com/ip/48468472"
+    }
+   ],
+   "reviews": {
+    "complaints": []
+   }
+  },
+  {
+   "name": "Darn Tough (hiking socks)",
+   "shop": {
+    "trustpilot": 3.7,
+    "trustpilot_reviews": 85
+   },
+   "reviews": {
+    "complaints": [
+     "new socks arrived with bubbled fabric, no reply before the buyer's trip (Oct 2026)",
+     "new socks with unraveled embroidery inside",
+     "new socks looked worn, loose threads and holes",
+     "slow delivery and confusing tracking"
+    ],
+    "source": "https://ca.trustpilot.com/review/darntough.com"
+   },
+   "marketing": {
+    "tactics": [
+     "lifetime warranty as the main selling point"
+    ]
+   }
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "National Park Obsessed (Gumroad)",
+   "title": "Ultimate National Park Travel Planning Bundle",
+   "price": 27.0,
+   "url": "https://nationalparkobsessed.gumroad.com/l/UltimateNationalParkTravelPlanningBundle"
+  }
+ ],
+ "changes_vs_previous": [
+  "We're in the Rockies: same $49 price and $69 'value'; the store page says 24,000+ sold while the product page says 34,000+; still no Black Friday offer, countdown still zeros.",
+  "Traverse with Tonia: no change ($4.99 / $4.99 / $7.99, no reviews).",
+  "Montem: same prices; a 2026 review says its flip locks often arrive too loose.",
+  "MarcisShoppe: shop reviews 591 to 592, item unchanged.",
+  "Cascade Mountain Tech: same $51.99 at Walmart, 95 ratings.",
+  "Darn Tough: Trustpilot 81 to 85 reviews, still 3.7; new complaints about socks arriving damaged.",
+  "List: theBrainbookShop out (unreadable twice), DearSummit in."
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "multi-buy and bundle discounts (WITR 10/20%, Montem bundles, Tonia bundle, DearSummit 3-pack)",
+   "a guarantee or warranty up front (WITR, Montem, Darn Tough)",
+   "a free extra with the order (WITR cheat sheet pack and printed book)"
+  ],
+  "we_do_not_use_yet": [
+   "a free bonus printable with any paid guide",
+   "a gift multi-pack of a small item"
+  ],
+  "black_friday": "On Nov 1 none of the group A sellers shows a Black Friday or holiday offer yet."
+ }
+}
