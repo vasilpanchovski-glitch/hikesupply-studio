@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.9,
+ "lead": 0.5,
+ "lines": [
+  {
+   "text": "Luis stepped into a slushy puddle at mile two.",
+   "gap": 0.6
+  },
+  {
+   "text": "By lunch, his toes were numb.",
+   "gap": 0.8
+  },
+  {
+   "text": "Wet socks pull heat out of your feet fast.",
+   "gap": 0.8
+  },
+  {
+   "text": "Here's the fix. Carry a dry spare pair of wool socks in a sealed bag.",
+   "gap": 0.6
+  },
+  {
+   "text": "At the break, dry your feet and pull on the spare pair.",
+   "gap": 0.6
+  },
+  {
+   "text": "Wool still keeps you warmer than cotton when it gets damp.",
+   "gap": 0.8
+  },
+  {
+   "text": "He hiked out with warm toes.",
+   "gap": 0.8
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}

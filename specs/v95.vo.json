@@ -1,0 +1,52 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Black Friday.",
+   "gap": 0.38
+  },
+  {
+   "text": "Ana's family was ready for the mall.",
+   "gap": 0.38
+  },
+  {
+   "text": "She took them to a trail instead.",
+   "gap": 0.5
+  },
+  {
+   "text": "Here's the fix. Pick a trail shorter than you think.",
+   "gap": 0.38
+  },
+  {
+   "text": "Check the forecast.",
+   "gap": 0.38
+  },
+  {
+   "text": "Dress everyone in layers, not cotton.",
+   "gap": 0.38
+  },
+  {
+   "text": "Tell someone where you're going.",
+   "gap": 0.38
+  },
+  {
+   "text": "And be back well before dark, because the sun sets early now.",
+   "gap": 0.5
+  },
+  {
+   "text": "They ended at a lookout, laughing.",
+   "gap": 0.5
+  },
+  {
+   "text": "Our Beginner's Hiking Guide is twenty-five percent off through December first.",
+   "show": "Our Beginner's Hiking Guide is 25% ~ off through December 1.",
+   "gap": 0.38
+  },
+  {
+   "text": "Save this for your next free day.",
+   "gap": 0.2
+  }
+ ]
+}
