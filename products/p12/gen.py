@@ -1,0 +1,418 @@
+"""Generates index.html for p12 (Camping Trip Planner & Checklists — Tent and Car Camping). Run: python3 gen.py
+Same look as p09/p10 (base.css + extra.css). Facts follow USDA food safety guidance (40°F/4°C cooler, two-hour rule,
+165°F poultry / 160°F ground meat), NPS and Parks Canada camping, food storage and fire pages, CDC carbon monoxide
+guidance, NWS lightning safety (30 minutes after the last thunder) and the Leave No Trace seven principles (lnt.org).
+Written November 2026."""
+import os
+HERE = os.path.dirname(os.path.abspath(__file__))
+T = "Camping Trip Planner"
+pages = []
+def page(body, cls=""):
+    n = len(pages) + 1
+    folio = f'<div class="folio"><span>{T}</span><span>{n}</span></div>' if cls not in ("cover photo", "back") else ""
+    pages.append(f'<section class="page {cls}">{body}{folio}</section>')
+def chk(items): return '<ul class="check">' + "".join(f"<li>{i}</li>" for i in items) + "</ul>"
+def lines(k, h=24): return "".join(f'<div class="wl" style="height:{h}pt"></div>' for _ in range(k))
+def fl(label, unit=""): return f'<div class="fl">{label}{unit}</div>'
+
+MORE = """
+.qs{margin:6pt 0 10pt;border-top:1.5pt solid var(--forest)}
+.qr{display:grid;grid-template-columns:1fr auto;gap:14pt;align-items:center;padding:7.5pt 0;border-bottom:0.6pt solid var(--line);font-size:10.8pt}
+.yn{display:inline-flex;gap:12pt;font:600 8pt/1 var(--sans);color:var(--forest);white-space:nowrap}
+.yn i{display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:3pt;vertical-align:-1pt;background:#fff}
+.gl td{font-size:10.2pt;padding:6.5pt 6pt;line-height:1.4}
+.gl td:first-child{font-weight:600;color:var(--forest);width:1.45in}
+.rt{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin:6pt 0}
+.rt>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:10pt 13pt}
+.rt h3{margin:0 0 4pt;font-size:12.5pt}
+.rt p{margin:0;font-size:10.3pt;line-height:1.45}
+.rt .n{font:600 20pt/1 var(--serif);color:var(--clay);margin-bottom:4pt}
+.wkp td{font-size:10.2pt;padding:7pt 6pt;line-height:1.38;vertical-align:top}
+.wkp td:first-child{font:600 13pt/1.2 var(--serif);color:var(--forest);width:0.85in}
+.wkp td.d{white-space:nowrap;font-weight:600;color:var(--forest);width:1.25in}
+.wkp td.t{width:0.6in;text-align:center}
+.wkp td.t::before{content:"";display:inline-block;width:10pt;height:10pt;border:1.1pt solid var(--forest);border-radius:2pt;background:#fff}
+.gear td{font-size:10.2pt;padding:6pt 6pt}
+.gear td.b{width:0.3in}
+.gear td.b::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;background:#fff;vertical-align:-1pt}
+.gear tr.sec td{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);padding-top:11pt;border-bottom:1pt solid var(--forest)}
+.gear .n{color:#8B8577;font-size:8.8pt}
+.idc{border:1.4pt dashed #A39C8D;border-radius:4pt;background:#fff;padding:14pt 16pt;margin-bottom:12pt}
+.idc .top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2pt solid var(--forest);padding-bottom:5pt;margin-bottom:2pt}
+.idc .top b{font:600 15pt/1 var(--serif);color:var(--forest)}
+.idc .top span{font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+.idc .fl{height:23pt}
+.log{width:100%;border-collapse:collapse;margin:4pt 0}
+.log th{font-size:7pt;padding:5pt 4pt;letter-spacing:.08em}
+.log td{height:47pt;border-bottom:0.6pt solid #CFC7B6;border-right:0.6pt solid var(--line);font-size:9pt;color:#8B8577;vertical-align:top;padding:4pt}
+.log td:last-child{border-right:0}
+.log td.no{font:600 13pt/1 var(--serif);color:var(--forest);width:0.3in;vertical-align:middle;text-align:center}
+.log .r{white-space:nowrap;font-size:8pt}
+.log .r i{display:inline-block;width:8pt;height:8pt;border:1pt solid var(--forest);border-radius:50%;margin-right:2pt;background:#fff}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin:8pt 0}
+.tri>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 12pt}
+.tri h3{margin:0 0 4pt;font-size:12.5pt}
+.tri p{margin:0;font-size:10.1pt;line-height:1.45}
+.tri .tag{margin-bottom:5pt}
+.bark{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin:6pt 0 4pt}
+.bark>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:10pt 11pt}
+.bark .L{font:600 26pt/1 var(--serif);color:var(--clay)}
+.bark p{margin:4pt 0 0;font-size:9.8pt;line-height:1.38}
+.sig{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin:8pt 0}
+.sig>div{border-radius:9pt;padding:11pt 13pt;background:#fff;border:1pt solid var(--line)}
+.sig h3{margin:0 0 5pt;font-size:12.5pt}
+.sig ul{margin:0;padding-left:14pt}
+.sig li{font-size:10.3pt;line-height:1.45;margin-bottom:2pt}
+.sig .stop{border:1.6pt solid var(--rust)}
+.dog{float:right;margin:0 0 6pt 14pt}
+.pl .fl{height:25pt}
+.pl .wl{height:24pt}
+.big p{font-size:11.3pt}
+html.bw .sig .stop{border-color:#333}
+.page:not(.cover):not(.back) p{font-size:11.6pt;line-height:1.55}
+.page:not(.cover):not(.back) p.lead{font-size:13pt;line-height:1.45}
+.page:not(.cover):not(.back) p.small{font-size:9pt;line-height:1.45}
+ul.check li{font-size:11.4pt;padding:6.5pt 0 6.5pt 21pt}
+ul.check li::before{top:8pt}
+.cl ul.check li{font-size:11pt;padding:6.5pt 0 6.5pt 20pt}
+.gl td{font-size:11pt;padding:7pt 7pt;line-height:1.45}
+.rt p,.tri p{font-size:11pt;line-height:1.5}
+.rt>div,.tri>div{padding:13pt 14pt}
+.sig li{font-size:11pt;line-height:1.5;margin-bottom:3pt}
+.sig>div{padding:13pt 15pt}
+.bark p{font-size:10.6pt}
+.bark>div{padding:12pt 12pt}
+.qr{padding:14.5pt 0;font-size:11.4pt}
+.wkp td{font-size:11pt;padding:11pt 7pt;line-height:1.45}
+.box p,.warn{font-size:11.2pt}
+.idc .fl{height:28pt}
+.idc{padding:13pt 18pt;margin-bottom:12pt}
+.pl .fl{height:33pt}
+.pl .wl{height:31pt}
+.pl .lab{margin-top:16pt}
+.pl .opts{font-size:10pt}
+.log td{height:73pt}
+.gear td{font-size:11pt;padding:6.4pt 6pt}
+.gear .n{font-size:9.4pt}
+"""
+
+MORE += """
+.pp td{font-size:10.6pt;padding:5.6pt 5pt}
+.pp th{font-size:7pt;padding:4pt 4pt;text-align:center}
+.pp th:first-child,.pp th:nth-child(2){text-align:left}
+.pp td.b{width:0.55in;text-align:center}
+.pp td.b::before{content:"";display:inline-block;width:9.5pt;height:9.5pt;border:1.1pt solid var(--forest);border-radius:2pt;background:#fff;vertical-align:-1pt}
+.pp th.nm{width:0.55in;height:24pt;border-bottom:1.5pt solid var(--forest);vertical-align:bottom;color:#B5AE9F;font-weight:500}
+.pp tr.sec td{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);padding-top:9pt;border-bottom:1pt solid var(--forest)}
+.meal{width:100%;border-collapse:collapse;margin-top:6pt;table-layout:fixed}
+.meal th{font-size:7.5pt;padding:5pt 5pt;text-align:left}
+.meal td{height:1.85in;border:0.6pt solid var(--line);vertical-align:top;padding:4pt 5pt;font-size:8pt;color:#9A9384}
+.meal td.dy{width:0.72in;background:var(--soft);font:600 12pt/1.15 var(--serif);color:var(--forest);vertical-align:middle;text-align:center}
+.meal td.dy small{display:block;font:600 7pt/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#8B8577;margin-top:4pt}
+.groc{display:grid;grid-template-columns:1fr 1fr;gap:4pt 22pt;margin-top:4pt}
+.groc h3{margin:8pt 0 2pt;font-size:12pt}
+.groc .gl2 div{display:flex;align-items:flex-end;height:25pt;border-bottom:0.8pt solid #CFC7B6}
+.groc .gl2 div::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;background:#fff;margin:0 8pt 3pt 0}
+.lay{border-top:1.5pt solid var(--forest);margin:6pt 0 8pt}
+.lay>div{display:grid;grid-template-columns:0.5in 1.55in 1fr;gap:10pt;align-items:center;padding:8pt 0;border-bottom:0.6pt solid var(--line)}
+.lay .n{font:600 20pt/1 var(--serif);color:var(--clay);text-align:center}
+.lay b{font:600 12.5pt/1.2 var(--serif);color:var(--forest)}
+.lay p{margin:0 !important;font-size:10.8pt !important;line-height:1.45 !important}
+.lay .w{font:700 6.8pt/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#8B8577;display:block;margin-top:3pt}
+.clog{display:grid;grid-template-columns:1fr 1fr;gap:12pt}
+.clog>div{border:1pt solid var(--line);background:#fff;border-radius:9pt;padding:10pt 13pt 8pt}
+.clog .hd{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2pt solid var(--forest);padding-bottom:4pt}
+.clog .hd b{font:600 14pt/1 var(--serif);color:var(--forest)}
+.clog .hd span{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay)}
+.clog .fl{height:31pt;font-size:7.3pt}
+.clog .st{display:flex;justify-content:space-between;align-items:center;padding:10pt 0 5pt;border-bottom:0.8pt solid #CFC7B6;font:600 7.3pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest)}
+.clog .st i{display:inline-block;width:10pt;height:10pt;border:1.1pt solid var(--forest);border-radius:50%;margin-left:4pt;background:#fff}
+.clog .nb{height:70pt;border-bottom:0.8pt solid #CFC7B6;font:600 7.3pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest);padding-top:7pt}
+.clog .yn{font-size:7.3pt;letter-spacing:.06em}
+.bingo{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1.4pt solid var(--forest);margin:6pt 0 4pt}
+.bingo div{height:0.9in;border:0.6pt solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-size:9.6pt;line-height:1.25;padding:4pt;background:#fff}
+.bingo div.fr{background:var(--forest);color:var(--stone);font:600 11pt/1.1 var(--serif)}
+html.bw .bingo div.fr{background:#fff;color:#222}
+html.bw .meal td.dy{background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 22pt}
+.ov .fl{height:32pt}
+.ov .wl{height:31pt}
+"""
+
+# 1 cover
+page("""<div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="470" height="330" viewBox="0 0 470 330" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<circle cx="380" cy="60" r="22" stroke="#F5F1EA" stroke-width="3"/>
+<path d="M0 210 L90 120 L150 170 L240 80 L330 160 L470 210" stroke="#F5F1EA" stroke-width="3.2"/>
+<path d="M150 290 L235 170 L320 290 Z" stroke="#B85C38" stroke-width="3.8"/><path d="M235 170 L235 290 M215 290 L235 245 L255 290" stroke="#B85C38" stroke-width="3.2"/>
+<path d="M60 290 L60 250 M40 290 L60 205 L80 290 M380 290 L380 255 M362 290 L380 215 L398 290" stroke="#F5F1EA" stroke-width="3"/>
+<path d="M20 290 H450" stroke="#F5F1EA" stroke-width="3"/>
+</svg></div>
+<div><h1>Camping Trip Planner &amp; Checklists</h1><p class="sub">For tent and car camping at campgrounds in the US and Canada: choose and book the site, plan the meals, pack the camp kitchen and the car, camp safely, and keep a log of every campsite.</p>
+<div class="meta" style="margin-top:22pt"><span>24 pages</span><span>Planner + checklists</span><span>mi + km, °F + °C</span></div></div>""", "cover photo")
+
+# 2 how to use
+page("""<div class="kicker">Start here</div><h2>How to use this planner</h2>
+<p class="lead">A good camping trip is mostly decided at home: the right campground, a booked site, food that stays cold and a car you can unpack in the right order. This planner walks you through it, one page at a time.</p>
+<div class="cols" style="margin-top:4pt">
+<div><h3>This planner is for you if</h3>""" + chk(["You camp at campgrounds, by car, with a tent", "You are new to camping, or camping with kids for the first time", "You camp in US or Canadian parks and forests", "You want lists you can tick off, not a pile of notes"]) + """</div>
+<div><h3>What is inside</h3>""" + chk(["<b>Pages 3 to 5:</b> choose, book and pick a site", "<b>Pages 6 and 7:</b> trip overview and weather plan", "<b>Pages 8 to 12:</b> packing lists and car order", "<b>Pages 13 to 16:</b> meals, groceries and the cooler", "<b>Pages 17 to 21:</b> camping safely and well", "<b>Pages 22 and 23:</b> a log for 8 campsites"]) + """</div></div>
+<h3>Weeks before, days before, the night before</h3>
+<div class="tri" style="margin:4pt 0 6pt"><div><div class="tag">Weeks before</div><p>Choose the campground, book the site, fill in the trip overview (page 6).</p></div><div><div class="tag">Days before</div><p>Plan meals, shop, check the weather and fire rules, pack the gear lists.</p></div><div><div class="tag">Night before</div><p>Pre-chill the cooler, pack the car in order (page 12), charge lights.</p></div></div>
+<h3>Printing tips</h3>
+<p>Print the whole planner once, then reprint the checklists, meal planner and grocery list for every trip. It prints on US Letter or A4, and a low-ink printer-friendly version is included. For the campsite log, a heavier paper or light cardstock holds up better at the picnic table.</p>
+<p class="small">General information for campground camping. Rules, reservation dates and fire restrictions change: always check the official page for the place you camp.</p>""")
+
+# 3 choosing a campground
+page("""<div class="kicker">Plan</div><h2>Choosing a campground</h2>
+<p class="lead">Campgrounds differ a lot, from busy parks with hot showers to quiet forest loops with a vault toilet and a water pump. Pick the kind that fits your group.</p>
+<table class="gl">
+<tr><td>National parks</td><td>Big scenery, ranger programs and trails nearby. Popular campgrounds fill early, so plan ahead. In the US many are booked on recreation.gov; in Canada through the Parks Canada reservation service.</td></tr>
+<tr><td>National forests and BLM land (US)</td><td>Often quieter and simpler, sometimes with first-come, first-served sites. Facilities can be basic: check for drinking water before you go.</td></tr>
+<tr><td>State and provincial parks</td><td>Family-friendly, often with flush toilets, showers, beaches and playgrounds. Each state and province has its own booking site.</td></tr>
+<tr><td>Private campgrounds</td><td>The most comforts: showers, laundry, camp stores, sometimes pools and Wi-Fi. A good choice for a first night out with kids.</td></tr></table>
+<h3>What to look for</h3>
+<div class="two">""" + chk(["Drinking water at the campground, or bring your own", "Toilets: flush or vault", "Showers, if your group needs them", "Tent pads and the largest tent size allowed", "Distance to the trails or lake you came for"]) + chk(["Shade, especially for summer trips", "Pets allowed, and the leash rules", "Generator hours and quiet hours", "Cell signal, if you need it (often none)", "Elevation: higher campgrounds are usually colder at night"]) + """</div>
+<div class="box"><h3 style="margin-top:0">Read the recent reviews and the official page</h3><p style="margin:0">Reviews tell you about noise, bugs and the best loops. The official park page tells you what is true today: closures, water outages, fire restrictions and bear rules.</p></div>""")
+
+# 4 booking
+page("""<div class="kicker">Plan</div><h2>Booking your site</h2>
+<p class="lead">Popular campgrounds can fill within minutes of opening, especially summer weekends. Knowing where and when to book is half the job.</p>
+<table class="gl">
+<tr><td>US federal campgrounds</td><td>National parks, national forests, BLM and Army Corps of Engineers campgrounds mostly book on recreation.gov. Many open on a rolling window a set number of months ahead. The window differs by campground, so check its page.</td></tr>
+<tr><td>Parks Canada</td><td>Book at reservation.pc.gc.ca. Each park opens its season's reservations on a launch date, usually announced in winter. Note the date and time zone and be ready when it opens.</td></tr>
+<tr><td>State and provincial parks</td><td>Each has its own booking site and rules. Booking windows and cancellation fees vary a lot from one to the next.</td></tr>
+<tr><td>First-come, first-served</td><td>Some sites cannot be booked. Arrive early, ideally midweek or in the morning, and follow the posted way to claim and pay. Always have a backup campground in mind.</td></tr></table>
+<h3>Before you click "book"</h3>
+<div class="two">""" + chk(["The site fits your tent (pad size) and your car", "Number of people and vehicles allowed", "Check-in and check-out times", "Cancellation and change rules", "Pets, fires and firewood rules"]) + chk(["Walk-in or drive-in site", "Water, toilet and shower distance", "Accessible sites, if you need one", "Save the confirmation (photo or print)", "Add the booking to page 6"]) + """</div>
+<div class="warn"><b>Use only the official booking site.</b> Search results and ads sometimes lead to look-alike sites that charge extra fees. Check the web address before you pay.</div>""")
+
+# 5 picking a site
+page("""<div class="kicker">On arrival</div><h2>Picking a good site</h2>
+<p class="lead">If you choose your site on arrival, or pick it from a map when booking, a few minutes of looking saves a bad night.</p>
+<div class="rt">
+<div><div class="n">1</div><h3>Look up first</h3><p>Check for dead trees and broken, hanging branches over the tent pad and parking spot. Wind can bring them down. If you see one, choose another spot.</p></div>
+<div><div class="n">2</div><h3>Flat, high and dry</h3><p>Pitch on the tent pad or flat ground, not in a dip where rain pools. Lie down on the spot before you pitch: you will feel any slope or rock.</p></div>
+<div><div class="n">3</div><h3>Wind and sun</h3><p>Turn the tent door away from the wind. Trees on the east side give shade on a hot morning; open ground to the east warms a cold one.</p></div>
+<div><div class="n">4</div><h3>Close, but not too close</h3><p>Near the toilets and water is handy at night, but right next to them means foot traffic and lights. Two or three sites away is a good balance.</p></div></div>
+<h3>A quick site check</h3>
+<div class="two">""" + chk(["No dead trees or hanging branches above", "Tent pad is flat and drains well", "Away from ant hills and wasp nests", "Fire ring is clear of branches overhead"]) + chk(["Not on a path to the water or toilets", "Picnic table and food storage nearby", "Within the site's marked boundary", "No standing water nearby (mosquitoes)"]) + """</div>
+<div class="box"><h3 style="margin-top:0">Stay on the site</h3><p style="margin:0">Pitch tents only where the campground allows, usually the tent pad. It protects plants and roots, and it keeps you where the ground is prepared for it.</p></div>""")
+
+# 6 trip overview
+page("""<div class="kicker">Our trip</div><h2>Trip overview</h2>
+<p>Fill it in when you book. Share a photo of this page with someone at home who knows where you are going and when you will be back.</p>
+<div class="ov"><div class="f2">""" + fl("Campground") + fl("Park / forest") + fl("Site number") + fl("Loop") + fl("Arrive") + fl("Leave") + fl("Check-in time") + fl("Check-out time") + fl("Confirmation no.") + fl("Paid / balance") + fl("Drive time") + fl("Distance", '<span class="u"><b></b>mi / <b></b>km</span>') + """</div>
+<div class="lab">Who is coming</div>""" + lines(2) + """
+<div class="lab">At the campground</div><div class="opts"><span>Drinking water</span><span>Flush toilets</span><span>Showers</span><span>Camp store</span><span>Firewood for sale</span><span>Bear lockers</span><span>Pets allowed</span><span>Cell signal</span></div>
+<div class="lab">Other reservations (permits, tours, boat rental)</div>""" + lines(2) + """
+<div class="lab">Nearest town, gas and groceries</div>""" + lines(1) + """
+<div class="lab">Nearest hospital or clinic</div>""" + lines(1) + """
+<div class="lab">Ranger station or campground host</div>""" + lines(1) + """
+<div class="lab">Who at home knows our plan</div>""" + lines(1) + """</div>""")
+
+# 7 weather and backup
+page("""<div class="kicker">Our trip</div><h2>Weather and backup plan</h2>
+<p>Check the forecast for the campground itself, not the nearest city. Nights in the mountains and near water can be much colder than you expect.</p>
+<div class="ov"><div class="f2">""" + fl("Day high", '<span class="u"><b></b>°F / °C</span>') + fl("Night low", '<span class="u"><b></b>°F / °C</span>') + fl("Rain chance") + fl("Wind") + """</div>
+<div class="lab">Checked the day before</div><div class="opts"><span>Forecast</span><span>Fire restrictions</span><span>Campground alerts and closures</span><span>Road conditions</span><span>Sunset time</span></div></div>
+<div class="sig" style="margin-top:10pt">
+<div><h3>If it rains</h3><ul><li>Rainfly on and guylines tight, tent pad clear of puddles</li><li>Tarp over the picnic table, angled so water runs off</li><li>Wet clothes in a bag, dry clothes in another</li><li>Rainy-day ideas on page 21</li></ul></div>
+<div class="stop"><h3>If there is thunder</h3><ul><li>A tent does not protect you from lightning</li><li>Go to a hard-topped car with the windows up, or a solid building</li><li>Stay there until 30 minutes after the last thunder</li><li>Away from lone tall trees, water and open high ground</li></ul></div></div>
+<div class="sig">
+<div><h3>Cold nights</h3><ul><li>Sleeping bag rated for the night low, and a warm pad under you</li><li>Dry base layers and a hat for sleeping</li><li>A warm drink and a snack before bed</li></ul></div>
+<div><h3>Hot days</h3><ul><li>Shade over the table, cooler in the shade</li><li>Plenty of water, a refill plan</li><li>Rest at midday, hike early</li></ul></div></div>
+<div class="lab">Backup campground or plan if ours is closed (fire, flood, storm)</div>""" + lines(3))
+
+# 8 tent and sleep
+page("""<div class="kicker">Checklist</div><h2>Tent and sleep</h2>
+<p class="lead">A warm, dry night makes the whole trip. Pitch a new tent once at home before you go, so you know every pole and clip.</p>
+<table class="gear">
+<tr class="sec"><td colspan="3">Shelter</td></tr>
+<tr><td class="b"></td><td>Tent, poles and rainfly</td><td class="n">counted at home</td></tr>
+<tr><td class="b"></td><td>Footprint or ground sheet</td><td class="n">tucked in, not sticking out</td></tr>
+<tr><td class="b"></td><td>Stakes, plus a few spares</td><td class="n">and a mallet</td></tr>
+<tr><td class="b"></td><td>Guylines</td><td class="n">for wind and rain</td></tr>
+<tr><td class="b"></td><td>Tarp, rope and clips</td><td class="n">over the table</td></tr>
+<tr><td class="b"></td><td>Tent repair kit</td><td class="n">patch, pole sleeve, tape</td></tr>
+<tr class="sec"><td colspan="3">Sleep</td></tr>
+<tr><td class="b"></td><td>Sleeping bag for each person</td><td class="n">rated for the night low</td></tr>
+<tr><td class="b"></td><td>Sleeping pad or air mattress</td><td class="n">insulates from cold ground</td></tr>
+<tr><td class="b"></td><td>Pump for the air mattress</td><td class="n">charged or with batteries</td></tr>
+<tr><td class="b"></td><td>Pillows</td><td class="n">&nbsp;</td></tr>
+<tr><td class="b"></td><td>Extra blanket</td><td class="n">for cold nights</td></tr>
+<tr class="sec"><td colspan="3">Light and comfort</td></tr>
+<tr><td class="b"></td><td>Headlamp for each person</td><td class="n">plus spare batteries</td></tr>
+<tr><td class="b"></td><td>Battery lantern</td><td class="n">for inside the tent</td></tr>
+<tr><td class="b"></td><td>Camp chairs</td><td class="n">&nbsp;</td></tr>
+<tr><td class="b"></td><td>Doormat and small brush</td><td class="n">keeps dirt out</td></tr>
+<tr><td class="b"></td><td>Earplugs</td><td class="n">&nbsp;</td></tr>
+</table>
+<p class="small">The ground pulls heat out of you all night. A thicker or better insulated pad often helps more than a warmer bag.</p>""")
+
+# 9 camp kitchen
+page("""<div class="kicker">Checklist</div><h2>Camp kitchen</h2>
+<p class="lead">Keep the kitchen in one or two bins that live packed between trips. Restock after each trip, and you are always ready to go.</p>
+<div class="cl cols">
+<div><h3>Cooking</h3>""" + chk(["Camp stove and fuel", "Lighter and waterproof matches", "Pot, pan and kettle", "Spatula, tongs, big spoon", "Sharp knife and cutting board", "Can opener", "Food thermometer", "Foil and oven mitt"]) + """
+<h3>Eating</h3>""" + chk(["Plates, bowls and mugs", "Forks, spoons and knives", "Reusable water bottles", "Tablecloth and clips"]) + """</div>
+<div><h3>Food and water</h3>""" + chk(["Cooler and ice (page 16)", "Water jug with a tap", "Food storage bins with lids", "Zip bags and containers", "Coffee or tea kit"]) + """
+<h3>Cleaning</h3>""" + chk(["Two wash tubs: wash and rinse", "Biodegradable soap and sponge", "Dish towel and paper towels", "Trash and recycling bags", "Hand soap or sanitizer"]) + """</div></div>
+<div class="box"><h3 style="margin-top:0">Wash up the right way</h3><p style="margin:0">Use the campground's dish station or gray-water drain if it has one, never the drinking water tap. Scrape food scraps into the trash first. Keep soap and dishwater away from lakes and streams.</p></div>
+<p class="small">Light the stove once at home before the trip and check you have enough fuel, plus a spare.</p>""")
+
+# 10 clothing per person
+def pprow(items):
+    return "".join(f'<tr><td>{a}</td><td class="n">{b}</td>' + '<td class="b"></td>' * 4 + '</tr>' for a, b in items)
+page("""<div class="kicker">Checklist</div><h2>Clothing and personal items</h2>
+<p style="margin-bottom:2pt">Write each person's name at the top of a column and tick as you pack. Layers work better than one big coat.</p>
+<table class="pp gear"><tr><th>Item</th><th>Note</th>""" + '<th class="nm">name</th>' * 4 + """</tr>
+<tr class="sec"><td colspan="6">Clothes</td></tr>""" + pprow([("T-shirts", "one per day"), ("Warm fleece or sweater", "evenings"), ("Rain jacket", "every trip"), ("Long pants and shorts", ""), ("Socks and underwear", "plus a spare pair"), ("Sleepwear and warm hat", "for the night"), ("Hiking shoes and camp shoes", "")]) + """
+<tr class="sec"><td colspan="6">Personal</td></tr>""" + pprow([("Toothbrush and toothpaste", ""), ("Towel", "quick-dry"), ("Sunscreen and sunglasses", ""), ("Insect repellent", ""), ("Medicines", "enough plus spare"), ("Glasses or contacts", ""), ("Headlamp", "")]) + """
+<tr class="sec"><td colspan="6">Extras</td></tr>""" + pprow([("Swimsuit", ""), ("Daypack and water bottle", ""), ("Book or games", "")]) + """</table>
+<p class="small">Pack each person's clothes in their own bag or packing cube, with one bag of dry clothes kept for the drive home.</p>""")
+
+# 11 kids and family
+page("""<div class="kicker">Checklist</div><h2>Kids and family add-on</h2>
+<p class="lead">Camping with kids works best when they have a job, a light and something to do when the adults are busy.</p>
+<div class="cl cols">
+<div><h3>Gear for kids</h3>""" + chk(["Their own headlamp or flashlight", "A whistle on a cord", "Bright jacket or shirt, easy to spot", "Extra full set of clothes", "Comfort item for bedtime", "Kid-size camp chair"]) + """
+<h3>Little ones</h3>""" + chk(["Diapers, wipes and a sealed bag", "Portable crib or play yard", "Baby carrier for walks", "Night light for the tent"]) + """</div>
+<div><h3>Things to do</h3>""" + chk(["Cards and a small board game", "Nature journal and pencils", "Magnifying glass", "Ball or frisbee", "Campsite bingo (page 21)"]) + """
+<h3>Camp jobs for kids</h3>""" + chk(["Collect trash around the site", "Fill the water jug (with an adult)", "Set the table", "Hand out the tent stakes", "Check the site before leaving"]) + """</div></div>
+<div class="box forest"><h3>The family safety talk</h3><p style="margin:0">Before anyone explores, agree on the boundaries of your site. Teach kids: if you are lost, stay where you are, hug a tree and blow your whistle three times. An adult will come to you. Keep kids away from the fire ring, the stove and the road through the campground.</p></div>""")
+
+# 12 car packing order
+page("""<div class="kicker">Checklist</div><h2>Packing the car</h2>
+<p class="lead">Pack in reverse: what you need first at camp goes in last, so it comes out first. You set up faster, even if you arrive in the dark or the rain.</p>
+<div class="lay">
+<div><div class="n">1</div><div><b>In first</b><span class="w">deepest, at the back</span></div><p>Things for the last day and the drive home: dry clothes bag, games and extras you will not need right away.</p></div>
+<div><div class="n">2</div><div><b>Bulky and heavy</b><span class="w">low, against the seat back</span></div><p>Kitchen bins, water jug, camp chairs and sleeping bags. Heavy things low and forward keep the car stable.</p></div>
+<div><div class="n">3</div><div><b>Shelter</b><span class="w">near the door</span></div><p>Tent, footprint, stakes, mallet and tarp. The first thing you unload, so the tent is up before anything else.</p></div>
+<div><div class="n">4</div><div><b>Cooler</b><span class="w">last in, easy to reach</span></div><p>In the shade inside the car, not in a hot roof box. Reach it without unpacking everything.</p></div>
+<div><div class="n">5</div><div><b>In the cabin</b><span class="w">with you</span></div><p>Headlamps, rain jackets, snacks, water, first aid kit, the printed booking and this planner.</p></div></div>
+<div class="two">""" + chk(["Nothing loose that can fly forward in a hard stop", "Windows and mirrors kept clear", "Roof box within the car's load limit", "Spare fuel canisters upright, away from heat"]) + chk(["Tire pressure and spare checked", "Gas tank full before the last town", "Phone charger and offline map", "Trash bag for the drive"]) + """</div>
+<div class="box"><h3 style="margin-top:0">A first-hour bag</h3><p style="margin:0">Pack one bag with what you need in the first hour at camp: headlamps, a lighter, the kettle and a hot drink, snacks, rain jackets and the tent repair kit. Arriving late or in the rain is easy when it is right by the door.</p></div>""")
+
+# 13 meal planner
+def mealrows():
+    return "".join(f'<tr><td class="dy">Day {d}<small>date</small></td><td></td><td></td><td></td><td></td></tr>' for d in (1, 2, 3))
+page("""<div class="kicker">Food</div><h2>Meal planner</h2>
+<p style="margin-bottom:2pt">Plan every meal before you shop, then write what you need on the grocery list (page 15). Simple first-night and last-morning meals make arriving and leaving easier.</p>
+<table class="meal"><tr><th style="width:0.72in"></th><th>Breakfast</th><th>Lunch</th><th>Dinner</th><th>Snacks and drinks</th></tr>""" + mealrows() + """</table>
+<div class="cols" style="margin-top:10pt">
+<div><h3 style="margin-top:0">Cooking order</h3><p class="small" style="font-size:10pt !important">Plan meals that use the most perishable food first (fresh meat, fish), and save canned and dry food for the last days.</p></div>
+<div><div class="lab" style="margin-top:0">Allergies and food notes</div>""" + lines(3, 22) + """</div></div>""")
+
+# 14 easy meal ideas
+page("""<div class="kicker">Food</div><h2>Easy camp meal ideas</h2>
+<p class="lead">Camp food should be simple, filling and quick to clean up. Mix and match these ideas to fill your meal planner.</p>
+<div class="rt">
+<div><div class="n">Breakfast</div><p>Oatmeal with fruit and nuts. Breakfast burritos with eggs scrambled at home and carried in a sealed container. Pancakes from a shake-and-pour mix. Yogurt and granola for the first morning.</p></div>
+<div><div class="n">One-pot</div><p>Pasta with sauce and vegetables. Chili from canned beans. Rice and beans with salsa. Soup with bread. Fewer pots means less washing up.</p></div>
+<div><div class="n">Foil packs</div><p>Chopped potatoes, vegetables and sausage, or fish with lemon, sealed in foil and cooked on hot coals, not flames. Turn them halfway.</p></div>
+<div><div class="n">No-cook</div><p>Wraps with hummus, cheese and vegetables. Crackers, cheese and fruit. Peanut butter sandwiches. Good for arrival day or a rainy evening.</p></div></div>
+<h3>Make it easier</h3>
+<div class="two">""" + chk(["Chop vegetables and mix spices at home", "Pack each meal's ingredients in one bag", "Freeze one dinner flat; it doubles as ice"]) + chk(["Bring a backup no-cook meal", "Cook before dark when you can", "Make a little extra hot water for washing up"]) + """</div>
+<div class="warn"><b>Cook meat all the way through.</b> Use a food thermometer: 165°F (74°C) for poultry and 160°F (71°C) for ground beef and pork. Keep raw meat away from ready-to-eat food, and use a separate board and utensils.</div>""")
+
+# 15 grocery list
+def gl(k): return '<div class="gl2">' + "<div></div>" * k + "</div>"
+page("""<div class="kicker">Food</div><h2>Grocery list</h2>
+<p style="margin-bottom:0">Walk through your meal planner and write everything you need. Check the kitchen bin for oil, salt and coffee before you shop.</p>
+<div class="groc">
+<div><h3>Cooler: meat, dairy, eggs</h3>""" + gl(8) + """<h3>Fruit and vegetables</h3>""" + gl(8) + """</div>
+<div><h3>Dry and canned food</h3>""" + gl(8) + """<h3>Bread, snacks and treats</h3>""" + gl(8) + """</div></div>
+<div class="groc"><div><h3>Drinks and ice</h3>""" + gl(4) + """</div><div><h3>Non-food (foil, bags, fuel)</h3>""" + gl(4) + """</div></div>""")
+
+# 16 cooler
+page("""<div class="kicker">Food</div><h2>Cooler packing and food safety</h2>
+<p class="lead">Cold food is safe food. Keep everything in the cooler at 40°F (4°C) or below: a small fridge thermometer in the cooler tells you at a glance.</p>
+<div class="lay">
+<div><div class="n">1</div><div><b>Bottom</b><span class="w">coldest</span></div><p>Frozen raw meat, sealed in leak-proof bags or containers, plus block ice or frozen water bottles.</p></div>
+<div><div class="n">2</div><div><b>Middle</b><span class="w">cold</span></div><p>Dairy, eggs, leftovers and the next day's meals, with ice packed around them.</p></div>
+<div><div class="n">3</div><div><b>Top</b><span class="w">used first</span></div><p>Fruit, vegetables, sandwiches and anything you reach for often.</p></div></div>
+<div class="two">
+<div><h3>Keep it cold longer</h3>""" + chk(["Pre-chill the cooler the night before", "Pack food already cold or frozen", "Block ice lasts longer than cubes", "Drinks in a second cooler", "Cooler in the shade, lid closed"]) + """</div>
+<div><h3>Keep it safe</h3>""" + chk(["Seal food so meltwater cannot get in", "Raw meat low and sealed, never above other food", "Wash hands before handling food", "Toss food that has warmed up", "When in doubt, throw it out"]) + """</div></div>
+<div class="box"><h3 style="margin-top:0">The two-hour rule</h3><p style="margin:0">Perishable food should not sit out of the cooler for more than two hours, or one hour when it is above 90°F (32°C). Put food back as soon as the meal is served.</p></div>
+<p class="small">In bear country the cooler counts as food: it goes in the bear locker or wherever the posted rules say (page 17).</p>""")
+
+# 17 food storage and wildlife
+page("""<div class="kicker">Camp safely</div><h2>Food storage and wildlife</h2>
+<p class="lead">Food left out teaches animals to come back for more. A fed bear or raccoon becomes a problem for the next campers, and for the animal itself.</p>
+<div class="rt">
+<div><div class="n">1</div><h3>Nothing scented in the tent</h3><p>No food, snacks, drinks, toothpaste, deodorant or sunscreen in the tent. Wrappers in a pocket count too.</p></div>
+<div><div class="n">2</div><h3>Use the locker</h3><p>Where the campground has a bear locker, store all food, coolers, cooking gear and toiletries in it, and latch it every time.</p></div>
+<div><div class="n">3</div><h3>Follow the posted rules</h3><p>Some campgrounds allow food in a closed, hard-sided vehicle; some do not. The sign at the campground or the ranger has the answer.</p></div>
+<div><div class="n">4</div><h3>Clean as you go</h3><p>Never leave food or a cooler out unattended, even for a few minutes. Wipe the table, take trash to the bins, and never burn food scraps in the fire.</p></div></div>
+<p style="margin-top:8pt"><b>Never feed wildlife,</b> not even a chipmunk. Human food makes animals sick and bolder.</p>
+<div class="warn"><b>In bear country:</b> learn the park's bear advice before you go and follow it. Carry bear spray if the land manager recommends it and know how to use it. Keep a clean camp and stay aware at dawn and dusk.</div>
+<h3>The usual camp visitors</h3>
+<table class="gl"><tr><td>Raccoons</td><td>Clever with lids and zips. Use latched bins or the locker, never a soft cooler bag left out at night.</td></tr>
+<tr><td>Squirrels and chipmunks</td><td>Chew through bags and tents for crumbs. Keep snacks sealed and out of reach, even during the day.</td></tr>
+</table>
+<p class="small">Food storage rules are set by each park and campground, and in some areas they come with fines. Read them on arrival.</p>""")
+
+# 18 campfire and stove
+page("""<div class="kicker">Camp safely</div><h2>Campfire and stove safety</h2>
+<p class="lead">A campfire is the heart of the evening. It also starts many wildfires. Check the rules every trip: fire bans can start or change at short notice.</p>
+<div class="cols">
+<div><h3>Before you light</h3>""" + chk(["Check fire restrictions for today", "Use the existing fire ring only", "Clear branches and gear from around it", "Water bucket and shovel at hand", "Local or certified heat-treated firewood only (moved wood spreads tree pests)"]) + """</div>
+<div><h3>While it burns</h3>""" + chk(["Keep it small and low", "Never leave it unattended, not even briefly", "Kids and pets well back from the ring", "No gas or lighter fluid on a fire", "Put it out if the wind picks up"]) + """</div></div>
+<h3>Putting it out: drown, stir, feel</h3>
+<div class="tri" style="margin-top:4pt"><div><div class="tag">Drown</div><p>Pour plenty of water on the fire, until the hissing stops.</p></div><div><div class="tag">Stir</div><p>Stir the ashes and embers with a shovel, then add more water.</p></div><div><div class="tag">Feel</div><p>Hold the back of your hand close. If it is too hot to touch, it is too hot to leave.</p></div></div>
+<div class="warn"><b>Never use a stove, grill, heater or fuel lantern inside a tent, camper or closed car.</b> They give off carbon monoxide, a gas you cannot see or smell, which can kill. They are also a fire risk. Cook and heat outdoors only.</div>
+<h3>Camp stove basics</h3><div class="two">""" + chk(["Flat, stable surface, outdoors", "Well away from the tent and dry grass", "Never leave a lit stove alone"]) + chk(["Let it cool before changing fuel", "Store fuel away from the fire", "Check hoses and seals each trip"]) + """</div>""")
+
+# 19 LNT and quiet hours
+page("""<div class="kicker">Camp well</div><h2>Leave No Trace at the campsite</h2>
+<p class="lead">Good campers leave the site better than they found it, and remember that the neighbors came for the quiet, too.</p>
+<h3>The seven principles, at the campground</h3>
+""" + chk(["<b>Plan ahead and prepare:</b> book, check the rules and pack the right gear", "<b>Travel and camp on durable surfaces:</b> tents on the pad, paths not shortcuts", "<b>Dispose of waste properly:</b> pack out trash, wash dishes at the station", "<b>Leave what you find:</b> no cutting branches, no carving, no moving rocks", "<b>Minimize campfire impacts:</b> existing rings, small fires, out cold", "<b>Respect wildlife:</b> store food, never feed animals", "<b>Be considerate of other visitors:</b> quiet hours, lights, space"]) + """
+<div class="cols" style="margin-top:6pt">
+<div class="box" style="margin:0"><h3 style="margin-top:0">Quiet hours</h3><p style="margin:0">Most campgrounds have quiet hours at night, often from about 10 pm, and generator hours. Check the posted times. Voices and music carry far at night.</p></div>
+<div class="box" style="margin:0"><h3 style="margin-top:0">Good neighbor habits</h3><p style="margin:0">Walk around other sites, not through them. Point lanterns down. Keep dogs leashed and quiet. Say hello: neighbors are your best help in camp.</p></div></div>
+<div class="box"><h3 style="margin-top:0">Camping with a dog</h3><p style="margin:0">Check that pets are allowed before you book. Keep your dog leashed, never leave it alone at the site or in the car, and store its food like your own. Bag and bin every poop.</p></div>
+<p class="small" style="margin-top:8pt">The seven principles are from the Leave No Trace Center for Outdoor Ethics. Learn more at lnt.org.</p>""")
+
+# 20 arrival and pack-up
+page("""<div class="kicker">Checklist</div><h2>Arrive and set up, pack up and leave</h2>
+<div class="cols cl">
+<div><h3>When you arrive</h3>""" + chk(["Check in, or claim and pay for the site", "Read the board: rules, fire level, wildlife", "Walk the site: look up, check the ground", "Pitch the tent first, rainfly on", "Tarp over the table if rain is possible", "Kitchen set up, cooler in the shade", "Food storage sorted (locker or car)", "Find the toilets, water and trash bins", "Headlamps out before dark", "Safety talk with the kids"]) + """</div>
+<div><h3>When you leave</h3>""" + chk(["Fire out cold: drown, stir, feel", "All trash and recycling to the bins", "Walk the site for small trash", "Tent shaken out, stakes counted", "Coolers drained only where allowed", "Nothing left in the bear locker", "Fire ring and table left clean", "Check out on time", "Last look: under the table and car", "Note how it went on page 22"]) + """</div></div>
+<div class="box"><h3 style="margin-top:0">Packing a wet tent</h3><p style="margin:0">If you must pack the tent wet, set it up or hang it to dry as soon as you get home, within a day or two. A tent stored damp grows mildew and starts to smell.</p></div>
+<h3>Back home</h3><div class="two">""" + chk(["Dry the tent, tarp and sleeping bags", "Clean and dry the cooler, lid open"]) + chk(["Restock the kitchen bin and first aid kit", "Note what you missed for next time"]) + """</div>""")
+
+# 21 rainy day and games
+page("""<div class="kicker">Fun</div><h2>Rainy-day ideas and camp games</h2>
+<p class="lead">Rain does not have to end the trip. Put on rain jackets, or stay under the tarp, and try a few of these.</p>
+<div class="two">""" + chk(["Card games and a pocket board game", "A rain walk to look for mushrooms and frogs", "Visit the park's visitor center or museum", "Story circle: each person adds one sentence", "Draw the view in a nature journal"]) + chk(["Twenty questions about animals", "Hot chocolate and a book in the tent", "Learn three knots with a piece of rope", "After dark: count stars when the sky clears", "A short drive to a nearby town or viewpoint"]) + """</div>
+<h3>Campsite bingo</h3>
+<p style="margin-bottom:2pt">Find it, see it or hear it: mark the square. Four in a row wins. Look only, do not pick or touch.</p>
+<div class="bingo"><div>A pinecone</div><div>A bird call</div><div>Animal tracks</div><div>A mushroom</div><div>A feather</div><div>A spider web</div><div>A smooth stone</div><div>Something red</div><div>A squirrel or chipmunk</div><div class="fr">Free square</div><div>A flower</div><div>A heart-shaped leaf</div><div>Moss</div><div>A butterfly or moth</div><div>A woodpecker hole</div><div>The first star</div></div>""")
+
+# 22-23 campsite log
+def clog(n):
+    return ('<div><div class="hd"><b>Campsite</b><span>No. %d</span></div>' % n + fl("Campground") + fl("Site no.") + fl("Dates") + fl("Who came")
+            + '<div class="st">Our rating<span><i></i><i></i><i></i><i></i><i></i></span></div>' + fl("Best spot") + '<div class="nb">Best memory</div>'
+            + '<div class="st">Would we come back?<span class="yn"><span><i></i>Yes</span><span><i></i>No</span></span></div></div>')
+page("""<div class="kicker">Our camping log</div><h2>Campsite log</h2>
+<div class="clog">""" + "".join(clog(i) for i in range(1, 5)) + "</div>")
+page("""<div class="kicker">Our camping log</div><h2>Campsite log, continued</h2>
+<div class="clog">""" + "".join(clog(i) for i in range(5, 9)) + "</div>")
+
+# 24 back
+page("""<div class="brand" style="font:700 9pt/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:28pt">HikeSupply Co.</div>
+<svg width="200" height="120" viewBox="0 0 200 120" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M10 110 L70 40 L100 75 L130 30 L190 110" stroke="#F5F1EA" stroke-width="4"/><circle cx="160" cy="25" r="10" fill="#B85C38" stroke="#B85C38"/></svg>
+<h2 style="margin-top:26pt">Happy camping</h2>
+<p>Thank you for choosing a HikeSupply planner. We hope it leads to warm nights, good food around the table, and campsites you want to come back to.</p>
+<p style="margin-top:14pt;font:600 9pt/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage)">Also from HikeSupply Co.</p>
+<div class="bkcards" style="grid-template-columns:1fr 1fr;width:5.2in;margin-top:8pt"><div><b>Beginner's Hiking Guide</b><span>Day-hike basics for the trails near your campground</span></div><div><b>Ultimate Hiking Packing Checklist</b><span>Packing lists for different kinds of trips</span></div></div>
+<p style="margin-top:18pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">hikesupplyco.com</p>
+<p class="small" style="color:#AEB8AA;margin-top:24pt">This planner is general information for campground camping and does not replace official park rules or safety advice. Rules, reservation dates, closures and fire restrictions change: check official sources before every trip. Food safety temperatures follow USDA guidance. In an emergency, call 911. For personal use only. Cover photo: Andreas Ebner / Pexels.</p>""", "back")
+
+css = open(os.path.join(HERE, "base.css")).read() + open(os.path.join(HERE, "extra.css")).read() + MORE
+html = f'<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../_kit/brand.css"><style>{css}</style></head><body>{"".join(pages)}</body></html>'
+open(os.path.join(HERE, "index.html"), "w").write(html)
+print("pages", len(pages))
