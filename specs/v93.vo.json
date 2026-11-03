@@ -1,0 +1,43 @@
+{
+"voice": "af_heart",
+"speed": 0.93,
+"lead": 0.35,
+"lines": [
+{
+"text": "Mia planned a Thanksgiving drive over Trail Ridge Road.",
+"gap": 0.3
+},
+{
+"text": "The gate was closed.",
+"gap": 0.3
+},
+{
+"text": "It closes to through traffic from mid-October to late May.",
+"gap": 0.45
+},
+{
+"text": "Here's the fix. In winter, stay on the east side and pick lower trails, where the snow is lighter.",
+"gap": 0.3
+},
+{
+"text": "Ask a ranger about snow, ice and avalanche danger.",
+"gap": 0.3
+},
+{
+"text": "Pack poles or traction, layers and food, and start early.",
+"gap": 0.3
+},
+{
+"text": "Days are short.",
+"gap": 0.45
+},
+{
+"text": "She was back in town for dinner.",
+"gap": 0.45
+},
+{
+"text": "Save this before your Rocky trip.",
+"gap": 0.2
+}
+]
+}
