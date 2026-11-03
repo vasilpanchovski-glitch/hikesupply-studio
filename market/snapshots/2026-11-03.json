@@ -1,0 +1,248 @@
+{
+ "date": "2026-11-03",
+ "previous": "2026-11-01",
+ "group": "b",
+ "note": "Group B. Empty fields mean the page did not show the number. BigSkyChecklists' shop page could not be opened this run (no search result linked to it), so no new data. Getaway Goose's Thatch profile now redirects to mindtrip.ai and could not be read for the third time, so it was replaced by Dirt In My Shoes.",
+ "sellers": [
+  {
+   "name": "PrintablePatti",
+   "shop": {
+    "sales": "2.1k",
+    "rating": 4.9,
+    "reviews": 322
+   },
+   "products": [
+    {
+     "title": "Camping Checklist, Planner, Hiking Essentials ... Camping Log",
+     "price": 6.34,
+     "was": 8.45,
+     "pages": null,
+     "item_reviews": 2,
+     "item_rating": 5.0,
+     "notes": "25% off, countdown 'ends in 22h' on Nov 3 (fits the Nov 4 end seen earlier); page count still stated three different ways; 8.5x11 only"
+    }
+   ],
+   "offers": [
+    "25% off with countdown, real end date about Nov 4",
+    "no Black Friday offer shown yet"
+   ],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "shop-wide % sale with a countdown",
+     "keyword-stuffed titles"
+    ],
+    "traffic": "Etsy search"
+   },
+   "source": "https://www.etsy.com/listing/898385376"
+  },
+  {
+   "name": "AnkaKidsStudio",
+   "shop": {
+    "sales": 458,
+    "rating": 5.0,
+    "reviews": 19,
+    "age": "9 months"
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt Bundle for Kids",
+     "price": 3.5,
+     "bestseller": true,
+     "item_reviews": 8,
+     "item_rating": 5.0,
+     "notes": "US Letter and A4; title has a typo; no sale"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "praise": [
+     "cute and fun",
+     "PDFs worked well",
+     "seller replies quickly",
+     "grandkids aged 5 and 7 enjoyed it"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "Bestseller badge from volume",
+     "both paper sizes named"
+    ],
+    "traffic": "Etsy search"
+   },
+   "source": "https://www.etsy.com/listing/4506126306"
+  },
+  {
+   "name": "An Acre in the City (Payhip)",
+   "products": [
+    {
+     "title": "National Park Adventure Itinerary (fillable PDF)",
+     "price": 19.0,
+     "notes": "still 'On Sale' with no old price; 1 MB; no page count; no reviews"
+    },
+    {
+     "title": "Ultimate Road Trip Planner for Families",
+     "price": 9.0
+    },
+    {
+     "title": "Packing List Spreadsheet",
+     "price": 7.0
+    },
+    {
+     "title": "47 Family Vacation Tips with Kids",
+     "price": 4.0
+    },
+    {
+     "title": "Travel Planner Printable",
+     "price": 9.0
+    }
+   ],
+   "offers": [
+    "refer a friend, both get 10% off"
+   ],
+   "reviews": {
+    "count": 0
+   },
+   "marketing": {
+    "bait": "none found",
+    "tactics": [
+     "referral discount",
+     "'On Sale' label without an old price"
+    ]
+   },
+   "source": "https://payhip.com/b/xIwnT"
+  },
+  {
+   "name": "Dirt In My Shoes (new)",
+   "products": [
+    {
+     "title": "Arches / Bryce Canyon / Canyonlands / Capitol Reef itinerary",
+     "price": 29.0
+    },
+    {
+     "title": "Grand Canyon / Grand Teton / Rocky Mountain / Zion itinerary",
+     "price": 44.0
+    },
+    {
+     "title": "Acadia / Glacier / Great Smoky Mountains / Olympic / Yellowstone / Yosemite itinerary",
+     "price": 59.0
+    },
+    {
+     "title": "South Dakota (Badlands, Mount Rushmore, Wind Cave)",
+     "price": 69.0
+    },
+    {
+     "title": "e-Gift Card",
+     "price": "from 10"
+    }
+   ],
+   "offers": [
+    "10% off the whole order for 3+ itineraries",
+    "e-gift card",
+    "no Black Friday offer shown"
+   ],
+   "reviews": {
+    "note": "no ratings shown; claims 'tens of thousands' use them"
+   },
+   "marketing": {
+    "tactics": [
+     "former park ranger authority",
+     "hour-by-hour schedules",
+     "weekly updates behind an account login",
+     "gift card for gifting"
+    ],
+    "bait": "none found on the shop page",
+    "traffic": "not shown"
+   },
+   "source": "https://shop.dirtinmyshoes.com"
+  },
+  {
+   "name": "Earth Pak",
+   "products": [
+    {
+     "title": "Original Waterproof Dry Bag",
+     "notes": "no price on the review summary pages"
+    }
+   ],
+   "reviews": {
+    "complaints": [
+     "feels smaller than the photos suggest (new this run)",
+     "leaks / damp contents",
+     "single strap uncomfortable for hiking",
+     "phone case missing for some buyers"
+    ]
+   },
+   "source": "https://shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag.md"
+  },
+  {
+   "name": "BigSkyChecklists",
+   "products": [],
+   "note": "not read this run"
+  },
+  {
+   "name": "Getaway Goose (Thatch)",
+   "note": "removed: profile redirects to mindtrip.ai, unreadable 3 runs"
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "Nature Hidden Treasures (Payhip)",
+   "title": "2027 Nature Monthly Planner Printable",
+   "price": 9.99,
+   "pages": 50,
+   "notes": "PDF + JPG for GoodNotes, A4 suggested, 'On Sale' with no old price, no reviews",
+   "source": "https://payhip.com/b/tdrXZ"
+  },
+  {
+   "name": "nationalparkobsessed (Gumroad)",
+   "title": "All Mini-Itineraries Pack, lifetime access to current and future",
+   "price": 149.99,
+   "source": "https://nationalparkobsessed.gumroad.com/l/Mini-ItinerariesPack"
+  },
+  {
+   "name": "JaimeStokeReed (Etsy)",
+   "title": "Printable Camping Checklist Planner, five pages",
+   "price": 1.99,
+   "shop": {
+    "sales": "4k",
+    "rating": 5.0,
+    "reviews": 227
+   },
+   "item_reviews": 20,
+   "item_rating": 4.9,
+   "source": "https://www.etsy.com/listing/1108612739"
+  },
+  {
+   "name": "My Nature Book Adventures",
+   "notes": "state park guidebooks; Trustpilot 2.6 from 14 reviews: blank pages instead of park info, map numbers that do not match, no returns",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com"
+  }
+ ],
+ "changes_vs_previous": [
+  "PrintablePatti: same $6.34 (was $8.45), sale ends about Nov 4; no Black Friday offer yet.",
+  "AnkaKidsStudio: shop sales 449 to 458, same $3.50 bestseller (Oct 29 note said 3.48).",
+  "An Acre in the City: no change, still $19 'On Sale' with no old price, no reviews.",
+  "List: Getaway Goose out, Dirt In My Shoes in (park itineraries $29-69, Rocky Mountain $44)."
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "multi-buy discounts (Dirt In My Shoes 10% off 3+, An Acre referral 10%, earlier WITR 10/20%)",
+   "'On Sale' or countdown labels (PrintablePatti, An Acre, Nature Hidden Treasures; two show no old price)",
+   "authority and freshness promises: former ranger, weekly updates, lifetime access to future guides"
+  ],
+  "new_this_run": [
+   "e-gift card for park itineraries (Dirt In My Shoes)",
+   "lifetime access to future guides for one price (nationalparkobsessed, $149.99)",
+   "2027 planner sold as PDF plus JPG for tablet note apps (Nature Hidden Treasures)"
+  ],
+  "we_do_not_use_yet": [
+   "a store gift card for gift season",
+   "free updates promise on park guides",
+   "tablet (GoodNotes) version of planners"
+  ],
+  "black_friday": "On Nov 3 none of the group B sellers shows a Black Friday offer yet."
+ }
+}

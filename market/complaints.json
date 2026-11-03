@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none.",
- "updated": "2026-11-01",
+ "updated": "2026-11-03",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1455,6 +1455,106 @@
    "date": "2026-04-03",
    "theme": "slow shipping / no reply",
    "found": "2026-11-01"
+  },
+  {
+   "type": "state park guidebook",
+   "product": "My Nature Book Adventures (Trustpilot)",
+   "what": "guidebook was mostly blank pages with only park names as headings, no park details",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com",
+   "where": "Trustpilot 1-3 star",
+   "date": "2025-05-21",
+   "theme": "guide too limited / generic",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "state park guidebook",
+   "product": "My Nature Book Adventures (Trustpilot)",
+   "what": "buyer expected park info, photos and guides but got journal-style pages, and could not find how to ask for a refund",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com",
+   "where": "Trustpilot 1-3 star",
+   "date": "2025-03-04",
+   "theme": "guide too limited / generic",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "state park guidebook",
+   "product": "My Nature Book Adventures (Trustpilot)",
+   "what": "paid close to $40 for what felt like a blank paper book",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com",
+   "where": "Trustpilot 1-3 star",
+   "date": "2025-03-06",
+   "theme": "guide too limited / generic",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "state park guidebook",
+   "product": "My Nature Book Adventures (Trustpilot)",
+   "what": "most pages blank, order arrived incomplete, no returns accepted",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com",
+   "where": "Trustpilot 1-3 star",
+   "date": "2025-03-03",
+   "theme": "guide too limited / generic",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "state park guidebook",
+   "product": "My Nature Book Adventures (Trustpilot)",
+   "what": "numbered map key was missing entries and locations did not match; seller asked buyer to pay return shipping, then went quiet",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com",
+   "where": "Trustpilot 1-3 star",
+   "date": "2025-01-17",
+   "theme": "list incomplete or out of date",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "state park guidebook",
+   "product": "My Nature Book Adventures (Trustpilot)",
+   "what": "numbered spots on the state map did not match their descriptions, making the book nearly useless",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com",
+   "where": "Trustpilot 1-3 star",
+   "date": "2024-12-25",
+   "theme": "list incomplete or out of date",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "state park guidebook",
+   "product": "My Nature Book Adventures (Trustpilot)",
+   "what": "no shipping updates for nine days and no help from customer service",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com",
+   "where": "Trustpilot 1-3 star",
+   "date": "2024-12-19",
+   "theme": "slow shipping / no reply",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "state park guidebook",
+   "product": "My Nature Book Adventures (Trustpilot)",
+   "what": "no-return policy plus no park information inside",
+   "source": "https://www.trustpilot.com/review/mynaturebookadventures.com",
+   "where": "Trustpilot 1-3 star",
+   "date": "2025-04-13",
+   "theme": "no refunds / hard to get help",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "hiking journal",
+   "product": "Hiking Journal (Amazon, via Kimola review summary)",
+   "what": "the only complaint summarised is thin pages",
+   "source": "https://kimola.com/reports/unlock-hiking-adventures-with-our-insightful-journal-analysis-amazon-en-us-142309",
+   "where": "review summary",
+   "date": "",
+   "theme": "thin paper",
+   "found": "2026-11-03"
+  },
+  {
+   "type": "dry bag",
+   "product": "Earth Pak (ShopSavvy summary)",
+   "what": "bag feels smaller than the photos suggest",
+   "source": "https://shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag.md",
+   "where": "review summary",
+   "date": "2025-05-08",
+   "theme": "product does not match the listing",
+   "found": "2026-11-03"
   }
  ],
  "themes": [
@@ -1471,7 +1571,15 @@
    "count": 9
   },
   {
+   "theme": "guide too limited / generic",
+   "count": 9
+  },
+  {
    "theme": "missing parts on arrival",
+   "count": 8
+  },
+  {
+   "theme": "list incomplete or out of date",
    "count": 8
   },
   {
@@ -1479,20 +1587,20 @@
    "count": 7
   },
   {
-   "theme": "list incomplete or out of date",
+   "theme": "product does not match the listing",
    "count": 6
-  },
-  {
-   "theme": "guide too limited / generic",
-   "count": 5
   },
   {
    "theme": "filter straw clogs / flow drops / hard to suck",
    "count": 5
   },
   {
-   "theme": "product does not match the listing",
-   "count": 5
+   "theme": "grip uncomfortable or slippery",
+   "count": 4
+  },
+  {
+   "theme": "slow shipping / no reply",
+   "count": 4
   },
   {
    "theme": "headlamp fails or drains fast in the cold",
@@ -1500,10 +1608,6 @@
   },
   {
    "theme": "too thin, not warm enough",
-   "count": 4
-  },
-  {
-   "theme": "grip uncomfortable or slippery",
    "count": 4
   },
   {
@@ -1516,6 +1620,10 @@
   },
   {
    "theme": "emergency bivy: condensation, no insulation",
+   "count": 3
+  },
+  {
+   "theme": "thin paper",
    "count": 3
   },
   {
@@ -1532,10 +1640,6 @@
   },
   {
    "theme": "traction slips off boot / straps tear",
-   "count": 3
-  },
-  {
-   "theme": "slow shipping / no reply",
    "count": 3
   },
   {
@@ -1556,10 +1660,6 @@
   },
   {
    "theme": "not enough blank pages / too rigid",
-   "count": 2
-  },
-  {
-   "theme": "thin paper",
    "count": 2
   },
   {
@@ -1628,6 +1728,10 @@
   },
   {
    "theme": "not suited to heavy loads",
+   "count": 1
+  },
+  {
+   "theme": "no refunds / hard to get help",
    "count": 1
   }
  ]
