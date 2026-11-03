@@ -377,3 +377,13 @@
 {"target": "variant:gid://shopify/ProductVariant/53923997942067 (womens fleece Purple)", "field": "media", "old": "gid://shopify/MediaImage/46395813691699", "new": "gid://shopify/MediaImage/46395813757235"}
 {"target": "variant:gid://shopify/ProductVariant/53923998171443 (womens fleece Purple)", "field": "media", "old": "gid://shopify/MediaImage/46395813691699", "new": "gid://shopify/MediaImage/46395813757235"}
 {"target": "product:folding-trekking-pole media gid://shopify/MediaImage/46887236305203", "field": "alt", "old": "Folding trekking poles in black, red, blue and silver with T-handle grips", "new": "Telescoping trekking poles in black, red, blue and silver with T-handle grips"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "page:links", "field": "seoTitle", "new": "Start Here: Free Hiking Checklist & Guides"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "article:what-to-pack-for-a-day-hike", "field": "seoDescription", "new": "new 152"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "article:bear-winter", "field": "seoTitle", "new": "What to Do If You See a Bear in Winter"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "article:bear-winter", "field": "seoDescription", "new": "set"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "article:how-to-keep-a-hiking-log", "field": "seoTitle", "new": "How to Keep a Hiking Log: What to Write"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "article:how-to-keep-a-hiking-log", "field": "seoDescription", "new": "set"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "product:motion-sensor-headlamp", "field": "seoTitle", "new": "Motion-Sensor Rechargeable Headlamp, USB-C"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "article:hiking-for-beginners", "field": "seoDescription", "new": "trimmed to 151"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "article:best-day-hikes-great-smoky-mountains", "field": "seoDescription", "new": "trimmed to 148"}
+{"date": "2026-11-03", "batch": "s20261102", "target": "article:hiking-during-hunting-season", "field": "seoDescription", "new": "trimmed to 151"}
