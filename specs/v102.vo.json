@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Last year, Leo got hiking boots as a gift.",
+   "gap": 0.45
+  },
+  {
+   "text": "They never left the box.",
+   "gap": 0.45
+  },
+  {
+   "text": "He didn't know which trail to pick, what to pack, or how long it would take.",
+   "gap": 0.45
+  },
+  {
+   "text": "This year, his sister gave him the plan to go with them:",
+   "gap": 0.45
+  },
+  {
+   "text": "a beginner's guide to choose an easy first trail, a packing checklist, and a trip planner to fill in.",
+   "gap": 0.45
+  },
+  {
+   "text": "Two weeks later, the boots were muddy.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this if you're buying a hiker a gift.",
+   "gap": 0.2
+  }
+ ]
+}
