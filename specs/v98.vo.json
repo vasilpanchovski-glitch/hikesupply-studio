@@ -1,0 +1,40 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Emma just started hiking, and she wants to go solo next summer.",
+   "gap": 0.4
+  },
+  {
+   "text": "Her dad worries.",
+   "gap": 0.55
+  },
+  {
+   "text": "So this year he skipped the gadgets and gave her the whole system.",
+   "gap": 0.45
+  },
+  {
+   "text": "A beginner's guide, a trip planner and packing lists,",
+   "gap": 0.3
+  },
+  {
+   "text": "a safety guide, what to do if you get lost, and a solo hiking guide.",
+   "gap": 0.5
+  },
+  {
+   "text": "Now she leaves a trip plan on the fridge before every hike.",
+   "gap": 0.5
+  },
+  {
+   "text": "The Ultimate Hiker's Toolkit is twenty-five percent off through December first.",
+   "gap": 0.4,
+   "show": "The Ultimate Hiker's Toolkit is 25% ~ off through December 1."
+  },
+  {
+   "text": "Save this for your gift list.",
+   "gap": 0.2
+  }
+ ]
+}

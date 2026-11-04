@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Leah rolled her ankle two miles from the car.",
+   "gap": 0.45
+  },
+  {
+   "text": "Her friend called for help, and they waited.",
+   "gap": 0.45
+  },
+  {
+   "text": "Within minutes of stopping, Leah started to shiver.",
+   "gap": 0.6
+  },
+  {
+   "text": "Here's the fix. Put on every dry layer and a hat.",
+   "gap": 0.45
+  },
+  {
+   "text": "Get off the cold ground, so sit on your pack.",
+   "gap": 0.45
+  },
+  {
+   "text": "Then climb into an emergency bivy.",
+   "gap": 0.4
+  },
+  {
+   "text": "It reflects your body heat back and blocks the wind.",
+   "gap": 0.6
+  },
+  {
+   "text": "Leah was still warm when the rescue team reached them.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.2
+  }
+ ]
+}

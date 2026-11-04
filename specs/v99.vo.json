@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Every January, Jen promised herself she would hike more.",
+   "gap": 0.45
+  },
+  {
+   "text": "By March, her boots were back in the closet.",
+   "gap": 0.5
+  },
+  {
+   "text": "The goal was fine. She just had no plan.",
+   "gap": 0.55
+  },
+  {
+   "text": "So this year, she printed one and put it on the fridge.",
+   "gap": 0.45
+  },
+  {
+   "text": "One hike a week, a trail picked for every month, long weekends already marked.",
+   "gap": 0.5
+  },
+  {
+   "text": "After every hike, she colored in the miles.",
+   "gap": 0.5
+  },
+  {
+   "text": "By December, the whole page was full.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before you set next year's goals.",
+   "gap": 0.2
+  }
+ ]
+}
