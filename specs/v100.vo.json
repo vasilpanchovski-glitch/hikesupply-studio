@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Two days before the holidays, Mark realized he had nothing for Dan,",
+   "gap": 0.45
+  },
+  {
+   "text": "the friend who drags him up every trail.",
+   "gap": 0.45
+  },
+  {
+   "text": "No time left for shipping.",
+   "gap": 0.45
+  },
+  {
+   "text": "So he printed Dan a whole year of hiking:",
+   "gap": 0.45
+  },
+  {
+   "text": "a planner with a hike for every month, and a hike-a-week challenge.",
+   "gap": 0.45
+  },
+  {
+   "text": "He wrote their first trail on the gift page and cut out the tag.",
+   "gap": 0.45
+  },
+  {
+   "text": "On January first, they were at the trailhead together.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this for your gift list.",
+   "gap": 0.2
+  }
+ ]
+}

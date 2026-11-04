@@ -48,7 +48,7 @@ const Subject: React.FC<{ children: React.ReactNode; rimX?: number; col?: string
 );
 
 // Wall calendar page with a month name and an optional note.
-const WallCal: React.FC<{ x: number; y: number; w: number; month: string; note?: string; noteK?: number; cross?: number }> = ({ x, y, w, month, note, noteK = 1, cross = 0 }) => {
+export const WallCal: React.FC<{ x: number; y: number; w: number; month: string; note?: string; noteK?: number; cross?: number }> = ({ x, y, w, month, note, noteK = 1, cross = 0 }) => {
   const h = w * 1.2;
   return (
     <g transform={`translate(${x},${y})`}>
@@ -74,7 +74,7 @@ const WallCal: React.FC<{ x: number; y: number; w: number; month: string; note?:
 const MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
 // The printed year page: 12 month boxes (trail picked, long weekend dots) and the 52-box Hike-a-Week grid.
-const YearPage: React.FC<{ x: number; y: number; w: number; months: number; weekends: number; filled: number; t: number }> = ({ x, y, w, months, weekends, filled }) => {
+export const YearPage: React.FC<{ x: number; y: number; w: number; months: number; weekends: number; filled: number; t: number }> = ({ x, y, w, months, weekends, filled }) => {
   const h = w * 1.29;
   const cw = (w - 80) / 4;
   return (
@@ -216,7 +216,7 @@ const S3: React.FC<{ off: number }> = ({ off }) => {
   );
 };
 
-const Fridge: React.FC = () => (
+export const Fridge: React.FC = () => (
   <g>
     <rect x={60} y={120} width={760} height={1900} rx={40} fill="#eef1f2" />
     <rect x={60} y={120} width={760} height={1900} rx={40} fill="none" stroke="#cfd5d8" strokeWidth={8} />
@@ -292,7 +292,7 @@ const S5: React.FC<{ off: number }> = ({ off }) => {
 };
 
 // Marker in a hand.
-const Marker: React.FC<{ x: number; y: number; skin: string }> = ({ x, y, skin }) => (
+export const Marker: React.FC<{ x: number; y: number; skin: string }> = ({ x, y, skin }) => (
   <g transform={`translate(${x},${y}) rotate(-35)`}>
     <rect x={-14} y={-150} width={28} height={150} rx={10} fill={MARK} />
     <path d="M-14,0 L14,0 L4,30 L-4,30 Z" fill="#2a2a2a" />
