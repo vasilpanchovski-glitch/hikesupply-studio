@@ -1,0 +1,46 @@
+{
+ "posts": [
+  {
+   "id": "m20261116",
+   "photo": "moods/photos/pexels-3389537.jpg",
+   "quote": "The peaks put on\ntheir winter white.\nWe slowed down\nto match them.",
+   "place": "auto"
+  },
+  {
+   "id": "m20261117",
+   "photo": "moods/photos/pexels-10939816.jpg",
+   "quote": "Ridge after ridge\nfading into the mist.\nNo need to name them.\nJust look.",
+   "place": 0.09
+  },
+  {
+   "id": "m20261118",
+   "photo": "moods/photos/pexels-32436350.jpg",
+   "quote": "Wind and water\ntook their time here.\nA slow walk\nis the right way to see it.",
+   "place": "auto"
+  },
+  {
+   "id": "m20261119",
+   "photo": "moods/photos/pexels-28997829.jpg",
+   "quote": "The cloud sat\non the summit all day.\nWe had lunch below it\nand called it enough.",
+   "place": 0.06
+  },
+  {
+   "id": "m20261120",
+   "photo": "moods/photos/pexels-9657726.jpg",
+   "quote": "Cold hands\naround a warm cup,\nand a lake too still\nto disturb with words.",
+   "place": "auto"
+  },
+  {
+   "id": "m20261121",
+   "photo": "moods/photos/pexels-18870098.jpg",
+   "quote": "Pale peaks, green water,\none long breath out\nbefore the climb.",
+   "place": 0.035
+  },
+  {
+   "id": "m20261122",
+   "photo": "moods/photos/pexels-10145652.jpg",
+   "quote": "Tired legs,\na pink sky,\nand the slow,\nhappy walk back.",
+   "place": 0.1
+  }
+ ]
+}
