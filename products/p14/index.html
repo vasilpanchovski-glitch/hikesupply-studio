@@ -1,0 +1,985 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../_kit/brand.css"><style>
+@media print{html,body{background:#fff}}
+body{font-size:11.3pt;line-height:1.55}
+.lead{font-size:13pt}
+h3{font-size:14pt}
+ul.check li{padding:5pt 0 5pt 20pt}
+.box,.warn{padding:12pt 15pt}
+.box p,.warn,.box li{font-size:11pt}
+.lab{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin:11pt 0 3pt}
+.wl{border-bottom:0.8pt solid #CFC7B6}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 22pt}
+.fl{display:flex;align-items:flex-end;gap:6pt;height:26pt;border-bottom:0.8pt solid #CFC7B6;font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest);padding-bottom:3pt}
+.fl .u{margin-left:auto;font-weight:500;color:#8B8577;letter-spacing:.04em;text-transform:none;font-size:8.5pt}
+.fl .u b{display:inline-block;width:0.5in}
+.opts{display:flex;flex-wrap:wrap;gap:4pt 12pt;font-size:9pt;margin-top:5pt}
+.opts span::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:5pt;vertical-align:-1pt;background:#fff}
+.sketch{border:1pt solid #CFC7B6;border-radius:8pt;background:#fff;position:relative}
+.sketch span{position:absolute;left:10pt;top:8pt;font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#A39C8D}
+.big{font-size:11.5pt;line-height:1.55}
+.diff{display:grid;grid-template-columns:1fr 1fr;gap:12pt}
+.diff>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:13pt 14pt}
+.diff h3{margin:0 0 5pt}
+.diff p{margin:0;font-size:11pt;line-height:1.5}
+.tag{display:inline-block;font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:10pt 0 4pt;border-top:3pt solid var(--forest);}
+.timeline div{padding:9pt 8pt 0 0;font-size:10pt;line-height:1.35;position:relative}
+.timeline div::before{content:"";position:absolute;top:-8pt;left:0;width:11pt;height:11pt;border-radius:50%;background:var(--paper);border:2.5pt solid var(--forest)}
+.timeline div.hot::before{border-color:var(--clay);background:var(--clay)}
+.timeline b{display:block;font:600 12pt/1.2 var(--serif);color:var(--forest);margin-bottom:2pt}
+.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin:10pt 0}
+.layers>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:12pt;position:relative}
+.layers .num{font:600 26pt/1 var(--serif);color:var(--clay)}
+.layers h3{margin:6pt 0 4pt}
+.layers p{font-size:10.5pt;margin:0 0 6pt}
+.layers .eg{font-size:9.5pt;color:#6B6B66;border-top:0.6pt solid var(--line);padding-top:5pt}
+.sym{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.sym>div{border-radius:9pt;padding:11pt 13pt;background:#fff;border:1pt solid var(--line)}
+.sym h3{margin:0 0 5pt;font-size:12.5pt}
+.sym .lbl{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin:7pt 0 3pt}
+.sym p,.sym li{font-size:10.3pt;line-height:1.45}
+.sym ul{margin:0;padding-left:13pt}
+.em{background:var(--forest);color:var(--stone);border-radius:9pt;padding:12pt 15pt;margin-top:10pt}
+.em h3{color:var(--stone);margin:0 0 4pt}
+.em p{margin:0;font-size:11pt}
+.ess{display:grid;grid-template-columns:1fr 1fr;gap:8pt 14pt}
+.ess>div{display:grid;grid-template-columns:26pt 1fr;gap:8pt;padding:11pt 0;border-bottom:0.6pt solid var(--line)}
+.ess .n{font:600 16pt/1 var(--serif);color:var(--clay)}
+.ess h3{margin:0 0 3pt;font-size:13pt}
+.ess p{margin:0;font-size:10.2pt;line-height:1.42}
+.cl{display:grid;grid-template-columns:1fr 1fr;gap:4pt 22pt}
+.cl h3{margin:10pt 0 2pt;font-size:12pt}
+.cl ul.check li{font-size:10.5pt;padding:5.5pt 0 5.5pt 19pt}
+.ltab td{font-size:10pt;line-height:1.4;padding:8pt 6pt}
+.ltab td:first-child{font-weight:600;color:var(--forest);white-space:nowrap}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.qc{border:1.2pt dashed #A39C8D;padding:18pt 18pt;height:4.6in;background:#fff;margin:-0.6pt}
+.qc h3{margin:0 0 8pt;font-size:15pt}
+.qc .kicker{margin-bottom:5pt}
+.qc ul.check li{font-size:10pt;padding:4pt 0 4pt 18pt}
+.qc ul.check li::before{width:9pt;height:9pt;top:4pt}
+.qc p{font-size:10pt;margin:0 0 7pt}
+.hikehead{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt;margin-bottom:4pt}
+.hikehead .no{font:600 24pt/1 var(--serif);color:var(--forest)}
+.hikehead .no small{font:700 8pt/1 var(--sans);letter-spacing:.16em;color:var(--clay);display:block;margin-bottom:6pt;text-transform:uppercase}
+.src{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.src>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:15pt 15pt;min-height:1.45in}
+.src h3{margin:0 0 3pt;font-size:12pt}
+.src .url{font:600 9pt/1.3 var(--sans);color:var(--clay);margin-bottom:4pt}
+.src p{margin:0;font-size:10.5pt;line-height:1.42}
+.back{background:var(--forest);color:var(--stone);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.back h2{color:var(--stone)}
+.back p{color:#D9DED6;max-width:4.6in}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+.cover.photo>div{position:relative}
+.cover.photo .cphoto,.cover.photo .cshade{position:absolute}
+.cover.photo h1{color:#F5F1EA}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{color:#222;text-shadow:none}
+html.bw .cover.photo .sub{color:#333}
+html.bw .page{background:#fff}
+html.bw{--forest:#222;--clay:#444;--sage:#666;--rust:#333;--soft:#fff}
+html.bw .cover,html.bw .back{background:#fff;color:#222;border:2pt solid #222}
+html.bw .cover h1,html.bw .back h2{color:#222}
+html.bw .cover .sub,html.bw .cover .meta,html.bw .cover .brand,html.bw .back p,html.bw .back .brand{color:#333 !important}
+html.bw .cover svg *{fill:none !important;stroke:#222 !important}
+html.bw .box,html.bw .em{background:#fff;border:0.8pt solid #999;color:#222}
+html.bw .em h3,html.bw .box.forest,html.bw .box.forest h3{color:#222}
+html.bw .warn{background:#fff}
+html.bw .timeline div::before{background:#fff}
+html.bw .timeline div.hot::before{background:#444}
+
+.glance{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin-top:6pt}
+.glance>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:12pt 14pt}
+.glance h3{margin:0 0 6pt;font-size:15pt}
+.glance table{margin:0}
+.glance td{font-size:10pt;padding:5pt 4pt;line-height:1.35}
+.glance td:first-child{font:700 7pt/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--sage);width:0.85in;padding-top:7pt}
+.seas{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin-top:4pt}
+.seas>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 13pt}
+.seas>div.best{border:1.6pt solid var(--forest)}
+.seas h3{margin:0 0 2pt;font-size:13.5pt}
+.seas .m{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.seas p{margin:0;font-size:10.2pt;line-height:1.45}
+.bk{border-top:1.5pt solid var(--forest);margin-top:6pt}
+.bk>div{display:grid;grid-template-columns:1.25in 1fr;gap:14pt;padding:10pt 0;border-bottom:0.6pt solid var(--line)}
+.bk b{font:600 13pt/1.2 var(--serif);color:var(--forest)}
+.bk p{margin:0;font-size:10.3pt;line-height:1.45}
+.fee td{font-size:10pt;padding:6pt 6pt}
+.plan{border:1pt solid var(--line);border-radius:9pt;background:#fff;padding:11pt 14pt;margin-bottom:10pt}
+.plan .ph{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2pt solid var(--forest);padding-bottom:5pt;margin-bottom:3pt}
+.plan .ph b{font:600 17pt/1 var(--serif);color:var(--forest)}
+.plan .ph span{font:600 8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#8B8577}
+.plan .d{display:grid;grid-template-columns:0.62in 1fr;gap:10pt;padding:6pt 0;border-bottom:0.6pt solid var(--line);font-size:10pt;line-height:1.42}
+.plan .d:last-child{border-bottom:0}
+.plan .d i{font:normal 700 7.5pt/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--clay)}
+.reg{display:grid;grid-template-columns:1fr;gap:10pt}
+.reg>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:13pt 17pt}
+.reg h3{margin:0 0 5pt;font-size:16pt}
+.reg .w{font:700 7pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.reg p{margin:0 0 6pt;font-size:11.2pt;line-height:1.55}
+.reg p:last-child{margin:0}
+.hk{background:#fff;border:1pt solid var(--line);border-radius:10pt;padding:15pt 18pt;margin-bottom:13pt}
+.hk .top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:6pt}
+.hk .top h3{margin:0;font-size:20pt}
+.hk .top small{display:block;font:700 7.5pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.hk .top .lv{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);border:1.2pt solid var(--forest);border-radius:20pt;padding:4pt 8pt;white-space:nowrap}
+.hk .st{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:11pt 0 9pt;border-bottom:0.6pt solid var(--line);padding-bottom:10pt}
+.hk .st div{font-size:10pt;line-height:1.3;padding-right:6pt}
+.hk .st b{display:block;font:700 6.8pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:4pt}
+.hk .st span{font:600 15pt/1.2 var(--serif);color:var(--forest);display:block}
+.hk .st em{font-style:normal;font-size:9.3pt;color:#6B6B66}
+.hk p{margin:0 0 6pt;font-size:10.9pt;line-height:1.52}
+.hk p:last-child{margin:0}
+.hk .lb{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin-right:4pt}
+.hk .nt{margin-top:9pt;font-size:10.4pt;line-height:1.45;background:var(--soft);border-radius:6pt;padding:9pt 12pt}
+.dist{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:8pt 0 4pt}
+.dist>div{border-radius:10pt;padding:14pt 16pt;text-align:center}
+.dist .a{background:var(--forest);color:var(--stone)}
+.dist .b{background:#fff;border:1.6pt solid var(--forest)}
+.dist .n{font:600 34pt/1 var(--serif)}
+.dist .a .n{color:var(--stone)} .dist .b .n{color:var(--forest)}
+.dist .u{font:700 8pt/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-top:4pt}
+.dist p{margin:6pt 0 0;font-size:10.3pt}
+.dist .a p{color:#D9DED6}
+.wild{display:grid;grid-template-columns:repeat(3,1fr);gap:0 16pt}
+.wild ul.check li{font-size:10.2pt;padding:5pt 0 5pt 19pt}
+.wild ul.check li{display:flex;align-items:flex-end}.wild ul.check li span{flex:1;margin-left:8pt;border-bottom:0.8pt solid #CFC7B6;height:10pt;min-width:0.3in}
+.dp .fl{height:28pt}
+.bud td{height:30pt;font-size:10.5pt}
+.src>div{min-height:1.62in}.bud td.a{width:1.05in;border-left:0.6pt solid var(--line)}
+.bud td.c{font-weight:600;color:var(--forest)}
+.bud tr.tot td{border-top:1.5pt solid var(--forest);font-weight:700;color:var(--forest)}
+.qq{border-top:1.5pt solid var(--forest);margin-top:4pt}
+.qq>div{padding:8pt 0 4pt;border-bottom:0.6pt solid var(--line)}
+.qq b{display:block;font-size:10.8pt;color:var(--forest);font-weight:600;margin-bottom:2pt}
+.qq .wl{height:36pt;border-bottom:0.8pt dashed #CFC7B6}
+.bkcards{display:grid;grid-template-columns:1fr 1fr;gap:12pt;margin:18pt 0 6pt;width:5.6in}
+.bkcards div{border:1pt solid #6E8170;border-radius:9pt;padding:12pt;text-align:left}
+.bkcards b{display:block;font:600 13pt/1.2 var(--serif);color:var(--stone);margin-bottom:4pt}
+.bkcards span{font-size:9.5pt;color:#CFD6CC;line-height:1.4}
+html.bw .dist .a{background:#fff;color:#222;border:1.6pt solid #222}
+html.bw .dist .a .n,html.bw .dist .a p{color:#222}
+html.bw .bkcards b,html.bw .bkcards span{color:#222}
+html.bw .hk .nt{background:#fff;border:0.6pt solid #999}
+
+.pb{width:100%;border-collapse:collapse;table-layout:fixed;margin:4pt 0 0}
+.pb th{font-size:6.8pt;padding:4pt 4pt}
+.pb td{height:21.5pt;padding:2pt 4pt;font-size:9.4pt;vertical-align:middle;border-bottom:0.6pt solid var(--line)}
+.pb td.n{font:600 8.5pt/1 var(--serif);color:var(--clay);width:0.28in}
+.pb td.b{width:0.32in;text-align:center}
+.pb td.b::before{content:"";display:inline-block;width:11pt;height:11pt;border:1.2pt solid var(--forest);border-radius:50%;background:#fff;vertical-align:middle}
+.pb td.p{font-weight:600;color:var(--forest)}
+.pb td.p small{font:600 6.3pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--sage);margin-left:4pt}
+.pb td.r{font-size:8.4pt;color:#6B6B66}
+.pb td.e{font-size:8.6pt;white-space:nowrap}
+.pb td.e i{font-style:normal;color:#8B8577}
+.pb td.d{border-left:0.6pt solid var(--line)}
+.pb2{display:grid;grid-template-columns:1fr 1fr;gap:0 16pt}
+.pb2 .pb td{height:22.5pt}
+.pb2.own .pb td{height:33pt}
+.pb2 .pb td.e{padding-left:6pt;font-size:8.3pt}
+.g36 ul.check li{padding:7pt 0 7pt 20pt}
+.pb2 .pb td.p{white-space:nowrap;font-size:9pt;letter-spacing:-0.01em}
+.lg{display:grid;grid-template-columns:1fr 1fr;gap:9pt 10pt;margin-top:6pt}
+.lc{background:#fff;border:1pt solid var(--line);border-radius:8pt;padding:7pt 10pt 6pt;height:2.03in;position:relative;overflow:hidden}
+.lc .h{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.6pt solid var(--forest);padding-bottom:3pt;margin-right:0.5in}
+.lc .h b{font:600 11pt/1.1 var(--serif);color:var(--forest);white-space:nowrap;letter-spacing:-0.01em}
+.lc .h span{font:600 6.6pt/1 var(--sans);letter-spacing:.02em;color:#8B8577;white-space:nowrap;margin-left:6pt}
+.lc .no{white-space:nowrap;overflow:hidden;margin-right:0.5in;font:700 6.3pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:3pt}
+.lc .st{position:absolute;right:9pt;top:8pt;width:0.4in;height:0.4in;border:1.1pt dashed #A39C8D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 5.6pt/1.1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#A39C8D;text-align:center}
+.lc .r2{display:grid;grid-template-columns:1fr 1fr;gap:0 10pt}
+.lc .fl{height:18.5pt;font-size:6.6pt;padding-bottom:2pt}
+.lc .wl{height:15pt}
+.lc .opts{font-size:7.4pt;gap:2pt 8pt;margin-top:4pt}
+.lc .opts span::before{width:7pt;height:7pt}
+.lc.blank .h b{color:#A39C8D}
+.lhead{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:5pt}
+.lhead h2{margin:0;font-size:20pt}
+.lhead span{font:600 7.5pt/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#8B8577}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:9pt;margin:10pt 0}
+.facts>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:10pt 12pt}
+.facts b{display:block;font:600 20pt/1 var(--serif);color:var(--clay)}
+.facts span{font:700 7pt/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest)}
+.gift{border:2pt solid var(--forest);border-radius:12pt;padding:20pt 24pt;background:#fff;margin-top:8pt}
+.gift h3{font-size:19pt;margin:0 0 6pt}
+.tagrow{display:flex;gap:16pt;margin-top:14pt;justify-content:center}
+.gtag{width:3.1in;height:2.05in;border:1.2pt dashed #A39C8D;border-radius:4pt 40pt 40pt 4pt;background:#fff;padding:12pt 18pt 10pt 16pt;position:relative}
+.gtag::after{content:"";position:absolute;right:16pt;top:50%;margin-top:-7pt;width:14pt;height:14pt;border-radius:50%;border:1.2pt solid #A39C8D}
+.gtag small{display:block;font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:4pt}
+.gtag b{display:block;font:600 13pt/1.15 var(--serif);color:var(--forest);margin-bottom:6pt;width:2.1in}
+.gtag .fl{height:26pt;width:2.3in}
+.cut{font:600 7.5pt/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#A39C8D;text-align:center;margin-top:8pt}
+.wt td{height:25pt;font-size:9pt}
+.wt td.l{width:1.15in;font-weight:600;color:var(--forest)}
+.ph2{display:grid;grid-template-rows:1fr 1fr;gap:14pt;height:8.6in;margin-top:8pt}
+.ph2>div{display:grid;grid-template-rows:1fr auto;gap:6pt}
+.ph2 .sketch{height:auto}
+.cert{border:3pt double var(--forest);border-radius:6pt;height:8.9in;padding:34pt 40pt;text-align:center;background:#fff;display:flex;flex-direction:column;align-items:center}
+.cert .k{font:700 9pt/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--clay);margin-top:12pt}
+.cert h2{font-size:34pt;margin:12pt 0 4pt}
+.cert p{font-size:12pt;max-width:5in;color:var(--charcoal)}
+.cert .fl{width:5in;height:40pt;font-size:8pt;justify-content:center}
+.cert .opts{justify-content:center;font-size:11pt;gap:8pt 22pt;margin:14pt 0 6pt}
+.cert .sig{display:grid;grid-template-columns:1fr 1fr;gap:28pt;width:5in;margin-top:auto}
+.bkcards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12pt;margin:18pt 0 6pt;width:6.4in}
+.bkcards div{border:1pt solid #6E8170;border-radius:9pt;padding:12pt;text-align:left}
+.bkcards b{display:block;font:600 13pt/1.2 var(--serif);color:var(--stone);margin-bottom:4pt}
+.bkcards span{font-size:9.5pt;color:#CFD6CC;line-height:1.4}
+.mr{display:grid;grid-template-columns:1fr;gap:12pt;margin-top:8pt}
+.mr>div{background:#fff;border:1pt solid var(--line);border-radius:10pt;padding:20pt 20pt;display:grid;grid-template-columns:2.1in 1fr;gap:16pt;align-items:center}
+.mr b{font:600 16pt/1.15 var(--serif);color:var(--forest)}
+.mr p{margin:0;font-size:10.8pt;line-height:1.5}
+.mr small{display:block;font:700 7pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:5pt}
+.yrbig{font:600 15pt/1.2 var(--sans);letter-spacing:.06em;color:#F5F1EA;margin-bottom:8pt;text-transform:uppercase}
+html.bw .yrbig{color:#222}
+html.bw .bkcards b,html.bw .bkcards span{color:#222}
+html.bw .lc,html.bw .cert{background:#fff}
+</style></head><body><section class="page cover photo"><div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="470" height="330" viewBox="0 0 470 330" fill="none" stroke-linejoin="round" stroke-linecap="round">
+<path d="M0 240 L80 170 L120 200 L210 70 L250 115 L290 90 L360 170 L400 145 L470 220" stroke="#F5F1EA" stroke-width="3.5"/>
+<path d="M210 70 L210 34 M210 34 L240 42 L210 50" stroke="#F5F1EA" stroke-width="3"/>
+<path d="M60 300 C130 285 160 250 215 240 C270 230 300 205 340 196" stroke="#F5F1EA" stroke-width="3" stroke-dasharray="2 10"/>
+</svg></div>
+<div><div class="yrbig">Summit log and progress boards</div><h1>Peak Bagger's Logbook</h1><p class="sub">Colorado 14ers, New Hampshire 4,000-Footers and Adirondack High Peaks: color in every summit, and keep a log card for each one. Elevations in feet and meters.</p>
+<div class="meta" style="margin-top:22pt"><span>40 pages</span><span>152 peaks</span><span>3 famous lists</span></div></div></section><section class="page "><div class="kicker">A gift for the summit</div><h2>For your next summit</h2>
+<div class="fl" style="height:40pt;font-size:10pt">This logbook belongs to</div>
+<div class="gift"><h3>A note for you</h3><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div>
+<div class="f2" style="margin-top:6pt"><div class="fl">From</div><div class="fl">Date</div></div></div>
+<div class="box" style="margin-top:14pt"><h3 style="margin-top:0">Giving this as a gift?</h3><p style="margin:0">Print the list your hiker is working on (or all three), write a note above and slip the pages into a folder or binder. Add a promise if you like: a ride to the trailhead, a summit snack, or company on the next peak. Cut out a tag below for the wrapping.</p></div>
+<div class="tagrow">
+<div class="gtag"><small>Gift tag</small><b>One more peak to color in</b><div class="fl">To</div><div class="fl">From</div></div>
+<div class="gtag"><small>Gift tag</small><b>See you at the top</b><div class="fl">To</div><div class="fl">From</div></div>
+</div><div class="cut">Cut along the dashed line</div><div class="folio"><span>Peak Bagger's Logbook</span><span>2</span></div></section><section class="page "><div class="kicker">Start here</div><h2>How to use this logbook</h2>
+<p class="lead">Three of the best-known peak lists in the US, each with a progress board to color in and a log card for every summit. Work on one list or all three.</p>
+<div class="ess" style="margin-top:6pt">
+<div><div class="n">1</div><div><h3>Read about your list</h3><p>Each list starts with a page on how it works, access and permits, and how its club recognizes finishers.</p></div></div>
+<div><div class="n">2</div><div><h3>Color the board</h3><p>Fill in the circle and write the date when you stand on top. The board shows your whole list at a glance.</p></div></div>
+<div><div class="n">3</div><div><h3>Fill in the log card</h3><p>One card per peak: date, route, partners, weather, times and a few notes. The dashed circle is for a sticker, a stamp or your initials.</p></div></div>
+<div><div class="n">4</div><div><h3>Finish strong</h3><p>Winter round tracker, your own list, photo pages, trip notes, a gear check and a finisher certificate to fill in.</p></div></div>
+</div>
+<div class="lab" style="margin-top:12pt">Print only what you need</div>
+<table class="ltab"><tr><td>Everyone</td><td>Pages 1 to 4 and 32 to 38</td></tr>
+<tr><td>Colorado 14ers</td><td>Pages 5 to 15</td></tr>
+<tr><td>NH 4,000-Footers</td><td>Pages 16 to 23</td></tr>
+<tr><td>Adirondack 46</td><td>Pages 24 to 31</td></tr></table>
+<div class="box" style="margin-top:8pt"><h3 style="margin-top:0">Print tips</h3><p style="margin:0">Print at 100% (actual size) on US Letter. A heavier paper (32 lb or card stock) makes the log cards last in a pack. The printer-friendly version uses less ink. Elevations are in feet with meters in gray (1 ft = 0.3048 m).</p></div>
+<p class="small" style="margin-top:8pt">We are not affiliated with the Colorado Mountain Club, 14ers.com, the Appalachian Mountain Club or the Adirondack Forty-Sixers. Lists checked against the official sources on November 4, 2026.</p><div class="folio"><span>Peak Bagger's Logbook</span><span>3</span></div></section><section class="page "><div class="kicker">Before a big peak</div><h2>Honest safety basics</h2>
+<p class="lead">A summit is optional. Getting home is not. These basics apply to all three lists.</p>
+<div class="ess" style="margin-top:4pt">
+<div><div class="n">1</div><div><h3>Start early</h3><p>In the Colorado summer, thunderstorms often build by early afternoon. Aim to be off the summit and exposed ridges before they form. If you hear thunder, head down.</p></div></div>
+<div><div class="n">2</div><div><h3>Set a turnaround time</h3><p>Decide before you leave when you will turn back, summit or not, and keep to it. Most trouble starts late in the day.</p></div></div>
+<div><div class="n">3</div><div><h3>Check official forecasts</h3><p>Use mountain forecasts, not the town forecast. For the Presidential Range, read the Mount Washington Observatory higher summits forecast. Weather above treeline can turn severe fast.</p></div></div>
+<div><div class="n">4</div><div><h3>Know the route</h3><p>Carry a map and know how to use it. Phones die in the cold. Some peaks have no marked trail, and some routes need scrambling or real climbing skills.</p></div></div>
+<div><div class="n">5</div><div><h3>Respect the altitude</h3><p>Colorado 14ers start above 14,000 ft (4,267 m). Headache, nausea or dizziness can be signs of altitude sickness. Going down is the best fix. Drink water and eat often.</p></div></div>
+<div><div class="n">6</div><div><h3>Tell someone</h3><p>Leave your route and return time with a person at home, and tell them who to call if you are late.</p></div></div>
+</div>
+<div class="em"><h3>Leave No Trace</h3><p>Stay on the trail or herd path, walk on rock above treeline to protect fragile alpine plants, pack out all trash, and take only photos from the summit.</p></div>
+<div class="warn" style="margin-top:10pt">General information only. Conditions, closures and rules change. Check the land manager (Forest Service, National Park Service, NY DEC, state agencies) before every hike, hike within your ability and turn back when in doubt.</div><div class="folio"><span>Peak Bagger's Logbook</span><span>4</span></div></section><section class="page "><div class="kicker">List 1</div><h2>The Colorado 14ers</h2>
+<p class="lead">The mountains in Colorado that rise above 14,000 feet (4,267 m). Most lists count 58 named peaks. On 14ers.com, 52 of them stand on their own and 6 are named summits that rise less than 300 ft above the saddle to a higher neighbor (marked unranked on the board).</p>
+<div class="facts"><div><b>58</b><span>named peaks on the board</span></div><div><b>14,438 ft</b><span>Mount Elbert, the highest (4,401 m)</span></div><div><b>7</b><span>mountain ranges</span></div></div>
+<h3>From walk-ups to real climbs</h3><p>Some 14ers have a well-built trail to the top, such as Quandary, Bierstadt or Elbert by their standard routes. Others, like Capitol, Little Bear, Pyramid and the Maroon Bells, need exposed scrambling on loose rock where a fall can be fatal. Read a current route description, and build up from easier peaks.</p>
+<h3>Check access before you go</h3><p>Most 14ers are on National Forest or National Park land, but not all access is public. Culebra Peak is on a private ranch that limits visits and charges a fee. Some peaks, trailheads and parking areas cross private land or charge parking or entrance fees, and access can change from one season to the next. Longs Peak is in Rocky Mountain National Park, which has its own entrance and reservation rules. Check the current rules with the land manager or the landowner.</p>
+<h3>Recognition</h3><p>There is no single official club for the Colorado list. Many hikers log their climbs on 14ers.com or join the Colorado Mountain Club. This logbook is your own record.</p>
+<div class="warn">Snow lingers high up into early summer, and summer afternoons bring lightning. Mount Blue Sky was called Mount Evans until 2023, so older guides use the old name.</div><div class="folio"><span>Peak Bagger's Logbook</span><span>5</span></div></section><section class="page "><div class="kicker">Board 1 of 2 · highest first</div><h2 style="margin-bottom:4pt">Colorado 14ers progress board</h2><table class="pb"><tr><th style="width:0.28in">#</th><th style="width:0.32in"></th><th>Peak</th><th style="width:1.05in">Range</th><th style="width:1.15in">Elevation</th><th style="width:1.05in">Date</th></tr><tr><td class="n">1</td><td class="b"></td><td class="p">Mount Elbert</td><td class="r">Sawatch</td><td class="e">14,438 ft <i>/ 4,401 m</i></td><td class="d"></td></tr><tr><td class="n">2</td><td class="b"></td><td class="p">Mount Massive</td><td class="r">Sawatch</td><td class="e">14,427 ft <i>/ 4,397 m</i></td><td class="d"></td></tr><tr><td class="n">3</td><td class="b"></td><td class="p">Mount Harvard</td><td class="r">Sawatch</td><td class="e">14,424 ft <i>/ 4,396 m</i></td><td class="d"></td></tr><tr><td class="n">4</td><td class="b"></td><td class="p">Blanca Peak</td><td class="r">Sangre de Cristo</td><td class="e">14,350 ft <i>/ 4,374 m</i></td><td class="d"></td></tr><tr><td class="n">5</td><td class="b"></td><td class="p">La Plata Peak</td><td class="r">Sawatch</td><td class="e">14,344 ft <i>/ 4,372 m</i></td><td class="d"></td></tr><tr><td class="n">6</td><td class="b"></td><td class="p">Uncompahgre Peak</td><td class="r">San Juan</td><td class="e">14,318 ft <i>/ 4,364 m</i></td><td class="d"></td></tr><tr><td class="n">7</td><td class="b"></td><td class="p">Crestone Peak</td><td class="r">Sangre de Cristo</td><td class="e">14,299 ft <i>/ 4,358 m</i></td><td class="d"></td></tr><tr><td class="n">8</td><td class="b"></td><td class="p">Mount Lincoln</td><td class="r">Mosquito</td><td class="e">14,293 ft <i>/ 4,357 m</i></td><td class="d"></td></tr><tr><td class="n">9</td><td class="b"></td><td class="p">Grays Peak</td><td class="r">Front</td><td class="e">14,275 ft <i>/ 4,351 m</i></td><td class="d"></td></tr><tr><td class="n">10</td><td class="b"></td><td class="p">Castle Peak</td><td class="r">Elk</td><td class="e">14,274 ft <i>/ 4,351 m</i></td><td class="d"></td></tr><tr><td class="n">11</td><td class="b"></td><td class="p">Quandary Peak</td><td class="r">Tenmile</td><td class="e">14,272 ft <i>/ 4,350 m</i></td><td class="d"></td></tr><tr><td class="n">12</td><td class="b"></td><td class="p">Torreys Peak</td><td class="r">Front</td><td class="e">14,272 ft <i>/ 4,350 m</i></td><td class="d"></td></tr><tr><td class="n">13</td><td class="b"></td><td class="p">Mount Antero</td><td class="r">Sawatch</td><td class="e">14,271 ft <i>/ 4,350 m</i></td><td class="d"></td></tr><tr><td class="n">14</td><td class="b"></td><td class="p">Mount Blue Sky</td><td class="r">Front</td><td class="e">14,268 ft <i>/ 4,349 m</i></td><td class="d"></td></tr><tr><td class="n">15</td><td class="b"></td><td class="p">Longs Peak</td><td class="r">Front</td><td class="e">14,259 ft <i>/ 4,346 m</i></td><td class="d"></td></tr><tr><td class="n">16</td><td class="b"></td><td class="p">Mount Wilson</td><td class="r">San Juan</td><td class="e">14,256 ft <i>/ 4,345 m</i></td><td class="d"></td></tr><tr><td class="n">17</td><td class="b"></td><td class="p">Mount Cameron<small>unranked</small></td><td class="r">Mosquito</td><td class="e">14,248 ft <i>/ 4,343 m</i></td><td class="d"></td></tr><tr><td class="n">18</td><td class="b"></td><td class="p">Mount Shavano</td><td class="r">Sawatch</td><td class="e">14,230 ft <i>/ 4,337 m</i></td><td class="d"></td></tr><tr><td class="n">19</td><td class="b"></td><td class="p">Mount Belford</td><td class="r">Sawatch</td><td class="e">14,202 ft <i>/ 4,329 m</i></td><td class="d"></td></tr><tr><td class="n">20</td><td class="b"></td><td class="p">Mount Princeton</td><td class="r">Sawatch</td><td class="e">14,200 ft <i>/ 4,328 m</i></td><td class="d"></td></tr><tr><td class="n">21</td><td class="b"></td><td class="p">Mount Yale</td><td class="r">Sawatch</td><td class="e">14,200 ft <i>/ 4,328 m</i></td><td class="d"></td></tr><tr><td class="n">22</td><td class="b"></td><td class="p">Crestone Needle</td><td class="r">Sangre de Cristo</td><td class="e">14,196 ft <i>/ 4,327 m</i></td><td class="d"></td></tr><tr><td class="n">23</td><td class="b"></td><td class="p">Mount Bross</td><td class="r">Mosquito</td><td class="e">14,178 ft <i>/ 4,321 m</i></td><td class="d"></td></tr><tr><td class="n">24</td><td class="b"></td><td class="p">El Diente Peak<small>unranked</small></td><td class="r">San Juan</td><td class="e">14,175 ft <i>/ 4,321 m</i></td><td class="d"></td></tr><tr><td class="n">25</td><td class="b"></td><td class="p">Kit Carson Peak</td><td class="r">Sangre de Cristo</td><td class="e">14,167 ft <i>/ 4,318 m</i></td><td class="d"></td></tr><tr><td class="n">26</td><td class="b"></td><td class="p">Maroon Peak</td><td class="r">Elk</td><td class="e">14,163 ft <i>/ 4,317 m</i></td><td class="d"></td></tr><tr><td class="n">27</td><td class="b"></td><td class="p">Mount Oxford</td><td class="r">Sawatch</td><td class="e">14,158 ft <i>/ 4,315 m</i></td><td class="d"></td></tr><tr><td class="n">28</td><td class="b"></td><td class="p">Tabeguache Peak</td><td class="r">Sawatch</td><td class="e">14,158 ft <i>/ 4,315 m</i></td><td class="d"></td></tr><tr><td class="n">29</td><td class="b"></td><td class="p">Mount Sneffels</td><td class="r">San Juan</td><td class="e">14,155 ft <i>/ 4,314 m</i></td><td class="d"></td></tr></table><div class="folio"><span>Peak Bagger's Logbook</span><span>6</span></div></section><section class="page "><div class="kicker">Board 2 of 2</div><h2 style="margin-bottom:4pt">Colorado 14ers progress board</h2><table class="pb"><tr><th style="width:0.28in">#</th><th style="width:0.32in"></th><th>Peak</th><th style="width:1.05in">Range</th><th style="width:1.15in">Elevation</th><th style="width:1.05in">Date</th></tr><tr><td class="n">30</td><td class="b"></td><td class="p">Mount Democrat</td><td class="r">Mosquito</td><td class="e">14,154 ft <i>/ 4,314 m</i></td><td class="d"></td></tr><tr><td class="n">31</td><td class="b"></td><td class="p">Capitol Peak</td><td class="r">Elk</td><td class="e">14,138 ft <i>/ 4,309 m</i></td><td class="d"></td></tr><tr><td class="n">32</td><td class="b"></td><td class="p">Pikes Peak</td><td class="r">Front</td><td class="e">14,109 ft <i>/ 4,300 m</i></td><td class="d"></td></tr><tr><td class="n">33</td><td class="b"></td><td class="p">Snowmass Mountain</td><td class="r">Elk</td><td class="e">14,105 ft <i>/ 4,299 m</i></td><td class="d"></td></tr><tr><td class="n">34</td><td class="b"></td><td class="p">Windom Peak</td><td class="r">San Juan</td><td class="e">14,089 ft <i>/ 4,294 m</i></td><td class="d"></td></tr><tr><td class="n">35</td><td class="b"></td><td class="p">Mount Eolus</td><td class="r">San Juan</td><td class="e">14,087 ft <i>/ 4,294 m</i></td><td class="d"></td></tr><tr><td class="n">36</td><td class="b"></td><td class="p">Challenger Point<small>unranked</small></td><td class="r">Sangre de Cristo</td><td class="e">14,086 ft <i>/ 4,293 m</i></td><td class="d"></td></tr><tr><td class="n">37</td><td class="b"></td><td class="p">Mount Columbia</td><td class="r">Sawatch</td><td class="e">14,075 ft <i>/ 4,290 m</i></td><td class="d"></td></tr><tr><td class="n">38</td><td class="b"></td><td class="p">Missouri Mountain</td><td class="r">Sawatch</td><td class="e">14,071 ft <i>/ 4,289 m</i></td><td class="d"></td></tr><tr><td class="n">39</td><td class="b"></td><td class="p">Humboldt Peak</td><td class="r">Sangre de Cristo</td><td class="e">14,068 ft <i>/ 4,288 m</i></td><td class="d"></td></tr><tr><td class="n">40</td><td class="b"></td><td class="p">Mount Bierstadt</td><td class="r">Front</td><td class="e">14,066 ft <i>/ 4,287 m</i></td><td class="d"></td></tr><tr><td class="n">41</td><td class="b"></td><td class="p">Sunlight Peak</td><td class="r">San Juan</td><td class="e">14,061 ft <i>/ 4,286 m</i></td><td class="d"></td></tr><tr><td class="n">42</td><td class="b"></td><td class="p">Handies Peak</td><td class="r">San Juan</td><td class="e">14,058 ft <i>/ 4,285 m</i></td><td class="d"></td></tr><tr><td class="n">43</td><td class="b"></td><td class="p">Ellingwood Point</td><td class="r">Sangre de Cristo</td><td class="e">14,057 ft <i>/ 4,285 m</i></td><td class="d"></td></tr><tr><td class="n">44</td><td class="b"></td><td class="p">Mount Lindsey</td><td class="r">Sangre de Cristo</td><td class="e">14,055 ft <i>/ 4,284 m</i></td><td class="d"></td></tr><tr><td class="n">45</td><td class="b"></td><td class="p">Culebra Peak</td><td class="r">Sangre de Cristo</td><td class="e">14,053 ft <i>/ 4,283 m</i></td><td class="d"></td></tr><tr><td class="n">46</td><td class="b"></td><td class="p">Mount Sherman</td><td class="r">Mosquito</td><td class="e">14,043 ft <i>/ 4,280 m</i></td><td class="d"></td></tr><tr><td class="n">47</td><td class="b"></td><td class="p">North Eolus<small>unranked</small></td><td class="r">San Juan</td><td class="e">14,042 ft <i>/ 4,280 m</i></td><td class="d"></td></tr><tr><td class="n">48</td><td class="b"></td><td class="p">Little Bear Peak</td><td class="r">Sangre de Cristo</td><td class="e">14,041 ft <i>/ 4,280 m</i></td><td class="d"></td></tr><tr><td class="n">49</td><td class="b"></td><td class="p">Redcloud Peak</td><td class="r">San Juan</td><td class="e">14,037 ft <i>/ 4,278 m</i></td><td class="d"></td></tr><tr><td class="n">50</td><td class="b"></td><td class="p">Conundrum Peak<small>unranked</small></td><td class="r">Elk</td><td class="e">14,037 ft <i>/ 4,278 m</i></td><td class="d"></td></tr><tr><td class="n">51</td><td class="b"></td><td class="p">Pyramid Peak</td><td class="r">Elk</td><td class="e">14,029 ft <i>/ 4,276 m</i></td><td class="d"></td></tr><tr><td class="n">52</td><td class="b"></td><td class="p">San Luis Peak</td><td class="r">San Juan</td><td class="e">14,023 ft <i>/ 4,274 m</i></td><td class="d"></td></tr><tr><td class="n">53</td><td class="b"></td><td class="p">North Maroon Peak<small>unranked</small></td><td class="r">Elk</td><td class="e">14,022 ft <i>/ 4,274 m</i></td><td class="d"></td></tr><tr><td class="n">54</td><td class="b"></td><td class="p">Wetterhorn Peak</td><td class="r">San Juan</td><td class="e">14,021 ft <i>/ 4,274 m</i></td><td class="d"></td></tr><tr><td class="n">55</td><td class="b"></td><td class="p">Wilson Peak</td><td class="r">San Juan</td><td class="e">14,021 ft <i>/ 4,274 m</i></td><td class="d"></td></tr><tr><td class="n">56</td><td class="b"></td><td class="p">Mount of the Holy Cross</td><td class="r">Sawatch</td><td class="e">14,007 ft <i>/ 4,269 m</i></td><td class="d"></td></tr><tr><td class="n">57</td><td class="b"></td><td class="p">Huron Peak</td><td class="r">Sawatch</td><td class="e">14,006 ft <i>/ 4,269 m</i></td><td class="d"></td></tr><tr><td class="n">58</td><td class="b"></td><td class="p">Sunshine Peak</td><td class="r">San Juan</td><td class="e">14,004 ft <i>/ 4,268 m</i></td><td class="d"></td></tr></table><div class="folio"><span>Peak Bagger's Logbook</span><span>7</span></div></section><section class="page "><div class="lhead"><h2>Colorado 14ers log</h2><span>Cards 1 to 8</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 1 of 58 · Sawatch</div>
+<div class="h"><b>Mount Elbert</b><span>14,438 ft / 4,401 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 2 of 58 · Sawatch</div>
+<div class="h"><b>Mount Massive</b><span>14,427 ft / 4,397 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 3 of 58 · Sawatch</div>
+<div class="h"><b>Mount Harvard</b><span>14,424 ft / 4,396 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 4 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Blanca Peak</b><span>14,350 ft / 4,374 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 5 of 58 · Sawatch</div>
+<div class="h"><b>La Plata Peak</b><span>14,344 ft / 4,372 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 6 of 58 · San Juan</div>
+<div class="h"><b>Uncompahgre Peak</b><span>14,318 ft / 4,364 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 7 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Crestone Peak</b><span>14,299 ft / 4,358 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 8 of 58 · Mosquito</div>
+<div class="h"><b>Mount Lincoln</b><span>14,293 ft / 4,357 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>8</span></div></section><section class="page "><div class="lhead"><h2>Colorado 14ers log</h2><span>Cards 9 to 16</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 9 of 58 · Front</div>
+<div class="h"><b>Grays Peak</b><span>14,275 ft / 4,351 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 10 of 58 · Elk</div>
+<div class="h"><b>Castle Peak</b><span>14,274 ft / 4,351 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 11 of 58 · Tenmile</div>
+<div class="h"><b>Quandary Peak</b><span>14,272 ft / 4,350 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 12 of 58 · Front</div>
+<div class="h"><b>Torreys Peak</b><span>14,272 ft / 4,350 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 13 of 58 · Sawatch</div>
+<div class="h"><b>Mount Antero</b><span>14,271 ft / 4,350 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 14 of 58 · Front</div>
+<div class="h"><b>Mount Blue Sky</b><span>14,268 ft / 4,349 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 15 of 58 · Front</div>
+<div class="h"><b>Longs Peak</b><span>14,259 ft / 4,346 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 16 of 58 · San Juan</div>
+<div class="h"><b>Mount Wilson</b><span>14,256 ft / 4,345 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>9</span></div></section><section class="page "><div class="lhead"><h2>Colorado 14ers log</h2><span>Cards 17 to 24</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 17 of 58 · Mosquito</div>
+<div class="h"><b>Mount Cameron</b><span>14,248 ft / 4,343 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 18 of 58 · Sawatch</div>
+<div class="h"><b>Mount Shavano</b><span>14,230 ft / 4,337 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 19 of 58 · Sawatch</div>
+<div class="h"><b>Mount Belford</b><span>14,202 ft / 4,329 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 20 of 58 · Sawatch</div>
+<div class="h"><b>Mount Princeton</b><span>14,200 ft / 4,328 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 21 of 58 · Sawatch</div>
+<div class="h"><b>Mount Yale</b><span>14,200 ft / 4,328 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 22 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Crestone Needle</b><span>14,196 ft / 4,327 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 23 of 58 · Mosquito</div>
+<div class="h"><b>Mount Bross</b><span>14,178 ft / 4,321 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 24 of 58 · San Juan</div>
+<div class="h"><b>El Diente Peak</b><span>14,175 ft / 4,321 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>10</span></div></section><section class="page "><div class="lhead"><h2>Colorado 14ers log</h2><span>Cards 25 to 32</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 25 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Kit Carson Peak</b><span>14,167 ft / 4,318 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 26 of 58 · Elk</div>
+<div class="h"><b>Maroon Peak</b><span>14,163 ft / 4,317 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 27 of 58 · Sawatch</div>
+<div class="h"><b>Mount Oxford</b><span>14,158 ft / 4,315 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 28 of 58 · Sawatch</div>
+<div class="h"><b>Tabeguache Peak</b><span>14,158 ft / 4,315 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 29 of 58 · San Juan</div>
+<div class="h"><b>Mount Sneffels</b><span>14,155 ft / 4,314 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 30 of 58 · Mosquito</div>
+<div class="h"><b>Mount Democrat</b><span>14,154 ft / 4,314 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 31 of 58 · Elk</div>
+<div class="h"><b>Capitol Peak</b><span>14,138 ft / 4,309 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 32 of 58 · Front</div>
+<div class="h"><b>Pikes Peak</b><span>14,109 ft / 4,300 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>11</span></div></section><section class="page "><div class="lhead"><h2>Colorado 14ers log</h2><span>Cards 33 to 40</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 33 of 58 · Elk</div>
+<div class="h"><b>Snowmass Mountain</b><span>14,105 ft / 4,299 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 34 of 58 · San Juan</div>
+<div class="h"><b>Windom Peak</b><span>14,089 ft / 4,294 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 35 of 58 · San Juan</div>
+<div class="h"><b>Mount Eolus</b><span>14,087 ft / 4,294 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 36 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Challenger Point</b><span>14,086 ft / 4,293 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 37 of 58 · Sawatch</div>
+<div class="h"><b>Mount Columbia</b><span>14,075 ft / 4,290 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 38 of 58 · Sawatch</div>
+<div class="h"><b>Missouri Mountain</b><span>14,071 ft / 4,289 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 39 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Humboldt Peak</b><span>14,068 ft / 4,288 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 40 of 58 · Front</div>
+<div class="h"><b>Mount Bierstadt</b><span>14,066 ft / 4,287 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>12</span></div></section><section class="page "><div class="lhead"><h2>Colorado 14ers log</h2><span>Cards 41 to 48</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 41 of 58 · San Juan</div>
+<div class="h"><b>Sunlight Peak</b><span>14,061 ft / 4,286 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 42 of 58 · San Juan</div>
+<div class="h"><b>Handies Peak</b><span>14,058 ft / 4,285 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 43 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Ellingwood Point</b><span>14,057 ft / 4,285 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 44 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Mount Lindsey</b><span>14,055 ft / 4,284 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 45 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Culebra Peak</b><span>14,053 ft / 4,283 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 46 of 58 · Mosquito</div>
+<div class="h"><b>Mount Sherman</b><span>14,043 ft / 4,280 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 47 of 58 · San Juan</div>
+<div class="h"><b>North Eolus</b><span>14,042 ft / 4,280 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 48 of 58 · Sangre de Cristo</div>
+<div class="h"><b>Little Bear Peak</b><span>14,041 ft / 4,280 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>13</span></div></section><section class="page "><div class="lhead"><h2>Colorado 14ers log</h2><span>Cards 49 to 56</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 49 of 58 · San Juan</div>
+<div class="h"><b>Redcloud Peak</b><span>14,037 ft / 4,278 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 50 of 58 · Elk</div>
+<div class="h"><b>Conundrum Peak</b><span>14,037 ft / 4,278 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 51 of 58 · Elk</div>
+<div class="h"><b>Pyramid Peak</b><span>14,029 ft / 4,276 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 52 of 58 · San Juan</div>
+<div class="h"><b>San Luis Peak</b><span>14,023 ft / 4,274 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 53 of 58 · Elk</div>
+<div class="h"><b>North Maroon Peak</b><span>14,022 ft / 4,274 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 54 of 58 · San Juan</div>
+<div class="h"><b>Wetterhorn Peak</b><span>14,021 ft / 4,274 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 55 of 58 · San Juan</div>
+<div class="h"><b>Wilson Peak</b><span>14,021 ft / 4,274 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 56 of 58 · Sawatch</div>
+<div class="h"><b>Mount of the Holy Cross</b><span>14,007 ft / 4,269 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>14</span></div></section><section class="page "><div class="lhead"><h2>Colorado 14ers log</h2><span>Cards 57 to 64</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 57 of 58 · Sawatch</div>
+<div class="h"><b>Huron Peak</b><span>14,006 ft / 4,269 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Colorado 14er 58 of 58 · San Juan</div>
+<div class="h"><b>Sunshine Peak</b><span>14,004 ft / 4,268 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc blank"><div class="st">Stamp</div><div class="no">Extra card</div>
+<div class="h"><b>Repeat or new route</b><span></span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc blank"><div class="st">Stamp</div><div class="no">Extra card</div>
+<div class="h"><b>Repeat or new route</b><span></span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc blank"><div class="st">Stamp</div><div class="no">Extra card</div>
+<div class="h"><b>Repeat or new route</b><span></span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc blank"><div class="st">Stamp</div><div class="no">Extra card</div>
+<div class="h"><b>Repeat or new route</b><span></span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc blank"><div class="st">Stamp</div><div class="no">Extra card</div>
+<div class="h"><b>Repeat or new route</b><span></span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc blank"><div class="st">Stamp</div><div class="no">Extra card</div>
+<div class="h"><b>Repeat or new route</b><span></span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>15</span></div></section><section class="page "><div class="kicker">List 2</div><h2>The New Hampshire 4,000-Footers</h2>
+<p class="lead">The 48 peaks in New Hampshire's White Mountains that reach 4,000 feet (1,219 m) and rise at least 200 ft above the col that joins them to a higher neighbor. The list is kept by the Four Thousand Footer Committee of the Appalachian Mountain Club.</p>
+<div class="facts"><div><b>48</b><span>peaks on the list</span></div><div><b>6,288 ft</b><span>Mount Washington, the highest (1,917 m)</span></div><div><b>1957</b><span>the year the list began</span></div></div>
+<h3>Small numbers, big days</h3><p>These peaks are lower than Colorado's, but the trails are often steep, rocky and rooty, and the climbs are big from the valley floor. Some peaks, like Owl's Head and Isolation, are long days far from any road. Above treeline on the Presidential Range, weather can be among the worst in the country, even in summer.</p>
+<h3>Before you go</h3><p>Most of these peaks are in the White Mountain National Forest. Many trailheads need a parking pass or charge a fee, and some roads close in winter. Check the Forest Service and the Mount Washington Observatory higher summits forecast before you head up.</p>
+<h3>Recognition</h3><p>The Four Thousand Footer Committee recognizes hikers who climb all 48 on foot. Read the rules and the application on the committee's website and send it in when you finish. There are separate lists and rules for winter rounds.</p>
+<div class="warn">The board shows the elevations exactly as the committee publishes them. A few are estimates from map contours, and some peaks have been resurveyed over the years.</div><div class="folio"><span>Peak Bagger's Logbook</span><span>16</span></div></section><section class="page "><div class="kicker">Board · highest first</div><h2 style="margin-bottom:2pt">NH 4,000-Footers progress board</h2><p class="small" style="margin:0 0 2pt">Fill in the circle and write the date when you reach the summit. Elevations as published by the AMC Four Thousand Footer Committee.</p><div class="pb2"><table class="pb"><tr><th style="width:0.24in">#</th><th style="width:0.28in"></th><th>Peak</th><th style="width:0.86in">ft / m</th><th style="width:0.56in">Date</th></tr><tr><td class="n">1</td><td class="b"></td><td class="p">Washington</td><td class="e">6,288 <i>/ 1,917</i></td><td class="d"></td></tr><tr><td class="n">2</td><td class="b"></td><td class="p">Adams</td><td class="e">5,774 <i>/ 1,760</i></td><td class="d"></td></tr><tr><td class="n">3</td><td class="b"></td><td class="p">Jefferson</td><td class="e">5,712 <i>/ 1,741</i></td><td class="d"></td></tr><tr><td class="n">4</td><td class="b"></td><td class="p">Monroe</td><td class="e">5,384 <i>/ 1,641</i></td><td class="d"></td></tr><tr><td class="n">5</td><td class="b"></td><td class="p">Madison</td><td class="e">5,367 <i>/ 1,636</i></td><td class="d"></td></tr><tr><td class="n">6</td><td class="b"></td><td class="p">Lafayette</td><td class="e">5,260 <i>/ 1,603</i></td><td class="d"></td></tr><tr><td class="n">7</td><td class="b"></td><td class="p">Lincoln</td><td class="e">5,089 <i>/ 1,551</i></td><td class="d"></td></tr><tr><td class="n">8</td><td class="b"></td><td class="p">South Twin</td><td class="e">4,902 <i>/ 1,494</i></td><td class="d"></td></tr><tr><td class="n">9</td><td class="b"></td><td class="p">Carter Dome</td><td class="e">4,832 <i>/ 1,473</i></td><td class="d"></td></tr><tr><td class="n">10</td><td class="b"></td><td class="p">Moosilauke</td><td class="e">4,802 <i>/ 1,464</i></td><td class="d"></td></tr><tr><td class="n">11</td><td class="b"></td><td class="p">Eisenhower</td><td class="e">4,780 <i>/ 1,457</i></td><td class="d"></td></tr><tr><td class="n">12</td><td class="b"></td><td class="p">North Twin</td><td class="e">4,761 <i>/ 1,451</i></td><td class="d"></td></tr><tr><td class="n">13</td><td class="b"></td><td class="p">Carrigain</td><td class="e">4,700 <i>/ 1,433</i></td><td class="d"></td></tr><tr><td class="n">14</td><td class="b"></td><td class="p">Bond</td><td class="e">4,698 <i>/ 1,432</i></td><td class="d"></td></tr><tr><td class="n">15</td><td class="b"></td><td class="p">Middle Carter</td><td class="e">4,610 <i>/ 1,405</i></td><td class="d"></td></tr><tr><td class="n">16</td><td class="b"></td><td class="p">West Bond</td><td class="e">4,540 <i>/ 1,384</i></td><td class="d"></td></tr><tr><td class="n">17</td><td class="b"></td><td class="p">Garfield</td><td class="e">4,500 <i>/ 1,372</i></td><td class="d"></td></tr><tr><td class="n">18</td><td class="b"></td><td class="p">Liberty</td><td class="e">4,459 <i>/ 1,359</i></td><td class="d"></td></tr><tr><td class="n">19</td><td class="b"></td><td class="p">South Carter</td><td class="e">4,430 <i>/ 1,350</i></td><td class="d"></td></tr><tr><td class="n">20</td><td class="b"></td><td class="p">Wildcat</td><td class="e">4,422 <i>/ 1,348</i></td><td class="d"></td></tr><tr><td class="n">21</td><td class="b"></td><td class="p">Hancock</td><td class="e">4,420 <i>/ 1,347</i></td><td class="d"></td></tr><tr><td class="n">22</td><td class="b"></td><td class="p">South Kinsman</td><td class="e">4,358 <i>/ 1,328</i></td><td class="d"></td></tr><tr><td class="n">23</td><td class="b"></td><td class="p">Field</td><td class="e">4,340 <i>/ 1,323</i></td><td class="d"></td></tr><tr><td class="n">24</td><td class="b"></td><td class="p">Osceola</td><td class="e">4,340 <i>/ 1,323</i></td><td class="d"></td></tr></table><table class="pb"><tr><th style="width:0.24in">#</th><th style="width:0.28in"></th><th>Peak</th><th style="width:0.86in">ft / m</th><th style="width:0.56in">Date</th></tr><tr><td class="n">25</td><td class="b"></td><td class="p">Flume</td><td class="e">4,328 <i>/ 1,319</i></td><td class="d"></td></tr><tr><td class="n">26</td><td class="b"></td><td class="p">South Hancock</td><td class="e">4,319 <i>/ 1,316</i></td><td class="d"></td></tr><tr><td class="n">27</td><td class="b"></td><td class="p">Pierce</td><td class="e">4,310 <i>/ 1,314</i></td><td class="d"></td></tr><tr><td class="n">28</td><td class="b"></td><td class="p">North Kinsman</td><td class="e">4,293 <i>/ 1,309</i></td><td class="d"></td></tr><tr><td class="n">29</td><td class="b"></td><td class="p">Willey</td><td class="e">4,285 <i>/ 1,306</i></td><td class="d"></td></tr><tr><td class="n">30</td><td class="b"></td><td class="p">Bondcliff</td><td class="e">4,265 <i>/ 1,300</i></td><td class="d"></td></tr><tr><td class="n">31</td><td class="b"></td><td class="p">Zealand</td><td class="e">4,260 <i>/ 1,298</i></td><td class="d"></td></tr><tr><td class="n">32</td><td class="b"></td><td class="p">North Tripyramid</td><td class="e">4,180 <i>/ 1,274</i></td><td class="d"></td></tr><tr><td class="n">33</td><td class="b"></td><td class="p">Cabot</td><td class="e">4,170 <i>/ 1,271</i></td><td class="d"></td></tr><tr><td class="n">34</td><td class="b"></td><td class="p">East Osceola</td><td class="e">4,156 <i>/ 1,267</i></td><td class="d"></td></tr><tr><td class="n">35</td><td class="b"></td><td class="p">Middle Tripyramid</td><td class="e">4,140 <i>/ 1,262</i></td><td class="d"></td></tr><tr><td class="n">36</td><td class="b"></td><td class="p">Cannon</td><td class="e">4,100 <i>/ 1,250</i></td><td class="d"></td></tr><tr><td class="n">37</td><td class="b"></td><td class="p">Hale</td><td class="e">4,054 <i>/ 1,236</i></td><td class="d"></td></tr><tr><td class="n">38</td><td class="b"></td><td class="p">Jackson</td><td class="e">4,052 <i>/ 1,235</i></td><td class="d"></td></tr><tr><td class="n">39</td><td class="b"></td><td class="p">Tom</td><td class="e">4,051 <i>/ 1,235</i></td><td class="d"></td></tr><tr><td class="n">40</td><td class="b"></td><td class="p">Wildcat D</td><td class="e">4,050 <i>/ 1,234</i></td><td class="d"></td></tr><tr><td class="n">41</td><td class="b"></td><td class="p">Moriah</td><td class="e">4,049 <i>/ 1,234</i></td><td class="d"></td></tr><tr><td class="n">42</td><td class="b"></td><td class="p">Passaconaway</td><td class="e">4,043 <i>/ 1,232</i></td><td class="d"></td></tr><tr><td class="n">43</td><td class="b"></td><td class="p">Owl's Head</td><td class="e">4,025 <i>/ 1,227</i></td><td class="d"></td></tr><tr><td class="n">44</td><td class="b"></td><td class="p">Galehead</td><td class="e">4,024 <i>/ 1,227</i></td><td class="d"></td></tr><tr><td class="n">45</td><td class="b"></td><td class="p">Whiteface</td><td class="e">4,020 <i>/ 1,225</i></td><td class="d"></td></tr><tr><td class="n">46</td><td class="b"></td><td class="p">Waumbek</td><td class="e">4,006 <i>/ 1,221</i></td><td class="d"></td></tr><tr><td class="n">47</td><td class="b"></td><td class="p">Isolation</td><td class="e">4,004 <i>/ 1,220</i></td><td class="d"></td></tr><tr><td class="n">48</td><td class="b"></td><td class="p">Tecumseh</td><td class="e">4,003 <i>/ 1,220</i></td><td class="d"></td></tr></table></div><div class="folio"><span>Peak Bagger's Logbook</span><span>17</span></div></section><section class="page "><div class="lhead"><h2>NH 4,000-Footers log</h2><span>Cards 1 to 8</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 1 of 48</div>
+<div class="h"><b>Washington</b><span>6,288 ft / 1,917 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 2 of 48</div>
+<div class="h"><b>Adams</b><span>5,774 ft / 1,760 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 3 of 48</div>
+<div class="h"><b>Jefferson</b><span>5,712 ft / 1,741 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 4 of 48</div>
+<div class="h"><b>Monroe</b><span>5,384 ft / 1,641 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 5 of 48</div>
+<div class="h"><b>Madison</b><span>5,367 ft / 1,636 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 6 of 48</div>
+<div class="h"><b>Lafayette</b><span>5,260 ft / 1,603 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 7 of 48</div>
+<div class="h"><b>Lincoln</b><span>5,089 ft / 1,551 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 8 of 48</div>
+<div class="h"><b>South Twin</b><span>4,902 ft / 1,494 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>18</span></div></section><section class="page "><div class="lhead"><h2>NH 4,000-Footers log</h2><span>Cards 9 to 16</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 9 of 48</div>
+<div class="h"><b>Carter Dome</b><span>4,832 ft / 1,473 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 10 of 48</div>
+<div class="h"><b>Moosilauke</b><span>4,802 ft / 1,464 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 11 of 48</div>
+<div class="h"><b>Eisenhower</b><span>4,780 ft / 1,457 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 12 of 48</div>
+<div class="h"><b>North Twin</b><span>4,761 ft / 1,451 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 13 of 48</div>
+<div class="h"><b>Carrigain</b><span>4,700 ft / 1,433 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 14 of 48</div>
+<div class="h"><b>Bond</b><span>4,698 ft / 1,432 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 15 of 48</div>
+<div class="h"><b>Middle Carter</b><span>4,610 ft / 1,405 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 16 of 48</div>
+<div class="h"><b>West Bond</b><span>4,540 ft / 1,384 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>19</span></div></section><section class="page "><div class="lhead"><h2>NH 4,000-Footers log</h2><span>Cards 17 to 24</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 17 of 48</div>
+<div class="h"><b>Garfield</b><span>4,500 ft / 1,372 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 18 of 48</div>
+<div class="h"><b>Liberty</b><span>4,459 ft / 1,359 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 19 of 48</div>
+<div class="h"><b>South Carter</b><span>4,430 ft / 1,350 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 20 of 48</div>
+<div class="h"><b>Wildcat</b><span>4,422 ft / 1,348 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 21 of 48</div>
+<div class="h"><b>Hancock</b><span>4,420 ft / 1,347 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 22 of 48</div>
+<div class="h"><b>South Kinsman</b><span>4,358 ft / 1,328 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 23 of 48</div>
+<div class="h"><b>Field</b><span>4,340 ft / 1,323 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 24 of 48</div>
+<div class="h"><b>Osceola</b><span>4,340 ft / 1,323 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>20</span></div></section><section class="page "><div class="lhead"><h2>NH 4,000-Footers log</h2><span>Cards 25 to 32</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 25 of 48</div>
+<div class="h"><b>Flume</b><span>4,328 ft / 1,319 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 26 of 48</div>
+<div class="h"><b>South Hancock</b><span>4,319 ft / 1,316 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 27 of 48</div>
+<div class="h"><b>Pierce</b><span>4,310 ft / 1,314 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 28 of 48</div>
+<div class="h"><b>North Kinsman</b><span>4,293 ft / 1,309 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 29 of 48</div>
+<div class="h"><b>Willey</b><span>4,285 ft / 1,306 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 30 of 48</div>
+<div class="h"><b>Bondcliff</b><span>4,265 ft / 1,300 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 31 of 48</div>
+<div class="h"><b>Zealand</b><span>4,260 ft / 1,298 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 32 of 48</div>
+<div class="h"><b>North Tripyramid</b><span>4,180 ft / 1,274 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>21</span></div></section><section class="page "><div class="lhead"><h2>NH 4,000-Footers log</h2><span>Cards 33 to 40</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 33 of 48</div>
+<div class="h"><b>Cabot</b><span>4,170 ft / 1,271 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 34 of 48</div>
+<div class="h"><b>East Osceola</b><span>4,156 ft / 1,267 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 35 of 48</div>
+<div class="h"><b>Middle Tripyramid</b><span>4,140 ft / 1,262 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 36 of 48</div>
+<div class="h"><b>Cannon</b><span>4,100 ft / 1,250 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 37 of 48</div>
+<div class="h"><b>Hale</b><span>4,054 ft / 1,236 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 38 of 48</div>
+<div class="h"><b>Jackson</b><span>4,052 ft / 1,235 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 39 of 48</div>
+<div class="h"><b>Tom</b><span>4,051 ft / 1,235 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 40 of 48</div>
+<div class="h"><b>Wildcat D</b><span>4,050 ft / 1,234 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>22</span></div></section><section class="page "><div class="lhead"><h2>NH 4,000-Footers log</h2><span>Cards 41 to 48</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 41 of 48</div>
+<div class="h"><b>Moriah</b><span>4,049 ft / 1,234 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 42 of 48</div>
+<div class="h"><b>Passaconaway</b><span>4,043 ft / 1,232 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 43 of 48</div>
+<div class="h"><b>Owl's Head</b><span>4,025 ft / 1,227 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 44 of 48</div>
+<div class="h"><b>Galehead</b><span>4,024 ft / 1,227 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 45 of 48</div>
+<div class="h"><b>Whiteface</b><span>4,020 ft / 1,225 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 46 of 48</div>
+<div class="h"><b>Waumbek</b><span>4,006 ft / 1,221 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 47 of 48</div>
+<div class="h"><b>Isolation</b><span>4,004 ft / 1,220 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">NH 4,000-Footer 48 of 48</div>
+<div class="h"><b>Tecumseh</b><span>4,003 ft / 1,220 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>23</span></div></section><section class="page "><div class="kicker">List 3</div><h2>The Adirondack High Peaks</h2>
+<p class="lead">The 46 High Peaks of New York's Adirondack Mountains, first climbed as a set in the 1920s. The list is kept by the Adirondack Forty-Sixers, and it keeps its original 46, even though later surveys found four of them just under 4,000 ft.</p>
+<div class="facts"><div><b>46</b><span>peaks on the list</span></div><div><b>5,344 ft</b><span>Mount Marcy, the highest in New York (1,629 m)</span></div><div><b>About 20</b><span>peaks with no official marked trail</span></div></div>
+<h3>Trailless peaks</h3><p>Many of the 46 have no official marked trail, only unmarked herd paths. Expect mud, rock slabs, blowdown and some route finding. Carry a map and compass, and know how to use them before you rely on them.</p>
+<h3>Rules to check</h3><p>Most of the High Peaks are on New York State Forest Preserve land managed by the Department of Environmental Conservation (DEC). Parking at the Adirondack Mountain Reserve trailhead near St. Huberts needs a free reservation in the busy season, roadside parking is limited on some highways, group sizes are limited, and overnight campers in the Eastern High Peaks must carry a bear-resistant food canister in season. In spring mud season, DEC asks hikers to stay off high trails. Check DEC before every trip.</p>
+<h3>Recognition</h3><p>The Adirondack Forty-Sixers recognize hikers who climb all 46. Follow the club's instructions for reporting your climbs.</p>
+<div class="warn">Elevations on the board are the traditional heights the list has always used. Blake, Cliff, Nye and Couchsachraga are below 4,000 ft by later surveys and are still part of the 46.</div><div class="folio"><span>Peak Bagger's Logbook</span><span>24</span></div></section><section class="page "><div class="kicker">Board · highest first</div><h2 style="margin-bottom:2pt">Adirondack 46 progress board</h2><p class="small" style="margin:0 0 2pt">Fill in the circle and write the date when you reach the summit. Traditional elevations, as used by the Adirondack Forty-Sixers.</p><div class="pb2"><table class="pb"><tr><th style="width:0.24in">#</th><th style="width:0.28in"></th><th>Peak</th><th style="width:0.86in">ft / m</th><th style="width:0.56in">Date</th></tr><tr><td class="n">1</td><td class="b"></td><td class="p">Mount Marcy</td><td class="e">5,344 <i>/ 1,629</i></td><td class="d"></td></tr><tr><td class="n">2</td><td class="b"></td><td class="p">Algonquin Peak</td><td class="e">5,114 <i>/ 1,559</i></td><td class="d"></td></tr><tr><td class="n">3</td><td class="b"></td><td class="p">Mount Haystack</td><td class="e">4,960 <i>/ 1,512</i></td><td class="d"></td></tr><tr><td class="n">4</td><td class="b"></td><td class="p">Mount Skylight</td><td class="e">4,924 <i>/ 1,501</i></td><td class="d"></td></tr><tr><td class="n">5</td><td class="b"></td><td class="p">Whiteface Mountain</td><td class="e">4,867 <i>/ 1,483</i></td><td class="d"></td></tr><tr><td class="n">6</td><td class="b"></td><td class="p">Dix Mountain</td><td class="e">4,857 <i>/ 1,480</i></td><td class="d"></td></tr><tr><td class="n">7</td><td class="b"></td><td class="p">Gray Peak</td><td class="e">4,840 <i>/ 1,475</i></td><td class="d"></td></tr><tr><td class="n">8</td><td class="b"></td><td class="p">Iroquois Peak</td><td class="e">4,840 <i>/ 1,475</i></td><td class="d"></td></tr><tr><td class="n">9</td><td class="b"></td><td class="p">Basin Mountain</td><td class="e">4,827 <i>/ 1,471</i></td><td class="d"></td></tr><tr><td class="n">10</td><td class="b"></td><td class="p">Gothics</td><td class="e">4,736 <i>/ 1,444</i></td><td class="d"></td></tr><tr><td class="n">11</td><td class="b"></td><td class="p">Mount Colden</td><td class="e">4,714 <i>/ 1,437</i></td><td class="d"></td></tr><tr><td class="n">12</td><td class="b"></td><td class="p">Giant Mountain</td><td class="e">4,627 <i>/ 1,410</i></td><td class="d"></td></tr><tr><td class="n">13</td><td class="b"></td><td class="p">Nippletop</td><td class="e">4,620 <i>/ 1,408</i></td><td class="d"></td></tr><tr><td class="n">14</td><td class="b"></td><td class="p">Santanoni Peak</td><td class="e">4,607 <i>/ 1,404</i></td><td class="d"></td></tr><tr><td class="n">15</td><td class="b"></td><td class="p">Mount Redfield</td><td class="e">4,606 <i>/ 1,404</i></td><td class="d"></td></tr><tr><td class="n">16</td><td class="b"></td><td class="p">Wright Peak</td><td class="e">4,580 <i>/ 1,396</i></td><td class="d"></td></tr><tr><td class="n">17</td><td class="b"></td><td class="p">Saddleback Mountain</td><td class="e">4,515 <i>/ 1,376</i></td><td class="d"></td></tr><tr><td class="n">18</td><td class="b"></td><td class="p">Panther Peak</td><td class="e">4,442 <i>/ 1,354</i></td><td class="d"></td></tr><tr><td class="n">19</td><td class="b"></td><td class="p">Table Top Mountain</td><td class="e">4,427 <i>/ 1,349</i></td><td class="d"></td></tr><tr><td class="n">20</td><td class="b"></td><td class="p">Rocky Peak Ridge</td><td class="e">4,420 <i>/ 1,347</i></td><td class="d"></td></tr><tr><td class="n">21</td><td class="b"></td><td class="p">Macomb Mountain</td><td class="e">4,405 <i>/ 1,343</i></td><td class="d"></td></tr><tr><td class="n">22</td><td class="b"></td><td class="p">Armstrong Mountain</td><td class="e">4,400 <i>/ 1,341</i></td><td class="d"></td></tr><tr><td class="n">23</td><td class="b"></td><td class="p">Hough Peak</td><td class="e">4,400 <i>/ 1,341</i></td><td class="d"></td></tr></table><table class="pb"><tr><th style="width:0.24in">#</th><th style="width:0.28in"></th><th>Peak</th><th style="width:0.86in">ft / m</th><th style="width:0.56in">Date</th></tr><tr><td class="n">24</td><td class="b"></td><td class="p">Seward Mountain</td><td class="e">4,361 <i>/ 1,329</i></td><td class="d"></td></tr><tr><td class="n">25</td><td class="b"></td><td class="p">Mount Marshall</td><td class="e">4,360 <i>/ 1,329</i></td><td class="d"></td></tr><tr><td class="n">26</td><td class="b"></td><td class="p">Allen Mountain</td><td class="e">4,340 <i>/ 1,323</i></td><td class="d"></td></tr><tr><td class="n">27</td><td class="b"></td><td class="p">Big Slide Mountain</td><td class="e">4,240 <i>/ 1,292</i></td><td class="d"></td></tr><tr><td class="n">28</td><td class="b"></td><td class="p">Esther Mountain</td><td class="e">4,240 <i>/ 1,292</i></td><td class="d"></td></tr><tr><td class="n">29</td><td class="b"></td><td class="p">Upper Wolfjaw Mountain</td><td class="e">4,185 <i>/ 1,276</i></td><td class="d"></td></tr><tr><td class="n">30</td><td class="b"></td><td class="p">Lower Wolfjaw Mountain</td><td class="e">4,175 <i>/ 1,273</i></td><td class="d"></td></tr><tr><td class="n">31</td><td class="b"></td><td class="p">Street Mountain</td><td class="e">4,166 <i>/ 1,270</i></td><td class="d"></td></tr><tr><td class="n">32</td><td class="b"></td><td class="p">Phelps Mountain</td><td class="e">4,161 <i>/ 1,268</i></td><td class="d"></td></tr><tr><td class="n">33</td><td class="b"></td><td class="p">Donaldson Mountain</td><td class="e">4,140 <i>/ 1,262</i></td><td class="d"></td></tr><tr><td class="n">34</td><td class="b"></td><td class="p">Seymour Mountain</td><td class="e">4,120 <i>/ 1,256</i></td><td class="d"></td></tr><tr><td class="n">35</td><td class="b"></td><td class="p">Sawteeth</td><td class="e">4,100 <i>/ 1,250</i></td><td class="d"></td></tr><tr><td class="n">36</td><td class="b"></td><td class="p">Cascade Mountain</td><td class="e">4,098 <i>/ 1,249</i></td><td class="d"></td></tr><tr><td class="n">37</td><td class="b"></td><td class="p">South Dix</td><td class="e">4,060 <i>/ 1,237</i></td><td class="d"></td></tr><tr><td class="n">38</td><td class="b"></td><td class="p">Porter Mountain</td><td class="e">4,059 <i>/ 1,237</i></td><td class="d"></td></tr><tr><td class="n">39</td><td class="b"></td><td class="p">Mount Colvin</td><td class="e">4,057 <i>/ 1,237</i></td><td class="d"></td></tr><tr><td class="n">40</td><td class="b"></td><td class="p">Mount Emmons</td><td class="e">4,040 <i>/ 1,231</i></td><td class="d"></td></tr><tr><td class="n">41</td><td class="b"></td><td class="p">Dial Mountain</td><td class="e">4,020 <i>/ 1,225</i></td><td class="d"></td></tr><tr><td class="n">42</td><td class="b"></td><td class="p">Grace Peak</td><td class="e">4,012 <i>/ 1,223</i></td><td class="d"></td></tr><tr><td class="n">43</td><td class="b"></td><td class="p">Blake Peak</td><td class="e">3,960 <i>/ 1,207</i></td><td class="d"></td></tr><tr><td class="n">44</td><td class="b"></td><td class="p">Cliff Mountain</td><td class="e">3,960 <i>/ 1,207</i></td><td class="d"></td></tr><tr><td class="n">45</td><td class="b"></td><td class="p">Nye Mountain</td><td class="e">3,895 <i>/ 1,187</i></td><td class="d"></td></tr><tr><td class="n">46</td><td class="b"></td><td class="p">Couchsachraga Peak</td><td class="e">3,820 <i>/ 1,164</i></td><td class="d"></td></tr></table></div><div class="folio"><span>Peak Bagger's Logbook</span><span>25</span></div></section><section class="page "><div class="lhead"><h2>Adirondack 46 log</h2><span>Cards 1 to 8</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 1 of 46</div>
+<div class="h"><b>Mount Marcy</b><span>5,344 ft / 1,629 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 2 of 46</div>
+<div class="h"><b>Algonquin Peak</b><span>5,114 ft / 1,559 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 3 of 46</div>
+<div class="h"><b>Mount Haystack</b><span>4,960 ft / 1,512 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 4 of 46</div>
+<div class="h"><b>Mount Skylight</b><span>4,924 ft / 1,501 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 5 of 46</div>
+<div class="h"><b>Whiteface Mountain</b><span>4,867 ft / 1,483 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 6 of 46</div>
+<div class="h"><b>Dix Mountain</b><span>4,857 ft / 1,480 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 7 of 46</div>
+<div class="h"><b>Gray Peak</b><span>4,840 ft / 1,475 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 8 of 46</div>
+<div class="h"><b>Iroquois Peak</b><span>4,840 ft / 1,475 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>26</span></div></section><section class="page "><div class="lhead"><h2>Adirondack 46 log</h2><span>Cards 9 to 16</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 9 of 46</div>
+<div class="h"><b>Basin Mountain</b><span>4,827 ft / 1,471 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 10 of 46</div>
+<div class="h"><b>Gothics</b><span>4,736 ft / 1,444 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 11 of 46</div>
+<div class="h"><b>Mount Colden</b><span>4,714 ft / 1,437 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 12 of 46</div>
+<div class="h"><b>Giant Mountain</b><span>4,627 ft / 1,410 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 13 of 46</div>
+<div class="h"><b>Nippletop</b><span>4,620 ft / 1,408 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 14 of 46</div>
+<div class="h"><b>Santanoni Peak</b><span>4,607 ft / 1,404 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 15 of 46</div>
+<div class="h"><b>Mount Redfield</b><span>4,606 ft / 1,404 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 16 of 46</div>
+<div class="h"><b>Wright Peak</b><span>4,580 ft / 1,396 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>27</span></div></section><section class="page "><div class="lhead"><h2>Adirondack 46 log</h2><span>Cards 17 to 24</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 17 of 46</div>
+<div class="h"><b>Saddleback Mountain</b><span>4,515 ft / 1,376 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 18 of 46</div>
+<div class="h"><b>Panther Peak</b><span>4,442 ft / 1,354 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 19 of 46</div>
+<div class="h"><b>Table Top Mountain</b><span>4,427 ft / 1,349 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 20 of 46</div>
+<div class="h"><b>Rocky Peak Ridge</b><span>4,420 ft / 1,347 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 21 of 46</div>
+<div class="h"><b>Macomb Mountain</b><span>4,405 ft / 1,343 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 22 of 46</div>
+<div class="h"><b>Armstrong Mountain</b><span>4,400 ft / 1,341 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 23 of 46</div>
+<div class="h"><b>Hough Peak</b><span>4,400 ft / 1,341 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 24 of 46</div>
+<div class="h"><b>Seward Mountain</b><span>4,361 ft / 1,329 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>28</span></div></section><section class="page "><div class="lhead"><h2>Adirondack 46 log</h2><span>Cards 25 to 32</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 25 of 46</div>
+<div class="h"><b>Mount Marshall</b><span>4,360 ft / 1,329 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 26 of 46</div>
+<div class="h"><b>Allen Mountain</b><span>4,340 ft / 1,323 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 27 of 46</div>
+<div class="h"><b>Big Slide Mountain</b><span>4,240 ft / 1,292 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 28 of 46</div>
+<div class="h"><b>Esther Mountain</b><span>4,240 ft / 1,292 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 29 of 46</div>
+<div class="h"><b>Upper Wolfjaw Mountain</b><span>4,185 ft / 1,276 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 30 of 46</div>
+<div class="h"><b>Lower Wolfjaw Mountain</b><span>4,175 ft / 1,273 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 31 of 46</div>
+<div class="h"><b>Street Mountain</b><span>4,166 ft / 1,270 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 32 of 46</div>
+<div class="h"><b>Phelps Mountain</b><span>4,161 ft / 1,268 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>29</span></div></section><section class="page "><div class="lhead"><h2>Adirondack 46 log</h2><span>Cards 33 to 40</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 33 of 46</div>
+<div class="h"><b>Donaldson Mountain</b><span>4,140 ft / 1,262 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 34 of 46</div>
+<div class="h"><b>Seymour Mountain</b><span>4,120 ft / 1,256 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 35 of 46</div>
+<div class="h"><b>Sawteeth</b><span>4,100 ft / 1,250 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 36 of 46</div>
+<div class="h"><b>Cascade Mountain</b><span>4,098 ft / 1,249 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 37 of 46</div>
+<div class="h"><b>South Dix</b><span>4,060 ft / 1,237 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 38 of 46</div>
+<div class="h"><b>Porter Mountain</b><span>4,059 ft / 1,237 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 39 of 46</div>
+<div class="h"><b>Mount Colvin</b><span>4,057 ft / 1,237 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 40 of 46</div>
+<div class="h"><b>Mount Emmons</b><span>4,040 ft / 1,231 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>30</span></div></section><section class="page "><div class="lhead"><h2>Adirondack 46 log</h2><span>Cards 41 to 48</span></div><div class="lg"><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 41 of 46</div>
+<div class="h"><b>Dial Mountain</b><span>4,020 ft / 1,225 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 42 of 46</div>
+<div class="h"><b>Grace Peak</b><span>4,012 ft / 1,223 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 43 of 46</div>
+<div class="h"><b>Blake Peak</b><span>3,960 ft / 1,207 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 44 of 46</div>
+<div class="h"><b>Cliff Mountain</b><span>3,960 ft / 1,207 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 45 of 46</div>
+<div class="h"><b>Nye Mountain</b><span>3,895 ft / 1,187 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc"><div class="st">Stamp</div><div class="no">Adirondack High Peak 46 of 46</div>
+<div class="h"><b>Couchsachraga Peak</b><span>3,820 ft / 1,164 m</span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc blank"><div class="st">Stamp</div><div class="no">Extra card</div>
+<div class="h"><b>Repeat or new route</b><span></span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div><div class="lc blank"><div class="st">Stamp</div><div class="no">Extra card</div>
+<div class="h"><b>Repeat or new route</b><span></span></div>
+<div class="r2"><div class="fl">Date</div><div class="fl">Route / trailhead</div><div class="fl">Start · summit · back</div><div class="fl">With</div><div class="fl">Weather</div><div class="fl">Distance · climb</div></div>
+<div class="fl">Notes</div><div class="wl"></div>
+<div class="opts"><span>Summit</span><span>Turned back</span><span>Winter</span><span>Solo</span></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>31</span></div></section><section class="page "><div class="kicker">Winter</div><h2>Winter round tracker</h2>
+<p class="lead" style="margin-bottom:4pt">Peaks climbed in calendar winter, from the winter solstice to the spring equinox. Each club sets its own rules for winter rounds, so read them before you count a peak.</p>
+<div class="f2"><div class="fl">List</div><div class="fl">Winter season</div></div>
+<table class="gd wt" style="margin-top:8pt"><tr><th style="width:0.3in">#</th><th>Peak</th><th style="width:1in">Date</th><th style="width:1.5in">Conditions</th><th style="width:1.2in">With</th></tr><tr><td style="color:var(--clay);font-weight:600">1</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">2</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">3</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">4</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">5</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">6</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">7</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">8</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">9</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">10</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">11</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">12</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">13</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">14</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">15</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">16</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">17</td><td></td><td></td><td></td><td></td></tr><tr><td style="color:var(--clay);font-weight:600">18</td><td></td><td></td><td></td><td></td></tr></table>
+<div class="warn">Winter above treeline is serious mountaineering. Short days, deep snow, ice and wind chill call for traction, snowshoes, extra warm layers and the skills to use them. Start with shorter peaks and go with experienced partners.</div><div class="folio"><span>Peak Bagger's Logbook</span><span>32</span></div></section><section class="page "><div class="kicker">Your list</div><h2>My own list</h2>
+<p class="lead" style="margin-bottom:6pt">State high points, your local fire towers, a park's best summits or the hills near home: make your own list of up to 30 peaks.</p>
+<div class="f2"><div class="fl">List name</div><div class="fl">Started on</div></div>
+<div class="pb2 own" style="margin-top:6pt"><table class="pb"><tr><th style="width:0.28in">#</th><th style="width:0.32in"></th><th>Peak</th><th style="width:0.85in">Elevation</th><th style="width:0.62in">Date</th></tr><tr><td class="n">1</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">2</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">3</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">4</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">5</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">6</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">7</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">8</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">9</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">10</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">11</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">12</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">13</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">14</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">15</td><td class="b"></td><td></td><td></td><td class="d"></td></tr></table><table class="pb"><tr><th style="width:0.28in">#</th><th style="width:0.32in"></th><th>Peak</th><th style="width:0.85in">Elevation</th><th style="width:0.62in">Date</th></tr><tr><td class="n">16</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">17</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">18</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">19</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">20</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">21</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">22</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">23</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">24</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">25</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">26</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">27</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">28</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">29</td><td class="b"></td><td></td><td></td><td class="d"></td></tr><tr><td class="n">30</td><td class="b"></td><td></td><td></td><td class="d"></td></tr></table></div><div class="folio"><span>Peak Bagger's Logbook</span><span>33</span></div></section><section class="page "><div class="kicker">Summit photos</div><h2>From the top</h2><div class="ph2">
+<div><div class="sketch"><span>Stick a summit photo here</span></div><div class="f2"><div class="fl">Peak</div><div class="fl">Date</div></div></div>
+<div><div class="sketch"><span>Stick a summit photo here</span></div><div class="f2"><div class="fl">Peak</div><div class="fl">Date</div></div></div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>34</span></div></section><section class="page "><div class="kicker">Notes</div><h2>Trip notes</h2>
+<p class="lead" style="margin-bottom:4pt">For multi-peak days, traverses, failed attempts worth remembering, and the people you met on top.</p><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="wl" style="height:27pt"></div><div class="folio"><span>Peak Bagger's Logbook</span><span>35</span></div></section><section class="page "><div class="kicker">Gear</div><h2>Summit day gear check</h2>
+<div class="cl g36">
+<div><h3>Every peak</h3><ul class="check"><li>Map, and a compass you can use</li><li>Phone with offline maps, and a power bank</li><li>Headlamp with spare batteries</li><li>Rain jacket and a warm layer</li><li>Hat and gloves (yes, in summer too)</li><li>Plenty of water and salty snacks</li><li>Sunscreen, sunglasses and lip balm</li><li>First aid kit and blister care</li><li>Whistle and an emergency blanket</li><li>Trip plan left with someone at home</li></ul></div>
+<div><h3>High, cold or long days</h3><ul class="check"><li>Helmet for loose, rocky routes</li><li>Traction devices for ice</li><li>Snowshoes for deep snow</li><li>Insulated jacket and spare mittens</li><li>Insulated bottle with a warm drink</li><li>Goggles or a face cover for wind</li><li>Extra food for a slower day</li><li>Water filter or treatment</li><li>Trekking poles</li><li>Bear canister where it is required</li></ul></div></div>
+<div class="lab" style="margin-top:14pt">My own additions</div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div><div class="wl" style="height:30pt"></div>
+<div class="opts" style="margin-top:8pt"><span>Forecast checked</span><span>Turnaround time set</span><span>Trailhead and parking rules checked</span><span>Route description read</span></div><div class="folio"><span>Peak Bagger's Logbook</span><span>36</span></div></section><section class="page "><div class="cert"><svg width="120" height="66" viewBox="0 0 200 110" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M0 95 L40 60 L60 75 L100 18 L120 40 L140 28 L200 90" stroke="#2C3B2E" stroke-width="5"/><path d="M100 18 L100 2 M100 2 L118 7 L100 12" stroke="#B85C38" stroke-width="4"/></svg>
+<div class="k">Summit list finisher</div><h2>Certificate of Completion</h2><p>This certifies that</p>
+<div class="fl"></div><p style="margin-top:12pt">has stood on the summit of every peak on the list</p>
+<div class="opts"><span>Colorado 14ers</span><span>NH 4,000-Footers</span><span>Adirondack 46</span><span>My own list</span></div>
+<div class="fl" style="height:40pt">Number of peaks</div><div class="fl" style="height:40pt">First peak and date</div><div class="fl" style="height:40pt">Final peak and date</div>
+<div class="sig"><div class="fl" style="width:auto">Signed</div><div class="fl" style="width:auto">Witnessed by</div></div>
+<p class="small" style="margin-top:16pt">A personal keepsake from HikeSupply Co., not an official club certificate. Each club has its own way to recognize finishers.</p></div><div class="folio"><span>Peak Bagger's Logbook</span><span>37</span></div></section><section class="page "><div class="kicker">Sources</div><h2>Checked against the official lists</h2>
+<p class="lead">Peak names and elevations were checked against the sources below on November 4, 2026. Lists, names and surveys change from time to time, so check the source if a number matters to you.</p>
+<div class="src" style="margin-top:6pt">
+<div><h3>Colorado 14ers</h3><div class="url">14ers.com</div><p>All 58 named 14ers with the elevations 14ers.com publishes. "Unranked" peaks rise less than 300 ft above the saddle to a higher neighbor.</p></div>
+<div><h3>NH 4,000-Footers</h3><div class="url">amc4000footer.org</div><p>The 48 peaks and elevations of the AMC Four Thousand Footer Committee. Some are estimates from map contours. Finisher applications are on this site.</p></div>
+<div><h3>Adirondack 46</h3><div class="url">adk46er.org</div><p>The Adirondack Forty-Sixers list with its traditional elevations, and how the club recognizes finishers.</p></div>
+<div><h3>Rules and conditions</h3><div class="url">fs.usda.gov · nps.gov · dec.ny.gov</div><p>Trail conditions, closures, parking reservations, permits and food storage rules come from the land managers. Mountain forecasts: weather.gov and mountwashington.org.</p></div>
+</div>
+<div class="box" style="margin-top:12pt"><h3 style="margin-top:0">Not affiliated</h3><p style="margin:0">HikeSupply Co. is not affiliated with or endorsed by the Colorado Mountain Club, 14ers.com, the Appalachian Mountain Club, its Four Thousand Footer Committee or the Adirondack Forty-Sixers. List names are used only to describe which peaks are included.</p></div>
+<div class="lab" style="margin-top:12pt">I checked my list again on</div>
+<div class="f2"><div class="fl">Date</div><div class="fl">Changes I noted</div></div><div class="folio"><span>Peak Bagger's Logbook</span><span>38</span></div></section><section class="page "><div class="kicker">Keep going</div><h2>More from HikeSupply</h2>
+<p class="lead">Made in the same style, printable, and written for hikers in the US and Canada.</p>
+<div class="mr">
+<div><div><small>Log every hike</small><b>Hiking Journal &amp; Trail Log</b></div><p>A page for every hike you do, not just the summits: trail, distance, weather, who came along and what you saw.</p></div>
+<div><div><small>Another list to finish</small><b>US National Parks Hiking Tracker</b></div><p>All 63 US national parks plus Canada's, with a board to color in and a page for each visit.</p></div>
+<div><div><small>Get ready for bigger peaks</small><b>Trail Ready</b></div><p>An 8-week beginner hiking training plan that builds up the legs and lungs for longer days and bigger climbs.</p></div>
+</div>
+<p style="margin-top:18pt;font:600 11pt/1.4 var(--sans);letter-spacing:.06em;color:var(--forest);text-align:center">hikesupplyco.com</p><div class="folio"><span>Peak Bagger's Logbook</span><span>39</span></div></section><section class="page back"><div class="brand" style="font:700 9pt/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:24pt">HikeSupply Co.</div>
+<svg width="200" height="110" viewBox="0 0 200 110" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M0 95 L40 60 L60 75 L100 18 L120 40 L140 28 L200 90" stroke="#F5F1EA" stroke-width="4"/><path d="M100 18 L100 2 M100 2 L118 7 L100 12" stroke="#F5F1EA" stroke-width="3"/></svg>
+<h2 style="margin-top:22pt">See you at the top</h2>
+<p>Thank you for choosing a HikeSupply logbook. Go early, turn back when you need to, and color in every peak you earn.</p>
+<p style="margin-top:14pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">hikesupplyco.com</p>
+<p class="small" style="color:#AEB8AA;margin-top:24pt;max-width:5.4in">General information only, not a route guide. Mountain hiking has real risks. Check official land manager and weather sources before every hike, hike within your ability and turn back when in doubt. Not affiliated with any peak list club. For personal use only. Cover photo: Giuseppe Paoletti / Pexels (https://www.pexels.com/photo/38891561/).</p></section></body></html>
