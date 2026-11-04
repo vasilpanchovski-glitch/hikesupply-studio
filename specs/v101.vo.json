@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Wet leaves hide slick rock.",
+   "gap": 0.45
+  },
+  {
+   "text": "One slip, and Ana caught herself on her hands.",
+   "gap": 0.45
+  },
+  {
+   "text": "Gravel in the scrape, three miles still to go.",
+   "gap": 0.45
+  },
+  {
+   "text": "Wiping it on her pants would only push the dirt in.",
+   "gap": 0.45
+  },
+  {
+   "text": "So she stopped.",
+   "gap": 0.45
+  },
+  {
+   "text": "She rinsed the scrape with clean water from her bottle until the grit was gone,",
+   "gap": 0.45
+  },
+  {
+   "text": "patted it dry, and covered it with a bandage from the kit that lives in her daypack.",
+   "gap": 0.45
+  },
+  {
+   "text": "Then she walked out.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this for your next fall hike.",
+   "gap": 0.2
+  }
+ ]
+}
