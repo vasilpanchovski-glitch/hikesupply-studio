@@ -1,0 +1,101 @@
+{
+ "pins": [
+  {
+   "id": "pb20261105-1",
+   "layout": "forest",
+   "image": "media/pins/v38-crop.jpg",
+   "kicker": "Drink tube frozen on a winter hike?",
+   "title": "Blow it back",
+   "sub": "After each sip, blow the water back into the bladder so the tube stays empty. Then tuck the tube under your jacket strap.",
+   "cta": "See the bladder"
+  },
+  {
+   "id": "pb20261105-2",
+   "layout": "stone",
+   "kicker": "Water freezing on winter hikes?",
+   "title": "Keep it liquid",
+   "items": [
+    "Blow the tube clear after each sip",
+    "Carry bottles upside down",
+    "Start with warm, not hot, water",
+    "Keep a bottle inside your pack",
+    "Wrap a bottle in a spare wool sock",
+    "Sip often, before it can freeze"
+   ],
+   "sub": "The full cold-weather checklist is in our winter guide.",
+   "cta": "Get the winter guide"
+  },
+  {
+   "id": "pb20261105-3",
+   "layout": "forest",
+   "image": "media/pins/v86-crop.jpg",
+   "kicker": "Utah's Mighty 5 on Veterans Day",
+   "title": "Free entry Nov 11",
+   "sub": "Entrance fees are waived on this fee-free day (check nps.gov for who qualifies). Snow can close roads and trails, so check each park first.",
+   "cta": "Plan Utah"
+  },
+  {
+   "id": "pb20261105-4",
+   "layout": "forest",
+   "image": "media/pins/v48b-crop.jpg",
+   "kicker": "Sun gone before you're back?",
+   "title": "Pack a headlamp",
+   "sub": "November sunsets come early. Use a headlamp, not your phone light, so your map battery lasts. This one switches on with a wave, gloves on.",
+   "cta": "See the headlamp"
+  },
+  {
+   "id": "pb20261105-5",
+   "layout": "forest",
+   "image": "media/pins/v85-crop.jpg",
+   "kicker": "Cold right after the hike?",
+   "title": "Bring a dry layer",
+   "sub": "Sweat cools fast once you stop. Change into a dry top and a warm fleece at the car before the drive home.",
+   "cta": "See the fleece"
+  },
+  {
+   "id": "pb20261105-6",
+   "layout": "forest",
+   "image": "media/pins/v101-crop.jpg",
+   "kicker": "Scraped your palm on the trail?",
+   "title": "Clean it first",
+   "sub": "Rinse the grit out with clean water, then cover it with a bandage. See a doctor if it's deep or won't stop bleeding.",
+   "cta": "See the first-aid kit"
+  },
+  {
+   "id": "pb20261105-7",
+   "layout": "forest",
+   "image": "media/pins/v102-crop.jpg",
+   "kicker": "Bought new hiking boots?",
+   "title": "Break them in",
+   "sub": "Wear them around town and on short, easy walks first, so any hot spots show up close to home, not at mile five.",
+   "cta": "Start here"
+  },
+  {
+   "id": "pb20261105-8",
+   "layout": "forest",
+   "image": "media/pins/v97-crop.jpg",
+   "kicker": "Hurt far from the car on a cold day?",
+   "title": "Hold your heat",
+   "sub": "Call for help if you can, put on every layer and get off the cold ground. An emergency bivy keeps your body heat in while you wait.",
+   "cta": "See the bivy"
+  },
+  {
+   "id": "pb20261105-9",
+   "layout": "forest",
+   "image": "media/pins/v27-crop.jpg",
+   "kicker": "New to national park hikes?",
+   "title": "Start with easy trails",
+   "sub": "10 beginner-friendly national park day hikes as GPX routes for your phone app, plus a route guide.",
+   "cta": "See it on Etsy"
+  },
+  {
+   "id": "pb20261105-10",
+   "layout": "forest",
+   "image": "media/pins/v45b-crop.jpg",
+   "kicker": "Forgot a trail you loved?",
+   "title": "Log every hike",
+   "sub": "A printable hiking journal for the trail, miles, weather and a few lines about each hike, so you can find your favorites again.",
+   "cta": "See it on Etsy"
+  }
+ ]
+}
