@@ -318,7 +318,7 @@ const S9: React.FC<{ off: number }> = ({ off }) => {
       </Plane>
       <Particles seed={1049} n={10} col="#ffe8c0" fall={4} />
       <Grade sunX={300} sunY={900} warm={LAMP} cool="10,20,50" vignette={0.55} />
-      <Readout label="LAST DAY OF THE SALE" value="Guides 25% off" ok={true} t={t} t0={21.45} x={60} y={200} />
+      <Readout label="LAST DAY OF THE SALE" value="This pack 25% off" ok={true} t={t} t0={21.45} x={60} y={200} />
       <Chip text="Until midnight Eastern" t={t} t0={23.9} x={60} y={420} icon="check" />
     </AbsoluteFill>
   );
