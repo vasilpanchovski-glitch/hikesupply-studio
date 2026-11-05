@@ -1,0 +1,207 @@
+{
+ "date": "2026-11-05",
+ "previous": "2026-11-03",
+ "group": "c",
+ "note": "Group C. Empty fields mean the page did not show the number. ThePrintedSmile had no listing link in search this run, so no new data (last 2026-10-31). Hiker Hunger's own site did not come up again; data from Walmart and a reseller review page. Travel50States was readable again for the first time since 2026-10-17.",
+ "sellers": [
+  {
+   "name": "Kingdom over culture life (Payhip)",
+   "products": [
+    {
+     "title": "Utah's Mighty Five: A Family Road Trip Guide (9 days, 5 parks)",
+     "format": "guide PDF",
+     "pages": 10,
+     "price": 14.0,
+     "notes": "unchanged: 'On Sale' with no old price, 10 MB, no reviews shown, no other products"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "count": null
+   },
+   "marketing": {
+    "tactics": [
+     "first-person story title",
+     "'On Sale' label with no old price"
+    ]
+   },
+   "source": "https://payhip.com/b/B7YEG"
+  },
+  {
+   "name": "milesandhikes (Gumroad)",
+   "products": [
+    {
+     "title": "Nature Weekend Reset Planner Guide",
+     "pages": 21,
+     "price": 5.99,
+     "notes": "unchanged since Oct 31; no ratings or sales count shown"
+    },
+    {
+     "title": "Best of Miles & Hikes: 4 Essential Guides",
+     "format": "bundle",
+     "pages": "145+",
+     "price": 19.99,
+     "notes": "unchanged; no discount"
+    }
+   ],
+   "offers": [],
+   "reviews": {},
+   "marketing": {
+    "tactics": [
+     "all-guides bundle",
+     "one clear audience per guide"
+    ],
+    "traffic": "Gumroad pages rank in Google for their product names"
+   },
+   "source": "https://milesandhikes.gumroad.com/l/natureweekendreset"
+  },
+  {
+   "name": "Travel50States",
+   "shop": {
+    "sales": "1.2k",
+    "rating": 4.9,
+    "ratings": 95,
+    "age": "3 years",
+    "star_seller": true
+   },
+   "products": [
+    {
+     "title": "National Parks Map Checklist (1 page, Letter and A4)",
+     "price": 2.99,
+     "sale_price": 2.54,
+     "notes": "15% off ended Oct 31; 2 PDF files",
+     "url": "https://www.etsy.com/listing/4352667004/us-national-parks-map-checklist-travel"
+    },
+    {
+     "title": "64 National Parks Tracker (2 pages, Letter and A4)",
+     "price": 2.99,
+     "notes": "listed Aug 13, 2026; already counts 64 parks",
+     "url": "https://www.etsy.com/listing/4349840646/us-national-parks-checklist-travel"
+    }
+   ],
+   "offers": [
+    "15% off sale that ended Oct 31",
+    "no Black Friday offer shown"
+   ],
+   "reviews": {
+    "praise": [
+     "seller sent an updated file to a past buyer when a new park was added"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "both paper sizes named in the title",
+     "free updated file for past buyers when the list changes",
+     "many cheap $2-3 single-page trackers (parks, states, capitals, certificates)"
+    ],
+    "traffic": "Etsy search"
+   }
+  },
+  {
+   "name": "ThePrintedSmile",
+   "note": "not readable this run (no listing link in search)"
+  },
+  {
+   "name": "Hiker Hunger Outfitters",
+   "products": [
+    {
+     "title": "100% Carbon Fiber Trekking Poles, cork or EVA grips, flip locks (Walmart)",
+     "price": "64.97-74.99",
+     "notes": "all variants out of stock on Walmart; 4.9 from 1,124 ratings, 9 ratings of 1-3 stars with no text shown",
+     "url": "https://www.walmart.com/ip/2288021295"
+    }
+   ],
+   "reviews": {
+    "complaints": [
+     "rubber tips pulled off by suction in mud (2 buyers)",
+     "a tip broke after heavy use",
+     "height has to be set again after each collapse"
+    ],
+    "source": "https://www.desertcart.com.cy/products/554146655-100-carbon-fiber-trekking-poles-by-usa-brand-ultra-strong",
+    "rating_there": 4.7,
+    "reviews_there": 3193
+   },
+   "marketing": {
+    "tactics": [
+     "'USA brand' in the title",
+     "sold through Walmart and resellers as well as own site"
+    ]
+   }
+  },
+  {
+   "name": "Decathlon Canada (hiking)",
+   "shop": {
+    "free_shipping_over": 70,
+    "currency": "CAD"
+   },
+   "products": [
+    {
+     "title": "MT 900 hiking pole",
+     "price": 49.99,
+     "currency": "CAD",
+     "rating": 4.5,
+     "ratings": 1161,
+     "notes": "sold single, page says so",
+     "url": "https://www.decathlon.ca/en/p/hiking-pole-mt-900/172316/c382c261m8810536"
+    },
+    {
+     "title": "Hiking clearance (96 items)",
+     "notes": "e.g. Snow Hiking Crampons SH 100 $10 (was $20), Hike 500 cap $10 (was $14), kids' aluminium bottle $8 (was $18); no poles or packs in clearance",
+     "url": "https://www.decathlon.ca/en/sports/hiking/clearance"
+    }
+   ],
+   "offers": [
+    "clearance 'while stocks last'",
+    "free standard shipping over $70 CAD",
+    "no Black Friday banner yet"
+   ],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "standing clearance section",
+     "free shipping threshold",
+     "poles sold single, stated plainly"
+    ]
+   }
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "PrintablePatti (group B, rechecked)",
+   "notes": "camping checklist back to $8.45 after the 25% countdown sale ended; listing offers a free printable variety pack for joining the email list",
+   "source": "https://www.etsy.com/listing/898385376"
+  },
+  {
+   "name": "AnAdventureAwaits (Etsy, not on list)",
+   "notes": "63 parks map print $27 (was $30), 10% off until Nov 22; 23.9k shop sales",
+   "source": "https://www.etsy.com/listing/667040354"
+  },
+  {
+   "name": "Chiricahua",
+   "notes": "Oct 1, 2026: Congress gave final approval to make Chiricahua National Monument a national park; not yet signed then",
+   "source": "https://www.azfamily.com/video/2026/10/02/arizonas-next-national-park-chiricahua-bill-faces-final-hurdle/"
+  }
+ ],
+ "changes_vs_previous": [
+  "Travel50States readable again: two $2.99 parks trackers, one already says 64 parks; its 15% sale ended Oct 31",
+  "Hiker Hunger carbon poles out of stock in every variant on Walmart",
+  "Kingdom over culture and milesandhikes unchanged since Oct 31",
+  "PrintablePatti's countdown sale ended on time (real end date)",
+  "No Black Friday offer at any group C seller on Nov 5"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "% sale with a real end date (Travel50States, PrintablePatti, AnAdventureAwaits)",
+   "both paper sizes named up front (Travel50States, AnkaKidsStudio)",
+   "free printable for an email sign-up (PrintablePatti, We're in the Rockies)"
+  ],
+  "we_do_not_use_yet": [
+   "sending past buyers the updated file when a list changes, and saying so",
+   "naming Letter and A4 in Etsy titles"
+  ],
+  "black_friday": "On Nov 5 no group C seller shows a Black Friday offer; Etsy sellers outside our list run holiday sales ending Nov 15-22."
+ }
+}

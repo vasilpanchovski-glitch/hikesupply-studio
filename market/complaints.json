@@ -1,6 +1,6 @@
 {
- "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none.",
- "updated": "2026-11-03",
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none.",
+ "updated": "2026-11-05",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1555,6 +1555,46 @@
    "date": "2025-05-08",
    "theme": "product does not match the listing",
    "found": "2026-11-03"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Hiker Hunger carbon fiber poles (reseller review page)",
+   "what": "rubber tip pulled off by suction in mud",
+   "source": "https://www.desertcart.com.cy/products/554146655-100-carbon-fiber-trekking-poles-by-usa-brand-ultra-strong",
+   "where": "review page",
+   "date": "",
+   "theme": "baskets, tips or straps wear out or fall off",
+   "found": "2026-11-05"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Hiker Hunger carbon fiber poles (reseller review page)",
+   "what": "lost both tips in mud on one trail",
+   "source": "https://www.desertcart.com.cy/products/554146655-100-carbon-fiber-trekking-poles-by-usa-brand-ultra-strong",
+   "where": "review page",
+   "date": "",
+   "theme": "baskets, tips or straps wear out or fall off",
+   "found": "2026-11-05"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Hiker Hunger carbon fiber poles (reseller review page)",
+   "what": "a tip broke after heavy use",
+   "source": "https://www.desertcart.com.cy/products/554146655-100-carbon-fiber-trekking-poles-by-usa-brand-ultra-strong",
+   "where": "review page",
+   "date": "",
+   "theme": "baskets, tips or straps wear out or fall off",
+   "found": "2026-11-05"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Hiker Hunger carbon fiber poles (reseller review page)",
+   "what": "height has to be set again after every collapse",
+   "source": "https://www.desertcart.com.cy/products/554146655-100-carbon-fiber-trekking-poles-by-usa-brand-ultra-strong",
+   "where": "review page",
+   "date": "",
+   "theme": "height has to be reset each time",
+   "found": "2026-11-05"
   }
  ],
  "themes": [
@@ -1568,7 +1608,7 @@
   },
   {
    "theme": "baskets, tips or straps wear out or fall off",
-   "count": 9
+   "count": 12
   },
   {
    "theme": "guide too limited / generic",
@@ -1732,6 +1772,10 @@
   },
   {
    "theme": "no refunds / hard to get help",
+   "count": 1
+  },
+  {
+   "theme": "height has to be reset each time",
    "count": 1
   }
  ]
