@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Maya had wanted to hike the Smokies for years.",
+   "gap": 0.45
+  },
+  {
+   "text": "Someday, she always said.",
+   "gap": 0.45
+  },
+  {
+   "text": "Someday never came, because she never sat down to plan it.",
+   "gap": 0.45
+  },
+  {
+   "text": "Tonight she did.",
+   "gap": 0.45
+  },
+  {
+   "text": "Where to stay, which entrance to use, a three-day route, and ten day hikes ready on her phone.",
+   "gap": 0.45
+  },
+  {
+   "text": "Spring wildflowers in April.",
+   "gap": 0.45
+  },
+  {
+   "text": "One evening of planning, and someday got a date.",
+   "gap": 0.45
+  },
+  {
+   "text": "Last day of our sale: guides are 25% off until midnight Eastern.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this before your next big trip.",
+   "gap": 0.2
+  }
+ ]
+}

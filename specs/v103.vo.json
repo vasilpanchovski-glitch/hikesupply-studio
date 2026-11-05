@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "For three years, Sam's phone wallpaper was the same red rock arch in Utah.",
+   "gap": 0.45
+  },
+  {
+   "text": "Every spring, he said next year.",
+   "gap": 0.45
+  },
+  {
+   "text": "The trip felt too big: five parks, long drives, shuttles and permits.",
+   "gap": 0.45
+  },
+  {
+   "text": "So his partner gave him the plan.",
+   "gap": 0.45
+  },
+  {
+   "text": "Drive times between the parks, three, five and seven-day routes, and the day hikes ready on his phone.",
+   "gap": 0.45
+  },
+  {
+   "text": "Now the trip is on the calendar for spring.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this if Utah is on your list.",
+   "gap": 0.2
+  }
+ ]
+}
