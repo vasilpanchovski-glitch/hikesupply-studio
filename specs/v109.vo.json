@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Leo planned his hike around the shortest day of the year.",
+   "gap": 0.45
+  },
+  {
+   "text": "Wrong date.",
+   "gap": 0.45
+  },
+  {
+   "text": "Across much of the US, the earliest sunsets come in early December, about two weeks before the solstice.",
+   "gap": 0.45
+  },
+  {
+   "text": "He was still on the ridge at four thirty when the light went.",
+   "gap": 0.45
+  },
+  {
+   "text": "The wind picked up, his face went numb.",
+   "gap": 0.45
+  },
+  {
+   "text": "Now he packs three things: a charged headlamp, a neck gaiter for the wind, and a winter plan.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this before your next afternoon hike.",
+   "gap": 0.2
+  }
+ ]
+}

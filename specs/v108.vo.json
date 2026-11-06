@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Cold night at the campground.",
+   "gap": 0.45
+  },
+  {
+   "text": "Mia's fingers were numb, and the camp stove was right there.",
+   "gap": 0.45
+  },
+  {
+   "text": "She started to bring it into the tent to warm up.",
+   "gap": 0.45
+  },
+  {
+   "text": "Her friend stopped her.",
+   "gap": 0.45
+  },
+  {
+   "text": "A fuel stove or heater inside a tent can fill it with carbon monoxide, and you can't see it or smell it.",
+   "gap": 0.45
+  },
+  {
+   "text": "Instead: a warm drink outside, dry socks, a hat, and a sleeping pad under the bag.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this before your next camping trip.",
+   "gap": 0.2
+  }
+ ]
+}

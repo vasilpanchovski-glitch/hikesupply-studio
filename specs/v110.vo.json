@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Fresh snow covered the trail, so Sam followed the footprints ahead of him.",
+   "gap": 0.45
+  },
+  {
+   "text": "Easy.",
+   "gap": 0.45
+  },
+  {
+   "text": "Until they ended at a frozen creek, nowhere near the trail.",
+   "gap": 0.45
+  },
+  {
+   "text": "Someone else had been lost too.",
+   "gap": 0.45
+  },
+  {
+   "text": "Sam stopped, stayed calm, and thought.",
+   "gap": 0.45
+  },
+  {
+   "text": "He checked his map, found the last blaze he had passed, and walked back to it.",
+   "gap": 0.45
+  },
+  {
+   "text": "In snow, follow the blazes and your map, not other people's tracks.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this before your first snowy hike.",
+   "gap": 0.2
+  }
+ ]
+}
