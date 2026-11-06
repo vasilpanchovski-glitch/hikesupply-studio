@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Ben has climbed 23 of New Hampshire's 48 four-thousand-footers.",
+   "gap": 0.45
+  },
+  {
+   "text": "Ask him which ones, and he scrolls through four years of blurry summit photos.",
+   "gap": 0.45
+  },
+  {
+   "text": "Dates, routes, who was there, all gone.",
+   "gap": 0.45
+  },
+  {
+   "text": "So his sister printed him a logbook.",
+   "gap": 0.45
+  },
+  {
+   "text": "One board to color in, one card for every peak: route, times, weather, who came along.",
+   "gap": 0.45
+  },
+  {
+   "text": "Last weekend he filled in number 24 at the trailhead.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this for the peak bagger on your gift list.",
+   "gap": 0.2
+  }
+ ]
+}

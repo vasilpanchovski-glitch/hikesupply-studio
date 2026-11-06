@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Ana was 300 feet from her first fourteener when the clouds started building.",
+   "gap": 0.45
+  },
+  {
+   "text": "It was barely noon.",
+   "gap": 0.45
+  },
+  {
+   "text": "In the Colorado mountains, summer storms often build by early afternoon, and lightning on a bare ridge is no place to be.",
+   "gap": 0.45
+  },
+  {
+   "text": "She had set a turnaround time at the trailhead.",
+   "gap": 0.45
+  },
+  {
+   "text": "She kept it.",
+   "gap": 0.45
+  },
+  {
+   "text": "That night she still filled in the log card and ticked the box that says turned back.",
+   "gap": 0.45
+  },
+  {
+   "text": "Next time she started earlier.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this before your next big climb.",
+   "gap": 0.2
+  }
+ ]
+}
