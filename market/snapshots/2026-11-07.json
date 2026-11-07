@@ -1,0 +1,277 @@
+{
+ "date": "2026-11-07",
+ "previous": "2026-11-05",
+ "group": "a",
+ "note": "Group A. Empty fields mean the page did not show the number. Pages read only through links found in search. Cascade Mountain Tech's Trailspace page did not open.",
+ "sellers": [
+  {
+   "name": "We're in the Rockies",
+   "products": [
+    {
+     "title": "Colorado Bundle (4 itineraries + road trip planner bonus)",
+     "format": "guide PDFs",
+     "price": 119.0,
+     "notes": "'valued at $261' while the four itineraries add up to $181; 13 reviews, 4.9",
+     "url": "https://wereintherockies.com/colorado-packages/"
+    },
+    {
+     "title": "Rocky Mountain itinerary",
+     "price": 49.0,
+     "notes": "includes audio guide"
+    },
+    {
+     "title": "Southwest Colorado",
+     "price": 49.0
+    },
+    {
+     "title": "Northern Colorado",
+     "price": 49.0
+    },
+    {
+     "title": "Pikes Peak Region",
+     "price": 34.0
+    },
+    {
+     "title": "Ultimate Western Bundle",
+     "price": 399.0,
+     "notes": "'total value $1,776', '77% off'"
+    }
+   ],
+   "offers": [
+    "free National Park Cheat Sheet Pack with any guide (still on)",
+    "printed road trip book with orders $150+, '70 copies only' (still on)",
+    "countdown still all zeros",
+    "money-back guarantee",
+    "no Black Friday or holiday offer on Nov 7"
+   ],
+   "reviews": {
+    "praise": [],
+    "complaints": [],
+    "notes": "'34,000+ guides sold' on this page too; 'hundreds of five-star reviews' next to 13 shown"
+   },
+   "marketing": {
+    "bait": "free cheat sheet pack with any guide",
+    "tactics": [
+     "value anchor higher than the sum of parts",
+     "free bonus with order",
+     "free gift over a spend threshold",
+     "guarantee",
+     "countdown with no date"
+    ],
+    "traffic": "Google search for Colorado and park itinerary keywords (bundle pages rank)"
+   }
+  },
+  {
+   "name": "Traverse with Tonia (Payhip)",
+   "products": [
+    {
+     "title": "Ultimate U.S. National Parks & Hiking Checklist",
+     "price": 4.99,
+     "notes": "'On Sale', no old price"
+    },
+    {
+     "title": "Ultimate U.S. Waterfalls Checklist",
+     "price": 4.99
+    },
+    {
+     "title": "Ultimate Outdoor Adventure Bundle",
+     "price": 7.99
+    }
+   ],
+   "reviews": {
+    "count": null
+   },
+   "marketing": {
+    "tactics": [
+     "link in bio",
+     "'On Sale' label with no old price"
+    ]
+   },
+   "source": "https://payhip.com/b/tFbkH"
+  },
+  {
+   "name": "Montem",
+   "shop": {
+    "free_shipping_over": 100
+   },
+   "products": [
+    {
+     "title": "Flicklock 14-16mm Replacement",
+     "price": 5.5
+    },
+    {
+     "title": "Trekking Pole Tip Protectors",
+     "price": 10.99
+    },
+    {
+     "title": "Extra-Durable Tip Protectors",
+     "price": 10.99
+    },
+    {
+     "title": "Snow Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Nordic Fitness Tips",
+     "price": 10.99
+    },
+    {
+     "title": "Mud Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Pro Walker Replacement Gloves",
+     "price": null,
+     "notes": "still sold out"
+    },
+    {
+     "title": "The Ultra On The Go (Advanced) Bundle",
+     "price": 36.99,
+     "was": 46.97
+    },
+    {
+     "title": "The All Tips Bundle",
+     "price": 25.95,
+     "was": 32.97
+    },
+    {
+     "title": "All Baskets Bundle",
+     "price": 22.4,
+     "was": 35.98
+    }
+   ],
+   "offers": [
+    "free shipping over $100 (cart message still contradicts itself)",
+    "100% satisfaction guarantee",
+    "lifetime warranty sign-up",
+    "VIP program",
+    "no Black Friday sale on Nov 7"
+   ],
+   "marketing": {
+    "tactics": [
+     "discounted accessory bundles",
+     "free shipping threshold",
+     "warranty sign-up as email capture"
+    ]
+   },
+   "source": "https://montemlife.com/collections/trekking-pole-accesories-and-spare-parts"
+  },
+  {
+   "name": "DearSummit",
+   "shop": {
+    "sales": "6.2k",
+    "rating": 4.9,
+    "ratings": "1.3k"
+   },
+   "products": [
+    {
+     "title": "The Trail Journal, prompted pocket hiking log",
+     "pages": 32,
+     "price": 11.5,
+     "notes": "368 reviews 4.9 (unchanged), 2,914 favourites, Etsy's Pick, set of 3 also sold; no sale",
+     "url": "https://www.etsy.com/ie/listing/710475099/the-trail-journal-prompted-hiking-log"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "size",
+     "design",
+     "good gift"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "3-pack gift set",
+     "also sold wholesale in outdoor shops (Kula Cloth, Wild Earth, Faire listings seen in search)"
+    ]
+   }
+  },
+  {
+   "name": "MarcisShoppe",
+   "shop": {
+    "sales": "4k",
+    "rating": 4.9,
+    "reviews": 594
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt for Kids, Printable",
+     "price": 2.0,
+     "item_reviews": 146,
+     "item_rating": 5.0,
+     "notes": "JPG + PDF, Letter only"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "quality",
+     "easy to use",
+     "fun for kids"
+    ],
+    "complaints": []
+   },
+   "source": "https://www.etsy.com/listing/1101626951"
+  },
+  {
+   "name": "Cascade Mountain Tech",
+   "products": [
+    {
+     "title": "Carbon Fiber Quick Lock Cork Grip Trekking Poles (Walmart)",
+     "price": 51.99,
+     "was": 64.99,
+     "rating": 4.6,
+     "ratings": 96,
+     "notes": "shipping, pickup and delivery all 'Not available' on Nov 7, no add-to-cart",
+     "url": "https://www.walmart.com/ip/48468472"
+    }
+   ],
+   "reviews": {
+    "complaints": []
+   }
+  },
+  {
+   "name": "Darn Tough (hiking socks)",
+   "shop": {
+    "trustpilot": 3.7,
+    "trustpilot_reviews": 85
+   },
+   "reviews": {
+    "complaints": [],
+    "notes": "no new reviews since Nov 1 (latest negative Oct 19, already in the file)"
+   },
+   "source": "https://ca.trustpilot.com/review/darntough.com"
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "Chiricahua National Park",
+   "notes": "Signed into law around Oct 20-21, 2026: Chiricahua National Monument is now a national park (NPS news release). Products that say '63 national parks' are now out of date.",
+   "source": "https://www.nps.gov/chir/learn/news/chiricahua-national-monument-becomes-america-s-newest-national-park.htm"
+  },
+  {
+   "name": "Kimola Amazon review summaries",
+   "notes": "hiking journal and logbook summaries checked again, nothing new (thin pages, binding)"
+  }
+ ],
+ "changes_vs_previous": [
+  "Chiricahua is now officially a national park (signed Oct 20-21): 64 parks",
+  "We're in the Rockies: same prices, Colorado bundle $119 'valued at $261', still no Black Friday offer, countdown still zeros",
+  "Montem: no price change, no Black Friday sale yet",
+  "Cascade Mountain Tech cork poles can no longer be bought on Walmart (not available)",
+  "DearSummit, MarcisShoppe, Traverse with Tonia: no change",
+  "Darn Tough: no new Trustpilot reviews"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "a free extra with the order instead of a deeper discount (WITR cheat sheets and book, Montem VIP)",
+   "bundles shown against a 'was' or 'value' price (WITR, Montem, Tonia)",
+   "guarantee up front (WITR, Montem)"
+  ],
+  "we_do_not_use_yet": [
+   "a free bonus printable with any paid guide",
+   "wholesale / outdoor-shop stockists (DearSummit), not for us now"
+  ],
+  "black_friday": "Nov 7: none of the group A sellers shows a Black Friday or holiday offer yet."
+ }
+}

@@ -1,6 +1,6 @@
 {
- "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none.",
- "updated": "2026-11-05",
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism.",
+ "updated": "2026-11-07",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1595,16 +1595,236 @@
    "date": "",
    "theme": "height has to be reset each time",
    "found": "2026-11-05"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "side bottle pocket too shallow, bottle pops out when pack is full",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-10-16",
+   "theme": "side bottle pockets too shallow, bottles fall out",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "mesh pocket does not hold a tall bottle securely",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-09-30",
+   "theme": "side bottle pockets too shallow, bottles fall out",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "side pockets too small and lost the pull tie of the older model",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-04-20",
+   "theme": "side bottle pockets too shallow, bottles fall out",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "nothing holds the outside bottle tight, bigger bottles fall out",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2021-11-14",
+   "theme": "side bottle pockets too shallow, bottles fall out",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "seams wore out after about a year",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2023-01-08",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "inner pocket seam broken on arrival",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-12-24",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "strap stitching came undone after the first hike",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-07-02",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "material thinner than expected",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-04-23",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "smaller than hoped, photos and dimensions hard to judge",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-10-26",
+   "theme": "product does not match the listing",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "smaller than expected",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-01-06",
+   "theme": "product does not match the listing",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "daypack",
+   "product": "L.L.Bean Stowaway packable daypack",
+   "what": "lower pocket filled with water on a rainy 5-mile walk",
+   "source": "https://www.zappos.com/product/review/9867083/page/18",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-05-06",
+   "theme": "pack pockets let rain in",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "runs snug in the bigger sizes",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-01-06",
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "fits smaller than expected",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2021-11-19",
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "tight in the arms",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2021-11-04",
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "sleeves barely long enough",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-01-20",
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "pills where a seat belt rubs",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-02-24",
+   "theme": "fleece pills or sheds",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "sheds a lot until washed several times",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2021-11-18",
+   "theme": "fleece pills or sheds",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "sheds, better after two washes",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-03-06",
+   "theme": "fleece pills or sheds",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "zipper hard to start, generic feel",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-04-09",
+   "theme": "zipper hard to use",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "front zipper hard to pull over long sleeves",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2021-11-15",
+   "theme": "zipper hard to use",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "lighter than expected, needs another layer below about 40F / 4C",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2022-01-20",
+   "theme": "too thin, not warm enough",
+   "found": "2026-11-07"
+  },
+  {
+   "type": "fleece jacket",
+   "product": "L.L.Bean Mountain Classic fleece jacket",
+   "what": "material thinner than older versions",
+   "source": "https://www.zappos.com/product/review/9599833/page/28",
+   "where": "zappos, 4-star review criticism",
+   "date": "2021-12-15",
+   "theme": "too thin, not warm enough",
+   "found": "2026-11-07"
   }
  ],
  "themes": [
   {
-   "theme": "pole locks slip / poles collapse",
-   "count": 17
+   "theme": "breaks quickly / cheaply made",
+   "count": 18
   },
   {
-   "theme": "breaks quickly / cheaply made",
-   "count": 14
+   "theme": "pole locks slip / poles collapse",
+   "count": 17
   },
   {
    "theme": "baskets, tips or straps wear out or fall off",
@@ -1623,11 +1843,15 @@
    "count": 8
   },
   {
+   "theme": "product does not match the listing",
+   "count": 8
+  },
+  {
    "theme": "no clear assembly or height instructions",
    "count": 7
   },
   {
-   "theme": "product does not match the listing",
+   "theme": "too thin, not warm enough",
    "count": 6
   },
   {
@@ -1647,7 +1871,11 @@
    "count": 4
   },
   {
-   "theme": "too thin, not warm enough",
+   "theme": "side bottle pockets too shallow, bottles fall out",
+   "count": 4
+  },
+  {
+   "theme": "clothing runs small / sleeves short",
    "count": 4
   },
   {
@@ -1687,6 +1915,10 @@
    "count": 3
   },
   {
+   "theme": "fleece pills or sheds",
+   "count": 3
+  },
+  {
    "theme": "not suited to hikers with disabilities",
    "count": 2
   },
@@ -1708,6 +1940,10 @@
   },
   {
    "theme": "sock sizing off (runs small or large)",
+   "count": 2
+  },
+  {
+   "theme": "zipper hard to use",
    "count": 2
   },
   {
@@ -1776,6 +2012,10 @@
   },
   {
    "theme": "height has to be reset each time",
+   "count": 1
+  },
+  {
+   "theme": "pack pockets let rain in",
    "count": 1
   }
  ]
