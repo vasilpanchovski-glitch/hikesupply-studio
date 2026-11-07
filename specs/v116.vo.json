@@ -1,0 +1,31 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Emma expected the Grand Canyon to be warm.",
+   "gap": 0.7
+  },
+  {
+   "text": "At the South Rim there was snow, and the first switchbacks below the rim were packed ice.",
+   "gap": 0.7
+  },
+  {
+   "text": "In winter the upper trails can stay icy long after a storm, even when it's milder down in the canyon.",
+   "gap": 0.7
+  },
+  {
+   "text": "The park recommends traction devices on icy trails.",
+   "gap": 0.7
+  },
+  {
+   "text": "She turned around, came back the next morning with microspikes, and checked conditions first.",
+   "gap": 0.7
+  },
+  {
+   "text": "Save this before your winter trip.",
+   "gap": 0.2
+  }
+ ]
+}

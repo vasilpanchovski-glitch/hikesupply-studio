@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Slushy trail, wet boots.",
+   "gap": 0.6
+  },
+  {
+   "text": "Mark had a plan: dry socks at the summit.",
+   "gap": 0.6
+  },
+  {
+   "text": "He reached into the side pocket.",
+   "gap": 0.6
+  },
+  {
+   "text": "The spare socks were soaked through, along with his gloves.",
+   "gap": 0.6
+  },
+  {
+   "text": "Snow melting on the pack all morning.",
+   "gap": 0.6
+  },
+  {
+   "text": "Now his spares go into a dry bag, rolled shut three times, deep inside the pack.",
+   "gap": 0.6
+  },
+  {
+   "text": "At the top, dry socks, dry gloves, warm feet for the walk down.",
+   "gap": 0.6
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.2
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "The waterfall had frozen into a wall of ice, and Tom walked right up to it for the photo.",
+   "gap": 0.8
+  },
+  {
+   "text": "Then a chunk broke off above him and hit the rocks a few feet away.",
+   "gap": 0.8
+  },
+  {
+   "text": "Frozen waterfalls can drop ice without warning, most of all when the sun warms them.",
+   "gap": 0.8
+  },
+  {
+   "text": "Water can still run under the ice at the base.",
+   "gap": 0.8
+  },
+  {
+   "text": "Take the photo from a distance, and stay off the ice.",
+   "gap": 0.8
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.2
+  }
+ ]
+}
