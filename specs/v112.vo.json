@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Every year Nora says the same thing.",
+   "gap": 0.45
+  },
+  {
+   "text": "Next year, the Smokies. Or Utah. Or Yellowstone.",
+   "gap": 0.45
+  },
+  {
+   "text": "And every year, nothing gets planned.",
+   "gap": 0.45
+  },
+  {
+   "text": "So this Christmas, Daniel wrapped all three.",
+   "gap": 0.45
+  },
+  {
+   "text": "Three trip planning guides: when to go, where to stay, itineraries built around the best day hikes, and the safety rules for each park.",
+   "gap": 0.45
+  },
+  {
+   "text": "On Christmas morning they circled the first dates on the calendar.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this for the hiker on your list.",
+   "gap": 0.2
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Two miles into her first overnight, Rosa's shoulders were burning.",
+   "gap": 0.45
+  },
+  {
+   "text": "The hip belt hung loose around her waist, so the straps carried everything.",
+   "gap": 0.45
+  },
+  {
+   "text": "Her friend fixed it in thirty seconds.",
+   "gap": 0.45
+  },
+  {
+   "text": "Hip belt first, sitting on the hip bones, pulled snug.",
+   "gap": 0.45
+  },
+  {
+   "text": "Then the shoulder straps, just firm.",
+   "gap": 0.45
+  },
+  {
+   "text": "Heavy things packed close to your back.",
+   "gap": 0.45
+  },
+  {
+   "text": "The weight dropped onto her hips, and her shoulders let go.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this before your first night on the trail.",
+   "gap": 0.2
+  }
+ ]
+}

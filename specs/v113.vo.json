@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Light snow at the trailhead. Kai didn't think twice.",
+   "gap": 0.8
+  },
+  {
+   "text": "But wet snow kept landing on his pack and melting.",
+   "gap": 0.8
+  },
+  {
+   "text": "By the top, his spare layer was damp and his snacks were soggy.",
+   "gap": 0.8
+  },
+  {
+   "text": "The fix was already on his pack.",
+   "gap": 0.8
+  },
+  {
+   "text": "A rain cover, tucked in its own pocket.",
+   "gap": 0.8
+  },
+  {
+   "text": "Thirty seconds, and the pack stayed dry for the rest of the hike.",
+   "gap": 0.8
+  },
+  {
+   "text": "Save this before your next snowy hike.",
+   "gap": 0.2
+  }
+ ]
+}
