@@ -1,0 +1,113 @@
+{
+ "pins": [
+  {
+   "id": "pb20261107-1",
+   "layout": "stone",
+   "kicker": "Phone dies in the cold on a hike?",
+   "title": "3 fixes",
+   "items": [
+    "Keep it in an inside pocket, close to your body",
+    "Switch on airplane mode between photos",
+    "Carry a small power bank, kept warm too"
+   ],
+   "sub": "Cold drains a phone battery fast. More cold-weather tips are in our Winter Hiking Guide.",
+   "cta": "Get the winter guide"
+  },
+  {
+   "id": "pb20261107-2",
+   "layout": "forest",
+   "image": "media/pins/v41-crop.jpg",
+   "kicker": "Your phone is your map?",
+   "title": "Have a backup",
+   "sub": "Cold can shut a phone down early. Download the offline map before you leave and carry a paper map of the trail too.",
+   "cta": "Get the winter guide"
+  },
+  {
+   "id": "pb20261107-3",
+   "layout": "forest",
+   "image": "media/pins/v96-crop.jpg",
+   "kicker": "Yellowstone on Veterans Day?",
+   "title": "Free entry Nov 11",
+   "sub": "Most park roads closed for winter on Nov 1. The road from the North Entrance to Mammoth and Lamar Valley stays open. Check nps.gov first.",
+   "cta": "Plan Yellowstone"
+  },
+  {
+   "id": "pb20261107-4",
+   "layout": "stone",
+   "kicker": "Grand Canyon on Nov 11?",
+   "title": "Free day, icy top",
+   "items": [
+    "The South Rim is open all year",
+    "Ice forms near the top of the trails",
+    "Pack traction for your boots",
+    "Turn around earlier: the climb out is the hard part"
+   ],
+   "sub": "Entrance fees are waived on Veterans Day. Check nps.gov for who qualifies.",
+   "cta": "Plan the South Rim"
+  },
+  {
+   "id": "pb20261107-5",
+   "layout": "forest",
+   "image": "media/pins/v109-crop.jpg",
+   "kicker": "Think the shortest day is darkest?",
+   "title": "Sunset comes first",
+   "sub": "In much of the US the earliest sunset is in early December, about two weeks before the shortest day. Pack a headlamp now.",
+   "cta": "See the winter set"
+  },
+  {
+   "id": "pb20261107-6",
+   "layout": "stone",
+   "kicker": "Following footprints in the snow?",
+   "title": "They may not be the trail",
+   "items": [
+    "Tracks can lead anywhere: other hikers get lost too",
+    "Look for blazes and trail markers",
+    "Check your map or GPS often",
+    "Lost? Stop, stay put and call for help"
+   ],
+   "sub": "Our short guide covers what to do if you get lost.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261107-7",
+   "layout": "stone",
+   "kicker": "Shoulders aching under your pack?",
+   "title": "Let your hips carry it",
+   "items": [
+    "Loosen every strap first",
+    "Buckle the hip belt over your hip bones",
+    "Snug the shoulder straps, not too tight",
+    "Pull the load lifters, then clip the chest strap"
+   ],
+   "sub": "Most of the weight should ride on your hips, not your shoulders.",
+   "cta": "See the overnight set"
+  },
+  {
+   "id": "pb20261107-8",
+   "layout": "forest",
+   "image": "media/pins/v108-crop.jpg",
+   "kicker": "Cold night in the tent?",
+   "title": "Never run the stove inside",
+   "sub": "A stove in a closed tent can fill it with carbon monoxide or set it on fire. Cook outside, then warm up with a hot drink and your sleeping bag.",
+   "cta": "See the camping planner"
+  },
+  {
+   "id": "pb20261107-9",
+   "layout": "forest",
+   "image": "media/pins/etsy-banff-jasper-crop.jpg",
+   "kicker": "First trip to the Canadian Rockies?",
+   "title": "Plan Banff & Jasper",
+   "sub": "Lake Louise and Moraine Lake shuttles, park passes, 3, 5 and 7-day plans and 12 day hikes in one printable guide.",
+   "cta": "See it on Etsy"
+  },
+  {
+   "id": "pb20261107-10",
+   "layout": "forest",
+   "image": "media/pins/etsy-peak-bagger-crop.jpg",
+   "kicker": "Climbing the 14ers or the 48?",
+   "title": "Log every summit",
+   "sub": "A printable logbook for the Colorado 14ers, NH 4,000-footers and Adirondack 46: color in each peak and keep a log card for every climb.",
+   "cta": "See it on Etsy"
+  }
+ ]
+}
