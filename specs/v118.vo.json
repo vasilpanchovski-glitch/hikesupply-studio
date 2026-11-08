@@ -1,0 +1,14 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {"text": "Sam plants his pole on a muddy switchback, pulls it out, and the rubber tip is gone.", "gap": 0.6},
+  {"text": "Rubber caps are made for pavement, rock slabs and boardwalks.", "gap": 0.5},
+  {"text": "On mud, snow and loose dirt they slip and get sucked off.", "gap": 0.6},
+  {"text": "Here's the fix.", "gap": 0.4},
+  {"text": "Pull the caps off at the trailhead, keep them in a pocket, and let the bare metal tip bite in.", "gap": 0.6},
+  {"text": "Sam's pole grips every step down.", "gap": 0.6},
+  {"text": "Save this before your next muddy hike.", "gap": 0.2}
+ ]
+}
