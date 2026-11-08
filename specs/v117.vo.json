@@ -1,0 +1,14 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {"text": "Nora ran out of water an hour from the car, so she ate a handful of snow.", "gap": 0.6},
+  {"text": "Soon she was colder than before.", "gap": 0.6},
+  {"text": "Your body burns its own heat to melt snow, and a handful is barely a sip of water.", "gap": 0.6},
+  {"text": "Here's the fix.", "gap": 0.4},
+  {"text": "Carry enough water for the whole hike, keep the bladder inside your pack against your back, and sip at every break, even when you're not thirsty.", "gap": 0.6},
+  {"text": "Nora finished warm.", "gap": 0.6},
+  {"text": "Save this before your next winter hike.", "gap": 0.2}
+ ]
+}
