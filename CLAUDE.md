@@ -251,6 +251,14 @@ Agent: Search Specialist (`agents/seo.md`), daily 14:22. HQ collection `seo`, do
 
 Goal: AI assistants recommend hikesupplyco.com when hikers ask questions we answer well. The Search Specialist audits `market/ai-questions.json` every second day (WebSearch, what ranks and who gets cited), counts visits from AI tools in Shopify analytics, adds plain answer summaries and FAQs to product pages (`field: "answer"`), and sends answer-page requests to the Blog Writer. HQ collection `aiwatch`, doc `w<YYYY-MM-DD>`. Bing Webmaster Tools is set up for hikesupplyco.com (imported from Search Console on 2026-10-17, sitemaps known); its "AI Performance" report shows Copilot citations (first 4 on 2026-10-14). It is only reachable in Vasil's Chrome, so cloud agents rely on the WebSearch audit and Shopify referrals. Never fake reviews, never post on Reddit or forums as the brand, never invent numbers.
 
+## ChatGPT shopping (Vasil 2026-11-08)
+
+Our first real sale (#1007, Merino Wool Hiking Socks, $19.99) came from ChatGPT shopping: it reads our Shopify product feed and links with `utm_source=chatgpt.com&utm_medium=feed`. Shoppers from it arrive ready to buy (1 order from 7 visits, while 116 paid-ad visits brought none). Keep this channel healthy:
+- Every product has a Shopify taxonomy category (digital guides and printables: Media > Printables) and is published to the Shop channel as well as Online Store, Google and the social channels. Club Editions stay off it.
+- Titles are keyword-first in plain words (what it is + key spec). Descriptions open with who it is for, then real specs with numbers (imperial and metric), sizes in US and EU, what is in the box, single or pair. Every variant has the right image. Honest only: never invented specs, ratings or reviews.
+- Gear pages get the plain `answer` summary and a short FAQ (Search Specialist).
+- The Analyst reports ChatGPT shopping (utm_source chatgpt.com) as its own channel every week.
+
 Social search words (what people typed on TikTok before finding us) are kept in `market/social-search.json`. The Strategist, Pin Designer and Blog Writer read it for topics; the Analyst reports search share per video.
 
 # Sales & Promotions department
