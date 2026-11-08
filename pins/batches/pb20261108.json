@@ -1,0 +1,116 @@
+{
+ "pins": [
+  {
+   "id": "pb20261108-1",
+   "layout": "stone",
+   "kicker": "Icy trail ahead?",
+   "title": "Walk it like this",
+   "items": [
+    "Take short steps with your weight over your feet",
+    "Step flat: the whole sole on the ground",
+    "Use trekking poles for balance",
+    "Put traction on before the ice, not on it",
+    "Watch shaded bends, steps and bridges"
+   ],
+   "sub": "No grip to get up and back down safely? Turn around.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261108-2",
+   "layout": "stone",
+   "kicker": "Cold feet on a winter hike?",
+   "title": "5 fixes",
+   "items": [
+    "Wool or synthetic socks, never cotton",
+    "Leave room in your boots: tight is colder",
+    "Change into dry socks at a long break",
+    "Add a layer before your core gets cold",
+    "Keep snow out of your boots with gaiters"
+   ],
+   "sub": "Feet get coldest at breaks, not while you walk.",
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261108-3",
+   "layout": "forest",
+   "kicker": "Phone won't react to your gloves?",
+   "title": "Wear a liner",
+   "items": [
+    "Touchscreen gloves work best for quick taps",
+    "They fail when wet or loose at the fingertip",
+    "Wear a thin touchscreen liner under a warm mitt",
+    "Keep the phone in an inside pocket",
+    "Keep the screen dry: wet glass misses taps"
+   ],
+   "cta": "Read the guide"
+  },
+  {
+   "id": "pb20261108-4",
+   "layout": "forest",
+   "image": "media/pins/v114-crop.jpg",
+   "kicker": "Found a frozen waterfall?",
+   "title": "Stay back",
+   "sub": "Ice can break off without warning, most of all when the sun warms it, and water can still run under the ice at the base. Take the photo from a distance.",
+   "cta": "Get the safety guide"
+  },
+  {
+   "id": "pb20261108-5",
+   "layout": "forest",
+   "image": "media/pins/v117-crop.jpg",
+   "kicker": "Out of water on a winter hike?",
+   "title": "Don't eat snow",
+   "sub": "Your body burns its own heat to melt it, and a handful is barely a sip. Carry enough water and keep it against your back.",
+   "cta": "See the bladder"
+  },
+  {
+   "id": "pb20261108-6",
+   "layout": "forest",
+   "image": "media/pins/v115-crop.jpg",
+   "kicker": "Spare socks wet when you need them?",
+   "title": "Pack a dry bag",
+   "sub": "Melting snow soaks through side pockets. Roll your spare socks and gloves into a dry bag, shut it three times and pack it deep inside.",
+   "cta": "See the dry bag"
+  },
+  {
+   "id": "pb20261108-7",
+   "layout": "forest",
+   "image": "media/pins/v118-crop.jpg",
+   "kicker": "Trekking pole slipping in mud?",
+   "title": "Take the cap off",
+   "sub": "Rubber caps are for pavement and rock. On mud and snow, keep them in your pocket and let the metal tip grip.",
+   "cta": "See the pole"
+  },
+  {
+   "id": "pb20261108-8",
+   "layout": "stone",
+   "kicker": "Utah's red-rock parks in winter?",
+   "title": "Watch the shade",
+   "items": [
+    "Shaded slickrock and steps can stay icy all day",
+    "Pack traction for your boots",
+    "Start early: it gets dark around 5 pm",
+    "Pack a warm layer: winter nights often freeze",
+    "Check nps.gov for road and trail conditions"
+   ],
+   "cta": "Plan the Mighty 5"
+  },
+  {
+   "id": "pb20261108-9",
+   "layout": "forest",
+   "image": "media/pins/etsy-2027-planner-crop.jpg",
+   "kicker": "Want to hike more in 2027?",
+   "title": "Plan every month",
+   "sub": "A printable planner with goals, a hike for each month, the Hike-a-Week Challenge and a mileage tracker to color in.",
+   "cta": "See it on Etsy"
+  },
+  {
+   "id": "pb20261108-10",
+   "layout": "forest",
+   "image": "media/pins/v106-crop.jpg",
+   "kicker": "Summer campsites full by spring?",
+   "title": "Plan it now",
+   "sub": "Many popular campgrounds open bookings months ahead. A printable camping planner with meal plans, a car packing list and family checklists.",
+   "cta": "See it on Etsy"
+  }
+ ]
+}
