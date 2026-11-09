@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Marcus books Glacier for June tenth, with Going-to-the-Sun Road as the big day.",
+   "gap": 0.4
+  },
+  {
+   "text": "He learns the high part of the road is plowed every spring, and usually opens between mid-June and early July.",
+   "gap": 0.3
+  },
+  {
+   "text": "Nobody knows the day.",
+   "gap": 0.45
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "For the whole road and most trails, go mid-July to mid-September.",
+   "gap": 0.35
+  },
+  {
+   "text": "If June is your only week, plan Lake McDonald, Avalanche Lake and Many Glacier instead.",
+   "gap": 0.45
+  },
+  {
+   "text": "Marcus moves to late July.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this before you book Glacier.",
+   "gap": 0.2
+  }
+ ]
+}
