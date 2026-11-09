@@ -1,6 +1,6 @@
 {
- "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism.",
- "updated": "2026-11-07",
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport).",
+ "updated": "2026-11-09",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1815,6 +1815,76 @@
    "date": "2021-12-15",
    "theme": "too thin, not warm enough",
    "found": "2026-11-07"
+  },
+  {
+   "type": "hiking socks",
+   "product": "REI Merino Light Hiker Crew",
+   "what": "thin spots then holes came quickly; all five pairs failed the same way",
+   "source": "https://trailspace.com/gear/rei/merino-light-hiker-crew-sock",
+   "where": "trailspace, 3-star user review",
+   "date": "",
+   "theme": "socks wear thin / holes",
+   "found": "2026-11-09"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Smartwool Hike Light Cushion Crew",
+   "what": "can develop holes over time, wears out sooner than a rival brand",
+   "source": "https://public-phi-dusky.vercel.app/reviews/clothing/smartwool-hike-light-cushion-crew-socks",
+   "where": "packstack review summary",
+   "date": "2026-06-03",
+   "theme": "socks wear thin / holes",
+   "found": "2026-11-09"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Smartwool Hike Light Cushion Crew",
+   "what": "runs snug, cuff tight on larger calves",
+   "source": "https://public-phi-dusky.vercel.app/reviews/clothing/smartwool-hike-light-cushion-crew-socks",
+   "where": "packstack review summary",
+   "date": "2026-06-03",
+   "theme": "sock sizing off (runs small or large)",
+   "found": "2026-11-09"
+  },
+  {
+   "type": "hiking socks",
+   "product": "Smartwool Hike Light Cushion Crew",
+   "what": "may shrink with warm machine washing",
+   "source": "https://public-phi-dusky.vercel.app/reviews/clothing/smartwool-hike-light-cushion-crew-socks",
+   "where": "packstack review summary",
+   "date": "2026-06-03",
+   "theme": "shrinks in the wash",
+   "found": "2026-11-09"
+  },
+  {
+   "type": "park passport / journal",
+   "product": "USA National Parks Journal and Passport Stamp Book",
+   "what": "printed background design in the stamp area gets in the way; buyer wanted blank space for stamps and drawings",
+   "source": "https://www.desertcart.co.th/products/615713590-usa-national-parks-journal-and-passport-stamp-book",
+   "where": "reseller page review summary",
+   "date": "",
+   "theme": "not enough blank pages / too rigid",
+   "found": "2026-11-09"
+  },
+  {
+   "type": "park passport / journal",
+   "product": "USA National Parks Journal and Passport Stamp Book",
+   "what": "too heavy to carry in a backpack",
+   "source": "https://www.desertcart.co.th/products/615713590-usa-national-parks-journal-and-passport-stamp-book",
+   "where": "reseller page review summary",
+   "date": "",
+   "theme": "too heavy to carry",
+   "found": "2026-11-09"
+  },
+  {
+   "type": "park passport / journal",
+   "product": "USA National Parks Journal and Passport Stamp Book",
+   "what": "only the national parks, buyer wanted historic sites and preserves too",
+   "source": "https://www.desertcart.co.th/products/615713590-usa-national-parks-journal-and-passport-stamp-book",
+   "where": "reseller page review summary",
+   "date": "",
+   "theme": "guide too limited / generic",
+   "found": "2026-11-09"
   }
  ],
  "themes": [
@@ -1832,7 +1902,7 @@
   },
   {
    "theme": "guide too limited / generic",
-   "count": 9
+   "count": 10
   },
   {
    "theme": "missing parts on arrival",
@@ -1891,6 +1961,10 @@
    "count": 3
   },
   {
+   "theme": "not enough blank pages / too rigid",
+   "count": 3
+  },
+  {
    "theme": "thin paper",
    "count": 3
   },
@@ -1900,6 +1974,10 @@
   },
   {
    "theme": "warranty claim is a hassle",
+   "count": 3
+  },
+  {
+   "theme": "sock sizing off (runs small or large)",
    "count": 3
   },
   {
@@ -1931,19 +2009,15 @@
    "count": 2
   },
   {
-   "theme": "not enough blank pages / too rigid",
-   "count": 2
-  },
-  {
    "theme": "fails within months / stops charging",
    "count": 2
   },
   {
-   "theme": "sock sizing off (runs small or large)",
+   "theme": "zipper hard to use",
    "count": 2
   },
   {
-   "theme": "zipper hard to use",
+   "theme": "socks wear thin / holes",
    "count": 2
   },
   {
@@ -2016,6 +2090,14 @@
   },
   {
    "theme": "pack pockets let rain in",
+   "count": 1
+  },
+  {
+   "theme": "shrinks in the wash",
+   "count": 1
+  },
+  {
+   "theme": "too heavy to carry",
    "count": 1
   }
  ]

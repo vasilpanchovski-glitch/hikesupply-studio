@@ -1,0 +1,288 @@
+{
+ "date": "2026-11-09",
+ "previous": "2026-11-03",
+ "group": "b",
+ "note": "Group B. Empty fields mean the page did not show the number. Compared with the last group B run (Nov 3). BigSkyChecklists' shop page opened this time.",
+ "sellers": [
+  {
+   "name": "PrintablePatti",
+   "shop": {
+    "sales": "2.1k",
+    "rating": 4.9,
+    "reviews": 322
+   },
+   "products": [
+    {
+     "title": "Camping Checklist, Planner, Hiking Essentials ... Camping Log",
+     "price": 4.22,
+     "was": 8.45,
+     "pages": null,
+     "item_reviews": 2,
+     "item_rating": 5.0,
+     "notes": "50% off, sale ends Nov 30; image says 18 pages, written list differs; 8.5x11 only"
+    }
+   ],
+   "offers": [
+    "50% off with an end date of Nov 30 (was 25% off ending about Nov 4)"
+   ],
+   "reviews": {
+    "praise": [
+     "download as described",
+     "quick, helpful seller replies"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "month-long 50% sale that covers Black Friday and Cyber Monday",
+     "review quotes placed inside listing images",
+     "keyword-stuffed titles"
+    ],
+    "traffic": "Etsy search"
+   },
+   "source": "https://www.etsy.com/listing/898385376"
+  },
+  {
+   "name": "AnkaKidsStudio",
+   "shop": {
+    "sales": 472,
+    "rating": 5.0,
+    "reviews": 19
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt Bundle for Kids",
+     "price": 3.5,
+     "bestseller": true,
+     "item_reviews": 8,
+     "item_rating": 5.0,
+     "favorites": 176,
+     "notes": "4 designs in 3 PDFs, US Letter and A4, no sale"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "praise": [
+     "cute and fun",
+     "PDF worked well",
+     "open-ended pages",
+     "bought as a gift for a family hike",
+     "right level for ages 5 and 7"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "Bestseller badge from volume",
+     "both paper sizes named",
+     "Star Seller fast replies"
+    ],
+    "traffic": "Etsy search"
+   },
+   "source": "https://www.etsy.com/listing/4506126306"
+  },
+  {
+   "name": "BigSkyChecklists",
+   "shop": {
+    "sales": 7,
+    "rating": 5.0,
+    "reviews": 3,
+    "listings": 36
+   },
+   "products": [
+    {
+     "title": "Ultimate Camping Planner Bundle",
+     "price": 3.99
+    },
+    {
+     "title": "Road Trip Camping Planner Bundle",
+     "price": 6.49
+    },
+    {
+     "title": "Ultimate Camping Checklist Bundle",
+     "price": 6.99
+    },
+    {
+     "title": "National Park Camping Checklist (Bear Aware)",
+     "price": 2.99
+    },
+    {
+     "title": "Backpacking Gear Checklist Printable",
+     "price": 2.99
+    },
+    {
+     "title": "Last-Minute Camping Checklist",
+     "price": 1.99
+    },
+    {
+     "title": "Emergency Preparedness Checklist",
+     "price": 3.99
+    },
+    {
+     "title": "200 Uses for Baking Soda guide",
+     "price": 2.99
+    }
+   ],
+   "offers": [
+    "no sale or coupon shown"
+   ],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "many near-duplicate listings of the same checklist",
+     "low prices $1.99-6.99"
+    ],
+    "traffic": "Etsy search"
+   },
+   "notes": "same 7 sales and 36 listings as Oct 29: volume of listings is not selling",
+   "source": "https://www.etsy.com/shop/BigSkyChecklists"
+  },
+  {
+   "name": "An Acre in the City (Payhip)",
+   "products": [
+    {
+     "title": "National Park Adventure Itinerary (fillable PDF)",
+     "price": 19.0,
+     "notes": "still 'On Sale' with no old price, no reviews"
+    },
+    {
+     "title": "Ultimate US Travel Bucket List Printable",
+     "price": 3.0
+    },
+    {
+     "title": "Packing List Spreadsheet",
+     "price": 7.0
+    },
+    {
+     "title": "Road Trip Planning Bingo Card",
+     "price": 2.0
+    },
+    {
+     "title": "Gratitude Journal - Travel Edition",
+     "price": 4.0
+    }
+   ],
+   "offers": [
+    "refer a friend, both get 10% off"
+   ],
+   "reviews": {
+    "count": 0
+   },
+   "marketing": {
+    "tactics": [
+     "referral discount",
+     "'On Sale' label without an old price"
+    ]
+   },
+   "notes": "the product page now shows a different set of other products than Nov 3 (may be a rotating sample)",
+   "source": "https://payhip.com/b/xIwnT"
+  },
+  {
+   "name": "Dirt In My Shoes",
+   "products": [
+    {
+     "title": "Arches / Bryce Canyon / Canyonlands / Capitol Reef itinerary",
+     "price": 29.0
+    },
+    {
+     "title": "Grand Canyon / Grand Teton / Rocky Mountain / Zion itinerary",
+     "price": 44.0
+    },
+    {
+     "title": "Acadia / Glacier / Great Smoky Mountains / Olympic / Yellowstone / Yosemite itinerary",
+     "price": 59.0
+    },
+    {
+     "title": "South Dakota (Badlands, Mount Rushmore, Wind Cave)",
+     "price": 69.0
+    },
+    {
+     "title": "e-Gift Card",
+     "price": "from 10"
+    }
+   ],
+   "offers": [
+    "10% off the whole order for 3+ itineraries",
+    "e-gift card",
+    "no Black Friday offer shown"
+   ],
+   "reviews": {
+    "note": "no ratings shown; claims 'tens of thousands' use them"
+   },
+   "marketing": {
+    "tactics": [
+     "multi-buy discount",
+     "gift card for gifting",
+     "former ranger authority"
+    ],
+    "bait": "none on the shop page"
+   },
+   "source": "https://shop.dirtinmyshoes.com"
+  },
+  {
+   "name": "Earth Pak",
+   "products": [
+    {
+     "title": "Original Waterproof Dry Bag",
+     "notes": "no price on the review summary page"
+    }
+   ],
+   "reviews": {
+    "complaints": [
+     "sizes differ from stated",
+     "leaks / damp contents",
+     "single strap not comfy for hiking",
+     "phone case missing for some",
+     "smaller than photos"
+    ],
+    "note": "same 2025 summary page, nothing new"
+   },
+   "source": "https://shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag.md"
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "USA National Parks Journal and Passport Stamp Book (reseller page)",
+   "rating": 4.7,
+   "reviews": 316,
+   "notes": "says it covers 63 parks (now 64); complaints: printed design in the stamp area, heavy for a backpack (544 g), wants historic sites too",
+   "source": "https://www.desertcart.co.th/products/615713590-usa-national-parks-journal-and-passport-stamp-book"
+  },
+  {
+   "name": "Smartwool Hike Light Cushion Crew (Packstack review, Jun 2026)",
+   "notes": "8/10; holes over time, runs snug, can shrink in warm washing",
+   "source": "https://public-phi-dusky.vercel.app/reviews/clothing/smartwool-hike-light-cushion-crew-socks"
+  },
+  {
+   "name": "REI Merino Light Hiker Crew (Trailspace)",
+   "notes": "3-star review: thin spots and holes quickly, all five pairs",
+   "source": "https://trailspace.com/gear/rei/merino-light-hiker-crew-sock"
+  }
+ ],
+ "changes_vs_previous": [
+  "PrintablePatti: 50% off ($4.22, was $8.45) until Nov 30. On Nov 3 it was 25% off until Nov 4. First group B seller with a sale that runs through Black Friday.",
+  "AnkaKidsStudio: shop sales 458 to 472 in 6 days, same $3.50 kids bundle, Bestseller.",
+  "BigSkyChecklists: read for the first time since Oct 29: still 7 sales from 36 cheap listings.",
+  "Dirt In My Shoes: same prices ($29-69), still 10% off 3+, no Black Friday offer yet.",
+  "An Acre in the City: still $19 'On Sale' with no old price and no reviews.",
+  "Earth Pak: no new review data."
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "percent-off sales and 'On Sale' labels (PrintablePatti 50%, An Acre, earlier Tonia; two with no old price)",
+   "multi-buy or referral discounts (Dirt In My Shoes 10% off 3+, An Acre 10% referral)",
+   "both paper sizes and kid ages named plainly on cheap printables (AnkaKids)"
+  ],
+  "new_this_run": [
+   "a month-long 50% sale started early November that covers Black Friday (PrintablePatti)"
+  ],
+  "we_do_not_use_yet": [
+   "a store gift card",
+   "referral discount"
+  ],
+  "lesson": "BigSkyChecklists has 36 near-duplicate listings and 7 sales; AnkaKids has one clear bundle and 472 sales. Fewer, clearer listings win.",
+  "black_friday": "Nov 9: one group B seller (PrintablePatti) already runs a sale to Nov 30; the others show nothing yet."
+ }
+}
