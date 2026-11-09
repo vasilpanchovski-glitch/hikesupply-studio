@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Rain cancels the Saturday hike, and Mia is bored.",
+   "gap": 0.4
+  },
+  {
+   "text": "Her dad prints one sheet of paper.",
+   "gap": 0.4
+  },
+  {
+   "text": "Three folds, one cut, and Mia has her own pocket trail log, small enough for a jacket pocket.",
+   "gap": 0.5
+  },
+  {
+   "text": "On Sunday she takes it up the trail:",
+   "gap": 0.2
+  },
+  {
+   "text": "the weather, the best view, what she heard, a sketch at the top.",
+   "gap": 0.5
+  },
+  {
+   "text": "By spring she has filled two booklets, and asks to print a third.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this for the next rainy day.",
+   "gap": 0.2
+  }
+ ]
+}

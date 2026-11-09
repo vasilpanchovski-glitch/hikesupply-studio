@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "It's a warm June morning in Banff town, so Jake heads up to Lake Agnes in trail runners.",
+   "gap": 0.4
+  },
+  {
+   "text": "An hour later, he's sinking into deep snow.",
+   "gap": 0.4
+  },
+  {
+   "text": "Higher trails in the Rockies can stay snowy into July.",
+   "gap": 0.5
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "For thawed lakes and open trails, plan late June to mid-September.",
+   "gap": 0.3
+  },
+  {
+   "text": "Check Parks Canada trail conditions first, and pack for winter up high.",
+   "gap": 0.5
+  },
+  {
+   "text": "Jake returns in August. Dry feet.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before you plan Banff.",
+   "gap": 0.2
+  }
+ ]
+}

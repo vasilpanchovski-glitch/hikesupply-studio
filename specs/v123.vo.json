@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.5,
+ "lines": [
+  {
+   "text": "Lena enters Glacier on a quarter tank, planning to fill up later.",
+   "gap": 0.5
+  },
+  {
+   "text": "There's no gas station anywhere inside the park.",
+   "gap": 0.5
+  },
+  {
+   "text": "And on the east side, each valley is its own dead end, so close on the map can mean an hour in the car.",
+   "gap": 0.6
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.4
+  },
+  {
+   "text": "Fill up in town before you enter,",
+   "gap": 0.25
+  },
+  {
+   "text": "and plan the day by drive times, not by the map.",
+   "gap": 0.6
+  },
+  {
+   "text": "Lena tops up first.",
+   "gap": 0.6
+  },
+  {
+   "text": "Save this before Glacier.",
+   "gap": 0.2
+  }
+ ]
+}
