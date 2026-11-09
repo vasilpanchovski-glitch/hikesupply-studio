@@ -24,10 +24,16 @@ def backdrop():
 def cutout(path):
     from rembg import remove, new_session
     src = Image.open(path).convert("RGB")
-    rgba = remove(src, session=new_session("u2net"), alpha_matting=True,
+    # matting runs at <= 1100 px (memory); the mask is scaled back up to the (AI-upscaled) source
+    small = src.copy()
+    small.thumbnail((1100, 1100), Image.LANCZOS)
+    rgba = remove(small, session=new_session("u2net"), alpha_matting=True,
                   alpha_matting_foreground_threshold=250, alpha_matting_background_threshold=15,
                   alpha_matting_erode_size=12)
-    a = np.asarray(rgba)[..., 3].astype(float) / 255
+    al = rgba.getchannel("A")
+    if al.size != src.size:
+        al = al.resize(src.size, Image.LANCZOS)
+    a = np.asarray(al).astype(float) / 255
     a = np.clip((a - 0.22) / 0.78, 0, 1)
     rgb = np.asarray(src).astype(float)
     solid = a > 0.5
