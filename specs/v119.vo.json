@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Priya plans her first Banff trip around one photo: Moraine Lake at sunrise.",
+   "gap": 0.4
+  },
+  {
+   "text": "Then she reads the fine print.",
+   "gap": 0.3
+  },
+  {
+   "text": "Moraine Lake Road is closed to personal vehicles all year. No parking, no exceptions.",
+   "gap": 0.5
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "Plan on the Parks Canada shuttle from the Lake Louise Park and Ride,",
+   "gap": 0.2
+  },
+  {
+   "text": "and book it on the official Parks Canada site the day seats open in spring.",
+   "gap": 0.5
+  },
+  {
+   "text": "Priya gets her seat, and her sunrise.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before you plan Banff.",
+   "gap": 0.2
+  }
+ ]
+}
