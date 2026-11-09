@@ -45,3 +45,20 @@
   });
 })();
 </script>
+{%- comment -%} Show the main photo (all colours) first on load, unless a colour was picked in the URL. Colour clicks still jump to that colour's photo. {%- endcomment -%}
+{%- if product.featured_media -%}
+<script>
+(function(){
+  if (/[?&]variant=/.test(location.search)) return;
+  function go(){
+    var g=document.querySelector('media-gallery[id^="MediaGallery-"]');
+    if(!g||!g.setActiveMedia) return;
+    var sid=g.id.replace('MediaGallery-','');
+    var id=sid+'-{{ product.featured_media.id }}';
+    if(g.querySelector('[data-media-id="'+id+'"]')) g.setActiveMedia(id,true);
+  }
+  if (customElements.get('media-gallery')) { document.readyState==='loading'?document.addEventListener('DOMContentLoaded',go):go(); }
+  else customElements.whenDefined('media-gallery').then(go);
+})();
+</script>
+{%- endif -%}
