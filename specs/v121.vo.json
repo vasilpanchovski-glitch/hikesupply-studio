@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Ana needs a small gift for her hiking friend, something that fits a stocking.",
+   "gap": 0.6
+  },
+  {
+   "text": "She prints one sheet of paper.",
+   "gap": 0.55
+  },
+  {
+   "text": "Three folds, one cut, no glue, and it becomes an eight-page trail log that slips into a shirt pocket.",
+   "gap": 0.55
+  },
+  {
+   "text": "Five hikes, a line for the weather, the view and the snack verdict.",
+   "gap": 0.55
+  },
+  {
+   "text": "On the back page she writes a promise: a hike together.",
+   "gap": 0.55
+  },
+  {
+   "text": "Her friend fills it by March.",
+   "gap": 0.65
+  },
+  {
+   "text": "Save this for your gift list.",
+   "gap": 0.2
+  }
+ ]
+}
