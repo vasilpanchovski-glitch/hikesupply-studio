@@ -4,7 +4,7 @@
 import React from "react";
 import { AbsoluteFill, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { at, C, FPS, outExpo } from "../lib";
-import { chunkWords, SANS, Word, isClean } from "../Type";
+import { Word, isClean } from "../Type";
 import { HEAD } from "../kit";
 import vo from "../vo/m01.json";
 
@@ -26,13 +26,15 @@ const SHOTS: Shot[] = [
   { n: 7, a: 17.65, b: END0, off: 0.5 },
   { n: 8, a: END0, b: M01_LEN, rate: 0.93, off: 0 },
 ];
-const SHAKES = [1.45, wt("here", 4), 17.7];
+const EMPH = /^(twenty|dollars|why|itch|odor|two|warm|damp|cotton|cheap|hike)/;
+const clean = (w: string) => w.toLowerCase().replace(/[^a-z0-9$]/g, "");
+const SHAKES = [1.45, ...words.filter((w) => EMPH.test(clean(w.w)) && w.s < END0).map((w) => w.s)];
 
 const useG = () => useCurrentFrame() / FPS;
 const shake = (t: number) => {
   let x = 0, y = 0;
   for (const s of SHAKES) {
-    const k = at(t, [s, s + 0.04, s + 0.35], [0, 1, 0]);
+    const k = at(t, [s, s + 0.03, s + 0.25], [0, 0.8, 0]);
     x += Math.sin(t * 90) * 14 * k;
     y += Math.cos(t * 77) * 10 * k;
   }
@@ -59,90 +61,77 @@ const ClipLayer: React.FC<{ s: Shot }> = ({ s }) => {
   );
 };
 
-// a word that punches in: big -> normal, blurred -> sharp
-const PunchWord: React.FC<{ w: string; t: number; t0: number; size: number }> = ({ w, t, t0, size }) => (
-  <span
-    style={{
-      display: "inline-block",
-      fontFamily: HEAD,
-      fontWeight: 800,
-      fontSize: size,
-      lineHeight: 0.95,
-      letterSpacing: 1,
-      textTransform: "uppercase",
-      color: "#fff",
-      textShadow: "0 8px 40px rgba(0,0,0,0.45)",
-      opacity: at(t, [t0, t0 + 0.08], [0, 1]),
-      scale: `${at(t, [t0, t0 + 0.3], [1.7, 1], outExpo)}`,
-      filter: `blur(${at(t, [t0, t0 + 0.2], [14, 0])}px)`,
-      translate: `0px ${at(t, [t0, t0 + 0.3], [-30, 0], outExpo)}px`,
-      marginRight: size * 0.22,
-    }}
-  >
-    {w}
-  </span>
-);
-
-// headline: lines of [word, time]; leaves at t1 with a quick upward exit
-const Head: React.FC<{ lines: [string, number][][]; size?: number; top?: number; t1: number; label?: string; labelT?: number }> = ({ lines, size = 130, top = 210, t1, label, labelT = 0 }) => {
-  const t = useG();
-  if (isClean()) return null;
-  if (t > t1 + 0.25) return null;
-  const out = at(t, [t1, t1 + 0.22], [0, 1]);
-  return (
-    <div style={{ position: "absolute", top, left: 80, right: 60, opacity: 1 - out, translate: `0px ${-60 * out}px`, filter: `blur(${8 * out}px)` }}>
-      {label && (
-        <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 58, letterSpacing: 8, color: "#fff", opacity: at(t, [labelT, labelT + 0.2], [0, 0.9]), translate: `${at(t, [labelT, labelT + 0.35], [-40, 0], outExpo)}px 0px`, marginBottom: 10 }}>
-          {label}
-        </div>
-      )}
-      {lines.map((ln, i) => (
-        <div key={i} style={{ whiteSpace: "nowrap" }}>
-          {ln.map(([w, t0], j) => (
-            <PunchWord key={j} w={w} t={t} t0={t0} size={size} />
-          ))}
-        </div>
-      ))}
-    </div>
-  );
-};
-
-const Counter: React.FC = () => {
-  const t = useG();
-  if (isClean() || t > 2.85) return null;
-  const v = Math.round(at(t, [0.0, 0.75], [0, 20], outExpo));
-  const k = at(t, [0.7, 0.78, 1.0], [1, 1.18, 1]);
-  return (
-    <div style={{ position: "absolute", top: 170, left: 80, fontFamily: HEAD, fontWeight: 800, fontSize: 300, lineHeight: 0.9, color: "#fff", textShadow: "0 10px 50px rgba(0,0,0,0.45)", scale: `${k}`, transformOrigin: "left center" }}>
-      ${v}
-    </div>
-  );
-};
-
-// white word-by-word captions (no colour accents): spoken word full white and slightly larger, rest dimmed
+// OpusClip-style captions: 1-2 big words in the middle, white with a heavy black outline, each word pops in with a bounce
+const groups = (() => {
+  const g: Word[][] = [];
+  let cur: Word[] = [];
+  words.forEach((w, i) => {
+    cur.push(w);
+    const punct = /[,.?!]$/.test(w.w);
+    const gap = i < words.length - 1 ? words[i + 1].s - w.e : 1;
+    if (cur.length >= 2 || punct || gap > 0.22 || EMPH.test(clean(w.w))) {
+      g.push(cur);
+      cur = [];
+    }
+  });
+  if (cur.length) g.push(cur);
+  return g;
+})();
+const SHOW: Record<string, string> = { twenty: "$20", dollars: "", two: "2" };
 const Caps: React.FC<{ until: number }> = ({ until }) => {
   const t = useG();
   if (isClean() || t >= until) return null;
-  const chunks = chunkWords(words, 3);
-  const idx = chunks.findIndex((c, i) => {
-    const start = c[0].s - 0.05;
-    const end = i < chunks.length - 1 ? chunks[i + 1][0].s - 0.05 : c[c.length - 1].e + 0.4;
+  const idx = groups.findIndex((c, i) => {
+    const start = c[0].s - 0.04;
+    const end = i < groups.length - 1 ? groups[i + 1][0].s - 0.04 : c[c.length - 1].e + 0.3;
     return t >= start && t < end;
   });
   if (idx < 0) return null;
-  const c = chunks[idx];
-  const t0 = c[0].s - 0.05;
+  const c = groups[idx];
+  const tilt = idx % 3 === 0 ? -2.5 : idx % 3 === 1 ? 2 : 0;
   return (
-    <div style={{ position: "absolute", left: 70, right: 70, top: 1500, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0 20px", fontFamily: SANS, fontWeight: 800, fontSize: 74, lineHeight: 1.12, letterSpacing: -1, translate: `0px ${at(t, [t0, t0 + 0.22], [30, 0], outExpo)}px`, opacity: at(t, [t0, t0 + 0.1], [0, 1]) }}>
+    <div style={{ position: "absolute", left: 40, right: 40, top: 1120, display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "0 26px", rotate: `${tilt}deg` }}>
       {c.map((w, i) => {
-        const on = t >= w.s - 0.03;
-        const now = on && t < w.e + 0.05;
+        if (t < w.s - 0.04) return null;
+        const show = SHOW[clean(w.w)] ?? w.w.replace(/[.,]$/, "");
+        if (!show) return null;
+        const big = EMPH.test(clean(w.w));
+        const s0 = w.s - 0.04;
         return (
-          <span key={i} style={{ display: "inline-block", color: on ? "#fff" : "rgba(255,255,255,0.42)", textShadow: "0 3px 18px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.8)", scale: now ? `${at(t, [w.s - 0.03, w.s + 0.12], [1.18, 1.06])}` : "1" }}>
-            {w.w}
+          <span
+            key={i}
+            style={{
+              display: "inline-block",
+              fontFamily: HEAD,
+              fontWeight: 800,
+              fontSize: big ? 190 : 140,
+              lineHeight: 1,
+              letterSpacing: 1,
+              textTransform: "uppercase",
+              color: "#fff",
+              WebkitTextStroke: big ? "16px #000" : "13px #000",
+              paintOrder: "stroke fill",
+              textShadow: "0 12px 0 rgba(0,0,0,0.35), 0 18px 40px rgba(0,0,0,0.45)",
+              scale: `${at(t, [s0, s0 + 0.07, s0 + 0.16, s0 + 0.24], [0.35, 1.22, 0.94, 1])}`,
+              translate: `0px ${at(t, [s0, s0 + 0.09, s0 + 0.2], [40, -14, 0])}px`,
+              opacity: at(t, [s0, s0 + 0.05], [0, 1]),
+            }}
+          >
+            {show}
           </span>
         );
       })}
+    </div>
+  );
+};
+
+// small section label that slides in at the top left
+const Label: React.FC<{ text: string; t0: number; t1: number }> = ({ text, t0, t1 }) => {
+  const t = useG();
+  if (isClean() || t < t0 || t > t1) return null;
+  return (
+    <div style={{ position: "absolute", top: 200, left: 80, fontFamily: HEAD, fontWeight: 800, fontSize: 64, letterSpacing: 10, color: "#fff", WebkitTextStroke: "8px #000", paintOrder: "stroke fill", opacity: Math.min(at(t, [t0, t0 + 0.15], [0, 1]), at(t, [t1 - 0.15, t1], [1, 0])), translate: `${at(t, [t0, t0 + 0.35], [-60, 0], outExpo)}px 0px` }}>
+      {text}
     </div>
   );
 };
@@ -203,13 +192,9 @@ export const M01: React.FC = () => {
           </Sequence>
         ))}
       </AbsoluteFill>
-      <Counter />
-      <Head lines={[[["For", wt("for", 0.5)], ["one", wt("one", 0.5)]], [["pair", wt("pair", 0.5)], ["of", wt("of", 1)]], [["socks.", wt("socks", 1)]]]} top={460} size={124} t1={2.75} />
-      <Head lines={[[["Here's", wt("here", 4)]], [["why.", wt("why", 4)]]]} top={230} size={210} t1={5.75} />
-      <Head label="REASON 1" labelT={r1} lines={[[["No", wt("doesnt", r1)], ["itch.", wt("itch", r1)]]]} size={170} t1={9.8} />
-      <Head label="REASON 2" labelT={r2} lines={[[["No", wt("odor", r2)], ["smell.", wt("odor", r2) + 0.15]], [["On", wt("on", r2 + 1)], ["day", wt("day", r2)], ["2.", wt("two", r2)]]]} size={150} t1={13.9} />
-      <Head label="REASON 3" labelT={r3} lines={[[["Warm", wt("warm", r3)]], [["when", wt("even", r3)], ["wet.", wt("damp", r3)]]]} size={160} t1={17.6} />
-      <Head lines={[[["Cheap", wt("cheap", 17)], ["socks", wt("socks", 17)]], [["cost", wt("cost", 17)], ["you", wt("you", 17)]], [["the", wt("the", 17.5)], ["hike.", wt("hike", 17.5)]]]} size={150} top={300} t1={END0 - 0.05} />
+      <Label text="REASON 1" t0={r1 - 0.1} t1={9.8} />
+      <Label text="REASON 2" t0={r2 - 0.1} t1={13.9} />
+      <Label text="REASON 3" t0={r3 - 0.1} t1={17.6} />
       <Caps until={END0} />
       <Sequence from={Math.round(END0 * FPS)} layout="absolute-fill">
         <EndOverlay />
