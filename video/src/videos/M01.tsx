@@ -26,17 +26,16 @@ const SHOTS: Shot[] = [
   { n: 7, a: 17.65, b: END0, off: 0.5 },
   { n: 8, a: END0, b: M01_LEN, rate: 0.93, off: 0 },
 ];
-const EMPH = /^(twenty|dollars|why|itch|odor|two|warm|damp|cotton|cheap|hike)/;
 const clean = (w: string) => w.toLowerCase().replace(/[^a-z0-9$]/g, "");
-const SHAKES = [1.45, ...words.filter((w) => EMPH.test(clean(w.w)) && w.s < END0).map((w) => w.s)];
+const SHAKES = [1.45];
 
 const useG = () => useCurrentFrame() / FPS;
 const shake = (t: number) => {
   let x = 0, y = 0;
   for (const s of SHAKES) {
     const k = at(t, [s, s + 0.03, s + 0.25], [0, 0.8, 0]);
-    x += Math.sin(t * 90) * 14 * k;
-    y += Math.cos(t * 77) * 10 * k;
+    x += Math.sin(t * 90) * 8 * k;
+    y += Math.cos(t * 77) * 6 * k;
   }
   return { x, y };
 };
@@ -45,8 +44,8 @@ const ClipLayer: React.FC<{ s: Shot }> = ({ s }) => {
   const f = useCurrentFrame();
   const lt = f / FPS;
   const d = s.b - s.a;
-  const punch = at(lt, [0, 0.28], [1.12, 1], outExpo);
-  const blur = at(lt, [0, 0.22], [10, 0]);
+  const punch = at(lt, [0, 0.35], [1.05, 1], outExpo);
+  const blur = at(lt, [0, 0.18], [5, 0]);
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       <OffthreadVideo
@@ -61,7 +60,8 @@ const ClipLayer: React.FC<{ s: Shot }> = ({ s }) => {
   );
 };
 
-// OpusClip-style captions: 1-2 big words in the middle, white with a heavy black outline, each word pops in with a bounce
+// calm, readable captions: 2-4 words in the lower third, whole phrase shown at once, spoken word full white,
+// next words softer; the phrase fades up gently (no bounce, no tilt, no shake)
 const groups = (() => {
   const g: Word[][] = [];
   let cur: Word[] = [];
@@ -69,7 +69,7 @@ const groups = (() => {
     cur.push(w);
     const punct = /[,.?!]$/.test(w.w);
     const gap = i < words.length - 1 ? words[i + 1].s - w.e : 1;
-    if (cur.length >= 2 || punct || gap > 0.22 || EMPH.test(clean(w.w))) {
+    if (cur.length >= 4 || punct || gap > 0.25) {
       g.push(cur);
       cur = [];
     }
@@ -82,21 +82,19 @@ const Caps: React.FC<{ until: number }> = ({ until }) => {
   const t = useG();
   if (isClean() || t >= until) return null;
   const idx = groups.findIndex((c, i) => {
-    const start = c[0].s - 0.04;
-    const end = i < groups.length - 1 ? groups[i + 1][0].s - 0.04 : c[c.length - 1].e + 0.3;
+    const start = c[0].s - 0.06;
+    const end = i < groups.length - 1 ? groups[i + 1][0].s - 0.06 : c[c.length - 1].e + 0.35;
     return t >= start && t < end;
   });
   if (idx < 0) return null;
   const c = groups[idx];
-  const tilt = idx % 3 === 0 ? -2.5 : idx % 3 === 1 ? 2 : 0;
+  const t0 = c[0].s - 0.06;
   return (
-    <div style={{ position: "absolute", left: 40, right: 40, top: 1120, display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "0 26px", rotate: `${tilt}deg` }}>
+    <div style={{ position: "absolute", left: 90, right: 90, top: 1330, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "4px 22px", opacity: at(t, [t0, t0 + 0.14], [0, 1]), translate: `0px ${at(t, [t0, t0 + 0.3], [18, 0], outExpo)}px` }}>
       {c.map((w, i) => {
-        if (t < w.s - 0.04) return null;
         const show = SHOW[clean(w.w)] ?? w.w.replace(/[.,]$/, "");
         if (!show) return null;
-        const big = EMPH.test(clean(w.w));
-        const s0 = w.s - 0.04;
+        const on = t >= w.s - 0.04;
         return (
           <span
             key={i}
@@ -104,17 +102,14 @@ const Caps: React.FC<{ until: number }> = ({ until }) => {
               display: "inline-block",
               fontFamily: HEAD,
               fontWeight: 800,
-              fontSize: big ? 190 : 140,
-              lineHeight: 1,
-              letterSpacing: 1,
+              fontSize: 104,
+              lineHeight: 1.04,
+              letterSpacing: 1.5,
               textTransform: "uppercase",
-              color: "#fff",
-              WebkitTextStroke: big ? "16px #000" : "13px #000",
+              color: on ? "#fff" : "rgba(255,255,255,0.55)",
+              WebkitTextStroke: "7px rgba(0,0,0,0.85)",
               paintOrder: "stroke fill",
-              textShadow: "0 12px 0 rgba(0,0,0,0.35), 0 18px 40px rgba(0,0,0,0.45)",
-              scale: `${at(t, [s0, s0 + 0.07, s0 + 0.16, s0 + 0.24], [0.35, 1.22, 0.94, 1])}`,
-              translate: `0px ${at(t, [s0, s0 + 0.09, s0 + 0.2], [40, -14, 0])}px`,
-              opacity: at(t, [s0, s0 + 0.05], [0, 1]),
+              textShadow: "0 6px 26px rgba(0,0,0,0.55)",
             }}
           >
             {show}
@@ -130,7 +125,7 @@ const Label: React.FC<{ text: string; t0: number; t1: number }> = ({ text, t0, t
   const t = useG();
   if (isClean() || t < t0 || t > t1) return null;
   return (
-    <div style={{ position: "absolute", top: 200, left: 80, fontFamily: HEAD, fontWeight: 800, fontSize: 64, letterSpacing: 10, color: "#fff", WebkitTextStroke: "8px #000", paintOrder: "stroke fill", opacity: Math.min(at(t, [t0, t0 + 0.15], [0, 1]), at(t, [t1 - 0.15, t1], [1, 0])), translate: `${at(t, [t0, t0 + 0.35], [-60, 0], outExpo)}px 0px` }}>
+    <div style={{ position: "absolute", top: 200, left: 80, fontFamily: HEAD, fontWeight: 700, fontSize: 52, letterSpacing: 10, color: "#fff", textShadow: "0 3px 16px rgba(0,0,0,0.6)", opacity: Math.min(at(t, [t0, t0 + 0.15], [0, 1]), at(t, [t1 - 0.15, t1], [1, 0])), translate: `${at(t, [t0, t0 + 0.35], [-60, 0], outExpo)}px 0px` }}>
       {text}
     </div>
   );
