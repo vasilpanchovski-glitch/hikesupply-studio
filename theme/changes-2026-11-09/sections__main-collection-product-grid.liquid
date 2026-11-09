@@ -228,7 +228,8 @@
         .then(function (html) {
           var doc = new DOMParser().parseFromString(html, 'text/html');
           var grid = document.getElementById('product-grid');
-          doc.querySelectorAll('#product-grid > li').forEach(function (li) {
+          if (grid && grid.tagName !== 'UL') grid = grid.querySelector('ul');
+          doc.querySelectorAll('#product-grid > li, #product-grid > ul > li').forEach(function (li) {
             li.classList.remove('scroll-trigger', 'animate--slide-in', 'scroll-trigger--offscreen');
             grid.appendChild(document.importNode(li, true));
           });
