@@ -284,7 +284,7 @@ page("""<div class="kicker">Keep going</div><h2>More from HikeSupply</h2>
 <p class="lead">Made in the same style, printable, and written for hikers in the US and Canada.</p>
 <div class="mr">
 <div><div><small>Log every hike</small><b>Hiking Journal &amp; Trail Log</b></div><p>A page for every hike you do, not just the summits: trail, distance, weather, who came along and what you saw.</p></div>
-<div><div><small>Another list to finish</small><b>US National Parks Hiking Tracker</b></div><p>All 63 US national parks plus Canada's, with a board to color in and a page for each visit.</p></div>
+<div><div><small>Another list to finish</small><b>US National Parks Hiking Tracker</b></div><p>All 64 US national parks plus Canada's, with a board to color in and a page for each visit.</p></div>
 <div><div><small>Get ready for bigger peaks</small><b>Trail Ready</b></div><p>An 8-week beginner hiking training plan that builds up the legs and lungs for longer days and bigger climbs.</p></div>
 </div>
 <p style="margin-top:18pt;font:600 11pt/1.4 var(--sans);letter-spacing:.06em;color:var(--forest);text-align:center">hikesupplyco.com</p>""")

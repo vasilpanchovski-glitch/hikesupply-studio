@@ -1,5 +1,5 @@
-"""Generates index.html for p04 (US National Parks Hiking Tracker, all 63 parks + Canada). Run: python3 gen.py
-Park facts checked against nps.gov and parks.canada.ca in October 2026."""
+"""Generates index.html for p04 (US National Parks Hiking Tracker, all 64 parks + Canada). Run: python3 gen.py
+Park facts checked against nps.gov and parks.canada.ca in October 2026; Chiricahua (64th park) added November 2026."""
 import os
 T = "National Parks Hiking Tracker"
 CHECKED = "October 2026"
@@ -25,6 +25,7 @@ P = [
  ("Capitol Reef", "UT", "Mar to May, Sep to Oct", "Hickman Bridge Trail", 1.8, "RT", 400, "Moderate", "No reservation needed.", 0),
  ("Carlsbad Caverns", "NM", "Year-round", "Big Room Trail (inside the cave)", 1.25, "loop", None, "Easy", "Timed-entry reservation needed for the cavern.", 0),
  ("Channel Islands", "CA", "Mar to May, Sep to Nov", "Cavern Point Loop, Santa Cruz Island", 2.0, "loop", None, "Moderate", "Boat only. Book the ferry ahead.", 0),
+ ("Chiricahua", "AZ", "Mar to May, Sep to Nov", "Echo Canyon Trail to the Grottoes", "About 1 mi / 1.6 km RT", "", 200, "Easy to moderate, steep and rocky", "No entrance fee. Full Echo Canyon Loop: 3.4 mi / 5.5 km.", 0),
  ("Congaree", "SC", "Oct to Apr", "Boardwalk Loop Trail", 2.6, "loop", "flat", "Easy", "No entrance fee. Low spots can flood.", 0),
  ("Crater Lake", "OR", "Jul to Sep", "Sun Notch Trail", 0.8, "loop", 150, "Easy", "Trails often under snow Dec to Jun.", 0),
  ("Cuyahoga Valley", "OH", "Apr to Oct", "Brandywine Gorge Loop", 1.5, "loop", 160, "Easy", "No entrance fee. Parking is limited.", 0),
@@ -77,7 +78,7 @@ P = [
  ("Yosemite", "CA", "Apr to Jun", "Lower Yosemite Fall Trail", 1.0, "loop", 50, "Easy, paved", "No reservation in 2026. The fall is often dry by late summer.", 1),
  ("Zion", "UT", "Mar to May, Sep to Nov", "Riverside Walk", "About 2 mi / 3.2 km RT", "", 154, "Easy, paved", "Shuttle on the scenic drive most of the year.", 1),
 ]
-assert len(P) == 63, len(P)
+assert len(P) == 64, len(P)
 
 def dist(p):
     mi, kind = p[4], p[5]
@@ -161,13 +162,13 @@ CSS = """<style>
 .seas h3{margin:0 0 2pt;font-size:12.5pt}
 .seas p{margin:0;font-size:8.4pt;color:#6B6B66}
 .seas .wl{height:21pt}
-.cnt{display:grid;grid-template-columns:repeat(9,1fr);gap:5pt}
-.cnt div{height:0.52in;border:1pt solid #CFC7B6;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font:600 8.5pt/1 var(--serif);color:#A39C8D}
+.cnt{display:grid;grid-template-columns:repeat(8,1fr);gap:5pt}
+.cnt div{height:0.44in;width:0.44in;justify-self:center;border:1pt solid #CFC7B6;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font:600 8.5pt/1 var(--serif);color:#A39C8D}
 .cnt div.ms{border:1.6pt solid var(--clay);color:var(--clay)}
 .sts{display:grid;grid-template-columns:repeat(8,1fr);gap:5pt}
 .sts div{border:1pt solid #CFC7B6;border-radius:5pt;background:#fff;text-align:center;padding:5pt 0;font:700 8.5pt/1 var(--sans);letter-spacing:.06em;color:var(--forest)}
 .tot{display:grid;grid-template-columns:repeat(4,1fr);gap:10pt;margin-top:8pt}
-.tot>div{background:var(--soft);border-radius:8pt;padding:10pt 12pt;height:1.0in;font:700 7.2pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest)}
+.tot>div{background:var(--soft);border-radius:8pt;padding:10pt 12pt;height:0.85in;font:700 7.2pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest)}
 .lnt{display:grid;grid-template-columns:1fr 1fr;gap:4pt 18pt}
 .lnt>div{display:grid;grid-template-columns:24pt 1fr;gap:8pt;padding:11pt 0;border-bottom:0.6pt solid var(--line)}
 .lnt .n{font:600 16pt/1 var(--serif);color:var(--clay)}
@@ -222,12 +223,12 @@ page(f'''<div class="cphoto"></div><div class="cshade"></div><div class="brand" 
 <g transform="translate(14 4)">
  <circle cx="70" cy="70" r="66" fill="#F5F1EA" stroke="#F5F1EA"/>
  <circle cx="70" cy="70" r="57" stroke="#2C3B2E" stroke-width="2" stroke-dasharray="3 5"/>
- <text x="70" y="70" text-anchor="middle" font-family="Fraunces" font-weight="600" font-size="40" fill="#2C3B2E">63</text>
+ <text x="70" y="70" text-anchor="middle" font-family="Fraunces" font-weight="600" font-size="40" fill="#2C3B2E">64</text>
  <text x="70" y="90" text-anchor="middle" font-family="Inter" font-weight="700" font-size="9" letter-spacing="2.4" fill="#B85C38">US PARKS</text>
  <text x="70" y="104" text-anchor="middle" font-family="Inter" font-weight="700" font-size="7.5" letter-spacing="2" fill="#2C3B2E">+ CANADA</text>
 </g>
 </svg></div>
-<div style="position:relative"><h1>National Parks Hiking Tracker</h1><p class="sub" style="max-width:6.2in">All 63 US national parks, A to Z, each with one easy-to-plan day hike in miles and kilometers, a stamp box and a visit log. Plus Canada's national parks and reserves.</p>
+<div style="position:relative"><h1>National Parks Hiking Tracker</h1><p class="sub" style="max-width:6.2in">All 64 US national parks, A to Z, each with one easy-to-plan day hike in miles and kilometers, a stamp box and a visit log. Plus Canada's national parks and reserves.</p>
 <div class="meta" style="margin-top:22pt"><span>26 printable pages</span><span>mi + km, ft + m</span><span>Checked against nps.gov, {CHECKED}</span></div></div>''', 0, "cover photo")
 
 # ---------- 2 how to use
@@ -235,7 +236,7 @@ page(f'''<div class="kicker">Start here</div><h2>How to use this tracker</h2>
 <p class="lead">One page per eight parks, in alphabetical order, so you can find any park in seconds. Tick it off, add the date, and press your passport stamp or a sticker into the box.</p>
 <div class="steps2">
 <div><div class="n">1</div><div><h3>Print</h3><p>Print at Actual size on US Letter. An A4 file and a low-ink printer-friendly file are included. Card stock holds stamps and glue best. Reprint any page for your own use as often as you like.</p></div></div>
-<div><div class="n">2</div><div><h3>Check off</h3><p>Page 3 lists all 63 parks on one sheet. Tick each park as you visit, then fill in its full card on pages 4 to 11.</p></div></div>
+<div><div class="n">2</div><div><h3>Check off</h3><p>Page 3 lists all 64 parks on one sheet. Tick each park as you visit, then fill in its full card on pages 4 to 11.</p></div></div>
 <div><div class="n">3</div><div><h3>Stamp</h3><p>Most visitor centers have a free cancellation stamp for park passport books. Ink it right into the stamp box, or add a ticket stub or sticker.</p></div></div>
 <div><div class="n">4</div><div><h3>Log</h3><p>Use the visit log on pages 18 to 21 for the full story, and the two blank pages at the back for extra stamps, sketches and photos.</p></div></div></div>
 <h3>How to read a park card</h3>
@@ -249,10 +250,10 @@ page(f'''<div class="kicker">Start here</div><h2>How to use this tracker</h2>
 
 # ---------- 3 A-Z overview
 az = "".join(f'<div><b>{k}</b><i></i><span>{p[0]}</span><em>{p[1].replace(" ", "")}</em></div>' for k, p in enumerate(P, 1))
-page(f'''<div class="kicker">The whole list on one page</div><h2>The 63 US national parks, A to Z</h2>
+page(f'''<div class="kicker">The whole list on one page</div><h2>The 64 US national parks, A to Z</h2>
 <p style="margin-bottom:10pt">Tick each park the day you visit. Pages 4 to 11 have a full card for every park in the same order.</p>
 <div class="az">{az}</div>
-<div class="f3" style="margin-top:12pt"><div class="fl">Parks visited<span class="u"><b></b> of 63</span></div><div class="fl">First park</div><div class="fl">Latest park</div></div>''', 3)
+<div class="f3" style="margin-top:12pt"><div class="fl">Parks visited<span class="u"><b></b> of 64</span></div><div class="fl">First park</div><div class="fl">Latest park</div></div>''', 3)
 
 # ---------- 4-11 park pages
 def card(p):
@@ -271,7 +272,7 @@ for i in range(0, 64, 8):
     grp = P[i:i + 8]
     cards = "".join(card(p) for p in grp)
     if len(grp) < 8:
-        cards += ('<div class="pk blank"><div class="kicker" style="margin-bottom:5pt">All 63 done?</div>'
+        cards += ('<div class="pk blank"><div class="kicker" style="margin-bottom:5pt">All 64 done?</div>'
                   '<h3 style="margin:0 0 6pt">Date I finished</h3><div class="wl"></div>'
                   '<h3 style="margin:10pt 0 6pt">Favorite park of all</h3><div class="wl"></div></div>')
     page(f'''<div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Parks A to Z · {i // 8 + 1} of 8</div><h2>{grp[0][0]} to {grp[-1][0]}</h2></div><div class="r">Distances and gains<br>as listed by NPS</div></div>
@@ -299,7 +300,7 @@ page(f'''<div class="kicker">Farthest from the mainland</div><h2>The two territo
 
 # ---------- 13 checked + alerts
 page(f'''<div class="kicker">Before every trip</div><h2>Checked against nps.gov in {CHECKED}</h2>
-<p class="lead">Every park, trail, distance and entry note in this tracker was checked against the official National Park Service pages in {CHECKED}. Parks change their rules often, so here is how to check the latest in two minutes.</p>
+<p class="lead">Every park, trail, distance and entry note in this tracker was checked against the official National Park Service pages in {CHECKED} (Chiricahua, the newest park, in November 2026). Parks change their rules often, so here is how to check the latest in two minutes.</p>
 <div class="steps2">
 <div><div class="n">1</div><div><h3>Open the park page</h3><p>Search "nps.gov" plus the park name. Any alert sits in a banner at the top of every page: closures, fire, flooding, road work.</p></div></div>
 <div><div class="n">2</div><div><h3>Check your trail</h3><p>Look under Plan Your Visit, then Conditions or Trail Closures. Trails close for storms, rebuilding and wildlife.</p></div></div>
@@ -307,6 +308,7 @@ page(f'''<div class="kicker">Before every trip</div><h2>Checked against nps.gov 
 <div><div class="n">4</div><div><h3>Ask a ranger</h3><p>Call the visitor center or stop by when you arrive. Rangers know today's trail, weather and wildlife conditions better than any app.</p></div></div></div>
 <h3>What changed for 2026</h3>
 <table><tr><th>Park</th><th>2026 rule, as listed on nps.gov</th></tr>
+<tr><td>Chiricahua (AZ)</td><td>Became the 64th national park on October 20, 2026. No entrance fee.</td></tr>
 <tr><td>Arches, Glacier, Yosemite</td><td>No timed-entry or vehicle reservation this year.</td></tr>
 <tr><td>Rocky Mountain</td><td>Timed entry kept, late May to mid-October.</td></tr>
 <tr><td>Acadia</td><td>Vehicle reservation for Cadillac Summit Road, late May to late October.</td></tr>
@@ -410,8 +412,8 @@ for k in range(4):
     page(f'<div class="kicker">Visit log · {k + 1} of 4</div><h2 style="margin-bottom:12pt">Park visits</h2>{logbox()}{logbox()}', 18 + k)
 
 # ---------- 22 stats
-ms = {10, 25, 50, 63}
-cnt = "".join(f'<div class="{"ms" if i in ms else ""}">{i}</div>' for i in range(1, 64))
+ms = {10, 25, 50, 64}
+cnt = "".join(f'<div class="{"ms" if i in ms else ""}">{i}</div>' for i in range(1, 65))
 ST = ["AK", "AZ", "AR", "CA", "CO", "FL", "HI", "ID", "IN", "KY", "ME", "MI", "MN", "MO", "MT", "NV",
       "NM", "NC", "ND", "OH", "OR", "SC", "SD", "TN", "TX", "UT", "VA", "WA", "WV", "WY", "AS", "VI"]
 sts = "".join(f'<div>{s}</div>' for s in ST)
@@ -423,7 +425,8 @@ page(f'''<div class="kicker">Keep count</div><h2>My park stats</h2>
 <div class="sts">{sts}</div>
 <h3 style="margin-top:14pt">Totals</h3>
 <div class="tot"><div>US parks</div><div>Canadian parks</div><div>Miles hiked</div><div>Kilometers hiked</div></div>
-<div class="f2" style="margin-top:10pt"><div class="fl">Longest hike<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Most gain<span class="u"><b></b> ft / <b></b> m</span></div></div>
+<div class="f2" style="margin-top:10pt"><div class="fl">All 64 done on</div><div class="fl">Favorite park of all</div></div>
+<div class="f2" style="margin-top:4pt"><div class="fl">Longest hike<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Most gain<span class="u"><b></b> ft / <b></b> m</span></div></div>
 <p class="small" style="margin-top:10pt">Handy to know: 1 mile is about 1.6 kilometers, and 1,000 feet is about 305 meters.</p>''', 22)
 
 # ---------- 23 etiquette + LNT

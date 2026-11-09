@@ -470,7 +470,7 @@ page("""<div class="brand" style="font:700 9pt/1 var(--sans);letter-spacing:.3em
 <h2 style="margin-top:22pt">Enjoy the Rockies</h2>
 <p>Thank you for choosing a HikeSupply guide. Book your timed entry first, start every hike early, take the first day slow, and give the elk plenty of room.</p>
 <p style="margin-top:10pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">Plan your next adventure</p>
-<div class="bkcards" style="grid-template-columns:1fr 1fr 1fr;width:6.4in"><div><b>US National Parks Hiking Tracker</b><span>Log every park you visit, all 63 plus Canada</span></div><div><b>Trail Ready</b><span>8-week beginner hiking training plan</span></div><div><b>Park trip guides</b><span>Smokies, Utah's Mighty 5, Yellowstone, Grand Canyon</span></div></div>
+<div class="bkcards" style="grid-template-columns:1fr 1fr 1fr;width:6.4in"><div><b>US National Parks Hiking Tracker</b><span>Log every park you visit, all 64 plus Canada</span></div><div><b>Trail Ready</b><span>8-week beginner hiking training plan</span></div><div><b>Park trip guides</b><span>Smokies, Utah's Mighty 5, Yellowstone, Grand Canyon</span></div></div>
 <p style="margin-top:14pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">hikesupplyco.com</p>
 <p class="small" style="color:#AEB8AA;margin-top:24pt">General trip planning information only. Timed entry, roads, closures, fees and rules change: always check nps.gov/romo and ask a ranger before you hike. Hike within your ability and turn back when in doubt. Not affiliated with the National Park Service. For personal use only. COVERCREDIT</p>""", "back")
 

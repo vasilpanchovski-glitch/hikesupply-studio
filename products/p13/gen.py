@@ -379,7 +379,7 @@ page("""<div class="brand" style="font:700 9pt/1 var(--sans);letter-spacing:.3em
 <h2 style="margin-top:22pt">Here's to a great year outside</h2>
 <p>Thank you for choosing a HikeSupply planner. Start small, go often, and write it all down. The hikes you plan this year become the stories you tell next year.</p>
 <p style="margin-top:10pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">Keep going</p>
-<div class="bkcards" style="grid-template-columns:1fr 1fr 1fr;width:6.4in"><div><b>Hiking Journal &amp; Trail Log</b><span>A page for every hike you do</span></div><div><b>US National Parks Hiking Tracker</b><span>All 63 parks plus Canada</span></div><div><b>Trail Ready</b><span>8-week beginner hiking training plan</span></div></div>
+<div class="bkcards" style="grid-template-columns:1fr 1fr 1fr;width:6.4in"><div><b>Hiking Journal &amp; Trail Log</b><span>A page for every hike you do</span></div><div><b>US National Parks Hiking Tracker</b><span>All 64 parks plus Canada</span></div><div><b>Trail Ready</b><span>8-week beginner hiking training plan</span></div></div>
 <p style="margin-top:14pt;font:600 10pt/1.4 var(--sans);letter-spacing:.06em">hikesupplyco.com</p>
 <p class="small" style="color:#AEB8AA;margin-top:24pt">General planning information only. Holidays shown are US federal and Canadian federal statutory holidays plus some provincial holidays; your employer, state or province may differ. Seasonal tips are general: check official park, forest and weather sources before every hike, hike within your ability and turn back when in doubt. For personal use only. COVERCREDIT</p>""", "back")
 
