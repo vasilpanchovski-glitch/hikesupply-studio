@@ -1,0 +1,56 @@
+{%- comment -%} Extra story sections for the merino socks page (Vasil 2026-11-09). One-colour headings, true facts only. {%- endcomment -%}
+<div class="hsc-sx page-width">
+  <h2 class="hsc-sx__h">Why merino on the trail</h2>
+  <div class="hsc-sx__cards">
+    <div class="hsc-sx__card"><h3>Warm even when damp</h3><p>Wool keeps insulating when it gets wet from a creek crossing or sweat. Cotton goes cold and heavy.</p></div>
+    <div class="hsc-sx__card"><h3>Fresh on day two</h3><p>Merino resists odor naturally, so one pair can do two days on a trip. Cozy in camp too.</p></div>
+    <div class="hsc-sx__card"><h3>Cushioned where it counts</h3><p>A padded sole takes the sting out of long descents and helps keep blisters away.</p></div>
+  </div>
+
+  {%- assign pics = '' -%}
+  <h2 class="hsc-sx__h">Made for the whole trip</h2>
+  <div class="hsc-sx__pics">
+    {%- for m in product.media -%}
+      {%- if m.alt contains 'creek' or m.alt contains 'tent' -%}
+        <div class="hsc-sx__pic">{{ m.preview_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '400,600,800,1200', sizes: '(min-width: 750px) 50vw, 100vw', alt: m.alt }}</div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  <h2 class="hsc-sx__h">Merino vs. cotton</h2>
+  <table class="hsc-sx__t">
+    <thead><tr><th></th><th>Our merino</th><th>Cotton socks</th></tr></thead>
+    <tbody>
+      <tr><td>When wet</td><td>Stays warm</td><td>Goes cold</td></tr>
+      <tr><td>Sweat</td><td>Wicks it away</td><td>Soaks it up</td></tr>
+      <tr><td>Odor</td><td>Resists it</td><td>Smells fast</td></tr>
+      <tr><td>Blisters</td><td>Drier feet, less rubbing</td><td>More rubbing when damp</td></tr>
+      <tr><td>Fabric</td><td>80% merino, 15% polyester, 4% nylon, 1% spandex</td><td>Mostly cotton</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="hsc-sx__h">Find your size</h2>
+  <div class="hsc-sx__sizes">
+    <div class="hsc-sx__card"><h3>Smaller · EU 36–40</h3><p>US women 6–9 · men 4–7</p></div>
+    <div class="hsc-sx__card"><h3>Larger · EU 40–45</h3><p>US men 7–11 · women 9–12</p></div>
+  </div>
+  <p class="hsc-sx__small">Between sizes? EU 40 fits both. Wide feet or thick insoles: take the larger size.</p>
+</div>
+<style>
+.hsc-sx{padding-top:2rem;padding-bottom:2rem}
+.hsc-sx__h{margin:4rem 0 1.6rem}
+.hsc-sx__cards{display:grid;gap:1.2rem;grid-template-columns:1fr}
+.hsc-sx__sizes{display:grid;gap:1.2rem;grid-template-columns:1fr 1fr}
+.hsc-sx__card{border:1px solid rgba(var(--color-foreground),.15);border-radius:1rem;padding:1.8rem 2rem;background:rgba(var(--color-foreground),.03)}
+.hsc-sx__card h3{margin:0 0 .6rem;font-size:1.8rem}
+.hsc-sx__card p{margin:0;font-size:1.45rem;line-height:1.5}
+.hsc-sx__pics{display:grid;gap:1.2rem;grid-template-columns:1fr}
+.hsc-sx__pic img{width:100%;height:auto;border-radius:1rem;display:block}
+.hsc-sx__t{width:100%;border-collapse:collapse;font-size:1.45rem}
+.hsc-sx__t th,.hsc-sx__t td{padding:1rem 1.2rem;border-bottom:1px solid rgba(var(--color-foreground),.15);text-align:left;vertical-align:top}
+.hsc-sx__t th{font-weight:600}
+.hsc-sx__t td:first-child{font-weight:600;width:22%}
+.hsc-sx__t td:nth-child(2){background:rgba(var(--color-foreground),.04)}
+.hsc-sx__small{font-size:1.3rem;opacity:.75;margin-top:1rem}
+@media screen and (min-width:750px){.hsc-sx__cards{grid-template-columns:repeat(3,1fr)}.hsc-sx__pics{grid-template-columns:1fr 1fr}}
+</style>

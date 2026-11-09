@@ -1,0 +1,47 @@
+{%- comment -%} Pair deal selector for the merino socks (offer o25: 2 pairs 10% off, 3+ pairs 15% off, automatic discounts). Prices use the same per-pair rounding as Shopify's discount. {%- endcomment -%}
+{%- assign v = product.selected_or_first_available_variant -%}
+{%- assign p = v.price -%}
+{%- assign d2 = p | times: 10 | divided_by: 100 -%}
+{%- assign d3 = p | times: 15 | divided_by: 100 -%}
+{%- assign each2 = p | minus: d2 -%}
+{%- assign each3 = p | minus: d3 -%}
+<div class="hsc-deal" data-hsc-deal>
+  <p class="hsc-deal__label">How many pairs?</p>
+  <label class="hsc-deal__opt is-on"><input type="radio" name="hsc-pairs" value="1" checked>
+    <span class="hsc-deal__txt"><b>1 pair</b><small>Try them on the trail</small></span>
+    <span class="hsc-deal__price">{{ p | money }}</span></label>
+  <label class="hsc-deal__opt"><input type="radio" name="hsc-pairs" value="2">
+    <span class="hsc-deal__txt"><b>2 pairs, save 10%</b><small>One to wear, one drying · {{ each2 | money }} a pair</small></span>
+    <span class="hsc-deal__price">{{ each2 | times: 2 | money }}<s>{{ p | times: 2 | money }}</s></span></label>
+  <label class="hsc-deal__opt"><input type="radio" name="hsc-pairs" value="3">
+    <span class="hsc-deal__txt"><b>3 pairs, save 15%</b><small>A pair for each day of a 3-day trip · {{ each3 | money }} a pair</small></span>
+    <span class="hsc-deal__price">{{ each3 | times: 3 | money }}<s>{{ p | times: 3 | money }}</s></span></label>
+  <p class="hsc-deal__note">Mix colors and sizes in the cart. The saving is applied automatically at checkout.</p>
+  <input type="hidden" name="quantity" value="1" form="{{ product_form_id }}" data-hsc-qty>
+</div>
+<style>
+.hsc-deal{margin:1.6rem 0 0}
+.hsc-deal__label{font-weight:600;margin:0 0 .8rem;font-size:1.5rem}
+.hsc-deal__opt{display:flex;align-items:center;gap:1.2rem;border:1px solid rgba(var(--color-foreground),.2);border-radius:.8rem;padding:1.2rem 1.4rem;margin-bottom:.8rem;cursor:pointer;background:rgb(var(--color-background))}
+.hsc-deal__opt.is-on{border:2px solid rgb(var(--color-foreground));padding:1.1rem 1.3rem}
+.hsc-deal__opt input{accent-color:rgb(var(--color-foreground));width:1.8rem;height:1.8rem;margin:0}
+.hsc-deal__txt{flex:1;display:flex;flex-direction:column;line-height:1.35}
+.hsc-deal__txt b{font-size:1.5rem}
+.hsc-deal__txt small{font-size:1.25rem;opacity:.75}
+.hsc-deal__price{text-align:right;font-weight:600;font-size:1.5rem;display:flex;flex-direction:column}
+.hsc-deal__price s{font-weight:400;font-size:1.2rem;opacity:.6}
+.hsc-deal__note{font-size:1.25rem;opacity:.75;margin:.4rem 0 0}
+</style>
+<script>
+(function(){
+  var box=document.currentScript.previousElementSibling.previousElementSibling;
+  var qty=box.querySelector('[data-hsc-qty]');
+  box.querySelectorAll('input[name="hsc-pairs"]').forEach(function(r){
+    r.addEventListener('change',function(){
+      box.querySelectorAll('.hsc-deal__opt').forEach(function(o){o.classList.toggle('is-on',o.contains(r))});
+      qty.value=r.value;
+      document.querySelectorAll('input[name="quantity"][form="'+qty.getAttribute('form')+'"]').forEach(function(i){i.value=r.value});
+    });
+  });
+})();
+</script>
