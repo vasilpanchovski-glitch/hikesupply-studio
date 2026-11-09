@@ -3,7 +3,7 @@
 Runs daily at 17:02 Skopje on Vasil's PC, using Claude in Chrome (his logged-in AliExpress, DSers and Shopify). Job: import approved product ideas into Shopify as drafts through DSers.
 
 1. Set `agents/importer` to working (HQ database via ArtifactData).
-2. Read open `requests` with `to: "importer", done: false` and do them first (rules below). Then read `gear` for `stage: idea, status: approved`. Take at most 2. Then do the Gear check below. If there is nothing to import, check or request, set idle and stop.
+2. Read open `requests` with `to: "importer", done: false` and do them first (rules below). Then read `gear` for `stage: idea, status: approved`. Take at most 2. Then do the Gear check below. Then do the Stock watch below (every day, always). If there is nothing to import, check or request, set idle and stop.
    Also check `products` for `etsy: "ready"` and do the Etsy part below, even when there is nothing to import and even when DSers is logged out.
 3. Load the Chrome tools (one ToolSearch call) and read the chrome-browser skill first. Work in a new tab; close your tabs at the end.
    If dsers.com shows its login page, do not type a password: open Shopify admin > Settings > Apps > DSers > "Open app". That signs DSers in through Shopify in a new tab (worked on 2026-11-04). Only if that also fails, treat DSers as logged out.
@@ -15,6 +15,16 @@ Runs daily at 17:02 Skopje on Vasil's PC, using Claude in Chrome (his logged-in 
    - Find it in Shopify, set `shopifyId`, `adminUrl`, `stage: imported, status: approved` so the Listing Editor picks it up.
 5. Never buy anything, never change DSers or Shopify settings, never accept new app permissions, never place orders. If DSers asks for anything like that, stop, set error, and explain.
 6. Log one line per import, set idle with lastRun and nextRun.
+
+## Stock watch (every day, first thing in Chrome; Vasil 2026-11-09)
+Goal: we never sell what the supplier cannot ship, and the products that sell never run out. The list is `stock/watch.json` (pull the repo first).
+1. Open DSers through Shopify (admin.shopify.com/store/hikesupply-co-2/apps/dsers-1, never dsers.com directly). My Products, open the card `dsersTitle`, Variants tab, read "Stock on Supplier" for every variant.
+2. With the Shopify tools set each variant's available quantity to the supplier stock (inventorySetQuantities with `@idempotent`, reason `correction`). Inventory policy stays DENY, so a colour or size that runs out shows sold out instead of taking orders we cannot fill.
+3. Write the numbers into `lastCheck` in `stock/watch.json`, commit and push. Log one line ("Socks stock: 6 of 8 variants fine, Black/Grey L 4 left").
+4. Backups: every product in the list must have at least 2 verified backup listings of the SAME product (same knit pattern, same colours, same 80% merino spec, same sizes). If it has fewer, search AliExpress in Chrome (sort by orders) and vet them with every rule in CLAUDE.md "Store rules" (rating 4.6+, real orders, US delivery 13 business days or less, real stock in the sizes we sell, especially the large size). Record each passing one in `backups`: `{url, store, rating, orders, costPerVariant, stockPerVariant, deliveryDays, checked}`. Re-check saved backups once a week.
+5. Switching: when a variant on the main supplier is below `low` and a backup has that variant with real stock, change that variant's supplier in DSers to the backup (card > Mapping > Basic mapping, pick the backup for that variant only). Allowed only when the backup cost is at most $1 higher per pair. Then update Shopify quantity and the variant cost (inventoryItem.cost). Log it and add a `log` line. This mapping change is the one DSers change you may make; never touch DSers settings, plans or payments.
+6. If a variant is below `low` and no backup has it: leave it to sell out (DENY does that), and write a request to the Hunter `{to: "hunter", type: "supplier", text: "<product> <variant>: main supplier has <n> left, no backup found"}`. Never a separate message to Vasil.
+7. Every sale of a watched product: also compare our total orders for it this week with the stock left; if any variant would run out within 2 weeks at that pace, treat it as below `low`.
 
 ## Gear check (every day, before the Bing part; Vasil 2026-10-26: keep searching until proper products are found)
 The cloud cannot see AliExpress, so this is where product ideas are proven. Goal: Vasil always has 3 good gear ideas waiting.

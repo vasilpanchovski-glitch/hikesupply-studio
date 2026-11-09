@@ -1,0 +1,23 @@
+{
+  "note": "Products whose supplier stock the Importer checks every day in DSers (Vasil 2026-11-09). backups = verified listings of the SAME product to switch to when the main supplier runs low.",
+  "products": [
+    {
+      "handle": "merino-wool-hiking-socks",
+      "shopifyId": "gid://shopify/Product/15391635833139",
+      "dsersTitle": "Merino Wool Hiking Socks — 80% Merino, Cushioned Crew",
+      "low": 30,
+      "variants": {
+        "Navy Blue / S": "gid://shopify/ProductVariant/67576888787251",
+        "Navy Blue / L": "gid://shopify/ProductVariant/67576888820019",
+        "Green / S": "gid://shopify/ProductVariant/67576888852787",
+        "Brown / S": "gid://shopify/ProductVariant/67576888885555",
+        "Green / L": "gid://shopify/ProductVariant/67576888918323",
+        "Black / Grey / S": "gid://shopify/ProductVariant/67576888951091",
+        "Brown / L": "gid://shopify/ProductVariant/67576888983859",
+        "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
+      },
+      "lastCheck": {"date": "2026-11-09", "stock": {"Navy Blue / S": 2, "Navy Blue / L": 22, "Green / S": 492, "Brown / S": 486, "Green / L": 8, "Black / Grey / S": 487, "Brown / L": 477, "Black / Grey / L": 4}},
+      "backups": []
+    }
+  ]
+}
