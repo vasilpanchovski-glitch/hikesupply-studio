@@ -1,6 +1,1 @@
-{"voice":"af_heart","speed":1.0,"lead":0.25,"lines":[
-{"text":"Cold feet all winter?","gap":0.35},
-{"text":"Eighty percent merino keeps them warm, even when damp.","gap":0.3},
-{"text":"For work, snow, the slopes, or the sofa.","gap":0.9},
-{"text":"A gift they'll actually use.","gap":0.3},
-{"text":"Grab three and save fifteen percent.","gap":0.2}]}
+{"voice": "af_heart", "speed": 0.95, "lead": 0.5, "lines": [{"text": "Cold feet all winter?", "gap": 1.523}, {"text": "Eighty percent merino wool keeps them warm, even when damp.", "gap": 0.666}, {"text": "For work.", "gap": 1.885}, {"text": "For snow days.", "gap": 1.548}, {"text": "For the slopes.", "gap": 1.7}, {"text": "Or the sofa.", "gap": 1.779}, {"text": "A gift they'll actually use.", "gap": 1.621}, {"text": "Grab three pairs and save fifteen percent.", "gap": 0.3}]}
