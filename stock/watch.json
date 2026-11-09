@@ -16,8 +16,36 @@
         "Brown / L": "gid://shopify/ProductVariant/67576888983859",
         "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
       },
-      "lastCheck": {"date": "2026-11-09", "stock": {"Navy Blue / S": 2, "Navy Blue / L": 22, "Green / S": 492, "Brown / S": 486, "Green / L": 8, "Black / Grey / S": 487, "Brown / L": 477, "Black / Grey / L": 4}},
-      "backups": []
+      "lastCheck": {
+        "date": "2026-11-09",
+        "stock": {
+          "Navy Blue / S": 2,
+          "Navy Blue / L": 22,
+          "Green / S": 492,
+          "Brown / S": 486,
+          "Green / L": 8,
+          "Black / Grey / S": 487,
+          "Brown / L": 477,
+          "Black / Grey / L": 4
+        }
+      },
+      "backups": [],
+      "candidates": [
+        {
+          "url": "https://www.aliexpress.com/item/3256805148447173.html",
+          "store": "Shop912559517 Store",
+          "rating": 4.9,
+          "sold": "900+",
+          "note": "same knit look, sizes Euro M 36-40 and L 40-45, $5.36 + $1.99 shipping, 7-11 days; colours and stock per variant not checked yet"
+        },
+        {
+          "url": "https://www.aliexpress.com/item/3256808021774915.html",
+          "store": "XIZOU Store",
+          "rating": 4.9,
+          "sold": "360",
+          "note": "same knit look but listed as 4-pack, grey L only 7 left, store 94.6% positive: probably fails"
+        }
+      ]
     }
   ]
 }
