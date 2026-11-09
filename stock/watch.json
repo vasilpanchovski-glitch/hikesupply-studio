@@ -34,16 +34,24 @@
         {
           "url": "https://www.aliexpress.com/item/3256808021774915.html",
           "store": "XIZOU Store",
-          "rating": 4.9,
-          "sold": "360",
-          "note": "same knit look but listed as 4-pack, grey L only 7 left, store 94.6% positive: probably fails"
+          "checked": "2026-11-09",
+          "result": "fail",
+          "note": "Same sock, only one size 42-46 (our large). Choice, $6.38-6.69 + $1.99, 5-9 days. But only 4-7 pairs per colour. Too thin to be a backup."
+        },
+        {
+          "url": "https://www.aliexpress.com/item/3256802378739957.html",
+          "store": "Global Merino Wool Outdoor Store",
+          "checked": "2026-11-09",
+          "result": "emergency only",
+          "note": "Same sock, 4.9 (162 reviews), 1,000+ sold, Choice, 5-9 days. Sold only in packs of 2-3 pairs, about $10.60-11.40 per pair, Euro XL(40-45) = our large, 4-17 packs per option. Costs about $4 more per pair than our main supplier, so above the $1 switching rule: needs Vasil's yes before use."
         }
       ],
       "supplier": {
         "url": "https://www.aliexpress.com/item/3256805148447173.html",
         "store": "Shop912559517 Store",
         "note": "Current main supplier (confirmed from the AliExpress order page 2026-11-09). Restock question about Euro L sent to the seller 2026-11-09 19:12; read the reply in AliExpress Message Center."
-      }
+      },
+      "dsersOptimizer": "2026-11-09: DSers Supplier Optimizer (image search) shows 21 listings; only the 3 above are this exact sock (incl. our main supplier at $6.09-6.95, 182 DSers sales, 4.9). The rest are different socks or multipacks."
     }
   ]
 }
