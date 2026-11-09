@@ -18,16 +18,24 @@
       },
       "lastCheck": {
         "date": "2026-11-09",
+        "time": "18:00Z",
+        "by": "importer",
         "stock": {
           "Navy Blue / S": 2,
-          "Navy Blue / L": 22,
+          "Navy Blue / L": 21,
           "Green / S": 492,
           "Brown / S": 486,
-          "Green / L": 8,
+          "Green / L": 7,
           "Black / Grey / S": 487,
-          "Brown / L": 477,
+          "Brown / L": 476,
           "Black / Grey / L": 4
-        }
+        },
+        "belowLow": [
+          "Navy Blue / S",
+          "Navy Blue / L",
+          "Green / L",
+          "Black / Grey / L"
+        ]
       },
       "backups": [],
       "candidates": [
@@ -44,6 +52,20 @@
           "checked": "2026-11-09",
           "result": "emergency only",
           "note": "Same sock, 4.9 (162 reviews), 1,000+ sold, Choice, 5-9 days. Sold only in packs of 2-3 pairs, about $10.60-11.40 per pair, Euro XL(40-45) = our large, 4-17 packs per option. Costs about $4 more per pair than our main supplier, so above the $1 switching rule: needs Vasil's yes before use."
+        },
+        {
+          "url": "https://www.aliexpress.us/item/3256809442334704.html",
+          "store": "CX Sports Store",
+          "checked": "2026-11-09",
+          "result": "fail",
+          "note": "Same knit look, 5.0, 52 sold, but 7 of 8 variants sold out and $7.33-7.65 per pair."
+        },
+        {
+          "url": "https://www.aliexpress.us/item/3256810311896004.html",
+          "store": "OutAir Store",
+          "checked": "2026-11-09",
+          "result": "fail",
+          "note": "One size only (EU 41-45) at $19.45 per pair."
         }
       ],
       "supplier": {
