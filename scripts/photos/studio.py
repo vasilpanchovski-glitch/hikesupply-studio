@@ -55,8 +55,9 @@ def resize(rgb, a, w, h):
     return col, al
 
 
-FONT_H = "/home/claude/hikesupply-studio/video/public/BarlowCondensed-ExtraBold.ttf"
-FONT_B = "/home/claude/hikesupply-studio/video/public/Inter.ttf"
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+FONT_H = os.path.join(_ROOT, "video/public/BarlowCondensed-ExtraBold.ttf")
+FONT_B = os.path.join(_ROOT, "video/public/Inter.ttf")
 INK = (58, 58, 56)
 
 

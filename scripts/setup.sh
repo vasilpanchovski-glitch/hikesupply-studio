@@ -7,6 +7,8 @@ mkdir -p "$ROOT/voice/models"
 cd "$ROOT/voice/models"
 [ -s kokoro-v1.0.onnx ] || curl -sSL -o kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
 [ -s voices-v1.0.bin ] || curl -sSL -o voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+# product photo tools (scripts/photos): rembg cutouts
+python3 -c "import rembg" 2>/dev/null || pip install --break-system-packages -q "rembg[cpu]" pymatting >/dev/null 2>&1 || true
 cd "$ROOT/video"
 [ -d node_modules ] || npm ci --no-audit --no-fund >/dev/null 2>&1
 echo "setup ok"
