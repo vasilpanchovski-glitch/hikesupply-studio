@@ -87,7 +87,7 @@ def compose(path, out):
     rgb, a = cutout(path)
     h0, w0 = a.shape
     anchor = os.environ.get("ANCHOR") == "bottom"
-    k = min(S * (0.56 if title else 0.66) / h0, S * 0.70 / w0)
+    k = min(S * (0.56 if title else 0.66) / h0, S * float(os.environ.get("WFRAC", "0.70")) / w0)
     if anchor:
         k = min(S * 0.64 / h0, S * 0.80 / w0)
     w, h = int(w0 * k), int(h0 * k)
