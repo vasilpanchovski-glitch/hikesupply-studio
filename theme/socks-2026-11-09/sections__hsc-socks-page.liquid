@@ -1,0 +1,283 @@
+{%- comment -%}
+  Merino socks product page (Vasil approved the design 2026-11-09). Used by templates/product.socks.json.
+  Gallery: our lifestyle photos. The colour (studio) photos show only when a colour is picked.
+  Pair deal prices match the automatic discounts of offer o25 (per-pair rounding like Shopify).
+{%- endcomment -%}
+{%- liquid
+  assign v = product.selected_or_first_available_variant
+  assign p = v.price
+  assign d2 = p | times: 10 | divided_by: 100
+  assign d3 = p | times: 15 | divided_by: 100
+  assign each2 = p | minus: d2
+  assign each3 = p | minus: d3
+  assign variant_srcs = product.variants | map: 'featured_media' | map: 'src'
+  assign short_title = product.title | split: ' — ' | first
+  for m in product.media
+    if m.alt contains 'creek'
+      assign img_creek = m
+    elsif m.alt contains 'at the tent'
+      assign img_tent = m
+    elsif m.alt contains 'cushioned merino knit'
+      assign img_knit = m
+    elsif m.alt contains 'Pulling on'
+      assign img_on = m
+    elsif m.alt contains 'packed for a trip'
+      assign img_trip = m
+    endif
+  endfor
+-%}
+<script type="application/ld+json">{{ product | structured_data }}</script>
+<div class="hss" data-hss>
+ <div class="hss-wrap">
+  <div class="hss-top">
+   <div class="hss-gal">
+    <div class="hss-main">{{ product.featured_media | image_url: width: 1400 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '600,900,1200,1400', sizes: '(min-width: 900px) 55vw, 100vw', alt: product.featured_media.alt, data-hss-main: '' }}</div>
+    <div class="hss-thumbs">
+     {%- for m in product.media -%}
+      {%- unless variant_srcs contains m.src -%}
+       <button type="button" class="hss-th{% if forloop.first %} on{% endif %}" data-full="{{ m | image_url: width: 1400 }}" data-alt="{{ m.alt | escape }}" aria-label="Show photo {{ forloop.index }}">{{ m | image_url: width: 200 | image_tag: loading: 'lazy', alt: '' }}</button>
+      {%- endunless -%}
+     {%- endfor -%}
+    </div>
+   </div>
+   <div class="hss-info">
+    <h1 class="hss-h1">{{ short_title }}</h1>
+    <div class="hss-sub">80% merino, cushioned crew. Warm, dry feet on long days in boots.</div>
+    <div class="hss-stars">No reviews yet · new in our store</div>
+    <div class="hss-price">{{ p | money }} <small>per pair · free shipping</small></div>
+
+    <div class="hss-lbl">Color: <b data-hss-colorname>{{ v.option1 }}</b></div>
+    <div class="hss-sw">
+     {%- for c in product.options_with_values[0].values -%}
+      {%- liquid
+        assign cs = '#888'
+        case c.name
+          when 'Navy Blue'
+            assign cs = '#2c3550'
+          when 'Green'
+            assign cs = '#5d6b47'
+          when 'Brown'
+            assign cs = '#8a6a4a'
+          when 'Black / Grey'
+            assign cs = 'linear-gradient(135deg,#3b3d3c 50%,#9a9c98 50%)'
+        endcase
+      -%}
+      <button type="button" class="hss-c{% if c.name == v.option1 %} on{% endif %}" data-color="{{ c.name | escape }}" style="background:{{ cs }}" aria-label="{{ c.name | escape }}" title="{{ c.name | escape }}"></button>
+     {%- endfor -%}
+    </div>
+
+    <div class="hss-lbl">Size</div>
+    <div class="hss-sizes">
+     {%- for s in product.options_with_values[1].values -%}
+      {%- liquid
+        assign us = s.name | split: ' (' | first
+        assign eu = s.name | split: '(' | last | remove: ')'
+        if forloop.first
+          assign nm = 'Smaller'
+        else
+          assign nm = 'Larger'
+        endif
+      -%}
+      <button type="button" class="hss-s{% if s.name == v.option2 %} on{% endif %}" data-size="{{ s.name | escape }}"><b>{{ nm }}</b><br>{{ us }}<br>{{ eu }}</button>
+     {%- endfor -%}
+    </div>
+    <div class="hss-low" data-hss-low></div>
+
+    <div class="hss-lbl">How many pairs?</div>
+    <div class="hss-bund">
+     <button type="button" class="hss-b on" data-q="1" data-total="{{ p | money }}"><span class="r"></span><span class="t"><b>1 pair</b><span>Try them on the trail</span></span><span class="pr">{{ p | money }}</span></button>
+     <button type="button" class="hss-b" data-q="2" data-total="{{ each2 | times: 2 | money }}"><span class="r"></span><span class="t"><b>2 pairs · save 10%</b><span>One to wear, one drying</span></span><span class="pr">{{ each2 | times: 2 | money }}<s>{{ p | times: 2 | money }}</s></span></button>
+     <button type="button" class="hss-b" data-q="3" data-total="{{ each3 | times: 3 | money }}"><span class="tag">BEST VALUE</span><span class="r"></span><span class="t"><b>3 pairs · save 15%</b><span>A pair for every day of a 3-day trip · {{ each3 | money }} a pair</span></span><span class="pr">{{ each3 | times: 3 | money }}<s>{{ p | times: 3 | money }}</s></span></button>
+    </div>
+    <div class="hss-note">Mix colors and sizes. The saving is applied automatically in the cart.</div>
+    <button type="button" class="hss-btn" data-hss-add>Add to cart · <span data-hss-total>{{ p | money }}</span></button>
+    <div class="hss-err" data-hss-err></div>
+    <div class="hss-trust"><div><b>Free shipping</b>Tracked, 6–13 business days</div><div><b>30-day returns</b>Changed your mind? Send them back</div><div><b>Secure checkout</b>Shop Pay and cards</div></div>
+   </div>
+  </div>
+
+  <div class="hss-sec"><h2>Why merino on the trail</h2>
+   <div class="hss-why">
+    <div class="hss-card">{% if img_creek %}{{ img_creek | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400,600,800', sizes: '(min-width: 900px) 33vw, 100vw' }}{% endif %}<div><h3>Warm even when damp</h3><p>Wool keeps insulating when it gets wet from a creek crossing or sweat. Cotton goes cold and heavy.</p></div></div>
+    <div class="hss-card">{% if img_tent %}{{ img_tent | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400,600,800', sizes: '(min-width: 900px) 33vw, 100vw' }}{% endif %}<div><h3>Fresh on day two</h3><p>Merino resists odor naturally, so one pair can do two days on a trip. Cozy in camp too.</p></div></div>
+    <div class="hss-card">{% if img_knit %}{{ img_knit | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400,600,800', sizes: '(min-width: 900px) 33vw, 100vw' }}{% endif %}<div><h3>Cushioned where it counts</h3><p>A padded sole takes the sting out of long descents and helps keep blisters away.</p></div></div>
+   </div>
+  </div>
+
+  <div class="hss-sec"><h2>Made for the whole trip</h2>
+   <div class="hss-why hss-two-img">
+    {% if img_on %}<div class="hss-card">{{ img_on | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400,600,900', sizes: '50vw', class: 'tall' }}</div>{% endif %}
+    {% if img_trip %}<div class="hss-card">{{ img_trip | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400,600,900', sizes: '50vw', class: 'tall' }}</div>{% endif %}
+   </div>
+  </div>
+
+  <div class="hss-two">
+   <div class="hss-sec"><h2>Merino vs. cotton</h2>
+    <table class="hss-t"><tr><th></th><th class="us">Our merino</th><th>Cotton socks</th></tr>
+     <tr><td>When wet</td><td class="us">Stays warm</td><td>Goes cold</td></tr>
+     <tr><td>Sweat</td><td class="us">Wicks away</td><td>Soaks it up</td></tr>
+     <tr><td>Odor</td><td class="us">Resists it</td><td>Smells fast</td></tr>
+     <tr><td>Blisters</td><td class="us">Fewer, drier feet</td><td>More rubbing</td></tr>
+     <tr><td>Fabric</td><td class="us">80% merino, 15% polyester, 4% nylon, 1% spandex</td><td>Mostly cotton</td></tr></table>
+   </div>
+   <div class="hss-sec"><h2>Find your size</h2>
+    <div class="hss-sz"><div class="row"><b>Smaller · EU 36–40</b><span>US women 6–9 · men 4–7</span></div><div class="row"><b>Larger · EU 40–45</b><span>US men 7–11 · women 9–12</span></div><div class="row"><span>Between sizes? EU 40 fits both. Wide feet or thick insoles: take the larger.</span></div></div>
+   </div>
+  </div>
+
+  <div class="hss-sec"><h2>Reviews</h2><div class="hss-rev">No reviews yet. These socks are new in our store.</div></div>
+
+  <div class="hss-sec"><h2>Questions</h2><div class="hss-faq">
+   <div><b>Is it one pair or a pack?</b><span>One pair per item. Choose 2 or 3 pairs above to save.</span></div>
+   <div><b>Warm enough for winter hiking?</b><span>Yes for cold-weather hiking, roughly -4 °F to 59 °F (-20 °C to 15 °C). Leave room in your boots and carry a dry spare pair.</span></div>
+   <div><b>How do I wash them?</b><span>Inside out on a cool wool cycle or by hand. No bleach, no dryer, dry flat.</span></div>
+   <div><b>When will they arrive?</b><span>Ships in 1–3 business days, then arrives in 6–13 business days, with tracking.</span></div>
+  </div></div>
+ </div>
+
+ <div class="hss-sticky"><img src="{{ product.featured_media | image_url: width: 120 }}" alt="" width="44" height="44"><div class="x"><b>Merino Hiking Socks</b><br><span data-hss-stickytxt>1 pair · {{ p | money }}</span></div><button type="button" data-hss-add>Add to cart</button></div>
+</div>
+
+<script type="application/json" data-hss-variants>[
+{%- for x in product.variants -%}{"id":{{ x.id }},"c":{{ x.option1 | json }},"s":{{ x.option2 | json }},"a":{{ x.available | json }},"q":{{ x.inventory_quantity | default: 0 }},"img":{% if x.featured_media %}{{ x.featured_media | image_url: width: 1400 | json }}{% else %}null{% endif %}}{% unless forloop.last %},{% endunless %}{%- endfor -%}
+]</script>
+
+<style>
+.hss{--bg:#F6F7F4;--stone:#ECEEE9;--ink:#17291C;--forest:#203325;--clay:#9E4421;--line:#d7dbd2;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.5}
+.hss *{box-sizing:border-box}
+.hss h1,.hss h2,.hss h3,.hss .hss-b .t b,.hss-price,.hss-btn,.hss-t th,.hss-sticky b,.hss-sticky button{font-family:var(--font-heading-family);text-transform:uppercase;letter-spacing:.5px}
+.hss-wrap{max-width:1180px;margin:0 auto;padding:0 16px 30px}
+.hss-top{display:grid;grid-template-columns:1fr;gap:18px;padding-top:16px}
+.hss-main{background:#efe7dc;border-radius:6px;overflow:hidden;aspect-ratio:4/5}
+.hss-main img{width:100%;height:100%;object-fit:cover;display:block}
+.hss-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:8px}
+.hss-th{padding:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:none;cursor:pointer;aspect-ratio:1}
+.hss-th img{width:100%;height:100%;object-fit:cover;display:block}
+.hss-th.on{border:2px solid var(--ink)}
+.hss-h1{font-weight:800;font-size:34px;line-height:1.02;margin:0}
+.hss-sub{color:#3c4a3f;margin-top:6px}
+.hss-stars{font-size:13px;color:#5b665d;margin-top:8px}
+.hss-price{font-weight:800;font-size:30px;color:var(--clay);margin-top:10px}
+.hss-price small{font-family:var(--font-body-family);font-weight:400;font-size:13px;color:#3c4a3f;margin-left:8px;text-transform:none;letter-spacing:0}
+.hss-lbl{font-size:13px;color:#4a564d;margin:16px 0 8px}
+.hss-sw{display:flex;gap:10px}
+.hss-c{width:38px;height:38px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer;padding:0}
+.hss-c.on{box-shadow:0 0 0 2px var(--ink)}
+.hss-c.out{opacity:.35}
+.hss-sizes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.hss-s{border:1px solid #9aa39b;border-radius:4px;padding:9px 10px;font-size:13px;line-height:1.3;text-align:left;background:transparent;color:var(--ink);cursor:pointer;font-family:inherit}
+.hss-s.on{border:2px solid var(--ink);background:#fff;padding:8px 9px}
+.hss-s.out{opacity:.45;text-decoration:line-through}
+.hss-s b{font-size:14px}
+.hss-low{font-size:12px;color:#7a3b20;margin-top:6px;min-height:1px}
+.hss-bund{display:grid;gap:8px}
+.hss-b{display:flex;align-items:center;gap:12px;border:1px solid #9aa39b;border-radius:6px;padding:12px;background:#fff;position:relative;cursor:pointer;text-align:left;color:var(--ink);font-family:inherit;width:100%}
+.hss-b.on{border:2px solid var(--ink);padding:11px}
+.hss-b .r{width:18px;height:18px;border-radius:50%;border:2px solid var(--ink);flex:none}
+.hss-b.on .r{background:radial-gradient(var(--ink) 45%,#fff 50%)}
+.hss-b .t{flex:1;display:flex;flex-direction:column}
+.hss-b .t b{font-size:19px;font-weight:700}
+.hss-b .t span{font-size:12px;color:#4a564d}
+.hss-b .pr{text-align:right;font-family:var(--font-heading-family);font-weight:700;font-size:20px}
+.hss-b .pr s{display:block;font-family:var(--font-body-family);font-weight:400;font-size:12px;color:#7b857d}
+.hss-b .tag{position:absolute;top:-9px;left:12px;background:var(--forest);color:#fff;font-size:11px;padding:1px 8px;border-radius:3px;letter-spacing:.4px}
+.hss-note{font-size:11px;color:#7b857d;margin-top:6px}
+.hss-btn{display:block;width:100%;text-align:center;background:var(--clay);color:#fff;font-weight:700;font-size:20px;letter-spacing:.6px;padding:14px;border-radius:4px;margin-top:16px;border:0;cursor:pointer}
+.hss-btn[disabled]{background:#9aa39b;cursor:not-allowed}
+.hss-err{font-size:13px;color:#7a3b20;margin-top:6px}
+.hss-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.hss-trust div{background:var(--stone);border-radius:4px;padding:10px 8px;font-size:12px;text-align:center;line-height:1.3}
+.hss-trust b{display:block;font-size:13px}
+.hss-sec{padding:34px 0 6px}
+.hss-sec h2{font-weight:800;font-size:30px;line-height:1.05;margin:0 0 14px}
+.hss-why{display:grid;grid-template-columns:1fr;gap:14px}
+.hss-two-img{grid-template-columns:1fr 1fr}
+.hss-card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.hss-card img{width:100%;aspect-ratio:1;object-fit:cover;display:block;height:auto}
+.hss-card img.tall{aspect-ratio:4/5}
+.hss-card div{padding:12px 14px}
+.hss-card h3{font-weight:700;font-size:21px;margin:0}
+.hss-card p{font-size:14px;color:#33413a;margin:4px 0 0}
+.hss-t{width:100%;border-collapse:collapse;background:#fff;font-size:14px}
+.hss-t th,.hss-t td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.hss-t th{font-weight:700;font-size:16px}
+.hss-t td:first-child{color:#4a564d;width:34%}
+.hss-t .us{background:#eef1e9;font-weight:600}
+.hss-sz{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px}
+.hss-sz .row{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.hss-sz .row:last-child{border:0}
+.hss-rev{background:#fff;border:1px dashed #9aa39b;border-radius:6px;padding:18px;text-align:center;font-size:14px;color:#3c4a3f}
+.hss-faq div{border-bottom:1px solid var(--line);padding:12px 0}
+.hss-faq b{display:block;font-size:15px}
+.hss-faq span{font-size:14px;color:#33413a}
+.hss-sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#fff;border-top:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:10px 16px;transform:translateY(110%);transition:transform .2s}
+.hss-sticky.show{transform:none}
+.hss-sticky img{width:44px;height:44px;border-radius:4px;object-fit:cover}
+.hss-sticky .x{flex:1;font-size:13px;line-height:1.25}
+.hss-sticky b{font-size:17px}
+.hss-sticky button{background:var(--clay);color:#fff;font-weight:700;font-size:17px;padding:10px 16px;border-radius:4px;border:0;cursor:pointer}
+@media(min-width:900px){
+ .hss-top{grid-template-columns:1.1fr 1fr;gap:44px;padding-top:28px}
+ .hss-gal{position:sticky;top:100px;align-self:start}
+ .hss-h1{font-size:46px}
+ .hss-why{grid-template-columns:repeat(3,1fr)}
+ .hss-two-img{grid-template-columns:1fr 1fr}
+ .hss-two{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+ .hss-sticky{display:none}
+}
+</style>
+<script>
+(function(){
+ var root=document.querySelector('[data-hss]'); if(!root) return;
+ var V=JSON.parse(root.parentNode.querySelector('[data-hss-variants]').textContent);
+ var state={c:{{ v.option1 | json }},s:{{ v.option2 | json }},q:1};
+ var mainImg=root.querySelector('[data-hss-main]');
+ function show(src,alt){ if(!src) return; mainImg.removeAttribute('srcset'); mainImg.src=src; if(alt!=null) mainImg.alt=alt; }
+ function cur(){ for(var i=0;i<V.length;i++){ if(V[i].c===state.c&&V[i].s===state.s) return V[i]; } return null; }
+ function totalText(){ var b=root.querySelector('.hss-b[data-q="'+state.q+'"]'); return b?b.getAttribute('data-total'):''; }
+ function render(){
+  var v=cur();
+  root.querySelector('[data-hss-colorname]').textContent=state.c;
+  root.querySelectorAll('.hss-c').forEach(function(e){ e.classList.toggle('on',e.dataset.color===state.c); var any=V.some(function(x){return x.c===e.dataset.color&&x.a}); e.classList.toggle('out',!any); });
+  root.querySelectorAll('.hss-s').forEach(function(e){ e.classList.toggle('on',e.dataset.size===state.s); var x=V.filter(function(y){return y.c===state.c&&y.s===e.dataset.size})[0]; e.classList.toggle('out',!x||!x.a); });
+  root.querySelectorAll('.hss-b').forEach(function(e){ e.classList.toggle('on',+e.dataset.q===state.q); });
+  var low=root.querySelector('[data-hss-low]'), btns=root.querySelectorAll('[data-hss-add]');
+  low.textContent='';
+  if(!v||!v.a){ btns.forEach(function(b){b.disabled=true}); root.querySelector('.hss-btn').textContent='Sold out in this size and color'; }
+  else {
+   btns.forEach(function(b){b.disabled=false});
+   root.querySelector('.hss-btn').innerHTML='Add to cart · <span data-hss-total>'+totalText()+'</span>';
+   if(v.q>0&&v.q<=10) low.textContent='Only '+v.q+(v.q===1?' pair':' pairs')+' left in this size and color';
+   if(v.q>0&&state.q>v.q) low.textContent+=' (you can add up to '+v.q+')';
+  }
+  root.querySelector('[data-hss-stickytxt]').textContent=state.q+(state.q===1?' pair':' pairs')+' · '+totalText();
+  if(v){ var u=new URL(location.href); u.searchParams.set('variant',v.id); history.replaceState(null,'',u.toString()); }
+ }
+ root.querySelectorAll('.hss-th').forEach(function(t){ t.addEventListener('click',function(){ root.querySelectorAll('.hss-th').forEach(function(x){x.classList.remove('on')}); t.classList.add('on'); show(t.dataset.full,t.dataset.alt); }); });
+ root.querySelectorAll('.hss-c').forEach(function(e){ e.addEventListener('click',function(){ state.c=e.dataset.color; render(); var v=cur()||V.filter(function(x){return x.c===state.c})[0]; if(v&&v.img){ show(v.img,state.c+' merino hiking socks'); root.querySelectorAll('.hss-th').forEach(function(x){x.classList.remove('on')}); } }); });
+ root.querySelectorAll('.hss-s').forEach(function(e){ e.addEventListener('click',function(){ state.s=e.dataset.size; render(); }); });
+ root.querySelectorAll('.hss-b').forEach(function(e){ e.addEventListener('click',function(){ state.q=+e.dataset.q; render(); }); });
+ root.querySelectorAll('[data-hss-add]').forEach(function(b){ b.addEventListener('click',function(){
+  var v=cur(); if(!v||!v.a) return; var err=root.querySelector('[data-hss-err]'); err.textContent='';
+  b.disabled=true;
+  fetch((window.routes&&window.routes.cart_add_url?window.routes.cart_add_url:'/cart/add')+'.js',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({items:[{id:v.id,quantity:state.q}]})})
+   .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})})
+   .then(function(res){ if(!res.ok){ b.disabled=false; err.textContent=res.j.description||res.j.message||'Could not add to cart.'; return; } location.href=(window.routes&&window.routes.cart_url)||'/cart'; })
+   .catch(function(){ b.disabled=false; err.textContent='Could not add to cart. Please try again.'; });
+ }); });
+ var mainBtn=root.querySelector('.hss-btn'), sticky=root.querySelector('.hss-sticky');
+ if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ sticky.classList.toggle('show',!es[0].isIntersecting && es[0].boundingClientRect.top<0); }).observe(mainBtn); }
+ var pv=new URLSearchParams(location.search).get('variant');
+ if(pv){ var m=V.filter(function(x){return String(x.id)===pv})[0]; if(m){ state.c=m.c; state.s=m.s; } }
+ render();
+})();
+</script>
+
+{% schema %}
+{
+  "name": "HSC socks page",
+  "tag": "section",
+  "class": "section",
+  "settings": []
+}
+{% endschema %}
