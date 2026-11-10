@@ -1,0 +1,18 @@
+{
+ "slug": "state-parks-passport",
+ "shopify": "state-parks-passport-visit-log",
+ "price": "5.99",
+ "title": "State Parks Passport Printable, All 50 States and Canada Provincial Parks Tracker, Park Visit Log with Stamp Boxes, Hiking Gift PDF",
+ "tags": ["state parks", "state park passport", "park passport", "provincial parks", "parks tracker", "park visit log", "hiking journal", "park stamp book", "hiking gift", "hiking printable", "travel log", "canada parks", "bucket list parks"],
+ "description": "State and provincial parks are the parks most of us visit most often: close to home, open year-round and full of good trails. This 40-page printable passport turns every park day into a page worth keeping, and it covers every state and province, not just a short list of parks.\n\nWHAT'S INSIDE\n- How to use it, with print tips (normal paper or light card stock, print only the pages you need)\n- State, provincial and national parks: who runs what, and why one pass rarely works at the others\n- My state parks goals page and a parks-on-my-list planner\n- USA map and Canada map to color as you go\n- Master checklist of all 50 states and 13 provinces and territories, with each official parks agency name and website, checked on the agencies' own sites in November 2026\n- 48 visit logs, 2 per page: park, date, trail, distance in mi and km, who with, weather, notes, highlight and an empty stamp or sticker box\n- 2 pages of extra stamp boxes\n- Annual pass and passport-program tracker\n- Favorite parks hall of fame, year totals and all-time totals\n- Leave No Trace and park etiquette on one page\n\nWHAT YOU GET\n- US Letter and A4 versions\n- Mobile edition, sized for reading on your phone\n- Color and printer-friendly (low ink) versions\n- Instant download. This is a digital file; nothing is shipped.\n- Bonus: our free one-page Ultimate Hiking Checklist\n\nGOOD TO KNOW\nThe stamp boxes are left empty on purpose, so a park stamp, a sticker or a ticket stub fits cleanly. Stamps are not included, and not every park has one: ask at the park office. Fees, hours, passes and rules change often, so check the park's official website before you go. Not affiliated with any park agency. For personal use.\n\nMade by HikeSupply Co., a small shop for weekend hikers. More printable hiking guides in our Etsy shop.",
+ "hero": ["State Parks", "Passport"],
+ "sub": "Every state and province: map trackers, a master checklist with official sites, and 48 visit logs with stamp boxes.",
+ "chips": ["40 pages", "mi + km", "Letter + A4"],
+ "inside": ["USA and Canada maps to color", "All 50 states + 13 provinces", "Official agency websites", "48 visit logs with stamp boxes", "Extra stamp pages", "Annual pass tracker", "Hall of fame and year totals"],
+ "formats": [["US Letter + A4", "Both sizes included"], ["Mobile edition", "Sized for reading on your phone"], ["Color + printer-friendly", "Low-ink version for home printers"], ["Instant download", "Digital file, nothing is shipped"]],
+ "pages": ["etsy/assets/state-parks-passport-visit-log/p-01.png", "etsy/assets/state-parks-passport-visit-log/p-05.png", "etsy/assets/state-parks-passport-visit-log/p-10.png", "etsy/assets/state-parks-passport-visit-log/p-07.png", "etsy/assets/state-parks-passport-visit-log/p-06.png", "etsy/assets/state-parks-passport-visit-log/p-36.png", "etsy/assets/state-parks-passport-visit-log/p-37.png"],
+ "back": 1, "back2": 2, "feature": 1,
+ "spreadA": [1, 3, 4], "spreadATitle": "A look inside",
+ "spreadB": [2, 5, 6], "spreadBTitle": "Logs and trackers",
+ "pageCount": 40
+}
