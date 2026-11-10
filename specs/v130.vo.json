@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "At noon the trail was soft slush, so Ben left his cleats in the car.",
+   "gap": 0.4
+  },
+  {
+   "text": "By three the sun was behind the ridge,",
+   "gap": 0.15
+  },
+  {
+   "text": "and that slush froze into ruts of ice on the way down.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "In winter, plan for the trail you'll walk out on.",
+   "gap": 0.3
+  },
+  {
+   "text": "Roll your cleats into their bag and keep them in your pack.",
+   "gap": 0.3
+  },
+  {
+   "text": "Pull them on at the first shine of ice.",
+   "gap": 0.5
+  },
+  {
+   "text": "Ben got down steady.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.2
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Mia pulled her face cover up at the trailhead and kept it there the whole climb.",
+   "gap": 0.35
+  },
+  {
+   "text": "Every breath soaked the fleece.",
+   "gap": 0.35
+  },
+  {
+   "text": "On the windy ridge, it froze stiff against her chin.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "On the climb, push the face panel down and let your face breathe.",
+   "gap": 0.3
+  },
+  {
+   "text": "When the wind hits, pull it up over your nose and snug the hood.",
+   "gap": 0.5
+  },
+  {
+   "text": "Mia reached the top with a warm, dry face.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}

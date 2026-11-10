@@ -1,0 +1,51 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Ana packed cleats for the icy summit.",
+   "gap": 0.35
+  },
+  {
+   "text": "She fell before she left the parking lot.",
+   "gap": 0.45
+  },
+  {
+   "text": "Trailheads get packed by hundreds of boots,",
+   "gap": 0.15
+  },
+  {
+   "text": "melt by day and refreeze at night,",
+   "gap": 0.15
+  },
+  {
+   "text": "so they are often the iciest part of the hike.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "Pull your cleats on at the car, toe loop first, then over the heel.",
+   "gap": 0.3
+  },
+  {
+   "text": "Take short, flat-footed steps.",
+   "gap": 0.3
+  },
+  {
+   "text": "On steep ice, turn back.",
+   "gap": 0.5
+  },
+  {
+   "text": "Ana started steady.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.2
+  }
+ ]
+}
