@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Every year Tom buys his sister hiking gear, and every year she already owns it.",
+   "gap": 0.25
+  },
+  {
+   "text": "This year he gives her goals instead.",
+   "gap": 0.25
+  },
+  {
+   "text": "A 2027 year planner with a hike-a-week challenge,",
+   "gap": 0.2
+  },
+  {
+   "text": "a logbook for Colorado 14ers, New Hampshire 4,000-footers and the Adirondack High Peaks,",
+   "gap": 0.2
+  },
+  {
+   "text": "and a tracker for every national park.",
+   "gap": 0.25
+  },
+  {
+   "text": "She prints them that night and circles her first peak.",
+   "gap": 0.25
+  },
+  {
+   "text": "By January she has a plan for the whole year.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for the hiker who has everything.",
+   "gap": 0.2
+  }
+ ]
+}

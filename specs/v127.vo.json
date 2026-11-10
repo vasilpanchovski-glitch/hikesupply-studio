@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "On their late-fall camping trip, the sun drops at five, and Leo and Sam crawl into the tent, cold and bored.",
+   "gap": 0.4
+  },
+  {
+   "text": "Long nights don't have to end camp.",
+   "gap": 0.3
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "Hang a small lantern from the tent loop so camp stays lit without blinding anyone.",
+   "gap": 0.3
+  },
+  {
+   "text": "Sit on a foam pad instead of the cold ground.",
+   "gap": 0.3
+  },
+  {
+   "text": "Plan with a checklist so the warm layers come.",
+   "gap": 0.5
+  },
+  {
+   "text": "Their next camp night runs past nine.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next camping trip.",
+   "gap": 0.2
+  }
+ ]
+}

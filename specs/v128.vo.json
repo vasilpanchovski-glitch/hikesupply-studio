@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Jen felt a hot spot on her heel and slapped on a strip of tape, square corners and all.",
+   "gap": 0.4
+  },
+  {
+   "text": "A mile later it had rolled up inside her sock.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "Dry the skin first.",
+   "gap": 0.3
+  },
+  {
+   "text": "Cut the tape with the scissors on a small multi-tool, a bit longer than the sore spot,",
+   "gap": 0.15
+  },
+  {
+   "text": "and round every corner so nothing catches.",
+   "gap": 0.3
+  },
+  {
+   "text": "Press it flat.",
+   "gap": 0.5
+  },
+  {
+   "text": "Jen's tape lasted the whole loop.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next long hike.",
+   "gap": 0.2
+  }
+ ]
+}
