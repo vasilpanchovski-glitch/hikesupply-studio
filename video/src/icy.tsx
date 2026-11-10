@@ -173,14 +173,14 @@ export const FaceClose: React.FC<{ cx: number; cy: number; s: number; skin: stri
   snug = 0,
   eyes = "neutral",
 }) => {
-  const panelTop = 40 - up * 70; // up: over the nose; down: under the chin
+  const panelTop = 104 - up * 92; // up: just under the eyes, over the nose; down: under the chin
   return (
     <g transform={`translate(${cx},${cy}) scale(${s})`}>
       {/* shoulders / jacket collar */}
       <path d="M-170,170 Q-120,110 -40,110 L60,110 Q150,110 190,180 L190,260 L-170,260 Z" fill="#2F7F86" />
       <path d="M-40,110 L60,110 L50,160 L-30,160 Z" fill={col} />
       {/* face (three-quarter view to the right) */}
-      <ellipse cx={14} cy={0} rx={70} ry={88} fill={skin} />
+      <ellipse cx={20} cy={4} rx={84} ry={92} fill={skin} />
       <ellipse cx={-30} cy={10} rx={16} ry={22} fill={skinShade} />
       <ellipse cx={62} cy={20} rx={13} ry={9} fill="#d9826a" opacity={0.35} />
       {/* eyes */}
@@ -216,11 +216,10 @@ export const FaceClose: React.FC<{ cx: number; cy: number; s: number; skin: stri
         up > 0.5 &&
         Array.from({ length: 34 }, (_, i) => {
           const fx = -20 + ((i * 47) % 116);
-          const fy = 4 + ((i * 29) % 100);
+          const fy = 22 + ((i * 29) % 90);
           const r = 4 + (i % 3) * 2;
           return <path key={i} d={`M${fx - r},${fy} h${2 * r} M${fx},${fy - r} v${2 * r} M${fx - r * 0.7},${fy - r * 0.7} l${1.4 * r},${1.4 * r} M${fx - r * 0.7},${fy + r * 0.7} l${1.4 * r},${-1.4 * r}`} stroke="#eef8ff" strokeWidth={2.4} opacity={frost} />;
         })}
-      {frost > 0 && up > 0.5 && <path d="M-40,40 Q30,26 104,40 L104,122 Q20,140 -44,122 Z" fill="#dff0fb" opacity={0.18 * frost} />}
     </g>
   );
 };
