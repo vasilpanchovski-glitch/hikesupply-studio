@@ -1,0 +1,672 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../_kit/brand.css"><style>
+@media print{html,body{background:#fff}}
+.lab{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin:11pt 0 3pt}
+.wl{border-bottom:0.8pt solid #CFC7B6;height:24pt}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 22pt}
+.f3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 18pt}
+.fl{display:flex;align-items:flex-end;gap:6pt;height:25pt;border-bottom:0.8pt solid #CFC7B6;font:600 7.8pt/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--forest);padding-bottom:3pt}
+.fl .u{margin-left:auto;font-weight:500;color:#8B8577;letter-spacing:.04em;text-transform:none;font-size:8.5pt}
+.fl .u b{display:inline-block;width:0.45in}
+.ph{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid var(--forest);padding-bottom:7pt;margin-bottom:10pt}
+.ph h2{margin:0;font-size:21pt}
+.ph .r{font:700 7.5pt/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);text-align:right}
+.pg{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,1fr);gap:8pt 11pt;height:8.42in}
+.pk{background:#fff;border:1pt solid #CFC7B6;border-radius:8pt;padding:9pt 10pt 8pt;display:grid;grid-template-columns:1fr 0.98in;gap:0 9pt}
+.pk .nm{display:flex;align-items:flex-start;gap:6pt}
+.pk .nm i{flex:none;width:11pt;height:11pt;border:1.3pt solid var(--forest);border-radius:2pt;margin-top:2pt}
+.pk h3{margin:0;font-size:12.6pt;line-height:1.08}
+.pk .st{font:700 7pt/1 var(--sans);letter-spacing:.12em;color:var(--clay);margin:4pt 0 0 17pt}
+.pk .st .nr{display:inline-block;margin-left:5pt;padding:1.5pt 4pt;border:0.8pt solid var(--clay);border-radius:3pt;letter-spacing:.06em}
+.pk .tr{font-size:8.6pt;line-height:1.3;margin-top:6pt}
+.pk .tr b{display:block;color:var(--forest);font-size:9pt}
+.pk .tr span{display:block;color:#5F5F5A}
+.pk .en{font-size:7.9pt;line-height:1.28;color:#6B6B66;margin-top:4pt}
+.pk .vd{display:flex;align-items:flex-end;gap:5pt;font:700 6.8pt/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest);margin-top:auto;padding-top:4pt}
+.pk .vd s{flex:1;border-bottom:0.8pt solid #BDB5A4;height:12pt;text-decoration:none}
+.pk .l{display:flex;flex-direction:column}
+.stamp{border:1.1pt dashed #B9B1A0;border-radius:6pt;display:flex;align-items:flex-end;justify-content:center;padding-bottom:5pt;font:700 6.3pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#B0A898}
+.pk.blank{background:var(--soft);border-color:var(--soft);display:block}
+.az{columns:3;column-gap:16pt;font-size:9.8pt;margin-top:6pt}
+.az div{display:flex;align-items:center;gap:6pt;padding:5.6pt 0;border-bottom:0.6pt solid var(--line);break-inside:avoid}
+.az div i{flex:none;width:10pt;height:10pt;border:1.2pt solid var(--forest);border-radius:2pt;background:#fff}
+.az div em{font-style:normal;margin-left:auto;font:700 7pt/1 var(--sans);letter-spacing:.08em;color:var(--sage)}
+.az div b{font-weight:500;font-size:7.5pt;color:var(--sage);width:13pt}
+.ca{columns:3;column-gap:16pt;font-size:9.2pt}
+.ca .prov{break-inside:avoid;margin-bottom:11pt}
+.ca h4{font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--clay);margin:0 0 3pt;padding-top:3pt}
+.ca div.r{display:flex;align-items:flex-start;gap:6pt;padding:4.6pt 0;border-bottom:0.6pt solid var(--line)}
+.ca div.r i{flex:none;width:10pt;height:10pt;border:1.2pt solid var(--forest);border-radius:2pt;background:#fff;margin-top:1pt}
+.ca div.r em{font-style:normal;font:700 6.6pt/1 var(--sans);letter-spacing:.06em;color:var(--sage);margin-left:auto;padding-top:2pt}
+.t10{display:grid;grid-template-columns:1fr 1fr;gap:9pt 12pt}
+.t10>div{background:#fff;border:1pt solid #CFC7B6;border-radius:8pt;padding:9pt 12pt;display:grid;grid-template-columns:22pt 1fr;gap:0 6pt}
+.t10 .n{font:600 16pt/1 var(--serif);color:var(--clay)}
+.t10 h3{margin:0 0 4pt;font-size:13pt}
+.t10 p{margin:0;font-size:9.2pt;line-height:1.38}
+.t10 p.s{color:#6B6B66;font-size:8.8pt;margin-top:4pt}
+.steps2{display:grid;grid-template-columns:1fr 1fr;gap:10pt 16pt}
+.steps2>div{display:grid;grid-template-columns:28pt 1fr;gap:8pt;padding:9pt 0;border-bottom:0.6pt solid var(--line)}
+.steps2 .n{font:600 20pt/1 var(--serif);color:var(--clay)}
+.steps2 h3{margin:0 0 3pt;font-size:12.5pt}
+.steps2 p{margin:0;font-size:9.8pt;line-height:1.42}
+.pass{display:grid;grid-template-columns:1fr 1fr;gap:10pt 14pt}
+.pass>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 13pt}
+.pass h3{margin:0 0 4pt;font-size:13pt}
+.pass p{margin:0 0 4pt;font-size:9.6pt;line-height:1.42}
+.pass .pr{font:600 13.5pt/1.15 var(--serif);color:var(--clay);margin:2pt 0 5pt}
+.log{border:1pt solid #CFC7B6;border-radius:9pt;background:#fff;padding:11pt 13pt;margin-bottom:12pt}
+.log .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:2pt}
+.log .top h3{margin:0;font-size:14pt}
+.opts{display:flex;flex-wrap:wrap;gap:4pt 11pt;font-size:8.8pt;margin-top:5pt}
+.opts span::before{content:"";display:inline-block;width:9pt;height:9pt;border:1.1pt solid var(--forest);border-radius:2pt;margin-right:4pt;vertical-align:-1pt;background:#fff}
+.lg{display:grid;grid-template-columns:1fr 1.15in;gap:0 12pt}
+.lg .stamp{height:1.15in;margin-top:8pt}
+.goal{display:grid;grid-template-columns:22pt 1.7fr 1fr 1fr 0.8fr;gap:0 10pt;align-items:end;border-bottom:0.8pt solid #CFC7B6;height:30pt;padding-bottom:4pt;font-size:9pt}
+.goal.h{border-bottom:1.5pt solid var(--forest);height:auto;padding-bottom:5pt;font:700 7.5pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest)}
+.goal .n{font:600 14pt/1 var(--serif);color:var(--clay)}
+.seas{display:grid;grid-template-columns:1fr 1fr;gap:10pt 14pt;margin-top:8pt}
+.seas>div{background:#fff;border:1pt solid #CFC7B6;border-radius:8pt;padding:9pt 12pt;height:2.12in}
+.seas h3{margin:0 0 2pt;font-size:12.5pt}
+.seas p{margin:0;font-size:8.4pt;color:#6B6B66}
+.seas .wl{height:21pt}
+.cnt{display:grid;grid-template-columns:repeat(8,1fr);gap:5pt}
+.cnt div{height:0.44in;width:0.44in;justify-self:center;border:1pt solid #CFC7B6;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font:600 8.5pt/1 var(--serif);color:#A39C8D}
+.cnt div.ms{border:1.6pt solid var(--clay);color:var(--clay)}
+.sts{display:grid;grid-template-columns:repeat(8,1fr);gap:5pt}
+.sts div{border:1pt solid #CFC7B6;border-radius:5pt;background:#fff;text-align:center;padding:5pt 0;font:700 8.5pt/1 var(--sans);letter-spacing:.06em;color:var(--forest)}
+.tot{display:grid;grid-template-columns:repeat(4,1fr);gap:10pt;margin-top:8pt}
+.tot>div{background:var(--soft);border-radius:8pt;padding:10pt 12pt;height:0.85in;font:700 7.2pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest)}
+.lnt{display:grid;grid-template-columns:1fr 1fr;gap:4pt 18pt}
+.lnt>div{display:grid;grid-template-columns:24pt 1fr;gap:8pt;padding:11pt 0;border-bottom:0.6pt solid var(--line)}
+.lnt .n{font:600 16pt/1 var(--serif);color:var(--clay)}
+.lnt h3{margin:0 0 4pt;font-size:13pt}
+.lnt p{margin:0;font-size:10.2pt;line-height:1.45}
+.free{border:1pt solid #CFC7B6;border-radius:10pt;background:#fff;position:relative;height:8.55in}
+.free span{position:absolute;left:12pt;top:10pt;font:700 7.5pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#A39C8D}
+.back{background:var(--forest);color:var(--stone);display:flex;flex-direction:column;justify-content:space-between}
+.back h2{color:var(--stone);font-size:28pt}
+.back p{color:#D9DED6}
+.back .brand{font:700 9pt/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--sage)}
+.bk{display:grid;grid-template-columns:1fr 1fr;gap:14pt}
+.bk>div{border:1pt solid #5C6E5E;border-radius:10pt;padding:14pt 16pt}
+.bk h3{color:var(--stone);margin:0 0 6pt;font-size:15pt}
+.bk p{font-size:10pt;margin:0 0 8pt}
+.bk .u{font:600 8.6pt/1.4 var(--sans);color:#E9C9B6;}
+html.bw .page{background:#fff}
+html.bw{--forest:#222;--clay:#444;--sage:#666;--rust:#333;--soft:#fff}
+html.bw .cover,html.bw .back{background:#fff;color:#222;border:2pt solid #222}
+html.bw .cover h1,html.bw .back h2,html.bw .bk h3{color:#222}
+html.bw .cover .sub,html.bw .cover .meta,html.bw .cover .brand,html.bw .back p,html.bw .back .brand{color:#333 !important}
+html.bw .bk .u{color:#222}
+html.bw .bk>div{border-color:#999}
+html.bw .cover svg *{fill:none !important;stroke:#222 !important}
+html.bw .box,html.bw .tot>div,html.bw .pk.blank{background:#fff;border:0.8pt solid #999}
+html.bw .warn{background:#fff}
+html.bw .box.forest{color:#222}html.bw .box.forest h3{color:#222}
+.cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.cover.photo .bwart{display:none}
+.cover.photo .sub{color:#E4E8E1}
+html.bw .cover.photo .cphoto,html.bw .cover.photo .cshade{display:none}
+html.bw .cover.photo .bwart{display:flex}
+html.bw .cover.photo .brand{text-shadow:none}
+</style><style>
+.tm{position:relative;margin:8pt auto 0}
+.tm .t{position:absolute;border:1.2pt solid var(--forest);border-radius:5pt;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.tm .t b{font:600 16pt/1 var(--serif);color:var(--forest)}
+.tm .t span{font:600 4.7pt/1.15 var(--sans);letter-spacing:0;text-transform:uppercase;color:var(--sage);margin-top:4pt;padding:0 1pt}
+.tm.big .t span{font-size:6.4pt;letter-spacing:.02em}
+.tm.big .t b{font-size:20pt}
+.ml{display:grid;grid-template-columns:14pt 22pt 1.05in 1.7in 1fr 0.8in;gap:0 7pt;align-items:center;border-bottom:0.6pt solid var(--line);padding:4.3pt 0;font-size:8.6pt;line-height:1.2}
+.ml.h{border-bottom:1.5pt solid var(--forest);font:700 7pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest);padding:0 0 5pt}
+.ml i{width:10pt;height:10pt;border:1.2pt solid var(--forest);border-radius:2pt;background:#fff}
+.ml .c{font:700 7.5pt/1 var(--sans);letter-spacing:.06em;color:var(--clay)}
+.ml .w{font-size:7.9pt;color:#5F5F5A;word-break:break-word}
+.ml .d{border-bottom:0.8pt solid #CFC7B6;height:12pt}
+.ml.h .d{border:0;height:auto}
+.vl{border:1pt solid #CFC7B6;border-radius:9pt;background:#fff;padding:11pt 13pt 12pt;margin-bottom:12pt}
+.vl .top{display:flex;justify-content:space-between;align-items:baseline}
+.vl .top h3{margin:0;font-size:14pt}
+.vg{display:grid;grid-template-columns:1fr 1.55in;gap:0 14pt}
+.sb{border:0.9pt solid #BDB5A4;border-radius:4pt;height:1.55in;margin-top:3pt}
+.sbl{font:700 6.6pt/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#A39C8D;margin-top:9pt}
+.xs{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,1fr);gap:12pt 14pt;height:8.3in}
+.xs>div{display:flex;flex-direction:column}
+.xs .fl{height:20pt}
+.xs .sb{flex:1;height:auto;margin-top:6pt}
+.cmp{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10pt}
+.cmp>div{background:#fff;border:1pt solid var(--line);border-radius:9pt;padding:11pt 12pt}
+.cmp h3{margin:0 0 3pt;font-size:13pt}
+.cmp .who{font:700 7pt/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--clay);margin-bottom:6pt}
+.cmp p{font-size:9.2pt;line-height:1.4;margin:0 0 5pt}
+.hf{display:grid;grid-template-columns:1fr 1fr;gap:10pt 14pt}
+.hf>div{background:#fff;border:1pt solid #CFC7B6;border-radius:8pt;padding:9pt 12pt 6pt}
+.hf h3{margin:0;font-size:12pt}
+.yr{display:grid;grid-template-columns:0.8in 1fr 1fr 1fr 1fr;gap:0 10pt;align-items:end;border-bottom:0.8pt solid #CFC7B6;height:27pt;padding-bottom:4pt;font-size:9pt}
+.yr.h{border-bottom:1.5pt solid var(--forest);height:auto;padding-bottom:5pt;font:700 7.2pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest)}
+.pt{display:grid;grid-template-columns:1.25in 1.9in 0.8in 0.8in 1fr;gap:0 9pt;align-items:end;border-bottom:0.8pt solid #CFC7B6;height:26pt;padding-bottom:4pt;font-size:9pt}
+.pt.h{border-bottom:1.5pt solid var(--forest);height:auto;padding-bottom:5pt;font:700 7.2pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--forest)}
+html.bw .tm .t,html.bw .vl,html.bw .cmp>div,html.bw .hf>div{background:#fff}
+</style></head><body><section class="page cover photo"><div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="500" height="360" viewBox="0 0 500 360" fill="none" stroke="#2C3B2E" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<path d="M0 300 L120 170 L190 240 L280 120 L400 260 L450 220 L500 280"/>
+<path d="M150 360 C210 330 250 320 300 300 C330 288 350 282 380 278" stroke-dasharray="4 12"/>
+<path d="M50 330 L72 280 L94 330 Z M410 332 L434 274 L458 332 Z"/>
+<circle cx="250" cy="70" r="52"/><circle cx="250" cy="70" r="43" stroke-dasharray="3 6"/>
+<text x="250" y="78" text-anchor="middle" font-family="Fraunces" font-weight="600" font-size="26" fill="#2C3B2E" stroke="none">50+13</text>
+</svg></div>
+<div style="position:relative"><h1>State Parks Passport &amp; Visit Log</h1><p class="sub" style="max-width:6.2in">All 50 US states and Canada's 13 provinces and territories, each with its official parks agency and website. Maps to color in, a master checklist, and 48 visit logs with plain stamp boxes.</p>
+<div class="meta" style="margin-top:22pt"><span>40 printable pages</span><span>mi + km</span><span>Agencies checked November 2026</span></div></div></section><section class="page "><div class="kicker">Start here</div><h2>How to use this passport</h2>
+<p class="lead">State and provincial parks are the parks most of us visit most often: close to home, open year-round, and full of good trails. This passport turns every visit into a page worth keeping.</p>
+<div class="steps2">
+<div><div class="n">1</div><div><h3>Print what you need</h3><p>Print at Actual size on US Letter. Normal printer paper works fine. Light card stock (about 65 lb / 176 gsm) holds ink stamps and stickers better. An A4 file and a low-ink printer-friendly file are included.</p></div></div>
+<div><div class="n">2</div><div><h3>Keep it light</h3><p>You do not need all 40 pages in your pack. Take only the visit logs for this trip and add them to a binder or folder at home. Reprint any page for your own use as often as you like.</p></div></div>
+<div><div class="n">3</div><div><h3>Color and check off</h3><p>Color each state on the map (page 5) and each province or territory (page 6) the first time you visit one of its parks. Tick it on the master checklist (pages 7 to 9).</p></div></div>
+<div><div class="n">4</div><div><h3>Log and stamp</h3><p>Fill in a visit log (pages 10 to 33) for each park day. The stamp boxes are left empty on purpose, so a park stamp, a sticker or a ticket stub fits cleanly. More blank boxes on pages 34 and 35.</p></div></div></div>
+<h3>Where do park stamps come from?</h3>
+<p>Many state and provincial parks keep a stamp at the park office, visitor center or nature center, and several states run their own passport programs with booklets and prizes. Nothing is guaranteed at every park, so ask at the office when you arrive. No stamp? Write the park name in the box, add a sketch, or glue in your day-use receipt.</p>
+<div class="warn"><b>Checked November 2026.</b> Every agency name and website in this passport was checked on the agency's own site in November 2026. Fees, hours, reservations, pet rules and closures change often. Always check the park's official page before you go.</div>
+<h3>What is inside</h3>
+<table><tr><th>Pages</th><th>What</th><th>Pages</th><th>What</th></tr>
+<tr><td>3 to 4</td><td>Who runs which park, my goals</td><td>34 to 35</td><td>Extra stamp boxes</td></tr>
+<tr><td>5 to 6</td><td>USA and Canada maps to color</td><td>36</td><td>Annual pass tracker</td></tr>
+<tr><td>7 to 9</td><td>Master checklist with agencies</td><td>37 to 38</td><td>Hall of fame, year totals</td></tr>
+<tr><td>10 to 33</td><td>48 visit logs</td><td>39</td><td>Leave No Trace</td></tr></table><div class="folio"><span>State Parks Passport</span><span>2</span></div></section><section class="page "><div class="kicker">Good to know</div><h2>State, provincial and national parks: who runs what</h2>
+<p class="lead">Three kinds of parks, three different owners. That is why a pass for one rarely works at the others.</p>
+<div class="cmp">
+<div><h3>US national parks</h3><div class="who">Run by the National Park Service (federal)</div><p>64 national parks plus hundreds of other NPS sites. One pass, the America the Beautiful pass, covers entrance fees at all of them.</p><p>It does not cover state parks.</p></div>
+<div><h3>US state parks</h3><div class="who">Run by each state</div><p>Every state has its own parks agency. Some are part of a natural resources department, some share an agency with fish and wildlife, some stand alone.</p><p>Each state sets its own fees, passes and rules.</p></div>
+<div><h3>Canadian provincial parks</h3><div class="who">Run by each province or territory</div><p>Each province and territory runs its own parks. Canada's national parks are run by Parks Canada, a separate federal agency.</p><p>The Parks Canada Discovery Pass does not cover provincial parks.</p></div></div>
+<div class="box" style="margin-top:12pt"><h3 style="margin-top:0">A name that confuses many visitors</h3><p style="margin:0">Québec's "parcs nationaux" (Québec national parks) are provincial parks run by Sépaq for the province of Québec. They are not part of Parks Canada, so they have their own entry fees and their own annual card.</p></div>
+<h3>What usually differs from state to state</h3>
+<div class="cols" style="gap:0 20pt"><ul class="check"><li>Day-use or parking fee, and whether it is per car or per person</li><li>Different prices for residents and out-of-state cars</li><li>Annual passes and passport programs</li><li>Campsite reservations and how far ahead they open</li></ul><ul class="check"><li>Pet rules: most parks want pets on a leash, and some trails and beaches allow none</li><li>Opening hours, seasonal closures and gate times</li><li>Firewood rules: buy it where you will burn it</li><li>Drones, swimming areas and hunting seasons</li></ul></div>
+<p class="small" style="margin-top:8pt">Each state's and province's official parks website is on pages 7 to 9. It is the only place to trust for today's rules.</p><div class="folio"><span>State Parks Passport</span><span>3</span></div></section><section class="page "><div class="kicker">Make a plan</div><h2>My state parks goals</h2>
+<p>Big or small, write it down. A park a month is a great start; every state is a lifetime project.</p>
+<div class="f3" style="margin-top:6pt"><div class="fl">This year<span class="u"><b></b> parks</span></div><div class="fl">New states<span class="u"><b></b></span></div><div class="fl">Provinces<span class="u"><b></b></span></div></div>
+<div class="f2" style="margin-top:4pt"><div class="fl">Home state or province</div><div class="fl">Parks within 1 hr drive<span class="u"><b></b></span></div></div>
+<h3 style="margin-top:16pt">Parks on my list</h3>
+<div class="goal h" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span>#</span><span>Park</span><span>State or province</span><span>Best season</span><span>Done</span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">1</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">2</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">3</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">4</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">5</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">6</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">7</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">8</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">9</span><span></span><span></span><span></span><span></span></div><div class="goal" style="grid-template-columns:22pt 1.8fr 1fr 1fr 0.7fr"><span class="n">10</span><span></span><span></span><span></span><span></span></div>
+<h3 style="margin-top:16pt">My big one</h3>
+<p class="small" style="margin-top:-2pt">The park, trail or state park road trip I most want to do, and why.</p>
+<div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>State Parks Passport</span><span>4</span></div></section><section class="page "><div class="kicker">Color as you go</div><h2>My USA state parks map</h2>
+<p>Color a state the first time you hike in one of its state parks. Each square stands for one state, set out roughly where it sits on the map, so even Rhode Island gets room to color.</p>
+<div class="tm " style="width:7.09in;height:5.83in"><div class="t" style="left:0.000in;top:0.000in;width:0.54in;height:0.68in"><b>AK</b><span>Alaska</span></div><div class="t" style="left:6.545in;top:0.000in;width:0.54in;height:0.68in"><b>ME</b><span>Maine</span></div><div class="t" style="left:3.570in;top:0.735in;width:0.54in;height:0.68in"><b>WI</b><span>Wisconsin</span></div><div class="t" style="left:5.950in;top:0.735in;width:0.54in;height:0.68in"><b>VT</b><span>Vermont</span></div><div class="t" style="left:6.545in;top:0.735in;width:0.54in;height:0.68in"><b>NH</b><span>New Hampshire</span></div><div class="t" style="left:0.595in;top:1.470in;width:0.54in;height:0.68in"><b>WA</b><span>Washington</span></div><div class="t" style="left:1.190in;top:1.470in;width:0.54in;height:0.68in"><b>ID</b><span>Idaho</span></div><div class="t" style="left:1.785in;top:1.470in;width:0.54in;height:0.68in"><b>MT</b><span>Montana</span></div><div class="t" style="left:2.380in;top:1.470in;width:0.54in;height:0.68in"><b>ND</b><span>North Dakota</span></div><div class="t" style="left:2.975in;top:1.470in;width:0.54in;height:0.68in"><b>MN</b><span>Minnesota</span></div><div class="t" style="left:3.570in;top:1.470in;width:0.54in;height:0.68in"><b>IL</b><span>Illinois</span></div><div class="t" style="left:4.165in;top:1.470in;width:0.54in;height:0.68in"><b>MI</b><span>Michigan</span></div><div class="t" style="left:5.355in;top:1.470in;width:0.54in;height:0.68in"><b>NY</b><span>New York</span></div><div class="t" style="left:5.950in;top:1.470in;width:0.54in;height:0.68in"><b>MA</b><span>Massa-<br>chusetts</span></div><div class="t" style="left:0.595in;top:2.205in;width:0.54in;height:0.68in"><b>OR</b><span>Oregon</span></div><div class="t" style="left:1.190in;top:2.205in;width:0.54in;height:0.68in"><b>NV</b><span>Nevada</span></div><div class="t" style="left:1.785in;top:2.205in;width:0.54in;height:0.68in"><b>WY</b><span>Wyoming</span></div><div class="t" style="left:2.380in;top:2.205in;width:0.54in;height:0.68in"><b>SD</b><span>South Dakota</span></div><div class="t" style="left:2.975in;top:2.205in;width:0.54in;height:0.68in"><b>IA</b><span>Iowa</span></div><div class="t" style="left:3.570in;top:2.205in;width:0.54in;height:0.68in"><b>IN</b><span>Indiana</span></div><div class="t" style="left:4.165in;top:2.205in;width:0.54in;height:0.68in"><b>OH</b><span>Ohio</span></div><div class="t" style="left:4.760in;top:2.205in;width:0.54in;height:0.68in"><b>PA</b><span>Pennsyl-<br>vania</span></div><div class="t" style="left:5.355in;top:2.205in;width:0.54in;height:0.68in"><b>NJ</b><span>New Jersey</span></div><div class="t" style="left:5.950in;top:2.205in;width:0.54in;height:0.68in"><b>CT</b><span>Connect-<br>icut</span></div><div class="t" style="left:6.545in;top:2.205in;width:0.54in;height:0.68in"><b>RI</b><span>Rhode Island</span></div><div class="t" style="left:0.595in;top:2.940in;width:0.54in;height:0.68in"><b>CA</b><span>California</span></div><div class="t" style="left:1.190in;top:2.940in;width:0.54in;height:0.68in"><b>UT</b><span>Utah</span></div><div class="t" style="left:1.785in;top:2.940in;width:0.54in;height:0.68in"><b>CO</b><span>Colorado</span></div><div class="t" style="left:2.380in;top:2.940in;width:0.54in;height:0.68in"><b>NE</b><span>Nebraska</span></div><div class="t" style="left:2.975in;top:2.940in;width:0.54in;height:0.68in"><b>MO</b><span>Missouri</span></div><div class="t" style="left:3.570in;top:2.940in;width:0.54in;height:0.68in"><b>KY</b><span>Kentucky</span></div><div class="t" style="left:4.165in;top:2.940in;width:0.54in;height:0.68in"><b>WV</b><span>West Virginia</span></div><div class="t" style="left:4.760in;top:2.940in;width:0.54in;height:0.68in"><b>VA</b><span>Virginia</span></div><div class="t" style="left:5.355in;top:2.940in;width:0.54in;height:0.68in"><b>MD</b><span>Maryland</span></div><div class="t" style="left:5.950in;top:2.940in;width:0.54in;height:0.68in"><b>DE</b><span>Delaware</span></div><div class="t" style="left:1.190in;top:3.675in;width:0.54in;height:0.68in"><b>AZ</b><span>Arizona</span></div><div class="t" style="left:1.785in;top:3.675in;width:0.54in;height:0.68in"><b>NM</b><span>New Mexico</span></div><div class="t" style="left:2.380in;top:3.675in;width:0.54in;height:0.68in"><b>KS</b><span>Kansas</span></div><div class="t" style="left:2.975in;top:3.675in;width:0.54in;height:0.68in"><b>AR</b><span>Arkansas</span></div><div class="t" style="left:3.570in;top:3.675in;width:0.54in;height:0.68in"><b>TN</b><span>Tennessee</span></div><div class="t" style="left:4.165in;top:3.675in;width:0.54in;height:0.68in"><b>NC</b><span>North Carolina</span></div><div class="t" style="left:4.760in;top:3.675in;width:0.54in;height:0.68in"><b>SC</b><span>South Carolina</span></div><div class="t" style="left:2.380in;top:4.410in;width:0.54in;height:0.68in"><b>OK</b><span>Oklahoma</span></div><div class="t" style="left:2.975in;top:4.410in;width:0.54in;height:0.68in"><b>LA</b><span>Louisiana</span></div><div class="t" style="left:3.570in;top:4.410in;width:0.54in;height:0.68in"><b>MS</b><span>Missis-<br>sippi</span></div><div class="t" style="left:4.165in;top:4.410in;width:0.54in;height:0.68in"><b>AL</b><span>Alabama</span></div><div class="t" style="left:4.760in;top:4.410in;width:0.54in;height:0.68in"><b>GA</b><span>Georgia</span></div><div class="t" style="left:0.000in;top:5.145in;width:0.54in;height:0.68in"><b>HI</b><span>Hawaii</span></div><div class="t" style="left:2.380in;top:5.145in;width:0.54in;height:0.68in"><b>TX</b><span>Texas</span></div><div class="t" style="left:5.355in;top:5.145in;width:0.54in;height:0.68in"><b>FL</b><span>Florida</span></div></div>
+<div class="f3" style="margin-top:16pt"><div class="fl">States colored<span class="u"><b></b> of 50</span></div><div class="fl">First state</div><div class="fl">Latest state</div></div>
+<div class="f2" style="margin-top:4pt"><div class="fl">Next state to color</div><div class="fl">Farthest from home</div></div><div class="folio"><span>State Parks Passport</span><span>5</span></div></section><section class="page "><div class="kicker">Color as you go</div><h2>My Canada provincial parks map</h2>
+<p>Ten provinces and three territories. Color each one the first time you visit one of its parks.</p>
+<div class="tm big" style="width:6.89in;height:2.99in"><div class="t" style="left:0.000in;top:0.000in;width:0.8in;height:0.95in"><b>YT</b><span>Yukon</span></div><div class="t" style="left:0.870in;top:0.000in;width:0.8in;height:0.95in"><b>NT</b><span>Northwest Territories</span></div><div class="t" style="left:1.740in;top:0.000in;width:0.8in;height:0.95in"><b>NU</b><span>Nunavut</span></div><div class="t" style="left:0.000in;top:1.020in;width:0.8in;height:0.95in"><b>BC</b><span>British Columbia</span></div><div class="t" style="left:0.870in;top:1.020in;width:0.8in;height:0.95in"><b>AB</b><span>Alberta</span></div><div class="t" style="left:1.740in;top:1.020in;width:0.8in;height:0.95in"><b>SK</b><span>Saskat-<br>chewan</span></div><div class="t" style="left:2.610in;top:1.020in;width:0.8in;height:0.95in"><b>MB</b><span>Manitoba</span></div><div class="t" style="left:3.480in;top:1.020in;width:0.8in;height:0.95in"><b>ON</b><span>Ontario</span></div><div class="t" style="left:4.350in;top:1.020in;width:0.8in;height:0.95in"><b>QC</b><span>Québec</span></div><div class="t" style="left:5.220in;top:1.020in;width:0.8in;height:0.95in"><b>NL</b><span>Newfound-<br>land &amp; Labrador</span></div><div class="t" style="left:4.350in;top:2.040in;width:0.8in;height:0.95in"><b>NB</b><span>New Brunswick</span></div><div class="t" style="left:5.220in;top:2.040in;width:0.8in;height:0.95in"><b>PE</b><span>Prince Edward Island</span></div><div class="t" style="left:6.090in;top:2.040in;width:0.8in;height:0.95in"><b>NS</b><span>Nova Scotia</span></div></div>
+<div class="f3" style="margin-top:18pt"><div class="fl">Colored<span class="u"><b></b> of 13</span></div><div class="fl">First</div><div class="fl">Latest</div></div>
+<h3 style="margin-top:18pt">Crossing the border for a park day?</h3>
+<div class="cols" style="gap:0 20pt"><ul class="check"><li>Passport or other accepted travel document for everyone in the car</li><li>Check what food you can bring across: fresh fruit, meat and firewood are often restricted</li><li>Pets need their own papers, such as a rabies certificate</li></ul><ul class="check"><li>Distances in Canada are in km (1 mile = 1.6 km)</li><li>Check your phone plan for roaming</li><li>Check the official government border pages before you go</li></ul></div>
+<div class="lab" style="margin-top:14pt">Notes</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>State Parks Passport</span><span>6</span></div></section><section class="page "><div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Master checklist · 1 of 3</div><h2>US states, Alabama to Missouri</h2></div><div class="r">Agencies checked<br>November 2026</div></div>
+<div class="ml h"><span></span><span></span><span>State</span><span>Parks agency</span><span>Official website</span><span class="d">First visit</span></div><div class="ml"><i></i><span class="c">AL</span><span>Alabama</span><span>Alabama State Parks</span><span class="w">alapark.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">AK</span><span>Alaska</span><span>Alaska State Parks</span><span class="w">dnr.alaska.gov/parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">AZ</span><span>Arizona</span><span>Arizona State Parks &amp; Trails</span><span class="w">azstateparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">AR</span><span>Arkansas</span><span>Arkansas State Parks</span><span class="w">arkansasstateparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">CA</span><span>California</span><span>California State Parks</span><span class="w">parks.ca.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">CO</span><span>Colorado</span><span>Colorado Parks and Wildlife</span><span class="w">cpw.state.co.us</span><span class="d"></span></div><div class="ml"><i></i><span class="c">CT</span><span>Connecticut</span><span>Connecticut State Parks (DEEP)</span><span class="w">portal.ct.gov/deep/state-parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">DE</span><span>Delaware</span><span>Delaware State Parks</span><span class="w">destateparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">FL</span><span>Florida</span><span>Florida State Parks</span><span class="w">floridastateparks.org</span><span class="d"></span></div><div class="ml"><i></i><span class="c">GA</span><span>Georgia</span><span>Georgia State Parks &amp; Historic Sites</span><span class="w">gastateparks.org</span><span class="d"></span></div><div class="ml"><i></i><span class="c">HI</span><span>Hawaiʻi</span><span>Hawaiʻi Division of State Parks (DLNR)</span><span class="w">dlnr.hawaii.gov/dsp</span><span class="d"></span></div><div class="ml"><i></i><span class="c">ID</span><span>Idaho</span><span>Idaho Department of Parks and Recreation</span><span class="w">parksandrecreation.idaho.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">IL</span><span>Illinois</span><span>Illinois Department of Natural Resources</span><span class="w">dnr.illinois.gov/parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">IN</span><span>Indiana</span><span>Indiana State Parks (DNR)</span><span class="w">in.gov/dnr/state-parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">IA</span><span>Iowa</span><span>Iowa DNR State Parks</span><span class="w">iowadnr.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">KS</span><span>Kansas</span><span>Kansas Department of Wildlife and Parks</span><span class="w">ksoutdoors.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">KY</span><span>Kentucky</span><span>Kentucky State Parks</span><span class="w">parks.ky.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">LA</span><span>Louisiana</span><span>Louisiana State Parks</span><span class="w">lastateparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">ME</span><span>Maine</span><span>Maine Bureau of Parks and Lands</span><span class="w">maine.gov/dacf/parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">MD</span><span>Maryland</span><span>Maryland Park Service (DNR)</span><span class="w">dnr.maryland.gov/publiclands</span><span class="d"></span></div><div class="ml"><i></i><span class="c">MA</span><span>Massachusetts</span><span>Department of Conservation &amp; Recreation (DCR)</span><span class="w">mass.gov/orgs/department-of-conservation-recreation</span><span class="d"></span></div><div class="ml"><i></i><span class="c">MI</span><span>Michigan</span><span>Michigan Department of Natural Resources</span><span class="w">michigan.gov/dnr</span><span class="d"></span></div><div class="ml"><i></i><span class="c">MN</span><span>Minnesota</span><span>Minnesota DNR Parks and Trails</span><span class="w">dnr.state.mn.us/state-parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">MS</span><span>Mississippi</span><span>Mississippi Dept. of Wildlife, Fisheries, and Parks</span><span class="w">mdwfp.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">MO</span><span>Missouri</span><span>Missouri State Parks</span><span class="w">mostateparks.com</span><span class="d"></span></div><div class="folio"><span>State Parks Passport</span><span>7</span></div></section><section class="page "><div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Master checklist · 2 of 3</div><h2>US states, Montana to Wyoming</h2></div><div class="r">Agencies checked<br>November 2026</div></div>
+<div class="ml h"><span></span><span></span><span>State</span><span>Parks agency</span><span>Official website</span><span class="d">First visit</span></div><div class="ml"><i></i><span class="c">MT</span><span>Montana</span><span>Montana State Parks</span><span class="w">fwp.mt.gov/stateparks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NE</span><span>Nebraska</span><span>Nebraska Game and Parks Commission</span><span class="w">outdoornebraska.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NV</span><span>Nevada</span><span>Nevada State Parks</span><span class="w">parks.nv.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NH</span><span>New Hampshire</span><span>New Hampshire State Parks</span><span class="w">nhstateparks.org</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NJ</span><span>New Jersey</span><span>NJ State Parks, Forests &amp; Historic Sites</span><span class="w">dep.nj.gov/parksandforests</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NM</span><span>New Mexico</span><span>New Mexico State Parks</span><span class="w">emnrd.nm.gov/spd</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NY</span><span>New York</span><span>New York State Parks</span><span class="w">parks.ny.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NC</span><span>North Carolina</span><span>North Carolina State Parks</span><span class="w">ncparks.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">ND</span><span>North Dakota</span><span>North Dakota Parks and Recreation</span><span class="w">parkrec.nd.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">OH</span><span>Ohio</span><span>Ohio State Parks (ODNR)</span><span class="w">ohiodnr.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">OK</span><span>Oklahoma</span><span>Oklahoma State Parks</span><span class="w">travelok.com/state_parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">OR</span><span>Oregon</span><span>Oregon Parks and Recreation Department</span><span class="w">stateparks.oregon.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">PA</span><span>Pennsylvania</span><span>Pennsylvania State Parks (DCNR)</span><span class="w">pa.gov/agencies/dcnr/recreation/where-to-go/state-parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">RI</span><span>Rhode Island</span><span>Rhode Island State Parks (DEM)</span><span class="w">riparks.ri.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">SC</span><span>South Carolina</span><span>South Carolina State Parks</span><span class="w">southcarolinaparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">SD</span><span>South Dakota</span><span>South Dakota Game, Fish and Parks</span><span class="w">gfp.sd.gov/parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">TN</span><span>Tennessee</span><span>Tennessee State Parks</span><span class="w">tnstateparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">TX</span><span>Texas</span><span>Texas Parks and Wildlife Department</span><span class="w">tpwd.texas.gov/state-parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">UT</span><span>Utah</span><span>Utah State Parks</span><span class="w">stateparks.utah.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">VT</span><span>Vermont</span><span>Vermont State Parks</span><span class="w">vtstateparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">VA</span><span>Virginia</span><span>Virginia State Parks</span><span class="w">dcr.virginia.gov/state-parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">WA</span><span>Washington</span><span>Washington State Parks</span><span class="w">parks.wa.gov</span><span class="d"></span></div><div class="ml"><i></i><span class="c">WV</span><span>West Virginia</span><span>West Virginia State Parks</span><span class="w">wvstateparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">WI</span><span>Wisconsin</span><span>Wisconsin State Parks (DNR)</span><span class="w">dnr.wisconsin.gov/topic/parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">WY</span><span>Wyoming</span><span>Wyoming State Parks, Historic Sites &amp; Trails</span><span class="w">wyoparks.wyo.gov</span><span class="d"></span></div><div class="folio"><span>State Parks Passport</span><span>8</span></div></section><section class="page "><div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Master checklist · 3 of 3</div><h2>Canada's provinces and territories</h2></div><div class="r">Agencies checked<br>November 2026</div></div>
+<div class="ml h"><span></span><span></span><span>Province</span><span>Parks agency</span><span>Official website</span><span class="d">First visit</span></div><div class="ml"><i></i><span class="c">AB</span><span>Alberta</span><span>Alberta Parks</span><span class="w">albertaparks.ca</span><span class="d"></span></div><div class="ml"><i></i><span class="c">BC</span><span>British Columbia</span><span>BC Parks</span><span class="w">bcparks.ca</span><span class="d"></span></div><div class="ml"><i></i><span class="c">MB</span><span>Manitoba</span><span>Manitoba Parks</span><span class="w">gov.mb.ca/sd/parks</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NB</span><span>New Brunswick</span><span>NB Parks</span><span class="w">nbparks.ca</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NL</span><span>Newfoundland and Labrador</span><span>ParksNL</span><span class="w">parksnl.ca</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NS</span><span>Nova Scotia</span><span>Nova Scotia Parks</span><span class="w">parks.novascotia.ca</span><span class="d"></span></div><div class="ml"><i></i><span class="c">ON</span><span>Ontario</span><span>Ontario Parks</span><span class="w">ontarioparks.ca</span><span class="d"></span></div><div class="ml"><i></i><span class="c">PE</span><span>Prince Edward Island</span><span>PEI Provincial Parks</span><span class="w">tourismpei.com/provincial-park</span><span class="d"></span></div><div class="ml"><i></i><span class="c">QC</span><span>Québec</span><span>Québec national parks (Sépaq)</span><span class="w">sepaq.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">SK</span><span>Saskatchewan</span><span>Saskatchewan Provincial Parks</span><span class="w">saskparks.tourismsaskatchewan.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NT</span><span>Northwest Territories</span><span>Northwest Territories Parks</span><span class="w">nwtparks.ca</span><span class="d"></span></div><div class="ml"><i></i><span class="c">NU</span><span>Nunavut</span><span>Nunavut Parks and Special Places</span><span class="w">nunavutparks.com</span><span class="d"></span></div><div class="ml"><i></i><span class="c">YT</span><span>Yukon</span><span>Yukon Parks</span><span class="w">yukon.ca/parks</span><span class="d"></span></div>
+<div class="f3" style="margin-top:14pt"><div class="fl">US states<span class="u"><b></b> of 50</span></div><div class="fl">Canada<span class="u"><b></b> of 13</span></div><div class="fl">All 63 done on</div></div>
+<div class="box" style="margin-top:14pt"><h3 style="margin-top:0">How to find a park's rules in two minutes</h3><p style="margin:0">Open the official website above and search for the park by name. On its page, look for alerts or notices first (closures, fire, flooding), then fees and hours, then pet rules and reservations. Websites move: if a link does not work, search the agency name plus "state parks" or "provincial parks" and use the result that ends in the government's own domain.</p></div>
+<p class="small" style="margin-top:8pt">Some states run their parks inside a larger department (natural resources, or fish and wildlife), so the website may open on the department's home page. Look for the parks section.</p><div class="folio"><span>State Parks Passport</span><span>9</span></div></section><section class="page "><div class="kicker">Visit log · 1 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>10</span></div></section><section class="page "><div class="kicker">Visit log · 2 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>11</span></div></section><section class="page "><div class="kicker">Visit log · 3 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>12</span></div></section><section class="page "><div class="kicker">Visit log · 4 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>13</span></div></section><section class="page "><div class="kicker">Visit log · 5 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>14</span></div></section><section class="page "><div class="kicker">Visit log · 6 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>15</span></div></section><section class="page "><div class="kicker">Visit log · 7 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>16</span></div></section><section class="page "><div class="kicker">Visit log · 8 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>17</span></div></section><section class="page "><div class="kicker">Visit log · 9 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>18</span></div></section><section class="page "><div class="kicker">Visit log · 10 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>19</span></div></section><section class="page "><div class="kicker">Visit log · 11 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>20</span></div></section><section class="page "><div class="kicker">Visit log · 12 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>21</span></div></section><section class="page "><div class="kicker">Visit log · 13 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>22</span></div></section><section class="page "><div class="kicker">Visit log · 14 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>23</span></div></section><section class="page "><div class="kicker">Visit log · 15 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>24</span></div></section><section class="page "><div class="kicker">Visit log · 16 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>25</span></div></section><section class="page "><div class="kicker">Visit log · 17 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>26</span></div></section><section class="page "><div class="kicker">Visit log · 18 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>27</span></div></section><section class="page "><div class="kicker">Visit log · 19 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>28</span></div></section><section class="page "><div class="kicker">Visit log · 20 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>29</span></div></section><section class="page "><div class="kicker">Visit log · 21 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>30</span></div></section><section class="page "><div class="kicker">Visit log · 22 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>31</span></div></section><section class="page "><div class="kicker">Visit log · 23 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>32</span></div></section><section class="page "><div class="kicker">Visit log · 24 of 24</div><h2 style="margin-bottom:12pt">Park visits</h2><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="vl"><div class="top"><h3>Park</h3><span class="small">Visit no. ______</span></div>
+<div class="vg"><div>
+<div class="f2"><div class="fl">State or province</div><div class="fl">Date</div>
+<div class="fl">Trail hiked</div><div class="fl">Distance<span class="u"><b></b> mi / <b></b> km</span></div>
+<div class="fl">Who with</div><div class="fl">Time on trail</div></div>
+<div class="lab">Weather</div><div class="opts"><span>Sunny</span><span>Cloudy</span><span>Rain</span><span>Wind</span><span>Snow</span><span>Hot</span><span>Cold</span></div>
+<div class="lab">Wildlife, plants and trail notes</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+<div class="lab">Highlight</div><div class="wl" style="height:21pt"></div><div class="wl" style="height:21pt"></div>
+</div><div><div class="sbl">Stamp or sticker</div><div class="sb" style="height:1.9in"></div>
+<div class="sbl" style="margin-top:8pt">Would I come back?</div><div class="opts"><span>Yes</span><span>Maybe</span><span>No</span></div></div></div></div><div class="folio"><span>State Parks Passport</span><span>33</span></div></section><section class="page "><div class="kicker">Extra sites</div><h2 style="margin-bottom:12pt">More stamps: trails, nature centers, historic sites</h2><div class="xs"><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div></div><div class="folio"><span>State Parks Passport</span><span>34</span></div></section><section class="page "><div class="kicker">Extra sites</div><h2 style="margin-bottom:12pt">More stamps and stickers</h2><div class="xs"><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div><div><div class="f2" style="gap:0 12pt"><div class="fl">Site</div><div class="fl">Date</div></div><div class="sb"></div></div></div><div class="folio"><span>State Parks Passport</span><span>35</span></div></section><section class="page "><div class="kicker">Save on entry</div><h2>Annual passes and passport programs</h2>
+<p>Many states and provinces sell an annual pass or a vehicle permit, and some run passport programs with stamps and rewards. If you visit the same state's parks three or four times a year, a pass often pays for itself. Prices and rules change, so fill this in from the official websites on pages 7 to 9.</p>
+<div class="pt h"><span>State or province</span><span>Pass or program name</span><span>Cost</span><span>Bought</span><span>Valid until</span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div><div class="pt"><span></span><span></span><span></span><span></span><span></span></div>
+<h3 style="margin-top:14pt">A few names to look for</h3>
+<p class="small" style="margin-top:-2pt">Examples seen on the official sites in November 2026. Check what each one covers, and whether it is for residents only.</p>
+<table><tr><th>State or province</th><th>Pass or program</th><th>State or province</th><th>Pass or program</th></tr>
+<tr><td>Washington</td><td>Discover Pass</td><td>Georgia</td><td>ParkPass</td></tr>
+<tr><td>Michigan</td><td>Recreation Passport</td><td>South Carolina</td><td>ALL Park Passport</td></tr>
+<tr><td>New York</td><td>Empire Pass</td><td>Connecticut</td><td>Passport to the Parks</td></tr>
+<tr><td>Colorado</td><td>Keep Colorado Wild Pass</td><td>Maryland</td><td>Maryland Park Service Passport</td></tr>
+<tr><td>Ontario</td><td>Seasonal and annual day-use permits</td><td>Québec</td><td>Annual card, Québec national parks</td></tr></table><div class="folio"><span>State Parks Passport</span><span>36</span></div></section><section class="page "><div class="kicker">The winners</div><h2>My favorite parks hall of fame</h2>
+<p>Hand out the awards. Change them as often as you like.</p>
+<div class="hf"><div><h3>Best view</h3><div class="fl" style="height:22pt">Park</div><div class="wl" style="height:22pt"></div></div><div><h3>Best waterfall or lake</h3><div class="fl" style="height:22pt">Park</div><div class="wl" style="height:22pt"></div></div><div><h3>Best trail for a first-timer</h3><div class="fl" style="height:22pt">Park</div><div class="wl" style="height:22pt"></div></div><div><h3>Hardest trail I finished</h3><div class="fl" style="height:22pt">Park</div><div class="wl" style="height:22pt"></div></div><div><h3>Best campground or picnic spot</h3><div class="fl" style="height:22pt">Park</div><div class="wl" style="height:22pt"></div></div><div><h3>Best park with kids or friends</h3><div class="fl" style="height:22pt">Park</div><div class="wl" style="height:22pt"></div></div><div><h3>Best wildlife moment</h3><div class="fl" style="height:22pt">Park</div><div class="wl" style="height:22pt"></div></div><div><h3>Best park in bad weather</h3><div class="fl" style="height:22pt">Park</div><div class="wl" style="height:22pt"></div></div></div>
+<h3 style="margin-top:14pt">The number one park, and why</h3><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>State Parks Passport</span><span>37</span></div></section><section class="page "><div class="kicker">Keep count</div><h2>Year totals</h2>
+<p>Add up each year at New Year, then compare. Small numbers count too.</p>
+<div class="yr h"><span>Year</span><span>Parks visited</span><span>New states / provinces</span><span>Miles</span><span>Kilometers</span></div><div class="yr"><span></span><span></span><span></span><span></span><span></span></div><div class="yr"><span></span><span></span><span></span><span></span><span></span></div><div class="yr"><span></span><span></span><span></span><span></span><span></span></div><div class="yr"><span></span><span></span><span></span><span></span><span></span></div><div class="yr"><span></span><span></span><span></span><span></span><span></span></div><div class="yr"><span></span><span></span><span></span><span></span><span></span></div>
+<h3 style="margin-top:16pt">All-time totals</h3>
+<div class="tot"><div>Parks</div><div>States</div><div>Provinces</div><div>Miles / km</div></div>
+<div class="f2" style="margin-top:10pt"><div class="fl">Longest hike<span class="u"><b></b> mi / <b></b> km</span></div><div class="fl">Most parks in a year</div></div>
+<p class="small" style="margin-top:8pt">Handy to know: 1 mile is about 1.6 km, and 1 km is about 0.62 miles.</p>
+<div class="lab" style="margin-top:12pt">Notes</div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="wl" style="height:24pt"></div><div class="folio"><span>State Parks Passport</span><span>38</span></div></section><section class="page "><div class="kicker">One page to remember</div><h2>Leave No Trace and park etiquette</h2>
+<p class="lead">State parks are busy, shared places close to town. These seven habits keep them good for everyone.</p>
+<div class="lnt"><div><div class="n">1</div><div><h3>Plan ahead and prepare</h3><p>Check the park's page for hours, fees and closures. Carry water, food, a layer, a light and a map.</p></div></div><div><div class="n">2</div><div><h3>Travel on durable surfaces</h3><p>Stay on the marked trail, even through mud, so it does not widen. Never cut switchbacks.</p></div></div><div><div class="n">3</div><div><h3>Dispose of waste properly</h3><p>Pack out everything you bring, food scraps too. Use restrooms where there are some.</p></div></div><div><div class="n">4</div><div><h3>Leave what you find</h3><p>Flowers, rocks, shells and old artifacts stay where they are for the next visitor.</p></div></div><div><div class="n">5</div><div><h3>Minimize campfire impacts</h3><p>Use existing fire rings only, follow any fire ban, and buy firewood where you burn it.</p></div></div><div><div class="n">6</div><div><h3>Respect wildlife</h3><p>Watch from a distance, never feed animals, and store food so animals cannot reach it.</p></div></div><div><div class="n">7</div><div><h3>Be considerate of others</h3><p>Yield to hikers going uphill, keep pets on a leash where required, and keep music off.</p></div></div></div>
+<div class="box forest" style="margin-top:12pt"><h3>Each park has its own rules</h3><p style="margin:0">Pets, drones, swimming, collecting and hunting seasons all have rules that change from state to state and park to park. In fall, some parks allow hunting: check the park page and wear bright colors. When in doubt, ask at the park office.</p></div>
+<h3>Pack these on every park day hike</h3>
+<div class="cols" style="gap:0 20pt"><ul class="check"><li>Water, more than you think</li><li>Snacks or lunch</li><li>Rain shell and a warm layer</li><li>Map, offline or on paper</li></ul><ul class="check"><li>Headlamp or flashlight</li><li>Sun hat and sunscreen</li><li>Small first aid kit</li><li>Tell someone your plan and return time</li></ul></div>
+<p class="small" style="margin-top:8pt">Based on the seven Leave No Trace principles. Learn more at lnt.org.</p><div class="folio"><span>State Parks Passport</span><span>39</span></div></section><section class="page back"><div class="brand">HikeSupply Co.</div>
+<div><h2>Collecting national parks too?</h2><p style="font-size:12pt;max-width:5.6in;margin-top:10pt">Keep your state and national park stamps side by side.</p>
+<div class="bk" style="margin-top:22pt">
+<div><h3>National Parks Hiking Tracker</h3><p>All 64 US national parks plus Canada's national parks, each with one easy day hike and a stamp box.</p><div class="u">hikesupplyco.com</div></div>
+<div><h3>2027 Hiking Year Planner</h3><p>Plan a whole year of hikes month by month, with goals, challenges and a gear wish list.</p><div class="u">hikesupplyco.com</div></div></div></div>
+<div><p style="font-size:9pt;max-width:6.4in">Agency names and websites were checked on each agency's own website in November 2026. Fees, rules and closures change. Check official park sources before every trip and hike within your experience. For personal use: print as many copies as you like for yourself and your family. Cover photo: Erhan Üstünbaş / Pexels.</p>
+<p style="font-size:10pt;margin-top:10pt"><b style="color:#F5F1EA">hikesupplyco.com</b></p></div></section></body></html>
