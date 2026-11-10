@@ -285,3 +285,13 @@ Agent: Finance (`agents/finance.md`), daily 07:37. HQ collection `money`: `lates
 
 Agent: Ads Manager (`agents/ads.md`), every second day 16:22. HQ collection `ads`: `tracking` (pixel and tag health) and `a<NN>` cards `{status: waiting|approved|rejected|live|stop|ended, kind: campaign|setup, platform, title, product, creatives, copy, audience, budgetPerDay, days, maxTotal, expected, stopRules, why, launchSteps, results, note}`.
 The store has no ad budget yet. The Ads Manager never spends money and never launches or unpauses a campaign. Vasil approves a card with an exact daily budget and total cap, then launches it himself.
+
+# Scenic reels (Vasil 2026-11-10, being shaped)
+
+Short, magical real mountain clips (sunrise over clouds, alpenglow, drone over peaks), like popular "spot" accounts. Rules so far:
+- Real footage only from free commercial sources: Pexels, Mixkit (also Pixabay, Coverr). Both block the cloud, so clips are downloaded through Vasil's PC (browser pane), stored in `Downloads\HikeSupply scenic`.
+- Quality: only clips filmed vertical (1080x1920+) or 4K. Never crop and enlarge a 1080p landscape clip to vertical. Not every video has to be vertical: post landscape clips as they are.
+- Sound: Instagram library music attached through Metricool `instagramData.audioConfiguration` (audioId; search term returns candidates), videoVolume 0. Never put copyrighted songs into the file. Our own music (build/scenic3/music2.py styles) differs for every clip.
+- On-screen text: must be about what the clip shows. Wording still being agreed with Vasil.
+- Vasil approves every video before it is scheduled.
+- First test: scenic-peaks-01, Instagram Reel 2026-11-11 13:30 with "Boundless" by Eveningland (Metricool post 423399565).
