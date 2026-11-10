@@ -1,79 +1,84 @@
 {
-  "note": "Products whose supplier stock the Importer checks every day in DSers (Vasil 2026-11-09). backups = verified listings of the SAME product to switch to when the main supplier runs low.",
-  "products": [
+ "note": "Products whose supplier stock the Importer checks every day in DSers (Vasil 2026-11-09). backups = verified listings of the SAME product to switch to when the main supplier runs low.",
+ "products": [
+  {
+   "handle": "merino-wool-hiking-socks",
+   "shopifyId": "gid://shopify/Product/15391635833139",
+   "dsersTitle": "Merino Wool Hiking Socks — 80% Merino, Cushioned Crew",
+   "low": 30,
+   "variants": {
+    "Navy Blue / S": "gid://shopify/ProductVariant/67576888787251",
+    "Navy Blue / L": "gid://shopify/ProductVariant/67576888820019",
+    "Green / S": "gid://shopify/ProductVariant/67576888852787",
+    "Brown / S": "gid://shopify/ProductVariant/67576888885555",
+    "Green / L": "gid://shopify/ProductVariant/67576888918323",
+    "Black / Grey / S": "gid://shopify/ProductVariant/67576888951091",
+    "Brown / L": "gid://shopify/ProductVariant/67576888983859",
+    "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
+   },
+   "lastCheck": {
+    "date": "2026-11-09",
+    "time": "18:00Z",
+    "by": "importer",
+    "stock": {
+     "Navy Blue / S": 2,
+     "Navy Blue / L": 21,
+     "Green / S": 492,
+     "Brown / S": 486,
+     "Green / L": 7,
+     "Black / Grey / S": 487,
+     "Brown / L": 476,
+     "Black / Grey / L": 4
+    },
+    "belowLow": [
+     "Navy Blue / S",
+     "Navy Blue / L",
+     "Green / L",
+     "Black / Grey / L"
+    ]
+   },
+   "backups": [],
+   "candidates": [
     {
-      "handle": "merino-wool-hiking-socks",
-      "shopifyId": "gid://shopify/Product/15391635833139",
-      "dsersTitle": "Merino Wool Hiking Socks — 80% Merino, Cushioned Crew",
-      "low": 30,
-      "variants": {
-        "Navy Blue / S": "gid://shopify/ProductVariant/67576888787251",
-        "Navy Blue / L": "gid://shopify/ProductVariant/67576888820019",
-        "Green / S": "gid://shopify/ProductVariant/67576888852787",
-        "Brown / S": "gid://shopify/ProductVariant/67576888885555",
-        "Green / L": "gid://shopify/ProductVariant/67576888918323",
-        "Black / Grey / S": "gid://shopify/ProductVariant/67576888951091",
-        "Brown / L": "gid://shopify/ProductVariant/67576888983859",
-        "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
-      },
-      "lastCheck": {
-        "date": "2026-11-09",
-        "time": "18:00Z",
-        "by": "importer",
-        "stock": {
-          "Navy Blue / S": 2,
-          "Navy Blue / L": 21,
-          "Green / S": 492,
-          "Brown / S": 486,
-          "Green / L": 7,
-          "Black / Grey / S": 487,
-          "Brown / L": 476,
-          "Black / Grey / L": 4
-        },
-        "belowLow": [
-          "Navy Blue / S",
-          "Navy Blue / L",
-          "Green / L",
-          "Black / Grey / L"
-        ]
-      },
-      "backups": [],
-      "candidates": [
-        {
-          "url": "https://www.aliexpress.com/item/3256808021774915.html",
-          "store": "XIZOU Store",
-          "checked": "2026-11-09",
-          "result": "fail",
-          "note": "Same sock, only one size 42-46 (our large). Choice, $6.38-6.69 + $1.99, 5-9 days. But only 4-7 pairs per colour. Too thin to be a backup."
-        },
-        {
-          "url": "https://www.aliexpress.com/item/3256802378739957.html",
-          "store": "Global Merino Wool Outdoor Store",
-          "checked": "2026-11-09",
-          "result": "emergency only",
-          "note": "Same sock, 4.9 (162 reviews), 1,000+ sold, Choice, 5-9 days. Sold only in packs of 2-3 pairs, about $10.60-11.40 per pair, Euro XL(40-45) = our large, 4-17 packs per option. Costs about $4 more per pair than our main supplier, so above the $1 switching rule: needs Vasil's yes before use."
-        },
-        {
-          "url": "https://www.aliexpress.us/item/3256809442334704.html",
-          "store": "CX Sports Store",
-          "checked": "2026-11-09",
-          "result": "fail",
-          "note": "Same knit look, 5.0, 52 sold, but 7 of 8 variants sold out and $7.33-7.65 per pair."
-        },
-        {
-          "url": "https://www.aliexpress.us/item/3256810311896004.html",
-          "store": "OutAir Store",
-          "checked": "2026-11-09",
-          "result": "fail",
-          "note": "One size only (EU 41-45) at $19.45 per pair."
-        }
-      ],
-      "supplier": {
-        "url": "https://www.aliexpress.com/item/3256805148447173.html",
-        "store": "Shop912559517 Store",
-        "note": "Current main supplier (confirmed from the AliExpress order page 2026-11-09). Restock question about Euro L sent to the seller 2026-11-09 19:12; read the reply in AliExpress Message Center."
-      },
-      "dsersOptimizer": "2026-11-09: DSers Supplier Optimizer (image search) shows 21 listings; only the 3 above are this exact sock (incl. our main supplier at $6.09-6.95, 182 DSers sales, 4.9). The rest are different socks or multipacks."
+     "url": "https://www.aliexpress.com/item/3256808021774915.html",
+     "store": "XIZOU Store",
+     "checked": "2026-11-09",
+     "result": "fail",
+     "note": "Same sock, only one size 42-46 (our large). Choice, $6.38-6.69 + $1.99, 5-9 days. But only 4-7 pairs per colour. Too thin to be a backup."
+    },
+    {
+     "url": "https://www.aliexpress.com/item/3256802378739957.html",
+     "store": "Global Merino Wool Outdoor Store",
+     "checked": "2026-11-09",
+     "result": "emergency only",
+     "note": "Same sock, 4.9 (162 reviews), 1,000+ sold, Choice, 5-9 days. Sold only in packs of 2-3 pairs, about $10.60-11.40 per pair, Euro XL(40-45) = our large, 4-17 packs per option. Costs about $4 more per pair than our main supplier, so above the $1 switching rule: needs Vasil's yes before use."
+    },
+    {
+     "url": "https://www.aliexpress.us/item/3256809442334704.html",
+     "store": "CX Sports Store",
+     "checked": "2026-11-09",
+     "result": "fail",
+     "note": "Same knit look, 5.0, 52 sold, but 7 of 8 variants sold out and $7.33-7.65 per pair."
+    },
+    {
+     "url": "https://www.aliexpress.us/item/3256810311896004.html",
+     "store": "OutAir Store",
+     "checked": "2026-11-09",
+     "result": "fail",
+     "note": "One size only (EU 41-45) at $19.45 per pair."
     }
-  ]
+   ],
+   "supplier": {
+    "url": "https://www.aliexpress.com/item/3256805148447173.html",
+    "store": "Shop912559517 Store",
+    "note": "Current main supplier (confirmed from the AliExpress order page 2026-11-09). Restock question about Euro L sent to the seller 2026-11-09 19:12; read the reply in AliExpress Message Center.",
+    "restockReply": {
+     "date": "2026-11-10",
+     "summary": "Seller (live agent) says the stock shown is only what is allocated to the AliExpress (Choice) warehouse, not their real inventory. They have more in their own warehouse; when the AliExpress warehouse sells out, their own warehouse quantity will show on the page. No numbers or dates given.",
+     "watch": "When a variant switches to the seller's own warehouse, re-check the US delivery estimate (must stay 13 business days or less) and the cost in DSers."
+    }
+   },
+   "dsersOptimizer": "2026-11-09: DSers Supplier Optimizer (image search) shows 21 listings; only the 3 above are this exact sock (incl. our main supplier at $6.09-6.95, 182 DSers sales, 4.9). The rest are different socks or multipacks."
+  }
+ ]
 }
