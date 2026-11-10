@@ -17,17 +17,17 @@
     "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
    },
    "lastCheck": {
-    "date": "2026-11-09",
-    "time": "18:00Z",
+    "date": "2026-11-10",
+    "time": "15:25Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 2,
      "Navy Blue / L": 21,
-     "Green / S": 492,
-     "Brown / S": 486,
+     "Green / S": 491,
+     "Brown / S": 485,
      "Green / L": 7,
-     "Black / Grey / S": 487,
-     "Brown / L": 476,
+     "Black / Grey / S": 486,
+     "Brown / L": 474,
      "Black / Grey / L": 4
     },
     "belowLow": [
@@ -35,7 +35,8 @@
      "Navy Blue / L",
      "Green / L",
      "Black / Grey / L"
-    ]
+    ],
+    "note": "No new backup: AliExpress best sellers for merino hiking socks are different socks (thick wool blends, multipacks). Hunter request from 2026-11-09 still open."
    },
    "backups": [],
    "candidates": [
