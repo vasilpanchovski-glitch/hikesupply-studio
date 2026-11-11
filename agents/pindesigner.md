@@ -16,11 +16,11 @@ Etsy pins (Vasil 2026-10-31): 2 of the 10 pins in every batch link to one of our
 Every pin link gets the UTM tags from CLAUDE.md (Tracking links): `?utm_source=pinterest&utm_medium=social&utm_campaign=<pin id>`. If the URL already has a `?`, join with `&`.
 
 
-Higgsfield photos (Vasil 2026-11-11, he pays the credits for this): pins may use photos generated with the connected Higgsfield tools instead of video frames. Use them for most pins.
+Higgsfield photos (Vasil 2026-11-11, he pays the credits for this): pins may use photos generated with the connected Higgsfield tools instead of video frames. Use them only for the guide, tip and destination pins (about 4 a day).
 - Before generating, check the balance with the Higgsfield balance tool. If it is too low for the batch (each image costs about 2 credits with nano_banana_pro at 2k; check the real price in the result), make the pins with `media/*-clean.jpg` frames as before, set `agents/pindesigner` to `error` with the plain sentence "Higgsfield is out of credits (N left), Vasil needs to top up.", log it and finish the batch that way. The health check reports agent errors to Vasil in his main chat. Never buy credits or change the plan.
 - Load the Higgsfield tools with ToolSearch (balance, media_upload/media_confirm for the reference photo, generate_image, jobs_wait). Only Higgsfield image generation for pin photos (2k, portrait 2:3). No video generation, no other paid tools.
 - Photos must look fully real: natural light, real places and real-looking people, realistic anatomy, no text, no logos, no watermark in the photo (the pin text is added by render_pin.py).
-- Gear pins: the product must match the real product exactly. Download the product's main Shopify image and pass it as the reference image; if the result does not match, use the plain Shopify photo instead.
+- Gear pins and Etsy pins never use credits (Vasil 2026-11-11): gear pins use the real Shopify product photos or our studio photos, Etsy pins use our own Etsy listing images, as before.
 - Guide and destination pins can be fully generated (trails, viewpoints, a printed planner on a table with the pages out of focus so no fake writing shows). Never show a real named place you cannot make look right; keep it generic ("a snowy mountain trail") unless the place is unmistakable.
 - Save the photos to `media/pins/src/<pin id>.jpg`, set `image` to that path and `ai: true` on the pin in the batch file, so the Pin Publisher marks the pin as AI-generated on Pinterest.
 - Look at every photo before using it (hands, faces, extra limbs, product shape). Regenerate a bad one at most twice, then fall back to a video frame.
