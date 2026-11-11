@@ -15,5 +15,7 @@ npx remotion render src/index.ts "$UP" "../build/${ID}_silent.mp4" --concurrency
 npx remotion still src/index.ts "$UP" "../media/${ID}-clean.jpg" --frame=$((30*22+20)) --props='{"clean":true}' --jpeg-quality=88 --log=error || true
 cd ..
 ffmpeg -loglevel error -y -i "build/${ID}_silent.mp4" -i "build/${ID}_mix.wav" -map 0:v -map 1:a -c:v libx264 -preset slow -b:v 4000k -maxrate 5500k -bufsize 8000k -pix_fmt yuv420p -c:a aac -b:a 192k -ar 48000 -af loudnorm=I=-14:TP=-1.5:LRA=11 -movflags +faststart -shortest "media/$ID.mp4"
+# Instagram version (Vasil 2026-11-11): voice only, no music, so Instagram's library music can go under it at low volume.
+ffmpeg -loglevel error -y -i "build/${ID}_silent.mp4" -i "build/${ID}_vo.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -af loudnorm=I=-14:TP=-1.5:LRA=11 -movflags +faststart -shortest "media/$ID-ig.mp4" || true
 ffmpeg -loglevel error -y -ss 1.2 -i "media/$ID.mp4" -frames:v 1 -q:v 3 "media/$ID.jpg"
 echo "done media/$ID.mp4 $(du -h media/$ID.mp4 | cut -f1)"
