@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport).",
- "updated": "2026-11-09",
+ "updated": "2026-11-11",
  "complaints": [
   {
    "type": "trekking pole",
@@ -1885,12 +1885,172 @@
    "date": "",
    "theme": "guide too limited / generic",
    "found": "2026-11-09"
+  },
+  {
+   "type": "balaclava",
+   "product": "HOTHEAD Balaclava",
+   "what": "fits too tight, uncomfortable over a bigger nose",
+   "source": "https://www.desertcart.com.cy/products/5950567",
+   "where": "reseller page review summary",
+   "date": "",
+   "theme": "balaclava fits badly",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "balaclava",
+   "product": "HOTHEAD Balaclava",
+   "what": "leaves the brow and lower forehead uncovered, face gets cold",
+   "source": "https://www.desertcart.com.cy/products/5950567",
+   "where": "reseller page review summary",
+   "date": "",
+   "theme": "balaclava fits badly",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "balaclava",
+   "product": "HOTHEAD Balaclava",
+   "what": "worn over the nose it fogs glasses; air leaks in with goggles",
+   "source": "https://www.desertcart.com.cy/products/5950567",
+   "where": "reseller page review summary",
+   "date": "",
+   "theme": "fogs glasses or goggles",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "balaclava",
+   "product": "HOTHEAD Balaclava",
+   "what": "thinner and less warm than expected",
+   "source": "https://www.desertcart.com.cy/products/5950567",
+   "where": "reseller page review summary",
+   "date": "",
+   "theme": "too thin, not warm enough",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "balaclava",
+   "product": "HOTHEAD Balaclava",
+   "what": "stiff, scratchy fabric with a smell on arrival",
+   "source": "https://www.desertcart.com.cy/products/5950567",
+   "where": "reseller page review summary",
+   "date": "",
+   "theme": "stiff or noisy material",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "balaclava",
+   "product": "Outdoor Research Sonic Balaclava",
+   "what": "face panel stands off the face so breath fogs goggles",
+   "source": "https://www.zappos.com/product/review/7675584/page/2",
+   "where": "Zappos 2-star review",
+   "date": "2017-11-16",
+   "theme": "fogs glasses or goggles",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "balaclava",
+   "product": "Outdoor Research Sonic Balaclava",
+   "what": "eye opening too wide and neck too short, skin left exposed",
+   "source": "https://www.zappos.com/product/review/7675584/page/2",
+   "where": "Zappos 2-star review",
+   "date": "2017-11-16",
+   "theme": "balaclava fits badly",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "bottle sleeve",
+   "product": "Nalgene insulated sleeve",
+   "what": "a reorder came with thinner insulation and kept water warm less well",
+   "source": "https://www.trailspace.com/gear/nalgene/insulated-water-bottle-sleeve/",
+   "where": "Trailspace 4-star review cons",
+   "date": "",
+   "theme": "inconsistent quality between orders",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "bottle sleeve",
+   "product": "Nalgene insulated sleeve",
+   "what": "outside carry loop feels flimsy",
+   "source": "https://www.trailspace.com/gear/nalgene/insulated-water-bottle-sleeve/",
+   "where": "Trailspace 4-star review cons",
+   "date": "",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "bottle sleeve",
+   "product": "Nalgene 32 oz neoprene sleeve",
+   "what": "adds a lot of bulk and the lid cover flops around while drinking",
+   "source": "https://www.desertcart.lk/products/545783359",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "bottle sleeve bulky, lid cover in the way",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "road trip planner",
+   "product": "Road Trip Planner & Travel Journal (4 trips)",
+   "what": "not enough room for each day's notes",
+   "source": "https://www.desertcart.vn/products/25056956",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "not enough blank pages / too rigid",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "road trip planner",
+   "product": "Road Trip Planner & Travel Journal (4 trips)",
+   "what": "nowhere to keep tickets and passes",
+   "source": "https://www.desertcart.vn/products/25056956",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "nowhere to keep tickets",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "road trip planner",
+   "product": "Road Trip Planner & Travel Journal (4 trips)",
+   "what": "checklists written for the UK/EU, not for US trips",
+   "source": "https://www.desertcart.vn/products/25056956",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "not made for US/Canada",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "road trip planner",
+   "product": "Road Trip Planner & Travel Journal (4 trips)",
+   "what": "poor print quality, stray lines on some pages",
+   "source": "https://www.desertcart.vn/products/25056956",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "poor print quality",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "trip planning map",
+   "product": "USA planning map",
+   "what": "map too small to be useful in the car, stickers too big for it",
+   "source": "https://www.desertcart.nl/products/46571629",
+   "where": "reseller page 3-star review",
+   "date": "",
+   "theme": "map too small, little detail",
+   "found": "2026-11-11"
+  },
+  {
+   "type": "trip planning map",
+   "product": "USA planning map",
+   "what": "took a very long time to arrive",
+   "source": "https://www.desertcart.nl/products/46571629",
+   "where": "reseller page 3-star review",
+   "date": "",
+   "theme": "slow shipping / no reply",
+   "found": "2026-11-11"
   }
  ],
  "themes": [
   {
    "theme": "breaks quickly / cheaply made",
-   "count": 18
+   "count": 19
   },
   {
    "theme": "pole locks slip / poles collapse",
@@ -1922,18 +2082,18 @@
   },
   {
    "theme": "too thin, not warm enough",
-   "count": 6
+   "count": 7
   },
   {
    "theme": "filter straw clogs / flow drops / hard to suck",
    "count": 5
   },
   {
-   "theme": "grip uncomfortable or slippery",
-   "count": 4
+   "theme": "slow shipping / no reply",
+   "count": 5
   },
   {
-   "theme": "slow shipping / no reply",
+   "theme": "grip uncomfortable or slippery",
    "count": 4
   },
   {
@@ -1949,6 +2109,10 @@
    "count": 4
   },
   {
+   "theme": "not enough blank pages / too rigid",
+   "count": 4
+  },
+  {
    "theme": "hydration bladder leaks",
    "count": 3
   },
@@ -1958,10 +2122,6 @@
   },
   {
    "theme": "emergency bivy: condensation, no insulation",
-   "count": 3
-  },
-  {
-   "theme": "not enough blank pages / too rigid",
    "count": 3
   },
   {
@@ -1997,6 +2157,10 @@
    "count": 3
   },
   {
+   "theme": "balaclava fits badly",
+   "count": 3
+  },
+  {
    "theme": "not suited to hikers with disabilities",
    "count": 2
   },
@@ -2018,6 +2182,14 @@
   },
   {
    "theme": "socks wear thin / holes",
+   "count": 2
+  },
+  {
+   "theme": "stiff or noisy material",
+   "count": 2
+  },
+  {
+   "theme": "fogs glasses or goggles",
    "count": 2
   },
   {
@@ -2046,10 +2218,6 @@
   },
   {
    "theme": "bivy too small",
-   "count": 1
-  },
-  {
-   "theme": "stiff or noisy material",
    "count": 1
   },
   {
@@ -2098,6 +2266,30 @@
   },
   {
    "theme": "too heavy to carry",
+   "count": 1
+  },
+  {
+   "theme": "inconsistent quality between orders",
+   "count": 1
+  },
+  {
+   "theme": "bottle sleeve bulky, lid cover in the way",
+   "count": 1
+  },
+  {
+   "theme": "nowhere to keep tickets",
+   "count": 1
+  },
+  {
+   "theme": "not made for US/Canada",
+   "count": 1
+  },
+  {
+   "theme": "poor print quality",
+   "count": 1
+  },
+  {
+   "theme": "map too small, little detail",
    "count": 1
   }
  ]

@@ -1,0 +1,291 @@
+{
+ "date": "2026-11-11",
+ "previous": "2026-11-05",
+ "group": "c",
+ "note": "Group C. Empty fields mean the page did not show the number. Travel50States shop page and Hiker Hunger's own site could not be opened from the cloud; their listing pages could. Decathlon read from its cold-weather and clearance pages.",
+ "sellers": [
+  {
+   "name": "Kingdom over culture life (Payhip)",
+   "products": [
+    {
+     "title": "Utah's Mighty Five: A Family Road Trip Guide (9 days, 5 parks)",
+     "format": "guide PDF",
+     "pages": 10,
+     "price": 14.0,
+     "notes": "unchanged since Oct 31: 'On Sale' label with no old price, no reviews, no other products"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "count": null
+   },
+   "marketing": {
+    "tactics": [
+     "first-person 'what we wish someone told us' title",
+     "'On Sale' label with no old price"
+    ]
+   },
+   "source": "https://payhip.com/b/B7YEG"
+  },
+  {
+   "name": "milesandhikes (Gumroad)",
+   "products": [
+    {
+     "title": "Nature Weekend Reset Planner Guide",
+     "pages": 21,
+     "price": 5.99,
+     "notes": "not re-read this run (page did not open); last seen Nov 5"
+    },
+    {
+     "title": "Best of Miles & Hikes: 4 Essential Guides",
+     "format": "bundle",
+     "pages": "145+",
+     "price": 19.99,
+     "notes": "unchanged, no discount; topics solo road trips, car camping, camp cooking, meal planning",
+     "url": "https://milesandhikes.gumroad.com/l/bestofmhfourguides"
+    },
+    {
+     "title": "Weekend Car Camping Guide For First-Time Solo Women Campers",
+     "pages": 19,
+     "price": 4.99,
+     "notes": "first time recorded; no ratings or sales shown",
+     "url": "https://milesandhikes.gumroad.com/l/weekend-car-camping-guide"
+    },
+    {
+     "title": "Leave No Trace Cheat Sheet",
+     "price": 0,
+     "notes": "free, first time recorded; no email form shown on the page",
+     "url": "https://milesandhikes.gumroad.com/l/lntcheatsheet"
+    },
+    {
+     "title": "Solo Roadtrip Guide For Midlife Women",
+     "notes": "seen in search, price not read",
+     "url": "https://milesandhikes.gumroad.com/l/womenroadtripguide"
+    },
+    {
+     "title": "Vanlife Without The Van",
+     "notes": "seen in search, price not read",
+     "url": "https://milesandhikes.gumroad.com/l/vanlifewithouthevan"
+    }
+   ],
+   "offers": [
+    "free Leave No Trace cheat sheet ($0)",
+    "all-guides bundle $19.99"
+   ],
+   "reviews": {},
+   "marketing": {
+    "tactics": [
+     "one narrow audience per guide (first-time solo women campers, midlife women road trippers)",
+     "free $0 cheat sheet next to paid guides",
+     "all-guides bundle"
+    ],
+    "traffic": "Gumroad product pages rank in Google for their own titles"
+   }
+  },
+  {
+   "name": "Travel50States",
+   "shop": {
+    "sales": "1.2k",
+    "rating": 4.9,
+    "ratings": 95,
+    "star_seller": true
+   },
+   "products": [
+    {
+     "title": "64 National Parks Tracker (2 pages, Letter and A4)",
+     "price": 2.99,
+     "notes": "no sale, 0 item reviews",
+     "url": "https://www.etsy.com/listing/4349840646/us-national-parks-checklist-travel"
+    },
+    {
+     "title": "National Parks Map Checklist (1 page, Letter and A4)",
+     "price": 2.99,
+     "sale_price": 2.54,
+     "notes": "page still showed the 15% off that ended Oct 31 (likely cached)",
+     "url": "https://www.etsy.com/listing/4352667004/us-national-parks-map-checklist-travel"
+    }
+   ],
+   "offers": [
+    "no Black Friday or holiday offer shown on Nov 11"
+   ],
+   "reviews": {
+    "praise": [],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "Letter and A4 named in the title",
+     "cheap $2-3 one-page trackers"
+    ],
+    "traffic": "Etsy search"
+   }
+  },
+  {
+   "name": "ThePrintedSmile",
+   "shop": {
+    "sales": "40.4k",
+    "rating": 4.8,
+    "ratings": 3517
+   },
+   "products": [
+    {
+     "title": "Camping Coloring Pages",
+     "price": 3.99,
+     "sale_price": 2.99
+    },
+    {
+     "title": "Camping Gift Certificate",
+     "price": 3.99,
+     "sale_price": 2.99
+    },
+    {
+     "title": "Cabin Trip Gift Certificate",
+     "price": 3.99,
+     "sale_price": 2.99
+    },
+    {
+     "title": "Ropes Course Gift Ticket",
+     "price": 3.99,
+     "sale_price": 2.99
+    }
+   ],
+   "offers": [
+    "about 25% off across the shop (646 items all marked on sale), end date not shown"
+   ],
+   "reviews": {
+    "praise": [
+     "fun for kids",
+     "prints well",
+     "easy to customise for an event"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "shop-wide 25% sale",
+     "printable gift certificates for experiences (a trip as a gift)"
+    ]
+   },
+   "note": "shop page readable again; no hiking listings at all, only camping and outdoor gift certificates. Candidate to replace at the monthly review.",
+   "source": "https://www.etsy.com/shop/ThePrintedSmile"
+  },
+  {
+   "name": "Hiker Hunger Outfitters",
+   "products": [
+    {
+     "title": "100% Carbon Fiber Trekking Poles (Walmart)",
+     "price": "64.97-74.99",
+     "notes": "still out of stock on Walmart; 4.9 from 1,124 ratings (91% 5-star, 28 ratings of 1-3 stars, no text shown)",
+     "url": "https://www.walmart.com/ip/2288021295"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "'USA brand' in the title"
+    ]
+   }
+  },
+  {
+   "name": "Decathlon Canada (hiking)",
+   "shop": {
+    "free_shipping_over": 70,
+    "currency": "CAD"
+   },
+   "products": [
+    {
+     "title": "Men's Fleece Hiking Sweater MH 100",
+     "price": 14.99,
+     "currency": "CAD",
+     "rating": 4.8,
+     "ratings": 21383
+    },
+    {
+     "title": "SIMOND Merino Wool Beanie MT 500",
+     "price": 14.99,
+     "currency": "CAD",
+     "rating": 4.8,
+     "ratings": 3209
+    },
+    {
+     "title": "SIMOND Merino Wool Glove Liners MT 500",
+     "price": 29.99,
+     "currency": "CAD",
+     "rating": 4.7,
+     "ratings": 603
+    },
+    {
+     "title": "Merino wool hiking headband MT 500",
+     "price": 9.99,
+     "rating": 4.8,
+     "ratings": 1048,
+     "url": "https://www.decathlon.ca/en/p/8916437/warm-merino-wool-hiking-headband-mt-500-green"
+    },
+    {
+     "title": "Women's/Men's Winter Jacket MT 100",
+     "price": 40.0,
+     "was": 60.0,
+     "currency": "CAD",
+     "rating": "4.6-4.7",
+     "ratings": "5,518 / 6,091"
+    },
+    {
+     "title": "Hiking clearance (106 items, was 96 on Nov 5)",
+     "notes": "e.g. women's warm hiking pants $25 (was $55), snowshoes $40 (was $80)",
+     "url": "https://www.decathlon.ca/en/deals/hiking-clearance"
+    }
+   ],
+   "offers": [
+    "free standard shipping over $70 CAD",
+    "clearance up to about 54% off",
+    "bonus points for in-store pickup at one store Nov 10-15",
+    "no Black Friday banner on Nov 11"
+   ],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "standing clearance section that keeps growing",
+     "free shipping threshold",
+     "cheap merino accessories ($10-15 CAD) as add-ons"
+    ]
+   },
+   "source": "https://www.decathlon.ca/en/sports/hiking/cold"
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "National Park Obsessed (free checklist)",
+   "url": "https://nationalparkobsessed.com/united-states-national-parks-checklist",
+   "notes": "large free US national parks checklist, last updated Feb 7 2026, still lists 63 parks (Chiricahua only as a monument); download sits behind a newsletter page"
+  },
+  {
+   "name": "WandererDesignShop (Etsy)",
+   "url": "https://www.etsy.com/listing/691306170",
+   "notes": "kids' nature scavenger hunt $2.00, 189 reviews, 5.0"
+  }
+ ],
+ "changes_vs_previous": [
+  "milesandhikes: two more guides recorded ($4.99 solo women car camping, 19 pages) and a free $0 Leave No Trace cheat sheet.",
+  "ThePrintedSmile readable again: about 25% off shop-wide, but no hiking products at all.",
+  "Decathlon Canada clearance grew from 96 to 106 items; still no Black Friday banner.",
+  "Travel50States, Kingdom over culture, milesandhikes bundle: same prices, no new offers.",
+  "Hiker Hunger poles still out of stock on Walmart."
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "a free item next to paid ones (milesandhikes $0 cheat sheet, National Park Obsessed free checklist behind a newsletter)",
+   "% off sales (ThePrintedSmile 25% shop-wide, Decathlon clearance)",
+   "one narrow audience per product (milesandhikes: first-time solo women campers, midlife women road trippers)"
+  ],
+  "we_do_not_use_yet": [
+   "a free, up-to-date 64-parks one-pager as email bait (the big free list still says 63)",
+   "printable 'trip as a gift' certificates for the gift season"
+  ],
+  "black_friday": "Nov 11: no group C seller shows a Black Friday offer yet; ThePrintedSmile runs a general 25% sale."
+ }
+}
