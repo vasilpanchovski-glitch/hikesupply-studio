@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Mia slipped on an icy step and twisted her ankle.",
+   "gap": 0.2
+  },
+  {
+   "text": "Her partner was out of sight below.",
+   "gap": 0.2
+  },
+  {
+   "text": "She blew her old whistle. Nothing.",
+   "gap": 0.3
+  },
+  {
+   "text": "The little ball inside was wet from the morning, and it had frozen stuck.",
+   "gap": 0.2
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.2
+  },
+  {
+   "text": "Carry a whistle with no ball inside, clip it outside on your pack strap, and shake it dry after rain.",
+   "gap": 0.2
+  },
+  {
+   "text": "Three blasts, a pause, repeat.",
+   "gap": 0.2
+  },
+  {
+   "text": "Her partner heard her from the switchback.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.2
+  }
+ ]
+}

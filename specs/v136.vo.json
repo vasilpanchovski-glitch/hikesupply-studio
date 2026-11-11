@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Jake pulled his beanie on at the cold trailhead.",
+   "gap": 0.2
+  },
+  {
+   "text": "On the climb, his head got hot and sweaty, so he stuffed the beanie in his pocket.",
+   "gap": 0.2
+  },
+  {
+   "text": "Then the ridge wind hit his bare, damp ears.",
+   "gap": 0.3
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.2
+  },
+  {
+   "text": "On the climb, wear an ear warmer headband.",
+   "gap": 0.2
+  },
+  {
+   "text": "It covers your ears and lets heat escape from the top of your head.",
+   "gap": 0.2
+  },
+  {
+   "text": "Save the beanie for the stops.",
+   "gap": 0.2
+  },
+  {
+   "text": "Jake reached the ridge dry and warm.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}
