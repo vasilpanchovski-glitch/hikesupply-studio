@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Two hours from the trailhead, Sam had to go.",
+   "gap": 0.2
+  },
+  {
+   "text": "No toilet anywhere.",
+   "gap": 0.2
+  },
+  {
+   "text": "He scraped a shallow hole with his boot heel, right beside the trail.",
+   "gap": 0.3
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.2
+  },
+  {
+   "text": "Walk about seventy big steps, two hundred feet, away from water, trail and camp.",
+   "gap": 0.2
+  },
+  {
+   "text": "Dig a cathole six to eight inches deep with a small trowel.",
+   "gap": 0.2
+  },
+  {
+   "text": "Cover it well and pack out your paper.",
+   "gap": 0.2
+  },
+  {
+   "text": "The next hiker never knew.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this before your next long hike.",
+   "gap": 0.2
+  }
+ ]
+}
