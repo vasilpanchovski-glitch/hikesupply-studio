@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Owen had a beanie and a neck gaiter.",
+   "gap": 0.35
+  },
+  {
+   "text": "On the open ridge, the wind found the gaps anyway: his ears, his cheeks, the strip of neck in between.",
+   "gap": 0.35
+  },
+  {
+   "text": "Ten minutes in, his ears were numb.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "Cover up before the wind hits.",
+   "gap": 0.3
+  },
+  {
+   "text": "A balaclava does it in one piece: hood over the ears, a panel over cheeks and chin, a long neck tucked into your collar.",
+   "gap": 0.5
+  },
+  {
+   "text": "Owen crossed warm.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}

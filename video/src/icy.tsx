@@ -159,7 +159,7 @@ export const Balaclava: React.FC<{ p: HikerProps; col?: string; shade?: string; 
 };
 
 // Big close-up face (screen coords, centre cx, cy, s = scale) with a balaclava; for the face/fleece close-ups.
-export const FaceClose: React.FC<{ cx: number; cy: number; s: number; skin: string; skinShade: string; col?: string; shade?: string; up: number; frost?: number; damp?: number; snug?: number; eyes?: "tired" | "happy" | "neutral" }> = ({
+export const FaceClose: React.FC<{ cx: number; cy: number; s: number; skin: string; skinShade: string; col?: string; shade?: string; up: number; frost?: number; damp?: number; snug?: number; eyes?: "tired" | "happy" | "neutral"; jacket?: string }> = ({
   cx,
   cy,
   s,
@@ -172,12 +172,13 @@ export const FaceClose: React.FC<{ cx: number; cy: number; s: number; skin: stri
   damp = 0,
   snug = 0,
   eyes = "neutral",
+  jacket = "#2F7F86",
 }) => {
   const panelTop = 104 - up * 92; // up: just under the eyes, over the nose; down: under the chin
   return (
     <g transform={`translate(${cx},${cy}) scale(${s})`}>
       {/* shoulders / jacket collar */}
-      <path d="M-170,170 Q-120,110 -40,110 L60,110 Q150,110 190,180 L190,260 L-170,260 Z" fill="#2F7F86" />
+      <path d="M-170,170 Q-120,110 -40,110 L60,110 Q150,110 190,180 L190,260 L-170,260 Z" fill={jacket} />
       <path d="M-40,110 L60,110 L50,160 L-30,160 Z" fill={col} />
       {/* face (three-quarter view to the right) */}
       <ellipse cx={20} cy={4} rx={84} ry={92} fill={skin} />
