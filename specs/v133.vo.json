@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Nora's sleeping bag was rated for the cold, but at midnight her feet were freezing.",
+   "gap": 0.5
+  },
+  {
+   "text": "She had crawled in wearing the socks she hiked in, damp with a day of sweat.",
+   "gap": 0.6
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.4
+  },
+  {
+   "text": "Keep one pair of dry wool socks just for sleeping, sealed in a bag.",
+   "gap": 0.45
+  },
+  {
+   "text": "At camp, dry your feet and pull them on, loose, not tight.",
+   "gap": 0.6
+  },
+  {
+   "text": "Nora slept warm until sunrise.",
+   "gap": 0.7
+  },
+  {
+   "text": "Save this before your next cold camp.",
+   "gap": 0.2
+  }
+ ]
+}
