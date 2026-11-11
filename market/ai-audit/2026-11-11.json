@@ -1,0 +1,648 @@
+{
+ "date": "2026-11-11",
+ "method": "WebSearch (standard, US) for each of the 35 questions in market/ai-questions.json, question text exactly; top up to 8 domains as returned (duplicates once). Also site:hikesupplyco.com and 4 product/article name searches with 'hikesupplyco'. Shopping questions also list the brands/products named in result titles.",
+ "indexing": {
+  "site_search": "no hikesupplyco.com pages returned; only unrelated look-alike stores (trailspace Hyke Byke, fieldmag, hikerkind, Blue Ridge Hiking Co, webflow hiker template, Whittaker Mountaineering, Neptune Mountaineering, Garage Grown Gear)",
+  "name_searches": [
+   {
+    "query": "Winter Ready Set hikesupplyco",
+    "hikesupply_urls": [],
+    "note": "winter hiking gear guides and collections (Trekitt, Oboz, WTA, Garage Grown Gear, Salomon, Stio, Gore-Tex, Uncharted Supply Co)"
+   },
+   {
+    "query": "Glacier National Park Trip Planning Guide hikesupplyco",
+    "hikesupply_urls": [],
+    "note": "CleverHiker, Dirt In My Shoes, Glacier Highline, REI blog, Montana Scene, Glacier Park Collection, glacier.org trip planning pages"
+   },
+   {
+    "query": "Fleece Balaclava hikesupplyco",
+    "hikesupply_urls": [],
+    "note": "other retailers' fleece balaclava product pages (REI, Montane, Outdoor Research via MEC/Backcountry/enwild, Smartwool, The North Face, Walmart)"
+   },
+   {
+    "query": "hiking during hunting season trail journal hikesupplyco",
+    "hikesupply_urls": [],
+    "note": "Trailspace, North Country Trail, American Hiking Society, Advnture, Trailgroove, explore.com articles"
+   }
+  ]
+ },
+ "previous": "2026-11-09",
+ "results": [
+  {
+   "question": "free printable hiking checklist pdf",
+   "top": [
+    "trailcations.gumroad.com",
+    "checklist.com",
+    "rei.com (printable PDF)",
+    "windy.app",
+    "appalachiantrail.org",
+    "nuttyhiker.com",
+    "exercise.co.uk",
+    "docshelf-site.pages.dev (spam)"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "free printables (Gumroad freebie, checklist.com, REI PDF); most spam pages dropped out"
+  },
+  {
+   "question": "best day hiking checklist for beginners",
+   "top": [
+    "wherearethosemorgans.com",
+    "coolofthewild.com",
+    "pilotplans.com",
+    "rei.com",
+    "sectionhiker.com",
+    "gearjunkie.com",
+    "mec.ca",
+    "trailandkale.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "blog and retailer checklists (REI, SectionHiker, MEC, GearJunkie)"
+  },
+  {
+   "question": "what to pack for a day hike printable",
+   "top": [
+    "llbean.com",
+    "explorewithlora.com",
+    "theadventurejunkies.com",
+    "trailcations.gumroad.com",
+    "rei.com (printable PDF)",
+    "22places.com",
+    "switchbacktravel.com",
+    "gearjunkie.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "retailer printable (L.L.Bean) and blog packing lists, Gumroad freebie"
+  },
+  {
+   "question": "hiking trip planner printable",
+   "top": [
+    "backpacker.com",
+    "docshelf-site.pages.dev (spam)",
+    "trailcraftlogic.gumroad.com",
+    "certtest.bart.gov (spam)",
+    "cache.studiobinder.com (spam)",
+    "theseamanmom.com",
+    "wta.org",
+    "bearfoottheory.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "Backpacker free printables, Gumroad planner, WTA itinerary form, spam"
+  },
+  {
+   "question": "Great Smoky Mountains trip planning guide pdf",
+   "top": [
+    "webarchive.library.unt.edu (old NPS pages)",
+    "corpora.tika.apache.org (old gov PDF)",
+    "cabinsforyou.com",
+    "wilsoncsd.org (school PDF)",
+    "docs.google.com",
+    "shakaguide.com",
+    "moontravelguides.com",
+    "shakaguide.freshdesk.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "archived NPS trip planner, cabin rental guide, travel guides; the Etsy listing from Nov 9 is gone"
+  },
+  {
+   "question": "Smoky Mountains hiking itinerary 3 days",
+   "top": [
+    "wildlandtrekking.com",
+    "fodors.com",
+    "explore-share.com",
+    "neverendingfootsteps.com",
+    "layla.ai",
+    "mailtesting.vipmtginc.com (spam)",
+    "dontstopliving.net",
+    "foratravel.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "guided tour pages and travel itineraries"
+  },
+  {
+   "question": "Utah Mighty 5 road trip itinerary guide",
+   "top": [
+    "thetravel.com",
+    "shakaguide.com",
+    "wearetravelgirls.com",
+    "bearfoottheory.com",
+    "earthtrekkers.com",
+    "myglobalviewpoint.com",
+    "sailingstonetravel.com",
+    "lostwithlydia.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "travel blog itineraries"
+  },
+  {
+   "question": "Utah national parks trip planner pdf",
+   "top": [
+    "hub.myutahparks.com",
+    "yopki.com",
+    "layla.ai",
+    "wereintherockies.com",
+    "adventuresofaplusk.com (paid ebook)",
+    "travelandtime.com",
+    "intentionaltravelers.com",
+    "media.lonelyplanet.com (PDF preview)"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "trip planner pages and blog itineraries, one paid itinerary ebook; spam pages gone"
+  },
+  {
+   "question": "beginner hiking guide pdf",
+   "top": [
+    "bearfoottheory.com",
+    "getmypdfs.pages.dev (spam)",
+    "monkeysandmountains.com",
+    "themanual.com",
+    "artofmanliness.com",
+    "fiverr-res.cloudinary.com (PDF)",
+    "the-daily-shortcut.blogspot.com",
+    "tripoutside.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "long beginner blog guides; Gumroad PDFs dropped out"
+  },
+  {
+   "question": "solo hiking safety tips guide",
+   "top": [
+    "marathonhandbook.com",
+    "travelnoire.com",
+    "worldnomads.com",
+    "themanual.com",
+    "advnture.com",
+    "bearfoottheory.com",
+    "frommers.com",
+    "scenichudson.org"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "tip listicles from travel and outdoor media"
+  },
+  {
+   "question": "what to do if you get lost hiking",
+   "top": [
+    "sectionhiker.com",
+    "simplyhike.co.uk",
+    "bushbuck.co.nz",
+    "americanhiking.org",
+    "trailhiking.com.au",
+    "hillwalktours.com",
+    "backpackerspantry.com",
+    "thenextsummit.org"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "how-to articles from hiking blogs, gear shops and American Hiking Society"
+  },
+  {
+   "question": "hiking emergency checklist",
+   "top": [
+    "adk.org",
+    "outdoorlife.com",
+    "mec.ca",
+    "mossyoak.com",
+    "rei.com (printable PDF)",
+    "travlfi.com",
+    "thenextsummit.org",
+    "myopencountry.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "Ten Essentials pages (clubs, retailers, REI PDF)"
+  },
+  {
+   "question": "hiking safety checklist for beginners",
+   "top": [
+    "explorewithalec.com",
+    "bearfoottheory.com",
+    "the-daily-shortcut.blogspot.com",
+    "hikingguy.com",
+    "wftv.com",
+    "backcountry.com",
+    "tracki.com",
+    "themandagies.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "beginner safety tip blogs"
+  },
+  {
+   "question": "best cheap trekking poles for beginners",
+   "top": [
+    "reviewed.com",
+    "territorysupply.com",
+    "thewearify.com",
+    "cleverhiker.com",
+    "thegreatoutdoorsmag.com",
+    "countryfile.com",
+    "si.com",
+    "daytripper28.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "best-of roundups and single-pole reviews",
+   "brands": [
+    "Trekology Trek-Z 2.0",
+    "Black Diamond Trail Back",
+    "Harrier Catbells Aluminium Z Poles"
+   ]
+  },
+  {
+   "question": "what to wear hiking in fall",
+   "top": [
+    "tractorsupply.com",
+    "themandagies.com",
+    "bearfoottheory.com",
+    "ems.com",
+    "fitandwell.com",
+    "freshoffthegrid.com",
+    "pomegranate-springtail-5lhh.squarespace.com",
+    "themanual.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "retailer and blog outfit guides"
+  },
+  {
+   "question": "hiking gear checklist for beginners on a budget",
+   "top": [
+    "outforia.com",
+    "frugalfrolicker.com",
+    "whereintheworldisnina.com",
+    "cbssports.com",
+    "dev.to",
+    "packyourtent.com",
+    "tourradar.com",
+    "luminaid.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "budget beginner gear blog posts"
+  },
+  {
+   "question": "best hiking guides to buy for national parks",
+   "top": [
+    "rei.com",
+    "terragalleria.com",
+    "trailspace.com",
+    "pageaday.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "REI guidebook category pages (many REI results), one guidebook roundup"
+  },
+  {
+   "question": "gift ideas for new hikers under $30",
+   "top": [
+    "daytripper28.com",
+    "moneysavingmom.com",
+    "gohikevirginia.com",
+    "wherearethosemorgans.com",
+    "adventuresofaplusk.com",
+    "happiestoutdoors.ca",
+    "explorewithlora.com",
+    "offtracktravel.ca"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "gift guide roundups from hiking blogs",
+   "brands": []
+  },
+  {
+   "question": "hiking journal printable",
+   "top": [
+    "theseamanmom.com",
+    "favecrafts.com",
+    "payhip.com",
+    "etsy.com",
+    "abebooks.com",
+    "thecrazyoutdoormama.com",
+    "simonandschuster.ca",
+    "findingways.gumroad.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true,
+   "winning_page_type": "free printables, Payhip/Etsy/Gumroad journals, published journals"
+  },
+  {
+   "question": "how to plan your first hike",
+   "top": [
+    "columbiasportswear.co.uk",
+    "rebecca-hollman.squarespace.com",
+    "columbia.com",
+    "koa.com",
+    "popsci.com",
+    "alltrails.com",
+    "coolofthewild.com",
+    "academy.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "brand and retailer how-to guides (Columbia, KOA, AllTrails, Academy)"
+  },
+  {
+   "question": "how to load a gpx file into alltrails",
+   "top": [
+    "voujn27hgq.pages.dev (spam)",
+    "lib.rs",
+    "ultra-x.co",
+    "forums.garmin.com",
+    "pol1.lr.ggtyler.dev (Reddit mirror)",
+    "studycountry.com",
+    "support.hiiker.app",
+    "roughrideguide.co.uk"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "third-party tutorials and forums; AllTrails help center only at about #13"
+  },
+  {
+   "question": "how to use gpx files in gaia gps",
+   "top": [
+    "help.gaiagps.com",
+    "gaiagpshelp.zendesk.com",
+    "trailsoffroad.com",
+    "pigeon-hexahedron.squarespace.com",
+    "testtrailmaps.pages.dev (spam mirror)",
+    "eric-helbush.squarespace.com",
+    "gaiagpsclient.readthedocs.io",
+    "indiahikes.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true,
+   "winning_page_type": "Gaia GPS help center, then tutorials"
+  },
+  {
+   "question": "how to stop trekking poles from slipping",
+   "top": [
+    "outdoors.codidact.com",
+    "backpackinglight.com",
+    "ryderwalker.com",
+    "rokslide.com",
+    "sectionhiker.com",
+    "simond.com",
+    "montemlife.gorgias.help",
+    "backpacker.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "Q&A forums and fix guides, brand help pages"
+  },
+  {
+   "question": "why is my hydration bladder leaking",
+   "top": [
+    "tetonsports-copy.gorgias.help",
+    "sectionhiker.com",
+    "huntingwaterfalls.com",
+    "backpackinglight.com",
+    "bikerumor.com",
+    "bikeforums.net",
+    "vftt.org",
+    "simond.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "brand help page, fix guides and forum threads"
+  },
+  {
+   "question": "why is my water filter straw hard to drink from",
+   "top": [
+    "help.lifestraw.com",
+    "support.livelarq.com",
+    "outdoorlife.com",
+    "waterfilterguru.com",
+    "survivalistpro.pages.dev (spam)",
+    "help.clearlyfiltered.com",
+    "presentationbuilder.internationaltrucks.com (spam)",
+    "epic-water-filters.gorgias.help"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "brand help centers (LifeStraw, LARQ, Clearly Filtered, Epic)"
+  },
+  {
+   "question": "does an emergency bivy keep you warm",
+   "top": [
+    "shopsavvy.com",
+    "outdoorhub.com",
+    "advnture.com",
+    "sportsshoes.com",
+    "mec.ca",
+    "ems.com",
+    "rei.com",
+    "carcajoutactical.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "answer page about SOL bivvy, comparison article, then retailer product pages",
+   "brands": [
+    "SOL Emergency Bivvy (with whistle, XL)",
+    "Lifesystems Heatshield Thermal Bivi"
+   ]
+  },
+  {
+   "question": "why does my headlamp die in the cold",
+   "top": [
+    "ca.olight.com",
+    "nitecore.com",
+    "backpackinglight.com",
+    "wurkkos.com",
+    "candlepowerforums.com",
+    "rokslide.com",
+    "14ers.com",
+    "in-depthoutdoors.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "light-brand blogs (Olight, Nitecore, Wurkkos) and forum threads"
+  },
+  {
+   "question": "do touchscreen gloves work for winter hiking",
+   "top": [
+    "scotsman.com",
+    "yorkshireeveningpost.co.uk",
+    "desertcart.uy",
+    "yorkshirepost.co.uk",
+    "thestar.co.uk",
+    "ballymenatimes.com",
+    "dickssportinggoods.com",
+    "nationalworld.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "one syndicated UK touchscreen-glove review on many newspaper sites"
+  },
+  {
+   "question": "how to keep feet warm winter hiking",
+   "top": [
+    "myopencountry.com",
+    "advnture.com",
+    "momgoescamping.com",
+    "trailandkale.com",
+    "rei.com",
+    "singletracks.com",
+    "explorerchick.com",
+    "active.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "tip articles from blogs and REI"
+  },
+  {
+   "question": "how many national parks are there in the US",
+   "top": [
+    "nationalparkobsessed.com",
+    "morethanjustparks.com",
+    "worldatlas.com",
+    "downshiftingpro.com",
+    "travel-experience-live.com",
+    "planneratheart.com",
+    "have-clothes-will-travel.com",
+    "getawaycouple.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "fact answer blog posts (63 parks); NPS not in top 8"
+  },
+  {
+   "question": "best merino hiking socks under $25",
+   "top": [
+    "switchbacktravel.com",
+    "gearjunkie.com",
+    "cleverhiker.com",
+    "rei.com",
+    "momgoescamping.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "best-of roundups and REI merino sock category",
+   "brands": [
+    "no brand names in titles (roundups and REI merino category only)"
+   ]
+  },
+  {
+   "question": "rechargeable headlamp for winter hiking",
+   "top": [
+    "themanual.com",
+    "trailandkale.com",
+    "treelinereview.com",
+    "rei.com",
+    "bioliteenergy.com",
+    "dickssportinggoods.com",
+    "sectionhiker.com",
+    "offpistemag.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "single-product reviews, REI product pages, BioLite brand blog",
+   "brands": [
+    "BioLite Range 400",
+    "BioLite Dash 450",
+    "BioLite HeadLamp 800 Pro",
+    "BioLite 330",
+    "Petzl Actik Core",
+    "Fenix HM50R V2.0",
+    "Nitecore NU20",
+    "Black Diamond ReVolt",
+    "Black Diamond Astro 300-R"
+   ]
+  },
+  {
+   "question": "lightweight emergency bivy",
+   "top": [
+    "us.arva-equipment.com",
+    "rab.equipment",
+    "mec.ca",
+    "madvendor.varuste.net",
+    "decathlon.co.uk",
+    "exped.com",
+    "publiclands.com",
+    "ems.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "brand and retailer product pages",
+   "brands": [
+    "Arva Emergency Bivvy",
+    "Rab Ark Emergency Bivy (1 and 2 person)",
+    "SOL Emergency Bivy with Rescue Whistle",
+    "SOL Escape Lite Bivvy",
+    "Exped Bivybag Uno UL",
+    "Outdoor Research Helium Emergency Bivy",
+    "Trekmates Emergency Bivi",
+    "Ortovox Bivy Ultralight",
+    "Black Diamond Twilight Bivy",
+    "Go Time Gear Life Bivy"
+   ]
+  },
+  {
+   "question": "best ice cleats for hiking boots",
+   "top": [
+    "outdoorlife.com",
+    "modernsurvivalblog.com",
+    "products.ktla.com",
+    "products.newsnationnow.com",
+    "shopsavvy.com",
+    "cleverhiker.com",
+    "runnerclick.com",
+    "thewearify.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "best-of roundups (Outdoor Life, TV-station product sites, ShopSavvy)",
+   "brands": [
+    "Kahtoola MICROspikes"
+   ]
+  },
+  {
+   "question": "warm balaclava for winter hiking",
+   "top": [
+    "rei.com",
+    "sectionhiker.com",
+    "columbiasportswear.no",
+    "columbia.cz",
+    "decathlon.co.uk",
+    "absolute-snow.co.uk",
+    "dickssportinggoods.com",
+    "findingdulcinea.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false,
+   "winning_page_type": "retailer and brand product pages, one review",
+   "brands": [
+    "Smartwool Merino 250 Balaclava",
+    "REI Co-op Wind Pro Hinged Balaclava",
+    "Columbia Infinity Trail Balaclava",
+    "Seirus Combo Clava",
+    "Seirus Hoodz",
+    "Buff ThermoNet Hinged Balaclava",
+    "Outdoor Research Alpine Fleece Balaclava (Ninjaclava)"
+   ]
+  }
+ ],
+ "summary": {
+  "found": [],
+  "changed": [
+   "33 of 35 questions have a different top 5 than Nov 9; much of this looks like search-engine reshuffling, so single changes are weak signals",
+   "Spam pages dropped out of several printable/PDF queries (free printable checklist, Utah planner PDF, Smokies 3-day itinerary), letting real sites in (checklist.com, windy.app, myutahparks, yopki, wereintherockies)",
+   "Gumroad/Payhip PDFs lost ground: beginner hiking guide pdf is now won by long blog guides (Bearfoot Theory, The Manual), and the Etsy listing that entered the Smokies PDF query on Nov 9 is gone",
+   "how to load a gpx file into alltrails: the AllTrails help center fell to about #13 behind third-party tutorials, forums and a spam page; touchscreen gloves is now dominated by one syndicated UK newspaper review"
+  ],
+  "notes": [
+   "hikesupplyco.com does not appear in the top 8 for any of the 35 questions and is still not indexed: the site: search and all 4 name searches returned no hikesupplyco.com URL.",
+   "Shopping questions: bivy and balaclava are won by brand and retailer product pages (Rab, Arva, SOL, Exped, MEC, REI, Columbia, Decathlon); headlamp by single-product reviews plus REI product pages (BioLite, Petzl, Fenix, Nitecore, Black Diamond); socks, ice cleats, trekking poles and gifts by best-of roundups (Switchback Travel, GearJunkie, CleverHiker, Outdoor Life, ShopSavvy, Reviewed).",
+   "Fix-it questions are still won by brand help centers (LifeStraw, Gaia GPS, light brands) and forum threads.",
+   "how many national parks: answered by blog posts; NPS itself not in the top 8."
+  ]
+ }
+}
