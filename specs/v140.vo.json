@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Ella ordered her dad a hiking gift a week before Christmas.",
+   "gap": 0.2
+  },
+  {
+   "text": "The tracking said it would arrive on December twenty-ninth.",
+   "gap": 0.2
+  },
+  {
+   "text": "He hikes a different state park every month, but he never writes any of it down.",
+   "gap": 0.2
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.2
+  },
+  {
+   "text": "A printable state parks passport.",
+   "gap": 0.2
+  },
+  {
+   "text": "Download it tonight, print it at home, and write his first park day inside.",
+   "gap": 0.2
+  },
+  {
+   "text": "On Christmas morning, he colored in his home state.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this for your last-minute gift list.",
+   "gap": 0.2
+  }
+ ]
+}

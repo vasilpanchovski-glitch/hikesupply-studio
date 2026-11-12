@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Ava reached the cold summit tired and slow.",
+   "gap": 0.38
+  },
+  {
+   "text": "Her water bottle was still full, buried at the bottom of her pack.",
+   "gap": 0.38
+  },
+  {
+   "text": "Cold days hide thirst, so she forgot to drink.",
+   "gap": 0.38
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.38
+  },
+  {
+   "text": "Carry the bottle at your hip in an insulated sleeve on a strap,",
+   "gap": 0.1
+  },
+  {
+   "text": "and take a few sips at every stop.",
+   "gap": 0.38
+  },
+  {
+   "text": "The sleeve also slows the water from freezing.",
+   "gap": 0.38
+  },
+  {
+   "text": "Ava drank on the way down.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.38
+  }
+ ]
+}

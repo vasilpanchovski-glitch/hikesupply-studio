@@ -1,0 +1,47 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Leo pulled his boot laces tight in the cold parking lot.",
+   "gap": 0.2
+  },
+  {
+   "text": "Snap.",
+   "gap": 0.2
+  },
+  {
+   "text": "The lace had been fraying at the top hook for months.",
+   "gap": 0.2
+  },
+  {
+   "text": "He knotted the two short ends together and walked the whole hike in a loose, sloppy boot.",
+   "gap": 0.2
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.2
+  },
+  {
+   "text": "Before winter, run your fingers along each lace where it rubs the eyelets.",
+   "gap": 0.2
+  },
+  {
+   "text": "Fuzzy or thin? Replace both.",
+   "gap": 0.2
+  },
+  {
+   "text": "Carry one spare lace in your pack.",
+   "gap": 0.2
+  },
+  {
+   "text": "Next weekend, his boots held tight.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this before your next hike.",
+   "gap": 0.2
+  }
+ ]
+}
