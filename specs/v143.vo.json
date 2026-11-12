@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Grace tied her hair up for the climb and pulled a beanie over the top.",
+   "gap": 0.5
+  },
+  {
+   "text": "It kept riding up, and the wind found her ears.",
+   "gap": 0.5
+  },
+  {
+   "text": "She finally stuffed it in her pocket.",
+   "gap": 0.5
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.5
+  },
+  {
+   "text": "Wear a fleece ear warmer headband.",
+   "gap": 0.5
+  },
+  {
+   "text": "It sits under the ponytail, covers your ears and forehead, and stays put.",
+   "gap": 0.5
+  },
+  {
+   "text": "The top of your head can still let out heat on the climb.",
+   "gap": 0.5
+  },
+  {
+   "text": "Warm ears at the top.",
+   "gap": 0.6
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}

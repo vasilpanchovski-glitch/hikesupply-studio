@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Marco planned a December sunset at Glacier Point in Yosemite.",
+   "gap": 0.2
+  },
+  {
+   "text": "A few miles up, the road was gated.",
+   "gap": 0.2
+  },
+  {
+   "text": "In winter, Glacier Point Road is usually closed beyond the Badger Pass ski area until late spring.",
+   "gap": 0.2
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.2
+  },
+  {
+   "text": "For a winter view, stop at Tunnel View on the Wawona Road instead.",
+   "gap": 0.2
+  },
+  {
+   "text": "Carry tire chains and check road status on nps.gov that morning.",
+   "gap": 0.2
+  },
+  {
+   "text": "He watched El Capitan turn gold.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this before your Yosemite trip.",
+   "gap": 0.2
+  }
+ ]
+}

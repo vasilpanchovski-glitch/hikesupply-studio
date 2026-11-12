@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "After a day in Glacier, Nina drove north for Banff.",
+   "gap": 0.2
+  },
+  {
+   "text": "At the small border crossing near the park, the gate was down.",
+   "gap": 0.2
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.2
+  },
+  {
+   "text": "The crossings near Glacier keep short or seasonal hours, so check the border hours before you leave.",
+   "gap": 0.2
+  },
+  {
+   "text": "Carry a passport or other accepted travel document for everyone in the car.",
+   "gap": 0.2
+  },
+  {
+   "text": "Book your nights around the crossing you'll use.",
+   "gap": 0.2
+  },
+  {
+   "text": "Next summer, she crossed in daylight.",
+   "gap": 0.4
+  },
+  {
+   "text": "Save this while you plan.",
+   "gap": 0.2
+  }
+ ]
+}
