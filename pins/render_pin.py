@@ -1,6 +1,8 @@
 """Render Pinterest pins (1000x1500 PNG) from a JSON batch file.
 python3 pins/render_pin.py pins/batches/<batch>.json
-Each pin: {id, layout: "photo"|"forest"|"stone"|"list", kicker, title, sub, items:[...], image: "media/v16.jpg" (optional, our own video frames only), cta, price}
+Each pin: {id, layout: "full"|"photo"|"forest"|"stone"|"list", kicker, title, sub, items:[...], image: "media/v16.jpg" (optional), cta, price}
+"full" (Vasil 2026-11-12, required for every product pin): the real photo fills the whole pin, one short sentence-case headline on top,
+optional one short line under it, small site name at the bottom. No kicker, no cta button, no boxes.
 Writes media/pins/<id>.png (public in the repo) and prints the paths."""
 import sys, os, json, html
 from playwright.sync_api import sync_playwright
@@ -28,6 +30,12 @@ h1 {{ font: 800 118px/0.95 B; text-transform: uppercase; margin-top: 26px; }}
 .stone .cta {{ background: #2C3B2E; color: #F5F1EA; }}
 .photo {{ padding: 0; color: #fff; background-size: cover; background-position: center; }}
 .photo .shade {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,20,15,.82) 0%, rgba(10,20,15,.25) 45%, rgba(10,20,15,.85) 100%); }}
+.full {{ padding: 0; background-size: cover; background-position: center; color: #fff; }}
+.full .shade {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.66) 0%, rgba(0,0,0,.35) 30%, rgba(0,0,0,0) 46%, rgba(0,0,0,0) 78%, rgba(0,0,0,.45) 100%); }}
+.full .top {{ position: absolute; left: 70px; right: 70px; top: 80px; }}
+.full h1 {{ font: 800 104px/0.98 B; text-transform: none; letter-spacing: .5px; margin: 0; text-shadow: 0 2px 18px rgba(0,0,0,.35); }}
+.full p {{ font: 500 38px/1.3 I; margin-top: 26px; max-width: 820px; text-shadow: 0 2px 12px rgba(0,0,0,.4); }}
+.full .site {{ position: absolute; left: 70px; bottom: 62px; font: 600 30px/1 I; opacity: .92; }}
 .photo .in {{ position: relative; height: 100%; display: flex; flex-direction: column; padding: 80px 72px; }}
 """
 def esc(s): return html.escape(str(s or ""))
@@ -37,6 +45,9 @@ def page(p):
     foot = f'<div class="foot"><span>hikesupplyco.com</span>{f"<span class=cta>{esc(p.get(chr(99)+chr(116)+chr(97)))}</span>" if p.get("cta") else ""}</div>'
     head = f'<div class="kicker">{esc(p.get("kicker"))}</div><h1>{esc(p.get("title"))}</h1>' + (f'<p class="sub">{esc(p.get("sub"))}</p>' if p.get("sub") else "")
     lay = p.get("layout", "forest")
+    if lay == "full":
+        sub = f'<p>{esc(p.get("sub"))}</p>' if p.get("sub") else ""
+        return f'<div class="pin full" style="background-image:url({url})"><div class="shade"></div><div class="top"><h1>{esc(p.get("title"))}</h1>{sub}</div><div class="site">hikesupplyco.com</div></div>'
     if lay == "photo":
         return f'<div class="pin photo" style="background-image:url({url})"><div class="shade"></div><div class="in">{head}{f"<div class=list>{items}</div>" if items else ""}{foot}</div></div>'
     body = f'<div class="img" style="background-image:url({url})"></div>' if url else (f'<div class="list">{items}</div>' if items else "")
@@ -50,7 +61,7 @@ with sync_playwright() as pw:
         tmp = os.path.join(ROOT, "pins", "_tmp.html")
         open(tmp, "w").write(f"<html><head><meta charset=utf-8><style>{CSS}</style></head><body>{page(p)}</body></html>")
         pg.goto("file://" + tmp); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(400)
-        over = pg.evaluate("(()=>{const h=document.querySelector('h1');return h.scrollWidth>h.clientWidth+2 || document.body.scrollHeight>1502})()")
+        over = pg.evaluate("(()=>{const h=document.querySelector('h1');const t=document.querySelector('.full .top');return h.scrollWidth>h.clientWidth+2 || document.body.scrollHeight>1502 || (t && t.getBoundingClientRect().bottom>620)})()")
         if over: print("OVERFLOW", p["id"], "- shorten the title or items"); continue
         f = os.path.join(ROOT, "media", "pins", p["id"] + ".png"); pg.screenshot(path=f); out.append(f)
     b.close()

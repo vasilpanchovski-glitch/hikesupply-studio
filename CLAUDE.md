@@ -221,6 +221,8 @@ HQ collection `pins`, one doc per daily batch, doc_id `pb<YYYYMMDD>`:
 Pin rules:
 - 1000x1500 PNG made with `python3 pins/render_pin.py pins/batches/<code>.json` (layouts: photo, forest, stone, list). Our own images only: `media/*-clean.jpg` frames from our videos, or (Vasil 2026-11-11) photos the Pin Designer generates with Higgsfield, marked AI on Pinterest; details in `agents/pindesigner.md`. Never use other people's photos.
 - Each pin links to a real page on hikesupplyco.com: a product, a guide, a collection or a Trail Journal article. Check the URL exists. Exception (Vasil 2026-10-31): 2 pins per batch link to our live Etsy listings in `etsy/live.json` (Etsy shop HikeSupplyCoStore, 29 digital listings), using our own Etsy listing images. Details in `agents/pindesigner.md`.
+- Product pins (Vasil 2026-11-12): layout "full" only, a real product photo filling the pin, one short headline, no boxes, chips or spaced capitals. Details in `agents/pindesigner.md`.
+- Merino socks are not only for hiking (Vasil 2026-11-12): pins, videos and articles also show everyday cold-weather use (home, work, commute, travel, dog walks, ski trips, gifts).
 - Pin title up to 100 characters, keyword-first ("Cold weather hiking layers: what to wear at 40°F"). Description 1-3 sentences with natural keywords, no hashtag spam.
 - Mix per batch: tips and checklists that lead to guides, gear that leads to products, destination pins that lead to Smokies/Utah packs.
 
