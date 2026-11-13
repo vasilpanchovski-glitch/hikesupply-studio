@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "After a week in Glacier, Jake drove north to Banff with his U.S. annual park pass on the dashboard.",
+   "gap": 0.2
+  },
+  {
+   "text": "At the Canadian park gate, he learned it only works in U.S. parks.",
+   "gap": 0.2
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.2
+  },
+  {
+   "text": "Canada's national parks need their own Parks Canada pass, bought online or at the gate.",
+   "gap": 0.2
+  },
+  {
+   "text": "Check fees and reservations for both parks before you go,",
+   "gap": 0.2
+  },
+  {
+   "text": "and carry passports for the border.",
+   "gap": 0.2
+  },
+  {
+   "text": "Next summer, both passes were ready.",
+   "gap": 0.35
+  },
+  {
+   "text": "Save this while you plan.",
+   "gap": 0.2
+  }
+ ]
+}
