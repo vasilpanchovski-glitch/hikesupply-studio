@@ -182,18 +182,20 @@ doc_id = `g01`, `g02`, ...:
 
 Agent docs in `agents`: `hunter`, `importer`, `editor`.
 
+More clothing (Vasil 2026-11-13): at least 4 of the Hunter's 8 candidates are real hiking clothing, and the Importer's Chrome run also hunts clothing on AliExpress itself every day and sends passing listings straight to the inbox (up to 4 clothing ideas waiting, on top of 3 gear ideas).
+
 Flow: Hunter keeps 8 candidates in `stage: check` → Importer checks them live in Chrome every day (and keeps searching AliExpress itself) until 3 good ideas wait as `stage: idea, status: waiting` → Vasil approves → Importer imports as a Shopify DRAFT, sets `stage: imported, status: approved` → Editor writes title, description, size chart, variants, SKUs, price, collections, orders the photos, then makes the studio photos itself (Vasil 2026-11-09: Claude does the photos, nothing for Vasil to edit) and sets `stage: photos, status: approved` → Editor runs final checks and publishes, `stage: live, status: done`.
 
 ## Store rules (learned the hard way)
 
 - Before importing, search Shopify for an existing listing of the same product (title and supplier photos). Never import a duplicate.
-- Vet the supplier before import: product photos at least 1000 px, no supplier logos printed on the product, variants that make sense (no mixed bundles or unrelated models hiding as colours), real stock, rating 4.6+ and solid order count, ships to the US.
+- Vet the supplier before import: product photos at least 1000 px, no supplier logos printed on the product (clothing: a small sewn label inside the garment that does not show when worn is fine, Vasil 2026-11-13), variants that make sense (no mixed bundles or unrelated models hiding as colours), real stock, rating 4.6+ and solid order count, ships to the US.
 - Delivery time: the listing's delivery estimate to the US must be 13 business days or less from the order date (our website promises 6-13 business days). Check the latest delivery date AliExpress shows for a US address. If it is longer, or no estimate is shown, the listing fails. Prefer AliExpress Choice or US/local-warehouse shipping.
 - Never delete product media in bulk: in Shopify, deleting a product's only copy of an image destroys the file permanently. Remove one image at a time and only the ones you are sure about.
 - Delete the supplier's "Ships From" option when it has a single value. Clean colour names (no supplier prefixes, fix typos). Sizes run smallest to largest; XXL/XXXL become 2XL/3XL.
 - Clothing: every product gets a size chart in the description (styled HTML table, cm and inches) from the supplier's chart. Sizes use the dual label "US M (Asian XL)" built from that product's own chart measurements. Split men's and women's into separate products when the supplier mixes them.
 - SKUs: `HSC-<SHORT>-<VARIANT>`, for example `HSC-POLE-BLACK`. Set productType. Add to the right collections (Clothing plus Men's / Women's, or Gear & Equipment). Hats belong in Clothing.
-- Pricing: roughly 2.5x to 3x supplier cost, ending in .99, rounded to sensible price points. Free shipping is built into the price.
+- Pricing: roughly 2.5x to 3x supplier cost (clothing that sells for $40 or more: 2.2x is enough, Vasil 2026-11-13), ending in .99, rounded to sensible price points. Free shipping is built into the price.
 - Inventory: if the supplier shows a fake huge stock number, set inventory policy CONTINUE; if stock is real and thin, DENY.
 - Descriptions: honest, specific, written from the photos and real specs, never from the supplier's exaggerated title. If something is sold single (one pole, one bottle), say so clearly.
 - Product photos (Vasil 2026-11-08): every photo of a product has the same warm studio background (peach radial, soft shadow and light reflection), made with `scripts/photos/studio.py` (`cut` for product shots, `flat` for white-background diagrams with supplier text, cards with `TITLE`/`SUB` for feature shots). Never keep supplier photos with dark, snowy or scene backgrounds, and no cut-out people: rebuild the feature as a card with a short one-colour headline and true facts from our own description. Colour photos are linked to their variants. Old photos are detached with fileUpdate referencesToRemove, never deleted.
