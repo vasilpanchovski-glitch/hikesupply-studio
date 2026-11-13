@@ -1,6 +1,6 @@
 {
- "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport).",
- "updated": "2026-11-11",
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport). 2026-11-13 pass: group A; Etsy and Payhip digital rivals again show only 5-star reviews or none, Darn Tough has no new Trustpilot reviews since Oct 21; added a Montem pole handle failure, a basic map in a park passport book, and a kids nature card game (small set, poor value).",
+ "updated": "2026-11-13",
  "complaints": [
   {
    "type": "trekking pole",
@@ -2045,12 +2045,62 @@
    "date": "",
    "theme": "slow shipping / no reply",
    "found": "2026-11-11"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Montem Ultra Strong trekking poles (rival)",
+   "what": "after about three years the handle came off the shaft mid river crossing, the inner spring fell out and it would not stay on; the second pole did the same days later",
+   "source": "https://www.desertcart.uy/products/71533321",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-13"
+  },
+  {
+   "type": "trekking poles",
+   "product": "Montem Ultra Strong trekking poles (rival)",
+   "what": "lever lock with a tension wheel feels slower and less solid than a twist lock, and the wheel may work loose at a bad moment",
+   "source": "https://www.desertcart.uy/products/71533321",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "lock tension wheel fiddly, may loosen",
+   "found": "2026-11-13"
+  },
+  {
+   "type": "park passport book",
+   "product": "USA National Parks Journal and Passport Stamp Book",
+   "what": "the map inside is basic, less interesting than in other park journals",
+   "source": "https://www.desertcart.co.th/products/615713590-usa-national-parks-journal-and-passport-stamp-book",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "map too small, little detail",
+   "found": "2026-11-13"
+  },
+  {
+   "type": "kids nature activity",
+   "product": "GoFindIt nature scavenger hunt card game",
+   "what": "much smaller set with fewer cards than the price suggested, every card wrapped in plastic",
+   "source": "https://www.desertcart.co.th/products/48185617-gofindit-too-the-original-outdoor-nature-scavenger-hunt-card-game",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "product does not match the listing",
+   "found": "2026-11-13"
+  },
+  {
+   "type": "kids nature activity",
+   "product": "GoFindIt nature scavenger hunt card game",
+   "what": "felt expensive for a scavenger hunt you could make at home",
+   "source": "https://www.desertcart.co.th/products/48185617-gofindit-too-the-original-outdoor-nature-scavenger-hunt-card-game",
+   "where": "reseller page critical review",
+   "date": "",
+   "theme": "poor value for the price",
+   "found": "2026-11-13"
   }
  ],
  "themes": [
   {
    "theme": "breaks quickly / cheaply made",
-   "count": 19
+   "count": 20
   },
   {
    "theme": "pole locks slip / poles collapse",
@@ -2065,15 +2115,15 @@
    "count": 10
   },
   {
+   "theme": "product does not match the listing",
+   "count": 9
+  },
+  {
    "theme": "missing parts on arrival",
    "count": 8
   },
   {
    "theme": "list incomplete or out of date",
-   "count": 8
-  },
-  {
-   "theme": "product does not match the listing",
    "count": 8
   },
   {
@@ -2193,6 +2243,10 @@
    "count": 2
   },
   {
+   "theme": "map too small, little detail",
+   "count": 2
+  },
+  {
    "theme": "bladder hard to clean / drink from",
    "count": 1
   },
@@ -2289,7 +2343,11 @@
    "count": 1
   },
   {
-   "theme": "map too small, little detail",
+   "theme": "lock tension wheel fiddly, may loosen",
+   "count": 1
+  },
+  {
+   "theme": "poor value for the price",
    "count": 1
   }
  ]

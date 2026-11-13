@@ -1,0 +1,267 @@
+{
+ "date": "2026-11-13",
+ "previous": "2026-11-07",
+ "group": "a",
+ "note": "Group A. Empty fields mean the page did not show the number. Etsy listing pages for DearSummit gave no price or reviews this time (page came back thin); the Etsy Google-Sheets hiking log listing was rate limited. Pages read only through links found in search.",
+ "sellers": [
+  {
+   "name": "We're in the Rockies",
+   "products": [],
+   "shop": {
+    "rating": 5.0,
+    "reviews": 635
+   },
+   "offers": [
+    "free National Park Cheat Sheet Pack with any guide (still on)",
+    "printed road trip book with orders $150+, '70 copies only' (still on)",
+    "build your own bundle: 10% off 2 guides, 20% off 3 or more",
+    "free lifetime updates",
+    "money-back guarantee",
+    "countdown still all zeros",
+    "no Black Friday or holiday offer on Nov 13"
+   ],
+   "notes": "Store page shows no prices today; 18 single guides plus 8 bundles and 2 'coming soon' guides (one looks like Grand Circle). Store-wide rating '5.0 based on 635 reviews', 97% five-star.",
+   "marketing": {
+    "bait": "free cheat sheet pack with any guide",
+    "tactics": [
+     "multi-buy discount (10% for 2, 20% for 3+)",
+     "free bonus with order",
+     "free gift over a spend threshold",
+     "free lifetime updates",
+     "guarantee",
+     "countdown with no date"
+    ],
+    "traffic": "Google search for park itinerary keywords"
+   },
+   "source": "https://wereintherockies.com/store/"
+  },
+  {
+   "name": "Traverse with Tonia (Payhip)",
+   "products": [
+    {
+     "title": "Ultimate U.S. National Parks & Hiking Checklist",
+     "price": 4.99,
+     "notes": "'On Sale', no old price"
+    },
+    {
+     "title": "Ultimate U.S. Waterfalls Checklist",
+     "price": 4.99
+    },
+    {
+     "title": "Ultimate Outdoor Adventure Bundle",
+     "price": 7.99
+    }
+   ],
+   "reviews": {
+    "count": null
+   },
+   "marketing": {
+    "tactics": [
+     "'On Sale' label with no old price"
+    ]
+   },
+   "source": "https://payhip.com/b/tFbkH"
+  },
+  {
+   "name": "Montem",
+   "shop": {
+    "free_shipping_over": 100
+   },
+   "products": [
+    {
+     "title": "Ultra Sturdy 5kN Locking Carabiners",
+     "price": 11.89,
+     "was": 13.99,
+     "notes": "new on the accessories page"
+    },
+    {
+     "title": "Trekking Poles Carrying Bag",
+     "price": 14.0
+    },
+    {
+     "title": "The All Tips Bundle",
+     "price": 25.95,
+     "was": 32.97
+    },
+    {
+     "title": "Pro Walker Replacement Tips",
+     "price": null,
+     "notes": "sold out (new)"
+    },
+    {
+     "title": "Pro Walker Replacement Gloves",
+     "price": null,
+     "notes": "still sold out"
+    },
+    {
+     "title": "Swatter Mosquito Net",
+     "price": 34.53
+    },
+    {
+     "title": "Camping Blanket Stake Kit",
+     "price": 2.1,
+     "was": 5.25
+    },
+    {
+     "title": "All Baskets Bundle",
+     "price": 22.4,
+     "was": 35.98
+    },
+    {
+     "title": "The Adventure Bundle",
+     "price": 58.39,
+     "was": 96.44
+    },
+    {
+     "title": "Thicc Hammock Straps",
+     "price": 25.97
+    },
+    {
+     "title": "Snow Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Mud Baskets",
+     "price": 10.99
+    },
+    {
+     "title": "Tip Protectors",
+     "price": 10.99
+    },
+    {
+     "title": "Ultra On The Go Bundle",
+     "price": 19.75,
+     "was": 24.99
+    },
+    {
+     "title": "The Ultra On The Go (Advanced) Bundle",
+     "price": 36.99,
+     "was": 46.97
+    },
+    {
+     "title": "Nordic Fitness Tips",
+     "price": 10.99
+    },
+    {
+     "title": "Extra-Durable Tip Protectors",
+     "price": 10.99
+    }
+   ],
+   "offers": [
+    "free shipping over $100 (cart message still contradicts itself)",
+    "100% satisfaction guarantee",
+    "lifetime warranty",
+    "VIP program",
+    "no Black Friday sale on Nov 13"
+   ],
+   "reviews": {
+    "complaints": [
+     "handle came off the shaft after about three years (Ultra Strong, reseller page)",
+     "tension wheel on the lever lock feels fiddly, may loosen"
+    ]
+   },
+   "marketing": {
+    "tactics": [
+     "discounted accessory bundles against a compare-at price",
+     "free shipping threshold",
+     "warranty sign-up as email capture"
+    ]
+   },
+   "source": "https://montemlife.com/collections/accessories"
+  },
+  {
+   "name": "DearSummit",
+   "products": [
+    {
+     "title": "The Trail Journal, prompted pocket hiking log",
+     "price": null,
+     "notes": "listing page showed no price or reviews today; sold as 1 or a set of 3, pencil not included; also stocked by Kula Cloth"
+    }
+   ],
+   "reviews": {
+    "complaints": []
+   },
+   "source": "https://www.etsy.com/ie/listing/710475099/the-trail-journal-prompted-hiking-log"
+  },
+  {
+   "name": "MarcisShoppe",
+   "shop": {
+    "rating": 4.9,
+    "reviews": 595
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt for Kids, Printable",
+     "price": 2.0,
+     "item_reviews": 146,
+     "item_rating": 5.0,
+     "notes": "JPG + PDF, Letter only, 'fit to page' tip; no sale"
+    }
+   ],
+   "reviews": {
+    "praise": [
+     "quick download",
+     "easy to print",
+     "fast seller reply"
+    ],
+    "complaints": []
+   },
+   "source": "https://www.etsy.com/listing/1101626951"
+  },
+  {
+   "name": "Cascade Mountain Tech",
+   "products": [
+    {
+     "title": "Aircraft-Grade Aluminum Quick Lock Trekking Poles, Cork Grip (Walmart)",
+     "price": 29.99,
+     "rating": 4.6,
+     "ratings": 168,
+     "notes": "in stock and shipping again; 1-star 6, 2-star 5, 3-star 4 (texts not shown)",
+     "url": "https://www.walmart.com/ip/341694433"
+    }
+   ],
+   "reviews": {
+    "complaints": [],
+    "notes": "Skurka's long-term review (tips wear round, plastic lock nuts crack) is from 2015 and already in the file"
+   }
+  },
+  {
+   "name": "Darn Tough (hiking socks)",
+   "shop": {
+    "trustpilot": 3.7,
+    "trustpilot_reviews": 85
+   },
+   "reviews": {
+    "complaints": [],
+    "notes": "no new reviews since Oct 21"
+   },
+   "source": "https://ca.trustpilot.com/review/darntough.com"
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "GoFindIt nature scavenger hunt card game",
+   "notes": "4.6 from 3,072 reviews; critical: small set for the price, plastic wrapping, 'could make it at home'",
+   "source": "https://www.desertcart.co.th/products/48185617-gofindit-too-the-original-outdoor-nature-scavenger-hunt-card-game"
+  }
+ ],
+ "changes_vs_previous": [
+  "We're in the Rockies: store-wide count now '635 reviews, 5.0'; still no Black Friday offer, countdown still zeros; mix-and-match 10%/20% multi-buy shown on the store page",
+  "Montem: new carabiners ($11.89, was $13.99), Adventure Bundle $58.39 (was $96.44), blanket stake kit $2.10; Pro Walker tips now sold out; still no Black Friday sale",
+  "Cascade Mountain Tech aluminium cork poles are buyable on Walmart again at $29.99, 4.6 from 168",
+  "MarcisShoppe, Traverse with Tonia: no change",
+  "Darn Tough: no new Trustpilot reviews"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "a free extra or perk instead of a deep discount (WITR cheat sheets, book over $150, lifetime updates; Montem VIP and warranty)",
+   "bundles or multi-buy discounts (WITR 10% for 2 / 20% for 3+, Montem bundles vs compare-at, Tonia $7.99 bundle)",
+   "guarantee up front (WITR, Montem)"
+  ],
+  "we_do_not_use_yet": [
+   "a plain 'free updates' promise on park guides (we already re-check against nps.gov and fixed 63 to 64; WITR sells it as 'Free Lifetime Updates')",
+   "we already use multi-buy (o05, o25) and a free gift over a threshold (o01), so no gap there"
+  ],
+  "black_friday": "Nov 13, two weeks out: no group A seller shows a Black Friday offer yet. Across groups only PrintablePatti (50% off to Nov 30) and ThePrintedSmile (about 25% off) are discounting."
+ }
+}
