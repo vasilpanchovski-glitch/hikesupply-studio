@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Halfway down the icy trail, Kate's boot lace came undone.",
+   "gap": 0.3
+  },
+  {
+   "text": "With thick gloves on, she couldn't tie it.",
+   "gap": 0.3
+  },
+  {
+   "text": "Gloves off, fingers numb, two long minutes in the wind.",
+   "gap": 0.3
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "Tie your boots at the trailhead with warm, bare hands.",
+   "gap": 0.3
+  },
+  {
+   "text": "Double knot, then tuck the loops in.",
+   "gap": 0.3
+  },
+  {
+   "text": "If your laces are worn smooth or fuzzy, replace them before winter.",
+   "gap": 0.3
+  },
+  {
+   "text": "Her laces held all the way down.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.2
+  }
+ ]
+}

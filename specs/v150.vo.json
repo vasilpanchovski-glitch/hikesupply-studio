@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "On the rocky climb, Owen carried his water bottle in one hand.",
+   "gap": 0.3
+  },
+  {
+   "text": "Every time the trail got steep, he had only one hand left for the rock.",
+   "gap": 0.3
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "Slide the bottle into an insulated sleeve on a shoulder strap and wear it across your body.",
+   "gap": 0.3
+  },
+  {
+   "text": "Both hands stay free, the water stays at your hip,",
+   "gap": 0.3
+  },
+  {
+   "text": "and the neoprene slows it from freezing.",
+   "gap": 0.3
+  },
+  {
+   "text": "He reached the top with both hands.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before your next climb.",
+   "gap": 0.2
+  }
+ ]
+}
