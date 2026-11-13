@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Mark's favorite wool socks came out of the dryer a size too small.",
+   "gap": 0.3
+  },
+  {
+   "text": "On the trail they slid down, bunched at the heel, and by mile three he had a hot spot.",
+   "gap": 0.35
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.3
+  },
+  {
+   "text": "Wash wool socks inside out, on a cool wool cycle or by hand.",
+   "gap": 0.35
+  },
+  {
+   "text": "No tumble dryer. Dry them flat overnight.",
+   "gap": 0.35
+  },
+  {
+   "text": "And always pack a dry spare pair.",
+   "gap": 0.35
+  },
+  {
+   "text": "His new pair still fits.",
+   "gap": 0.5
+  },
+  {
+   "text": "Save this before laundry day.",
+   "gap": 0.2
+  }
+ ]
+}

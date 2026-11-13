@@ -1,0 +1,16 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {"text": "Hannah stopped to fix her boot.", "gap": 0.15},
+  {"text": "When she looked up, fog had swallowed the trail, and her group with it.", "gap": 0.2},
+  {"text": "She shouted. The wind took her voice.", "gap": 0.2},
+  {"text": "Here's the fix.", "gap": 0.2},
+  {"text": "Every hiker in the group carries a whistle on a pack strap.", "gap": 0.2},
+  {"text": "Agree on simple signals before you start: one blast means stop and wait, three means help.", "gap": 0.2},
+  {"text": "Then stay where you are.", "gap": 0.2},
+  {"text": "Hannah blew once, and one whistle answered from just ahead.", "gap": 0.4},
+  {"text": "Save this before your next group hike.", "gap": 0.2}
+ ]
+}

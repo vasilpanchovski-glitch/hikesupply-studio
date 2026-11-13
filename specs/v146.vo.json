@@ -1,0 +1,16 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {"text": "Every January, Ben promised to hike more.", "gap": 0.15},
+  {"text": "By March, his boots were back in the closet.", "gap": 0.2},
+  {"text": "This year he tried something else.", "gap": 0.2},
+  {"text": "Here's the fix.", "gap": 0.2},
+  {"text": "On New Year's Day, many state parks run guided First Day Hikes, often free.", "gap": 0.2},
+  {"text": "Check your state parks website, sign up, and go.", "gap": 0.2},
+  {"text": "Then pick one new park every month, and log each visit with a stamp or sticker.", "gap": 0.2},
+  {"text": "By spring, Ben had four parks on his map.", "gap": 0.4},
+  {"text": "Save this for New Year's Day.", "gap": 0.2}
+ ]
+}
