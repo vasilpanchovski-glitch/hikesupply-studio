@@ -18,7 +18,7 @@
    },
    "lastCheck": {
     "date": "2026-11-14",
-    "time": "08:25Z",
+    "time": "16:30Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 2,
@@ -36,7 +36,7 @@
      "Green / L",
      "Black / Grey / L"
     ],
-    "note": "Shopify synced to DSers supplier stock (6 variants corrected, 1-2 down each). Still no backup: today's AliExpress search found only XIZOU NO.7 one-size socks at $7.65 + $1.99, over the $1 rule. Hunter request already open."
+    "note": "17:02 re-check: DSers supplier stock unchanged since 08:25 and Shopify matches it (no corrections needed). No supplier replies about stock in Message Center. Still no backup; Hunter request already open."
    },
    "backups": [],
    "candidates": [
