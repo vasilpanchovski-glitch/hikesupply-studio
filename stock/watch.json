@@ -17,18 +17,18 @@
     "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
    },
    "lastCheck": {
-    "date": "2026-11-12",
-    "time": "16:20Z",
+    "date": "2026-11-14",
+    "time": "08:25Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 2,
-     "Navy Blue / L": 18,
-     "Green / S": 489,
+     "Navy Blue / L": 17,
+     "Green / S": 487,
      "Brown / S": 484,
-     "Green / L": 5,
-     "Black / Grey / S": 484,
-     "Brown / L": 472,
-     "Black / Grey / L": 4
+     "Green / L": 4,
+     "Black / Grey / S": 482,
+     "Brown / L": 471,
+     "Black / Grey / L": 3
     },
     "belowLow": [
      "Navy Blue / S",
@@ -36,7 +36,7 @@
      "Green / L",
      "Black / Grey / L"
     ],
-    "note": "Shopify synced to DSers supplier stock. No backups yet; Hunter request from 2026-11-09 still open. Seller said 2026-11-10 more stock sits in their own warehouse."
+    "note": "Shopify synced to DSers supplier stock (6 variants corrected, 1-2 down each). Still no backup: today's AliExpress search found only XIZOU NO.7 one-size socks at $7.65 + $1.99, over the $1 rule. Hunter request already open."
    },
    "backups": [],
    "candidates": [
@@ -74,6 +74,13 @@
      "checked": "2026-11-12",
      "result": "fail",
      "note": "3-pair packs at $29.31 (about $9.77 a pair), 11 sold, Euro 39-42 shown. Over the $1 rule."
+    },
+    {
+     "url": "https://www.aliexpress.us/item/3256810212061475.html",
+     "store": "XIZOU NO.7 Store",
+     "checked": "2026-11-14",
+     "result": "fail",
+     "note": "Same look, 5.0, 50 sold, one size only, $7.65 + $1.99 shipping: about $3 more per pair than main supplier."
     }
    ],
    "supplier": {
