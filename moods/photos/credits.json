@@ -33,7 +33,9 @@
   "photographer": "Dusan Stupar",
   "url": "https://www.pexels.com/photo/32056479/",
   "alt": "Hiker on a rocky ridge, Montenegro",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261114-3",
+  "pinDate": "2026-11-14"
  },
  "38891561": {
   "photographer": "Giuseppe Paoletti",
@@ -93,7 +95,9 @@
   "photographer": "Sam McCool",
   "url": "https://www.pexels.com/photo/34031050/",
   "alt": "Grand Teton peaks over green meadows, Wyoming",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261114-10",
+  "pinDate": "2026-11-14"
  },
  "38964918": {
   "photographer": "julia chuma",
@@ -263,7 +267,9 @@
   "photographer": "Darya Grey_Owl",
   "url": "https://www.pexels.com/photo/18718573/",
   "alt": "Snowy peak above an autumn forest",
-  "used": false
+  "used": false,
+  "pinUsed": "pb20261114-4",
+  "pinDate": "2026-11-14"
  },
  "30742816": {
   "photographer": "Lindsey Mateo",
@@ -277,12 +283,16 @@
   "photographer": "Lindsey Mateo",
   "url": "https://www.pexels.com/photo/28246904/",
   "alt": "Bow Lake reflection, Banff, Canada",
-  "used": false
+  "used": false,
+  "pinUsed": "pb20261114-9",
+  "pinDate": "2026-11-14"
  },
  "14009646": {
   "photographer": "Sabina Kallari",
   "url": "https://www.pexels.com/photo/14009646/",
   "alt": "Foggy autumn forest on a mountain slope",
-  "used": false
+  "used": false,
+  "pinUsed": "pb20261114-5",
+  "pinDate": "2026-11-14"
  }
 }
