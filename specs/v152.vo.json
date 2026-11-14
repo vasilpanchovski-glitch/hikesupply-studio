@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Rachel wore her warm gloves on the whole steep climb.",
+   "gap": 0.3
+  },
+  {
+   "text": "Her hands sweated, and at the windy summit the gloves were damp and her fingers went numb.",
+   "gap": 0.3
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.4
+  },
+  {
+   "text": "Climb in thin liner gloves, or none if you're warm.",
+   "gap": 0.4
+  },
+  {
+   "text": "Keep a dry, warm pair in a plastic bag in your pack,",
+   "gap": 0.2
+  },
+  {
+   "text": "and put them on at the top before you cool down.",
+   "gap": 0.4
+  },
+  {
+   "text": "Her hands stayed warm all the way down.",
+   "gap": 0.6
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}
