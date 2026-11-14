@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.25,
+ "lines": [
+  {
+   "text": "Nora planned her five-park road trip around one number: gas.",
+   "gap": 0.2
+  },
+  {
+   "text": "Then came entrance fees, campsites, a motel when it poured, and food in pricey park towns.",
+   "gap": 0.2
+  },
+  {
+   "text": "By day four, her budget was gone.",
+   "gap": 0.3
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.25
+  },
+  {
+   "text": "Before you book anything, cost out every day:",
+   "gap": 0.15
+  },
+  {
+   "text": "miles and fuel, entrance or pass, a bed, food, plus one spare line for surprises.",
+   "gap": 0.25
+  },
+  {
+   "text": "Visiting several parks this year? Compare an annual pass with single entry fees.",
+   "gap": 0.35
+  },
+  {
+   "text": "Save this while you plan your trip.",
+   "gap": 0.2
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {"text": "At the windy lookout, Kate pulled off a glove to take a photo and set it on the rock.", "gap": 0.3},
+  {"text": "One gust, and it was gone over the edge.", "gap": 0.3},
+  {"text": "She hiked down with one bare hand stuffed in her pocket.", "gap": 0.4},
+  {"text": "Here's the fix.", "gap": 0.4},
+  {"text": "Take gloves off only out of the wind,", "gap": 0.2},
+  {"text": "and tuck them inside your jacket, never on the ground.", "gap": 0.4},
+  {"text": "Wear thin liners for your phone, and pack a spare pair.", "gap": 0.9},
+  {"text": "Save this before your next cold hike.", "gap": 0.2}
+ ]
+}

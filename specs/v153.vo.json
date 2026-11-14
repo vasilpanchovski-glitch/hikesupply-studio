@@ -1,0 +1,15 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {"text": "At two in the morning the wind picked up, and Lena's tent started flapping.", "gap": 0.3},
+  {"text": "One stake had pulled out of the soft ground, and a corner was folding in on her.", "gap": 0.3},
+  {"text": "Here's the fix.", "gap": 0.4},
+  {"text": "Push each stake in at about forty-five degrees, the top leaning away from the tent,", "gap": 0.2},
+  {"text": "all the way down so only the hook shows.", "gap": 0.4},
+  {"text": "Stake the windward side first, then tighten every guyline.", "gap": 0.4},
+  {"text": "Her tent held till morning.", "gap": 0.6},
+  {"text": "Save this before your next camp night.", "gap": 0.2}
+ ]
+}
