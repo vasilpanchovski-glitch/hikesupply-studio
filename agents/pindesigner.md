@@ -35,3 +35,11 @@ Higgsfield photos (Vasil 2026-11-11, he pays the credits for this): pins may use
 - Guide and destination pins can be fully generated (trails, viewpoints, a printed planner on a table with the pages out of focus so no fake writing shows). Never show a real named place you cannot make look right; keep it generic ("a snowy mountain trail") unless the place is unmistakable.
 - Save the photos to `media/pins/src/<pin id>.jpg`, set `image` to that path and `ai: true` on the pin in the batch file, so the Pin Publisher marks the pin as AI-generated on Pinterest.
 - Look at every photo before using it (hands, faces, extra limbs, product shape). Regenerate a bad one at most twice, then fall back to a Pexels photo.
+
+## Generated photos must make sense (Vasil 2026-11-15)
+
+Vasil rejected pin pb20261115-3: two empty boots standing in deep snow with socks stuffed in the top and nobody wearing them. Generating photos is fine, but every picture must show something real people actually do.
+- Write the prompt as a real scene: who is there, what they are doing, where the gear is on their body or how it is really packed or laid out. Gear is worn or used by a person. Never gear posed alone in a way nobody would leave it (boots or socks standing in snow, a headlamp on a rock in daylight, a pack floating on a trail).
+- The picture must support the pin's message. A warm-feet pin shows warm, dry feet in use, not socks in snow.
+- No invented brand logos, patches or text on gear. A product we sell is either ours (generate from our product photo as the reference) or not the focus of the picture.
+- Before using a picture, look at it at full size and ask: would a photographer have found this scene on a real hike or in a real home? If not, regenerate once with a corrected prompt. If the second try also fails, use a Pexels photo and log why.
