@@ -1,0 +1,39 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "An hour into a cold drizzle, Dan started tripping on roots, mumbling his words and fumbling with his zipper.",
+   "gap": 0.3
+  },
+  {
+   "text": "He kept saying he was fine.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.35
+  },
+  {
+   "text": "Learn the umbles: stumbles, mumbles, fumbles and grumbles.",
+   "gap": 0.25
+  },
+  {
+   "text": "They can be early signs of hypothermia.",
+   "gap": 0.3
+  },
+  {
+   "text": "Stop, get out of the wind, swap wet layers for dry ones, add a hat, and turn back together.",
+   "gap": 0.25
+  },
+  {
+   "text": "If he doesn't improve, call for help.",
+   "gap": 0.7
+  },
+  {
+   "text": "Save this before your next cold hike.",
+   "gap": 0.2
+  }
+ ]
+}
