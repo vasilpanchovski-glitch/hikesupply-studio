@@ -1,0 +1,43 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Ben planted his trekking pole on a smooth rock slab, leaned his weight on it,",
+   "gap": 0.15
+  },
+  {
+   "text": "and the metal tip skidded right out from under him.",
+   "gap": 0.3
+  },
+  {
+   "text": "He caught himself, just barely.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.35
+  },
+  {
+   "text": "On bare rock, pavement and boardwalks, push a rubber tip onto each pole.",
+   "gap": 0.25
+  },
+  {
+   "text": "It grips hard surfaces and stops the clicking and scratching.",
+   "gap": 0.3
+  },
+  {
+   "text": "On mud, snow and ice, pull it off so the metal tip bites.",
+   "gap": 0.25
+  },
+  {
+   "text": "Carry spares.",
+   "gap": 0.7
+  },
+  {
+   "text": "Save this before your next rocky hike.",
+   "gap": 0.2
+  }
+ ]
+}
