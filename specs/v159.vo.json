@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Every morning Emma walks her dog through wet slush.", "gap": 0.2},
+  {"text": "In cotton socks, her toes were cold and damp in minutes.", "gap": 0.3},
+  {"text": "Here's the fix: wear wool socks.", "gap": 0.2},
+  {"text": "Wool keeps much of its warmth even when damp.", "gap": 0.4},
+  {"text": "Save this before your next cold walk.", "gap": 0.2}
+ ]
+}
