@@ -94,7 +94,7 @@ Topics already used (do not repeat): trekking pole height, neck gaiter, heel-loc
 - Since 2026-10-25 (Vasil's decision) the improvement agents work every second day (odd days of the month): Product Scout, Product Hunter, Market Watch, Sales Planner, Ads Manager, Store Doctor audits, Blog Writer articles, Search Specialist audits. Each still respects its own cap on waiting items, so Vasil's inbox never floods: if enough is waiting, improve what exists instead (fix rejected items, check live products) or stop.
 
 - Nothing goes public without approval in HQ. Approved means `status: approved` written by Vasil, or, for `pins` and `articles` only, by the Store Manager (`approvedBy: "manager"`). Vasil delegated those two to him.
-- At the start of every run, read the latest `plans` doc with `status: approved` and follow its priorities, and read open `requests` addressed to you (`to` = your agent id, `done: false`). Do what they ask if it fits your rules, then set `done: true`.
+- At the start of every run, read the latest `plans` doc with `status: approved` and follow its priorities, and read open `requests` addressed to you (`to` = your agent id, `done: false`). Do what they ask if it fits your rules, then set `done: true`. Every request gets an answer within 3 days, whatever its `type` (Vasil 2026-11-15, after requests sat open for weeks): if you cannot or may not do it, set `done: true` with `doneNote` saying why in one plain sentence, or pass it on with a new request to the right agent. If only part is done, write what is left in `doneNote` and open a new request for the rest. The Store Manager lists every request older than 3 days in the morning briefing.
 - Never like, follow, comment or DM as the brand. Only scheduled posts.
 - Never spend money or start paid plans. Never use Higgsfield credits, except the Pin Designer's pin photos (Vasil 2026-11-11, see `agents/pindesigner.md`).
 - Plain, short, friendly wording in anything Vasil reads. No bold markdown.
@@ -276,6 +276,10 @@ Agent: Sales Planner (`agents/merch.md`), every second day 15:52. HQ collection 
 
 Agent: Partner Scout (`agents/partners.md`), daily 12:52 (Monday to Friday also finds 10 new groups, max 50 new emails a week), cloud. Emails hiking clubs, Meetup groups, scout troops, trail events and small hiking blogs from hikesupplyco@gmail.com and offers a free checklist or guide for their members plus a 10% member code (pool HIKECLUB01-30, discount "Partner clubs 10%"). No affiliate commission. HQ collection `partners`, doc_id `c01`...: `{code, status: waiting|approved|rejected|sent|followed|yes|no|done, group, location, contact, source, why, guide, offer, discount, subject, body, sentAt, followUpAt, reply, note}`. Vasil approves every first email.
 Club Editions (Vasil 2026-11-06): six UNLISTED $0 copies of our guides, tag `club-edition`, handles ending in `-club-edition`, listed in `agents/partners.md`. Partner members get guides only through these pages (email at checkout, optional newsletter tick box), never by PDF link. They are on purpose: no agent may relist, reprice, promote, pin, add to collections or "fix" them, and $0 club orders are not sales.
+
+## Etsy numbers (Vasil 2026-11-15)
+
+The Etsy shop was tracked by nobody. From now on the Importer reads the Etsy shop stats in Chrome every day (read only) and writes HQ doc `money/etsy`: `{at, range: "last 30 days", visits, orders, revenue, topListings: [{title, visits, orders}]}`. Finance adds Etsy orders and revenue to the dashboard as their own line, the Analyst reports Etsy as its own channel every week, and the Manager puts one Etsy line in the briefing. Real numbers only; if the doc is older than 3 days, say so instead of guessing.
 
 # Order Desk
 

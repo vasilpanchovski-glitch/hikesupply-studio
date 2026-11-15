@@ -14,3 +14,5 @@ Runs daily at 07:37 Skopje (cloud), plus a weekly summary on Sundays.
 4. Watch for costs: compare the installed apps list (Vasil's admin is not readable from here, so use what is in `money/fixed`) and any app charge that appears in orders or in Shopify's billing notes the Manager reports. If something looks like a new charge, write a short line in `notes` and a log line.
 5. On Sundays also write `money/w<YYYY-MM-DD of the Sunday>` with the week's numbers and 3 plain lines: what made money, what cost money, what to do about it.
 6. Log one line, set idle with lastRun and nextRun.
+
+Etsy (Vasil 2026-11-15): read HQ doc `money/etsy` (written daily by the Importer) and show Etsy orders and revenue as their own line next to Shopify. Etsy fees: use what the doc reports, never a guess. If the doc is missing or older than 3 days, say so.

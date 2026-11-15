@@ -64,3 +64,7 @@ For each:
 6. Add `{slug, etsyId, url: "https://www.etsy.com/listing/<id>", shopify, title, price}` to `etsy/live.json`, commit and push. Set the product doc `etsy: "live"` and `etsyUrl`. Log one line.
 Bundles (an open `requests` doc to you with type "etsy-bundle"): same steps, but step 1 is `python3 etsy/prep_bundle.py etsy/listings/<slug>.json`, and at the end mark that request `done: true` instead of a product doc.
 If Etsy is logged out, asks for a password or 2FA, shows a fee other than $0.20 per listing, or refuses the listing: stop the Etsy part, set the product doc `etsy: "ready"` (unchanged) with `etsyIssue` in one plain sentence, and add a log line. Never enter a password.
+
+## Etsy numbers (Vasil 2026-11-15, every day, read only)
+
+After the Etsy listings part, open https://www.etsy.com/your/shops/me/stats in Chrome, pick "Last 30 days" and read visits, orders and revenue, plus the listings table (top 5 by visits). Write HQ doc `money/etsy`: `{at, range: "last 30 days", visits, orders, revenue, topListings: [{title, visits, orders}]}`. Only read: never click ads, offers, settings or messages. If Etsy is logged out, leave the old doc as it is and add `etsyIssue` to your agent doc in one plain sentence.

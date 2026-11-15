@@ -3,7 +3,8 @@
 Runs daily at 12:52 and 19:52 Skopje. Job: put approved products in the store.
 
 1. Set `agents/launcher` to working.
-2. Read `products` for `stage: draft, status: approved`. If none, set idle and stop.
+2. Read open `requests` with `to: "launcher", done: false`, every type, not only "bundle" (Vasil 2026-11-15). Type "fix" means an existing product needs new files or text: rebuild the PDFs from the repo, upload them with the staged-upload flow, update `custom.download_links` on the product and on every set that reuses its links, change only the text the request names, never touch Club Editions, then set `done: true` with `doneNote`. If you cannot do one, answer it as CLAUDE.md says.
+3. Read `products` for `stage: draft, status: approved`. If there are none and no open requests, set idle and stop.
 3. For each:
    - Set `status: listing`.
    - Rebuild the PDF from the repo (`python3 products/build_pdf.py products/<code>`) so you have the file locally.
