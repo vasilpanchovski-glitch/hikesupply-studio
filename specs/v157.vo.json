@@ -1,0 +1,35 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.4,
+ "lines": [
+  {
+   "text": "Day three of Jake's park road trip, a storm closed the trail he had driven nine hours to hike.",
+   "gap": 0.3
+  },
+  {
+   "text": "Every night after that was booked somewhere else, so he had to drive on without it.",
+   "gap": 0.4
+  },
+  {
+   "text": "Here's the fix.",
+   "gap": 0.35
+  },
+  {
+   "text": "Plan one loose day every few days, with no booking you can't move.",
+   "gap": 0.25
+  },
+  {
+   "text": "Keep a rainy-day plan for each park, like a visitor center or a scenic drive,",
+   "gap": 0.15
+  },
+  {
+   "text": "and check the park's alerts on nps.gov each morning.",
+   "gap": 0.7
+  },
+  {
+   "text": "Save this while you plan.",
+   "gap": 0.2
+  }
+ ]
+}
