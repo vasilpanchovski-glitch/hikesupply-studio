@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport). 2026-11-13 pass: group A; Etsy and Payhip digital rivals again show only 5-star reviews or none, Darn Tough has no new Trustpilot reviews since Oct 21; added a Montem pole handle failure, a basic map in a park passport book, and a kids nature card game (small set, poor value).",
- "updated": "2026-11-13",
+ "updated": "2026-11-15",
  "complaints": [
   {
    "type": "trekking pole",
@@ -2095,12 +2095,112 @@
    "date": "",
    "theme": "poor value for the price",
    "found": "2026-11-13"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Kahtoola MICROspikes",
+   "what": "heel part tends to slide down and has to be pulled snug again now and then",
+   "source": "https://www.cleverhiker.com/footwear/best-winter-traction-devices-crampons/",
+   "where": "2026 review roundup (updated 2026-08-06)",
+   "date": "2026-08-06",
+   "theme": "traction slips off boot / straps tear",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Hillsound Trail Crampon",
+   "what": "fit can be loose and sloppy on trail runners and light hiking shoes; harness attachment points not reinforced",
+   "source": "https://www.cleverhiker.com/footwear/best-winter-traction-devices-crampons/",
+   "where": "2026 review roundup",
+   "date": "2026-08-06",
+   "theme": "traction slips off boot / straps tear",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Yaktrax Walk",
+   "what": "coils and harness broke during testing; elastic harness shifts on uneven ground",
+   "source": "https://www.cleverhiker.com/footwear/best-winter-traction-devices-crampons/",
+   "where": "2026 review roundup",
+   "date": "2026-08-06",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Yaktrax Diamond Grip",
+   "what": "rubber sling can stiffen and crack in extreme cold; moving parts wear the cable",
+   "source": "https://www.cleverhiker.com/footwear/best-winter-traction-devices-crampons/",
+   "where": "2026 review roundup",
+   "date": "2026-08-06",
+   "theme": "rubber stiffens or cracks in deep cold",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "traction cleats",
+   "product": "Kahtoola NANOspikes",
+   "what": "do not fit insulated winter boots; struggle on steep slopes",
+   "source": "https://www.cleverhiker.com/footwear/best-winter-traction-devices-crampons/",
+   "where": "2026 review roundup",
+   "date": "2026-08-06",
+   "theme": "does not fit winter boots",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "ear warmer",
+   "product": "Columbia Fast Trek II fleece headband",
+   "what": "small size too small, fleece has no stretch, band too wide and sits up",
+   "source": "https://www.zappos.com/product/review/9413671/page/2",
+   "where": "Zappos 1-star review",
+   "date": "2022-01-24",
+   "theme": "ear warmer sizing off, little stretch",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "ear warmer",
+   "product": "Columbia Fast Trek II fleece headband",
+   "what": "too small for a normal to large adult head",
+   "source": "https://www.zappos.com/product/review/9413671/page/2",
+   "where": "Zappos 2-star review",
+   "date": "2022-10-03",
+   "theme": "ear warmer sizing off, little stretch",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "ear warmer",
+   "product": "Columbia Fast Trek II fleece headband",
+   "what": "too loose to keep ears warm; buyer misread the size as width, not head circumference",
+   "source": "https://www.zappos.com/product/review/9413671/page/2",
+   "where": "Zappos 1-star review",
+   "date": "2022-12-12",
+   "theme": "ear warmer sizing off, little stretch",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "park passport",
+   "product": "National Park Passport Explorer Edition",
+   "what": "printed boxes sized for set stickers and page headings limit where you can stick things; blogger made blank pages instead",
+   "source": "https://stamptrails.substack.com/p/too-many-lines-and-boxes",
+   "where": "blog post",
+   "date": "2024-06-15",
+   "theme": "not enough blank pages / too rigid",
+   "found": "2026-11-15"
+  },
+  {
+   "type": "park passport",
+   "product": "Passport To Your National Parks, Classic",
+   "what": "only a quick reference: no real park descriptions or activity detail, can feel empty as just a stamp book",
+   "source": "https://www.roadtripsforfamilies.com/review-passport-to-your-national-parks-classic-and-junior-ranger-editions/",
+   "where": "review blog",
+   "date": "2025-09-19",
+   "theme": "guide too limited / generic",
+   "found": "2026-11-15"
   }
  ],
  "themes": [
   {
    "theme": "breaks quickly / cheaply made",
-   "count": 20
+   "count": 21
   },
   {
    "theme": "pole locks slip / poles collapse",
@@ -2112,7 +2212,7 @@
   },
   {
    "theme": "guide too limited / generic",
-   "count": 10
+   "count": 11
   },
   {
    "theme": "product does not match the listing",
@@ -2143,6 +2243,14 @@
    "count": 5
   },
   {
+   "theme": "not enough blank pages / too rigid",
+   "count": 5
+  },
+  {
+   "theme": "traction slips off boot / straps tear",
+   "count": 5
+  },
+  {
    "theme": "grip uncomfortable or slippery",
    "count": 4
   },
@@ -2156,10 +2264,6 @@
   },
   {
    "theme": "clothing runs small / sleeves short",
-   "count": 4
-  },
-  {
-   "theme": "not enough blank pages / too rigid",
    "count": 4
   },
   {
@@ -2195,10 +2299,6 @@
    "count": 3
   },
   {
-   "theme": "traction slips off boot / straps tear",
-   "count": 3
-  },
-  {
    "theme": "arrives damaged or used",
    "count": 3
   },
@@ -2208,6 +2308,10 @@
   },
   {
    "theme": "balaclava fits badly",
+   "count": 3
+  },
+  {
+   "theme": "ear warmer sizing off, little stretch",
    "count": 3
   },
   {
@@ -2348,6 +2452,14 @@
   },
   {
    "theme": "poor value for the price",
+   "count": 1
+  },
+  {
+   "theme": "rubber stiffens or cracks in deep cold",
+   "count": 1
+  },
+  {
+   "theme": "does not fit winter boots",
    "count": 1
   }
  ]
