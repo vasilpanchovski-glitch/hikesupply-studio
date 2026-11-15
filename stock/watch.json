@@ -17,8 +17,8 @@
     "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
    },
    "lastCheck": {
-    "date": "2026-11-14",
-    "time": "16:30Z",
+    "date": "2026-11-15",
+    "time": "16:20Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 2,
@@ -36,7 +36,7 @@
      "Green / L",
      "Black / Grey / L"
     ],
-    "note": "17:02 re-check: DSers supplier stock unchanged since 08:25 and Shopify matches it (no corrections needed). No supplier replies about stock in Message Center. Still no backup; Hunter request already open."
+    "note": "17:02 run: DSers supplier stock unchanged from 14 Nov and Shopify matches it (no corrections). Message Center showed no messages. Still no backup; Hunter request already open."
    },
    "backups": [],
    "candidates": [
