@@ -41,7 +41,9 @@
   "photographer": "Giuseppe Paoletti",
   "url": "https://www.pexels.com/photo/38891561/",
   "alt": "Lone hiker on a snowy ridge",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261115-9",
+  "pinDate": "2026-11-15"
  },
  "19714012": {
   "photographer": "Ali Kazal",
@@ -103,7 +105,9 @@
   "photographer": "julia chuma",
   "url": "https://www.pexels.com/photo/38964918/",
   "alt": "Grand Teton range under a blue sky, Wyoming",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261115-10",
+  "pinDate": "2026-11-15"
  },
  "6072748": {
   "photographer": "Pavel Danilyuk",
@@ -151,7 +155,9 @@
   "photographer": "Mazin Omron",
   "url": "https://www.pexels.com/photo/35016797/",
   "alt": "Half Dome beyond pine trees under a blue sky, Yosemite",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261115-5",
+  "pinDate": "2026-11-15"
  },
  "39008618": {
   "photographer": "Heather Mallon",
@@ -183,7 +189,9 @@
   "photographer": "Nandu Vasudevan",
   "url": "https://www.pexels.com/photo/10939816/",
   "alt": "Layered misty mountain ridges in fog",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261115-1",
+  "pinDate": "2026-11-15"
  },
  "14969099": {
   "photographer": "Andreas Ebner",
