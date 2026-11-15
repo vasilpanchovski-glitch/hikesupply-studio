@@ -1,0 +1,90 @@
+{
+ "slug": "parks-passport-pair",
+ "shopify": "parks-passport-pair",
+ "price": "8.99",
+ "parts": [
+  "products/p25",
+  "products/p04"
+ ],
+ "title": "State Parks Passport and National Parks Tracker Printable Bundle, All 64 US National Parks Checklist, Park Stamp Log, Hiker Gift PDF",
+ "tags": [
+  "state parks passport",
+  "national parks",
+  "park stamp log",
+  "parks checklist",
+  "64 national parks",
+  "hiking log",
+  "park passport",
+  "road trip planner",
+  "hiker gift",
+  "canada parks",
+  "travel journal",
+  "hiking printable",
+  "bucket list"
+ ],
+ "description": "Our two park-collecting printables together, for hikers who like to log every park they visit: the State Parks Passport for parks close to home, and the US National Parks Hiking Tracker for the big ones. A simple gift for anyone who collects park stamps. $8.99 instead of $10.98 bought separately.\n\nWHAT'S INCLUDED\n- State Parks Passport and Visit Log (40 pages): USA and Canada map trackers to color in, a master checklist of all 50 states and 13 provinces and territories with each official parks agency and website, 48 visit logs with an empty stamp or sticker box, extra stamp pages, an annual pass tracker and year totals\n- US National Parks Hiking Tracker (26 pages): all 64 US national parks A to Z, updated for Chiricahua, each with one easy-to-plan day hike in miles and km, a stamp box and a visit log, plus Canada's national parks and reserves\n\nWHAT YOU GET\n- Both printables in US Letter, A4 and a mobile edition, one ZIP per format\n- Printer-friendly low-ink versions of both\n- Instant download. These are digital files; nothing is shipped.\n- Bonus: our free one-page Ultimate Hiking Checklist\n\nGOOD TO KNOW\nThe same two printables sold on their own, no extra content. Stamp boxes are left empty for the stamps or stickers you collect; not every park has a stamp, so ask at the visitor center. Fees, passes and rules change often, so check nps.gov and each park's official website before you go. For personal use. Not affiliated with the National Park Service or any state or provincial park agency.\n\nMade by HikeSupply Co., a small shop for weekend hikers. More printable hiking guides in our Etsy shop.",
+ "hero": [
+  "Parks",
+  "Passport Pair"
+ ],
+ "sub": "A state parks passport and a tracker for all 64 US national parks, for hikers who collect every park they visit.",
+ "chips": [
+  "2 printables",
+  "Save $1.99",
+  "Letter + A4"
+ ],
+ "inside": [
+  "State parks passport",
+  "All 64 national parks",
+  "USA and Canada map trackers",
+  "48 park visit logs",
+  "Stamp boxes on every log",
+  "Canada's parks included"
+ ],
+ "formats": [
+  [
+   "US Letter + A4",
+   "Both guides in both sizes"
+  ],
+  [
+   "Mobile edition",
+   "Sized for reading on your phone"
+  ],
+  [
+   "Color + printer-friendly",
+   "Low-ink version for home printers"
+  ],
+  [
+   "Instant download",
+   "Digital files, nothing is shipped"
+  ]
+ ],
+ "covers": [
+  "etsy/assets/state-parks-passport-visit-log/p-01.png",
+  "etsy/assets/national-parks-hiking-tracker/p-01.png"
+ ],
+ "pages": [
+  "etsy/assets/state-parks-passport-visit-log/p-01.png",
+  "etsy/assets/national-parks-hiking-tracker/p-01.png",
+  "etsy/assets/state-parks-passport-visit-log/p-05.png",
+  "etsy/assets/national-parks-hiking-tracker/p-04.png",
+  "etsy/assets/state-parks-passport-visit-log/p-10.png",
+  "etsy/assets/national-parks-hiking-tracker/p-07.png"
+ ],
+ "back": 1,
+ "back2": 2,
+ "feature": 3,
+ "spreadA": [
+  0,
+  1
+ ],
+ "spreadATitle": "What's included",
+ "spreadB": [
+  2,
+  3,
+  4,
+  5
+ ],
+ "spreadBTitle": "A look inside",
+ "pageCount": 66
+}
