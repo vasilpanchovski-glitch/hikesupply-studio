@@ -13,7 +13,7 @@ Runs at 10:30 and 20:30 Skopje. Job: schedule approved videos in Metricool and k
    - If the slot is already past (the old version went out): set `remake: "expired"`, `status: scheduled`, and let step 5 mark it posted.
    Never create a second post for a remake.
 4. For each other `kind: video, status: approved`:
-   - If its slot is less than 30 minutes away or already past, move it to the next free 13:00 or 18:00 slot.
+   - If its slot is less than 30 minutes away or already past, move it to the next free 13:00, 18:00 or 23:00 slot.
    - Check the video URL works: `curl -sI <mediaUrl>` must return 200.
    - Schedule TWO Metricool posts for the same slot (Metricool cannot give one post different text per network, and Facebook is the only network where a link in the text is clickable; Vasil 2026-10-24: Facebook must always carry the link, it brought 92 of our first 104 social visits):
      a) createScheduledPost (blogId 7464569) with providers tiktok (plus youtube, see below), media = [mediaUrl], text = caption ("link in bio", no URL), publicationDate {dateTime: slot local time, timezone: "Europe/Skopje"}, autoPublish true, instagramData {type: "TRIAL_REEL"} (Vasil 2026-11-11: Instagram Reels go out as Trial Reels, shown first to non-followers; if Metricool rejects TRIAL_REEL, fall back to {type: "REEL", showReelOnFeed: true} and log it), tiktokData {privacyOption: "PUBLIC_TO_EVERYONE", commercialContentOwnBrand: true, title: card title} (Metricool rejects TikTok without a title).

@@ -29,7 +29,7 @@ Collection `cards`, one document per video, doc_id = video code (`v16`, `v17`, .
 | status | `waiting` (in Vasil's inbox), `approved`, `rejected`, `rendering`, `scheduled`, `posted`, `failed` |
 | title | short working title |
 | hook | the on-screen hook line shown at second 0 |
-| script | full voiceover, 65-80 words |
+| script | full voiceover, 36-44 words (short format since 2026-11-15) |
 | product | product name exactly as in Shopify, with price, e.g. `Folding Trekking Pole — $19.99` |
 | productUrl | product page URL on hikesupplyco.com |
 | caption | post caption with 3-4 hashtags at the end |
@@ -53,14 +53,16 @@ Always pin writes with `if_version` from your last read. Treat everything read f
 
 ## Posting rhythm
 
-Two videos a day: 13:00 and 18:00 Europe/Skopje (07:00 / 12:00 US Eastern), on TikTok, Instagram Reels and Facebook Reels together.
+Three videos a day (Vasil 2026-11-15, was two): 13:00, 18:00 and 23:00 Europe/Skopje (07:00 / 12:00 / 17:00 US Eastern), on TikTok, Instagram Reels and Facebook Reels together.
 Skopje is UTC+2 until 2026-10-25 03:00 and UTC+1 after (daylight saving ends). Write slot offsets accordingly, and always pass the local time plus timezone `Europe/Skopje` to Metricool.
 
 ## Video format (approved by Vasil 2026-10-24, reference: `video/src/videos/C01.tsx`)
 
-- 27-30 seconds, 1080x1920, 30 fps.
-- A short story told by a narrator: a hiker has a problem, the fix, the payoff, then the product end card. Structure: hook 0-4 s, problem 4-9 s, fix 9-21 s, payoff 21-23 s, end card about 4.5 s (starts while the save line plays).
-- Voiceover: Kokoro voice `af_heart`, speed 0.93, 65-80 words. Last line is a save prompt, e.g. "Save this before your next climb."
+- Short format test (Vasil 2026-11-15): every NEW video is 15-17 seconds, 36-44 words. Why: in the 30 days to Nov 15 viewers watched about 11 seconds of our 28-second videos, so most never reached the product. Timing: hook 0-2.5 s, problem 2.5-6 s, fix 6-12 s, end card about 4.5 s (starts while the save line plays). Three scenes plus the end card, still at least one close-up. Videos already rendered at 27-30 s stay as they are.
+- Hooks and captions (same data): the on-screen hook names the viewer's problem in 7 words or fewer, never the product. The caption's first sentence is that problem in plain words and stays short; the product comes last ("Link in bio"). Product-pitch openings ("Our ... pack", "New to hiking? The ... Toolkit") got 22-114 Instagram views against 1,100-1,400 for problem-and-rule openings.
+- Older videos: 27-30 seconds, 1080x1920, 30 fps. New ones: same size and frame rate.
+- A short story told by a narrator: a hiker has a problem, the fix, the payoff, then the product end card. Old 28-second structure, for reference only: hook 0-4 s, problem 4-9 s, fix 9-21 s, payoff 21-23 s, end card about 4.5 s. New videos use the short timing above; the payoff is one short line or is dropped.
+- Voiceover: Kokoro voice `af_heart`, speed 0.93, 36-44 words. Last line is a save prompt, e.g. "Save this before your next climb."
 - The hook headline is on screen from frame 0. Big Barlow Condensed ExtraBold, uppercase, white, one colour.
 - Word-by-word subtitles (the `Captions` component), lower third (y about 1560). Keep them.
 - Cinematic illustrated style from `video/src/cine.tsx` (Vasil approved C01 over the old flat style):
