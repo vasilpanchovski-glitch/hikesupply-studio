@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Forty degrees, so Jess wore her heavy winter coat.", "gap": 0.2},
+  {"text": "Ten minutes uphill, she was soaked in sweat.", "gap": 0.3},
+  {"text": "The rule for forty degrees: wool or synthetic base layer, light fleece, wind shell.", "gap": 0.15},
+  {"text": "Hat and thin gloves too.", "gap": 0.4},
+  {"text": "Save this for your next cold hike.", "gap": 0.2}
+ ]
+}

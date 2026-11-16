@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "\"Another park?\" the kids groaned from the back seat.", "gap": 0.2},
+  {"text": "So Mia gave them a job.", "gap": 0.3},
+  {"text": "Each kid logs every park: the date, one thing they saw, a stamp.", "gap": 0.15},
+  {"text": "Now they ask for the next one.", "gap": 0.4},
+  {"text": "Save this for your next road trip.", "gap": 0.2}
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Dan walked out to Bar Island at low tide.", "gap": 0.2},
+  {"text": "He stayed too long, and the sea covered the path.", "gap": 0.3},
+  {"text": "The rule: cross only within an hour and a half of low tide,", "gap": 0.15},
+  {"text": "and check the tide chart first.", "gap": 0.4},
+  {"text": "Save this before Acadia.", "gap": 0.2}
+ ]
+}
