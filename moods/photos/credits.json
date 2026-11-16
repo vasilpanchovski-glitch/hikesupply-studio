@@ -217,7 +217,7 @@
   "photographer": "Lucien Schreiber",
   "url": "https://www.pexels.com/photo/30061778/",
   "alt": "Snowy peaks rising above a misty winter forest",
-  "used": false,
+  "used": true,
   "pinUsed": "pb20261113-6",
   "pinDate": "2026-11-13"
  },
@@ -245,25 +245,25 @@
   "photographer": "Just a Dream Pictures",
   "url": "https://www.pexels.com/photo/15859838/",
   "alt": "Cloud-covered mountains above a dark forest valley",
-  "used": false
+  "used": true
  },
  "17838430": {
   "photographer": "Nuray Yakın",
   "url": "https://www.pexels.com/photo/17838430/",
   "alt": "Rocky mountain peaks wrapped in fog",
-  "used": false
+  "used": true
  },
  "38230509": {
   "photographer": "Ahmet Mert",
   "url": "https://www.pexels.com/photo/38230509/",
   "alt": "Misty mountain forest slope in morning fog",
-  "used": false
+  "used": true
  },
  "6072918": {
   "photographer": "Pavel Danilyuk",
   "url": "https://www.pexels.com/photo/6072918/",
   "alt": "Pine trees below a snow-covered mountain in fog",
-  "used": false,
+  "used": true,
   "pinUsed": "pb20261116-10",
   "pinDate": "2026-11-16"
  },
@@ -295,7 +295,7 @@
   "photographer": "Lindsey Mateo",
   "url": "https://www.pexels.com/photo/28246904/",
   "alt": "Bow Lake reflection, Banff, Canada",
-  "used": false,
+  "used": true,
   "pinUsed": "pb20261114-9",
   "pinDate": "2026-11-14"
  },
@@ -349,7 +349,7 @@
   "photographer": "Jonathan Hendricks",
   "url": "https://www.pexels.com/photo/37899626/",
   "alt": "Layered blue ridges of the Smoky Mountains at dawn",
-  "used": false,
+  "used": true,
   "topic": "Great Smoky Mountains",
   "pinUsed": "pb20261116-5",
   "pinDate": "2026-11-16"
