@@ -1,0 +1,53 @@
+{
+ "posts": [
+  {
+   "id": "m20261123",
+   "photo": "moods/photos/pexels-15859838.jpg",
+   "quote": "Not every hike\nends at the top.\nSome end in a valley\nfull of quiet.",
+   "author": "",
+   "place": "auto"
+  },
+  {
+   "id": "m20261124",
+   "photo": "moods/photos/pexels-17838430.jpg",
+   "quote": "Rock, fog,\nand the sound\nof my own boots.\nThat's enough company.",
+   "author": "",
+   "place": "auto"
+  },
+  {
+   "id": "m20261125",
+   "photo": "moods/photos/pexels-38230509.jpg",
+   "quote": "The mist lifts\na little at a time.\nSo does whatever\nI carried up here.",
+   "author": "",
+   "place": "auto"
+  },
+  {
+   "id": "m20261126",
+   "photo": "moods/photos/pexels-37899626.jpg",
+   "quote": "Grateful for early alarms,\nwarm layers,\nand mornings\nthat look like this.",
+   "author": "",
+   "place": "auto"
+  },
+  {
+   "id": "m20261127",
+   "photo": "moods/photos/pexels-30061778.jpg",
+   "quote": "Snow on the peaks,\nfrost on the needles.\nThe whole valley\nholding its breath.",
+   "author": "",
+   "place": 0.02
+  },
+  {
+   "id": "m20261128",
+   "photo": "moods/photos/pexels-28246904.jpg",
+   "quote": "A still lake\nholds the whole mountain.\nA quiet day\ncan hold a lot too.",
+   "author": "",
+   "place": 0.65
+  },
+  {
+   "id": "m20261129",
+   "photo": "moods/photos/pexels-6072918.jpg",
+   "quote": "The week was loud.\nThe pines were not.\nSunday, well spent.",
+   "author": "",
+   "place": "auto"
+  }
+ ]
+}
