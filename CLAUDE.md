@@ -297,6 +297,15 @@ Agent: Finance (`agents/finance.md`), daily 07:37. HQ collection `money`: `lates
 Agent: Ads Manager (`agents/ads.md`), every second day 16:22. HQ collection `ads`: `tracking` (pixel and tag health) and `a<NN>` cards `{status: waiting|approved|rejected|live|stop|ended, kind: campaign|setup, platform, title, product, creatives, copy, audience, budgetPerDay, days, maxTotal, expected, stopRules, why, launchSteps, results, note}`.
 The store has no ad budget yet. The Ads Manager never spends money and never launches or unpauses a campaign. Vasil approves a card with an exact daily budget and total cap, then launches it himself.
 
+# Real-footage tip videos (Vasil 2026-11-16)
+
+A second video format next to the illustrated ones. Template: `video/src/videos/R03.tsx` (card `r03`). Real free footage (Pexels, Mixkit, Vasil's `Downloads\HikeSupply scenic`), our voice, word-by-word captions and the usual end card.
+- Every clip is used once. No shot repeats inside one video.
+- Captions all white: pass `accent="#fff"` to `Captions`. No orange or coloured words anywhere.
+- Each line plays over a shot that shows what it says.
+- Script first for Vasil's approval, then build. Every finished video goes to his inbox as `kind: video, status: waiting` (Vasil 2026-11-16: "Such videos i want to approve also before being posted").
+- Card code `r<NN>`, field `format: "real-footage"`.
+
 # Scenic reels (Vasil 2026-11-10, being shaped)
 
 Short, magical real mountain clips (sunrise over clouds, alpenglow, drone over peaks), like popular "spot" accounts. Rules so far:
