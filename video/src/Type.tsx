@@ -27,10 +27,11 @@ export const chunkWords = (words: Word[], maxWords = 4) => {
   return chunks;
 };
 
-export const Captions: React.FC<{ words: Word[]; windows: [number, number, number][]; dark?: (t: number) => boolean }> = ({
+export const Captions: React.FC<{ words: Word[]; windows: [number, number, number][]; dark?: (t: number) => boolean; accent?: string }> = ({
   words,
   windows,
   dark,
+  accent = C.clayHot,
 }) => {
   const t = useCurrentFrame() / FPS;
   if (isClean()) return null;
@@ -74,7 +75,7 @@ export const Captions: React.FC<{ words: Word[]; windows: [number, number, numbe
           <span
             key={i}
             style={{
-              color: active ? (now ? C.clayHot : onDark ? "#fff" : C.ink) : onDark ? "rgba(255,255,255,0.45)" : "rgba(31,36,33,0.35)",
+              color: active ? (now ? accent : onDark ? "#fff" : C.ink) : onDark ? "rgba(255,255,255,0.45)" : "rgba(31,36,33,0.35)",
               textShadow: onDark ? "0 3px 18px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.7)" : "none",
               scale: now ? `${at(t, [w.s - 0.03, w.s + 0.1], [1.12, 1.0])}` : "1",
               display: "inline-block",
