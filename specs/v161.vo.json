@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Mark says someday he'll hike a piece of the Appalachian Trail.", "gap": 0.15},
+  {"text": "He's said it for ten years.", "gap": 0.3},
+  {"text": "The fix: pick one section, set dates, count honest miles per day, and check the permits.", "gap": 0.2},
+  {"text": "Now someday has a date.", "gap": 0.3},
+  {"text": "Save this before you plan your year.", "gap": 0.2}
+ ]
+}

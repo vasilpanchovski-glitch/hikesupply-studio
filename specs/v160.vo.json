@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Nora's hike ended on a dark road, in a dark jacket.", "gap": 0.2},
+  {"text": "A truck passed far too close.", "gap": 0.3},
+  {"text": "The fix: walk facing traffic, carry a light,", "gap": 0.15},
+  {"text": "and wear reflective straps with red lights front and back.", "gap": 0.4},
+  {"text": "Save this before your next winter hike.", "gap": 0.2}
+ ]
+}

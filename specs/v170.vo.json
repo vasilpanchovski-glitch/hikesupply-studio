@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "The map said three miles, so Maya planned ninety minutes.", "gap": 0.2},
+  {"text": "In fresh snow it took three hours, and the sun was low.", "gap": 0.3},
+  {"text": "The fix: in snow, plan for double the time,", "gap": 0.15},
+  {"text": "and set a turnaround time before you start.", "gap": 0.4},
+  {"text": "Save this before your next winter hike.", "gap": 0.2}
+ ]
+}
