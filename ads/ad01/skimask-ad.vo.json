@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.95,
+ "lead": 0.3,
+ "lines": [
+  {"text": "You sit down next to a quiet old man on the chairlift.", "gap": 0.35},
+  {"text": "Then you look again.", "gap": 0.6},
+  {"text": "It's not grandpa. It's a ski mask.", "gap": 0.6},
+  {"text": "The Funny Old Man Ski Mask. Five faces, one size, covers your head, face and neck.", "gap": 0.4},
+  {"text": "Make every lift ride a story. Link in bio.", "gap": 0.3}
+ ]
+}
