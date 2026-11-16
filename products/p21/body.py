@@ -1,0 +1,391 @@
+from _css import MY_CSS as BASE_CSS
+
+MY_CSS = BASE_CSS + """<style>
+.tk{display:grid;grid-template-columns:1fr;gap:0}
+.tk>div{display:grid;grid-template-columns:30pt 1fr 14pt;gap:8pt;align-items:center;padding:6pt 0;border-bottom:0.6pt solid var(--line)}
+.tk .n{font:600 19pt/1 var(--serif);color:var(--clay);text-align:center}
+.tk h3{margin:0;font-size:11.5pt}
+.tk p{margin:1pt 0 0;font-size:9.2pt;line-height:1.35}
+.tk i{width:11pt;height:11pt;border:1.3pt solid var(--forest);border-radius:2pt;background:#fff}
+.ck3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4pt 16pt}
+.ck3 h3{margin:4pt 0 2pt;font-size:11.5pt}
+.ck3 ul.check{margin:0 0 6pt}
+.ck3 ul.check li{font-size:9pt;padding:2.6pt 0 2.6pt 17pt}
+.ck3 ul.check li::before{top:4pt;width:9pt;height:9pt}
+.ck2 ul.check li{font-size:9.6pt}
+.sea{display:grid;grid-template-columns:1fr 1fr;gap:10pt 14pt}
+.sea>div{background:#fff;border:1pt solid #CFC7B6;border-radius:8pt;padding:10pt 12pt}
+.sea h3{margin:0 0 3pt;font-size:13pt}
+.sea .who{font:700 7pt/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--clay);margin-bottom:4pt}
+.sea ul{margin:0;padding-left:13pt;font-size:9.2pt;line-height:1.4}
+.ms{display:grid;grid-template-columns:1fr 1fr;gap:10pt 14pt}
+.ms>div{background:#fff;border:1pt solid #CFC7B6;border-radius:8pt;padding:9pt 12pt;height:1.55in}
+.ms h3{margin:0 0 2pt;font-size:12pt}
+.ms .fl{height:20pt}
+.ms .wl{height:20pt}
+.hl{background:#fff;border:1pt solid #CFC7B6;border-radius:9pt;padding:9pt 12pt;margin-bottom:9pt}
+.hl .top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.2pt solid var(--forest);padding-bottom:4pt}
+.hl .top h3{margin:0;font-size:12.5pt}
+.hl .top span{font:700 7pt/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--sage)}
+.hl .fl{height:21pt}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:8pt 16pt}
+.res>div{border-bottom:0.6pt solid var(--line);padding:6pt 0 8pt}
+.res h3{margin:0 0 2pt;font-size:12pt}
+.res p{margin:0;font-size:9.2pt;line-height:1.4}
+.res .u{font:600 8.4pt/1.3 var(--sans);color:var(--clay);margin-top:3pt}
+.sig{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10pt}
+.sig>div{border-top:2pt solid var(--forest);padding-top:6pt}
+.sig h3{margin:0 0 3pt;font-size:12pt}
+.sig ul{margin:0;padding-left:13pt;font-size:9.1pt;line-height:1.38}
+html.bw .sea>div,html.bw .ms>div,html.bw .hl{background:#fff}
+.page.fill{display:flex;flex-direction:column}
+.page.fill>*{flex:none}
+.page.fill>.notes{flex:1 1 0;min-height:0;margin-bottom:2pt;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 23pt,#CFC7B6 23pt,#CFC7B6 23.8pt)}
+.lead{font-size:13pt}
+.idea>div{padding:12pt 14pt}
+.idea h3{font-size:13.5pt}
+.idea p,.idea ul{font-size:10.2pt;line-height:1.48}
+ul.check li{font-size:10.2pt;padding:4.6pt 0 4.6pt 20pt}
+ul.check li::before{top:6pt}
+.ck3 ul.check li{font-size:9.8pt;padding:3.6pt 0 3.6pt 17pt}
+.ck3 h3{font-size:12.5pt;margin:8pt 0 3pt}
+.steps2 p{font-size:10.4pt}
+.combo p,.rng p,.cmp p,.res p{font-size:10pt;line-height:1.45}
+.sea ul,.sig ul{font-size:10pt;line-height:1.45}
+.sea>div{padding:12pt 14pt}
+ol.steps li{font-size:10.5pt}
+.tk p{font-size:9.8pt}
+.hl .fl{height:25pt}
+.ms>div{height:2.08in}
+.ms .wl{height:24pt}
+html.bw .page.fill>.notes{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 23pt,#999 23pt,#999 23.8pt)}
+</style>"""
+
+T = "Hiking With Babies & Toddlers"
+CREDIT = "Patrick Ruehle / Pexels"
+
+
+def build(page, lines, opts):
+    L = lines
+    def pg(body, n, cls="", notes="Notes"):
+        if notes:
+            body += f'<div class="lab" style="margin-top:12pt">{notes}</div><div class="notes"></div>'
+        page(body, n, (cls + " fill").strip())
+    # ---------- 1 cover
+    pg('''<div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+<div class="art bwart"><svg width="500" height="340" viewBox="0 0 500 340" fill="none" stroke="#2C3B2E" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<path d="M0 300 L110 190 L170 240 L260 140 L360 250 L420 210 L500 270"/>
+<path d="M200 300 v-60 a20 20 0 0 1 40 0 v60"/><circle cx="220" cy="196" r="14"/>
+<path d="M290 300 v-34 a13 13 0 0 1 26 0 v34"/><circle cx="303" cy="238" r="10"/><path d="M240 250 q25 -6 50 10"/></svg></div>
+<div style="position:relative"><h1>Hiking With Babies &amp; Toddlers</h1><p class="sub" style="max-width:6.2in">A parent's guide and printable checklists: picking a first family trail, carriers by age, what to pack, dressing little ones for heat and cold, naps, feeding and diapers on the trail, and when to turn around.</p>
+<div class="meta" style="margin-top:22pt"><span>24 printable pages</span><span>Birth to about age 4</span><span>All four seasons</span></div></div>''', 0, "cover photo", None)
+
+    # ---------- 2 how to use
+    pg('''<div class="kicker">Start here</div><h2>How to use this guide</h2>
+<p class="lead">You hiked before the baby came, and you want to keep going, together. This guide helps you plan short, happy family hikes with a baby or toddler, from birth to about age 4.</p>
+<div class="steps2">
+<div><div class="n">1</div><div><h3>Read the short guide</h3><p>Pages 3 to 19 cover trails, carriers, packing, clothing for heat and cold, food, diapers, naps, bugs, weather and safety. Each topic fits on one page.</p></div></div>
+<div><div class="n">2</div><div><h3>Print the checklists</h3><p>The packing list (page 8), the car kit (page 19) and the night-before list (page 23) work best printed and kept by the door.</p></div></div>
+<div><div class="n">3</div><div><h3>Plan the hike</h3><p>Fill in the family hike planner (page 20) the evening before: trail, timing around naps, turnaround time and who to tell.</p></div></div>
+<div><div class="n">4</div><div><h3>Keep the memories</h3><p>The hike log (page 21) and the milestones page (page 22) turn your first family hikes into a keepsake.</p></div></div></div>
+<div class="warn" style="margin-top:14pt"><b>Your pediatrician comes first.</b> This guide gives general outdoor advice, not medical advice. Ask your child's doctor about sun protection, insect repellents, feeding, how warm or cold is too much for your child, and anything else about their health. Follow your carrier maker's instructions for age, weight and fit.</div>
+<div class="cols" style="margin-top:6pt"><div><h3>Printing</h3><p>Print at Actual size on US Letter. An A4 file and a low-ink printer-friendly file are included. Print the fill-in pages as often as you like for your own family.</p></div>
+<div><h3>Units</h3><table style="margin-top:2pt"><tr><th>Imperial</th><th>Metric</th></tr><tr><td>1 mile</td><td>1.61 km</td></tr><tr><td>1 lb</td><td>0.45 kg</td></tr><tr><td>1 fl oz</td><td>30 ml</td></tr><tr><td>50 °F / 86 °F</td><td>10 °C / 30 °C</td></tr></table></div></div>''', 2)
+
+    # ---------- 3 why
+    pg('''<div class="kicker">The short guide</div><h2>Why it is worth it, and what changes</h2>
+<p class="lead">Fresh air, new sounds, leaves to touch and a parent close by: a trail is a wonderful place for a little one. The hiking just looks different now.</p>
+<div class="idea">
+<div><div class="who">Slower</div><h3>Their pace, not yours</h3><p>With a baby in a carrier you stop to feed, change and soothe. With a toddler on foot you stop for every stick, puddle and beetle. Plan for half your old pace, or less.</p></div>
+<div><div class="who">Shorter</div><h3>Distance is not the goal</h3><p>A 1 mile (1.6 km) loop that ends with a happy child is a great hike. Start short, then add a little each time it goes well.</p></div>
+<div><div class="who">More stops</div><h3>Breaks are part of the plan</h3><p>Expect a stop every 20 to 45 minutes. Choose trails with benches, flat rocks or a shady spot to sit, and treat stops as the fun part.</p></div>
+<div><div class="who">More gear</div><h3>A heavier pack</h3><p>Diapers, spare clothes, snacks and a carrier add weight. Pack carefully (pages 7 and 8) and let the second adult carry the bag when there is one.</p></div></div>
+<h3 style="margin-top:16pt">A few family rules that help</h3>
+<ol class="steps"><li>The hike is for the child, too. Stop where they want to stop.</li><li>Leave while it is still fun. Turning back early is a success, not a failure.</li><li>Keep it simple: the same easy trail in every season is a new hike each time.</li><li>Tell someone where you are going and when you will be back, every time.</li></ol>
+<div class="box"><p style="margin:0">Many parents find that the first few outings feel like a lot of work. It gets easier quickly: you will learn your routine, your pack gets organized, and your child starts to recognize "hike days" and look forward to them.</p></div>''', 3)
+
+    # ---------- 4 first trail
+    pg(f'''<div class="kicker">The short guide</div><h2>Your first family hike: picking the trail</h2>
+<p class="lead">The best first trail is short, easy and close to home, with a way out if the day goes sideways.</p>
+<div class="cols ck2"><div><h3 style="margin-top:0">Look for</h3><ul class="check">
+<li>1 to 2 miles (1.5 to 3 km) in total</li>
+<li>Little climbing, wide and even path</li>
+<li>A loop or an easy out-and-back</li>
+<li>Restrooms at the trailhead</li>
+<li>Shade, benches or picnic tables</li>
+<li>Something to see: a pond, a creek, a meadow</li>
+<li>A short drive from home</li></ul></div>
+<div><h3 style="margin-top:0">Skip for now</h3><ul class="check">
+<li>Steep drop-offs and cliff edges</li>
+<li>Fast or deep water crossings</li>
+<li>Rocky scrambles and narrow ledges</li>
+<li>No shade on a hot day</li>
+<li>Long trails with no shortcut back</li>
+<li>Busy mountain bike trails</li>
+<li>Trails you have never hiked yourself</li></ul></div></div>
+<h3>Where to find family-friendly trails</h3>
+<div class="res">
+<div><h3>Local and county parks</h3><p>Nature centers and park trails are often short, well marked and close to parking and restrooms.</p></div>
+<div><h3>State and provincial parks</h3><p>Many list easy or accessible trails on their official websites, with maps and distances.</p></div>
+<div><h3>National parks</h3><p>Park pages on nps.gov (US) and parks.canada.ca list short walks, nature trails and current closures.</p></div>
+<div><h3>Land trusts and nature preserves</h3><p>Small local preserves often have quiet, easy trails that rarely get busy.</p></div></div>
+<p class="small" style="margin-top:8pt">Check the official page for the trail on the day you go: closures, construction and seasonal hazards change.</p>
+<div class="f2"><div class="fl">Trail idea 1</div><div class="fl">Distance <span class="u"><b></b>mi / <b></b>km</span></div><div class="fl">Trail idea 2</div><div class="fl">Distance <span class="u"><b></b>mi / <b></b>km</span></div></div>''', 4)
+
+    # ---------- 5 carriers
+    tk = "".join(f'<div><div class="n">{a}</div><div><h3>{b}</h3><p>{c}</p></div><i></i></div>' for a, b, c in [
+        ("T", "Tight", "Snug enough to hold baby close to you; nothing slack or sagging."),
+        ("I", "In view at all times", "You can see your baby's face by simply looking down."),
+        ("C", "Close enough to kiss", "Baby's head is high enough that you can kiss the top of it."),
+        ("K", "Keep chin off the chest", "There is at least a finger's width under baby's chin, so the airway stays open."),
+        ("S", "Supported back", "Baby's back is supported in a natural position, tummy and chest against you.")])
+    pg(f'''<div class="kicker">The short guide</div><h2>Carriers by age</h2>
+<p class="lead">The right carrier changes as your child grows. Always follow the maker's age, weight and fit rules in the manual for your carrier.</p>
+<div class="cmp">
+<div><h3>Wrap or sling</h3><div class="who">Often the newborn months</div><p>Soft fabric that holds a small baby high on your chest. Light and cozy, but it takes practice to tie safely.</p><p class="small">Best for very short, flat walks.</p></div>
+<div><h3>Soft structured carrier</h3><div class="who">Babies and toddlers</div><p>Buckles and a padded waist belt. Many work on the front for small babies and on the back once the maker allows it.</p><p class="small">The most common choice for easy trails.</p></div>
+<div><h3>Frame carrier</h3><div class="who">Once baby sits well alone</div><p>A hiking pack with a seat for the child. Makers usually require steady head control and sitting without help; check yours.</p><p class="small">Best for longer hikes with a toddler.</p></div></div>
+<h3 style="margin-top:14pt">Fit check for wraps, slings and front carriers <span class="small" style="font-family:var(--sans);font-weight:500">(tick each time)</span></h3>
+<div class="tk">{tk}</div>
+<div class="warn" style="margin-top:10pt"><b>Trip and fall safety.</b> Your balance changes with a child on your body. Watch every step, use trekking poles on uneven ground if they help, never bend at the waist with a frame carrier on (bend at the knees), and keep the frame carrier's harness fastened whenever the child is in it.</div>''', 5)
+
+    # ---------- 6 toddlers walking
+    pg(f'''<div class="kicker">The short guide</div><h2>When toddlers walk</h2>
+<p class="lead">Once your child is walking, the trail becomes theirs. They will not walk far or fast, and that is fine.</p>
+<div class="rng">
+<div><div class="stat">Short</div><div class="u">walk on their own feet</div><p>Many young toddlers walk well under a mile (1.6 km) with lots of stops; older preschoolers often go further. Every child is different.</p></div>
+<div><div class="stat">Carry</div><div class="u">a plan B for tired legs</div><p>Bring a carrier on any hike longer than your child can walk. Tired legs can arrive suddenly, often on the way back.</p></div>
+<div><div class="stat">Slow</div><div class="u">is the real goal</div><p>Let them squat, look and touch. Curiosity is what makes a hike memorable for them.</p></div></div>
+<h3 style="margin-top:14pt">The "they lead, you follow" hike</h3>
+<p>Choose a safe, easy trail and let your toddler set the pace and choose when to stop. Stay within arm's reach near water, edges and roads. You may not get far, but you will see the trail through their eyes.</p>
+<h3>Games that keep little legs moving</h3>
+<div class="combo">
+<div><div class="tg">Spotting</div><h3>I spy colors</h3><p>"Find something red." Then yellow, then a round thing, then something soft.</p></div>
+<div><div class="tg">Counting</div><h3>Count the bridges</h3><p>Count trail markers, bridges, benches or big trees on the way.</p></div>
+<div><div class="tg">Moving</div><h3>Walk like an animal</h3><p>Hop like a frog, tiptoe like a fox, stomp like a bear to the next tree.</p></div>
+<div><div class="tg">Goals</div><h3>The next stop</h3><p>Small goals work: "Let's walk to that big rock and have a snack there."</p></div>
+<div><div class="tg">Listening</div><h3>Quiet minute</h3><p>Stop, close your eyes and count the sounds: birds, wind, water.</p></div>
+<div><div class="tg">Helping</div><h3>Trail leader</h3><p>Let them carry a tiny pack with a snack and a toy, and lead to the next marker.</p></div></div>
+<div class="box" style="margin-top:10pt"><p style="margin:0">Teach the trail rules early: stay on the path, look but do not pick, never eat berries or plants, and stop when a grown-up says "stop".</p></div>''', 6, "", None)
+
+    # ---------- 7 parent pack
+    pg(f'''<div class="kicker">The short guide</div><h2>The parent pack</h2>
+<p class="lead">Your usual day pack still matters: the hiking basics come first, then the baby and toddler extras on the next page.</p>
+<div class="cols ck2"><div><h3 style="margin-top:0">Your basics (always)</h3><ul class="check">
+<li>Water for adults and child</li><li>Snacks and a little extra food</li><li>Map or downloaded trail map, charged phone</li><li>Layers and rain jacket for each adult</li><li>Sun protection: hat, sunglasses, sunscreen</li><li>First-aid kit (page 17)</li><li>Headlamp or flashlight</li><li>Whistle</li></ul></div>
+<div><h3 style="margin-top:0">What changes with a child</h3><ul class="check">
+<li>Two adults? Split it: one carries the child, one the pack</li><li>One adult? A frame carrier with storage, or a small hip pack</li><li>Diaper kit in a pocket you can reach</li><li>Snacks and water you can reach without stopping</li><li>A small waterproof bag for wet and dirty clothes</li><li>Spare layer for the child in a top pocket</li></ul></div></div>
+<h3>Weight balance with a carrier</h3>
+<div class="steps2">
+<div><div class="n">1</div><div><h3>Heaviest close to your back</h3><p>In a frame carrier, keep heavy items low and close to your spine, and do not overload the storage pockets.</p></div></div>
+<div><div class="n">2</div><div><h3>Know the limit</h3><p>Frame carriers list a maximum total weight (child plus gear). Weigh your child and the loaded pack at home.</p></div></div>
+<div><div class="n">3</div><div><h3>Adjust before you go</h3><p>Fit the hip belt and shoulder straps at home with the child in it, then check again at the trailhead.</p></div></div>
+<div><div class="n">4</div><div><h3>Test it short</h3><p>Do a 20 minute walk around the neighborhood with the full load before your first real hike.</p></div></div></div>
+<div class="f2" style="margin-top:6pt"><div class="fl">Child's weight <span class="u"><b></b>lb / <b></b>kg</span></div><div class="fl">Carrier limit <span class="u"><b></b>lb / <b></b>kg</span></div></div>''', 7)
+
+    # ---------- 8 packing checklist
+    pg(f'''<div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Printable checklist</div><h2>Packing checklist: baby and toddler</h2></div><div class="r">Tick as you pack.<br>Add your own lines.</div></div>
+<div class="ck3">
+<div><h3>Carrying</h3><ul class="check"><li>Carrier, adjusted</li><li>Sun or rain hood</li><li>Small blanket or sit pad</li><li>Stroller only on paved paths</li></ul>
+<h3>Diapers and potty</h3><ul class="check"><li>Diapers (one per hour, plus 2)</li><li>Wipes</li><li>Changing pad</li><li>Diaper cream</li><li>Odor-proof bags for used diapers</li><li>Travel potty or potty liners</li><li>Small trowel (page 12)</li><li>Hand sanitizer</li></ul>
+<h3>Comfort</h3><ul class="check"><li>Pacifier and a spare</li><li>Favorite small toy</li><li>Teether</li><li>Small book</li></ul></div>
+<div><h3>Clothes</h3><ul class="check"><li>Full change of clothes</li><li>Extra socks</li><li>Sun hat with brim</li><li>Warm hat</li><li>Mittens or gloves</li><li>Fleece or puffy layer</li><li>Rain layer or rain suit</li><li>Lightweight long sleeves and pants</li><li>Shoes for walkers</li></ul>
+<h3>Food and drink</h3><ul class="check"><li>Breast milk, formula or bottles</li><li>Water for walkers</li><li>Snacks they already know</li><li>Bib and spoon</li><li>Insulated bottle (cold days)</li><li>Bag for trash</li></ul></div>
+<div><h3>Sun and bugs</h3><ul class="check"><li>Sunscreen your pediatrician approved</li><li>Sunglasses or brim hat</li><li>Insect repellent safe for their age</li><li>Bug net for the carrier</li></ul>
+<h3>Health and safety</h3><ul class="check"><li>First-aid kit with kids' items</li><li>Child's medicines</li><li>Tweezers for ticks</li><li>Whistle</li><li>Headlamp</li><li>Charged phone</li><li>Child's ID card in the pack</li></ul>
+<h3>My extras</h3><ul class="check"><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li></ul></div></div>''', 8)
+
+    # ---------- 9 warm days
+    pg(f'''<div class="kicker">The short guide</div><h2>Dressing for warm days</h2>
+<p class="lead">Little ones overheat and burn faster than adults, and a baby in a carrier is pressed against your warm body. Plan for shade and cool hours.</p>
+<div class="idea">
+<div><div class="who">Timing</div><h3>Skip the hottest hours</h3><p>Hike early in the morning or in the evening. Midday sun, roughly 10 am to 4 pm, is the strongest. Pick shady, forested trails and stay near the car on very hot days.</p></div>
+<div><div class="who">Clothes</div><h3>Light, loose and covered</h3><p>Thin, light-colored long sleeves and pants, a wide-brim hat with a neck flap, and breathable fabric. Use the carrier's sun hood.</p></div>
+<div><div class="who">Sun</div><h3>Shade first</h3><p>The American Academy of Pediatrics advises keeping babies under 6 months out of direct sun. Ask your pediatrician about sunscreen for your child's age.</p></div>
+<div><div class="who">Drinks</div><h3>Feed and drink often</h3><p>Offer breast milk or formula often to babies; ask your pediatrician before giving water to a baby under 6 months. Walkers drink small sips at every stop.</p></div></div>
+<h3 style="margin-top:14pt">Signs your child may be too hot</h3>
+<div class="cols ck2"><ul class="check"><li>Hot, red or flushed skin, or sweaty hair and neck</li><li>Fussier than usual, or unusually sleepy</li><li>Fewer wet diapers than normal</li></ul>
+<ul class="check"><li>Get into shade, loosen clothes, offer drinks</li><li>Cool with a damp cloth and head back</li><li>Call your doctor, or 911 in an emergency</li></ul></div>
+<div class="warn"><b>Never leave a child in a parked car,</b> not even for a minute at the trailhead. Cars heat up very fast, even on mild days.</div>
+<h3>Carrier tips for hot days</h3>
+<div class="cols ck2"><ul class="check"><li>Take your child out of the carrier at every break to cool off</li><li>A thin cotton cloth between you and your child soaks up sweat</li></ul><ul class="check"><li>Open the carrier's vent panel if it has one</li><li>Feel the back of the neck: sweaty means too warm</li></ul></div>
+<div class="f2"><div class="fl">Forecast high <span class="u"><b></b>°F / <b></b>°C</span></div><div class="fl">Start time to beat the heat</div></div>''', 9, "", None)
+
+    # ---------- 10 cold days
+    pg(f'''<div class="kicker">The short guide</div><h2>Dressing for cold days</h2>
+<p class="lead">You stay warm because you are walking. Your child in the carrier sits still, so they get cold faster than you do.</p>
+<div class="idea">
+<div><div class="who">Layers</div><h3>Base, warm, shell</h3><p>A soft base layer (wool or synthetic, not cotton), a fleece or puffy layer, and a wind and water resistant outer layer or bunting suit. One more layer than you wear.</p></div>
+<div><div class="who">Ends</div><h3>Head, hands and feet</h3><p>A warm hat that covers the ears, mittens, warm socks and booties. In a frame carrier the legs dangle, so cover them well.</p></div>
+<div><div class="who">Check</div><h3>Feel the back of the neck</h3><p>Every 15 to 20 minutes, slip a hand to the back of your child's neck or chest. It should feel warm and dry: not cold, and not sweaty.</p></div>
+<div><div class="who">Timing</div><h3>Shorter, and in daylight</h3><p>Days are short in winter. Plan short hikes in the warmest part of the day and be back at the car well before dark.</p></div></div>
+<h3 style="margin-top:14pt">Head back when</h3>
+<div class="cols ck2"><ul class="check"><li>The neck or chest feels cool</li><li>Hands are cold and do not warm up inside mittens</li><li>Skin looks pale, blotchy or very red</li></ul>
+<ul class="check"><li>Your child is fussy, shivering or unusually quiet</li><li>Clothes are wet from snow, rain or sweat</li><li>The wind picks up or it starts to snow hard</li></ul></div>
+<div class="warn"><b>Ask your pediatrician</b> how cold is too cold for your child, especially for babies. Bulky snowsuits can interfere with carrier straps and car seat harnesses: take them off in the car and add blankets over the buckled harness instead.</div>
+<h3>Extra pack items for the cold</h3>
+<div class="cols ck2"><ul class="check"><li>Spare hat and mittens (they get wet)</li><li>Warm blanket for stops</li></ul><ul class="check"><li>Warm drink in an insulated bottle</li><li>Hand warmers for adults only, never against a child's skin</li></ul></div>
+<div class="f2"><div class="fl">Forecast low <span class="u"><b></b>°F / <b></b>°C</span></div><div class="fl">Wind chill <span class="u"><b></b>°F / <b></b>°C</span></div></div>''', 10, "", None)
+
+    # ---------- 11 feeding
+    pg(f'''<div class="kicker">The short guide</div><h2>Feeding, snacks and water on the trail</h2>
+<p class="lead">A fed child is a happy hiker. Plan food stops into the route, and bring more than you think you need.</p>
+<div class="idea">
+<div><div class="who">Babies</div><h3>Nursing and bottles</h3><p>Pick a few spots on the trail where you can sit comfortably: a bench, a log, a flat rock with a view. A light cover or scarf can help with sun and wind. Bring formula premeasured, and water in an insulated bottle on cold days.</p></div>
+<div><div class="who">Starting solids</div><h3>Food they already know</h3><p>Pouches and soft foods your baby already eats at home. A hike is not the day to try a new food. Pack a bib, a spoon and a bag for the mess.</p></div>
+<div><div class="who">Toddlers</div><h3>Small snacks, often</h3><p>Offer a snack at every stop. Easy, tidy foods your child already eats safely. Cut food to the size your pediatrician recommends for their age.</p></div>
+<div><div class="who">Adults</div><h3>Eat and drink too</h3><p>Carrying a child is hard work. Keep your own snacks and water easy to reach, so you do not skip them while caring for everyone else.</p></div></div>
+<h3 style="margin-top:14pt">Good habits</h3>
+<ul class="check"><li>Clean hands before eating: wipes or sanitizer</li><li>Sit down to eat, especially toddlers (no snacking while walking or riding in a carrier)</li><li>Pack out every wrapper, peel and crumb</li><li>Never feed wildlife, not even birds or squirrels</li><li>Keep allergy-safe food in its own bag and read every label</li></ul>
+''', 11, "", "Our trail snacks that work")
+
+    # ---------- 12 diapers
+    pg(f'''<div class="kicker">The short guide</div><h2>Diapers, potty breaks and pack-it-out</h2>
+<p class="lead">Everything you bring in goes home with you. A simple system makes it easy.</p>
+<div class="idea">
+<div><div class="who">Changing</div><h3>Find a good spot</h3><p>Change on a pad, off the trail, on durable ground such as rock, gravel or dry grass. Shade in summer, out of the wind in winter.</p></div>
+<div><div class="who">Pack it out</div><h3>Diapers and wipes go home</h3><p>Used diapers and wipes never go in the woods or a cat hole, and are not burned. Seal them in an odor-proof bag, then a second bag, and carry them out.</p></div>
+<div><div class="who">Potty training</div><h3>Use restrooms first</h3><p>Visit the trailhead restroom before you start and when you finish. A travel potty with liners can help; pack the liners out like diapers.</p></div>
+<div><div class="who">On the trail</div><h3>When you have to go</h3><p>Go at least 200 ft (about 60 m, around 70 adult steps) from water, trails and campsites. For poop, dig a cat hole 6 to 8 in (15 to 20 cm) deep and cover it.</p></div></div>
+<h3 style="margin-top:14pt">The diaper kit that lives in one pocket</h3>
+<div class="cols ck2"><ul class="check"><li>Diapers and wipes</li><li>Fold-up changing pad</li><li>Diaper cream</li><li>Hand sanitizer</li></ul><ul class="check"><li>Odor-proof bags</li><li>A second bag or dry bag for the trash</li><li>Small trowel</li><li>Toilet paper (packed out too)</li></ul></div>
+<div class="box"><p style="margin:0"><b>Why it matters:</b> wipes and diapers do not break down in nature, animals dig them up, and they can pollute water. Leave No Trace principles ask us to pack out all trash, including hygiene products.</p></div>''', 12)
+
+    # ---------- 13 naps
+    pg(f'''<div class="kicker">The short guide</div><h2>Naps on the trail and timing the hike</h2>
+<p class="lead">Many babies and toddlers fall asleep in a carrier to the rhythm of your steps. Plan around naps and a hike can become the best part of the day.</p>
+<div class="rng">
+<div><div class="stat">Before</div><div class="u">start right after a nap</div><p>A well-rested child is happiest at the start. Good for curious walkers.</p></div>
+<div><div class="stat">During</div><div class="u">hike through the nap</div><p>Some babies nap well in a carrier. You get quiet walking time.</p></div>
+<div><div class="stat">Home</div><div class="u">be back before the meltdown</div><p>Leave enough time to get home before a big tiredness hits.</p></div></div>
+<h3 style="margin-top:14pt">Safe sleep in a carrier</h3>
+<ul class="check"><li>Keep the face visible and uncovered, and the chin off the chest</li><li>Support the head with the carrier's hood or head support, as the maker shows</li><li>Watch for slumping and adjust the straps if the child slides down</li><li>In a frame carrier, check often that the head is not hanging to one side</li><li>Do not use a carrier for sleep in place of a safe crib at camp or at home</li></ul>
+<div class="lab">Our typical day</div>
+<div class="tl"><div><b>Wake</b><span>time</span></div><div><b>Nap 1</b><span>time</span></div><div><b>Lunch</b><span>time</span></div><div><b>Nap 2</b><span>time</span></div><div><b>Dinner</b><span>time</span></div><div><b>Bed</b><span>time</span></div></div>
+<div class="sts" style="grid-template-columns:repeat(6,1fr);margin-top:4pt">{"".join('<div style="height:24pt"></div>' for _ in range(6))}</div>
+<div class="f2" style="margin-top:8pt"><div class="fl">Best hike window</div><div class="fl">Latest time to be back</div></div>''', 13)
+
+    # ---------- 14 bugs ticks plants
+    pg(f'''<div class="kicker">The short guide</div><h2>Bugs, ticks and plants</h2>
+<p class="lead">Most bugs and plants are just part of the fun. A few need care, and a check after every hike takes two minutes.</p>
+<div class="idea">
+<div><div class="who">Mosquitoes</div><h3>Cover up and add a net</h3><p>Long sleeves and pants, light colors, and a bug net over the carrier work for babies of every age. Avoid dusk near still water in mosquito season.</p></div>
+<div><div class="who">Repellents</div><h3>Read the label for age</h3><p>Repellents have age limits on their labels: for example, some are not for babies under 2 months, and oil of lemon eucalyptus products are not for children under 3. Ask your pediatrician which to use.</p></div>
+<div><div class="who">Ticks</div><h3>Check every hike</h3><p>Stay in the middle of the trail and away from tall grass. At home, check your child and yourself: hair, behind ears, under arms, waist, behind knees and between toes.</p></div>
+<div><div class="who">Plants</div><h3>Leaves of three, let it be</h3><p>Learn to spot poison ivy and poison oak where you live. Teach toddlers not to touch, pick or taste plants, mushrooms or berries.</p></div></div>
+<h3 style="margin-top:14pt">If you find a tick</h3>
+<ol class="steps"><li>Grasp it with fine-tipped tweezers as close to the skin as you can.</li><li>Pull upward with steady, even pressure. Do not twist or squeeze.</li><li>Clean the bite and your hands. Note the date and where it was.</li><li>Call your pediatrician if a rash or fever appears in the weeks after, or if you could not remove all of it.</li></ol>
+<div class="f2"><div class="fl">Tick check done (date)</div><div class="fl">Notes</div></div>
+''', 14, "", "Questions for our pediatrician")
+
+    # ---------- 15 weather & turnaround
+    pg(f'''<div class="kicker">The short guide</div><h2>Weather and turnaround rules</h2>
+<p class="lead">The most important decision on a family hike is when to turn back. Decide your rules at home, so the choice is easy on the trail.</p>
+<div class="sig">
+<div><h3>Weather signs</h3><ul><li>Thunder you can hear, or dark towering clouds</li><li>Rain or snow starting, wind picking up</li><li>Temperature dropping fast</li><li>Fog rolling in</li></ul></div>
+<div><h3>Child signs</h3><ul><li>Crying that a snack, change or cuddle does not fix</li><li>Too hot, too cold or wet</li><li>Asking to be carried, again and again</li><li>Unusually quiet or sleepy</li></ul></div>
+<div><h3>Parent signs</h3><ul><li>Sore back or shoulders from the carrier</li><li>Low on water, diapers or snacks</li><li>Losing daylight</li><li>A feeling that today is not the day</li></ul></div></div>
+<div class="warn" style="margin-top:14pt"><b>When thunder roars, go indoors.</b> If you hear thunder, lightning is close enough to be a danger. Leave summits, ridges and open areas and head back to the car. Check the forecast the night before and the morning of the hike.</div>
+<h3>The half-way rule</h3>
+<p>Turn around when you have used half your energy, half your snacks or half your time, not when you have reached the end of the trail. The way back is often slower with a tired child.</p>
+<div class="f2"><div class="fl">Our turnaround time</div><div class="fl">Sunset today</div><div class="fl">Forecast checked (time)</div><div class="fl">Chance of storms <span class="u"><b></b>%</span></div></div>
+''', 15, "", "Our family turnaround rules")
+
+    # ---------- 16 safety
+    pg(f'''<div class="kicker">The short guide</div><h2>Trail safety with little ones</h2>
+<p class="lead">Toddlers are fast, curious and fearless. A few habits keep everyone safe without spoiling the fun.</p>
+<div class="idea">
+<div><div class="who">Edges</div><h3>Hold hands near drops</h3><p>Near any drop-off, steep bank or viewpoint, hold hands or carry. Stay on the uphill side and behind railings.</p></div>
+<div><div class="who">Water</div><h3>Arm's reach near water</h3><p>Creeks, ponds and lakes can be cold, deep and fast. Keep toddlers within arm's reach at all times near water, even shallow water.</p></div>
+<div><div class="who">Wildlife</div><h3>Look from a distance</h3><p>Keep children close and never approach, chase or feed animals. Learn the local advice for bears, moose, snakes or other wildlife before you go.</p></div>
+<div><div class="who">Together</div><h3>Stay together</h3><p>A toddler can vanish around a bend in seconds. Keep them between two adults, or in front of you, and in sight.</p></div></div>
+<h3 style="margin-top:14pt">Teach "hug a tree"</h3>
+<p>For preschoolers: if you ever get separated, stop, stay where you are, hug a tree and blow your whistle. Grown-ups will come to you. Practice it as a game at home and give your child a whistle on a short, safe clip on their jacket (not around the neck).</p>
+<div class="cols ck2"><ul class="check"><li>Bright clothing so they are easy to see</li><li>A whistle for each child old enough to use it</li><li>A recent photo of your child on your phone</li></ul><ul class="check"><li>A note in their pocket with your phone number</li><li>Someone at home knows your plan</li><li>Stay on marked trails</li></ul></div>''', 16)
+
+    # ---------- 17 first aid
+    pg(f'''<div class="kicker">The short guide</div><h2>First-aid kit additions for kids</h2>
+<p class="lead">Start with your usual hiking first-aid kit, then add a few things for little ones. Ask your pediatrician what medicines and doses are right for your child.</p>
+<div class="cols ck2"><div><h3 style="margin-top:0">Add for kids</h3><ul class="check">
+<li>Kids' bandages in fun colors (they help)</li><li>Fine-tipped tweezers for ticks and splinters</li><li>Child's thermometer</li><li>Medicines your pediatrician recommends, with the dose written down</li><li>Any prescribed medicine and allergy plan</li><li>Saline and gauze for cleaning cuts</li><li>Instant cold pack</li><li>Diaper cream and wipes</li><li>Child's sunscreen and repellent</li></ul></div>
+<div><h3 style="margin-top:0">For you</h3><ul class="check">
+<li>Your own medicines</li><li>Blister care</li><li>Elastic bandage</li><li>Emergency blanket</li><li>Whistle and headlamp</li><li>Charged phone and a small power bank</li></ul>
+<div class="box forest" style="margin-top:8pt"><h3>In an emergency</h3><p style="margin:0">Call 911 (US and Canada). Know the trail name and where you are. If you have no signal, try a text to 911 where available, or move to higher open ground.</p></div></div></div>
+<h3>Who to call</h3>
+<div class="f2"><div class="fl">Emergency <span class="u" style="color:var(--forest);font-weight:700">911</span></div><div class="fl">Poison Help (US) <span class="u" style="color:var(--forest);font-weight:700">1-800-222-1222</span></div>
+<div class="fl">Pediatrician</div><div class="fl">Park ranger or visitor center</div>
+<div class="fl">Nearest urgent care or hospital</div><div class="fl">Emergency contact at home</div></div>
+<p class="small" style="margin-top:8pt">In Canada, find your province's poison centre number on the Canadian Association of Poison Control Centres website and write it above. A first-aid course for infants and children is a great gift to yourself.</p>''', 17)
+
+    # ---------- 18 seasons
+    pg('''<div class="kicker">The short guide</div><h2>Hiking with a little one in each season</h2>
+<p class="lead">Every season is a new trail. Here is what to plan for at a glance.</p>
+<div class="sea">
+<div><div class="who">Spring</div><h3>Mud, wildflowers, ticks</h3><ul><li>Waterproof boots or rain suit for walkers</li><li>Changeable weather: pack layers and rain gear</li><li>Ticks become active: check after every hike</li><li>Streams run high and cold: stay back from banks</li><li>Spare socks and a towel in the car</li></ul></div>
+<div><div class="who">Summer</div><h3>Heat, sun, bugs</h3><ul><li>Hike early or late, on shady trails</li><li>Brim hats, light long sleeves, carrier sun hood</li><li>Drinks at every stop</li><li>Bug net over the carrier</li><li>Afternoon thunderstorms: be off exposed ground early</li></ul></div>
+<div><div class="who">Fall</div><h3>Leaves, short days, hunting</h3><ul><li>Leaf piles and acorns: the best toddler trail season</li><li>Shorter days: plan to finish well before sunset</li><li>Cool mornings and warm afternoons: layers</li><li>Wear bright colors where hunting is allowed and check hunting seasons</li></ul></div>
+<div><div class="who">Winter</div><h3>Cold, snow, ice</h3><ul><li>Short hikes in the warmest hours</li><li>Neck check every 15 to 20 minutes</li><li>Traction devices for adults on icy trails</li><li>A warm drink in an insulated bottle</li><li>Dry clothes and a warm car waiting</li></ul></div></div>
+<div class="box" style="margin-top:12pt"><p style="margin:0">Snow can also be magic: a toddler in a snowsuit on a flat, snowy trail or a short sled pull can be a great winter outing. Keep it short and come back warm.</p></div>''', 18)
+
+    # ---------- 19 car kit
+    pg(f'''<div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Printable checklist</div><h2>Car kit for after the hike</h2></div><div class="r">Leave it packed<br>in the trunk</div></div>
+<p class="lead">A small bin in the car makes the end of every hike easy: clean, dry, fed and ready for the ride home.</p>
+<div class="ck3">
+<div><h3>Clean and dry</h3><ul class="check"><li>Full change of clothes for each child</li><li>Spare clothes for adults</li><li>Towel</li><li>Wipes and hand sanitizer</li><li>Bag for wet, muddy clothes</li><li>Spare diapers</li></ul></div>
+<div><h3>Food and comfort</h3><ul class="check"><li>Water and a snack for the drive</li><li>Bottle, formula or pouch</li><li>Favorite blanket</li><li>Small toy or book</li><li>Warm hat (cold days)</li><li>Sunshade for the window</li></ul></div>
+<div><h3>Practical</h3><ul class="check"><li>Trash bag</li><li>Spare shoes or slippers</li><li>Tick-check tweezers</li><li>Phone charger</li><li>Paper map of the area</li><li>Car seat ready, no bulky coats</li></ul></div></div>
+
+<div class="box" style="margin-top:12pt"><p style="margin:0">At the end of the hike: change diapers and wet clothes, do a quick tick check, offer a drink, and buckle in with no bulky coats under the harness. Then a well-earned nap on the way home.</p></div>''', 19, "", "Our extra car kit items")
+
+    # ---------- 20 planner
+    pg(f'''<div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Fill in</div><h2>Family hike planner</h2></div><div class="r">Fill in the<br>night before</div></div>
+<div class="f2"><div class="fl">Trail</div><div class="fl">Date</div>
+<div class="fl">Park or area</div><div class="fl">Distance <span class="u"><b></b>mi / <b></b>km</span></div>
+<div class="fl">Climbing <span class="u"><b></b>ft / <b></b>m</span></div><div class="fl">Trail type (loop, out-and-back)</div>
+<div class="fl">Restrooms at</div><div class="fl">Shade and rest spots</div></div>
+<div class="lab" style="margin-top:12pt">Timing</div>
+<div class="f3"><div class="fl">Leave home</div><div class="fl">Start hiking</div><div class="fl">Turnaround time</div>
+<div class="fl">Nap window</div><div class="fl">Back at the car</div><div class="fl">Sunset</div></div>
+<div class="lab" style="margin-top:12pt">Weather</div>
+<div class="f3"><div class="fl">High <span class="u"><b></b>°F/°C</span></div><div class="fl">Low <span class="u"><b></b>°F/°C</span></div><div class="fl">Storms?</div></div>
+<div class="lab" style="margin-top:12pt">Who is coming and who carries what</div>
+<div class="grp h"><div>Name</div><div>Carries</div><div>Notes</div></div>{"".join('<div class="grp"><div></div><div></div><div></div></div>' for _ in range(4))}
+<div class="f2" style="margin-top:8pt"><div class="fl">Told our plan to</div><div class="fl">Check in by (time)</div></div>
+<div class="lab" style="margin-top:12pt">Checked today</div>{opts("Trail open (official page)", "Forecast", "Packing list", "Car kit", "Carrier adjusted", "Phone charged", "Diaper kit", "First-aid kit")}''', 20)
+
+    # ---------- 21 log
+    hl = "".join(f'''<div class="hl"><div class="top"><h3>Hike {i}</h3><span>Date ______________</span></div>
+<div class="f2"><div class="fl">Trail</div><div class="fl">Distance <span class="u"><b></b>mi / <b></b>km</span></div>
+<div class="fl">Weather</div><div class="fl">Who came</div></div>
+<div class="fl">Best moment</div><div class="fl">What they loved</div></div>''' for i in range(1, 5))
+    pg(f'''<div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Memories</div><h2>Our first hikes log</h2></div><div class="r">Print as many<br>as you like</div></div>{hl}''', 21, "", None)
+
+    # ---------- 22 milestones
+    ms = "".join(f'<div><h3>{t}</h3><div class="fl">Date</div><div class="fl">Where</div><div class="wl"></div></div>' for t in [
+        "First hike (in the carrier)", "First trail in each season", "First steps on a trail", "First time walking the whole trail",
+        "First summit or viewpoint on their own feet", "First creek, puddle or snow", "First animal spotted", "Favorite trail so far"])
+    pg(f'''<div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Memories</div><h2>Milestones</h2></div><div class="r">Add a photo or<br>a tiny leaf</div></div>
+<div class="ms">{ms}</div>''', 22, "", None)
+
+    # ---------- 23 night-before & door
+    pg(f'''<div class="ph"><div><div class="kicker" style="margin-bottom:5pt">Printable checklist</div><h2>Night-before and at-the-door checklist</h2></div><div class="r">Stick it on<br>the front door</div></div>
+<div class="cols ck2"><div><h3 style="margin-top:0">The night before</h3><ul class="check">
+<li>Trail picked, official page checked</li><li>Forecast checked</li><li>Hike planner filled in (page 20)</li><li>Plan sent to someone at home</li><li>Day pack packed (page 7)</li><li>Baby and toddler list packed (page 8)</li><li>Diaper kit full</li><li>Bottles, formula and snacks ready</li><li>Clothes laid out for the weather</li><li>Phone, power bank and headlamp charged</li><li>Carrier adjusted and by the door</li><li>Car kit in the trunk (page 19)</li><li>Gas in the car</li></ul></div>
+<div><h3 style="margin-top:0">At the door</h3><ul class="check">
+<li>Last diaper change or potty stop</li><li>Sunscreen on, if your pediatrician approved it</li><li>Repellent, if right for their age</li><li>Hats, mittens or sun hat</li><li>Water bottles filled</li><li>Cold food from the fridge</li><li>Medicines</li><li>Whistle on each child's jacket</li><li>Phone in a pocket</li><li>Keys</li><li>Pacifier and favorite toy</li><li>Everyone fed</li><li>Have fun</li></ul></div></div>
+''', 23, "", "Things we always forget")
+
+    # ---------- 24 resources & back
+    pg(f'''<div class="brand">HikeSupply Co.</div>
+<div><h2>Official resources</h2>
+<div class="bk" style="margin-top:14pt">
+<div><h3>Trails and parks</h3><p>National Park Service: nps.gov<br>Parks Canada: parks.canada.ca<br>Your state or provincial parks website</p><div class="u">Closures, conditions, rules</div></div>
+<div><h3>Leave No Trace</h3><p>The seven principles, including how to pack out trash and dispose of waste properly.</p><div class="u">lnt.org</div></div>
+<div><h3>Children's health</h3><p>The American Academy of Pediatrics family site covers sun, bug and heat safety. In Canada: Caring for Kids from the Canadian Paediatric Society.</p><div class="u">healthychildren.org &middot; caringforkids.cps.ca</div></div>
+<div><h3>Ticks and bugs</h3><p>CDC (US) and the Government of Canada have tick removal steps and repellent advice.</p><div class="u">cdc.gov &middot; canada.ca</div></div></div>
+<h2 style="font-size:20pt;margin-top:22pt">When they grow into hikers</h2>
+<div class="bk" style="margin-top:10pt">
+<div><h3>Kids Trail Explorer Pack</h3><p>Scavenger hunts and a junior hiker journal for ages 4 to 10.</p><div class="u">hikesupplyco.com</div></div>
+<div><h3>Camping Trip Planner</h3><p>Checklists for your first family nights at a campground.</p><div class="u">hikesupplyco.com</div></div></div></div>
+<div><p style="font-size:8.6pt;max-width:6.6in">This guide gives general outdoor information, not medical advice. Ask your pediatrician about anything related to your child's health, follow your carrier maker's instructions, check the official website of the park before every hike, and hike within your experience. For personal use: print as many copies as you like for your own family. Cover photo: {CREDIT}.</p>
+<p style="font-size:10pt;margin-top:6pt"><b style="color:#F5F1EA">hikesupplyco.com</b></p></div>''', 0, "back", None)
