@@ -11,15 +11,15 @@
   assign each2 = p | minus: d2
   assign each3 = p | minus: d3
   assign short_title = 'Funny Old Man Ski Mask'
-  assign life = 'skimask-chairlift.jpg,skimask-goggles.jpg,skimask-helmets.jpg,skimask-skiing.jpg,skimask-masks-on.jpg,skimask-faces.jpg' | split: ','
-  assign life_alt = 'A grumpy grandpa on the chairlift|Two skiers in old face masks and goggles|The masks under helmets and goggles|Skiing down the slope in the masks|Old faces on the slope|Masks rolled up: the real faces underneath' | split: '|'
+  assign life = 'skimask-lift4.jpg,skimask-base4.jpg,skimask-ski3.jpg,skimask-chairlift.jpg,skimask-skiing.jpg,skimask-goggles.jpg' | split: ','
+  assign life_alt = 'Four friends on the chairlift in the masks|Four friends at the ski base in four different faces|Three friends skiing down in the masks|A grumpy grandpa on the chairlift|Skiing down the slope in the masks|Two skiers in old face masks and goggles' | split: '|'
 -%}
 <script type="application/ld+json">{{ product | structured_data }}</script>
 <div class="hss" data-hss>
  <div class="hss-wrap">
   <div class="hss-top">
    <div class="hss-gal">
-    <div class="hss-main"><img src="{{ life[0] | file_img_url: '1400x' }}" alt="{{ life_alt[0] }}" width="1400" height="2508" fetchpriority="high" data-hss-main></div>
+    <div class="hss-main"><img src="{{ life[0] | file_img_url: '1400x' }}" alt="{{ life_alt[0] }}" width="1400" height="1875" fetchpriority="high" data-hss-main></div>
     <div class="hss-thumbs">
      {%- for f in life -%}
       <button type="button" class="hss-th{% if forloop.first %} on{% endif %}" data-full="{{ f | file_img_url: '1400x' }}" data-alt="{{ life_alt[forloop.index0] | escape }}" aria-label="Show photo {{ forloop.index }}"><img src="{{ f | file_img_url: '240x' }}" alt="" loading="lazy" width="120" height="215"></button>
