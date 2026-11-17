@@ -1,0 +1,43 @@
+{
+ "id": "sp01",
+ "slides": [
+  {
+   "img": "s02",
+   "focus": 0.35,
+   "title": "COLD FEET\nON THE COMMUTE?",
+   "sub": "Swipe for where merino socks help",
+   "pos": "top",
+   "shade": 0.8
+  },
+  {
+   "img": "s19",
+   "focus": 0.6,
+   "title": "LONG FLIGHTS",
+   "sub": "Shoes off, feet still warm"
+  },
+  {
+   "img": "s18",
+   "focus": 0.5,
+   "title": "WINTER DOG WALKS",
+   "sub": "Warm when it's cold, dry when you sweat"
+  },
+  {
+   "img": "s06",
+   "focus": 0.5,
+   "title": "EVENINGS AT HOME",
+   "sub": "Soft merino, none of the wool itch"
+  },
+  {
+   "img": "s08",
+   "focus": 0.5,
+   "title": "AND THE TRAIL",
+   "sub": "Cushioned sole for long days in boots"
+  },
+  {
+   "img": "s12",
+   "focus": 0.45,
+   "title": "MERINO WOOL\nHIKING SOCKS",
+   "sub": "80% merino \u00b7 cushioned crew \u00b7 $19.99 a pair\n2 pairs save 10% \u00b7 3 or more save 15%\nLink in bio"
+  }
+ ]
+}
