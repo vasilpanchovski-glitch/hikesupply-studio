@@ -45,11 +45,11 @@ def wrap_lines(text):
 
 
 def render(spec):
-    out = os.path.join(ROOT, "posts", spec["id"])
+    out = os.path.join(ROOT, "..", spec.get("dir","socks"), "posts", spec["id"])
     os.makedirs(out, exist_ok=True)
     files = []
     for n, s in enumerate(spec["slides"], 1):
-        im = Image.open(os.path.join(ROOT, "materials", "img", s["img"] + ".jpg")).convert("RGB")
+        im = Image.open(os.path.join(ROOT, "..", spec.get("dir","socks"), "materials", "img", s["img"] + ".jpg")).convert("RGB")
         im = crop(im, s.get("focus", 0.5)).convert("RGBA")
         pos = s.get("pos", "bottom")
         im = Image.alpha_composite(im, gradient(pos, s.get("shade", 0.62)))

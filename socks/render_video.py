@@ -53,14 +53,14 @@ def run(cmd):
 
 
 def render(spec):
-    out = os.path.join(ROOT, "posts", spec["id"])
+    out = os.path.join(ROOT, "..", spec.get("dir","socks"), "posts", spec["id"])
     os.makedirs(out, exist_ok=True)
     tmp = tempfile.mkdtemp()
     parts = []
     for i, s in enumerate(spec["segments"]):
         ov = os.path.join(tmp, f"o{i}.png")
         overlay(s, ov)
-        src = os.path.join(ROOT, "materials", "vid", s["clip"] + ".mp4")
+        src = os.path.join(ROOT, "..", spec.get("dir","socks"), "materials", "vid", s["clip"] + ".mp4")
         p = os.path.join(tmp, f"p{i}.mp4")
         z = s.get("zoom", 0.05)
         dur = s["dur"]

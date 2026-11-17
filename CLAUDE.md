@@ -322,3 +322,7 @@ Short, magical real mountain clips (sunrise over clouds, alpenglow, drone over p
 # Socks posts (Vasil 2026-11-17)
 
 Agent: Socks Poster (`agents/socksposter.md`), daily 10:12, cloud. One designed post a day for the Merino Wool Hiking Socks at 21:00 Skopje, alternating a photo post (carousel, `socks/render_post.py`) and a 13-16 s video (`socks/render_video.py`), made only from Vasil's material in `socks/materials/` (index in `socks/materials/index.json`, usage in `socks/used.json`). Approved look: `socks/posts/sp01` and `sv01` (white Barlow headline on a soft gradient, nothing else). Cards `sk<NN>` in `cards` with `format: "socks-photo"` (`kind: "photo"`, `images` for the inbox, `media` raw URLs; the Socks Poster schedules these itself) or `format: "socks-video"` (`kind: "video"`, scheduled by the Publisher like other videos). Vasil approves every post. Talking clips stay muted.
+
+# Ski mask posts (Vasil 2026-11-17)
+
+Agent: Mask Poster (`agents/maskposter.md`), daily 10:42, cloud. One post a day for the Funny Old Man Ski Mask at 19:30 Skopje, photo and video alternating, same renderers and look as the socks posts (`"dir": "skimask"` in the spec), only from `skimask/materials/`. Cards `mk<NN>` (`format: "mask-photo"` scheduled by the Mask Poster, `"mask-video"` by the Publisher), `aiGenerated: true`. Vasil approves every post.
