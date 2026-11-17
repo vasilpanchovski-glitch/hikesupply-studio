@@ -123,7 +123,6 @@
 <script type="application/json" data-hss-variants>[
 {%- for x in product.variants -%}{"id":{{ x.id }},"c":{{ x.option1 | json }},"s":{{ x.option2 | json }},"a":{{ x.available | json }},"p":{{ x.price }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}
 ]</script>
-<script type="application/json" data-hss-money>{{ shop.money_format | json }}</script>
 
 <style>
 .hss{--bg:#F6F7F4;--stone:#ECEEE9;--ink:#17291C;--forest:#203325;--clay:#9E4421;--line:#d7dbd2;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.5}
@@ -237,7 +236,7 @@
   if(v){ var u=new URL(location.href); u.searchParams.set('variant',v.id); history.replaceState(null,'',u.toString()); }
  }
  root.querySelectorAll('.hss-th').forEach(function(t){ t.addEventListener('click',function(){ root.querySelectorAll('.hss-th').forEach(function(x){x.classList.remove('on')}); t.classList.add('on'); show(t.dataset.full,t.dataset.alt); }); });
- function pickFace(name,el){ state.c=name; render(); var f=root.querySelector('.hss-f[data-color="'+name.replace(/"/g,'\\"')+'"]'); if(f&&f.dataset.full){ show(f.dataset.full,name+' ski mask'); root.querySelectorAll('.hss-th').forEach(function(x){x.classList.remove('on')}); } }
+ function pickFace(name){ state.c=name; render(); var f=[].filter.call(root.querySelectorAll('.hss-f'),function(x){return x.dataset.color===name})[0]; if(f&&f.dataset.full){ show(f.dataset.full,name+' ski mask'); root.querySelectorAll('.hss-th').forEach(function(x){x.classList.remove('on')}); } }
  root.querySelectorAll('.hss-f').forEach(function(e){ e.addEventListener('click',function(){ pickFace(e.dataset.color); }); });
  root.querySelectorAll('.hss-pick').forEach(function(e){ e.addEventListener('click',function(){ pickFace(e.dataset.color); root.querySelector('.hss-info').scrollIntoView({behavior:'smooth',block:'start'}); }); });
  root.querySelectorAll('.hss-s').forEach(function(e){ e.addEventListener('click',function(){ state.s=e.dataset.size; render(); }); });
