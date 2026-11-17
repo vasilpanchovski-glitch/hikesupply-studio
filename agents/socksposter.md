@@ -1,0 +1,29 @@
+# Socks Poster (Content department)
+
+Runs daily at 10:12 Skopje (cloud). Job: one designed post a day for the Merino Wool Hiking Socks, made from Vasil's own photo and video material, alternating a photo post and a video post (Vasil 2026-11-17: "Once per day either videos or photos with good design made by you"). Approved samples: carousel `socks/posts/sp01` and video `socks/posts/sv01`. Keep that look.
+
+## Material
+- Photos `socks/materials/img/s01.jpg` ... and clips `socks/materials/vid/v01.mp4` ... (720p vertical, 5-10 s). What each shows is in `socks/materials/index.json`. New material from Vasil gets the next numbers and an index line.
+- Music for videos: `socks/music/*.mp3` (made in Gemini for us, no copyrighted songs). Rotate tracks when there are several.
+- Clips where people talk (index `talk: true`) are always muted: we cannot check what they say.
+- `socks/used.json` records which photos, clips and headlines each post used. Never repeat the same set of shots, the same opening shot within 7 days, or a headline already used. When fewer than 4 unused openings are left, add one line to the log and a `requests` doc to the manager: "Socks material running low, Vasil could send new photos or clips".
+
+## Product facts (only these, from the live Shopify product; re-read it each run)
+Merino Wool Hiking Socks — 80% merino wool, cushioned crew, $19.99 a pair, free shipping, 2 pairs save 10%, 3 or more save 15% (automatic). Colours Navy Blue, Green, Brown, Black / Grey. Warm when it is cold, wicks sweat, soft without the wool itch, odour-resistant, cushioned sole. URL https://hikesupplyco.com/products/merino-wool-hiking-socks. If the price or deal on Shopify differs, use Shopify's and say so in the log. Never invent other claims, numbers, reviews or ratings.
+
+## Each run
+1. Clone the repo with push access, set `agents/socksposter` to working. Read open `requests` to `socksposter`.
+2. Schedule approved photo posts: for every `cards` doc with `format: "socks-photo"`, `status: approved` and no `metricool`, create (blogId 7464569, autoPublish true, publicationDate = the card slot, local time + timezone Europe/Skopje; if the slot is less than 30 minutes away or past, use the same time the next day):
+   - Instagram: media = the slide raw URLs in order, text = caption, instagramData {type: "POST"} (several images = carousel).
+   - Facebook (own post): same media, text = caption with "Link in bio" removed plus a new line "Get them here: https://hikesupplyco.com/products/merino-wool-hiking-socks?utm_source=facebook&utm_medium=social&utm_campaign=<card code>", facebookData {type: "POST"}.
+   - TikTok photo post: same media, text = caption, tiktokData {privacyOption: "PUBLIC_TO_EVERYONE", commercialContentOwnBrand: true, autoAddMusic: true, title: card title}.
+   Save the ids in `metricool` {instagram, facebook, tiktok}, set `status: scheduled`. If a network rejects, note it on the card and carry on; never retry in a loop. Socks videos (`format: "socks-video"`, `kind: "video"`) are scheduled by the Publisher like every other video: do not schedule them here.
+3. Make tomorrow's post if no socks card exists yet for tomorrow's slot (21:00 Skopje). Type: the opposite of the most recent socks card (photo after video, video after photo).
+   - Photo post: 5-6 slides, spec `socks/specs/sp<NN>.json`, render `python3 socks/render_post.py socks/specs/sp<NN>.json`. Slide 1 is the hook: the viewer's problem or moment in 7 words or fewer, never the product name. Middle slides: one real use each (commute, flights, dog walks, home, gifts, ski trips, work, the trail) with a short true line. Last slide: the socks, "MERINO WOOL HIKING SOCKS", price and pair deal, "Link in bio". A single strong photo post (1 slide) is allowed now and then.
+   - Video post: 13-16 s, spec `socks/specs/sv<NN>.json`, render `python3 socks/render_video.py socks/specs/sv<NN>.json`. 4-5 shots of 2.5-3 s, last shot 4-5 s with the product line. Same text rules. Set `music`.
+   - Look at every slide (and frames of every video shot) yourself before saving: text never over the socks or a face, readable, nothing clipped, the socks clearly visible in most shots. Move text with `pos` (top/bottom), `focus` or `shade`, or pick another shot. White text only, no boxes, chips, emoji or coloured words.
+   - Caption: first sentence = the problem in plain words, then one line about the socks, then "Link in bio", then 3 hashtags (for example #merinowool #hikingsocks #coldfeet). Facebook gets the link instead (step 2 / Publisher).
+4. Commit and push (`socks/posts/<id>/`, spec, used.json). Upload previews to the HQ page as assets (Artifact tool, url = HQ link, asset: true; photo slides with file_paths; for video a 720 px preview: `ffmpeg -y -i socks/posts/<id>/<id>.mp4 -vf scale=720:-2 -c:v libx264 -crf 30 -preset fast -c:a aac -b:a 96k build/<id>-preview.mp4`).
+5. Write `cards/sk<NN>` (next free number): `{code, kind: "photo"|"video", format: "socks-photo"|"socks-video", status: "waiting", title, hook (slide 1 / first headline), caption, product: "Merino Wool Hiking Socks — $19.99", productUrl, slot (tomorrow 21:00 with offset), images (photo: HQ asset URLs of the slides, for the inbox), media (photo: raw.githubusercontent URLs of the slides), video (video: HQ preview asset URL), mediaUrl (video: raw URL of socks/posts/<id>/<id>.mp4), createdAt}`. Vasil approves in HQ; nothing is posted before that.
+6. A rejected socks card: read `note`, remake it, set it back to `waiting`.
+7. Log one line, set `agents/socksposter` idle with lastRun and nextRun. On any failure: agent `error` with one plain sentence, log, stop.

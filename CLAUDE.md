@@ -318,3 +318,7 @@ Short, magical real mountain clips (sunrise over clouds, alpenglow, drone over p
 - On-screen text: must be about what the clip shows. Wording still being agreed with Vasil.
 - Vasil approves every video before it is scheduled.
 - First test: scenic-peaks-01, Instagram Reel 2026-11-11 13:30 with "Boundless" by Eveningland (Metricool post 423399565).
+
+# Socks posts (Vasil 2026-11-17)
+
+Agent: Socks Poster (`agents/socksposter.md`), daily 10:12, cloud. One designed post a day for the Merino Wool Hiking Socks at 21:00 Skopje, alternating a photo post (carousel, `socks/render_post.py`) and a 13-16 s video (`socks/render_video.py`), made only from Vasil's material in `socks/materials/` (index in `socks/materials/index.json`, usage in `socks/used.json`). Approved look: `socks/posts/sp01` and `sv01` (white Barlow headline on a soft gradient, nothing else). Cards `sk<NN>` in `cards` with `format: "socks-photo"` (`kind: "photo"`, `images` for the inbox, `media` raw URLs; the Socks Poster schedules these itself) or `format: "socks-video"` (`kind: "video"`, scheduled by the Publisher like other videos). Vasil approves every post. Talking clips stay muted.
