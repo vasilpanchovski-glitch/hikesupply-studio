@@ -1,0 +1,13 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Every year Lena said, we should visit more parks.", "gap": 0.2},
+  {"text": "Then she looked it up.", "gap": 0.15},
+  {"text": "The nearest state park was twenty minutes away.", "gap": 0.3},
+  {"text": "The rule: find the closest park to home and go this weekend,", "gap": 0.1},
+  {"text": "then the next one.", "gap": 0.35},
+  {"text": "Save this for your days off.", "gap": 0.2}
+ ]
+}

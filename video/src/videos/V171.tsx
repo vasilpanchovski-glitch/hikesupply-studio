@@ -54,7 +54,7 @@ const LowScrim: React.FC = () => (
 );
 
 // Puffy parka bulk drawn over the torso so the coat reads as heavy (local hiker units via the same transform).
-const CoatBulk: React.FC<{ p: HikerProps }> = ({ p }) => {
+export const CoatBulk: React.FC<{ p: HikerProps }> = ({ p }) => {
   const s = p.scale ?? 1;
   return (
     <g transform={`translate(${p.x},${p.y}) scale(${s})`} opacity={0.9}>

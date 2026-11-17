@@ -1,0 +1,13 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Sam planned a long hike on Thanksgiving morning,", "gap": 0.1},
+  {"text": "and came home after the turkey.", "gap": 0.3},
+  {"text": "The rule: pick a short trail you know,", "gap": 0.1},
+  {"text": "start at first light, and turn around by your set time.", "gap": 0.25},
+  {"text": "In hunting season, wear blaze orange.", "gap": 0.35},
+  {"text": "Save this for Thursday.", "gap": 0.2}
+ ]
+}

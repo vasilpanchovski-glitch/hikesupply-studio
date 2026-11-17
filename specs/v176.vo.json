@@ -1,0 +1,13 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Her boots froze solid overnight,", "gap": 0.1},
+  {"text": "and she couldn't get her feet in.", "gap": 0.3},
+  {"text": "The fix: loosen the laces, bag the boots,", "gap": 0.1},
+  {"text": "and keep them inside the tent,", "gap": 0.1},
+  {"text": "or in your sleeping bag in deep cold.", "gap": 0.35},
+  {"text": "Save this before your first winter night out.", "gap": 0.2}
+ ]
+}
