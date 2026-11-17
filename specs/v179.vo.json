@@ -1,0 +1,12 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Five o'clock, dark, and the car wouldn't start at the trailhead.", "gap": 0.3},
+  {"text": "The rule: keep a winter bag in the car.", "gap": 0.1},
+  {"text": "A warm layer, water, snacks, a light, a charged power bank.", "gap": 0.15},
+  {"text": "And tell someone your plan.", "gap": 0.35},
+  {"text": "Save this for winter.", "gap": 0.2}
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "No reservation, no sunrise.",
+   "gap": 0.05
+  },
+  {
+   "text": "Kim drove to Cadillac Mountain at dawn and was turned back.",
+   "gap": 0.15
+  },
+  {
+   "text": "The rule: in summer and fall, the summit road needs a vehicle reservation.",
+   "gap": 0.05
+  },
+  {
+   "text": "Some open ninety days ahead, the rest two days before.",
+   "gap": 0.2
+  },
+  {
+   "text": "Save this for Acadia.",
+   "gap": 0.2
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {"text": "Ben thought he had an hour of light left.", "gap": 0.1},
+  {"text": "He had twenty minutes.", "gap": 0.3},
+  {"text": "A rough check: hold your hand out flat under the sun.", "gap": 0.1},
+  {"text": "Each finger above the horizon is about fifteen minutes.", "gap": 0.15},
+  {"text": "Turn around early.", "gap": 0.35},
+  {"text": "Save this for your next afternoon hike.", "gap": 0.2}
+ ]
+}
