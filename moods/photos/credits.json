@@ -61,7 +61,9 @@
   "photographer": "Emilio Aguilar",
   "url": "https://www.pexels.com/photo/27382374/",
   "alt": "Rocky peak behind an evergreen forest near Estes Park, Colorado",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261117-8",
+  "pinDate": "2026-11-17"
  },
  "31612084": {
   "photographer": "eberhard grossgasteiger",
@@ -73,7 +75,9 @@
   "photographer": "Noel Aph",
   "url": "https://www.pexels.com/photo/32746384/",
   "alt": "Red rock formations under a soft sky in Utah",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261117-10",
+  "pinDate": "2026-11-17"
  },
  "33024485": {
   "photographer": "Roshan sharma",
@@ -334,7 +338,9 @@
   "url": "https://www.pexels.com/photo/35695571/",
   "alt": "Snowy, icy forest path in winter",
   "used": false,
-  "topic": "icy trail"
+  "topic": "icy trail",
+  "pinUsed": "pb20261117-9",
+  "pinDate": "2026-11-17"
  },
  "36915929": {
   "photographer": "Temple",
