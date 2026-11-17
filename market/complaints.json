@@ -1,6 +1,6 @@
 {
- "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport). 2026-11-13 pass: group A; Etsy and Payhip digital rivals again show only 5-star reviews or none, Darn Tough has no new Trustpilot reviews since Oct 21; added a Montem pole handle failure, a basic map in a park passport book, and a kids nature card game (small set, poor value).",
- "updated": "2026-11-15",
+ "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport). 2026-11-13 pass: group A; Etsy and Payhip digital rivals again show only 5-star reviews or none, Darn Tough has no new Trustpilot reviews since Oct 21; added a Montem pole handle failure, a basic map in a park passport book, and a kids nature card game (small set, poor value). 2026-11-17 pass: group C; Payhip, Gumroad and the Hiker Hunger Walmart page again show no critical review text, so this run read 2-3 star reviews of packable down jackets (a budget Amazon-type jacket and L.L.Bean Ultralight 850), the benchmark for any insulated clothing the Hunter checks.",
+ "updated": "2026-11-17",
  "complaints": [
   {
    "type": "trekking pole",
@@ -2195,6 +2195,156 @@
    "date": "2025-09-19",
    "theme": "guide too limited / generic",
    "found": "2026-11-15"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "ELEZAY Women's Packable Down Jacket (budget)",
+   "what": "sleeves about 2 inches too short while the body was roomy",
+   "source": "https://www.desertcart.com.cy/products/69438590",
+   "where": "retail reviews",
+   "date": null,
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "ELEZAY Women's Packable Down Jacket (budget)",
+   "what": "ran small, buyer advises sizing up one or two sizes",
+   "source": "https://www.desertcart.com.cy/products/69438590",
+   "where": "retail reviews",
+   "date": null,
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "ELEZAY Women's Packable Down Jacket (budget)",
+   "what": "medium felt small, had to buy a larger size",
+   "source": "https://www.desertcart.com.cy/products/69438590",
+   "where": "retail reviews",
+   "date": null,
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "ELEZAY Women's Packable Down Jacket (budget)",
+   "what": "too thin and light for real cold without extra layers",
+   "source": "https://www.desertcart.com.cy/products/69438590",
+   "where": "retail reviews",
+   "date": null,
+   "theme": "too thin, not warm enough",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "ELEZAY Women's Packable Down Jacket (budget)",
+   "what": "flimsy fabric, not warm, colour brighter than the photo",
+   "source": "https://www.desertcart.com.cy/products/69438590",
+   "where": "retail reviews",
+   "date": null,
+   "theme": "product does not match the listing",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "ELEZAY Women's Packable Down Jacket (budget)",
+   "what": "sheds white down onto clothes underneath",
+   "source": "https://www.desertcart.com.cy/products/69438590",
+   "where": "retail reviews",
+   "date": null,
+   "theme": "down sheds or leaks",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "ELEZAY Women's Packable Down Jacket (budget)",
+   "what": "outer pockets have no zips, no inner pocket",
+   "source": "https://www.desertcart.com.cy/products/69438590",
+   "where": "retail reviews",
+   "date": null,
+   "theme": "pockets without zips / no cuffs",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "ELEZAY Women's Packable Down Jacket (budget)",
+   "what": "no cuffs at the sleeves so cold air gets in; no zip pockets",
+   "source": "https://www.desertcart.com.cy/products/69438590",
+   "where": "retail reviews",
+   "date": null,
+   "theme": "pockets without zips / no cuffs",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "L.L.Bean Petite Ultralight 850 Down Hooded Jacket",
+   "what": "sleeves and cuffs too short",
+   "source": "https://www.zappos.com/product/review/9599969/page/30",
+   "where": "Zappos 2-3 star",
+   "date": "2023-02-23",
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "L.L.Bean Petite Ultralight 850 Down Hooded Jacket",
+   "what": "arms and body too snug to move freely",
+   "source": "https://www.zappos.com/product/review/9599969/page/30",
+   "where": "Zappos 2-3 star",
+   "date": "2023-12-03",
+   "theme": "clothing runs small / sleeves short",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "L.L.Bean Petite Ultralight 850 Down Hooded Jacket",
+   "what": "not warm enough in wind below about 30°F",
+   "source": "https://www.zappos.com/product/review/9599969/page/30",
+   "where": "Zappos 2-3 star",
+   "date": "2026-01-08",
+   "theme": "too thin, not warm enough",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "L.L.Bean Petite Ultralight 850 Down Hooded Jacket",
+   "what": "down clumped and shifted in the arms after washing",
+   "source": "https://www.zappos.com/product/review/9599969/page/30",
+   "where": "Zappos 2-3 star",
+   "date": "2023-10-29",
+   "theme": "down sheds or leaks",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "L.L.Bean Petite Ultralight 850 Down Hooded Jacket",
+   "what": "tiny pinholes where feathers escape",
+   "source": "https://www.zappos.com/product/review/9599969/page/30",
+   "where": "Zappos 2-3 star",
+   "date": "2019-11-27",
+   "theme": "down sheds or leaks",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "L.L.Bean Petite Ultralight 850 Down Hooded Jacket",
+   "what": "pocket zipper snags the fabric and pulls threads",
+   "source": "https://www.zappos.com/product/review/9599969/page/30",
+   "where": "Zappos 2-3 star",
+   "date": "2021-12-01",
+   "theme": "zipper hard to use",
+   "found": "2026-11-17"
+  },
+  {
+   "type": "packable down jacket",
+   "product": "L.L.Bean Petite Ultralight 850 Down Hooded Jacket",
+   "what": "inside pocket does not zip closed, no chest pocket",
+   "source": "https://www.zappos.com/product/review/9599969/page/30",
+   "where": "Zappos 2-3 star",
+   "date": "2019-12-09",
+   "theme": "pockets without zips / no cuffs",
+   "found": "2026-11-17"
   }
  ],
  "themes": [
@@ -2216,6 +2366,14 @@
   },
   {
    "theme": "product does not match the listing",
+   "count": 10
+  },
+  {
+   "theme": "too thin, not warm enough",
+   "count": 9
+  },
+  {
+   "theme": "clothing runs small / sleeves short",
    "count": 9
   },
   {
@@ -2231,15 +2389,11 @@
    "count": 7
   },
   {
-   "theme": "too thin, not warm enough",
-   "count": 7
-  },
-  {
-   "theme": "filter straw clogs / flow drops / hard to suck",
+   "theme": "slow shipping / no reply",
    "count": 5
   },
   {
-   "theme": "slow shipping / no reply",
+   "theme": "filter straw clogs / flow drops / hard to suck",
    "count": 5
   },
   {
@@ -2260,10 +2414,6 @@
   },
   {
    "theme": "side bottle pockets too shallow, bottles fall out",
-   "count": 4
-  },
-  {
-   "theme": "clothing runs small / sleeves short",
    "count": 4
   },
   {
@@ -2307,11 +2457,23 @@
    "count": 3
   },
   {
+   "theme": "zipper hard to use",
+   "count": 3
+  },
+  {
    "theme": "balaclava fits badly",
    "count": 3
   },
   {
    "theme": "ear warmer sizing off, little stretch",
+   "count": 3
+  },
+  {
+   "theme": "down sheds or leaks",
+   "count": 3
+  },
+  {
+   "theme": "pockets without zips / no cuffs",
    "count": 3
   },
   {
@@ -2327,19 +2489,15 @@
    "count": 2
   },
   {
+   "theme": "stiff or noisy material",
+   "count": 2
+  },
+  {
    "theme": "fails within months / stops charging",
    "count": 2
   },
   {
-   "theme": "zipper hard to use",
-   "count": 2
-  },
-  {
    "theme": "socks wear thin / holes",
-   "count": 2
-  },
-  {
-   "theme": "stiff or noisy material",
    "count": 2
   },
   {

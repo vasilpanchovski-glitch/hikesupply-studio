@@ -1,0 +1,197 @@
+{
+ "date": "2026-11-17",
+ "previous": "2026-11-11",
+ "group": "c",
+ "note": "Group C. Empty fields mean the page did not show the number. Compared with the last group C run (Nov 11). Travel50States and ThePrintedSmile Etsy shop pages did not come up in search this run, so they could not be opened (WebFetch only opens links returned by search). Hiker Hunger's own site still not readable; read from Walmart and a reseller page.",
+ "sellers": [
+  {
+   "name": "Kingdom over culture life (Payhip)",
+   "products": [
+    {
+     "title": "Utah's Mighty Five: A Family Road Trip Guide (9 days, 5 parks)",
+     "format": "guide PDF",
+     "pages": 10,
+     "price": 14.0,
+     "notes": "unchanged since Oct 31: 'On Sale' label with no old price, no reviews, no other products"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "count": null
+   },
+   "marketing": {
+    "tactics": [
+     "'On Sale' label with no old price",
+     "first-person 'every detail we wish someone had told us' title"
+    ]
+   },
+   "source": "https://payhip.com/b/B7YEG"
+  },
+  {
+   "name": "milesandhikes (Gumroad)",
+   "products": [
+    {
+     "title": "Best of Miles & Hikes: 4 Essential Guides",
+     "format": "bundle",
+     "pages": "145+",
+     "price": 19.99,
+     "notes": "unchanged, no discount, no Black Friday mention",
+     "url": "https://milesandhikes.gumroad.com/l/bestofmhfourguides"
+    },
+    {
+     "title": "Leave No Trace Cheat Sheet",
+     "price": 0,
+     "notes": "still free ($0+ pay what you want), no email form or upsell shown",
+     "url": "https://milesandhikes.gumroad.com/l/lntcheatsheet"
+    }
+   ],
+   "offers": [
+    "no sale"
+   ],
+   "reviews": {},
+   "marketing": {
+    "tactics": [
+     "free cheat sheet next to paid guides",
+     "narrow audiences (midlife women solo road trips, first-time solo women campers)",
+     "4-guide value bundle"
+    ]
+   }
+  },
+  {
+   "name": "Travel50States",
+   "products": [],
+   "offers": [],
+   "reviews": {},
+   "marketing": {},
+   "notes": "not readable this run (no shop or listing link in search results); last seen Nov 11: $2.99 trackers, no sale"
+  },
+  {
+   "name": "ThePrintedSmile",
+   "products": [],
+   "offers": [],
+   "reviews": {},
+   "marketing": {},
+   "notes": "not readable this run; last seen Nov 11 with ~25% shop-wide sale and no hiking listings. Still a candidate to replace at the monthly review."
+  },
+  {
+   "name": "Hiker Hunger Outfitters",
+   "products": [
+    {
+     "title": "100% Carbon Fiber Trekking Poles (Walmart)",
+     "price": "64.97-74.99",
+     "notes": "still out of stock in every variant; 4.9 from 1,124 ratings (5 star 1,022, 4 star 74, 3 star 20, 2 star 2, 1 star 6); visible reviews all 5 star",
+     "url": "https://www.walmart.com/ip/2288021295"
+    },
+    {
+     "title": "100% Carbon Fiber Trekking Poles (reseller price tracker)",
+     "price": 99.99,
+     "notes": "tracker shows price moved 89.99 > 76.99 > 79.99 > 99.99, no dates",
+     "url": "https://reach.dog/shop/hiker-hunger-outfitters/products/100-carbon-fiber-trekking-poles"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "'by USA Brand' in the title",
+     "price raised instead of a Black Friday cut (reseller tracker)"
+    ]
+   }
+  },
+  {
+   "name": "Decathlon Canada (hiking)",
+   "shop": {
+    "free_shipping_over": 70,
+    "currency": "CAD"
+   },
+   "products": [
+    {
+     "title": "Hiking clearance",
+     "notes": "110 items (106 on Nov 11, 96 on Nov 5)",
+     "url": "https://www.decathlon.ca/en/deals/hiking-clearance"
+    },
+    {
+     "title": "QUECHUA Kids' Aluminum Hiking Water Bottle",
+     "price": 8.0,
+     "was": 18.0,
+     "currency": "CAD"
+    },
+    {
+     "title": "QUECHUA Women's Warm Water-Repellent Hiking Pants NH 500",
+     "price": 25.0,
+     "was": 55.0,
+     "currency": "CAD"
+    },
+    {
+     "title": "FABER North Trek snowshoes",
+     "price": 40.0,
+     "was": 80.0,
+     "currency": "CAD"
+    },
+    {
+     "title": "FORCLAZ Women's Padded Winter Jacket MT 100",
+     "price": 40.0,
+     "was": 60.0,
+     "currency": "CAD"
+    },
+    {
+     "title": "QUECHUA Hiking Backpack 20 L NH 100",
+     "price": 15.0,
+     "was": 20.0,
+     "currency": "CAD"
+    },
+    {
+     "title": "QUECHUA Men's Hiking Pants MH 500",
+     "price": 30.0,
+     "was": 55.0,
+     "currency": "CAD"
+    }
+   ],
+   "offers": [
+    "clearance up to 55% off 'while stocks last'",
+    "free shipping over $70 CAD",
+    "no Black Friday banner on Nov 17"
+   ],
+   "reviews": {},
+   "marketing": {
+    "tactics": [
+     "growing clearance list",
+     "free shipping threshold"
+    ]
+   }
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "DeclutterAndSell (Etsy, new, 0 sales)",
+   "product": "US Hiking Log & Planner: Google Sheets hiking journal with 52-hike challenge, all 64 national parks, 14 long trails, dog hikes, 51-item kit list, plus a 4-page PDF",
+   "price": 10.48,
+   "url": "https://www.etsy.com/listing/4613353636",
+   "note": "spreadsheet format; we sell only PDFs"
+  },
+  {
+   "name": "KyndPrintables (Etsy)",
+   "note": "518 sales, shop says 'currently not selling on Etsy'",
+   "url": "https://www.etsy.com/shop/KyndPrintables"
+  }
+ ],
+ "changes_vs_previous": [
+  "Hiker Hunger poles: reseller tracker now shows $99.99 (up from $79.99); Walmart listing still $64.97-74.99 and out of stock",
+  "Decathlon Canada clearance 106 > 110 items, still no Black Friday banner",
+  "milesandhikes, Kingdom over culture: no change, no Black Friday offer",
+  "A new Etsy seller lists a Google Sheets hiking log already updated to 64 parks"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "a free item next to paid ones (milesandhikes LNT sheet)",
+   "clearance or % off instead of a Black Friday event (Decathlon)",
+   "'On Sale' labels without an old price (Kingdom over culture)"
+  ],
+  "we_do_not_use_yet": [
+   "a fillable spreadsheet version of a hiking log (we sell PDF only)"
+  ],
+  "black_friday": "Nov 17: still no group C seller shows a Black Friday offer, 10 days before. Hiker Hunger appears to have raised its pole price."
+ }
+}
