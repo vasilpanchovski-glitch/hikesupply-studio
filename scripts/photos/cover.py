@@ -22,6 +22,7 @@ ap.add_argument("src")
 ap.add_argument("out")
 ap.add_argument("--fill", type=float, default=0.80, help="share of the frame the longer side fills")
 ap.add_argument("--shadow", type=float, default=1.0)
+ap.add_argument("--amin", type=int, default=12, help="drop cut-out pixels fainter than this (reflections)")
 ap.add_argument("--keep", action="store_true", help="close-ups: keep framing, only swap the background colour")
 a = ap.parse_args()
 
@@ -61,7 +62,7 @@ if a.keep:
 
 cut = remove(src, session=new_session("isnet-general-use"))  # RGBA
 al = np.array(cut.split()[3])
-al[al < 12] = 0
+al[al < a.amin] = 0
 cut.putalpha(Image.fromarray(al))
 cut = cut.crop(cut.getbbox())
 k = a.fill * S / max(cut.size)
