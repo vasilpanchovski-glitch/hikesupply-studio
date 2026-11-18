@@ -17,12 +17,12 @@
     "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
    },
    "lastCheck": {
-    "date": "2026-11-17",
-    "time": "16:20Z",
+    "date": "2026-11-18",
+    "time": "16:25Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 2,
-     "Navy Blue / L": 17,
+     "Navy Blue / L": 16,
      "Green / S": 485,
      "Brown / S": 484,
      "Green / L": 4,
@@ -36,7 +36,7 @@
      "Green / L",
      "Black / Grey / L"
     ],
-    "note": "17:02 run: DSers supplier stock unchanged since Nov 16, Shopify already matches. US-warehouse search (Vasil's request): no merino sock of ours ships from the US; main supplier shows US delivery Nov 25-30, $1.99 shipping. Message Center did not load (AliExpress request error). Still no backup."
+    "note": "17:02 run: DSers supplier stock same as Nov 17 except Navy Blue / L 17 -> 16; Shopify set to 16. Still no verified backup."
    },
    "backups": [],
    "candidates": [
