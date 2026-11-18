@@ -1,1 +1,40 @@
-{"posts": [{"id": "mp01", "card": "mk01", "shots": ["m04", "m10", "m11", "m01", "m08"], "headlines": ["WHO IS THIS GRANDPA ON MY CHAIRLIFT?", "IT'S A SKI MASK", "CATCH OF THE DAY", "BRING THE WHOLE CREW"]}]}
+{
+ "posts": [
+  {
+   "id": "mp01",
+   "card": "mk01",
+   "shots": [
+    "m04",
+    "m10",
+    "m11",
+    "m01",
+    "m08"
+   ],
+   "headlines": [
+    "WHO IS THIS GRANDPA ON MY CHAIRLIFT?",
+    "IT'S A SKI MASK",
+    "CATCH OF THE DAY",
+    "BRING THE WHOLE CREW"
+   ]
+  },
+  {
+   "id": "mv01",
+   "card": "mk02",
+   "shots": [
+    "k06",
+    "k07",
+    "k05",
+    "k03",
+    "k04"
+   ],
+   "headlines": [
+    "WHO JUST SAT NEXT TO ME?",
+    "THE DOUBLE TAKE",
+    "FIRST RUN, NEW FACE",
+    "GOGGLES DOWN",
+    "FUNNY OLD MAN SKI MASK"
+   ],
+   "music": "socks/music/embers.mp3"
+  }
+ ]
+}

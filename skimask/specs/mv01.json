@@ -1,0 +1,13 @@
+{
+ "id": "mv01",
+ "dir": "skimask",
+ "music": "socks/music/embers.mp3",
+ "cover_at": 1.2,
+ "segments": [
+  {"clip": "k06", "start": 0.0, "dur": 3.0, "title": "WHO JUST SAT\nNEXT TO ME?", "fade": 0, "pos": "top"},
+  {"clip": "k07", "start": 5.5, "dur": 2.8, "title": "THE DOUBLE TAKE", "pos": "top"},
+  {"clip": "k05", "start": 2.0, "dur": 2.6, "title": "FIRST RUN,\nNEW FACE", "pos": "top"},
+  {"clip": "k03", "start": 1.0, "dur": 2.6, "title": "GOGGLES DOWN", "sub": "Printed balaclava: head, face and neck"},
+  {"clip": "k04", "start": 0.0, "dur": 4.6, "title": "FUNNY OLD MAN\nSKI MASK", "sub": "Nine faces, one size, from $17.99\n2 masks save 10% · 3+ save 15%\nLink in bio", "shade": 0.85}
+ ]
+}
