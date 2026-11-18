@@ -27,7 +27,8 @@ ap.add_argument("--model", default="isnet-general-use", help="rembg model, try u
 ap.add_argument("--keep", action="store_true", help="close-ups: keep framing, only swap the background colour")
 a = ap.parse_args()
 
-src = Image.open(a.src).convert("RGB")
+raw = Image.open(a.src)
+src = raw.convert("RGB")
 
 if a.keep:
     # close-ups fill the frame, so rembg is unreliable here: flood-fill the light, near-neutral
@@ -61,7 +62,7 @@ if a.keep:
     print(a.out)
     raise SystemExit
 
-cut = remove(src, session=new_session(a.model))  # RGBA
+cut = raw.convert("RGBA") if raw.mode == "RGBA" else remove(src, session=new_session(a.model))  # RGBA (PNG with alpha = already cut out)
 al = np.array(cut.split()[3])
 al[al < a.amin] = 0
 cut.putalpha(Image.fromarray(al))
