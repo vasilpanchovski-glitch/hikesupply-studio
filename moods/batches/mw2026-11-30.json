@@ -1,0 +1,53 @@
+{
+ "posts": [
+  {
+   "id": "m20261130",
+   "photo": "moods/photos/pexels-14009646.jpg",
+   "quote": "Fog in the trees,\nno view at all.\nSomehow still\nthe best walk of the week.",
+   "author": "",
+   "place": "auto"
+  },
+  {
+   "id": "m20261201",
+   "photo": "moods/photos/pexels-18718573.jpg",
+   "quote": "Winter starts up high.\nDown here the leaves\nhaven't heard\nthe news yet.",
+   "author": "",
+   "place": "auto"
+  },
+  {
+   "id": "m20261202",
+   "photo": "moods/photos/pexels-30742816.jpg",
+   "quote": "Water\nthis clear\nmakes you\ngo quiet.",
+   "author": "",
+   "place": 0.5
+  },
+  {
+   "id": "m20261203",
+   "photo": "moods/photos/pexels-19311127.jpg",
+   "quote": "A gravel path,\na free afternoon,\nand nowhere\nI have to be.",
+   "author": "",
+   "place": "auto"
+  },
+  {
+   "id": "m20261204",
+   "photo": "moods/photos/pexels-35695571.jpg",
+   "quote": "Ice on the path.\nSmall steps,\nslow breath,\nno hurry at all.",
+   "author": "",
+   "place": 0.72
+  },
+  {
+   "id": "m20261205",
+   "photo": "moods/photos/pexels-14969099.jpg",
+   "quote": "The creek talks\nthe whole way up.\nI just listen\nand keep walking.",
+   "author": "",
+   "place": "auto"
+  },
+  {
+   "id": "m20261206",
+   "photo": "moods/photos/pexels-36915929.jpg",
+   "quote": "Blue sky\nin the rock.\nA slow Sunday,\nno plans.",
+   "author": "",
+   "place": "auto"
+  }
+ ]
+}
