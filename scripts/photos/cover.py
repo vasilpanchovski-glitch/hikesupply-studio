@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
-"""Store cover photo in the website look (Vasil 2026-11-18).
+"""Store photos in the website look (Vasil 2026-11-18).
 
-The product alone, cut from a light studio shot, centred on the exact collection-card colour
-#E9E9E4 with a soft contact shadow, square 2048 px. Every product cover uses this, so the
-collection grid looks like one shoot.
+The product alone, cut out with rembg (isnet-general-use), on the exact collection-card colour
+#E9E9E4. Covers and colour shots: centred, square 2048 px, soft contact shadow. Close-ups (--keep):
+same framing, only the background colour is swapped.
 
-python3 scripts/photos/cover.py <studio.jpg> <out.jpg> [--fill 0.80] [--shadow 1]
+python3 scripts/photos/cover.py <in.jpg> <out.jpg> [--fill 0.80] [--shadow 1] [--keep]
+Needs: pip install --break-system-packages rembg  (downloads the model once, ~180 MB)
 """
 import argparse
 import cv2
 import numpy as np
-from scipy import ndimage as nd
 from PIL import Image, ImageFilter
+from rembg import remove, new_session
 
 BG = (233, 233, 228)  # #E9E9E4, product card background on hikesupplyco.com
 S = 2048
@@ -24,44 +25,40 @@ ap.add_argument("--shadow", type=float, default=1.0)
 ap.add_argument("--keep", action="store_true", help="close-ups: keep framing, only swap the background colour")
 a = ap.parse_args()
 
-im = cv2.imread(a.src)
-H, W = im.shape[:2]
-# background = everything reachable from the border through small colour steps
-# (floating flood fill, so soft studio gradients still count as background)
-blur = cv2.GaussianBlur(im, (5, 5), 0)
-mask = np.zeros((H + 2, W + 2), np.uint8)
-TOL = 3
-flags = 4 | cv2.FLOODFILL_MASK_ONLY | (255 << 8)
-# only light, near-neutral pixels may count as background, so the fill cannot run into the product
-f = blur.astype(float); mx, mn = f.max(-1), f.min(-1)
-lightbg = ((mx - mn) / (mx + 1e-6) < 0.35) & (mx > 150)
-blur = blur.copy(); blur[~lightbg] = 0
-for x in range(0, W, 16):
-    for y in (0, H - 1):
-        if not mask[y + 1, x + 1]:
-            cv2.floodFill(blur, mask, (x, y), 0, (TOL, TOL, TOL), (TOL, TOL, TOL), flags)
-for y in range(0, H, 16):
-    for x in (0, W - 1):
-        if not mask[y + 1, x + 1]:
-            cv2.floodFill(blur, mask, (x, y), 0, (TOL, TOL, TOL), (TOL, TOL, TOL), flags)
-bg = (mask[1:-1, 1:-1] > 0) & lightbg
-fg = nd.binary_fill_holes(nd.binary_opening(~bg, iterations=2))
-lab, n = nd.label(fg)
-if n:
-    sizes = nd.sum(fg, lab, range(1, n + 1))
-    fg = np.isin(lab, 1 + np.where(sizes > sizes.max() * 0.02)[0])
-alpha = cv2.GaussianBlur((fg * 255).astype(np.uint8), (5, 5), 0)
-rgb = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
-cut = Image.fromarray(np.dstack([rgb, alpha]), "RGBA")
+src = Image.open(a.src).convert("RGB")
+
 if a.keep:
-    out = Image.new("RGBA", cut.size, BG + (255,))
-    out.alpha_composite(cut)
-    out = out.convert("RGB")
+    # close-ups fill the frame, so rembg is unreliable here: flood-fill the light, near-neutral
+    # studio background in from the border instead and paint it #E9E9E4
+    im = cv2.cvtColor(np.array(src), cv2.COLOR_RGB2BGR)
+    H, W = im.shape[:2]
+    blur = cv2.GaussianBlur(im, (5, 5), 0)
+    f = blur.astype(float); mx, mn = f.max(-1), f.min(-1)
+    light = ((mx - mn) / (mx + 1e-6) < 0.35) & (mx > 150)
+    blur[~light] = 0
+    mask = np.zeros((H + 2, W + 2), np.uint8)
+    flags = 4 | cv2.FLOODFILL_MASK_ONLY | (255 << 8)
+    for x in range(0, W, 16):
+        for y in (0, H - 1):
+            if light[y, x] and not mask[y + 1, x + 1]:
+                cv2.floodFill(blur, mask, (x, y), 0, (3, 3, 3), (3, 3, 3), flags)
+    for y in range(0, H, 16):
+        for x in (0, W - 1):
+            if light[y, x] and not mask[y + 1, x + 1]:
+                cv2.floodFill(blur, mask, (x, y), 0, (3, 3, 3), (3, 3, 3), flags)
+    bg = cv2.GaussianBlur(((mask[1:-1, 1:-1] > 0) & light).astype(np.float32), (5, 5), 0)[..., None]
+    out = np.array(src).astype(float) * (1 - bg) + np.array(BG, float) * bg
+    out = Image.fromarray(out.round().astype(np.uint8))
     k = S / max(out.size)
     out.resize((round(out.width * k), round(out.height * k)), Image.LANCZOS).save(a.out, quality=93)
-    print(a.out); raise SystemExit
-cut = cut.crop(cut.getbbox())
+    print(a.out)
+    raise SystemExit
 
+cut = remove(src, session=new_session("isnet-general-use"))  # RGBA
+al = np.array(cut.split()[3])
+al[al < 12] = 0
+cut.putalpha(Image.fromarray(al))
+cut = cut.crop(cut.getbbox())
 k = a.fill * S / max(cut.size)
 cut = cut.resize((round(cut.width * k), round(cut.height * k)), Image.LANCZOS)
 x = (S - cut.width) // 2
@@ -69,10 +66,8 @@ y = (S - cut.height) // 2 - int(S * 0.01)
 
 canvas = Image.new("RGBA", (S, S), BG + (255,))
 if a.shadow:
-    sh = Image.new("L", (S, S), 0)
     m = np.zeros((S, S), np.uint8)
-    cx, cy = S // 2, y + cut.height
-    cv2.ellipse(m, (cx, cy), (int(cut.width * 0.42), int(S * 0.018)), 0, 0, 360, int(120 * a.shadow), -1)
+    cv2.ellipse(m, (S // 2, y + cut.height), (int(cut.width * 0.42), int(S * 0.018)), 0, 0, 360, int(120 * a.shadow), -1)
     sh = Image.fromarray(m).filter(ImageFilter.GaussianBlur(28))
     dark = Image.new("RGBA", (S, S), (60, 60, 55, 255))
     dark.putalpha(sh)
