@@ -1,0 +1,23 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Jake carried ice cleats all morning, saving them for the icy part.",
+   "gap": 0.25
+  },
+  {
+   "text": "The ice found him first.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: when the trail starts to shine, stop and put traction on, before the first slip.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.25
+  }
+ ]
+}

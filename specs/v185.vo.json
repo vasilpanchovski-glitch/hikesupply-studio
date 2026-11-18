@@ -1,0 +1,23 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Ben's friend pointed at his face: a pale, waxy patch on his cheek.",
+   "gap": 0.25
+  },
+  {
+   "text": "He hadn't felt it. That can be early frostnip.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: check each other's faces, cover up, warm it gently. Never rub it.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this for cold days.",
+   "gap": 0.25
+  }
+ ]
+}

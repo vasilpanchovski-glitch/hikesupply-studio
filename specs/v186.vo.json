@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Emma walked into Johnston Canyon in sneakers.",
+   "gap": 0.25
+  },
+  {
+   "text": "In winter the catwalks and the trail can be solid ice beside frozen waterfalls.",
+   "gap": 0.25
+  },
+  {
+   "text": "She slid at the first bend.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: bring ice cleats for the canyon.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your Banff winter trip.",
+   "gap": 0.25
+  }
+ ]
+}
