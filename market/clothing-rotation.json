@@ -1,5 +1,5 @@
 {
  "next": 8,
  "note": "Importer clothing hunt rotation index (agents/importer.md step 5b)",
- "last": "2026-11-15 17:02 run: men's base layer set (via g100 queue check and search: none passed, logo, mixed men/women, cost too high). Queue work took the time, so women's base layer set and light down jackets were not searched; g96/g97 down vest searches found nothing over 4.5 stars with 300+ sold."
+ "last": "2026-11-18 17:02 run: men's rain jacket only (search sorted by orders; top real jacket 1005007856959902 failed: black sold out in S-L, collage photos). Etsy publishing took the time; next index stays at women's base layer set. Light down jackets skipped by rule (rejected type)."
 }
