@@ -1,0 +1,45 @@
+{
+ "id": "sp02",
+ "slides": [
+  {
+   "img": "s26",
+   "focus": 0.5,
+   "title": "FROZEN FEET\nON THE PLATFORM?",
+   "sub": "Swipe for warmer winter days",
+   "pos": "top",
+   "shade": 0.8
+  },
+  {
+   "img": "s21",
+   "focus": 0.5,
+   "title": "DESK DAYS",
+   "sub": "Warm feet when the office runs cold",
+   "pos": "top",
+   "shade": 0.75
+  },
+  {
+   "img": "s10",
+   "focus": 0.6,
+   "title": "FROSTY TRAILS",
+   "sub": "Wicks sweat, cushioned sole in your boots",
+   "pos": "top",
+   "shade": 0.75
+  },
+  {
+   "img": "s03",
+   "focus": 0.45,
+   "title": "FOR THE ONE WHO'S\nALWAYS COLD",
+   "sub": "A soft, warm gift with no wool itch",
+   "pos": "top",
+   "shade": 0.8
+  },
+  {
+   "img": "s04",
+   "focus": 1.0,
+   "title": "MERINO WOOL HIKING SOCKS",
+   "sub": "80% merino \u00b7 cushioned crew \u00b7 $19.99 a pair\n2 pairs save 10% \u00b7 3 or more save 15%\nLink in bio",
+   "shade": 0.8,
+   "size": 90
+  }
+ ]
+}
