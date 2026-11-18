@@ -35,6 +35,11 @@ if a.keep:
     blur = cv2.GaussianBlur(im, (5, 5), 0)
     f = blur.astype(float); mx, mn = f.max(-1), f.min(-1)
     light = ((mx - mn) / (mx + 1e-6) < 0.35) & (mx > 150)
+    edge = np.concatenate([f[:6].reshape(-1, 3), f[-6:].reshape(-1, 3), f[:, :6].reshape(-1, 3), f[:, -6:].reshape(-1, 3)])
+    edge = edge[edge.max(-1) > 150]
+    if len(edge):  # the studio colour = the brightest common colour on the border
+        ref = np.median(edge[edge.sum(-1) >= np.percentile(edge.sum(-1), 60)], 0)
+        light &= np.sqrt(((f - ref) ** 2).sum(-1)) < 28
     blur[~light] = 0
     mask = np.zeros((H + 2, W + 2), np.uint8)
     flags = 4 | cv2.FLOODFILL_MASK_ONLY | (255 << 8)
