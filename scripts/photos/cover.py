@@ -21,6 +21,7 @@ ap.add_argument("src")
 ap.add_argument("out")
 ap.add_argument("--fill", type=float, default=0.80, help="share of the frame the longer side fills")
 ap.add_argument("--shadow", type=float, default=1.0)
+ap.add_argument("--keep", action="store_true", help="close-ups: keep framing, only swap the background colour")
 a = ap.parse_args()
 
 im = cv2.imread(a.src)
@@ -29,8 +30,12 @@ H, W = im.shape[:2]
 # (floating flood fill, so soft studio gradients still count as background)
 blur = cv2.GaussianBlur(im, (5, 5), 0)
 mask = np.zeros((H + 2, W + 2), np.uint8)
-TOL = 22
-flags = 4 | cv2.FLOODFILL_MASK_ONLY | cv2.FLOODFILL_FIXED_RANGE | (255 << 8)
+TOL = 3
+flags = 4 | cv2.FLOODFILL_MASK_ONLY | (255 << 8)
+# only light, near-neutral pixels may count as background, so the fill cannot run into the product
+f = blur.astype(float); mx, mn = f.max(-1), f.min(-1)
+lightbg = ((mx - mn) / (mx + 1e-6) < 0.35) & (mx > 150)
+blur = blur.copy(); blur[~lightbg] = 0
 for x in range(0, W, 16):
     for y in (0, H - 1):
         if not mask[y + 1, x + 1]:
@@ -39,7 +44,7 @@ for y in range(0, H, 16):
     for x in (0, W - 1):
         if not mask[y + 1, x + 1]:
             cv2.floodFill(blur, mask, (x, y), 0, (TOL, TOL, TOL), (TOL, TOL, TOL), flags)
-bg = mask[1:-1, 1:-1] > 0
+bg = (mask[1:-1, 1:-1] > 0) & lightbg
 fg = nd.binary_fill_holes(nd.binary_opening(~bg, iterations=2))
 lab, n = nd.label(fg)
 if n:
@@ -48,6 +53,13 @@ if n:
 alpha = cv2.GaussianBlur((fg * 255).astype(np.uint8), (5, 5), 0)
 rgb = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
 cut = Image.fromarray(np.dstack([rgb, alpha]), "RGBA")
+if a.keep:
+    out = Image.new("RGBA", cut.size, BG + (255,))
+    out.alpha_composite(cut)
+    out = out.convert("RGB")
+    k = S / max(out.size)
+    out.resize((round(out.width * k), round(out.height * k)), Image.LANCZOS).save(a.out, quality=93)
+    print(a.out); raise SystemExit
 cut = cut.crop(cut.getbbox())
 
 k = a.fill * S / max(cut.size)
