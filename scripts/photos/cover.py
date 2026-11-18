@@ -24,13 +24,22 @@ ap.add_argument("--shadow", type=float, default=1.0)
 a = ap.parse_args()
 
 im = cv2.imread(a.src)
-f = im.astype(float)
-# background = the plain studio colour, measured from the corners
-corners = np.concatenate([f[:40, :40].reshape(-1, 3), f[:40, -40:].reshape(-1, 3),
-                          f[-40:, :40].reshape(-1, 3), f[-40:, -40:].reshape(-1, 3)])
-ref = np.median(corners, 0)
-d = np.sqrt(((f - ref) ** 2).sum(-1))
-bg = d < 18
+H, W = im.shape[:2]
+# background = everything reachable from the border through small colour steps
+# (floating flood fill, so soft studio gradients still count as background)
+blur = cv2.GaussianBlur(im, (5, 5), 0)
+mask = np.zeros((H + 2, W + 2), np.uint8)
+TOL = 22
+flags = 4 | cv2.FLOODFILL_MASK_ONLY | cv2.FLOODFILL_FIXED_RANGE | (255 << 8)
+for x in range(0, W, 16):
+    for y in (0, H - 1):
+        if not mask[y + 1, x + 1]:
+            cv2.floodFill(blur, mask, (x, y), 0, (TOL, TOL, TOL), (TOL, TOL, TOL), flags)
+for y in range(0, H, 16):
+    for x in (0, W - 1):
+        if not mask[y + 1, x + 1]:
+            cv2.floodFill(blur, mask, (x, y), 0, (TOL, TOL, TOL), (TOL, TOL, TOL), flags)
+bg = mask[1:-1, 1:-1] > 0
 fg = nd.binary_fill_holes(nd.binary_opening(~bg, iterations=2))
 lab, n = nd.label(fg)
 if n:
