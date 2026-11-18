@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Mia was sweating on the climb.",
+   "gap": 0.2
+  },
+  {
+   "text": "Her baby, sitting still in the carrier, was getting cold.",
+   "gap": 0.2
+  },
+  {
+   "text": "Babies don't warm up by walking.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: one more layer than you, and check the back of the neck often.",
+   "gap": 0.35
+  },
+  {
+   "text": "Save this before your family hike.",
+   "gap": 0.2
+  }
+ ]
+}

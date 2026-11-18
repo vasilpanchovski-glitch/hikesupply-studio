@@ -1,0 +1,23 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "The lake looked frozen solid, so Tom cut across it.",
+   "gap": 0.25
+  },
+  {
+   "text": "Ice can be thick in one spot and thin a step later, and you can't see the difference.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: on a hike, stay off frozen lakes and streams.",
+   "gap": 0.35
+  },
+  {
+   "text": "Save this for winter.",
+   "gap": 0.2
+  }
+ ]
+}

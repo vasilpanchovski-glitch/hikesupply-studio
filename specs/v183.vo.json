@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Dan planned four miles.",
+   "gap": 0.2
+  },
+  {
+   "text": "His two-year-old stopped at the first rock, then every rock after.",
+   "gap": 0.2
+  },
+  {
+   "text": "Toddlers hike to the next thing, not the summit.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: pick a short loop and turn back while they're still happy.",
+   "gap": 0.35
+  },
+  {
+   "text": "Save this for your family hike.",
+   "gap": 0.2
+  }
+ ]
+}
