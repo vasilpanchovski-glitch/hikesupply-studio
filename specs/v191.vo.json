@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Luke hiked to Delicate Arch on a cold December morning.",
+   "gap": 0.25
+  },
+  {
+   "text": "The open slickrock had a thin skin of ice.",
+   "gap": 0.25
+  },
+  {
+   "text": "Every step slid.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: in winter, ask at the visitor center about trail ice and bring traction.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your Utah winter trip.",
+   "gap": 0.25
+  }
+ ]
+}

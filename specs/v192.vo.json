@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Nick wore two pairs of cotton socks for the cold walk.",
+   "gap": 0.25
+  },
+  {
+   "text": "Tight boots, damp cotton, and his toes went numb.",
+   "gap": 0.25
+  },
+  {
+   "text": "Squeezed feet get less warm blood.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: one good wool pair with room to wiggle your toes.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before winter.",
+   "gap": 0.25
+  }
+ ]
+}

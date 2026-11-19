@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Max started limping in the snow.",
+   "gap": 0.25
+  },
+  {
+   "text": "Tom found hard ice balls packed between his paw pads.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: on snowy hikes, check your dog's paws often and clear the ice.",
+   "gap": 0.25
+  },
+  {
+   "text": "Wipe off road salt after.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this for winter dog walks.",
+   "gap": 0.25
+  }
+ ]
+}
