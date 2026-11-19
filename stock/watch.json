@@ -17,15 +17,15 @@
     "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
    },
    "lastCheck": {
-    "date": "2026-11-18",
-    "time": "16:25Z",
+    "date": "2026-11-19",
+    "time": "18:40Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 2,
-     "Navy Blue / L": 16,
+     "Navy Blue / L": 26,
      "Green / S": 485,
      "Brown / S": 484,
-     "Green / L": 4,
+     "Green / L": 9,
      "Black / Grey / S": 482,
      "Brown / L": 471,
      "Black / Grey / L": 3
@@ -36,7 +36,7 @@
      "Green / L",
      "Black / Grey / L"
     ],
-    "note": "17:02 run: DSers supplier stock same as Nov 17 except Navy Blue / L 17 -> 16; Shopify set to 16. Still no verified backup."
+    "note": "Run started late (fired 18:25Z). Supplier restocked a little: Navy Blue / L 16 -> 26, Green / L 4 -> 9; Shopify set to match. Others unchanged. Still no verified backup."
    },
    "backups": [],
    "candidates": [
