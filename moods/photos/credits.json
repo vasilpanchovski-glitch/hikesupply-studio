@@ -29,7 +29,9 @@
   "photographer": "Kris Møklebust",
   "url": "https://www.pexels.com/photo/28998072/",
   "alt": "Misty forest path in autumn",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261119-8",
+  "pinUsedAt": "2026-11-19"
  },
  "32056479": {
   "photographer": "Dusan Stupar",
@@ -73,7 +75,9 @@
   "photographer": "eberhard grossgasteiger",
   "url": "https://www.pexels.com/photo/31612084/",
   "alt": "Misty forested mountain in fog",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261119-10",
+  "pinUsedAt": "2026-11-19"
  },
  "32746384": {
   "photographer": "Noel Aph",
@@ -93,7 +97,9 @@
   "photographer": "Ali Kazal",
   "url": "https://www.pexels.com/photo/33310500/",
   "alt": "Mountains and pine trees in Jasper National Park, Alberta",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261119-9",
+  "pinUsedAt": "2026-11-19"
  },
  "33833381": {
   "photographer": "Vasilis Karkalas",
@@ -131,7 +137,9 @@
   "photographer": "Ali Kazal",
   "url": "https://www.pexels.com/photo/19013064/",
   "alt": "Snowy peaks above a dark evergreen forest, Kananaskis, Canadian Rockies",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261119-6",
+  "pinUsedAt": "2026-11-19"
  },
  "28366357": {
   "photographer": "Ali Kazal",
@@ -252,7 +260,9 @@
   "photographer": "eberhard grossgasteiger",
   "url": "https://www.pexels.com/photo/3389537/",
   "alt": "Snow-covered peaks above a forest under a cloudy sky",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261119-5",
+  "pinUsedAt": "2026-11-19"
  },
  "9657726": {
   "photographer": "Sean Kernerman",
