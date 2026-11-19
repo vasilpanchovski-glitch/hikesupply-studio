@@ -1,0 +1,254 @@
+{
+ "date": "2026-11-19",
+ "previous": "2026-11-13",
+ "group": "a",
+ "note": "Group A. Empty fields mean the page did not show the number. Compared with the last group A run (Nov 13). Cascade Mountain Tech and Darn Tough had no new public data (newest Darn Tough Trustpilot review still Oct 19). Today's complaint mining covered dog hiking gear (hands-free leashes, dog water bottles, LED collars) because our Trail Dogs collection went live Nov 18.",
+ "sellers": [
+  {
+   "name": "We're in the Rockies",
+   "shop": {
+    "rating": 5.0,
+    "reviews": 637
+   },
+   "products": [],
+   "offers": [
+    "'National Park Trip-Planning Weekend' banner with countdown still at all zeros, no end date",
+    "free National Park Cheat Sheet Pack with any guide",
+    "printed road trip book with orders $150+, '70 copies only'",
+    "no Black Friday or holiday offer on Nov 19"
+   ],
+   "notes": "Store page still shows no prices. Reviews 637 (635 on Nov 13). Newsletter post on rockies.kit.com sells 6 park bundles as 'discounted vs buying individually', says 274 people bought the all-guides bundle, and gave existing bundle owners a new Yosemite guide free.",
+   "marketing": {
+    "bait": "free cheat sheet pack with any guide",
+    "email": "Kit newsletter: park updates and videos, new-guide news, bundle offers",
+    "tactics": [
+     "countdown with no date",
+     "free bonus with order",
+     "gift over a spend threshold",
+     "bundle 'save vs single' pricing",
+     "buyer count as proof (274 bought)",
+     "new guide free for existing bundle owners"
+    ],
+    "traffic": "Google search for park itinerary keywords, email list"
+   },
+   "source": "https://wereintherockies.com/?p=72502"
+  },
+  {
+   "name": "Traverse with Tonia (Payhip)",
+   "products": [
+    {
+     "title": "Ultimate U.S. National Parks & Hiking Checklist",
+     "price": 4.99,
+     "notes": "'On Sale', no old price"
+    },
+    {
+     "title": "Ultimate U.S. Waterfalls Checklist",
+     "price": 4.99
+    },
+    {
+     "title": "Ultimate Outdoor Adventure Bundle",
+     "price": 7.99
+    }
+   ],
+   "offers": [
+    "no Black Friday offer"
+   ],
+   "reviews": {
+    "count": null
+   },
+   "marketing": {
+    "tactics": [
+     "'On Sale' label with no old price",
+     "2-checklist bundle"
+    ]
+   },
+   "source": "https://payhip.com/b/tFbkH"
+  },
+  {
+   "name": "Montem",
+   "shop": {
+    "free_shipping_over": 100
+   },
+   "products": [
+    {
+     "title": "Flicklock 14-16mm Replacement",
+     "price": 4.68,
+     "was": 5.5
+    },
+    {
+     "title": "Trekking Pole Tip Protectors",
+     "price": 9.34,
+     "was": 10.99,
+     "notes": "was full price $10.99 on Nov 13"
+    },
+    {
+     "title": "Extra-Durable Tip Protectors",
+     "price": 9.34,
+     "was": 10.99,
+     "notes": "was $10.99 on Nov 13"
+    },
+    {
+     "title": "Snow Baskets",
+     "price": 9.34,
+     "was": 10.99,
+     "notes": "was $10.99 on Nov 13"
+    },
+    {
+     "title": "Nordic Fitness Tips",
+     "price": 9.34,
+     "was": 10.99,
+     "notes": "was $10.99 on Nov 13"
+    },
+    {
+     "title": "Mud Baskets",
+     "price": 9.34,
+     "was": 10.99,
+     "notes": "was $10.99 on Nov 13"
+    },
+    {
+     "title": "Pro Walker Replacement Gloves",
+     "price": null,
+     "notes": "still sold out"
+    },
+    {
+     "title": "The Ultra On The Go (Advanced) Bundle",
+     "price": 31.44,
+     "was": 46.97,
+     "notes": "$36.99 on Nov 13"
+    },
+    {
+     "title": "The All Tips Bundle",
+     "price": 22.06,
+     "was": 32.97,
+     "notes": "$25.95 on Nov 13"
+    },
+    {
+     "title": "All Baskets Bundle",
+     "price": 23.8,
+     "was": 35.98,
+     "notes": "$22.40 on Nov 13, so up $1.40"
+    }
+   ],
+   "offers": [
+    "about 15% off every pole accessory (new since Nov 13), no Black Friday banner or code shown",
+    "free shipping over $100 (cart message still contradicts itself)"
+   ],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "quiet pre-Black-Friday markdown, about 15% off, no banner",
+     "bundles against a compare-at price",
+     "free shipping threshold"
+    ]
+   },
+   "source": "https://montemlife.com/collections/trekking-pole-accesories-and-spare-parts"
+  },
+  {
+   "name": "DearSummit",
+   "products": [
+    {
+     "title": "The Trail Journal, prompted pocket hiking log",
+     "price": 11.5,
+     "currency": "USD",
+     "notes": "price from page metadata; single journal sold out, only the set of 3 can be bought; 4.9 from 369 item reviews; shop 4.9 from 1.3k",
+     "url": "https://www.etsy.com/ie/listing/710475099/the-trail-journal-prompted-hiking-log"
+    }
+   ],
+   "offers": [
+    "no sale shown"
+   ],
+   "reviews": {
+    "complaints": []
+   }
+  },
+  {
+   "name": "MarcisShoppe",
+   "shop": {
+    "rating": 4.9,
+    "reviews": 596,
+    "sales": "4k"
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt for Kids, Printable",
+     "price": 2.0,
+     "item_reviews": 146,
+     "item_rating": 5.0,
+     "notes": "JPG + PDF, Letter only; no sale"
+    }
+   ],
+   "offers": [
+    "no sale"
+   ],
+   "reviews": {
+    "praise": [
+     "easy download",
+     "fun for kids"
+    ],
+    "complaints": []
+   },
+   "source": "https://www.etsy.com/listing/1101626951"
+  },
+  {
+   "name": "Cascade Mountain Tech",
+   "products": [],
+   "reviews": {
+    "complaints": [],
+    "notes": "only older roundups found (ShopSavvy page last priced Sep 2024: slipping locks, grip wear); already covered by our pole themes"
+   }
+  },
+  {
+   "name": "Darn Tough (hiking socks)",
+   "shop": {
+    "trustpilot": 3.7,
+    "trustpilot_reviews": 85
+   },
+   "reviews": {
+    "complaints": [],
+    "notes": "no new reviews since Oct 19"
+   },
+   "source": "https://ca.trustpilot.com/review/darntough.com"
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "GroovyPets Bungee Hands-Free Leash (Chewy)",
+   "notes": "$19.99, 4.2 from 169 ratings; most low reviews say the clip, hook or waist clip broke or came off within weeks",
+   "source": "https://www.chewy.com/groovypets-bungee-hands-free/dp/1503262"
+  },
+  {
+   "name": "Tuff Mutt Hands-Free Bungee Leash (Chewy)",
+   "notes": "$27.97, 4.5 from 460 ratings",
+   "source": "https://www.chewy.com/dp/136501"
+  },
+  {
+   "name": "Illumiseen LED USB dog collar (Chewy)",
+   "notes": "$17.99 (list $18.99), 3.9 from 536 ratings, out of stock",
+   "source": "https://www.chewy.com/dp/135983"
+  },
+  {
+   "name": "Trixie travel bottle and bowl (zooplus UK)",
+   "notes": "3.8 from about 250 reviews",
+   "source": "https://www.zooplus.co.uk/feedback/shop/dogs/dog_bowls_feeders/travel_dog_bowl/506824?stars=1"
+  }
+ ],
+ "changes_vs_previous": [
+  "Montem: about 15% off all pole accessories since Nov 13 ($10.99 items now $9.34, tips bundle $22.06, advanced bundle $31.44), no Black Friday banner; baskets bundle went up from $22.40 to $23.80",
+  "We're in the Rockies: 637 reviews (635); 'Trip-Planning Weekend' banner with a zero countdown; still no Black Friday offer",
+  "DearSummit: single journal sold out, only the set of 3 left",
+  "MarcisShoppe 596 shop reviews (595); Traverse with Tonia, Cascade Mountain Tech, Darn Tough: no change"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "bundles priced against buying singly (WITR park bundles, Montem bundles, Tonia $7.99 bundle)",
+   "a free extra instead of a deep cut (WITR cheat sheets, book over $150, new guide free for bundle owners)",
+   "sale labels without a real old price or countdowns with no date (Tonia 'On Sale', WITR zero countdown)"
+  ],
+  "we_do_not_use_yet": [
+   "telling existing buyers when a guide is updated or when a new one joins a bundle they own (WITR gives bundle owners the new guide free)"
+  ],
+  "black_friday": "Nov 19, eight days out: in group A only Montem discounts (about 15% off accessories, no banner). We're in the Rockies, Tonia, DearSummit and MarcisShoppe show nothing yet."
+ }
+}

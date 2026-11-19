@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport). 2026-11-13 pass: group A; Etsy and Payhip digital rivals again show only 5-star reviews or none, Darn Tough has no new Trustpilot reviews since Oct 21; added a Montem pole handle failure, a basic map in a park passport book, and a kids nature card game (small set, poor value). 2026-11-17 pass: group C; Payhip, Gumroad and the Hiker Hunger Walmart page again show no critical review text, so this run read 2-3 star reviews of packable down jackets (a budget Amazon-type jacket and L.L.Bean Ultralight 850), the benchmark for any insulated clothing the Hunter checks.",
- "updated": "2026-11-17",
+ "updated": "2026-11-19",
  "complaints": [
   {
    "type": "trekking pole",
@@ -2345,12 +2345,192 @@
    "date": "2019-12-09",
    "theme": "pockets without zips / no cuffs",
    "found": "2026-11-17"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "Tuff Mutt Hands-Free Bungee Leash",
+   "what": "clip broke on two leashes within about two months of running",
+   "source": "https://www.chewy.com/dp/136501",
+   "where": "Chewy 2 star",
+   "date": "2021-04-16",
+   "theme": "dog leash clip or buckle breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "Tuff Mutt Hands-Free Bungee Leash",
+   "what": "waist belt came loose twice on a three-mile walk; leash long enough to drag and trip the dog",
+   "source": "https://www.chewy.com/dp/136501",
+   "where": "Chewy 3 star",
+   "date": "2019-11-05",
+   "theme": "strap loosens",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "Tuff Mutt Hands-Free Bungee Leash",
+   "what": "leash shorter than the listing suggested, belt snap swivels so the dog circles the walker",
+   "source": "https://www.chewy.com/dp/136501",
+   "where": "Chewy 3 star",
+   "date": "2017-09-01",
+   "theme": "product does not match the listing",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "GroovyPets Bungee Hands-Free Leash",
+   "what": "clasp to the harness broke after about a month, reactive dog got loose",
+   "source": "https://www.chewy.com/groovypets-bungee-hands-free/dp/1503262",
+   "where": "Chewy 1 star",
+   "date": "2025-10-29",
+   "theme": "dog leash clip or buckle breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "GroovyPets Bungee Hands-Free Leash",
+   "what": "leash broke in three places in the first week",
+   "source": "https://www.chewy.com/groovypets-bungee-hands-free/dp/1503262",
+   "where": "Chewy 1 star",
+   "date": "2025-07-14",
+   "theme": "breaks quickly / cheaply made",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "GroovyPets Bungee Hands-Free Leash",
+   "what": "plastic attachment clip snapped at the park",
+   "source": "https://www.chewy.com/groovypets-bungee-hands-free/dp/1503262",
+   "where": "Chewy 1 star",
+   "date": "2025-07-20",
+   "theme": "dog leash clip or buckle breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "GroovyPets Bungee Hands-Free Leash",
+   "what": "clip failed, replacement failed the same way, part came off mid-walk",
+   "source": "https://www.chewy.com/groovypets-bungee-hands-free/dp/1503262",
+   "where": "Chewy 1 star",
+   "date": "2025-11-26",
+   "theme": "dog leash clip or buckle breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "GroovyPets Bungee Hands-Free Leash",
+   "what": "hook broke within about 10 days",
+   "source": "https://www.chewy.com/groovypets-bungee-hands-free/dp/1503262",
+   "where": "Chewy 2 star",
+   "date": "2025-05-25",
+   "theme": "dog leash clip or buckle breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "GroovyPets Bungee Hands-Free Leash",
+   "what": "waist clip came undone during use",
+   "source": "https://www.chewy.com/groovypets-bungee-hands-free/dp/1503262",
+   "where": "Chewy 2 star",
+   "date": "2026-02-28",
+   "theme": "dog leash clip or buckle breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "GroovyPets Bungee Hands-Free Leash",
+   "what": "closure snapped after a month with a 71 lb dog although sold for large breeds",
+   "source": "https://www.chewy.com/groovypets-bungee-hands-free/dp/1503262",
+   "where": "Chewy 1 star",
+   "date": "2025-06-01",
+   "theme": "dog leash clip or buckle breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "hands-free dog leash",
+   "product": "Ruffwear Roamer Leash",
+   "what": "stretches a lot, claw clasp feels less sturdy than the older one",
+   "source": "https://www.zappos.com/product/review/8346707",
+   "where": "Zappos 3 star",
+   "date": "2016-06-11",
+   "theme": "dog leash clip or buckle breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "dog water bottle with bowl",
+   "product": "Trixie travel bottle and bowl",
+   "what": "leaks when lying on its side, only works upright",
+   "source": "https://www.zooplus.co.uk/feedback/shop/dogs/dog_bowls_feeders/travel_dog_bowl/506824?stars=1",
+   "where": "zooplus 1 star",
+   "date": "2021-06-04",
+   "theme": "dog bottle leaks or lid breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "dog water bottle with bowl",
+   "product": "Trixie travel bottle and bowl",
+   "what": "screw cap sits deep in the drinking cup so little water is usable",
+   "source": "https://www.zooplus.co.uk/feedback/shop/dogs/dog_bowls_feeders/travel_dog_bowl/506824?stars=1",
+   "where": "zooplus 1 star",
+   "date": "2020-06-26",
+   "theme": "dog bottle leaks or lid breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "dog water bottle with bowl",
+   "product": "Trixie travel bottle and bowl, 300 ml",
+   "what": "lid broke quickly, bottle could not be closed",
+   "source": "https://www.zooplus.co.uk/feedback/shop/dogs/dog_bowls_feeders/travel_dog_bowl/506824?stars=1",
+   "where": "zooplus 1 star",
+   "date": "2026-09-06",
+   "theme": "dog bottle leaks or lid breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "dog water bottle with bowl",
+   "product": "MalsiPree dog water bottle",
+   "what": "can break if dropped; larger size holds only 19 oz, short for big dogs or long outings",
+   "source": "https://iheartdogs.com/malsipree-dog-water-bottle-review/",
+   "where": "review blog",
+   "date": "2024-03-10",
+   "theme": "dog bottle leaks or lid breaks",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "LED dog collar",
+   "product": "Trixie USB Flash Light Collar",
+   "what": "bright and easy to charge for a couple of months, then stopped working",
+   "source": "https://www.zooplus.com/feedback/shop/dogs/dog_collars_dog_leads/protection_fashion/saftey_collar/545383?stars=3",
+   "where": "zooplus 3 star",
+   "date": "2017-02-13",
+   "theme": "fails within months / stops charging",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "LED dog collar",
+   "product": "Trixie USB Flash Light Collar",
+   "what": "push-on clasp hard to close securely, uncomfortable for the dog",
+   "source": "https://www.zooplus.com/feedback/shop/dogs/dog_collars_dog_leads/protection_fashion/saftey_collar/545383?stars=3",
+   "where": "zooplus 3 star",
+   "date": "2017-10-30",
+   "theme": "LED dog collar hard to fit",
+   "found": "2026-11-19"
+  },
+  {
+   "type": "LED dog collar",
+   "product": "Trixie USB Flash Light Collar",
+   "what": "tube keeps a stiff shape, hard to fit, had to trim it, looks different from the photo",
+   "source": "https://www.zooplus.com/feedback/shop/dogs/dog_collars_dog_leads/protection_fashion/saftey_collar/545383?stars=3",
+   "where": "zooplus 3 star",
+   "date": "2026-08-03",
+   "theme": "LED dog collar hard to fit",
+   "found": "2026-11-19"
   }
  ],
  "themes": [
   {
    "theme": "breaks quickly / cheaply made",
-   "count": 21
+   "count": 22
   },
   {
    "theme": "pole locks slip / poles collapse",
@@ -2366,7 +2546,7 @@
   },
   {
    "theme": "product does not match the listing",
-   "count": 10
+   "count": 11
   },
   {
    "theme": "too thin, not warm enough",
@@ -2382,6 +2562,10 @@
   },
   {
    "theme": "list incomplete or out of date",
+   "count": 8
+  },
+  {
+   "theme": "dog leash clip or buckle breaks",
    "count": 8
   },
   {
@@ -2417,6 +2601,10 @@
    "count": 4
   },
   {
+   "theme": "dog bottle leaks or lid breaks",
+   "count": 4
+  },
+  {
    "theme": "hydration bladder leaks",
    "count": 3
   },
@@ -2434,6 +2622,10 @@
   },
   {
    "theme": "controls hard to use with gloves",
+   "count": 3
+  },
+  {
+   "theme": "fails within months / stops charging",
    "count": 3
   },
   {
@@ -2493,7 +2685,7 @@
    "count": 2
   },
   {
-   "theme": "fails within months / stops charging",
+   "theme": "strap loosens",
    "count": 2
   },
   {
@@ -2506,6 +2698,10 @@
   },
   {
    "theme": "map too small, little detail",
+   "count": 2
+  },
+  {
+   "theme": "LED dog collar hard to fit",
    "count": 2
   },
   {
@@ -2534,10 +2730,6 @@
   },
   {
    "theme": "bivy too small",
-   "count": 1
-  },
-  {
-   "theme": "strap loosens",
    "count": 1
   },
   {
