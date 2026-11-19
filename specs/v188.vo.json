@@ -1,0 +1,31 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.2,
+ "lines": [
+  {
+   "text": "Ava was heading down.",
+   "gap": 0.12
+  },
+  {
+   "text": "A man was huffing up.",
+   "gap": 0.12
+  },
+  {
+   "text": "They both stopped, both stepped aside, and nobody moved.",
+   "gap": 0.12
+  },
+  {
+   "text": "The trail rule: hikers going downhill step aside for hikers coming up.",
+   "gap": 0.12
+  },
+  {
+   "text": "Bikes yield to hikers, everyone yields to horses.",
+   "gap": 0.12
+  },
+  {
+   "text": "Save this for your next hike.",
+   "gap": 0.12
+  }
+ ]
+}

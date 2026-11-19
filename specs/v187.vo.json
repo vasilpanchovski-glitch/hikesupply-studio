@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Lena zipped her jacket pocket, she thought.",
+   "gap": 0.25
+  },
+  {
+   "text": "At the car, no key.",
+   "gap": 0.25
+  },
+  {
+   "text": "It was somewhere back on the trail, under the snow.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: clip the key to a loop inside your pack, never loose in a pocket.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your next hike.",
+   "gap": 0.25
+  }
+ ]
+}

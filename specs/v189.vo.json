@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Sara wore her thick knit sweater to the ridge.",
+   "gap": 0.25
+  },
+  {
+   "text": "Warm in the trees.",
+   "gap": 0.25
+  },
+  {
+   "text": "On top, the wind went straight through.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: a warm layer needs a wind-blocking one over it, or one jacket that does both.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your cold hike.",
+   "gap": 0.25
+  }
+ ]
+}
