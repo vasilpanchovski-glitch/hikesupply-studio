@@ -1,0 +1,11 @@
+{
+ "id": "mp02",
+ "dir": "skimask",
+ "slides": [
+  {"img": "m05", "focus": 0.25, "title": "GRANDPA SHOWED UP\nTO SKI DAY", "pos": "bottom"},
+  {"img": "m03", "focus": 0.5, "title": "SMILES ALL\nTHE WAY DOWN", "sub": "Goggles down, grin on", "pos": "bottom"},
+  {"img": "m02", "focus": 0.5, "title": "LUNCH BREAK,\nSAME FACES", "sub": "Everyone at the lodge looks twice", "pos": "bottom"},
+  {"img": "m09", "focus": 0.3, "title": "FIRST TRACKS,\nOLD FACE", "pos": "bottom"},
+  {"img": "m06", "focus": 0.25, "title": "FUNNY OLD MAN\nSKI MASK", "sub": "Covers head, face and neck · one size\nFrom $17.99 · 2 save 10% · 3+ save 15%\nLink in bio"}
+ ]
+}

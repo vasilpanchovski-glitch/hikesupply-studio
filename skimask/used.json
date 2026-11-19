@@ -35,6 +35,43 @@
     "FUNNY OLD MAN SKI MASK"
    ],
    "music": "socks/music/embers.mp3"
+  },
+  {
+   "id": "mv02",
+   "card": "mk02",
+   "remakeOf": "mv01",
+   "shots": [
+    "k03",
+    "k01",
+    "k05",
+    "k04"
+   ],
+   "headlines": [
+    "WHO INVITED GRANDPA?",
+    "HE BROUGHT A FRIEND",
+    "GRANDPA STILL SHREDS",
+    "FUNNY OLD MAN SKI MASK"
+   ],
+   "music": "socks/music/embers.mp3",
+   "note": "k06 and k07 not usable: goggles up, real eyes show"
+  },
+  {
+   "id": "mp02",
+   "card": "mk03",
+   "shots": [
+    "m05",
+    "m03",
+    "m02",
+    "m09",
+    "m06"
+   ],
+   "headlines": [
+    "GRANDPA SHOWED UP TO SKI DAY",
+    "SMILES ALL THE WAY DOWN",
+    "LUNCH BREAK, SAME FACES",
+    "FIRST TRACKS, OLD FACE",
+    "FUNNY OLD MAN SKI MASK"
+   ]
   }
  ]
 }
