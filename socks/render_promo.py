@@ -14,6 +14,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 FONT = os.path.join(ROOT, "..", "pins", "BarlowCondensed-ExtraBold.ttf")
 FONT_B = "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf"
 LOGO = os.path.join(ROOT, "brand", "logo_white.png")
+LOGO_COLOR = os.path.join(ROOT, "brand", "logo_color.png")  # orange mountain + white text (Vasil 2026-11-20, default)
 W, H = 1080, 1350
 
 
@@ -61,17 +62,18 @@ def shade():
 
 
 def render(spec):
-    out = os.path.join(ROOT, "posts", spec["id"])
+    base = os.path.join(ROOT, "..", spec["dir"]) if spec.get("dir") else ROOT  # "dir": "skimask" for the ski mask
+    out = os.path.join(base, "posts", spec["id"])
     os.makedirs(out, exist_ok=True)
-    im = Image.open(os.path.join(ROOT, "materials", "img", spec["img"] + ".jpg")).convert("RGB")
+    im = Image.open(os.path.join(base, "materials", "img", spec["img"] + ".jpg")).convert("RGB")
     im = cover(im, spec.get("focus", 0.5), spec.get("shiftx", 0.0)).convert("RGBA")
     im = Image.alpha_composite(im, shade())
     d = ImageDraw.Draw(im)
     x0 = 64
 
     # logo, top left
-    lg = white_logo().copy()
-    lw = spec.get("logo_w", 220)
+    lg = (white_logo() if spec.get("logo") == "white" else Image.open(LOGO_COLOR).convert("RGBA")).copy()
+    lw = spec.get("logo_w", 250)
     lg = lg.resize((lw, int(lg.height * lw / lg.width)), Image.LANCZOS)
     im.alpha_composite(lg, (x0, 56))
 
