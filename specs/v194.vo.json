@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Jen came back to the trailhead at dusk.",
+   "gap": 0.25
+  },
+  {
+   "text": "Her car was inside a locked gate.",
+   "gap": 0.25
+  },
+  {
+   "text": "Many parks and parking areas close at sunset, and in December that's early.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: check the closing time before you start.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your next hike.",
+   "gap": 0.25
+  }
+ ]
+}

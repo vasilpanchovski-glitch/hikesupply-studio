@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Snow started on the ridge.",
+   "gap": 0.25
+  },
+  {
+   "text": "Claire walked on, sure the next marker was close. It wasn't.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: if you can't see the next marker, stop and go back to the last one you saw.",
+   "gap": 0.25
+  },
+  {
+   "text": "Then decide.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.25
+  }
+ ]
+}

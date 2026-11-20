@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Ryan cut his hand two miles in.",
+   "gap": 0.45
+  },
+  {
+   "text": "The first-aid kit was in the car, as always.",
+   "gap": 0.45
+  },
+  {
+   "text": "A kit only counts if it's on you.",
+   "gap": 0.45
+  },
+  {
+   "text": "The rule: keep it on the outside of your pack.",
+   "gap": 0.45
+  },
+  {
+   "text": "Save this before your next hike.",
+   "gap": 0.25
+  }
+ ]
+}
