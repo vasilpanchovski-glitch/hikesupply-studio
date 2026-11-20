@@ -30,7 +30,7 @@ lw = 210; lg = lg.resize((lw, int(lg.height * lw / lg.width)), Image.LANCZOS)
 y = 210
 im.alpha_composite(lg, (M, y)); y += lg.height + 34
 fh = ImageFont.truetype(FONT, 122)
-d.text((M - 4, y), "THE WINTER SOCK", font=fh, fill="white"); y += fh.getbbox("THE")[3] + 26
+d.text((M - 4, y), "MERINO WOOL SOCKS", font=fh, fill="white"); y += fh.getbbox("THE")[3] + 26
 fb = ImageFont.truetype(FONT, 150); fn = ImageFont.truetype(FONT, 40)
 d.text((M - 6, y), "-15%", font=fb, fill="#d9e2c8")
 bx = M + d.textlength("-15%", font=fb) + 22
