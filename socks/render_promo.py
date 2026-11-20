@@ -3,7 +3,7 @@
 Layout 1080x1350: colour HikeSupply Co. logo (orange mountain, white text), a big stacked white
 headline, the deal as one big number with a two-line note beside it, a sub line and the shop address.
 
-Smart placement (Vasil 2026-11-20: "the texts should not cover important parts of the picture"):
+Placement: see head_side / deal_side / keep below (Vasil 2026-11-20).
 the people and products in the photo are found automatically (rembg foreground mask), plus any
 extra boxes in "keep". The logo, headline and deal block are then placed where they cover the
 least of them (top or bottom, left or right), shrinking the text if needed. If nothing fits
@@ -79,11 +79,8 @@ BAND_COLOR = (24, 38, 29, 255)
 
 
 def render(spec, band=None):
-    if band is None:
-        try:
-            return render(spec, band=False)
-        except Retry:
-            return render(spec, band=True)
+    if band is None:  # full photo is the standard (Vasil 2026-11-20: the band "takes too much from the photo")
+        band = bool(spec.get("band"))
     return _render(spec, band)
 
 
@@ -98,7 +95,9 @@ def _render(spec, band):
     src = Image.open(os.path.join(base, "materials", "img", spec["img"] + ".jpg")).convert("RGB")
     ph = H - BAND if band else H
     photo = cover(src, spec.get("focus", 0.5), spec.get("shiftx", 0.0), ph).convert("RGBA")
-    mask = subject_mask(photo, spec.get("keep"))
+    mask = np.zeros((H, W), bool)
+    for x0, y0, x1, y1 in spec.get("keep") or []:  # faces and the product, fractions of the image
+        mask[int(y0 * H):int(y1 * H), int(x0 * W):int(x1 * W)] = True
     im = Image.new("RGBA", (W, H), BAND_COLOR)
     im.alpha_composite(photo, (0, 0))
     d = ImageDraw.Draw(im)
@@ -135,36 +134,17 @@ def _render(spec, band):
         x0 = M if x_left else W - M - w
         return (x0, y, x0 + w, y + h), f
 
-    best = None
-    for bs in [spec.get("big_size", 240), 210, 180, 150]:
-        for dx in ((M,) if band else (M, "R")):
-            for bottom in (H - 40,):
-                box, fb, fn, bw = deal_box(bs, M if dx == M else None, bottom)
-                c = cov(mask, box)
-                cand = (c, -bs, box, fb, fn, bw)
-                if best is None or cand[:2] < best[:2]:
-                    best = cand
-        if best[0] <= MAX_COVER:
-            break
-    dcov, _, dbox, fb, fn, bw = best
-    if not band and dcov > MAX_COVER and not spec.get("no_band"):
-        raise Retry()
-
-    hbest = None
     top = ly + lg.height + 30
-    for size in [spec.get("size", 170), 150, 130, 112, 96]:
-        for left in (True, False):
-            for y in range(top, int(dbox[1]) - 40, 20):
-                box, f = head_box(size, left, y)
-                if box[3] > dbox[1] - 30:
-                    break
-                c = cov(mask, box)
-                # prefer least cover, then bigger text, then higher on the page
-                cand = (round(c, 3), -size, y, box, f, left)
-                if hbest is None or cand[:3] < hbest[:3]:
-                    hbest = cand
-        if hbest and hbest[0] <= MAX_COVER:
-            break
+    # Fixed layout, sides chosen per photo (Vasil 2026-11-20: full photo, original look; text never on
+    # faces or the product). head_side / deal_side: "left" or "right".
+    hleft = spec.get("head_side", "left") == "left"
+    dright = spec.get("deal_side", "left") == "right"
+    bs = spec.get("big_size", 240)
+    dbox, fb, fn, bw = deal_box(bs, None if dright else M, H - 40)
+    size = spec.get("size", 170)
+    hbox, fh = head_box(size, hleft, top + spec.get("gap", 0))
+    dcov, hcov = cov(mask, dbox), cov(mask, hbox)
+    hbest = (hcov, -size, 0, hbox, fh, hleft)
     hcov, nsize, _, hbox, fh, hleft = hbest
 
     # soft shade only behind the text blocks
@@ -217,7 +197,7 @@ def _render(spec, band):
     chk.resize((540, 675)).save(os.path.join(out, "check.jpg"), quality=80)
     worst = max(hcov, dcov)
     msg = f"{p}  headline covers {hcov:.0%} of its box with subject, deal {dcov:.0%}"
-    if worst > 0.12:
+    if worst > 0.0:
         raise SystemExit("TEXT COVERS THE SUBJECT, pick another photo or crop: " + msg)
     return msg
 
