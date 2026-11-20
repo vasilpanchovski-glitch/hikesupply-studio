@@ -122,7 +122,7 @@ def _render(spec, band):
         nw = text_w(d, spec["note"], fn)
         sw = d.textlength(spec.get("sub", ""), font=fsub)
         w = max(bw + 18 + nw, sw, 420)
-        h = int(bs * 0.95) + 46 + 50
+        h = fb.getbbox(spec["big"])[3] + 22 + 46 + 50
         x0 = x if x == M else W - M - w
         return (x0, bottom - h, x0 + w, bottom), fb, fn, bw
 
@@ -150,7 +150,7 @@ def _render(spec, band):
     # soft shade only behind the text blocks
     sh = Image.new("L", (W, H), 0)
     sd = ImageDraw.Draw(sh)
-    blocks = [(hbox, 120), ((lx, ly, lx + lw, ly + lg.height), 70)] + ([] if band else [(dbox, 140)])
+    blocks = [(hbox, 120), ((lx, ly, lx + lw, ly + lg.height), 70)] + ([] if band else [(dbox, 175)])
     for b, a in blocks:
         sd.rectangle((b[0] - 70, b[1] - 50, b[2] + 70, b[3] + 50), fill=a)
     sh = sh.filter(ImageFilter.GaussianBlur(70))
@@ -179,10 +179,10 @@ def _render(spec, band):
     for ln in note_lines:
         d.text((x0 + bw + 18, ny), ln, font=fn, fill="white")
         ny += int(fn.size * 1.05)
-    sy = by + int(bsz * 0.95)
+    sy = by + fb.getbbox(spec["big"])[3] + 22  # clear gap under the big number (Vasil 2026-11-20)
     if spec.get("sub"):
         d.text((x0, sy), spec["sub"], font=fsub, fill="white")
-    u = sy + 50
+    u = sy + 54
     d.text((x0, u), "WWW.", font=fu, fill="white")
     x = x0 + d.textlength("WWW.", font=fu)
     d.text((x, u - 5), "HIKESUPPLYCO", font=fu_b, fill="white")
