@@ -1,0 +1,6 @@
+{"id": "ad1", "music": null, "cover_at": 1.2,
+ "segments": [
+  {"clip": "v04", "start": 0.0, "dur": 3.0, "title": "COLD FEET\nON EVERY WALK?", "fade": 0, "pos": "top"},
+  {"clip": "v01", "start": 0.5, "dur": 2.6, "title": "COSY EVENINGS", "pos": "top"},
+  {"clip": "v05", "start": 0.3, "dur": 2.6, "title": "80% MERINO", "sub": "Cushioned sole, no wool itch", "pos": "top"}
+ ]}
