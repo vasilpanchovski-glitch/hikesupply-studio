@@ -333,3 +333,8 @@ Agent: Socks Poster (`agents/socksposter.md`), daily 10:12, cloud. One designed 
 # Ski mask posts (Vasil 2026-11-17)
 
 Agent: Mask Poster (`agents/maskposter.md`), daily 10:42, cloud. One post a day for the Funny Old Man Ski Mask at 19:30 Skopje, photo and video alternating, photos as ONE promo image in the socks promo layout (Vasil 2026-11-20: `socks/render_promo.py skimask/specs/mpp<NN>.json`, samples `skimask/posts/mpp_m05`, `mpp_m04`, `mpp_m09`; full photo, no band; sides chosen per photo so text never covers faces or the product) and videos with `socks/render_video.py` (`"dir": "skimask"` in the spec), only from `skimask/materials/`. Cards `mk<NN>` (`format: "mask-photo"` scheduled by the Mask Poster, `"mask-video"` by the Publisher), `aiGenerated: true`. Vasil approves every post.
+
+# Gear promo posts (Vasil 2026-11-20)
+
+Agent: Gear Poster (`agents/gearposter.md`), daily 11:12, cloud. One promo photo post a day at 16:00 Skopje for a gear or Trail Dogs product (Trail Dogs at least 3 days a week), same layout as the socks and ski mask promos (`socks/render_promo.py`, `"dir": "gear"`, the price as the big number, "FREE SHIPPING"). Photos in `gear/materials/img/` are made with Gemini in Vasil's Chrome from our real studio product photo, with long detailed prompts (Vasil: "PROFESSIONAL! ... prompt good and in details"); only the main chat makes new ones. Cards `gp<NN>` in `cards`, `format: "gear-photo"`, `aiGenerated: true`; Vasil approves each, the Gear Poster schedules Instagram, Facebook (with link), TikTok photo and Pinterest. Samples `gear/posts/gp_g01`, `gp_g03`, `gp_g07`, `gp_g09`, `gp_g13`.
+
