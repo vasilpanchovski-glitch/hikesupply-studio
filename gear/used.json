@@ -1,3 +1,11 @@
 {
- "posts": []
+ "posts": [
+  {
+   "id": "gp01",
+   "date": "2026-11-21",
+   "img": "g12",
+   "product": "dog-water-bottle-with-bowl",
+   "headline": "THIRSTY TRAIL DOG?"
+  }
+ ]
 }
