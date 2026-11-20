@@ -12,3 +12,7 @@ etsy/out/
 etsy/src/
 etsy/downloads/
 video/public/scenic/
+socks/posts/*/check.jpg
+skimask/posts/*/check.jpg
+socks/posts/try_*
+skimask/posts/try_*
