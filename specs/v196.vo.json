@@ -1,0 +1,31 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Grace wanted a closer photo of the waterfall.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rocks looked dry.",
+   "gap": 0.25
+  },
+  {
+   "text": "They were covered in a thin film of algae and spray.",
+   "gap": 0.25
+  },
+  {
+   "text": "The Smokies rule: never climb on rocks around waterfalls.",
+   "gap": 0.25
+  },
+  {
+   "text": "Take the photo from the trail.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your Smokies trip.",
+   "gap": 0.25
+  }
+ ]
+}

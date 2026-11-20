@@ -1,0 +1,23 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Adam drove into Glacier in December to see Logan Pass.",
+   "gap": 0.25
+  },
+  {
+   "text": "In winter, Going-to-the-Sun Road is closed to cars past Lake McDonald Lodge.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: plan winter Glacier around the lake and the closed road on foot.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your Glacier trip.",
+   "gap": 0.25
+  }
+ ]
+}

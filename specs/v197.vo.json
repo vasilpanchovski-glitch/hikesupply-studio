@@ -1,0 +1,31 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Owen saw smooth snow across the trail.",
+   "gap": 0.25
+  },
+  {
+   "text": "Underneath, a creek was still running.",
+   "gap": 0.25
+  },
+  {
+   "text": "One step and his leg went through into the cold water.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: never walk on snow over running water.",
+   "gap": 0.25
+  },
+  {
+   "text": "Find a solid crossing.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.25
+  }
+ ]
+}
