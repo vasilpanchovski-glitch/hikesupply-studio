@@ -52,12 +52,29 @@ def plain(body, limit=4900):
 def category(p, digital):
     title = p["title"].lower()
     tags = {t.lower() for t in p["tags"]}
+    # Pinterest warns when a category has only 1-2 levels (2026-11-20), so always give 3+.
     if digital:
-        return "Media > Books > Print Books" if "guide" in title else "Arts & Entertainment > Hobbies & Creative Arts"
-    if tags & {"dog", "trail dogs"}:
+        return "Media > Books > Print Books"
+    if tags & {"dog", "trail dogs"} or " dog " in f" {title} ":
         return "Animals & Pet Supplies > Pet Supplies > Dog Supplies"
-    if p.get("product_type") and "cloth" in p["product_type"].lower():
-        return "Apparel & Accessories > Clothing"
+    name = title.split(" — ")[0]  # main name only, not the feature list after the dash
+    if " set" in f" {name} " or "leg gaiter" in name or "rubber tip" in name or "reflective vest" in name:
+        return "Sporting Goods > Outdoor Recreation > Camping & Hiking"
+    clothing = [
+        ("balaclava|ski mask|ear warmer|beanie|sun hat|hat", "Apparel & Accessories > Clothing Accessories > Hats"),
+        ("neck gaiter|scarf", "Apparel & Accessories > Clothing Accessories > Scarves & Shawls"),
+        ("gloves?|mittens?", "Apparel & Accessories > Clothing Accessories > Gloves & Mittens"),
+        ("jacket|fleece|windbreaker|softshell|parka", "Apparel & Accessories > Clothing > Outerwear > Coats & Jackets"),
+        ("pants|trousers|leggings", "Apparel & Accessories > Clothing > Pants"),
+        ("shorts", "Apparel & Accessories > Clothing > Shorts"),
+        ("skort|skirt", "Apparel & Accessories > Clothing > Skorts"),
+        ("socks?", "Apparel & Accessories > Clothing > Underwear & Socks > Socks"),
+        ("base layer|thermal", "Apparel & Accessories > Clothing > Underwear & Socks > Long Johns"),
+        ("shirt|tee|hoodie", "Apparel & Accessories > Clothing > Shirts & Tops"),
+    ]
+    for words, cat in clothing:
+        if re.search(rf"\b({words})\b", name):
+            return cat
     return "Sporting Goods > Outdoor Recreation > Camping & Hiking"
 
 
