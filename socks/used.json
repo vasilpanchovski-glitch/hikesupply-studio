@@ -2,5 +2,6 @@
  {"id": "sp01", "card": "sk01", "shots": ["s02", "s19", "s18", "s06", "s08", "s12"], "headlines": ["COLD FEET ON THE COMMUTE?", "LONG FLIGHTS", "WINTER DOG WALKS", "EVENINGS AT HOME", "AND THE TRAIL"]},
  {"id": "sv01", "card": "sk02", "shots": ["v04", "v11", "v01", "v05", "v08"], "headlines": ["COLD FEET ON EVERY WALK?", "FLIGHTS", "COSY EVENINGS", "80% MERINO"]},
  {"id": "sp02", "card": "sk03", "shots": ["s26", "s21", "s10", "s03", "s04"], "headlines": ["FROZEN FEET ON THE PLATFORM?", "DESK DAYS", "FROSTY TRAILS", "FOR THE ONE WHO'S ALWAYS COLD", "MERINO WOOL HIKING SOCKS"]},
- {"id": "sv02", "card": "sk04", "shots": ["v06", "v10", "v13", "v03"], "headlines": ["COLD FEET AT HOME?", "DOG WALKS", "SOFT, NO WOOL ITCH", "MERINO WOOL HIKING SOCKS"]}
+ {"id": "sv02", "card": "sk04", "shots": ["v06", "v10", "v13", "v03"], "headlines": ["COLD FEET AT HOME?", "DOG WALKS", "SOFT, NO WOOL ITCH", "MERINO WOOL HIKING SOCKS"], "voice": true},
+ {"id": "pp02", "card": "sk05", "shots": ["s05"], "headlines": ["WARM FEET ALL WINTER"]}
 ]}

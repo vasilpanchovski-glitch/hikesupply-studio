@@ -1,11 +1,12 @@
 {
  "id": "sv02",
- "music": "music/embers.mp3",
+ "music": "socks/music/embers.mp3",
+ "voice": "socks/vo/sv02_vo.wav",
  "cover_at": 1.2,
  "segments": [
-  {"clip": "v06", "start": 0.0, "dur": 3.0, "title": "COLD FEET\nAT HOME?", "fade": 0, "pos": "top", "size": 105},
-  {"clip": "v10", "start": 0.5, "dur": 3.0, "title": "DOG WALKS", "pos": "top"},
-  {"clip": "v13", "start": 0.0, "dur": 2.8, "title": "SOFT,\nNO WOOL ITCH", "pos": "bottom", "size": 95},
-  {"clip": "v03", "start": 0.3, "dur": 4.6, "title": "MERINO WOOL\nHIKING SOCKS", "sub": "$19.99 a pair\n2 pairs save 10% · 3 or more save 15%\nLink in bio", "pos": "top", "shade": 0.85}
+  {"clip": "v06", "start": 0.0, "dur": 2.7, "title": "COLD FEET\nAT HOME?", "fade": 0, "pos": "top", "size": 105},
+  {"clip": "v10", "start": 0.5, "dur": 3.4, "title": "DOG WALKS", "pos": "top"},
+  {"clip": "v13", "start": 0.0, "dur": 3.4, "title": "SOFT,\nNO WOOL ITCH", "pos": "bottom", "size": 95},
+  {"clip": "v03", "start": 0.0, "dur": 5.0, "title": "MERINO WOOL\nHIKING SOCKS", "sub": "$19.99 a pair\n2 pairs save 10% · 3 or more save 15%\nLink in bio", "pos": "top", "shade": 0.85}
  ]
 }

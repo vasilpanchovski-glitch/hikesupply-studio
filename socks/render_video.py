@@ -1,6 +1,6 @@
 """Render a socks video post from a JSON spec.
 
-Spec: {"id": "sv01", "music": "path or null", "segments": [
+Spec: {"id": "sv01", "music": "path or null", "voice": "optional wav from voice/vo.py (music ducked under it)", "segments": [
   {"clip": "v04", "start": 0.0, "dur": 3.0, "title": "COLD FEET\\nON EVERY WALK?", "sub": "", "pos": "bottom"}]}
 clip = name in socks/materials/vid. Each segment is cut, scaled to 1080x1920 with a slow push-in,
 gets the same text style as the photo posts (white Barlow headline, soft gradient), clips are muted.
@@ -79,7 +79,15 @@ def render(spec):
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", silent])
     total = sum(s["dur"] for s in spec["segments"])
     final = os.path.join(out, spec["id"] + ".mp4")
-    if spec.get("music"):
+    if spec.get("voice") and spec.get("music"):
+        # voiceover (wav from voice/vo.py) on top, music ducked under it
+        mv = spec.get("music_vol", 0.22)
+        run(["ffmpeg", "-y", "-i", silent, "-i", spec["music"], "-i", spec["voice"], "-filter_complex",
+             f"[1:a]atrim=0:{total},volume={mv},afade=t=in:d=0.4,afade=t=out:st={total-1.2}:d=1.2[m];"
+             f"[2:a]aresample=44100,apad,atrim=0:{total}[v];"
+             f"[m][v]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5[a]",
+             "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest", final])
+    elif spec.get("music"):
         run(["ffmpeg", "-y", "-i", silent, "-i", spec["music"], "-filter_complex",
              f"[1:a]atrim=0:{total},afade=t=in:d=0.4,afade=t=out:st={total-1.2}:d=1.2,loudnorm=I=-16:TP=-1.5[a]",
              "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest", final])
