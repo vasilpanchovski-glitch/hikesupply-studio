@@ -72,6 +72,27 @@
     "FIRST TRACKS, OLD FACE",
     "FUNNY OLD MAN SKI MASK"
    ]
+  },
+  {
+   "id": "mv03",
+   "card": "mk02",
+   "remakeOf": "mv02",
+   "shots": [
+    "k03",
+    "k01",
+    "k05",
+    "k04"
+   ],
+   "headlines": [
+    "WHO INVITED GRANDPA?",
+    "HE BROUGHT A DATE",
+    "GRANDPA STILL SHREDS",
+    "PLOT TWIST",
+    "FUNNY OLD MAN SKI MASK"
+   ],
+   "music": "socks/music/embers.mp3",
+   "voice": "bm_george",
+   "note": "Vasil: needs a funny voiceover. Deadpan narrator added."
   }
  ]
 }
