@@ -208,7 +208,9 @@
   "photographer": "ConfinedRiley",
   "url": "https://www.pexels.com/photo/10145652/",
   "alt": "Sunset over a lake with mountain reflections, Banff National Park",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261120-9",
+  "pinDate": "2026-11-20"
  },
  "10939816": {
   "photographer": "Nandu Vasudevan",
@@ -268,13 +270,17 @@
   "photographer": "Sean Kernerman",
   "url": "https://www.pexels.com/photo/9657726/",
   "alt": "Pine-lined mountain lake in Alberta, Canada",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261120-4",
+  "pinDate": "2026-11-20"
  },
  "15859838": {
   "photographer": "Just a Dream Pictures",
   "url": "https://www.pexels.com/photo/15859838/",
   "alt": "Cloud-covered mountains above a dark forest valley",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261120-10",
+  "pinDate": "2026-11-20"
  },
  "17838430": {
   "photographer": "Nuray Yakın",
