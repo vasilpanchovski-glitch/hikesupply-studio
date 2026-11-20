@@ -17,26 +17,24 @@
     "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
    },
    "lastCheck": {
-    "date": "2026-11-19",
-    "time": "18:40Z",
+    "date": "2026-11-20",
+    "time": "16:25Z",
     "by": "importer",
     "stock": {
-     "Navy Blue / S": 2,
+     "Navy Blue / S": 495,
      "Navy Blue / L": 26,
-     "Green / S": 485,
+     "Green / S": 484,
      "Brown / S": 484,
      "Green / L": 9,
-     "Black / Grey / S": 482,
+     "Black / Grey / S": 481,
      "Brown / L": 471,
-     "Black / Grey / L": 3
+     "Black / Grey / L": 496
     },
     "belowLow": [
-     "Navy Blue / S",
      "Navy Blue / L",
-     "Green / L",
-     "Black / Grey / L"
+     "Green / L"
     ],
-    "note": "Run started late (fired 18:25Z). Supplier restocked a little: Navy Blue / L 16 -> 26, Green / L 4 -> 9; Shopify set to match. Others unchanged. Still no verified backup."
+    "note": "Supplier restocked Navy Blue / S (2 -> 495) and Black / Grey / L (3 -> 496); Shopify set to match. Navy Blue / L 26 and Green / L 9 still below low, no verified backup."
    },
    "backups": [],
    "candidates": [
