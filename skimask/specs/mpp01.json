@@ -1,0 +1,29 @@
+{
+ "id": "mpp01",
+ "dir": "skimask",
+ "img": "m10",
+ "focus": 0.5,
+ "title": "SNOW DAY\nGRANDPA",
+ "big": "-15%",
+ "note": "WHEN YOU BUY\n3+ MASKS",
+ "sub": "2 masks save 10%  \u00b7  9 faces  \u00b7  from $17.99",
+ "size": 125,
+ "big_size": 220,
+ "head_side": "right",
+ "deal_side": "left",
+ "keep": [
+  [
+   0.1,
+   0.24,
+   0.28,
+   0.42
+  ],
+  [
+   0.47,
+   0.24,
+   0.64,
+   0.42
+  ]
+ ],
+ "gap": -175
+}

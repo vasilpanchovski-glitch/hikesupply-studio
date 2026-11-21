@@ -1,0 +1,46 @@
+{
+ "id": "mv04",
+ "dir": "skimask",
+ "music": "socks/music/embers.mp3",
+ "voice": "skimask/vo/mv04_vo.wav",
+ "cover_at": 1.2,
+ "segments": [
+  {
+   "clip": "k03",
+   "start": 0.0,
+   "dur": 2.1,
+   "title": "WHO INVITED\nGRANDPA?",
+   "fade": 0,
+   "pos": "bottom"
+  },
+  {
+   "clip": "k01",
+   "start": 0.5,
+   "dur": 1.25,
+   "title": "HE BROUGHT\nA DATE",
+   "pos": "bottom"
+  },
+  {
+   "clip": "k05",
+   "start": 2.0,
+   "dur": 3.45,
+   "title": "GRANDPA\nSTILL SHREDS",
+   "pos": "bottom"
+  },
+  {
+   "clip": "k04",
+   "start": 0.5,
+   "dur": 2.0,
+   "title": "PLOT TWIST",
+   "pos": "bottom"
+  },
+  {
+   "clip": "k04",
+   "start": 3.0,
+   "dur": 4.6,
+   "title": "FUNNY OLD MAN\nSKI MASK",
+   "sub": "Nine faces, one size, from $17.99\n2 masks save 10% \u00b7 3+ save 15%\nLink in bio",
+   "shade": 0.85
+  }
+ ]
+}

@@ -93,6 +93,37 @@
    "music": "socks/music/embers.mp3",
    "voice": "bm_george",
    "note": "Vasil: needs a funny voiceover. Deadpan narrator added."
+  },
+  {
+   "id": "mv04",
+   "card": "mk02",
+   "remakeOf": "mv03",
+   "shots": [
+    "k03",
+    "k01",
+    "k05",
+    "k04"
+   ],
+   "headlines": [
+    "WHO INVITED GRANDPA?",
+    "HE BROUGHT A DATE",
+    "GRANDPA STILL SHREDS",
+    "PLOT TWIST",
+    "FUNNY OLD MAN SKI MASK"
+   ],
+   "music": "socks/music/embers.mp3",
+   "voice": "af_heart",
+   "note": "Vasil: very bad voiceover type. Same script, new voice: af_heart (our house voice) instead of the British bm_george."
+  },
+  {
+   "id": "mpp01",
+   "card": "mk04",
+   "shots": [
+    "m10"
+   ],
+   "headlines": [
+    "SNOW DAY GRANDPA"
+   ]
   }
  ]
 }
