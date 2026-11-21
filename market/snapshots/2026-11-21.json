@@ -1,0 +1,253 @@
+{
+ "date": "2026-11-21",
+ "previous": "2026-11-15",
+ "group": "b",
+ "note": "Group B. Empty fields mean the page did not show the number. Compared with the last group B run (Nov 15). Several Etsy shop pages and Goodreads could not be read from the cloud this run. Earth Pak had no new public data. Complaint mining covered baby and toddler hiking carriers, because our Hiking With Babies & Toddlers guide (p21) went live on Nov 16.",
+ "sellers": [
+  {
+   "name": "PrintablePatti",
+   "shop": {
+    "sales": "2.1k",
+    "rating": 4.9,
+    "reviews": 322
+   },
+   "products": [
+    {
+     "title": "Camping Checklist, Planner, Hiking Essentials ... Camping Log",
+     "price": 4.22,
+     "was": 8.45,
+     "pages": 18,
+     "item_reviews": 322,
+     "item_rating": 4.9,
+     "notes": "50% off, sale ends Nov 30 (unchanged since Nov 9); 8.5x11 only; star split 93% five, 2% one-star, no written low reviews shown"
+    }
+   ],
+   "offers": [
+    "50% off, ends Nov 30, runs through Black Friday and Cyber Monday"
+   ],
+   "reviews": {
+    "praise": [],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "month-long 50% sale through Black Friday",
+     "keyword-stuffed title"
+    ],
+    "traffic": "Etsy search"
+   },
+   "source": "https://www.etsy.com/listing/898385376"
+  },
+  {
+   "name": "AnkaKidsStudio",
+   "shop": {
+    "sales": 480,
+    "rating": 5.0,
+    "reviews": 20
+   },
+   "products": [
+    {
+     "title": "Nature Scavenger Hunt Bundle for Kids (3 PDFs)",
+     "price": 3.43,
+     "bestseller": true,
+     "item_reviews": 9,
+     "item_rating": 5.0,
+     "favorites": 183,
+     "notes": "US Letter and A4; listed as 2.99 EUR, small USD change is currency"
+    }
+   ],
+   "offers": [],
+   "reviews": {
+    "praise": [
+     "design",
+     "printable PDFs",
+     "helpful seller"
+    ],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "Bestseller badge",
+     "both paper sizes named",
+     "Star Seller"
+    ],
+    "traffic": "Etsy search"
+   },
+   "source": "https://www.etsy.com/listing/4506126306"
+  },
+  {
+   "name": "BigSkyChecklists",
+   "shop": {
+    "sales": 7,
+    "rating": 5.0,
+    "reviews": 3,
+    "listings": 36
+   },
+   "products": [
+    {
+     "title": "Ultimate Camping Planner Bundle",
+     "price": 3.99
+    },
+    {
+     "title": "Road Trip Camping Planner Bundle",
+     "price": 6.49
+    },
+    {
+     "title": "Ultimate Camping Checklist Bundle",
+     "price": 6.99
+    },
+    {
+     "title": "National Park Camping Checklist (Bear Aware)",
+     "price": 2.99
+    },
+    {
+     "title": "Last-Minute Camping Checklist",
+     "price": 2.99,
+     "notes": "was 1.99 on Nov 15"
+    },
+    {
+     "title": "Camping Etiquette Checklist (listed twice)",
+     "price": 2.99
+    },
+    {
+     "title": "RV Departure Checklist (listed twice)",
+     "price": 3.99
+    }
+   ],
+   "offers": [
+    "no sale"
+   ],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "duplicate listings",
+     "low prices $2.99-6.99"
+    ],
+    "traffic": "Etsy search"
+   },
+   "notes": "still 7 sales; last activity Oct 1, so the shop looks inactive",
+   "source": "https://www.etsy.com/shop/BigSkyChecklists"
+  },
+  {
+   "name": "An Acre in the City (Payhip)",
+   "products": [
+    {
+     "title": "National Park Adventure Itinerary | Fillable Travel Planner",
+     "price": 19.0,
+     "notes": "labelled 'On Sale' but sale and struck price are both $19.00; no reviews"
+    }
+   ],
+   "offers": [
+    "'On Sale' label with no real discount"
+   ],
+   "reviews": {
+    "note": "no reviews yet"
+   },
+   "marketing": {
+    "tactics": [
+     "sale label without a discount"
+    ]
+   },
+   "source": "https://payhip.com/b/xIwnT"
+  },
+  {
+   "name": "Dirt In My Shoes",
+   "shop": {
+    "rating": 4.94,
+    "reviews": 864
+   },
+   "products": [
+    {
+     "title": "Arches / Bryce Canyon / Canyonlands / Capitol Reef Itinerary",
+     "price": 29.0
+    },
+    {
+     "title": "Grand Canyon / Grand Teton / Rocky Mountain / Zion Itinerary",
+     "price": 44.0
+    },
+    {
+     "title": "Acadia / Glacier / Great Smoky Mountains / Olympic / Yellowstone / Yosemite Itinerary",
+     "price": 59.0
+    },
+    {
+     "title": "South Dakota Itinerary",
+     "price": 69.0
+    },
+    {
+     "title": "e-Gift Card",
+     "price": "from 10"
+    }
+   ],
+   "offers": [
+    "Buy 3+ itineraries, 10% off the whole order",
+    "e-gift card from $10",
+    "no Black Friday banner on Nov 21"
+   ],
+   "reviews": {
+    "note": "site shows 4.94 from 864 verified reviews; a 2023 blogger review names no real downsides (secret hike in most but not all itineraries)"
+   },
+   "marketing": {
+    "tactics": [
+     "multi-buy discount",
+     "gift card for the holidays",
+     "social proof: '100K+ itineraries sold', 'updated weekly'",
+     "price ladder by park size"
+    ],
+    "bait": "old free-resources subdomain redirects to the shop"
+   },
+   "notes": "same 15 itineraries and prices as Nov 15",
+   "source": "https://shop.dirtinmyshoes.com"
+  },
+  {
+   "name": "Earth Pak",
+   "products": [],
+   "reviews": {
+    "note": "no new public data"
+   },
+   "source": "https://shopsavvy.com/reviews-tldr/earth-pak-waterproof-dry-bag.md"
+  }
+ ],
+ "other_seen": [
+  {
+   "name": "DeclutterAndSell (Etsy, UK)",
+   "title": "Hiking Log Google Sheets: 52 Hikes a Year, all 64 National Parks, 14 US Long Trails, Dog Hikes tab, Kit List",
+   "price": 10.39,
+   "notes": "new Nov 9, 0 sales; a spreadsheet (not printable) version of the hiking log",
+   "source": "https://www.etsy.com/listing/4613353636"
+  },
+  {
+   "name": "MarcisShoppe",
+   "title": "Nature Scavenger Hunt for Kids",
+   "price": 2.0,
+   "item_reviews": 146,
+   "rating": 5.0,
+   "source": "https://www.etsy.com/listing/1101626951"
+  },
+  {
+   "name": "WandererDesignShop",
+   "title": "Printable Nature Scavenger Hunt (watercolour)",
+   "price": 2.0,
+   "ratings": 504,
+   "favorites": 1468,
+   "source": "https://www.etsy.com/listing/691306170"
+  }
+ ],
+ "changes_vs_previous": [
+  "BigSkyChecklists Last-Minute Camping Checklist $1.99 -> $2.99; shop inactive since Oct 1",
+  "AnkaKidsStudio 478 -> 480 sales, 180 -> 183 favorites",
+  "PrintablePatti, Dirt In My Shoes: no change, still no Black Friday banner at Dirt In My Shoes",
+  "An Acre in the City readable again: one $19 park itinerary, 'On Sale' label without a discount"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "multi-buy or bundle discount (Dirt In My Shoes 3+ = 10%, BigSky bundles)",
+   "gift options before the holidays (e-gift card)",
+   "long sale or sale label instead of a short Black Friday event (PrintablePatti 50% all November, An Acre 'On Sale' at full price)"
+  ],
+  "we_do_not_use": [
+   "a store gift card (o16 still waits for Vasil)"
+  ]
+ }
+}

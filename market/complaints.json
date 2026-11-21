@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport). 2026-11-13 pass: group A; Etsy and Payhip digital rivals again show only 5-star reviews or none, Darn Tough has no new Trustpilot reviews since Oct 21; added a Montem pole handle failure, a basic map in a park passport book, and a kids nature card game (small set, poor value). 2026-11-17 pass: group C; Payhip, Gumroad and the Hiker Hunger Walmart page again show no critical review text, so this run read 2-3 star reviews of packable down jackets (a budget Amazon-type jacket and L.L.Bean Ultralight 850), the benchmark for any insulated clothing the Hunter checks.",
- "updated": "2026-11-19",
+ "updated": "2026-11-21",
  "complaints": [
   {
    "type": "trekking pole",
@@ -2525,6 +2525,106 @@
    "date": "2026-08-03",
    "theme": "LED dog collar hard to fit",
    "found": "2026-11-19"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco AG Plus (Zappos)",
+   "what": "hip belt rubbed and bruised a narrow-waisted wearer; smallest torso setting still too big",
+   "source": "https://zappos.com/product/review/8662936",
+   "where": "Zappos 3 star",
+   "date": "2019-07-17",
+   "theme": "child carrier fit hurts (hip belt, torso, comfort)",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco AG Plus (Zappos)",
+   "what": "side pockets lose bigger items; sunshade flaps snag",
+   "source": "https://zappos.com/product/review/8662936",
+   "where": "Zappos 3 star",
+   "date": "2019-07-17",
+   "theme": "carrier sunshade snags or tears",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco AG Plus (Zappos)",
+   "what": "hip belt presses on two points for a wearer with wide hips and a narrow waist",
+   "source": "https://zappos.com/product/review/8662936",
+   "where": "Zappos 3 star",
+   "date": "2018-11-21",
+   "theme": "child carrier fit hurts (hip belt, torso, comfort)",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco AG Plus (Zappos)",
+   "what": "newer version less comfortable: stiff hip belt, thin shoulder pads, sunshade hard to pull out",
+   "source": "https://zappos.com/product/review/8662936",
+   "where": "Zappos 3 star",
+   "date": "2018-09-12",
+   "theme": "child carrier fit hurts (hip belt, torso, comfort)",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco AG Plus (Zappos)",
+   "what": "sunshade catches on frame screws and tore the mesh, replacement did the same",
+   "source": "https://zappos.com/product/review/8662936",
+   "where": "Zappos 2 star",
+   "date": "2018-04-11",
+   "theme": "carrier sunshade snags or tears",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco Plus (Zappos)",
+   "what": "child seat slid down by itself, torso setting would not stay on XS",
+   "source": "https://zappos.com/product/review/8662936",
+   "where": "Zappos 2 star",
+   "date": "2016-08-23",
+   "theme": "child carrier fit hurts (hip belt, torso, comfort)",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco child carrier (REI)",
+   "what": "too bulky for what it does, side buckles hard to undo and redo",
+   "source": "https://www.rei.com/product/164404/osprey-poco-child-carrier",
+   "where": "REI 2 star",
+   "date": "about 1 year before 2026-11-21",
+   "theme": "carrier bulky or buckles fiddly",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco LT (REI)",
+   "what": "comfort features of the full model removed, not for long hikes with a child",
+   "source": "https://www.rei.com/product/188339/osprey-poco-lt-child-carrier",
+   "where": "REI 1 star",
+   "date": "about 1 year before 2026-11-21",
+   "theme": "child carrier fit hurts (hip belt, torso, comfort)",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco LT (REI)",
+   "what": "weight sat badly, pain after about an hour",
+   "source": "https://www.rei.com/product/188339/osprey-poco-lt-child-carrier",
+   "where": "REI 2 star",
+   "date": "about 2 months before 2026-11-21",
+   "theme": "child carrier fit hurts (hip belt, torso, comfort)",
+   "found": "2026-11-21"
+  },
+  {
+   "type": "child carrier",
+   "product": "Osprey Poco Soft (CleverHiker review)",
+   "what": "stiff hip belt fiddly to release fast; straps take practice, easier with a second adult; back panel gets hot",
+   "source": "https://www.cleverhiker.com/hiking/osprey-poco-soft-child-carrier-review/",
+   "where": "editorial review cons",
+   "date": "2026-04-10",
+   "theme": "carrier bulky or buckles fiddly",
+   "found": "2026-11-21"
   }
  ],
  "themes": [
@@ -2571,6 +2671,10 @@
   {
    "theme": "no clear assembly or height instructions",
    "count": 7
+  },
+  {
+   "theme": "child carrier fit hurts (hip belt, torso, comfort)",
+   "count": 6
   },
   {
    "theme": "slow shipping / no reply",
@@ -2702,6 +2806,14 @@
   },
   {
    "theme": "LED dog collar hard to fit",
+   "count": 2
+  },
+  {
+   "theme": "carrier sunshade snags or tears",
+   "count": 2
+  },
+  {
+   "theme": "carrier bulky or buckles fiddly",
    "count": 2
   },
   {
