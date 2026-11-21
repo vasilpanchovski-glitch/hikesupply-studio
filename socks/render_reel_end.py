@@ -13,11 +13,19 @@ shift = int(sys.argv[3]) if len(sys.argv) > 3 else 150
 src = Image.open(os.path.join(R, "materials", "img", img + ".jpg")).convert("RGB")
 r = W / src.width
 src = src.resize((W, round(src.height * r)), Image.LANCZOS)
-src = src.crop((0, (src.height - H) // 2, W, (src.height - H) // 2 + H))
-im = Image.new("RGB", (W, H))
-im.paste(src, (0, shift))
-top = src.crop((0, 0, W, shift)).transpose(Image.FLIP_TOP_BOTTOM)  # mirror wood into the gap
-im.paste(top, (0, 0))
+if src.height < H:  # 4:5 photo (s35): whole photo at the bottom, blurred copy of its dark top above
+    top = H - src.height
+    im = src.crop((0, 0, W, 220)).resize((W, top + 220)).filter(ImageFilter.GaussianBlur(30))
+    canvas = Image.new("RGB", (W, H)); canvas.paste(im, (0, 0)); canvas.paste(src, (0, top))
+    m = Image.linear_gradient("L").resize((W, 160))
+    canvas.paste(im.crop((0, top, W, top + 160)), (0, top), Image.eval(m, lambda v: 255 - v))
+    im = canvas
+else:
+    src = src.crop((0, (src.height - H) // 2, W, (src.height - H) // 2 + H))
+    im = Image.new("RGB", (W, H))
+    im.paste(src, (0, shift))
+    top = src.crop((0, 0, W, shift)).transpose(Image.FLIP_TOP_BOTTOM)  # mirror wood into the gap
+    im.paste(top, (0, 0))
 im = im.convert("RGBA")
 sh = Image.new("L", (W, H), 0)
 ImageDraw.Draw(sh).rectangle((0, 0, W, 760), fill=150)
