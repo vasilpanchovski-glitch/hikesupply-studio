@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Lena counted Mount Rushmore as a national park.",
+   "gap": 0.2
+  },
+  {
+   "text": "It's a national memorial.",
+   "gap": 0.3
+  },
+  {
+   "text": "The Park Service runs over 400 sites, but only 64 are national parks.",
+   "gap": 0.25
+  },
+  {
+   "text": "The rule: check the name on nps.gov before you tick it.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your next road trip.",
+   "gap": 0.2
+  }
+ ]
+}

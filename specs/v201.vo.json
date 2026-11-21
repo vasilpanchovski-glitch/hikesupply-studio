@@ -1,0 +1,28 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "December twenty-first, the longest night of the year.",
+   "show": "December 21, the longest night of the year.",
+   "gap": 0.25
+  },
+  {
+   "text": "Sam's after-work walk ended on a dark road,",
+   "gap": 0.1
+  },
+  {
+   "text": "phone light in hand, black jacket on.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: after dark, carry a headlamp and wear lights drivers can see.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for the dark months.",
+   "gap": 0.2
+  }
+ ]
+}

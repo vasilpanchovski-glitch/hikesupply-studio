@@ -1,0 +1,3 @@
+{"dur": 16.0, "drop": 8.58, "b1": 3.35, "b2": 5.95, "key": 2, "bpm": 78, "prog": 1, "seed": 201, "clean": 1.2,
+ "amb": [[0.0, 8.58, "wind"]],
+ "sfx": [[0.3, "pop"], [0.9, "tick"], [3.35, "whoosh"], [3.5, "tick"], [4.6, "whoosh"], [4.9, "alert"], [5.95, "whoosh"], [6.0, "alert"], [7.2, "alert"], [8.58, "whoosh"], [8.7, "tick"], [9.94, "ding"], [10.55, "whoosh"], [10.7, "ding"], [11.9, "whoosh"], [12.2, "chime"]]}

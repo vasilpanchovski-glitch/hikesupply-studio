@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Ben ticked off parks on his old list of 63.",
+   "gap": 0.25
+  },
+  {
+   "text": "Then in October, Chiricahua in Arizona became national park number 64.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: check your list against nps.gov once a year.",
+   "gap": 0.2
+  },
+  {
+   "text": "Our free checklist already has all 64.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for your next trip.",
+   "gap": 0.2
+  }
+ ]
+}

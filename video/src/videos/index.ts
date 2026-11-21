@@ -127,6 +127,9 @@ import { V195 } from "./V195";
 import { V196 } from "./V196";
 import { V197 } from "./V197";
 import { V198 } from "./V198";
+import { V199 } from "./V199";
+import { V200 } from "./V200";
+import { V201 } from "./V201";
 
 
 import { X01 } from "./X01";
@@ -382,6 +385,9 @@ export const VIDEOS: { id: string; component: React.FC; seconds: number }[] = [
   { id: "V196", component: V196, seconds: 17.0 },
   { id: "V197", component: V197, seconds: 16.9 },
   { id: "V198", component: V198, seconds: 17.6 },
+  { id: "V199", component: V199, seconds: 17.6 },
+  { id: "V200", component: V200, seconds: 16.9 },
+  { id: "V201", component: V201, seconds: 16.0 },
   { id: "V28B", component: V28B, seconds: 28.5 },
   { id: "V29B", component: V29B, seconds: 27 },
   { id: "V30B", component: V30B, seconds: 27 },
