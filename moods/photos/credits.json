@@ -202,7 +202,9 @@
   "photographer": "Tobias Waibl",
   "url": "https://www.pexels.com/photo/5778822/",
   "alt": "Clear blue lake below forest and glaciers near Whistler, BC",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261121-10",
+  "pinDate": "2026-11-21"
  },
  "10145652": {
   "photographer": "ConfinedRiley",
@@ -292,7 +294,9 @@
   "photographer": "Ahmet Mert",
   "url": "https://www.pexels.com/photo/38230509/",
   "alt": "Misty mountain forest slope in morning fog",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261121-9",
+  "pinDate": "2026-11-21"
  },
  "6072918": {
   "photographer": "Pavel Danilyuk",
@@ -354,7 +358,9 @@
   "url": "https://www.pexels.com/photo/3183725/",
   "alt": "Warm wool socks by a bright window at home",
   "used": false,
-  "topic": "cozy socks at home"
+  "topic": "cozy socks at home",
+  "pinUsed": "pb20261121-7",
+  "pinDate": "2026-11-21"
  },
  "32924160": {
   "photographer": "Patrick Ruehle",
