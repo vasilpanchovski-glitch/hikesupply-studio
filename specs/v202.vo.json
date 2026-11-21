@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Nora wanted the summit at sunrise,",
+   "gap": 0.15
+  },
+  {
+   "text": "so she started at six, in full dark, with a road walk to the trailhead.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: headlamp on before you leave the car,",
+   "gap": 0.1
+  },
+  {
+   "text": "and a light on your back for the road.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for dark mornings.",
+   "gap": 0.2
+  }
+ ]
+}

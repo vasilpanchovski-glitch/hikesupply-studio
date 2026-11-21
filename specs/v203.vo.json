@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "The snow looked light, but every step Ava sank to her knee.",
+   "gap": 0.25
+  },
+  {
+   "text": "One mile took an hour, and she was soaked in sweat.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: when snow is deeper than your boot tops,",
+   "gap": 0.1
+  },
+  {
+   "text": "wear snowshoes or pick a packed trail.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for winter.",
+   "gap": 0.2
+  }
+ ]
+}

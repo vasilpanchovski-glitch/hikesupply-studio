@@ -1,0 +1,24 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Kate drove to Acadia in December for the Park Loop Road.",
+   "gap": 0.25
+  },
+  {
+   "text": "From December first to April fourteenth, most of it is closed to cars.",
+   "gap": 0.3,
+   "show": "From December 1 to April 14, most of it is closed to cars."
+  },
+  {
+   "text": "The rule: in winter, walk the carriage roads instead.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your Acadia trip.",
+   "gap": 0.2
+  }
+ ]
+}
