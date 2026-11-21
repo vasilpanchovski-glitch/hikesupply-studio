@@ -147,7 +147,8 @@ def build(page, lines, opts):
 <div><h3>Frame carrier</h3><div class="who">Once baby sits well alone</div><p>A hiking pack with a seat for the child. Makers usually require steady head control and sitting without help; check yours.</p><p class="small">Best for longer hikes with a toddler.</p></div></div>
 <h3 style="margin-top:14pt">Fit check for wraps, slings and front carriers <span class="small" style="font-family:var(--sans);font-weight:500">(tick each time)</span></h3>
 <div class="tk">{tk}</div>
-<div class="warn" style="margin-top:10pt"><b>Trip and fall safety.</b> Your balance changes with a child on your body. Watch every step, use trekking poles on uneven ground if they help, never bend at the waist with a frame carrier on (bend at the knees), and keep the frame carrier's harness fastened whenever the child is in it.</div>''', 5)
+<div class="warn" style="margin-top:10pt"><b>Trip and fall safety.</b> Your balance changes with a child on your body. Watch every step, use trekking poles on uneven ground if they help, never bend at the waist with a frame carrier on (bend at the knees), and keep the frame carrier's harness fastened whenever the child is in it.</div>
+<div class="box" style="margin-top:10pt"><p style="margin:0"><b>Test a frame carrier at home first.</b> Set it up with the maker's fit guide and stay within its age and weight limits. Rest the hip belt on your hip bones, then fine-tune the straps with your child sitting in it. Walk 30 to 60 minutes at home or around the block before the first trail, and re-check every strap and buckle at each stop.</p></div>''', 5, notes="")
 
     # ---------- 6 toddlers walking
     pg(f'''<div class="kicker">The short guide</div><h2>When toddlers walk</h2>
