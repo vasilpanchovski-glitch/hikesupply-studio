@@ -15,7 +15,7 @@ r = max(W / src.width, H / src.height)
 src = src.resize((round(src.width * r), round(src.height * r)), Image.LANCZOS)
 x = (src.width - W) // 2; y = (src.height - H) // 2 if mode == "feed" else (src.height - H) // 2
 im = src.crop((x, y, x + W, y + H))
-if mode == "reel":  # push the photo down so the socks sit below the text (mirror wood into the gap)
+if mode == "reel" and img != "s34":  # push the photo down so the socks sit below the text (mirror wood into the gap)
     shift = 150 if img == "s28" else 330; base = im.copy(); im.paste(base, (0, shift)); im.paste(base.crop((0, 0, W, shift)).transpose(Image.FLIP_TOP_BOTTOM), (0, 0))
 im = im.convert("RGBA")
 sh = Image.new("L", (W, H), 0)
