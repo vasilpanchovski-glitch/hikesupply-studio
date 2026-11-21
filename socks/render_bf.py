@@ -60,7 +60,7 @@ if mode == "feed":
     yy += 16
     d.text((M, yy), "Merino wool socks", font=ImageFont.truetype(FONT_B, 30), fill="white"); yy += 42
     d.text((M, yy), "3 pairs for $39.98", font=ImageFont.truetype(FONT_B, 30), fill="white"); yy += 42
-    d.text((M, yy), "Nov 27 - Dec 1", font=ImageFont.truetype(FONT_B, 26), fill="white")
+    d.text((M, yy), "Until Dec 1", font=ImageFont.truetype(FONT_B, 26), fill="white")
 else:
     sz = 230
     while d.textlength("BLACK FRIDAY", font=ImageFont.truetype(FONT, sz)) > W - 2 * M: sz -= 2
@@ -68,5 +68,5 @@ else:
     d.text((M - 8, yy - 10), "BLACK FRIDAY", font=fbf, fill="white"); yy += int(sz * 0.95)
     fb = ImageFont.truetype(FONT, 140)
     d.text((M - 6, yy), "BUY 2, GET 1 FREE", font=fb, fill=GREEN); yy += 150
-    d.text((M, yy), "Merino wool socks  \u00b7  3 pairs for $39.98  \u00b7  Nov 27 - Dec 1", font=ImageFont.truetype(FONT_B, 34), fill="white"); yy += 50
+    d.text((M, yy), "Merino wool socks  \u00b7  3 pairs for $39.98  \u00b7  Until Dec 1", font=ImageFont.truetype(FONT_B, 34), fill="white"); yy += 50
 im.convert("RGB").save(out, quality=92); print(out, "text ends", yy)
