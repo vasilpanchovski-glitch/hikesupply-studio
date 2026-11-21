@@ -4,15 +4,35 @@ Spec: {"id": "sv01", "music": "path or null", "voice": "optional wav from voice/
   {"clip": "v04", "start": 0.0, "dur": 3.0, "title": "COLD FEET\\nON EVERY WALK?", "sub": "", "pos": "bottom"}]}
 clip = name in socks/materials/vid. Each segment is cut, scaled to 1080x1920 with a slow push-in,
 gets the same text style as the photo posts (white Barlow headline, soft gradient), clips are muted.
+Every shot carries the colour HikeSupply Co. logo top left (Vasil 2026-11-20: "start adding the
+hikesupplyco logo on each video"); spec "logo": "white" for the all-white one, false to leave it out.
 Output: socks/posts/<id>/<id>.mp4 plus <id>.jpg cover (first segment with text).
 """
 import json, os, subprocess, sys, tempfile
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 FONT_H = os.path.join(ROOT, "..", "pins", "BarlowCondensed-ExtraBold.ttf")
 FONT_B = "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf"
 W, H = 1080, 1920
+LOGO_COLOR = os.path.join(ROOT, "brand", "logo_color.png")
+LOGO_WHITE = os.path.join(ROOT, "brand", "logo_white.png")
+
+
+def add_logo(im, which, lw=220, x=70, y=66):
+    if which is False:
+        return im
+    lg = Image.open(LOGO_WHITE if which == "white" else LOGO_COLOR).convert("RGBA")
+    lg = lg.resize((lw, int(lg.height * lw / lg.width)), Image.LANCZOS)
+    # soft dark shadow so the white text reads on snow or bright sky
+    sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    a = lg.split()[3].point(lambda v: int(v * 0.55))
+    blk = Image.new("RGBA", lg.size, (0, 0, 0, 255)); blk.putalpha(a)
+    sh.alpha_composite(blk, (x + 3, y + 4))
+    sh = sh.filter(ImageFilter.GaussianBlur(7))
+    im = Image.alpha_composite(im, sh)
+    im.alpha_composite(lg, (x, y))
+    return im
 
 
 def overlay(seg, path):
@@ -45,6 +65,7 @@ def overlay(seg, path):
         for ln in subs:
             d.text((78, y), ln, font=fb, fill="white")
             y += sh
+    im = add_logo(im, seg.get("_logo", "color"))
     im.save(path)
 
 
@@ -59,6 +80,7 @@ def render(spec):
     parts = []
     for i, s in enumerate(spec["segments"]):
         ov = os.path.join(tmp, f"o{i}.png")
+        s = dict(s, _logo=spec.get("logo", "color"))
         overlay(s, ov)
         src = os.path.join(ROOT, "..", spec.get("dir","socks"), "materials", "vid", s["clip"] + ".mp4")
         p = os.path.join(tmp, f"p{i}.mp4")
