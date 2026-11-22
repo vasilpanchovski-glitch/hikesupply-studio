@@ -2,6 +2,9 @@
 python3 socks/render_bf.py feed <img id> <out.jpg>     4:5 card, narrow left text column
 python3 socks/render_bf.py reel <img id> <out.jpg>     9:16 end card, text in the top third (Reels safe zone)
 Add "right" as a 4th argument to put the feed text column on the right (s35: hands and socks sit left).
+python3 socks/render_bf.py square <img id> <out.jpg> [right] [crop_y]   1:1 card for Instagram carousels (Vasil 2026-11-22:
+  IG shows carousel cards square, so the 4:5 card lost its logo). No logo (the account name sits above the ad),
+  text starts below the "1/2" counter in the top right.
 Reel: a 4:5 photo is fitted to the width and set at the bottom; the dark top is extended with a blurred copy."""
 import os, sys
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
@@ -11,7 +14,10 @@ FONT_B = "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf"
 GREEN = "#d9e2c8"
 mode, img, out = sys.argv[1], sys.argv[2], sys.argv[3]
 RIGHT = len(sys.argv) > 4 and sys.argv[4] == "right"
-W, H = (1080, 1350) if mode == "feed" else (1080, 1920)
+SQ = mode == "square"
+CROP_Y = int(sys.argv[5]) if len(sys.argv) > 5 else None
+if SQ: mode = "feed"
+W, H = (1080, 1080) if SQ else (1080, 1350) if mode == "feed" else (1080, 1920)
 M = 60 if mode == "feed" else 64
 src = Image.open(os.path.join(R, "materials", "img", img + ".jpg")).convert("RGB")
 FIT = mode == "reel" and src.width / src.height > 0.7
@@ -28,7 +34,7 @@ if FIT:  # keep the whole 4:5 photo, bottom-aligned; fill the top with a blurred
 else:
     r = max(W / src.width, H / src.height)
     src = src.resize((round(src.width * r), round(src.height * r)), Image.LANCZOS)
-    x = (src.width - W) // 2; y = (src.height - H) // 2
+    x = (src.width - W) // 2; y = (src.height - H) // 2 if CROP_Y is None else CROP_Y
     im = src.crop((x, y, x + W, y + H))
 if mode == "reel" and not FIT and img != "s34":  # push the photo down so the socks sit below the text (mirror wood into the gap)
     shift = 150 if img == "s28" else 330; base = im.copy(); im.paste(base, (0, shift)); im.paste(base.crop((0, 0, W, shift)).transpose(Image.FLIP_TOP_BOTTOM), (0, 0))
@@ -43,7 +49,8 @@ lw = 190 if mode == "feed" else 210
 lg = lg.resize((lw, int(lg.height * lw / lg.width)), Image.LANCZOS)
 yy = 50 if mode == "feed" else 200
 X0 = W - M - 262 if RIGHT else M  # left edge of the text column
-im.alpha_composite(lg, (X0 if mode == "feed" else M, yy)); yy += lg.height + 30
+if SQ: yy = 105
+else: im.alpha_composite(lg, (X0 if mode == "feed" else M, yy)); yy += lg.height + 30
 if mode == "feed": M = X0
 if mode == "feed":
     sz = 130

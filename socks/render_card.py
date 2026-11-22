@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 R = os.path.dirname(os.path.abspath(__file__))
 FONT = os.path.join(R, "..", "pins", "BarlowCondensed-ExtraBold.ttf")
 FONT_B = "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf"
-W, H, M = 1080, 1350, 60
+W, H, M = 1080, int(os.environ.get("CARD_H", 1350)), 60  # CARD_H=1080 for square Instagram carousel cards
 out, title, sub, imgs = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4:]
 def load(k):
     p = k if os.path.exists(k) else os.path.join(R, "materials", "img", k + ".jpg")
@@ -16,7 +16,7 @@ def cover(im, w, h, fy=0.5):
     r = max(w / im.width, h / im.height); im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
     x = (im.width - w) // 2; y = int((im.height - h) * fy); return im.crop((x, y, x + w, y + h))
 if len(imgs) == 1:
-    im = cover(load(imgs[0]), W, H)
+    im = cover(load(imgs[0]), W, H, float(os.environ.get("CARD_FY", 0.5)))  # CARD_FY: 0 top .. 1 bottom
 else:
     im = Image.new("RGB", (W, H), (233, 228, 220)); top = 300; g = 12
     cw, ch = (W - 3 * g) // 2, (H - top - 3 * g) // 2
