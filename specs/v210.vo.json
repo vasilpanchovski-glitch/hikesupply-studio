@@ -1,0 +1,23 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Mia drove two hours in a warm car, wearing her hiking socks.",
+   "gap": 0.25
+  },
+  {
+   "text": "Her feet sweated, and at the cold trailhead they chilled fast.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: pull on fresh, dry wool socks at the trailhead.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for winter.",
+   "gap": 0.2
+  }
+ ]
+}
