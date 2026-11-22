@@ -1,0 +1,23 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Winter break, and Marco's kids were bored by mile one.",
+   "gap": 0.25
+  },
+  {
+   "text": "Then he gave them a job: find three animal tracks in the snow.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: give kids a mission, not a distance.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for your next family hike.",
+   "gap": 0.2
+  }
+ ]
+}

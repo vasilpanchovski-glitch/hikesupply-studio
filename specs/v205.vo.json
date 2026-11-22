@@ -1,0 +1,24 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Jess saw thirty degrees and left her face bare.",
+   "gap": 0.25,
+   "show": "Jess saw 30\u00b0F and left her face bare."
+  },
+  {
+   "text": "On the ridge, the wind made it feel far colder, and her cheeks went numb.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: check the feels-like temperature and cover your face and neck.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your next winter hike.",
+   "gap": 0.2
+  }
+ ]
+}
