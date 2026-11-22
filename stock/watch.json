@@ -17,24 +17,25 @@
     "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
    },
    "lastCheck": {
-    "date": "2026-11-20",
-    "time": "16:25Z",
+    "date": "2026-11-22",
+    "time": "11:20Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 495,
      "Navy Blue / L": 26,
      "Green / S": 484,
      "Brown / S": 484,
-     "Green / L": 9,
-     "Black / Grey / S": 481,
+     "Green / L": 19,
+     "Black / Grey / S": 479,
      "Brown / L": 471,
-     "Black / Grey / L": 496
+     "Black / Grey / L": 10
     },
     "belowLow": [
      "Navy Blue / L",
-     "Green / L"
+     "Green / L",
+     "Black / Grey / L"
     ],
-    "note": "Supplier restocked Navy Blue / S (2 -> 495) and Black / Grey / L (3 -> 496); Shopify set to match. Navy Blue / L 26 and Green / L 9 still below low, no verified backup."
+    "note": "Black / Grey / L dropped 496 -> 10 at the supplier; Green / L 9 -> 19; Shopify set to match (DENY). Navy Blue / L 26, Green / L 19, Black / Grey / L 10 below low, no verified backup."
    },
    "backups": [],
    "candidates": [
@@ -85,6 +86,13 @@
      "checked": "2026-11-17",
      "result": "fail",
      "note": "No US-warehouse listing of this sock; results were compression, cotton and cycling socks."
+    },
+    {
+     "url": "https://www.aliexpress.us/item/3256805899966887.html",
+     "store": "",
+     "checked": "2026-11-22",
+     "result": "fail",
+     "note": "Same look, 5.0 but only 3 reviews and 16 sold, one size EU 42-46 only, $6.79-6.87, delivery Dec 1-6. Too few orders to trust; stock shown (8,8xx per colour) looks like a placeholder."
     }
    ],
    "supplier": {
