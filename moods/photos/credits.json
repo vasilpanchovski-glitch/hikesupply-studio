@@ -3,7 +3,9 @@
   "photographer": "Biren Negi",
   "url": "https://www.pexels.com/photo/28750773/",
   "alt": "Mist-covered mountain peak",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261122-10",
+  "pinDate": "2026-11-22"
  },
  "17719275": {
   "photographer": "Alis Martini",
@@ -157,7 +159,9 @@
   "photographer": "Ali Kazal",
   "url": "https://www.pexels.com/photo/28848623/",
   "alt": "Mountain peak over a Canadian forest in fall",
-  "used": true
+  "used": true,
+  "pinUsed": "pb20261122-9",
+  "pinDate": "2026-11-22"
  },
  "29188538": {
   "photographer": "Mario Vogt",
@@ -358,9 +362,7 @@
   "url": "https://www.pexels.com/photo/3183725/",
   "alt": "Warm wool socks by a bright window at home",
   "used": false,
-  "topic": "cozy socks at home",
-  "pinUsed": "pb20261121-7",
-  "pinDate": "2026-11-21"
+  "topic": "cozy socks at home"
  },
  "32924160": {
   "photographer": "Patrick Ruehle",
