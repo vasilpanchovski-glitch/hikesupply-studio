@@ -18,7 +18,7 @@
    },
    "lastCheck": {
     "date": "2026-11-22",
-    "time": "11:20Z",
+    "time": "16:15Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 495,
@@ -35,7 +35,7 @@
      "Green / L",
      "Black / Grey / L"
     ],
-    "note": "Black / Grey / L dropped 496 -> 10 at the supplier; Green / L 9 -> 19; Shopify set to match (DENY). Navy Blue / L 26, Green / L 19, Black / Grey / L 10 below low, no verified backup."
+    "note": "17:15 Skopje re-check: unchanged since 11:20Z, Shopify matches (DENY). Black / Grey / L dropped 496 -> 10 at the supplier; Green / L 9 -> 19; Shopify set to match (DENY). Navy Blue / L 26, Green / L 19, Black / Grey / L 10 below low, no verified backup."
    },
    "backups": [],
    "candidates": [
