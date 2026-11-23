@@ -1,0 +1,11 @@
+{
+ "id": "sv03",
+ "music": "socks/music/embers.mp3",
+ "cover_at": 1.2,
+ "segments": [
+  {"clip": "v01", "start": 0.3, "dur": 3.0, "title": "STUCK ON A\nGIFT IDEA?", "fade": 0, "pos": "top", "size": 120},
+  {"clip": "v07", "start": 0.5, "dur": 2.8},
+  {"clip": "v03", "start": 2.0, "dur": 3.0, "title": "WICKS\nSWEAT", "pos": "top", "size": 110},
+  {"clip": "v04", "start": 0.2, "dur": 4.8, "title": "MERINO WOOL\nHIKING SOCKS", "sub": "$19.99 a pair\nBuy 2, get 1 free until Dec 1\nLink in bio", "pos": "top", "shade": 0.85}
+ ]
+}
