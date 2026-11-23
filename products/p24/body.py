@@ -65,13 +65,13 @@ CREDIT = "Lindsey Mateo / Pexels"
 
 def build(page, lines, opts):
     # ---------- 1 cover
-    page('''<div class="cphoto"></div><div class="cshade"></div><div class="brand" style="position:relative">HikeSupply Co.</div>
+    page('''<div class="cphoto"></div><div class="cshade"></div>
+<div style="position:relative"><div class="brand">HikeSupply Co.</div><h1 style="margin-top:26pt">Trail Food Planner</h1><p class="sub" style="max-width:6.2in">How much to pack, what to eat and when. Fill-in planners for a long day hike, a weekend overnight and a 3 to 5 day trip, plus a food weight worksheet, meal ideas and a shopping list.</p>
+<div class="meta" style="margin-top:16pt"><span>20 printable pages</span><span>lb + kg, oz + g</span><span>Day hikes to 5 days</span></div></div>
 <div class="art bwart"><svg width="500" height="340" viewBox="0 0 500 340" fill="none" stroke="#2C3B2E" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
 <path d="M0 300 L120 170 L190 240 L280 120 L400 260 L450 220 L500 280"/>
 <path d="M175 210 h150 v20 a75 75 0 0 1 -150 0 z"/><path d="M210 195 c-6 -14 6 -22 0 -36 M250 195 c-6 -14 6 -22 0 -36 M290 195 c-6 -14 6 -22 0 -36"/>
-<path d="M325 222 h28"/></svg></div>
-<div style="position:relative"><h1>Trail Food Planner</h1><p class="sub" style="max-width:6.2in">How much to pack, what to eat and when. Fill-in planners for a long day hike, a weekend overnight and a 3 to 5 day trip, with a food weight worksheet, no-cook and boil-only meal ideas, a shopping list and a repack checklist.</p>
-<div class="meta" style="margin-top:22pt"><span>20 printable pages</span><span>lb + kg, oz + g</span><span>Day hikes to 5 days</span></div></div>''', 0, "cover photo")
+<path d="M325 222 h28"/></svg></div><div></div>''', 0, "cover photo")
 
     # ---------- 2 how to use
     page('''<div class="kicker">Start here</div><h2>How to use this planner</h2>

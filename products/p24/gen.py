@@ -111,8 +111,8 @@ html.bw .box,html.bw .tot>div,html.bw .pk.blank{background:#fff;border:0.8pt sol
 html.bw .warn{background:#fff}
 html.bw .box.forest{color:#222}html.bw .box.forest h3{color:#222}
 .cover.photo{position:relative;overflow:hidden;background:#1F3A2E}
-.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center top/cover no-repeat}
-.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.55) 0%,rgba(20,38,30,0) 18%,rgba(20,38,30,0) 42%,rgba(20,38,30,.82) 70%,rgba(20,38,30,.96) 100%)}
+.cover.photo .cphoto{position:absolute;inset:0;background:url(cover-photo.jpg) center bottom/cover no-repeat}
+.cover.photo .cshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,30,.95) 0%,rgba(20,38,30,.85) 30%,rgba(20,38,30,.35) 46%,rgba(20,38,30,0) 56%,rgba(20,38,30,0) 100%)}
 .cover.photo .brand{color:#F5F1EA;text-shadow:0 1px 6px rgba(0,0,0,.4)}
 .cover.photo .bwart{display:none}
 .cover.photo .sub{color:#E4E8E1}
