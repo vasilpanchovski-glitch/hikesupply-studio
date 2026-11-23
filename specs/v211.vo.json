@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "After a big snowfall, Ray cut across a steep, open snow slope.",
+   "gap": 0.25
+  },
+  {
+   "text": "That's where avalanches start.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: no avalanche training? Stay off and out from under steep snow.",
+   "gap": 0.25
+  },
+  {
+   "text": "Check the avalanche forecast.",
+   "gap": 0.25
+  },
+  {
+   "text": "Save this for winter.",
+   "gap": 0.2
+  }
+ ]
+}

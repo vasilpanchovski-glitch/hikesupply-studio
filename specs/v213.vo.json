@@ -1,0 +1,23 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Lily shut every vent to stay warm on a winter camp night.",
+   "gap": 0.25
+  },
+  {
+   "text": "By morning, her breath had left the tent walls wet.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: keep the vents open a little, even in the cold.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for winter camping.",
+   "gap": 0.2
+  }
+ ]
+}

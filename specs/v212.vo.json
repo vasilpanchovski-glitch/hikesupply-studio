@@ -1,0 +1,27 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Ivy pulled her gaiter over her nose on the climb.",
+   "gap": 0.25
+  },
+  {
+   "text": "Her glasses fogged with every breath.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: on the climb, keep the gaiter below your nose.",
+   "gap": 0.3
+  },
+  {
+   "text": "Pull it up when you stop, or turn into the wind.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this for cold days.",
+   "gap": 0.2
+  }
+ ]
+}
