@@ -93,6 +93,8 @@ Topics already used (do not repeat): trekking pole height, neck gaiter, heel-loc
 
 ## Rules for every agent
 
+- Gemini in Vasil's Chrome (Vasil 2026-11-24): always switch to the Pro account vasilpanchovski@yahoo.com before generating. The work account v.pancovski@cmx.mk hits the image limit after 1 picture.
+
 - Since 2026-10-25 (Vasil's decision) the improvement agents work every second day (odd days of the month): Product Scout, Product Hunter, Market Watch, Sales Planner, Ads Manager, Store Doctor audits, Blog Writer articles, Search Specialist audits. Each still respects its own cap on waiting items, so Vasil's inbox never floods: if enough is waiting, improve what exists instead (fix rejected items, check live products) or stop.
 
 - Nothing goes public without approval in HQ. Approved means `status: approved` written by Vasil, or, for `pins` and `articles` only, by the Store Manager (`approvedBy: "manager"`). Vasil delegated those two to him.
