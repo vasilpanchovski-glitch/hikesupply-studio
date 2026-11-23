@@ -415,7 +415,9 @@
     "url": "https://www.pexels.com/photo/3273803/",
     "alt": "Grand Canyon South Rim at sunset, layered canyon walls, tiny distant hiker on a ledge",
     "used": false,
-    "topic": "Grand Canyon"
+    "topic": "Grand Canyon",
+    "pinUsed": "pb20261123-1",
+    "pinDate": "2026-11-23"
   },
   "17122289": {
     "photographer": "Isabel  Wright",
@@ -534,7 +536,9 @@
     "url": "https://www.pexels.com/photo/6033812/",
     "alt": "Compass and magnifier on a paper trail map",
     "used": false,
-    "topic": "map and compass"
+    "topic": "map and compass",
+    "pinUsed": "pb20261123-9",
+    "pinDate": "2026-11-23"
   },
   "10480585": {
     "photographer": "Lena Glukhova",
@@ -597,7 +601,9 @@
     "url": "https://www.pexels.com/photo/20563956/",
     "alt": "Mountain lake with mirror reflections, Glacier National Park",
     "used": false,
-    "topic": "Glacier National Park"
+    "topic": "Glacier National Park",
+    "pinUsed": "pb20261123-10",
+    "pinDate": "2026-11-23"
   },
   "25792384": {
     "photographer": "Heather R",
