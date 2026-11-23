@@ -1,0 +1,47 @@
+{
+ "date": "2026-11-23",
+ "previous": "2026-11-17",
+ "group": "c",
+ "note": "Group C. Empty fields mean the page did not show the number. Compared with the last group C run (Nov 17). Travel50States and ThePrintedSmile again did not come up in search, so their shops could not be opened (third run in a row for ThePrintedSmile: replace both at the monthly review). Hiker Hunger read from Walmart and a reseller price page. Complaint mining covered tick removers and AirTag dog collar holders, because we launched both this week.",
+ "sellers": [
+  {"name": "Kingdom over culture life (Payhip)", "products": [{"title": "Utah's Mighty Five: A Family Road Trip Guide (9 days, 5 parks)", "format": "guide PDF", "pages": 10, "price": 14.0, "notes": "unchanged since Oct 31: 'On Sale' label with no old price, no reviews, no other products, no Black Friday text"}], "offers": ["'On Sale' label only"], "reviews": {}, "marketing": {"tactics": ["'On Sale' label with no old price", "first-person 'what we wish someone told us' title"]}, "source": "https://payhip.com/b/B7YEG"},
+  {"name": "milesandhikes (Gumroad)", "products": [
+    {"title": "Best of Miles & Hikes: 4 Essential Guides", "format": "bundle", "pages": "145+", "price": 19.99, "notes": "unchanged, no discount, no Black Friday text", "url": "https://milesandhikes.gumroad.com/l/bestofmhfourguides"},
+    {"title": "Nature Weekend Reset Planner Guide", "format": "planner", "pages": 21, "price": 5.99, "notes": "price from page metadata only", "url": "https://milesandhikes.gumroad.com/l/natureweekendreset"},
+    {"title": "Leave No Trace Cheat Sheet", "price": 0, "notes": "$0+, no email form or upsell shown", "url": "https://milesandhikes.gumroad.com/l/lntcheatsheet"}],
+   "offers": ["no sale"], "reviews": {}, "marketing": {"tactics": ["free cheat sheet next to paid guides", "narrow audiences (midlife women, solo road trips)", "4-guide value bundle"]}},
+  {"name": "Travel50States", "products": [], "offers": [], "reviews": {}, "marketing": {}, "notes": "not readable this run (no shop link in search results)"},
+  {"name": "ThePrintedSmile", "products": [], "offers": [], "reviews": {}, "marketing": {}, "notes": "not readable again; no hiking listings when last seen Nov 11. Replace at monthly review."},
+  {"name": "Hiker Hunger Outfitters", "products": [
+    {"title": "100% Carbon Fiber Trekking Poles (Walmart)", "price": "64.97-74.99", "notes": "still out of stock; 4.9 from 1,124 ratings (5 star 1,022, 4 star 74, 3 star 20, 2 star 2, 1 star 6), unchanged; no low reviews shown", "url": "https://www.walmart.com/ip/2288021295"},
+    {"title": "100% Carbon Fiber Trekking Poles (reseller)", "price": 99.99, "notes": "same as Nov 17, no Black Friday cut", "url": "https://reach.dog/shop/hiker-hunger-outfitters/products/100-carbon-fiber-trekking-poles"}],
+   "offers": [], "reviews": {}, "marketing": {"tactics": ["'by USA Brand' in the title", "price held high into Black Friday week"]}},
+  {"name": "Decathlon Canada (hiking)", "shop": {"free_shipping_over": 70, "currency": "CAD"},
+   "products": [
+    {"title": "Hiking clearance", "notes": "124 items (110 on Nov 17); many now tagged 'Black Friday, promo 2026-11-20 to 2026-11-30'", "url": "https://www.decathlon.ca/en/deals/hiking-clearance"},
+    {"title": "SIMOND Men's 70 L Hiking Backpack MT 100 Easyfit", "price": 79.99, "was": 129.99, "currency": "CAD"},
+    {"title": "SIMOND Trekking Backpack 50+10 L MT 500 Air", "price": 99.99, "was": 159.99, "currency": "CAD"},
+    {"title": "SIMOND Softshell Jacket MT 900 Windwarm", "price": 79.99, "was": 99.99, "currency": "CAD"},
+    {"title": "SIMOND Women's Merino Half-Zip T-Shirt", "price": 55.99, "was": 69.99, "currency": "CAD"},
+    {"title": "SIMOND Tactile Stretch Trekking Gloves MT 500", "price": 12.99, "was": 16.99, "currency": "CAD"},
+    {"title": "SIMOND Fingerless Gloves/Mittens MT 900", "price": 25.99, "was": 31.99, "currency": "CAD"},
+    {"title": "FABER North Trek snowshoes", "price": 40.0, "was": 80.0, "currency": "CAD"},
+    {"title": "QUECHUA Snow Hiking Crampons SH 100", "price": 10.0, "was": 20.0, "currency": "CAD"}],
+   "offers": ["Black Friday promo Nov 20-30 (11 days, not one weekend)", "free shipping over $70 CAD"], "reviews": {}, "marketing": {"tactics": ["Black Friday as a long window with a clear end date", "winter traction and gloves at half price"]}}
+ ],
+ "other_seen": [
+  "Etsy: 'US Hiking Log & Planner: Google Sheets Hiking Journal, 52 Hikes a Year, National Parks Checklist and Long Trail Tracker' (https://www.etsy.com/listing/4613353636), a spreadsheet hiking log, the format we noted as missing on Nov 17",
+  "Etsy: National Parks scratch-off travel map, title says over 15,000 sold (https://www.etsy.com/it/listing/477852466/63-national-parks-scratch-off-travel-map)"
+ ],
+ "changes_vs_previous": [
+  "Decathlon Canada started Black Friday on Nov 20, running to Nov 30; hiking clearance up from 110 to 124 items",
+  "Hiker Hunger pole still $99.99 at the reseller and out of stock at Walmart, no sale",
+  "Kingdom over culture and milesandhikes: no change, no Black Friday offer 4 days before",
+  "Travel50States and ThePrintedSmile still unreadable"
+ ],
+ "how_they_sell": {
+  "repeats": ["long sale window with a stated end date instead of one weekend (Decathlon Nov 20-30, PrintablePatti 50% to Nov 30)", "a free item next to paid ones (milesandhikes LNT sheet)", "value bundles of several guides (milesandhikes 4 guides $19.99)"],
+  "we_do_not_use_yet": ["a spreadsheet (Google Sheets) version of a hiking log"],
+  "black_friday": "Small digital sellers in group C show no Black Friday offer 4 days before; the big gear store runs an 11-day window with a real end date."
+ }
+}

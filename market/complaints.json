@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport). 2026-11-13 pass: group A; Etsy and Payhip digital rivals again show only 5-star reviews or none, Darn Tough has no new Trustpilot reviews since Oct 21; added a Montem pole handle failure, a basic map in a park passport book, and a kids nature card game (small set, poor value). 2026-11-17 pass: group C; Payhip, Gumroad and the Hiker Hunger Walmart page again show no critical review text, so this run read 2-3 star reviews of packable down jackets (a budget Amazon-type jacket and L.L.Bean Ultralight 850), the benchmark for any insulated clothing the Hunter checks.",
- "updated": "2026-11-21",
+ "updated": "2026-11-23",
  "complaints": [
   {
    "type": "trekking pole",
@@ -2625,6 +2625,156 @@
    "date": "2026-04-10",
    "theme": "carrier bulky or buckles fiddly",
    "found": "2026-11-21"
+  },
+  {
+   "type": "tick remover",
+   "product": "Tick Patrol remover (REI)",
+   "what": "slid over a tiny tick without grabbing it, tweezers needed",
+   "source": "https://www.rei.com/product/179307/the-tick-patrol-tick-remover-tool",
+   "where": "REI 2-star review",
+   "date": "about 2021",
+   "theme": "tick tool misses small ticks or slips off",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "tick remover",
+   "product": "Tick Patrol remover (REI)",
+   "what": "small ticks hard to catch at the tip; worked once after several tries, not the second time; felt pricey",
+   "source": "https://www.rei.com/product/179307/the-tick-patrol-tick-remover-tool",
+   "where": "REI 3-star review",
+   "date": "about 2022",
+   "theme": "tick tool misses small ticks or slips off",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "tick remover",
+   "product": "Tick Patrol remover (REI)",
+   "what": "does not work on very small nymphs",
+   "source": "https://www.rei.com/product/179307/the-tick-patrol-tick-remover-tool",
+   "where": "REI 1-star review",
+   "date": "about 2021",
+   "theme": "tick tool misses small ticks or slips off",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "tick remover",
+   "product": "Tick Patrol remover (REI)",
+   "what": "failed on a small deer tick",
+   "source": "https://www.rei.com/product/179307/the-tick-patrol-tick-remover-tool",
+   "where": "REI 1-star review",
+   "date": "about 2023",
+   "theme": "tick tool misses small ticks or slips off",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "tick remover",
+   "product": "Tick Patrol remover (REI)",
+   "what": "did worse than fine-tipped tweezers",
+   "source": "https://www.rei.com/product/179307/the-tick-patrol-tick-remover-tool",
+   "where": "REI 1-star review",
+   "date": "about 2023",
+   "theme": "tick tool fails on embedded ticks, worse than fine tweezers",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "tick remover",
+   "product": "Tick Patrol remover (REI)",
+   "what": "could not remove an embedded tick on first use",
+   "source": "https://www.rei.com/product/179307/the-tick-patrol-tick-remover-tool",
+   "where": "REI 2-star review",
+   "date": "about 2022",
+   "theme": "tick tool fails on embedded ticks, worse than fine tweezers",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "tick remover",
+   "product": "Trixie tick tweezers (zooplus)",
+   "what": "would not latch on the tick after many tries",
+   "source": "https://www.zooplus.co.uk/feedback/shop/pet_brands/trixie/small_pet_care/30451",
+   "where": "zooplus 1-star review",
+   "date": "2021-01-15",
+   "theme": "tick tool misses small ticks or slips off",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "tick remover",
+   "product": "Trixie tick tweezers (zooplus)",
+   "what": "flimsy, not enough grip to get the head out",
+   "source": "https://www.zooplus.co.uk/feedback/shop/pet_brands/trixie/small_pet_care/30451",
+   "where": "zooplus 1-star review",
+   "date": "2020-11-07",
+   "theme": "tick tool fails on embedded ticks, worse than fine tweezers",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "tick remover",
+   "product": "Trixie tick tweezers (zooplus)",
+   "what": "flimsy, kept slipping off, tick stayed in",
+   "source": "https://www.zooplus.co.uk/feedback/shop/pet_brands/trixie/small_pet_care/30451",
+   "where": "zooplus 1-star review",
+   "date": "2019-03-09",
+   "theme": "tick tool misses small ticks or slips off",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "AirTag dog holder",
+   "product": "Besties AirTag holder (Chewy)",
+   "what": "silicone loosened after about 2.5 months and the tag popped out on a walk",
+   "source": "https://www.chewy.com/besties-adventure-dog-airtag-holder/dp/840022",
+   "where": "Chewy 1-star review",
+   "date": "2025-07-18",
+   "theme": "AirTag holder loosens, tag slips or pops out",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "AirTag dog holder",
+   "product": "Besties AirTag holder (Chewy)",
+   "what": "tag wiggles out with active dogs and the top of the holder tears",
+   "source": "https://www.chewy.com/besties-adventure-dog-airtag-holder/dp/840022",
+   "where": "Chewy 1-star review",
+   "date": "2025-04-01",
+   "theme": "AirTag holder loosens, tag slips or pops out",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "AirTag dog holder",
+   "product": "Besties AirTag holder (Chewy)",
+   "what": "name and phone number on the holder hard to read",
+   "source": "https://www.chewy.com/besties-adventure-dog-airtag-holder/dp/840022",
+   "where": "Chewy 2-star review",
+   "date": "2026-02-01",
+   "theme": "AirTag holder hard to read or too big",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "AirTag dog holder",
+   "product": "Fortuna AirTag holder (Amazon via Fakespot)",
+   "what": "slides around on the collar",
+   "source": "https://www.fakespot.com/product/fortuna-harmless-to-fur-airtag-dog-collar-holder-1-pack-ip68-waterproof-dustproof-airtag-case-for-dog-collar-with-metal-backplate-dog-collar-airtag-holder-for-dogs",
+   "where": "Amazon review excerpt",
+   "date": "",
+   "theme": "AirTag holder loosens, tag slips or pops out",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "AirTag dog holder",
+   "product": "Fortuna AirTag holder (Amazon via Fakespot)",
+   "what": "older version stretched after a few months and no longer held the tag",
+   "source": "https://www.fakespot.com/product/fortuna-harmless-to-fur-airtag-dog-collar-holder-1-pack-ip68-waterproof-dustproof-airtag-case-for-dog-collar-with-metal-backplate-dog-collar-airtag-holder-for-dogs",
+   "where": "Amazon review excerpt",
+   "date": "",
+   "theme": "AirTag holder loosens, tag slips or pops out",
+   "found": "2026-11-23"
+  },
+  {
+   "type": "AirTag dog holder",
+   "product": "Fortuna AirTag holder (Amazon via Fakespot)",
+   "what": "slides and grips poorly on a small puppy collar; bigger and heavier than expected",
+   "source": "https://www.fakespot.com/product/fortuna-harmless-to-fur-airtag-dog-collar-holder-1-pack-ip68-waterproof-dustproof-airtag-case-for-dog-collar-with-metal-backplate-dog-collar-airtag-holder-for-dogs",
+   "where": "Amazon review excerpt",
+   "date": "",
+   "theme": "AirTag holder loosens, tag slips or pops out",
+   "found": "2026-11-23"
   }
  ],
  "themes": [
@@ -2677,6 +2827,10 @@
    "count": 6
   },
   {
+   "theme": "tick tool misses small ticks or slips off",
+   "count": 6
+  },
+  {
    "theme": "slow shipping / no reply",
    "count": 5
   },
@@ -2690,6 +2844,10 @@
   },
   {
    "theme": "traction slips off boot / straps tear",
+   "count": 5
+  },
+  {
+   "theme": "AirTag holder loosens, tag slips or pops out",
    "count": 5
   },
   {
@@ -2770,6 +2928,10 @@
   },
   {
    "theme": "pockets without zips / no cuffs",
+   "count": 3
+  },
+  {
+   "theme": "tick tool fails on embedded ticks, worse than fine tweezers",
    "count": 3
   },
   {
@@ -2922,6 +3084,10 @@
   },
   {
    "theme": "does not fit winter boots",
+   "count": 1
+  },
+  {
+   "theme": "AirTag holder hard to read or too big",
    "count": 1
   }
  ]
