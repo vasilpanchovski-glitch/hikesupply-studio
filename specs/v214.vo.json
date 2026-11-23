@@ -1,0 +1,23 @@
+{
+ "voice": "af_heart",
+ "speed": 0.93,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Beth planned Christmas week at the Grand Canyon's North Rim.",
+   "gap": 0.25
+  },
+  {
+   "text": "The highway there closes for winter, usually by December 1, and the gates stay locked until mid-May.",
+   "gap": 0.3
+  },
+  {
+   "text": "The rule: in winter, plan the South Rim.",
+   "gap": 0.3
+  },
+  {
+   "text": "Save this before your Grand Canyon trip.",
+   "gap": 0.2
+  }
+ ]
+}
