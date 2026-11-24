@@ -106,7 +106,7 @@ Topics already used (do not repeat): trekking pole height, neck gaiter, heel-loc
 
 ## Quote posts (Content department)
 
-Agents: Photo Scout (`agents/photoscout.md`, Sundays 17:12 on Vasil's PC, downloads free Pexels photos) and Quote Post Designer (`agents/moodwriter.md`, daily 19:12, cloud). One calm quote post a day on Instagram, Facebook, TikTok (photo) and Pinterest, white serif text on a real mountain photo. Renderer: `python3 moods/render_mood.py`. Photos and credits in `moods/photos/`. Only Pexels photos (free commercial license); original quotes, or exact public-domain quotes with the author.
+Agents: Photo Scout (`agents/photoscout.md`, Sundays 17:12 on Vasil's PC, downloads free Pexels photos) and Quote Post Designer (`agents/moodwriter.md`, daily 19:12, cloud). One calm quote post a day on Instagram, Facebook, TikTok (photo) and Pinterest, white serif text on a real mountain photo. Renderer: `python3 moods/render_mood.py`. Photos and credits in `moods/photos/`. Only Pexels photos (free commercial license). Since 2026-11-24 only real, exact quotes from public-domain authors (Muir, Thoreau, Emerson, Whitman...), checked word for word in the original pre-1929 text, with the author; no more lines in our own words (Vasil found them cringe).
 HQ collection `moods`, doc_id `mw<YYYY-MM-DD of the Monday>`: `{status: waiting|approved|rejected, week, posts: [{id, date, quote, author, photo, credit, image4x5, image2x3, image9x16, preview, caption, metricool}], scheduled, note}`. Vasil approves a whole week with one tap.
 
 # Digital Products department
