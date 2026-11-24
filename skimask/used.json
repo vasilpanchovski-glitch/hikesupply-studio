@@ -134,6 +134,24 @@
    "headlines": [
     "MY BUDDY AGED FAST"
    ]
+  },
+  {
+   "id": "mv05",
+   "card": "mk06",
+   "shots": [
+    "k05",
+    "k01",
+    "k03"
+   ],
+   "headlines": [
+    "RACE YOU DOWN, GRANDPA",
+    "HE WON. AGAIN.",
+    "PHOTO FOR THE GROUP CHAT",
+    "FUNNY OLD MAN SKI MASK"
+   ],
+   "music": "socks/music/embers.mp3",
+   "voice": "af_heart",
+   "note": "k02 not usable: no goggles, real eyes show. Openings left unused: k01, k04 only."
   }
  ]
 }

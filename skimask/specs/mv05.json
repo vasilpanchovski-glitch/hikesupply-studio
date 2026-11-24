@@ -1,0 +1,39 @@
+{
+ "id": "mv05",
+ "dir": "skimask",
+ "music": "socks/music/embers.mp3",
+ "voice": "skimask/vo/mv05_vo.wav",
+ "cover_at": 1.2,
+ "segments": [
+  {
+   "clip": "k05",
+   "start": 0.0,
+   "dur": 3.0,
+   "title": "RACE YOU DOWN,\nGRANDPA",
+   "fade": 0,
+   "pos": "bottom"
+  },
+  {
+   "clip": "k01",
+   "start": 4.6,
+   "dur": 3.0,
+   "title": "HE WON.\nAGAIN.",
+   "pos": "bottom"
+  },
+  {
+   "clip": "k03",
+   "start": 0.0,
+   "dur": 2.0,
+   "title": "PHOTO FOR THE\nGROUP CHAT",
+   "pos": "bottom"
+  },
+  {
+   "clip": "k03",
+   "start": 5.0,
+   "dur": 5.0,
+   "title": "FUNNY OLD MAN\nSKI MASK",
+   "sub": "Nine faces, one size, from $17.99\n2 masks save 10% \u00b7 3+ save 15%\nLink in bio",
+   "shade": 0.85
+  }
+ ]
+}
