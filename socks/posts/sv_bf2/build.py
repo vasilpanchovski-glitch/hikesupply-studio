@@ -7,12 +7,12 @@ OUT = '/home/claude/hikesupply-studio/socks/posts/sv_bf2/'
 W, H = 1080, 1920
 FS = ImageFont.truetype(rv.FONT_B, 58)
 segs = [
- dict(clip='t1_shift.mp4', start=0, dur=5.0, title='', rtitle='12-HOUR\nSHIFTS', pos='top', size=120, shade=0.35,
+ dict(clip='t1_shift.mp4', start=0, dur=5.0, rtitle='12-HOUR\nSHIFTS', size=120,
       subs=[(0,1.45,'Twelve-hour shift?'),(1.45,3.05,'Thick cushioned sole,'),(3.05,5.0,"and merino doesn't hold\nodor like cotton.")]),
- dict(clip='t2c_hike_fixed.mp4', start=0, dur=4.7, title='ALL-DAY HIKES', pos='top', size=120,
+ dict(clip='t2c_hike_fixed.mp4', start=0, dur=4.7, rtitle='ALL-DAY\nHIKES', size=120,
       subs=[(0,0.74,'Winter hikes?'),(0.74,3.26,'80% merino keeps\nyour feet warm,'),(3.26,4.7,'even when they get damp.')]),
- dict(clip='t3_product.mp4', start=0.6, dur=3.6, title='80% MERINO WOOL', sub='Thick terry cushion inside', pos='top', size=110, subs=[], silent=True),
- dict(clip='t4_home.mp4', start=0, dur=5.0, title='BLACK FRIDAY\nBUY 2, GET 1 FREE', sub='hikesupplyco.com', pos='top', size=110, shade=0.75,
+ dict(clip='t3_product.mp4', start=0.6, dur=3.6, rtitle='80% MERINO\nWOOL', rsub='Thick terry cushion inside', size=110, subs=[], silent=True),
+ dict(clip='t4_home.mp4', start=0, dur=5.0, rtitle='BLACK FRIDAY\nBUY 2,\nGET 1 FREE', rsub='hikesupplyco.com', size=110,
       subs=[(0,2.5,"And at home,\nthey're just cozy."),(2.5,5.0,"Right now it's\nbuy 2, get 1 free.")]),
 ]
 def sub_png(text, path):
@@ -28,17 +28,27 @@ def sub_png(text, path):
     im.save(path)
 tmp = '/tmp/claude-0/bf2tmp'; os.makedirs(tmp, exist_ok=True); parts = []
 for k, s in enumerate(segs):
-    ov = f'{tmp}/t{k}.png'; rv.overlay(dict(s, _logo='color'), ov)
-    if s.get('rtitle'):
-        im = Image.open(ov).convert('RGBA'); fh = ImageFont.truetype(rv.FONT_H, s['size'])
-        sh = Image.new('RGBA', (W, H), (0,0,0,0)); ds = ImageDraw.Draw(sh); d = ImageDraw.Draw(im)
-        y = 230
-        for i, ln in enumerate(s['rtitle'].split('\n')):
-            w = d.textlength(ln, font=fh); ds.text((W-76-w+3, y+i*int(s['size']*0.98)+4), ln, font=fh, fill=(0,0,0,200))
-        sh = sh.filter(ImageFilter.GaussianBlur(8)); im = Image.alpha_composite(im, sh); d = ImageDraw.Draw(im)
-        for i, ln in enumerate(s['rtitle'].split('\n')):
-            w = d.textlength(ln, font=fh); d.text((W-76-w, y+i*int(s['size']*0.98)), ln, font=fh, fill='white')
-        im.save(ov)
+    ov = f'{tmp}/t{k}.png'; rv.overlay(dict(title='', pos='top', shade=0.55, _logo=False), ov)
+    im = Image.open(ov).convert('RGBA')
+    lg = Image.open(rv.LOGO_COLOR).convert('RGBA'); lw = 220; lg = lg.resize((lw, int(lg.height*lw/lg.width)), Image.LANCZOS)
+    fh = ImageFont.truetype(rv.FONT_H, s['size']); fb = ImageFont.truetype(rv.FONT_B, 44)
+    lines = s['rtitle'].split('\n'); lh = int(s['size']*0.98)
+    sh = Image.new('RGBA', (W, H), (0,0,0,0)); ds = ImageDraw.Draw(sh)
+    a_ = lg.split()[3].point(lambda v: int(v*0.55)); blk = Image.new('RGBA', lg.size, (0,0,0,255)); blk.putalpha(a_)
+    sh.alpha_composite(blk, (W-70-lw+3, 66+4))
+    y = 230
+    for i, ln in enumerate(lines):
+        w = ds.textlength(ln, font=fh); ds.text((W-76-w+3, y+i*lh+4), ln, font=fh, fill=(0,0,0,200))
+    ys = y+len(lines)*lh+22
+    if s.get('rsub'):
+        w = ds.textlength(s['rsub'], font=fb); ds.text((W-78-w+2, ys+3), s['rsub'], font=fb, fill=(0,0,0,220))
+    sh = sh.filter(ImageFilter.GaussianBlur(8)); im = Image.alpha_composite(im, sh); d = ImageDraw.Draw(im)
+    im.alpha_composite(lg, (W-70-lw, 66))
+    for i, ln in enumerate(lines):
+        w = d.textlength(ln, font=fh); d.text((W-76-w, y+i*lh), ln, font=fh, fill='white')
+    if s.get('rsub'):
+        w = d.textlength(s['rsub'], font=fb); d.text((W-78-w, ys), s['rsub'], font=fb, fill='white')
+    im.save(ov)
     inputs = ['-ss', str(s['start']), '-t', str(s['dur']), '-i', V+s['clip'], '-loop', '1', '-t', str(s['dur']), '-i', ov]
     fc = f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30,setsar=1[b];[b][1:v]overlay=0:0[v0]"
     last = 'v0'
