@@ -153,7 +153,9 @@
     "photographer": "Ali Kazal",
     "url": "https://www.pexels.com/photo/28367457/",
     "alt": "Snowcapped peaks framed by pines on the road to Jasper, Alberta",
-    "used": true
+    "used": true,
+    "pinUsed": "pb20261124-2",
+    "pinDate": "2026-11-24"
   },
   "28848623": {
     "photographer": "Ali Kazal",
@@ -355,7 +357,9 @@
     "url": "https://www.pexels.com/photo/15948085/",
     "alt": "Feet in Nordic-pattern wool socks against misty hills at sunset",
     "used": false,
-    "topic": "cozy socks outdoors"
+    "topic": "cozy socks outdoors",
+    "pinUsed": "pb20261124-7",
+    "pinDate": "2026-11-24"
   },
   "3183725": {
     "photographer": "Valeriia Miller",
@@ -452,7 +456,9 @@
     "url": "https://www.pexels.com/photo/27808627/",
     "alt": "Joshua trees and golden granite boulders at golden hour, Joshua Tree National Park",
     "used": true,
-    "topic": "Joshua Tree"
+    "topic": "Joshua Tree",
+    "pinUsed": "pb20261124-8",
+    "pinDate": "2026-11-24"
   },
   "9508460": {
     "photographer": "Taryn Elliott",
@@ -516,7 +522,9 @@
     "url": "https://www.pexels.com/photo/1326172/",
     "alt": "Glowing tents under a starry night sky",
     "used": false,
-    "topic": "tent at night"
+    "topic": "tent at night",
+    "pinUsed": "pb20261124-10",
+    "pinDate": "2026-11-24"
   },
   "4153069": {
     "photographer": "Татьяна Танатова",
@@ -560,7 +568,9 @@
     "url": "https://www.pexels.com/photo/13979928/",
     "alt": "Red hoodoos of Bryce Canyon under a blue sky",
     "used": false,
-    "topic": "Bryce Canyon"
+    "topic": "Bryce Canyon",
+    "pinUsed": "pb20261124-9",
+    "pinDate": "2026-11-24"
   },
   "14213488": {
     "photographer": "PHILIPPE SERRAND",
