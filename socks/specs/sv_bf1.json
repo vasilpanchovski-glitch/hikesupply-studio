@@ -1,0 +1,10 @@
+{
+ "id": "sv_bf1",
+ "music": "socks/music/embers.mp3",
+ "cover_at": 1.0,
+ "segments": [
+  {"clip": "ai01", "start": 0.4, "dur": 4.4, "title": "COLD FEET\nALL WINTER?", "fade": 0, "pos": "top", "size": 120, "zoom": 0},
+  {"clip": "ai02", "start": 1.0, "dur": 4.8, "title": "80% MERINO WOOL", "sub": "Warm even when damp\nSoft, no wool itch", "pos": "top", "size": 110, "zoom": 0},
+  {"clip": "ai03", "start": 2.5, "dur": 5.8, "title": "BLACK FRIDAY\nBUY 2, GET 1 FREE", "sub": "Merino wool winter socks · 4 colours\nFree shipping · hikesupplyco.com", "pos": "top", "size": 110, "shade": 0.8, "zoom": 0}
+ ]
+}
