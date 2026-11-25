@@ -14,12 +14,15 @@ shade = Image.new('RGB',(W,H),(14,18,14))
 im = Image.composite(shade, im, g.resize((W,H)))
 d = ImageDraw.Draw(im)
 B='pins/BarlowCondensed-ExtraBold.ttf'; SB='pins/BarlowCondensed-SemiBold.ttf'; I='pins/Inter.ttf'
-f1=ImageFont.truetype(B,188); f2=ImageFont.truetype(I,50); fc=ImageFont.truetype(SB,52)
+f1=ImageFont.truetype(B,188); f2=ImageFont.truetype(SB,76); fc=ImageFont.truetype(SB,52)
 y=120
 for line in ['WARM, DRY FEET','ALL WINTER LONG']:
     w=d.textlength(line,font=f1); d.text(((W-w)/2,y),line,font=f1,fill='white'); y+=190
 sub='Merino wool crew socks with a cushioned sole'
-w=d.textlength(sub,font=f2); d.text(((W-w)/2,y+30),sub,font=f2,fill=(235,235,230))
+w=d.textlength(sub,font=f2)
+sh=Image.new('L',(W,H),0); ImageDraw.Draw(sh).text(((W-w)/2,y+32),sub,font=f2,fill=230)
+sh=sh.filter(ImageFilter.GaussianBlur(10)); im.paste((0,0,0),(0,0),sh); d=ImageDraw.Draw(im)
+d.text(((W-w)/2,y+30),sub,font=f2,fill='white')
 # facts strip: 4 columns, white text on the dark bottom, thin dividers, no bubbles
 facts=[('80%','MERINO WOOL'),('SOFT','TERRY INSIDE'),('FREE','SHIPPING'),('30-DAY','RETURNS')]
 fb=ImageFont.truetype(B,96); fs=ImageFont.truetype(SB,44)
