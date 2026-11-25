@@ -1,0 +1,240 @@
+{
+ "date": "2026-11-25",
+ "previous": "2026-11-19",
+ "group": "a",
+ "note": "Group A, two days before Black Friday. Empty fields mean the page did not show the number. Compared with the last group A run (Nov 19). Some pages could not be opened this run (main We're in the Rockies store page, Montem accessories page, MarcisShoppe listing): the fetch timed out or was refused, so those parts are left empty, not guessed. Cascade Mountain Tech not checked (no new public data in the last runs). Complaint mining covered compasses, because our Metal Lensatic Compass ($12.99) went live Nov 22.",
+ "sellers": [
+  {
+   "name": "We're in the Rockies",
+   "products": [
+    {
+     "title": "Rocky Mountain Package",
+     "price": 49.0,
+     "notes": "rated 5.00, review count not shown on the category page"
+    }
+   ],
+   "offers": [
+    "NEW: sitewide 'Black Friday Sale: $30 off all bundles + free Epic Road Trip PDF. Ends Dec 1.'",
+    "countdown timer still shows all zeros",
+    "newsletter box 'Be Part of the West'"
+   ],
+   "marketing": {
+    "tactics": [
+     "early Black Friday (already live Nov 25), fixed dollar off bundles",
+     "free bonus PDF with the order instead of a deeper cut",
+     "real end date (Dec 1) in the banner, broken countdown"
+    ],
+    "traffic": "Google park itinerary searches, email list"
+   },
+   "source": "https://wereintherockies.com/product-category/rocky-mountain/"
+  },
+  {
+   "name": "Traverse with Tonia (Payhip)",
+   "products": [
+    {
+     "title": "Ultimate U.S. National Parks & Hiking Checklist",
+     "price": 4.99,
+     "notes": "'On Sale', no old price, unchanged"
+    },
+    {
+     "title": "Ultimate U.S. Waterfalls Checklist",
+     "price": 4.99
+    },
+    {
+     "title": "Ultimate Outdoor Adventure Bundle",
+     "price": 7.99
+    }
+   ],
+   "offers": [
+    "no Black Friday offer"
+   ],
+   "reviews": {},
+   "marketing": {
+    "tactics": [
+     "'On Sale' label with no old price",
+     "2-checklist bundle"
+    ]
+   },
+   "source": "https://payhip.com/b/tFbkH"
+  },
+  {
+   "name": "Montem",
+   "shop": {
+    "free_shipping_over": 100
+   },
+   "products": [
+    {
+     "title": "The All Tips Bundle",
+     "price": 22.06,
+     "was": 32.97,
+     "notes": "same as Nov 19"
+    },
+    {
+     "title": "The Ultra On The Go (Advanced) Bundle",
+     "price": 31.44,
+     "was": 46.97,
+     "notes": "same as Nov 19"
+    },
+    {
+     "title": "All Baskets Bundle",
+     "price": 23.8,
+     "was": 35.98,
+     "notes": "same as Nov 19"
+    },
+    {
+     "title": "Ultra On The Go Bundle",
+     "price": 16.79,
+     "was": 24.99
+    },
+    {
+     "title": "The Hydro Bundle",
+     "price": 98.56,
+     "was": 136.97
+    },
+    {
+     "title": "The Hammock Bundle",
+     "price": 57.76,
+     "was": 67.95
+    },
+    {
+     "title": "The Nordic Bundle",
+     "price": 89.24,
+     "was": 128.97
+    },
+    {
+     "title": "The Adventure Bundle",
+     "price": 62.04,
+     "was": 96.44
+    },
+    {
+     "title": "The Shocker Bundle",
+     "price": 92.99,
+     "was": 123.98
+    },
+    {
+     "title": "The Ultra Light Bundle",
+     "price": 97.7,
+     "was": 114.94
+    },
+    {
+     "title": "The Ultra Bundle",
+     "price": 90.09,
+     "was": 105.99
+    },
+    {
+     "title": "The Hiker Bundle / 3K Carbon Fiber Bundle / Backpacker Bundle",
+     "price": null,
+     "notes": "sold out"
+    }
+   ],
+   "offers": [
+    "'Bundle Sale' collection, roughly 15-36% under the second price shown, no Black Friday banner or code",
+    "free standard shipping over $100"
+   ],
+   "reviews": {},
+   "marketing": {
+    "tactics": [
+     "bundles against a compare-at price",
+     "quiet markdown, no Black Friday banner yet",
+     "free shipping threshold"
+    ]
+   },
+   "source": "https://montemlife.com/bundle-products"
+  },
+  {
+   "name": "DearSummit",
+   "products": [
+    {
+     "title": "The Trail Journal, prompted pocket hiking log",
+     "price": 11.5,
+     "sale_price_eur": 10.14,
+     "was_eur": 13.52,
+     "notes": "NEW: 25% off, 'sale ends in 6 days' (about Dec 1); 369 item reviews 4.9 (96% five star); 'only 7 left, in 13 baskets'; set of 3 also sold; low-star reviews not visible",
+     "url": "https://www.etsy.com/ie/listing/710475099/the-trail-journal-prompted-hiking-log"
+    }
+   ],
+   "offers": [
+    "25% off through about Dec 1"
+   ],
+   "reviews": {
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "25% Etsy sale over Black Friday week",
+     "low stock and basket count shown by Etsy",
+     "set of 3 as a gift"
+    ],
+    "traffic": "Etsy search, wholesale (Faire, outdoor shops)"
+   }
+  },
+  {
+   "name": "MarcisShoppe",
+   "products": [],
+   "offers": [],
+   "reviews": {},
+   "notes": "listing could not be opened this run"
+  },
+  {
+   "name": "Cascade Mountain Tech",
+   "products": [],
+   "reviews": {},
+   "notes": "not checked this run"
+  },
+  {
+   "name": "Darn Tough (hiking socks)",
+   "products": [
+    {
+     "title": "Wild Life Crew Lightweight Lifestyle Socks, Men's (REI Outlet)",
+     "price": 18.67,
+     "was": 25.0
+    },
+    {
+     "title": "Pixie Crew Socks, Women's (REI Outlet)",
+     "price": 17.87,
+     "was": 24.0
+    },
+    {
+     "title": "High Fives Over-the-Calf Midweight Ski Socks, Men's (REI Outlet)",
+     "price": 19.73,
+     "was": 32.0
+    },
+    {
+     "title": "8 more ski and crew styles (REI Outlet)",
+     "notes": "25-26% off, $16.87-23.87 sale prices"
+    }
+   ],
+   "offers": [
+    "REI: 10% off when buying 3 or more full-price Darn Tough socks (applied in cart, no end date)",
+    "REI Outlet: 25-38% off 11 Darn Tough styles"
+   ],
+   "reviews": {},
+   "marketing": {
+    "tactics": [
+     "multi-buy: 3+ pairs 10% off",
+     "outlet markdowns on last-season styles"
+    ]
+   },
+   "source": "https://www.rei.com/b/darn-tough/c/socks/f/scd-deals"
+  }
+ ],
+ "other_seen": [],
+ "changes_vs_previous": [
+  "We're in the Rockies started Black Friday early: $30 off all bundles plus a free Epic Road Trip PDF, ends Dec 1 (nothing on Nov 19)",
+  "DearSummit put its Trail Journal 25% off until about Dec 1 (no sale on Nov 19)",
+  "Montem bundle prices unchanged since Nov 19; still no Black Friday banner",
+  "Tonia unchanged, no Black Friday offer",
+  "REI sells Darn Tough with 10% off 3+ pairs and 25-38% off outlet styles; our socks sell at $19.99 a pair with buy 2 get 1 free (o47) from Nov 27"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "real end date around Dec 1 (WITR Dec 1, DearSummit about Dec 1, PrintablePatti Nov 30)",
+   "free bonus with the order instead of a deeper cut (WITR free Epic Road Trip PDF)",
+   "multi-buy or bundle pricing (Montem bundles, REI 3+ socks 10%, Tonia bundle)"
+  ],
+  "we_do_not_use_yet": [
+   "a free bonus PDF with a Black Friday order (our free Parks Tracker offer o17 only starts Dec 2)"
+  ],
+  "black_friday": "Nov 25: WITR and DearSummit already discount; Montem and Tonia show no Black Friday banner."
+ }
+}

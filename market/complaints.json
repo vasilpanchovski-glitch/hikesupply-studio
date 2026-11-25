@@ -1,6 +1,6 @@
 {
  "note": "Complaints from public 1-3 star reviews and public comments. Paraphrased in our words, no reviewer names. Reddit and Amazon could not be read from the cloud (blocked), so they are not in here yet. Counts are only what we found, not market totals. Rival-only pass 2026-10-17: Etsy shop and listing pages show only top reviews (all 5 stars seen), Payhip/Gumroad/Thatch show no reviews, so digital rivals have almost no public complaints to read; most rival complaints are about the two pole brands and one park-guide seller. 2026-10-22 pass: winter gear (headlamps, gloves, gaiters) for the headlamp now in store and the plan's cold-weather focus; Etsy digital rivals still show only 5-star reviews. 2026-10-27 pass: the two group-A gear benchmarks (Cascade Mountain Tech poles, Darn Tough socks) from OutdoorGearLab, Trustpilot, REI, review blogs and a hiking forum; Etsy digital rivals still show only 5-star reviews. 2026-11-01 pass: group A gear benchmarks (Montem poles from a 2026 review roundup, Darn Tough from Trustpilot); Etsy and Payhip digital rivals still show only 5-star reviews or none. 2026-11-05 pass: group C; Hiker Hunger pole reviews from a reseller page; Etsy, Payhip and Gumroad digital rivals still show only 5-star reviews or none. 2026-11-07 pass: group A; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read critical points in public 4-star reviews of a well-known packable daypack and fleece jacket (Zappos, 2021-2023), the closest benchmarks to our 18L pack and polar fleeces. Older dates, marked as 4-star criticism. 2026-11-09 pass: group B; Etsy and Payhip digital rivals still show only 5-star reviews or none, so this run read hiking sock reviews (our first sale was merino socks) and a national parks passport stamp book (we are building a State Parks Passport). 2026-11-13 pass: group A; Etsy and Payhip digital rivals again show only 5-star reviews or none, Darn Tough has no new Trustpilot reviews since Oct 21; added a Montem pole handle failure, a basic map in a park passport book, and a kids nature card game (small set, poor value). 2026-11-17 pass: group C; Payhip, Gumroad and the Hiker Hunger Walmart page again show no critical review text, so this run read 2-3 star reviews of packable down jackets (a budget Amazon-type jacket and L.L.Bean Ultralight 850), the benchmark for any insulated clothing the Hunter checks.",
- "updated": "2026-11-23",
+ "updated": "2026-11-25",
  "complaints": [
   {
    "type": "trekking pole",
@@ -2775,6 +2775,126 @@
    "date": "",
    "theme": "AirTag holder loosens, tag slips or pops out",
    "found": "2026-11-23"
+  },
+  {
+   "type": "compass",
+   "product": "Suunto A-10 NH (REI)",
+   "what": "needle came off its pivot and the pivot broke loose inside the capsule after two drops from waist height",
+   "source": "https://www.rei.com/product/890929/suunto-a-10-nh-compass",
+   "where": "public review",
+   "date": "REI review, about 2016",
+   "theme": "compass needle sticks, slow or breaks",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Suunto A-10 NH (REI)",
+   "what": "declination is a fixed scale, cannot be set, so it was of little use where declination is east",
+   "source": "https://www.rei.com/product/890929/suunto-a-10-nh-compass",
+   "where": "public review",
+   "date": "REI review, about 2020",
+   "theme": "compass has no declination adjustment",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Suunto A-10 NH (REI)",
+   "what": "no sighting mirror and no declination adjustment, only fits beginners",
+   "source": "https://www.rei.com/product/890929/suunto-a-10-nh-compass",
+   "where": "public review",
+   "date": "REI review, about 2022",
+   "theme": "compass has no declination adjustment",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Highlander Deluxe Map Compass (Advnture test)",
+   "what": "no declination scale, bezel stiff at first, dial not easy to read",
+   "source": "https://www.advnture.com/reviews/highlander-deluxe-map-compass",
+   "where": "public review",
+   "date": "2021-07-28",
+   "theme": "compass has no declination adjustment",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Highlander Deluxe Map Compass (Advnture test)",
+   "what": "needle sometimes stuck until the housing was tapped; only accurate when held level",
+   "source": "https://www.advnture.com/reviews/highlander-deluxe-map-compass",
+   "where": "public review",
+   "date": "2021-07-28",
+   "theme": "compass needle sticks, slow or breaks",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Coghlan's Combination Compass (Trailspace)",
+   "what": "dial slow to settle",
+   "source": "https://www.trailspace.com/gear/coghlans/combination-compass/",
+   "where": "public review",
+   "date": "",
+   "theme": "compass needle sticks, slow or breaks",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Coghlan's Combination Compass (Trailspace)",
+   "what": "slightly inaccurate, pulled off by iron in the ground; reviewer says spend a bit more",
+   "source": "https://www.trailspace.com/gear/coghlans/combination-compass/",
+   "where": "public review",
+   "date": "",
+   "theme": "compass inaccurate or coarse markings",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Brunton 8099 (Backpacking Light forum)",
+   "what": "degree markings too rough for serious navigation",
+   "source": "https://backpackinglight.com/forums/topic/15128/",
+   "where": "public review",
+   "date": "2008-08",
+   "theme": "compass inaccurate or coarse markings",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Suunto MC-2 (Backpacking Light forum)",
+   "what": "only 2-degree marks; needle jiggles when the user breathes hard",
+   "source": "https://backpackinglight.com/forums/topic/15128/",
+   "where": "public review",
+   "date": "2008-08",
+   "theme": "compass inaccurate or coarse markings",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "Silva Ranger (Backpacking Light forum)",
+   "what": "air bubble formed in the capsule and got worse at altitude",
+   "source": "https://backpackinglight.com/forums/topic/15128/",
+   "where": "public review",
+   "date": "2008-08",
+   "theme": "compass bubble in the capsule",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "K&R compasses (Backpacking Light forum)",
+   "what": "said to get bubbles more often than other makes; hinge prism looks fragile",
+   "source": "https://backpackinglight.com/forums/topic/15128/",
+   "where": "public review",
+   "date": "2008-08",
+   "theme": "compass bubble in the capsule",
+   "found": "2026-11-25"
+  },
+  {
+   "type": "compass",
+   "product": "K&R Alpin Pro / Dakar (Backpacking Light forum)",
+   "what": "no orienting lines visible in the capsule, hard to take a bearing off a map; returned",
+   "source": "https://backpackinglight.com/forums/topic/15128/",
+   "where": "public review",
+   "date": "2008-08",
+   "theme": "compass hard to use with a map",
+   "found": "2026-11-25"
   }
  ],
  "themes": [
@@ -2935,6 +3055,18 @@
    "count": 3
   },
   {
+   "theme": "compass needle sticks, slow or breaks",
+   "count": 3
+  },
+  {
+   "theme": "compass has no declination adjustment",
+   "count": 3
+  },
+  {
+   "theme": "compass inaccurate or coarse markings",
+   "count": 3
+  },
+  {
    "theme": "not suited to hikers with disabilities",
    "count": 2
   },
@@ -2976,6 +3108,10 @@
   },
   {
    "theme": "carrier bulky or buckles fiddly",
+   "count": 2
+  },
+  {
+   "theme": "compass bubble in the capsule",
    "count": 2
   },
   {
@@ -3088,6 +3224,10 @@
   },
   {
    "theme": "AirTag holder hard to read or too big",
+   "count": 1
+  },
+  {
+   "theme": "compass hard to use with a map",
    "count": 1
   }
  ]
