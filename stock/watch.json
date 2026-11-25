@@ -17,16 +17,16 @@
     "Black / Grey / L": "gid://shopify/ProductVariant/67576889016627"
    },
    "lastCheck": {
-    "date": "2026-11-24",
-    "time": "16:10Z",
+    "date": "2026-11-25",
+    "time": "16:05Z",
     "by": "importer",
     "stock": {
      "Navy Blue / S": 492,
      "Navy Blue / L": 24,
      "Green / S": 483,
-     "Brown / S": 482,
+     "Brown / S": 481,
      "Green / L": 19,
-     "Black / Grey / S": 474,
+     "Black / Grey / S": 473,
      "Brown / L": 470,
      "Black / Grey / L": 10
     },
@@ -35,7 +35,7 @@
      "Green / L",
      "Black / Grey / L"
     ],
-    "note": "17:10 Skopje check: supplier stock dropped slightly since Nov 23 (Navy S -3, Navy L -2, Green S -1, Brown S -2, Black/Grey S -5, Brown L -1); Shopify set to match (DENY). Navy Blue / L 24, Green / L 19, Black / Grey / L 10 below low, still no verified backup; request to Hunter still open. AliExpress Message Center did not load again."
+    "note": "17:05 Skopje check: Brown S -1, Black/Grey S -1 since Nov 24; Shopify set to match (DENY). The three large variants are still below low with no verified backup; request to Hunter still open."
    },
    "backups": [],
    "candidates": [
