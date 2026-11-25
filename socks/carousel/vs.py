@@ -14,7 +14,7 @@ fh=ImageFont.truetype(B,150); fc=ImageFont.truetype(B,58); fr=ImageFont.truetype
 d.text((100,110),'WHY MERINO?',font=fh,fill='white')
 cols=['','MERINO','SYNTHETIC','COTTON']
 rows=[('Warm when damp','Yes','Some','No'),('Smell after a day','Low','High','High'),('Feel on skin','Soft','Slick','Soft'),('Dries','Fast','Fast','Slow')]
-x0=100; cw=[420,300,330,300]; y=H-640; rh=120
+x0=100; cw=[420,300,330,300]; y=H-575; rh=105
 line=(255,255,255)
 # header
 x=x0
