@@ -13,11 +13,10 @@ B='pins/BarlowCondensed-ExtraBold.ttf'; SB='pins/BarlowCondensed-SemiBold.ttf'; 
 f1=ImageFont.truetype(B,180); fl=ImageFont.truetype(I,62); fe=ImageFont.truetype(B,104)
 t='SOUND FAMILIAR?'; w=d.textlength(t,font=f1); d.text(((W-w)/2,130),t,font=f1,fill='white')
 items=['Cold feet all winter','Damp, sweaty feet in boots','Socks that smell by evening']
-y=430; x=250
+fl=ImageFont.truetype(I,68)
+y=420
 for it in items:
-    # simple white check mark, no circles
-    d.line([(x,y+42),(x+26,y+68),(x+74,y+12)],fill='white',width=11,joint='curve')
-    d.text((x+120,y),it,font=fl,fill='white'); y+=130
+    w=d.textlength(it,font=fl); d.text(((W-w)/2,y),it,font=fl,fill='white'); y+=118
 yy=H-330
 for end in ['MERINO KEEPS FEET','WARM, DRY AND FRESH']:
     w=d.textlength(end,font=fe); d.text(((W-w)/2,yy),end,font=fe,fill='white'); yy+=112
