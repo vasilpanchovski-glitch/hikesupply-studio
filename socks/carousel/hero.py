@@ -8,7 +8,7 @@ g = Image.new('L',(1,H))
 for y in range(H):
     a = 0
     if y < 760: a = int(200*(1-y/760)**1.3)
-    if y > H-520: a = max(a,int(190*((y-(H-520))/520)**1.4))
+    if y > H-560: a = max(a,int(215*((y-(H-560))/560)**1.2))
     g.putpixel((0,y),a)
 shade = Image.new('RGB',(W,H),(14,18,14))
 im = Image.composite(shade, im, g.resize((W,H)))
@@ -20,12 +20,13 @@ for line in ['WARM, DRY FEET','ALL WINTER LONG']:
     w=d.textlength(line,font=f1); d.text(((W-w)/2,y),line,font=f1,fill='white'); y+=190
 sub='Merino wool crew socks with a cushioned sole'
 w=d.textlength(sub,font=f2); d.text(((W-w)/2,y+30),sub,font=f2,fill=(235,235,230))
-# badges, 2x2 white chips at bottom
-chips=['80% MERINO WOOL','CUSHIONED SOLE','FREE SHIPPING','30-DAY RETURNS']
-cw,ch,gap=600,110,40
-x0=(W-2*cw-gap)//2; yb=H-120-2*ch-gap
-for i,t in enumerate(chips):
-    cx=x0+(i%2)*(cw+gap); cy=yb+(i//2)*(ch+gap)
-    d.rounded_rectangle([cx,cy,cx+cw,cy+ch],radius=55,fill='white')
-    tw=d.textlength(t,font=fc); d.text((cx+(cw-tw)/2,cy+(ch-62)/2),t,font=fc,fill=(28,36,30))
+# facts strip: 4 columns, white text on the dark bottom, thin dividers, no bubbles
+facts=[('80%','MERINO WOOL'),('SOFT','TERRY INSIDE'),('FREE','SHIPPING'),('30-DAY','RETURNS')]
+fb=ImageFont.truetype(B,96); fs=ImageFont.truetype(SB,44)
+colw=(W-160)/4; yb=H-300
+for i,(a,b) in enumerate(facts):
+    cx=80+colw*i+colw/2
+    wa=d.textlength(a,font=fb); d.text((cx-wa/2,yb),a,font=fb,fill='white')
+    wb=d.textlength(b,font=fs); d.text((cx-wb/2,yb+112),b,font=fs,fill=(225,225,218))
+    if i: d.line([(80+colw*i,yb+10),(80+colw*i,yb+150)],fill=(255,255,255),width=2)
 im.save(out,quality=92)
