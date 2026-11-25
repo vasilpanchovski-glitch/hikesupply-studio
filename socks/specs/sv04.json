@@ -1,0 +1,42 @@
+{
+ "id": "sv04",
+ "music": "socks/music/embers.mp3",
+ "cover_at": 1.2,
+ "segments": [
+  {
+   "clip": "v09",
+   "start": 1.0,
+   "dur": 3.0,
+   "title": "COLD FEET ON\nSNOWY WALKS?",
+   "fade": 0,
+   "pos": "top",
+   "size": 120
+  },
+  {
+   "clip": "v03",
+   "start": 0.5,
+   "dur": 3.0,
+   "title": "CUSHIONED\nSOLE",
+   "pos": "top",
+   "size": 115
+  },
+  {
+   "clip": "v05",
+   "start": 0.3,
+   "dur": 2.8,
+   "title": "80% MERINO,\nNO WOOL ITCH",
+   "pos": "top",
+   "size": 110
+  },
+  {
+   "clip": "s28",
+   "image": "s28",
+   "dur": 4.8,
+   "title": "BUY 2,\nGET 1 FREE",
+   "sub": "$19.99 a pair · Black Friday until Dec 1\nLink in bio",
+   "pos": "top",
+   "shade": 0.8,
+   "size": 105
+  }
+ ]
+}

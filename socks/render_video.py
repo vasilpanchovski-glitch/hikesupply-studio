@@ -2,7 +2,7 @@
 
 Spec: {"id": "sv01", "music": "path or null", "voice": "optional wav from voice/vo.py (music ducked under it)", "segments": [
   {"clip": "v04", "start": 0.0, "dur": 3.0, "title": "COLD FEET\\nON EVERY WALK?", "sub": "", "pos": "bottom"}]}
-clip = name in socks/materials/vid. Each segment is cut, scaled to 1080x1920 with a slow push-in,
+clip = name in socks/materials/vid (or "image": "s28" for a still photo from materials/img). Each segment is cut, scaled to 1080x1920 with a slow push-in,
 gets the same text style as the photo posts (white Barlow headline, soft gradient), clips are muted.
 Every shot carries the colour HikeSupply Co. logo top left (Vasil 2026-11-20: "start adding the
 hikesupplyco logo on each video"); spec "logo": "white" for the all-white one, false to leave it out.
@@ -92,7 +92,12 @@ def render(spec):
         fade = s.get("fade", 0.25)
         if fade:
             vf += f",fade=t=in:st=0:d={fade}"
-        run(["ffmpeg", "-y", "-ss", str(s.get("start", 0)), "-t", str(dur), "-i", src, "-loop", "1", "-t", str(dur), "-i", ov,
+        if s.get("image"):  # a still photo from materials/img as the shot (slow push-in)
+            src = os.path.join(ROOT, "..", spec.get("dir","socks"), "materials", "img", s["image"] + ".jpg")
+            inp = ["-loop", "1", "-framerate", "30", "-t", str(dur), "-i", src]
+        else:
+            inp = ["-ss", str(s.get("start", 0)), "-t", str(dur), "-i", src]
+        run(["ffmpeg", "-y", *inp, "-loop", "1", "-t", str(dur), "-i", ov,
              "-filter_complex", vf, "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-r", "30", p])
         parts.append(p)
     lst = os.path.join(tmp, "l.txt")
