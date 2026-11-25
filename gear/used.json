@@ -23,7 +23,7 @@
   },
   {
    "id": "gp04",
-   "date": "2026-11-24",
+   "date": "2026-11-26",
    "img": "g05",
    "product": "motion-sensor-rechargeable-headlamp",
    "headline": "HIKE RAN LATE?"
@@ -34,6 +34,13 @@
    "img": "g07",
    "product": "padded-reflective-dog-harness",
    "headline": "ROCKY STEP AHEAD?"
+  },
+  {
+   "id": "gp06",
+   "date": "2026-11-27",
+   "img": "g13",
+   "product": "clip-on-led-dog-light",
+   "headline": "DARK STREET, SMALL DOG?"
   }
  ]
 }
