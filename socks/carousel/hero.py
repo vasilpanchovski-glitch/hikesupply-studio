@@ -26,7 +26,7 @@ d.text(((W-w)/2,y+30),sub,font=f2,fill='white')
 # facts strip: 4 columns, white text on the dark bottom, thin dividers, no bubbles
 facts=[('80%','MERINO WOOL'),('SOFT','TERRY INSIDE'),('FREE','SHIPPING'),('30-DAY','RETURNS')]
 fb=ImageFont.truetype(B,96); fs=ImageFont.truetype(SB,44)
-colw=(W-160)/4; yb=H-300
+colw=(W-160)/4; yb=H-235
 for i,(a,b) in enumerate(facts):
     cx=80+colw*i+colw/2
     wa=d.textlength(a,font=fb); d.text((cx-wa/2,yb),a,font=fb,fill='white')
