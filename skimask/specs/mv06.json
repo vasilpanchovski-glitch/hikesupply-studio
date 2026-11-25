@@ -1,0 +1,13 @@
+{
+ "id": "mv06",
+ "dir": "skimask",
+ "music": "socks/music/embers.mp3",
+ "voice": "skimask/vo/mv06_vo.wav",
+ "cover_at": 1.2,
+ "segments": [
+  {"clip": "k01", "start": 4.0, "dur": 3.0, "title": "HE PROMISED TO\nLOOK SERIOUS", "fade": 0, "pos": "bottom"},
+  {"clip": "k05", "start": 1.5, "dur": 2.4, "title": "HE DID NOT", "pos": "bottom"},
+  {"clip": "k04", "start": 0.0, "dur": 2.6, "title": "NO STRAIGHT\nFACES ALL DAY", "pos": "bottom"},
+  {"clip": "k04", "start": 4.0, "dur": 5.0, "title": "FUNNY OLD MAN\nSKI MASK", "sub": "Nine faces, one size, from $17.99\n2 masks save 10% · 3+ save 15%\nLink in bio", "shade": 0.85}
+ ]
+}

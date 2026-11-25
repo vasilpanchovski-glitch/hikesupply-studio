@@ -152,6 +152,25 @@
    "music": "socks/music/embers.mp3",
    "voice": "af_heart",
    "note": "k02 not usable: no goggles, real eyes show. Openings left unused: k01, k04 only."
+  },
+  {
+   "id": "mv06",
+   "card": "mk06",
+   "remakeOf": "mv05",
+   "shots": [
+    "k01",
+    "k05",
+    "k04"
+   ],
+   "headlines": [
+    "HE PROMISED TO LOOK SERIOUS",
+    "HE DID NOT",
+    "NO STRAIGHT FACES ALL DAY",
+    "FUNNY OLD MAN SKI MASK"
+   ],
+   "music": "socks/music/embers.mp3",
+   "voice": "af_heart",
+   "note": "Vasil: voiceover text was cringe. New plain, dry script. Openings left unused: k04 only."
   }
  ]
 }
