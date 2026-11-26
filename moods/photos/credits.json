@@ -435,7 +435,9 @@
   "url": "https://www.pexels.com/photo/40175450/",
   "alt": "Grand Canyon from the rim under a clear blue sky",
   "used": false,
-  "topic": "Grand Canyon"
+  "topic": "Grand Canyon",
+  "pinUsed": "pb20261126-9",
+  "pinDate": "2026-11-26"
  },
  "2454682": {
   "photographer": "Trace Hudson",
@@ -466,7 +468,9 @@
   "alt": "Trail food: camp stove cooking on a rock above a valley at sunrise",
   "used": true,
   "topic": "trail food",
-  "productUsed": "p24"
+  "productUsed": "p24",
+  "pinUsed": "pb20261126-3",
+  "pinDate": "2026-11-26"
  },
  "10260002": {
   "photographer": "Lena Sova",
@@ -581,7 +585,9 @@
   "url": "https://www.pexels.com/photo/14213488/",
   "alt": "Virgin River flowing through Zion National Park",
   "used": false,
-  "topic": "Zion"
+  "topic": "Zion",
+  "pinUsed": "pb20261126-8",
+  "pinDate": "2026-11-26"
  },
  "16499772": {
   "photographer": "Physical Pixel",
@@ -646,7 +652,9 @@
   "url": "https://www.pexels.com/photo/35684458/",
   "alt": "Lone runner on a snowy trail between frosted trees",
   "used": false,
-  "topic": "icy trail"
+  "topic": "icy trail",
+  "pinUsed": "pb20261126-10",
+  "pinDate": "2026-11-26"
  },
  "19948451": {
   "photographer": "Rashad Baynazarli",

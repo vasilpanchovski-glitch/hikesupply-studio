@@ -1,0 +1,121 @@
+{
+ "code": "pb20261126",
+ "note": "All photo pins (layout full). New article first: planning a winter hike around early sunset (pin 1). Black Friday go-outside pin to the How to Plan a Hike article, with the blaze orange and state wildlife agency note (pin 2); it names Black Friday but has no sale or price, so it is fine on any day. New products never pinned: Trail Food Planner (pin 3, Pexels camp stove photo) and Trail Dog Water Kit (pin 4, the bottle photo from the product pages). Gift under $12: clip-on LED dog light (pin 5). Merino everyday angles: ski trip and a gift, both real-look socks photos (pins 6, 7; the ski photo got a soft extended top so the headline does not cover her face). National Parks Trio as a gift on a Zion photo (pin 8). Pins 1 and 2 use Higgsfield soul_2 photos (2 pictures, about 0.25 credit): a jacket logo (pin 1) and clothing tags and hat text (pin 2) were painted out. No AirTag holder pin yet: it has no lifestyle photo. Etsy: National Parks Tracker and Trail Ready Training Plan (neither pinned in the last 14 days), on Pexels photos. No socks deal, no sale prices.",
+ "pins": [
+  {
+   "id": "pb20261126-1",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-1.jpg",
+   "ai": true,
+   "title": "Dark by 4:30? Plan backwards.",
+   "sub": "Set a turnaround time before you start.",
+   "board": "Hiking Tips & Checklists",
+   "pinTitle": "How to plan a winter hike around early sunset: start time and turnaround time",
+   "description": "Short winter days catch hikers out. Check today's sunset time, plan to be back at the car at least an hour before it, and work backwards to a start time and a firm turnaround time. Pack a headlamp even for a short hike. Our Trail Journal guide shows the simple math.",
+   "link": "https://hikesupplyco.com/blogs/trail-journal/how-to-plan-a-winter-hike-around-sunset?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-1"
+  },
+  {
+   "id": "pb20261126-2",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-2.jpg",
+   "ai": true,
+   "title": "Skip the mall this Friday",
+   "sub": "Take a short family hike instead.",
+   "board": "Hiking Tips & Checklists",
+   "pinTitle": "Black Friday hike ideas: how to plan an easy family hike instead of shopping",
+   "description": "Spend Black Friday outside. Pick a short trail close to home, check the weather and sunset time, tell someone your plan and pack water, snacks, layers and a headlamp. Deer seasons are open in many states, so wear blaze orange and check your state wildlife agency for dates. Our six-step guide covers the rest.",
+   "link": "https://hikesupplyco.com/blogs/trail-journal/how-to-plan-a-hike?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-2"
+  },
+  {
+   "id": "pb20261126-3",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-3.jpg",
+   "title": "Never sure how much food to bring?",
+   "sub": "Plan it once, on paper.",
+   "board": "Hiking Tips & Checklists",
+   "pinTitle": "Trail food planner printable: day hike snacks and backpacking meal planner",
+   "description": "A 20-page printable food planner for hikers: a snack rhythm for long day hikes, fill-in planners for an overnight and a 3 to 5 day trip, a food weight worksheet in lb and kg, no-cook and boil-only meal ideas, a shopping list and a repack checklist. Instant PDF download in US Letter and A4, a handy gift for a hiker.",
+   "link": "https://hikesupplyco.com/products/trail-food-planner-day-hike-snacks-backpacking-meal-planner-printable?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-3"
+  },
+  {
+   "id": "pb20261126-4",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-4.jpg",
+   "ai": true,
+   "title": "Water break for your dog",
+   "sub": "A bottle with its own bowl.",
+   "board": "Hiking Gear Essentials",
+   "pinTitle": "Dog water bottle and collapsible dog bowl kit for hikes and walks",
+   "description": "The Trail Dog Water Kit: a 2-in-1 dog water bottle with a built-in drinking bowl for quick drinks on the move (leftover water goes back into the bottle), plus a folding silicone bowl with a carabiner for food or a bigger drink at a break. Bottle in 350 ml or 550 ml. A practical gift for dog people. Gear ships in 6-13 business days.",
+   "link": "https://hikesupplyco.com/products/trail-dog-water-kit?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-4"
+  },
+  {
+   "id": "pb20261126-5",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-5.jpg",
+   "ai": true,
+   "title": "A stocking stuffer for dog people",
+   "sub": "A small light that clips on any collar.",
+   "board": "Hiking Gear Essentials",
+   "pinTitle": "Clip-on LED dog collar light: small safety light for dark winter walks, a gift under $12",
+   "description": "A small round LED light that clips onto any collar, harness or leash, so you can see your dog after dark in the yard, the park or at the trailhead. Three modes, replaceable button batteries, nine colors. Sold single. A useful little gift for dog owners. Gear ships in 6-13 business days.",
+   "link": "https://hikesupplyco.com/products/clip-on-led-dog-light?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-5"
+  },
+  {
+   "id": "pb20261126-6",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-6.jpg",
+   "ai": true,
+   "title": "Ski boots on, toes still warm",
+   "board": "Hiking Gear Essentials",
+   "pinTitle": "Warm merino wool socks for ski trips: cushioned crew socks for cold boots and chalets",
+   "description": "Cold mornings in the ski room, long days in stiff boots. Cushioned crew socks with 80% merino wool keep feet warm without getting sweaty and stay fresh through the day. For ski trips, the commute, home and the trail. Two sizes, four colors.",
+   "link": "https://hikesupplyco.com/products/merino-wool-hiking-socks?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-6"
+  },
+  {
+   "id": "pb20261126-7",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-7.jpg",
+   "ai": true,
+   "title": "For the one with cold feet",
+   "sub": "Soft merino socks they will wear all winter.",
+   "board": "Hiking Gear Essentials",
+   "pinTitle": "Merino wool socks gift: warm, soft winter crew socks for someone who is always cold",
+   "description": "A gift that gets worn every day of winter. Soft 80% merino wool crew socks with a cushioned sole, warm on cold floors, in boots on the commute and out on the trail, and not itchy. Two sizes, four colors. A good stocking stuffer for anyone who is always cold.",
+   "link": "https://hikesupplyco.com/products/merino-wool-hiking-socks?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-7"
+  },
+  {
+   "id": "pb20261126-8",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-8.jpg",
+   "title": "Three park trips, one plan",
+   "sub": "Smokies, Utah and Yellowstone guides.",
+   "board": "Best Day Hikes in US National Parks",
+   "pinTitle": "National park trip planner bundle: Great Smoky Mountains, Utah Mighty 5 and Yellowstone guides",
+   "description": "Three printable trip planning guides in one download: the Great Smoky Mountains, Utah's Mighty 5 (Zion, Bryce Canyon, Capitol Reef, Canyonlands, Arches) and Yellowstone and Grand Teton. Itineraries for 3, 5 and 7 days built around beginner-friendly day hikes, safety rules and packing lists. An instant gift for someone planning next year's park trips. Always check official park pages before you go.",
+   "link": "https://hikesupplyco.com/products/national-parks-trio-smokies-utah-yellowstone-trip-planning-guides?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-8"
+  },
+  {
+   "id": "pb20261126-9",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-9.jpg",
+   "title": "How many parks have you seen?",
+   "sub": "Check off all 64.",
+   "board": "Best Day Hikes in US National Parks",
+   "pinTitle": "US national parks tracker printable: checklist of all 64 national parks with visit log",
+   "description": "Track every US national park you visit with this printable national parks tracker: all 64 parks on one checklist, one beginner-friendly day hike for each park, visit logs and stamp boxes, plus Canada's national parks. Instant PDF download, a simple gift for a park lover or a planner for next year's road trips.",
+   "link": "https://www.etsy.com/listing/4607232989?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-9"
+  },
+  {
+   "id": "pb20261126-10",
+   "layout": "full",
+   "image": "media/pins/src/pb20261126-10.jpg",
+   "title": "A bigger hike in spring?",
+   "sub": "Start an 8-week plan this winter.",
+   "board": "Hiking Tips & Checklists",
+   "pinTitle": "8 week hiking training plan printable: beginner workouts to get ready for a big hike",
+   "description": "Planning a longer or steeper hike next year? This printable 8-week training plan for beginner hikers needs no gym: short walks, hikes and strength days, a slow pack weight build-up and weekly logs to track your progress. Instant PDF download, easy to start at home this winter.",
+   "link": "https://www.etsy.com/listing/4607256040?utm_source=pinterest&utm_medium=social&utm_campaign=pb20261126-10"
+  }
+ ]
+}
