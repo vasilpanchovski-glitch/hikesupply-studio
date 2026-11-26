@@ -171,6 +171,16 @@
    "music": "socks/music/embers.mp3",
    "voice": "af_heart",
    "note": "Vasil: voiceover text was cringe. New plain, dry script. Openings left unused: k04 only."
+  },
+  {
+   "id": "mpp03",
+   "card": "mk07",
+   "shots": [
+    "m06"
+   ],
+   "headlines": [
+    "COUPLES PHOTO, NAILED IT"
+   ]
   }
  ]
 }
