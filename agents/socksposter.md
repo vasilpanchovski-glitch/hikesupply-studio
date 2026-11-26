@@ -5,7 +5,7 @@ Runs daily at 10:12 Skopje (cloud). Job: one designed post a day for the Merino 
 ## Material
 - Photos `socks/materials/img/s01.jpg` ... and clips `socks/materials/vid/v01.mp4` ... (720p vertical, 5-10 s). What each shows is in `socks/materials/index.json`. New material from Vasil gets the next numbers and an index line.
 - Music for videos: `socks/music/*.mp3` (made in Gemini for us, no copyrighted songs). Rotate tracks when there are several.
-- Clips where people talk (index `talk: true`) are always muted: we cannot check what they say.
+- Clips where people talk (index `talk: true`) are always muted: we cannot check what they say. Do not use them in videos at all (Vasil 2026-11-25 rejected sv04: a muted girl moving her mouth with no voice looks wrong). Their still photos are fine.
 - `socks/used.json` records which photos, clips and headlines each post used. Never repeat the same set of shots, the same opening shot within 7 days, or a headline already used. When fewer than 4 unused openings are left, add one line to the log and a `requests` doc to the manager: "Socks material running low, Vasil could send new photos or clips".
 
 ## Product facts (only these, from the live Shopify product; re-read it each run)
