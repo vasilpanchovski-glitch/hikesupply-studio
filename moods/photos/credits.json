@@ -559,10 +559,11 @@
   "photographer": "Lena Glukhova",
   "url": "https://www.pexels.com/photo/10480585/",
   "alt": "Snow-covered forest trail in winter",
-  "used": false,
+  "used": true,
   "topic": "winter trail",
   "pinUsed": "pb20261125-10",
-  "pinDate": "2026-11-25"
+  "pinDate": "2026-11-25",
+  "moodUsed": "mw2026-12-07"
  },
  "11973575": {
   "photographer": "Vasilis Karkalas",
@@ -593,15 +594,17 @@
   "photographer": "Physical Pixel",
   "url": "https://www.pexels.com/photo/16499772/",
   "alt": "Snowy path lined with bare trees",
-  "used": false,
-  "topic": "winter trail"
+  "used": true,
+  "topic": "winter trail",
+  "moodUsed": "mw2026-12-07"
  },
  "16573043": {
   "photographer": "Willian Justen de Vasconcellos",
   "url": "https://www.pexels.com/photo/16573043/",
   "alt": "Snowy peaks under dark dramatic clouds",
-  "used": false,
-  "topic": "snowy peaks"
+  "used": true,
+  "topic": "snowy peaks",
+  "moodUsed": "mw2026-12-07"
  },
  "17345019": {
   "photographer": "Yelena Wegel",
@@ -621,31 +624,35 @@
   "photographer": "Vasilis Karkalas",
   "url": "https://www.pexels.com/photo/20563956/",
   "alt": "Mountain lake with mirror reflections, Glacier National Park",
-  "used": false,
+  "used": true,
   "topic": "Glacier National Park",
   "pinUsed": "pb20261123-10",
-  "pinDate": "2026-11-23"
+  "pinDate": "2026-11-23",
+  "moodUsed": "mw2026-12-07"
  },
  "25792384": {
   "photographer": "Heather R",
   "url": "https://www.pexels.com/photo/25792384/",
   "alt": "Mountain peak and river with pine forest, Glacier National Park",
-  "used": false,
-  "topic": "Glacier National Park"
+  "used": true,
+  "topic": "Glacier National Park",
+  "moodUsed": "mw2026-12-07"
  },
  "33966207": {
   "photographer": "Valentin Ilas",
   "url": "https://www.pexels.com/photo/33966207/",
   "alt": "Misty forested mountain slopes in fog",
-  "used": false,
-  "topic": "misty mountain"
+  "used": true,
+  "topic": "misty mountain",
+  "moodUsed": "mw2026-12-07"
  },
  "34686763": {
   "photographer": "Marije Kouyzer",
   "url": "https://www.pexels.com/photo/34686763/",
   "alt": "Lower Falls in the Grand Canyon of the Yellowstone",
-  "used": false,
-  "topic": "Yellowstone"
+  "used": true,
+  "topic": "Yellowstone",
+  "moodUsed": "mw2026-12-07"
  },
  "35684458": {
   "photographer": "Natalia Sevruk",

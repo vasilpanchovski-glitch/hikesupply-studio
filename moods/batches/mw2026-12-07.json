@@ -1,0 +1,60 @@
+{
+ "posts": [
+  {
+   "id": "m20261207",
+   "photo": "moods/photos/pexels-16573043.jpg",
+   "quote": "Climb the mountains\nand get their good tidings.\nNature’s peace will flow into you\nas sunshine flows into trees.",
+   "author": "John Muir",
+   "source": "Our National Parks, 1901",
+   "place": "auto"
+  },
+  {
+   "id": "m20261208",
+   "photo": "moods/photos/pexels-20563956.jpg",
+   "quote": "A lake is the landscape’s most\nbeautiful and expressive feature.",
+   "author": "Henry David Thoreau",
+   "source": "Walden, 1854",
+   "place": 0.03
+  },
+  {
+   "id": "m20261209",
+   "photo": "moods/photos/pexels-33966207.jpg",
+   "quote": "In the woods,\nwe return to reason and faith.",
+   "author": "Ralph Waldo Emerson",
+   "source": "Nature, 1836",
+   "place": "auto"
+  },
+  {
+   "id": "m20261210",
+   "photo": "moods/photos/pexels-25792384.jpg",
+   "quote": "Heaven is under our feet\nas well as over our heads.",
+   "author": "Henry David Thoreau",
+   "source": "Walden, 1854",
+   "place": 0.05
+  },
+  {
+   "id": "m20261211",
+   "photo": "moods/photos/pexels-34686763.jpg",
+   "quote": "Thousands of tired, nerve-shaken,\nover-civilized people\nare beginning to find out\nthat going to the mountains\nis going home",
+   "author": "John Muir",
+   "source": "Our National Parks, 1901",
+   "place": "bottom"
+  },
+  {
+   "id": "m20261212",
+   "photo": "moods/photos/pexels-16499772.jpg",
+   "quote": "In the woods too,\na man casts off his years,\nas the snake his slough,\nand at what period soever of life,\nis always a child.",
+   "author": "Ralph Waldo Emerson",
+   "source": "Nature, 1836",
+   "place": "auto"
+  },
+  {
+   "id": "m20261213",
+   "photo": "moods/photos/pexels-10480585.jpg",
+   "quote": "Going to the woods is going home;\nfor I suppose we came\nfrom the woods originally.",
+   "author": "John Muir",
+   "source": "Our National Parks, 1901",
+   "place": "auto"
+  }
+ ]
+}
