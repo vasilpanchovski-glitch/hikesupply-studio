@@ -45,7 +45,7 @@ const LowScrim: React.FC = () => (
 );
 
 // A Joshua tree (screen units, base at x,y, height about 520*s). seed varies the branches.
-const JTree: React.FC<{ x: number; y: number; s?: number; seed?: number; col?: string; trunk?: string }> = ({ x, y, s = 1, seed = 0, col = "#5d6a3a", trunk = "#7a6650" }) => {
+export const JTree: React.FC<{ x: number; y: number; s?: number; seed?: number; col?: string; trunk?: string }> = ({ x, y, s = 1, seed = 0, col = "#5d6a3a", trunk = "#7a6650" }) => {
   const arms: [number, number, number, number][] =
     seed % 3 === 0
       ? [[0, -300, -130, -430], [0, -300, 120, -470], [0, -230, 170, -330], [0, -360, -30, -520]]
@@ -76,7 +76,7 @@ const JTree: React.FC<{ x: number; y: number; s?: number; seed?: number; col?: s
 };
 
 // Pile of rounded granite boulders (screen units).
-const Boulders: React.FC<{ x: number; y: number; s?: number; col?: string; shade?: string }> = ({ x, y, s = 1, col = "#d7a982", shade = "#b8875f" }) => (
+export const Boulders: React.FC<{ x: number; y: number; s?: number; col?: string; shade?: string }> = ({ x, y, s = 1, col = "#d7a982", shade = "#b8875f" }) => (
   <g transform={`translate(${x},${y}) scale(${s})`}>
     {[
       [-200, -90, 150, 100],
@@ -95,7 +95,7 @@ const Boulders: React.FC<{ x: number; y: number; s?: number; col?: string; shade
   </g>
 );
 
-const DesertBackdrop: React.FC<{ cam: Cam; sky: Sky; uid: string; y: number; blur?: number; t: number }> = ({ cam, sky, uid, y, blur = 0, t }) => (
+export const DesertBackdrop: React.FC<{ cam: Cam; sky: Sky; uid: string; y: number; blur?: number; t: number }> = ({ cam, sky, uid, y, blur = 0, t }) => (
   <>
     <Plane cam={cam} depth={0.04} blur={blur * 0.6}>
       <SkyPlane sky={sky} uid={uid} />
@@ -124,7 +124,7 @@ const DesertBackdrop: React.FC<{ cam: Cam; sky: Sky; uid: string; y: number; blu
 );
 
 // Sandy trail ground with scrub.
-const Sand: React.FC<{ y: number }> = ({ y }) => (
+export const Sand: React.FC<{ y: number }> = ({ y }) => (
   <Svg>
     <path d={`M-400,${y - 40} L1480,${y - 40} L1480,2600 L-400,2600 Z`} fill="#c99c72" />
     <path d={`M-400,${y - 8} L1480,${y - 8} L1480,${y + 90} L-400,${y + 90} Z`} fill="#e2bd92" />
