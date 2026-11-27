@@ -1,0 +1,6 @@
+{"voice":"af_heart","speed":0.93,"lead":0.3,"lines":[
+ {"text":"Owen let go of his pole to grab a branch.","gap":0.1},
+ {"text":"It slid twenty feet down the snowy slope.","gap":0.15,"show":"It slid 20 feet down the snowy slope."},
+ {"text":"The fix: slide your hand up through the strap from below, then grip over it.","gap":0.1},
+ {"text":"The strap carries weight and the pole stays.","gap":0.3},
+ {"text":"Save this.","gap":0.2}]}
