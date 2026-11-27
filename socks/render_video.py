@@ -82,7 +82,7 @@ def render(spec):
         ov = os.path.join(tmp, f"o{i}.png")
         s = dict(s, _logo=spec.get("logo", "color"))
         overlay(s, ov)
-        src = os.path.join(ROOT, "..", spec.get("dir","socks"), "materials", "vid", s["clip"] + ".mp4")
+        src = os.path.join(ROOT, "..", spec.get("dir","socks"), "materials", "vid", s.get("clip", "") + ".mp4")
         p = os.path.join(tmp, f"p{i}.mp4")
         z = s.get("zoom", 0.05)
         dur = s["dur"]

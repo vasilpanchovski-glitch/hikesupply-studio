@@ -1,0 +1,24 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.0,
+ "lead": 0.3,
+ "lines": [
+  {
+   "text": "Grandpa was first down the hill again.",
+   "gap": 1.0
+  },
+  {
+   "text": "Then the whole crew caught up.",
+   "gap": 1.45
+  },
+  {
+   "text": "Nobody had to say cheese.",
+   "gap": 1.05
+  },
+  {
+   "text": "Funny Old Man Ski Mask. Nine faces. Link in bio.",
+   "gap": 0.45
+  }
+ ]
+}
