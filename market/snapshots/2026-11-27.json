@@ -1,0 +1,198 @@
+{
+ "date": "2026-11-27",
+ "previous": "2026-11-21",
+ "group": "b",
+ "note": "Group B on Black Friday. Empty fields mean the page did not show the number. Compared with the last group B run (Nov 21). Only pages returned by a web search could be opened this run: BigSkyChecklists, AnkaKidsStudio, An Acre in the City and Earth Pak were not readable, so they are left empty, not guessed. Complaint mining covered inflatable camping pillows and microfiber camp towels, because our Ultralight Inflatable Camping Pillow ($24.99) and Quick-Dry Microfiber Towel ($16.99/$24.99) went live on Nov 25.",
+ "sellers": [
+  {
+   "name": "Dirt In My Shoes",
+   "shop": {
+    "rating": 4.94,
+    "reviews": 880
+   },
+   "products": [
+    {
+     "title": "Acadia Itinerary",
+     "price": 47.2,
+     "was": 59
+    },
+    {
+     "title": "Arches Itinerary",
+     "price": 23.2,
+     "was": 29
+    },
+    {
+     "title": "Bryce Canyon Itinerary",
+     "price": 23.2,
+     "was": 29
+    },
+    {
+     "title": "Canyonlands Itinerary",
+     "price": 23.2,
+     "was": 29
+    },
+    {
+     "title": "Capitol Reef Itinerary",
+     "price": 23.2,
+     "was": 29
+    },
+    {
+     "title": "Glacier Itinerary",
+     "price": 47.2,
+     "was": 59
+    },
+    {
+     "title": "Grand Canyon Itinerary",
+     "price": 35.2,
+     "was": 44
+    },
+    {
+     "title": "Grand Teton Itinerary",
+     "price": 35.2,
+     "was": 44
+    },
+    {
+     "title": "Great Smoky Mountains Itinerary",
+     "price": 47.2,
+     "was": 59
+    },
+    {
+     "title": "Olympic Itinerary",
+     "price": 47.2,
+     "was": 59
+    },
+    {
+     "title": "Rocky Mountain Itinerary",
+     "price": 35.2,
+     "was": 44
+    },
+    {
+     "title": "South Dakota Itinerary",
+     "price": 55.2,
+     "was": 69
+    },
+    {
+     "title": "Yellowstone Itinerary",
+     "price": 47.2,
+     "was": 59
+    },
+    {
+     "title": "Yosemite Itinerary",
+     "price": 47.2,
+     "was": 59
+    },
+    {
+     "title": "Zion Itinerary",
+     "price": 35.2,
+     "was": 44
+    },
+    {
+     "title": "Zion Itinerary (detail)",
+     "price": 35.2,
+     "was": 44.0,
+     "item_reviews": 60,
+     "notes": "57 five-star, 3 four-star; 1, 2 and 3-day PDFs of 19/25/28 pages, lodging and dining guide, shuttle notes, weekly updates; page also showed 'Sold out' next to the price"
+    },
+    {
+     "title": "e-Gift Card",
+     "price": "from 10"
+    }
+   ],
+   "offers": [
+    "NEW: Black Friday, all itineraries 20% off through 12/1 (banner, no code shown)",
+    "e-gift card from $10",
+    "the 3+ itineraries 10% multi-buy was not shown this time"
+   ],
+   "reviews": {
+    "note": "864 -> 880 reviews since Nov 21; no low reviews visible"
+   },
+   "marketing": {
+    "tactics": [
+     "flat 20% on everything with a real end date (Dec 1)",
+     "gift card for the holidays",
+     "review count and 'updated weekly' as proof",
+     "5% of profit to a park partner on the Zion page"
+    ],
+    "traffic": "Google park itinerary searches, blog, email list"
+   },
+   "source": "https://shop.dirtinmyshoes.com"
+  },
+  {
+   "name": "PrintablePatti",
+   "shop": {
+    "sales": "2.1k",
+    "rating": 4.9,
+    "reviews": 322
+   },
+   "products": [
+    {
+     "title": "Camping Checklist, Planner, Hiking Essentials ... Camping Log",
+     "price": 4.22,
+     "was": 8.45,
+     "pages": 18,
+     "item_reviews": 2,
+     "item_rating": 5.0,
+     "favorites": 26,
+     "notes": "50% off, 'sale ends in 3 days' (about Nov 30); 8.5x11 only. Correction: the page shows 2 item reviews; the 322 noted before is the shop review count"
+    }
+   ],
+   "offers": [
+    "50% off, ends about Nov 30 (running since early November)"
+   ],
+   "reviews": {
+    "praise": [],
+    "complaints": []
+   },
+   "marketing": {
+    "tactics": [
+     "month-long 50% sale through Black Friday",
+     "keyword-stuffed title"
+    ],
+    "traffic": "Etsy search"
+   },
+   "source": "https://www.etsy.com/listing/898385376"
+  },
+  {
+   "name": "AnkaKidsStudio",
+   "products": [],
+   "offers": [],
+   "reviews": {},
+   "notes": "page not readable this run"
+  },
+  {
+   "name": "BigSkyChecklists",
+   "products": [],
+   "offers": [],
+   "reviews": {},
+   "notes": "page not readable this run"
+  },
+  {
+   "name": "An Acre in the City (Payhip)",
+   "products": [],
+   "offers": [],
+   "reviews": {},
+   "notes": "page not readable this run"
+  },
+  {
+   "name": "Earth Pak",
+   "products": [],
+   "reviews": {},
+   "notes": "no new public data"
+  }
+ ],
+ "other_seen": [],
+ "changes_vs_previous": [
+  "Dirt In My Shoes started a Black Friday sale: all 15 itineraries 20% off through Dec 1 ($23.20 to $55.20, was $29 to $69); reviews 864 -> 880",
+  "PrintablePatti: same 50% sale, ends about Nov 30; item has 2 reviews (shop has 322)"
+ ],
+ "how_they_sell": {
+  "repeats": [
+   "one simple sitewide cut with a real end date of Dec 1 (Dirt In My Shoes 20%, DearSummit 25%, We're in the Rockies $30 off bundles)",
+   "gift options for the holidays (e-gift card, set of 3, free bonus PDF)",
+   "long sale instead of a short event (PrintablePatti 50% all November)"
+  ],
+  "we_do_not_use": [
+   "a store gift card (o16 still waits)"
+  ]
+ }
+}
