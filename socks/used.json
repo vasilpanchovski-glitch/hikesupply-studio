@@ -7,5 +7,6 @@
  {"id": "pp03", "card": "sk06", "shots": ["s07"], "headlines": ["BLACK FRIDAY"]},
  {"id": "sv03", "card": "sk07", "shots": ["v01", "v07", "v03", "v04"], "headlines": ["STUCK ON A GIFT IDEA?", "WICKS SWEAT", "MERINO WOOL HIKING SOCKS"]},
  {"id": "pp04", "card": "sk08", "shots": ["s28"], "headlines": ["THE GIFT THEY'LL WEAR"]},
- {"id": "sv04", "card": "sk09", "shots": ["v04", "v03", "v05", "s28"], "remade": "2026-11-26 without talking clip v09", "headlines": ["COLD FEET ON SNOWY WALKS?", "CUSHIONED SOLE", "80% MERINO, NO WOOL ITCH", "BUY 2, GET 1 FREE"]}
+ {"id": "sv04", "card": "sk09", "shots": ["v04", "v03", "v05", "s28"], "remade": "2026-11-26 without talking clip v09", "headlines": ["COLD FEET ON SNOWY WALKS?", "CUSHIONED SOLE", "80% MERINO, NO WOOL ITCH", "BUY 2, GET 1 FREE"]},
+ {"id": "pp05", "card": "sk10", "shots": ["s30"], "headlines": ["COSY FEET ALL WEEKEND"]}
 ]}

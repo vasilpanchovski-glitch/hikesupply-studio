@@ -121,7 +121,7 @@ def _render(spec, band):
         bw = d.textlength(spec["big"], font=fb)
         nw = text_w(d, spec["note"], fn)
         sw = d.textlength(spec.get("sub", ""), font=fsub)
-        w = max(bw + 18 + nw, sw, 420)
+        w = max(bw + 18 + nw, sw, spec.get("deal_min_w", 420))
         h = fb.getbbox(spec["big"])[3] + 22 + 46 + 50
         x0 = x if x == M else W - M - w
         return (x0, bottom - h, x0 + w, bottom), fb, fn, bw
