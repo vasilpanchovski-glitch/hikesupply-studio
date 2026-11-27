@@ -1,0 +1,538 @@
+{
+ "date": "2026-11-27",
+ "method": "WebSearch (standard, US) for each of the 35 questions in market/ai-questions.json, question text exactly; top up to 8 domains as returned (duplicates once, staging subdomains such as acceptance.sunset.com, adminonly.wta.org and oldprod.outdoors.org folded into their main site, obvious spam, mirrors and syndicated copies marked). Plus site:hikesupplyco.com and 3 brand name searches. same_top5_as_previous compares the set of the first 5 domains with 2026-11-25 (order ignored).",
+ "previous": "2026-11-25",
+ "indexing": {
+  "site_search": "no hikesupplyco.com pages returned (only unrelated stores: trailspace, webflow, rei, steepandcheap, whittakermountaineering, fieldmag, acampapr, dickssportinggoods, hikerkind), same as every audit since Nov 15",
+  "name_searches": [
+   {
+    "query": "HikeSupply Co. merino wool hiking socks",
+    "hikesupply_urls": []
+   },
+   {
+    "query": "hikesupplyco winter hiking guide",
+    "hikesupply_urls": []
+   },
+   {
+    "query": "hikesupplyco.com what to wear hiking in 40 degree weather",
+    "hikesupply_urls": []
+   }
+  ],
+  "note": "Seventh audit in a row with none of our pages in this search tool. The 40 degree search returned explorationsquared.com, activeweekender.com, gore-tex.com, americanhiking.org and thenorthface.com first, not our article, although Shopify showed real Google, Bing and DuckDuckGo visits to it in the Nov 25 audit. This tool's index still lags."
+ },
+ "results": [
+  {
+   "question": "free printable hiking checklist pdf",
+   "top": [
+    "rei.com (printable PDF)",
+    "appalachiantrail.org",
+    "checklist.com",
+    "windy.app",
+    "backcountry.com",
+    "trailhiking.com.au",
+    "scholastic.com",
+    "static1.squarespace.com (kids gear PDF)"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "best day hiking checklist for beginners",
+   "top": [
+    "rei.com",
+    "mec.ca",
+    "sectionhiker.com",
+    "gearjunkie.com",
+    "greatist.com",
+    "cbssports.com",
+    "pilotplans.com",
+    "outdoorlife.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "what to pack for a day hike printable",
+   "top": [
+    "rei.com (printable PDF)",
+    "llbean.com",
+    "appalachiantrail.org (day hike checklist)",
+    "cleverhiker.com",
+    "gearjunkie.com",
+    "backcountry.com",
+    "explorewithlora.com",
+    "camelbak.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": false
+  },
+  {
+   "question": "hiking trip planner printable",
+   "top": [
+    "cache.studiobinder.com (spam copy)",
+    "certtest.bart.gov (spam copy)",
+    "template.net",
+    "backpacker.com",
+    "wta.org (printable itinerary form)",
+    "scoutlife.org"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "Great Smoky Mountains trip planning guide pdf",
+   "top": [
+    "webarchive.library.unt.edu (archived nps.gov trip planner)",
+    "corpora.tika.apache.org (old gov PDF mirror)",
+    "slideshare.net",
+    "wilsoncsd.org",
+    "nationalparkstraveler.org",
+    "shakaguide.freshdesk.com",
+    "nps.gov",
+    "moontravelguides.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "Smoky Mountains hiking itinerary 3 days",
+   "top": [
+    "fodors.com",
+    "aaa.com",
+    "neverendingfootsteps.com",
+    "wildlandtrekking.com",
+    "dontstopliving.net",
+    "explore-share.com",
+    "foratravel.com",
+    "thewanderingqueen.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "Utah Mighty 5 road trip itinerary guide",
+   "top": [
+    "thetravel.com",
+    "turo.com",
+    "visitutah.com",
+    "morethanjustparks.com",
+    "earthtrekkers.com",
+    "theblondeabroad.com",
+    "ourescapeclause.com",
+    "shakaguide.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "Utah national parks trip planner pdf",
+   "top": [
+    "media.lonelyplanet.com (preview PDF)",
+    "hub.myutahparks.com",
+    "house.utleg.gov",
+    "yopki.com",
+    "wereintherockies.com",
+    "layla.ai",
+    "utah.com",
+    "ksl.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "beginner hiking guide pdf",
+   "top": [
+    "hikingguy.com",
+    "artofmanliness.com",
+    "bhphotovideo.com",
+    "bearfoottheory.com",
+    "getoutside.ordnancesurvey.co.uk",
+    "monkeysandmountains.com",
+    "themanual.com",
+    "issuu.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "solo hiking safety tips guide",
+   "top": [
+    "marathonhandbook.com",
+    "worldnomads.com",
+    "frommers.com",
+    "themanual.com",
+    "t3.com",
+    "travelnoire.com",
+    "yardbarker.com",
+    "scenichudson.org"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "what to do if you get lost hiking",
+   "top": [
+    "sunset.com",
+    "sectionhiker.com",
+    "americanhiking.org",
+    "fs.usda.gov",
+    "backpackerspantry.com",
+    "healthday.com",
+    "explore.com",
+    "advnture.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "hiking emergency checklist",
+   "top": [
+    "rei.com (printable PDF)",
+    "redcross.ca",
+    "outdoorlife.com",
+    "outdoors.org",
+    "aol.com",
+    "mec.ca",
+    "des.umd.edu (PDF)",
+    "adk.org"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "hiking safety checklist for beginners",
+   "top": [
+    "hikingguy.com",
+    "backcountry.com",
+    "wftv.com",
+    "explorewithalec.com",
+    "mentalfloss.com",
+    "gearjunkie.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "best cheap trekking poles for beginners",
+   "top": [
+    "reviewed.com",
+    "cleverhiker.com",
+    "si.com",
+    "countryfile.com",
+    "backpacker.com",
+    "territorysupply.com",
+    "outdoorlife.com",
+    "thebrokebackpacker.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "what to wear hiking in fall",
+   "top": [
+    "tractorsupply.com",
+    "freshoffthegrid.com",
+    "ems.com",
+    "themanual.com",
+    "bearfoottheory.com",
+    "squarespace blog",
+    "yahoo.com",
+    "fitandwell.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "hiking gear checklist for beginners on a budget",
+   "top": [
+    "outforia.com",
+    "cbssports.com",
+    "luminaid.com",
+    "dev.to",
+    "frugalfrolicker.com",
+    "tourradar.com",
+    "accuweather.com",
+    "inputmag.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "best hiking guides to buy for national parks",
+   "top": [
+    "rei.com (guidebook category pages)",
+    "terragalleria.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "gift ideas for new hikers under $30",
+   "top": [
+    "outsideonline.com",
+    "gearjunkie.com",
+    "moneysavingmom.com",
+    "sectionhiker.com",
+    "daytripper28.com",
+    "aol.com",
+    "gohikevirginia.com",
+    "faroutguides.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "hiking journal printable",
+   "top": [
+    "etsy.com",
+    "favecrafts.com",
+    "theseamanmom.com",
+    "payhip.com",
+    "abebooks.com",
+    "zvab.com",
+    "simonandschuster.ca",
+    "blackwells.co.uk"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "how to plan your first hike",
+   "top": [
+    "columbiasportswear.co.uk",
+    "popsci.com",
+    "koa.com",
+    "academy.com",
+    "outsideonline.com",
+    "aarp.org",
+    "alltrails.com",
+    "columbia.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "how to load a gpx file into alltrails",
+   "top": [
+    "ultra-x.co",
+    "support.alltrails.com",
+    "lib.rs",
+    "forums.garmin.com",
+    "support.hiiker.app",
+    "alltrails.com",
+    "studycountry.com",
+    "trailmarks-io.github.io"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "how to use gpx files in gaia gps",
+   "top": [
+    "help.gaiagps.com",
+    "gaiagpshelp.zendesk.com",
+    "squarespace blog",
+    "indiahikes.com",
+    "trailsoffroad.com",
+    "blog.gaiagps.com",
+    "bikepacking.com",
+    "getoutside.ordnancesurvey.co.uk"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "how to stop trekking poles from slipping",
+   "top": [
+    "outdoors.codidact.com",
+    "backpackinglight.com",
+    "sectionhiker.com",
+    "montemlife.gorgias.help",
+    "ryderwalker.com",
+    "rokslide.com",
+    "backpacker.com",
+    "outdoors.org"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "why is my hydration bladder leaking",
+   "top": [
+    "tetonsports gorgias help",
+    "huntingwaterfalls.com",
+    "sectionhiker.com",
+    "bikeforums.net",
+    "ifixit.com",
+    "support.cascadedesigns.com",
+    "backpackinglight.com",
+    "uswe.zendesk.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "why is my water filter straw hard to drink from",
+   "top": [
+    "help.lifestraw.com",
+    "help.clearlyfiltered.com",
+    "support.livelarq.com",
+    "epic-water-filters gorgias help",
+    "outdoorlife.com",
+    "ntro.it.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "does an emergency bivy keep you warm",
+   "top": [
+    "arva-equipment.com",
+    "mec.ca",
+    "outdoorhub.com",
+    "shopsavvy.com",
+    "rei.com",
+    "kitterytradingpost.com",
+    "ems.com",
+    "nationalparkstraveler.org"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "why does my headlamp die in the cold",
+   "top": [
+    "olight.com",
+    "petzl.com",
+    "backpackinglight.com",
+    "alibaba.com",
+    "14ers.com",
+    "bikeforums.net",
+    "nitecore.com",
+    "candlepowerforums.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "do touchscreen gloves work for winter hiking",
+   "top": [
+    "scotsman.com",
+    "yorkshireeveningpost.co.uk (syndicated, plus 5 more regional copies)",
+    "dickssportinggoods.com",
+    "gearpatrol.com",
+    "engadget.com",
+    "cnn.com",
+    "yahoo.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "how to keep feet warm winter hiking",
+   "top": [
+    "rei.com",
+    "advnture.com",
+    "wta.org",
+    "womanandhome.com",
+    "squarespace blog",
+    "myopencountry.com",
+    "outdoors.org",
+    "outsideonline.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "how many national parks are there in the US",
+   "top": [
+    "morethanjustparks.com",
+    "worldatlas.com",
+    "aol.com",
+    "wikipedia.org",
+    "travel-experience-live.com",
+    "sunjournal.com",
+    "nationalparkobsessed.com",
+    "yahoo.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "best merino hiking socks under $25",
+   "top": [
+    "rei.com",
+    "gearjunkie.com",
+    "wellandgood.com",
+    "switchbacktravel.com",
+    "cleverhiker.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "rechargeable headlamp for winter hiking",
+   "top": [
+    "themanual.com",
+    "rei.com",
+    "bioliteenergy.com",
+    "trailandkale.com",
+    "sectionhiker.com",
+    "dickssportinggoods.com",
+    "sportsshoes.com",
+    "varuste.net"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "lightweight emergency bivy",
+   "top": [
+    "arva-equipment.com",
+    "backcountry.com",
+    "rab.equipment",
+    "rei.com",
+    "mec.ca",
+    "decathlon.co.uk",
+    "publiclands.com",
+    "ems.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "best ice cleats for hiking boots",
+   "top": [
+    "outdoorlife.com",
+    "bestreviews.com",
+    "heavy.com",
+    "cleverhiker.com",
+    "products.ktla.com (syndicated)",
+    "products.newsnationnow.com (syndicated)",
+    "fieldandstream.com",
+    "modernsurvivalblog.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  },
+  {
+   "question": "warm balaclava for winter hiking",
+   "top": [
+    "rei.com",
+    "decathlon.co.uk",
+    "dickssportinggoods.com",
+    "sectionhiker.com",
+    "backcountry.com",
+    "thenorthface.com",
+    "findingdulcinea.com"
+   ],
+   "hikesupply": false,
+   "same_top5_as_previous": true
+  }
+ ],
+ "changes_vs_previous": [
+  "what to pack for a day hike printable: appalachiantrail.org's day hike checklist page moved into the top 5 (now 3rd) and backcountry.com dropped to 6th; the winners are still printable checklists (REI PDF, L.L.Bean list) and checklist articles.",
+  "The other 34 questions kept the same top 5 domains as on Nov 25; only order further down moved (e.g. outdoorlife.com replaced appalachiantrail.org at 8th for best day hiking checklist for beginners).",
+  "hikesupplyco.com appears in none of the 35 top-8 lists and in none of the 4 indexing searches."
+ ]
+}
