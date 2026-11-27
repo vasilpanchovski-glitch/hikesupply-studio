@@ -1,0 +1,6 @@
+{"voice":"af_heart","speed":0.93,"lead":0.3,"lines":[
+ {"text":"Dan's sleeping bag said twenty degrees.","gap":0.1,"show":"Dan's sleeping bag said 20°F. ~"},
+ {"text":"The night was thirty degrees and he barely slept.","gap":0.15,"show":"The night was 30°F ~ and he barely slept."},
+ {"text":"Many ratings mean survival, not comfort.","gap":0.2},
+ {"text":"The rule: pick a bag rated well below the coldest night you expect, and use a warm pad.","gap":0.3},
+ {"text":"Save this before your winter camp.","gap":0.2}]}
