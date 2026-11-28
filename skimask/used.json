@@ -199,6 +199,17 @@
    "music": "socks/music/embers.mp3",
    "voice": "af_heart",
    "note": "Opening k05 (not used as a posted opening yet). Fresh video openings after this: k04 only; k01/k03/k05 opened posts in the last 7 days."
+  },
+  {
+   "id": "mpp04",
+   "card": "mk09",
+   "shots": [
+    "m09"
+   ],
+   "headlines": [
+    "GRANDPA HAS NO BRAKES"
+   ],
+   "note": "Slot Nov 30: mk07 moved to Nov 29 (approved after its Nov 27 slot). Unused photo openings left after this: m04, m05 (m07 shows eyes through clear glasses)."
   }
  ]
 }
