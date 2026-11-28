@@ -106,17 +106,18 @@ def render(spec):
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", silent])
     total = sum(s["dur"] for s in spec["segments"])
     final = os.path.join(out, spec["id"] + ".mp4")
+    ms = float(spec.get("music_start", 0))  # skip a track intro (e.g. fire crackle before the music starts)
     if spec.get("voice") and spec.get("music"):
         # voiceover (wav from voice/vo.py) on top, music ducked under it
         mv = spec.get("music_vol", 0.22)
         run(["ffmpeg", "-y", "-i", silent, "-i", spec["music"], "-i", spec["voice"], "-filter_complex",
-             f"[1:a]atrim=0:{total},volume={mv},afade=t=in:d=0.4,afade=t=out:st={total-1.2}:d=1.2[m];"
+             f"[1:a]atrim={ms}:{ms+total},asetpts=PTS-STARTPTS,volume={mv},afade=t=in:d=0.4,afade=t=out:st={total-1.2}:d=1.2[m];"
              f"[2:a]aresample=44100,apad,atrim=0:{total}[v];"
              f"[m][v]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5[a]",
              "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest", final])
     elif spec.get("music"):
         run(["ffmpeg", "-y", "-i", silent, "-i", spec["music"], "-filter_complex",
-             f"[1:a]atrim=0:{total},afade=t=in:d=0.4,afade=t=out:st={total-1.2}:d=1.2,loudnorm=I=-16:TP=-1.5[a]",
+             f"[1:a]atrim={ms}:{ms+total},asetpts=PTS-STARTPTS,afade=t=in:d=0.4,afade=t=out:st={total-1.2}:d=1.2,loudnorm=I=-16:TP=-1.5[a]",
              "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest", final])
     else:
         run(["ffmpeg", "-y", "-i", silent, "-c", "copy", final])
