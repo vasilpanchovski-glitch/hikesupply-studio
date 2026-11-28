@@ -180,14 +180,14 @@ export const Coupon: React.FC<{ x: number; y: number; w: number; rot?: number; t
 };
 
 // Plan-the-hike page: rows tick one by one from t0, 0.6 s apart.
-export const PlanPage: React.FC<{ x: number; y: number; w: number; rows: [string, string][]; t: number; t0: number; gap?: number }> = ({ x, y, w, rows, t, t0, gap = 0.6 }) => {
+export const PlanPage: React.FC<{ x: number; y: number; w: number; rows: [string, string][]; t: number; t0: number; gap?: number; title?: string }> = ({ x, y, w, rows, t, t0, gap = 0.6, title = "PLAN THE HIKE" }) => {
   const h = 260 + rows.length * 180;
   return (
     <g transform={`translate(${x},${y})`}>
       <rect x={14} y={20} width={w} height={h} rx={18} fill="rgba(0,0,0,0.25)" />
       <rect x={0} y={0} width={w} height={h} rx={18} fill="#f7f2e8" />
       <text x={56} y={120} fontFamily="Barlow Condensed" fontWeight={800} fontSize={76} fill="#2C3B2E" letterSpacing={2}>
-        PLAN THE HIKE
+        {title}
       </text>
       <line x1={56} y1={150} x2={w - 56} y2={150} stroke="#2C3B2E" strokeWidth={4} />
       {rows.map(([a, b], i) => {
