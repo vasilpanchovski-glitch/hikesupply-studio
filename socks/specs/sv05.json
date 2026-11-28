@@ -1,0 +1,43 @@
+{
+ "id": "sv05",
+ "music": "socks/music/embers.mp3",
+ "cover_at": 1.2,
+ "segments": [
+  {
+   "clip": "v03",
+   "start": 0.3,
+   "dur": 3.0,
+   "title": "COLD FLOORS\nEVERY MORNING?",
+   "fade": 0,
+   "pos": "top",
+   "size": 115
+  },
+  {
+   "clip": "v06",
+   "start": 0.2,
+   "dur": 3.0,
+   "title": "WARM ON\nLAZY SUNDAYS",
+   "pos": "top",
+   "size": 115
+  },
+  {
+   "clip": "v05",
+   "start": 0.4,
+   "dur": 2.8,
+   "title": "CUSHIONED,\nSOFT INSIDE",
+   "pos": "top",
+   "size": 110
+  },
+  {
+   "clip": "s12",
+   "image": "s12",
+   "dur": 4.8,
+   "title": "3 PAIRS FOR\nTHE PRICE OF 2",
+   "sub": "$19.99 a pair \u00b7 Black Friday until Dec 1\nLink in bio",
+   "pos": "top",
+   "shade": 0.8,
+   "size": 100,
+   "zoom": 0.03
+  }
+ ]
+}

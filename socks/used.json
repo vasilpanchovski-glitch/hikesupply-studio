@@ -1,12 +1,163 @@
-{"posts":[
- {"id": "sp01", "card": "sk01", "shots": ["s02", "s19", "s18", "s06", "s08", "s12"], "headlines": ["COLD FEET ON THE COMMUTE?", "LONG FLIGHTS", "WINTER DOG WALKS", "EVENINGS AT HOME", "AND THE TRAIL"]},
- {"id": "sv01", "card": "sk02", "shots": ["v04", "v11", "v01", "v05", "v08"], "headlines": ["COLD FEET ON EVERY WALK?", "FLIGHTS", "COSY EVENINGS", "80% MERINO"]},
- {"id": "sp02", "card": "sk03", "shots": ["s26", "s21", "s10", "s03", "s04"], "headlines": ["FROZEN FEET ON THE PLATFORM?", "DESK DAYS", "FROSTY TRAILS", "FOR THE ONE WHO'S ALWAYS COLD", "MERINO WOOL HIKING SOCKS"]},
- {"id": "sv02", "card": "sk04", "shots": ["v06", "v10", "v13", "v03"], "headlines": ["COLD FEET AT HOME?", "DOG WALKS", "SOFT, NO WOOL ITCH", "MERINO WOOL HIKING SOCKS"], "voice": true},
- {"id": "pp02", "card": "sk05", "shots": ["s05"], "headlines": ["WARM FEET ALL WINTER"]},
- {"id": "pp03", "card": "sk06", "shots": ["s07"], "headlines": ["BLACK FRIDAY"]},
- {"id": "sv03", "card": "sk07", "shots": ["v01", "v07", "v03", "v04"], "headlines": ["STUCK ON A GIFT IDEA?", "WICKS SWEAT", "MERINO WOOL HIKING SOCKS"]},
- {"id": "pp04", "card": "sk08", "shots": ["s28"], "headlines": ["THE GIFT THEY'LL WEAR"]},
- {"id": "sv04", "card": "sk09", "shots": ["v04", "v03", "v05", "s28"], "remade": "2026-11-26 without talking clip v09", "headlines": ["COLD FEET ON SNOWY WALKS?", "CUSHIONED SOLE", "80% MERINO, NO WOOL ITCH", "BUY 2, GET 1 FREE"]},
- {"id": "pp05", "card": "sk10", "shots": ["s30"], "headlines": ["COSY FEET ALL WEEKEND"]}
-]}
+{
+ "posts": [
+  {
+   "id": "sp01",
+   "card": "sk01",
+   "shots": [
+    "s02",
+    "s19",
+    "s18",
+    "s06",
+    "s08",
+    "s12"
+   ],
+   "headlines": [
+    "COLD FEET ON THE COMMUTE?",
+    "LONG FLIGHTS",
+    "WINTER DOG WALKS",
+    "EVENINGS AT HOME",
+    "AND THE TRAIL"
+   ]
+  },
+  {
+   "id": "sv01",
+   "card": "sk02",
+   "shots": [
+    "v04",
+    "v11",
+    "v01",
+    "v05",
+    "v08"
+   ],
+   "headlines": [
+    "COLD FEET ON EVERY WALK?",
+    "FLIGHTS",
+    "COSY EVENINGS",
+    "80% MERINO"
+   ]
+  },
+  {
+   "id": "sp02",
+   "card": "sk03",
+   "shots": [
+    "s26",
+    "s21",
+    "s10",
+    "s03",
+    "s04"
+   ],
+   "headlines": [
+    "FROZEN FEET ON THE PLATFORM?",
+    "DESK DAYS",
+    "FROSTY TRAILS",
+    "FOR THE ONE WHO'S ALWAYS COLD",
+    "MERINO WOOL HIKING SOCKS"
+   ]
+  },
+  {
+   "id": "sv02",
+   "card": "sk04",
+   "shots": [
+    "v06",
+    "v10",
+    "v13",
+    "v03"
+   ],
+   "headlines": [
+    "COLD FEET AT HOME?",
+    "DOG WALKS",
+    "SOFT, NO WOOL ITCH",
+    "MERINO WOOL HIKING SOCKS"
+   ],
+   "voice": true
+  },
+  {
+   "id": "pp02",
+   "card": "sk05",
+   "shots": [
+    "s05"
+   ],
+   "headlines": [
+    "WARM FEET ALL WINTER"
+   ]
+  },
+  {
+   "id": "pp03",
+   "card": "sk06",
+   "shots": [
+    "s07"
+   ],
+   "headlines": [
+    "BLACK FRIDAY"
+   ]
+  },
+  {
+   "id": "sv03",
+   "card": "sk07",
+   "shots": [
+    "v01",
+    "v07",
+    "v03",
+    "v04"
+   ],
+   "headlines": [
+    "STUCK ON A GIFT IDEA?",
+    "WICKS SWEAT",
+    "MERINO WOOL HIKING SOCKS"
+   ]
+  },
+  {
+   "id": "pp04",
+   "card": "sk08",
+   "shots": [
+    "s28"
+   ],
+   "headlines": [
+    "THE GIFT THEY'LL WEAR"
+   ]
+  },
+  {
+   "id": "sv04",
+   "card": "sk09",
+   "shots": [
+    "v04",
+    "v03",
+    "v05",
+    "s28"
+   ],
+   "remade": "2026-11-26 without talking clip v09",
+   "headlines": [
+    "COLD FEET ON SNOWY WALKS?",
+    "CUSHIONED SOLE",
+    "80% MERINO, NO WOOL ITCH",
+    "BUY 2, GET 1 FREE"
+   ]
+  },
+  {
+   "id": "pp05",
+   "card": "sk10",
+   "shots": [
+    "s30"
+   ],
+   "headlines": [
+    "COSY FEET ALL WEEKEND"
+   ]
+  },
+  {
+   "id": "sv05",
+   "card": "sk11",
+   "shots": [
+    "v03",
+    "v06",
+    "v05",
+    "s12"
+   ],
+   "headlines": [
+    "COLD FLOORS EVERY MORNING?",
+    "WARM ON LAZY SUNDAYS",
+    "CUSHIONED, SOFT INSIDE",
+    "3 PAIRS FOR THE PRICE OF 2"
+   ]
+  }
+ ]
+}
