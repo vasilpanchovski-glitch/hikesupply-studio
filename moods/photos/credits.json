@@ -430,7 +430,9 @@
   "url": "https://www.pexels.com/photo/17122289/",
   "alt": "Grand Canyon South Rim view framed by junipers under a blue sky",
   "used": false,
-  "topic": "Grand Canyon"
+  "topic": "Grand Canyon",
+  "pinUsed": "pb20261128-9",
+  "pinDate": "2026-11-28"
  },
  "40175450": {
   "photographer": "Nathan L",
@@ -479,7 +481,9 @@
   "url": "https://www.pexels.com/photo/10260002/",
   "alt": "Trail food: picnic snacks, cheese and sausage on a rock above a mountain lake",
   "used": true,
-  "topic": "trail food"
+  "topic": "trail food",
+  "pinUsed": "pb20261128-10",
+  "pinDate": "2026-11-28"
  },
  "9508457": {
   "photographer": "Taryn Elliott",
@@ -602,7 +606,9 @@
   "alt": "Snowy path lined with bare trees",
   "used": true,
   "topic": "winter trail",
-  "moodUsed": "mw2026-12-07"
+  "moodUsed": "mw2026-12-07",
+  "pinUsed": "pb20261128-4",
+  "pinDate": "2026-11-28"
  },
  "16573043": {
   "photographer": "Willian Justen de Vasconcellos",
